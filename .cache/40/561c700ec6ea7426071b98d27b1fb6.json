@@ -1,0 +1,20 @@
+{
+  "id": "../node_modules/semantic-ui-css/themes/default/assets/fonts/icons.woff2",
+  "dependencies": [
+    {
+      "name": "/Users/23markusz/Code/js/cinco_minutos/package.json",
+      "includedInParent": true,
+      "mtime": 1559568641113
+    },
+    {
+      "name": "/Users/23markusz/Code/js/cinco_minutos/node_modules/semantic-ui-css/package.json",
+      "includedInParent": true,
+      "mtime": 1559568610211
+    }
+  ],
+  "generated": { "js": "module.exports=\"/7c15b75fa7d12bc880d02689c653e3a9.woff2\";" },
+  "sourceMaps": null,
+  "error": null,
+  "hash": "0ab54153eeeca0ce03978cc463b257f7",
+  "cacheData": { "env": {} }
+}

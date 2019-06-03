@@ -1,11 +1,11 @@
 /* global module */
-import React from "react";
-import { render } from "react-dom";
-import App from "./App";
+import React from 'react';
+import { render } from 'react-dom';
+import App from './component/App';
+import 'semantic-ui-css/semantic.css';
 
 const renderApp = () => {
-  const root = document.getElementById("root");
-  render(<App />, root);
+  render(<App />, document.getElementById('root'));
 };
 
 renderApp();

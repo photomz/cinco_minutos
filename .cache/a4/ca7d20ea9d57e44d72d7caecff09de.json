@@ -1,0 +1,35 @@
+{
+  "id": "../src/component/App.css",
+  "dependencies": [
+    {
+      "name": "_css_loader",
+      "parent": "/Users/23markusz/Code/js/cinco_minutos/src/component/App.css",
+      "resolved": "/Users/23markusz/Code/js/cinco_minutos/node_modules/parcel-bundler/src/builtins/css-loader.js"
+    },
+    {
+      "name": "/Users/23markusz/Code/js/cinco_minutos/package.json",
+      "includedInParent": true,
+      "mtime": 1559568641113
+    }
+  ],
+  "generated": {
+    "css": "",
+    "js": "var reloadCSS = require('_css_loader');\n\nmodule.hot.dispose(reloadCSS);\nmodule.hot.accept(reloadCSS);"
+  },
+  "sourceMaps": {
+    "css": {
+      "mappings": [
+        {
+          "source": "../src/component/App.css",
+          "original": { "line": 1, "column": 0 },
+          "generated": { "line": 1, "column": 0 }
+        }
+      ],
+      "sources": { "../src/component/App.css": "" },
+      "lineCount": 1
+    }
+  },
+  "error": null,
+  "hash": "1d781a75667facfd9b3afce049e0de1d",
+  "cacheData": { "env": {} }
+}

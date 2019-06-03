@@ -1,0 +1,18 @@
+{
+  "id": "index.html",
+  "dependencies": [
+    {
+      "name": "./../src/index.js",
+      "dynamic": true,
+      "resolved": "/Users/23markusz/Code/js/cinco_minutos/src/index.js",
+      "parent": "/Users/23markusz/Code/js/cinco_minutos/public/index.html"
+    }
+  ],
+  "generated": {
+    "html": "<!doctype html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, user-scalable=no\">\n    <title>CincoMinutos</title>\n  </head>\n  <body>\n    <noscript>\n      You <strong>need</strong> JavaScript. Go turn it on. Or else.\n    </noscript>\n    <div id=\"root\"></div>\n  </body>\n  <script src=\"/daefc1c59f3e02441ac81e377ed060e2.js\"></script>\n</html>"
+  },
+  "sourceMaps": null,
+  "error": null,
+  "hash": "cd720692b42b43c57a20b76928ec800a",
+  "cacheData": {}
+}

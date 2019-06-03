@@ -1,0 +1,266 @@
+{
+  "id": "../src/index.js",
+  "dependencies": [
+    {
+      "name": "/Users/23markusz/Code/js/cinco_minutos/package.json",
+      "includedInParent": true,
+      "mtime": 1559568641113
+    },
+    {
+      "name": "react",
+      "loc": { "line": 2, "column": 18 },
+      "parent": "/Users/23markusz/Code/js/cinco_minutos/src/index.js",
+      "resolved": "/Users/23markusz/Code/js/cinco_minutos/node_modules/react/index.js"
+    },
+    {
+      "name": "react-dom",
+      "loc": { "line": 3, "column": 23 },
+      "parent": "/Users/23markusz/Code/js/cinco_minutos/src/index.js",
+      "resolved": "/Users/23markusz/Code/js/cinco_minutos/node_modules/react-dom/index.js"
+    },
+    {
+      "name": "./component/App",
+      "loc": { "line": 4, "column": 16 },
+      "parent": "/Users/23markusz/Code/js/cinco_minutos/src/index.js",
+      "resolved": "/Users/23markusz/Code/js/cinco_minutos/src/component/App.js"
+    },
+    {
+      "name": "semantic-ui-css/semantic.css",
+      "loc": { "line": 5, "column": 7 },
+      "parent": "/Users/23markusz/Code/js/cinco_minutos/src/index.js",
+      "resolved": "/Users/23markusz/Code/js/cinco_minutos/node_modules/semantic-ui-css/semantic.css"
+    }
+  ],
+  "generated": {
+    "js": "\"use strict\";\n\nvar _react = _interopRequireDefault(require(\"react\"));\n\nvar _reactDom = require(\"react-dom\");\n\nvar _App = _interopRequireDefault(require(\"./component/App\"));\n\nrequire(\"semantic-ui-css/semantic.css\");\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n/* global module */\nvar renderApp = function renderApp() {\n  (0, _reactDom.render)(_react.default.createElement(_App.default, null), document.getElementById('root'));\n};\n\nrenderApp();\nif (module.hot) module.hot.accept(renderApp);"
+  },
+  "sourceMaps": {
+    "js": {
+      "mappings": [
+        {
+          "generated": { "line": 3, "column": 0 },
+          "source": "../src/index.js",
+          "original": { "line": 2, "column": 0 }
+        },
+        {
+          "generated": { "line": 5, "column": 0 },
+          "source": "../src/index.js",
+          "original": { "line": 3, "column": 0 }
+        },
+        {
+          "generated": { "line": 7, "column": 0 },
+          "source": "../src/index.js",
+          "original": { "line": 4, "column": 0 }
+        },
+        {
+          "generated": { "line": 9, "column": 0 },
+          "source": "../src/index.js",
+          "original": { "line": 5, "column": 0 }
+        },
+        {
+          "generated": { "line": 13, "column": 0 },
+          "source": "../src/index.js",
+          "original": { "line": 1, "column": 0 }
+        },
+        {
+          "generated": { "line": 14, "column": 0 },
+          "source": "../src/index.js",
+          "original": { "line": 7, "column": 0 }
+        },
+        {
+          "name": "renderApp",
+          "generated": { "line": 14, "column": 4 },
+          "source": "../src/index.js",
+          "original": { "line": 7, "column": 6 }
+        },
+        {
+          "generated": { "line": 14, "column": 13 },
+          "source": "../src/index.js",
+          "original": { "line": 7, "column": 15 }
+        },
+        {
+          "generated": { "line": 14, "column": 16 },
+          "source": "../src/index.js",
+          "original": { "line": 7, "column": 18 }
+        },
+        {
+          "name": "renderApp",
+          "generated": { "line": 14, "column": 25 },
+          "source": "../src/index.js",
+          "original": { "line": 7, "column": 6 }
+        },
+        {
+          "generated": { "line": 14, "column": 34 },
+          "source": "../src/index.js",
+          "original": { "line": 7, "column": 18 }
+        },
+        {
+          "generated": { "line": 14, "column": 37 },
+          "source": "../src/index.js",
+          "original": { "line": 7, "column": 24 }
+        },
+        {
+          "generated": { "line": 15, "column": 0 },
+          "source": "../src/index.js",
+          "original": { "line": 8, "column": 2 }
+        },
+        {
+          "generated": { "line": 15, "column": 24 },
+          "source": "../src/index.js",
+          "original": { "line": 8, "column": 9 }
+        },
+        {
+          "generated": { "line": 15, "column": 53 },
+          "source": "../src/index.js",
+          "original": { "line": 8, "column": 10 }
+        },
+        {
+          "generated": { "line": 15, "column": 65 },
+          "source": "../src/index.js",
+          "original": { "line": 8, "column": 9 }
+        },
+        {
+          "generated": { "line": 15, "column": 72 },
+          "source": "../src/index.js",
+          "original": { "line": 8, "column": 2 }
+        },
+        {
+          "name": "document",
+          "generated": { "line": 15, "column": 74 },
+          "source": "../src/index.js",
+          "original": { "line": 8, "column": 18 }
+        },
+        {
+          "generated": { "line": 15, "column": 82 },
+          "source": "../src/index.js",
+          "original": { "line": 8, "column": 26 }
+        },
+        {
+          "name": "getElementById",
+          "generated": { "line": 15, "column": 83 },
+          "source": "../src/index.js",
+          "original": { "line": 8, "column": 27 }
+        },
+        {
+          "generated": { "line": 15, "column": 97 },
+          "source": "../src/index.js",
+          "original": { "line": 8, "column": 18 }
+        },
+        {
+          "generated": { "line": 15, "column": 98 },
+          "source": "../src/index.js",
+          "original": { "line": 8, "column": 42 }
+        },
+        {
+          "generated": { "line": 15, "column": 104 },
+          "source": "../src/index.js",
+          "original": { "line": 8, "column": 18 }
+        },
+        {
+          "generated": { "line": 15, "column": 105 },
+          "source": "../src/index.js",
+          "original": { "line": 8, "column": 2 }
+        },
+        {
+          "generated": { "line": 16, "column": 0 },
+          "source": "../src/index.js",
+          "original": { "line": 9, "column": 1 }
+        },
+        {
+          "generated": { "line": 16, "column": 1 },
+          "source": "../src/index.js",
+          "original": { "line": 7, "column": 0 }
+        },
+        {
+          "name": "renderApp",
+          "generated": { "line": 18, "column": 0 },
+          "source": "../src/index.js",
+          "original": { "line": 11, "column": 0 }
+        },
+        {
+          "generated": { "line": 18, "column": 9 },
+          "source": "../src/index.js",
+          "original": { "line": 11, "column": 9 }
+        },
+        {
+          "generated": { "line": 19, "column": 0 },
+          "source": "../src/index.js",
+          "original": { "line": 13, "column": 0 }
+        },
+        {
+          "name": "module",
+          "generated": { "line": 19, "column": 4 },
+          "source": "../src/index.js",
+          "original": { "line": 13, "column": 4 }
+        },
+        {
+          "generated": { "line": 19, "column": 10 },
+          "source": "../src/index.js",
+          "original": { "line": 13, "column": 10 }
+        },
+        {
+          "name": "hot",
+          "generated": { "line": 19, "column": 11 },
+          "source": "../src/index.js",
+          "original": { "line": 13, "column": 11 }
+        },
+        {
+          "generated": { "line": 19, "column": 14 },
+          "source": "../src/index.js",
+          "original": { "line": 13, "column": 0 }
+        },
+        {
+          "name": "module",
+          "generated": { "line": 19, "column": 16 },
+          "source": "../src/index.js",
+          "original": { "line": 13, "column": 16 }
+        },
+        {
+          "generated": { "line": 19, "column": 22 },
+          "source": "../src/index.js",
+          "original": { "line": 13, "column": 22 }
+        },
+        {
+          "name": "hot",
+          "generated": { "line": 19, "column": 23 },
+          "source": "../src/index.js",
+          "original": { "line": 13, "column": 23 }
+        },
+        {
+          "generated": { "line": 19, "column": 26 },
+          "source": "../src/index.js",
+          "original": { "line": 13, "column": 16 }
+        },
+        {
+          "name": "accept",
+          "generated": { "line": 19, "column": 27 },
+          "source": "../src/index.js",
+          "original": { "line": 13, "column": 27 }
+        },
+        {
+          "generated": { "line": 19, "column": 33 },
+          "source": "../src/index.js",
+          "original": { "line": 13, "column": 16 }
+        },
+        {
+          "name": "renderApp",
+          "generated": { "line": 19, "column": 34 },
+          "source": "../src/index.js",
+          "original": { "line": 13, "column": 34 }
+        },
+        {
+          "generated": { "line": 19, "column": 43 },
+          "source": "../src/index.js",
+          "original": { "line": 13, "column": 16 }
+        }
+      ],
+      "sources": {
+        "../src/index.js": "/* global module */\nimport React from 'react';\nimport { render } from 'react-dom';\nimport App from './component/App';\nimport 'semantic-ui-css/semantic.css';\n\nconst renderApp = () => {\n  render(<App />, document.getElementById('root'));\n};\n\nrenderApp();\n\nif (module.hot) module.hot.accept(renderApp);\n"
+      },
+      "lineCount": null
+    }
+  },
+  "error": null,
+  "hash": "4a5735ebb6922fd253df729cd721b96d",
+  "cacheData": { "env": {} }
+}

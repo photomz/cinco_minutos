@@ -1,0 +1,20 @@
+{
+  "id": "../node_modules/semantic-ui-css/themes/default/assets/fonts/brand-icons.eot",
+  "dependencies": [
+    {
+      "name": "/Users/23markusz/Code/js/cinco_minutos/package.json",
+      "includedInParent": true,
+      "mtime": 1559568641113
+    },
+    {
+      "name": "/Users/23markusz/Code/js/cinco_minutos/node_modules/semantic-ui-css/package.json",
+      "includedInParent": true,
+      "mtime": 1559568610211
+    }
+  ],
+  "generated": { "js": "module.exports=\"/129ccb21e0f672d11c4e710fe4ffb4d8.eot\";" },
+  "sourceMaps": null,
+  "error": null,
+  "hash": "13db00b7a34fee4d819ab7f9838cc428",
+  "cacheData": { "env": {} }
+}

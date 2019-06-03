@@ -1,0 +1,724 @@
+{
+  "id": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+  "dependencies": [
+    {
+      "name": "/Users/23markusz/Code/js/cinco_minutos/package.json",
+      "includedInParent": true,
+      "mtime": 1559568641113
+    },
+    {
+      "name": "/Users/23markusz/Code/js/cinco_minutos/node_modules/semantic-ui-react/package.json",
+      "includedInParent": true,
+      "mtime": 1559565777540
+    },
+    {
+      "name": "prop-types",
+      "loc": { "line": 1, "column": 22 },
+      "parent": "/Users/23markusz/Code/js/cinco_minutos/node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+      "resolved": "/Users/23markusz/Code/js/cinco_minutos/node_modules/prop-types/index.js"
+    },
+    {
+      "name": "react",
+      "loc": { "line": 2, "column": 18 },
+      "parent": "/Users/23markusz/Code/js/cinco_minutos/node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+      "resolved": "/Users/23markusz/Code/js/cinco_minutos/node_modules/react/index.js"
+    },
+    {
+      "name": "react-is",
+      "loc": { "line": 3, "column": 29 },
+      "parent": "/Users/23markusz/Code/js/cinco_minutos/node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+      "resolved": "/Users/23markusz/Code/js/cinco_minutos/node_modules/react-is/index.js"
+    },
+    {
+      "name": "./RefFindNode",
+      "loc": { "line": 4, "column": 24 },
+      "parent": "/Users/23markusz/Code/js/cinco_minutos/node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+      "resolved": "/Users/23markusz/Code/js/cinco_minutos/node_modules/semantic-ui-react/dist/es/addons/Ref/RefFindNode.js"
+    },
+    {
+      "name": "./RefForward",
+      "loc": { "line": 5, "column": 23 },
+      "parent": "/Users/23markusz/Code/js/cinco_minutos/node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+      "resolved": "/Users/23markusz/Code/js/cinco_minutos/node_modules/semantic-ui-react/dist/es/addons/Ref/RefForward.js"
+    }
+  ],
+  "generated": {
+    "js": "\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _propTypes = _interopRequireDefault(require(\"prop-types\"));\n\nvar _react = _interopRequireDefault(require(\"react\"));\n\nvar _reactIs = require(\"react-is\");\n\nvar _RefFindNode = _interopRequireDefault(require(\"./RefFindNode\"));\n\nvar _RefForward = _interopRequireDefault(require(\"./RefForward\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n/**\n * This component exposes a prop that supports functional and createRef() API and returns the DOM\n * node of both functional and class component children.\n */\nfunction Ref(props) {\n  var children = props.children,\n      innerRef = props.innerRef;\n\n  var child = _react.default.Children.only(children);\n\n  var ElementType = (0, _reactIs.isForwardRef)(child) ? _RefForward.default : _RefFindNode.default;\n  return _react.default.createElement(ElementType, {\n    innerRef: innerRef\n  }, child);\n}\n\nRef.handledProps = [\"children\", \"innerRef\"];\nRef.propTypes = \"development\" !== \"production\" ? {\n  /** Primary content. */\n  children: _propTypes.default.element.isRequired,\n\n  /**\n   * Called when a child component will be mounted or updated.\n   *\n   * @param {HTMLElement} node - Referred node.\n   */\n  innerRef: _propTypes.default.oneOfType([_propTypes.default.func, _propTypes.default.object])\n} : {};\nRef.FindNode = _RefFindNode.default;\nRef.Forward = _RefForward.default;\nvar _default = Ref;\nexports.default = _default;"
+  },
+  "sourceMaps": {
+    "js": {
+      "mappings": [
+        {
+          "generated": { "line": 8, "column": 0 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 1, "column": 0 }
+        },
+        {
+          "generated": { "line": 10, "column": 0 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 2, "column": 0 }
+        },
+        {
+          "generated": { "line": 12, "column": 0 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 3, "column": 0 }
+        },
+        {
+          "generated": { "line": 14, "column": 0 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 4, "column": 0 }
+        },
+        {
+          "generated": { "line": 16, "column": 0 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 5, "column": 0 }
+        },
+        {
+          "generated": { "line": 20, "column": 0 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 6, "column": 0 }
+        },
+        {
+          "generated": { "line": 24, "column": 0 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 11, "column": 0 }
+        },
+        {
+          "name": "Ref",
+          "generated": { "line": 24, "column": 9 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 11, "column": 9 }
+        },
+        {
+          "generated": { "line": 24, "column": 12 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 11, "column": 0 }
+        },
+        {
+          "name": "props",
+          "generated": { "line": 24, "column": 13 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 11, "column": 13 }
+        },
+        {
+          "generated": { "line": 24, "column": 18 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 11, "column": 0 }
+        },
+        {
+          "generated": { "line": 24, "column": 20 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 11, "column": 20 }
+        },
+        {
+          "generated": { "line": 25, "column": 0 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 12, "column": 2 }
+        },
+        {
+          "name": "children",
+          "generated": { "line": 25, "column": 6 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 12, "column": 6 }
+        },
+        {
+          "generated": { "line": 25, "column": 14 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 12, "column": 14 }
+        },
+        {
+          "name": "props",
+          "generated": { "line": 25, "column": 17 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 12, "column": 17 }
+        },
+        {
+          "generated": { "line": 25, "column": 22 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 12, "column": 22 }
+        },
+        {
+          "name": "children",
+          "generated": { "line": 25, "column": 23 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 12, "column": 23 }
+        },
+        {
+          "generated": { "line": 25, "column": 31 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 12, "column": 2 }
+        },
+        {
+          "generated": { "line": 26, "column": 0 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 12, "column": 2 }
+        },
+        {
+          "name": "innerRef",
+          "generated": { "line": 26, "column": 6 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 13, "column": 6 }
+        },
+        {
+          "generated": { "line": 26, "column": 14 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 13, "column": 14 }
+        },
+        {
+          "name": "props",
+          "generated": { "line": 26, "column": 17 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 13, "column": 17 }
+        },
+        {
+          "generated": { "line": 26, "column": 22 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 13, "column": 22 }
+        },
+        {
+          "name": "innerRef",
+          "generated": { "line": 26, "column": 23 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 13, "column": 23 }
+        },
+        {
+          "generated": { "line": 26, "column": 31 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 12, "column": 2 }
+        },
+        {
+          "generated": { "line": 28, "column": 0 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 14, "column": 2 }
+        },
+        {
+          "name": "child",
+          "generated": { "line": 28, "column": 6 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 14, "column": 6 }
+        },
+        {
+          "generated": { "line": 28, "column": 11 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 14, "column": 11 }
+        },
+        {
+          "name": "React",
+          "generated": { "line": 28, "column": 14 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 14, "column": 14 }
+        },
+        {
+          "name": "Children",
+          "generated": { "line": 28, "column": 29 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 14, "column": 20 }
+        },
+        {
+          "generated": { "line": 28, "column": 37 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 14, "column": 14 }
+        },
+        {
+          "name": "only",
+          "generated": { "line": 28, "column": 38 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 14, "column": 29 }
+        },
+        {
+          "generated": { "line": 28, "column": 42 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 14, "column": 14 }
+        },
+        {
+          "name": "children",
+          "generated": { "line": 28, "column": 43 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 14, "column": 34 }
+        },
+        {
+          "generated": { "line": 28, "column": 51 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 14, "column": 14 }
+        },
+        {
+          "generated": { "line": 28, "column": 52 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 14, "column": 2 }
+        },
+        {
+          "generated": { "line": 30, "column": 0 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 15, "column": 2 }
+        },
+        {
+          "name": "ElementType",
+          "generated": { "line": 30, "column": 6 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 15, "column": 6 }
+        },
+        {
+          "generated": { "line": 30, "column": 17 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 15, "column": 17 }
+        },
+        {
+          "generated": { "line": 30, "column": 20 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 15, "column": 20 }
+        },
+        {
+          "name": "child",
+          "generated": { "line": 30, "column": 47 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 15, "column": 33 }
+        },
+        {
+          "generated": { "line": 30, "column": 52 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 15, "column": 20 }
+        },
+        {
+          "name": "RefForward",
+          "generated": { "line": 30, "column": 56 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 15, "column": 42 }
+        },
+        {
+          "generated": { "line": 30, "column": 75 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 15, "column": 20 }
+        },
+        {
+          "name": "RefFindNode",
+          "generated": { "line": 30, "column": 78 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 15, "column": 55 }
+        },
+        {
+          "generated": { "line": 30, "column": 98 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 15, "column": 2 }
+        },
+        {
+          "generated": { "line": 31, "column": 0 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 16, "column": 2 }
+        },
+        {
+          "name": "React",
+          "generated": { "line": 31, "column": 9 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 16, "column": 9 }
+        },
+        {
+          "name": "createElement",
+          "generated": { "line": 31, "column": 24 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 16, "column": 15 }
+        },
+        {
+          "generated": { "line": 31, "column": 37 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 16, "column": 9 }
+        },
+        {
+          "name": "ElementType",
+          "generated": { "line": 31, "column": 38 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 16, "column": 29 }
+        },
+        {
+          "generated": { "line": 31, "column": 49 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 16, "column": 9 }
+        },
+        {
+          "generated": { "line": 31, "column": 51 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 16, "column": 42 }
+        },
+        {
+          "name": "innerRef",
+          "generated": { "line": 32, "column": 0 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 17, "column": 4 }
+        },
+        {
+          "name": "innerRef",
+          "generated": { "line": 32, "column": 4 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 17, "column": 4 }
+        },
+        {
+          "generated": { "line": 32, "column": 12 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 17, "column": 12 }
+        },
+        {
+          "name": "innerRef",
+          "generated": { "line": 32, "column": 14 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 17, "column": 14 }
+        },
+        {
+          "generated": { "line": 33, "column": 0 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 16, "column": 42 }
+        },
+        {
+          "generated": { "line": 33, "column": 3 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 16, "column": 9 }
+        },
+        {
+          "name": "child",
+          "generated": { "line": 33, "column": 5 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 18, "column": 5 }
+        },
+        {
+          "generated": { "line": 33, "column": 10 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 16, "column": 9 }
+        },
+        {
+          "generated": { "line": 33, "column": 11 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 16, "column": 2 }
+        },
+        {
+          "generated": { "line": 34, "column": 0 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 19, "column": 1 }
+        },
+        {
+          "name": "Ref",
+          "generated": { "line": 36, "column": 0 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 21, "column": 0 }
+        },
+        {
+          "generated": { "line": 36, "column": 3 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 21, "column": 3 }
+        },
+        {
+          "name": "handledProps",
+          "generated": { "line": 36, "column": 4 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 21, "column": 4 }
+        },
+        {
+          "generated": { "line": 36, "column": 16 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 21, "column": 0 }
+        },
+        {
+          "generated": { "line": 36, "column": 19 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 21, "column": 19 }
+        },
+        {
+          "generated": { "line": 36, "column": 20 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 21, "column": 20 }
+        },
+        {
+          "generated": { "line": 36, "column": 30 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 21, "column": 19 }
+        },
+        {
+          "generated": { "line": 36, "column": 32 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 21, "column": 32 }
+        },
+        {
+          "generated": { "line": 36, "column": 42 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 21, "column": 19 }
+        },
+        {
+          "generated": { "line": 36, "column": 43 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 21, "column": 0 }
+        },
+        {
+          "name": "Ref",
+          "generated": { "line": 37, "column": 0 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 22, "column": 0 }
+        },
+        {
+          "generated": { "line": 37, "column": 3 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 22, "column": 3 }
+        },
+        {
+          "name": "propTypes",
+          "generated": { "line": 37, "column": 4 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 22, "column": 4 }
+        },
+        {
+          "generated": { "line": 37, "column": 13 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 22, "column": 0 }
+        },
+        {
+          "generated": { "line": 37, "column": 16 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 22, "column": 16 }
+        },
+        {
+          "generated": { "line": 37, "column": 34 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 22, "column": 41 }
+        },
+        {
+          "generated": { "line": 37, "column": 46 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 22, "column": 16 }
+        },
+        {
+          "generated": { "line": 37, "column": 49 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 22, "column": 56 }
+        },
+        {
+          "generated": { "line": 38, "column": 0 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 23, "column": 2 }
+        },
+        {
+          "name": "children",
+          "generated": { "line": 39, "column": 0 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 24, "column": 2 }
+        },
+        {
+          "name": "children",
+          "generated": { "line": 39, "column": 2 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 24, "column": 2 }
+        },
+        {
+          "generated": { "line": 39, "column": 10 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 24, "column": 10 }
+        },
+        {
+          "name": "PropTypes",
+          "generated": { "line": 39, "column": 12 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 24, "column": 12 }
+        },
+        {
+          "name": "element",
+          "generated": { "line": 39, "column": 31 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 24, "column": 22 }
+        },
+        {
+          "generated": { "line": 39, "column": 38 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 24, "column": 12 }
+        },
+        {
+          "name": "isRequired",
+          "generated": { "line": 39, "column": 39 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 24, "column": 30 }
+        },
+        {
+          "generated": { "line": 39, "column": 49 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 22, "column": 56 }
+        },
+        {
+          "generated": { "line": 41, "column": 0 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 26, "column": 2 }
+        },
+        {
+          "name": "innerRef",
+          "generated": { "line": 46, "column": 0 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 31, "column": 2 }
+        },
+        {
+          "name": "innerRef",
+          "generated": { "line": 46, "column": 2 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 31, "column": 2 }
+        },
+        {
+          "generated": { "line": 46, "column": 10 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 31, "column": 10 }
+        },
+        {
+          "name": "PropTypes",
+          "generated": { "line": 46, "column": 12 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 31, "column": 12 }
+        },
+        {
+          "name": "oneOfType",
+          "generated": { "line": 46, "column": 31 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 31, "column": 22 }
+        },
+        {
+          "generated": { "line": 46, "column": 40 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 31, "column": 12 }
+        },
+        {
+          "generated": { "line": 46, "column": 41 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 31, "column": 32 }
+        },
+        {
+          "name": "PropTypes",
+          "generated": { "line": 46, "column": 42 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 31, "column": 33 }
+        },
+        {
+          "name": "func",
+          "generated": { "line": 46, "column": 61 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 31, "column": 43 }
+        },
+        {
+          "generated": { "line": 46, "column": 65 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 31, "column": 32 }
+        },
+        {
+          "name": "PropTypes",
+          "generated": { "line": 46, "column": 67 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 31, "column": 49 }
+        },
+        {
+          "name": "object",
+          "generated": { "line": 46, "column": 86 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 31, "column": 59 }
+        },
+        {
+          "generated": { "line": 46, "column": 92 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 31, "column": 32 }
+        },
+        {
+          "generated": { "line": 46, "column": 93 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 31, "column": 12 }
+        },
+        {
+          "generated": { "line": 47, "column": 0 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 22, "column": 56 }
+        },
+        {
+          "generated": { "line": 47, "column": 1 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 22, "column": 16 }
+        },
+        {
+          "generated": { "line": 47, "column": 4 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 32, "column": 4 }
+        },
+        {
+          "generated": { "line": 47, "column": 6 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 22, "column": 0 }
+        },
+        {
+          "name": "Ref",
+          "generated": { "line": 48, "column": 0 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 33, "column": 0 }
+        },
+        {
+          "generated": { "line": 48, "column": 3 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 33, "column": 3 }
+        },
+        {
+          "name": "FindNode",
+          "generated": { "line": 48, "column": 4 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 33, "column": 4 }
+        },
+        {
+          "generated": { "line": 48, "column": 12 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 33, "column": 0 }
+        },
+        {
+          "name": "RefFindNode",
+          "generated": { "line": 48, "column": 15 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 33, "column": 15 }
+        },
+        {
+          "generated": { "line": 48, "column": 35 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 33, "column": 0 }
+        },
+        {
+          "name": "Ref",
+          "generated": { "line": 49, "column": 0 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 34, "column": 0 }
+        },
+        {
+          "generated": { "line": 49, "column": 3 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 34, "column": 3 }
+        },
+        {
+          "name": "Forward",
+          "generated": { "line": 49, "column": 4 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 34, "column": 4 }
+        },
+        {
+          "generated": { "line": 49, "column": 11 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 34, "column": 0 }
+        },
+        {
+          "name": "RefForward",
+          "generated": { "line": 49, "column": 14 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 34, "column": 14 }
+        },
+        {
+          "generated": { "line": 49, "column": 33 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 34, "column": 0 }
+        },
+        {
+          "name": "Ref",
+          "generated": { "line": 50, "column": 15 },
+          "source": "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js",
+          "original": { "line": 35, "column": 15 }
+        }
+      ],
+      "sources": {
+        "../node_modules/semantic-ui-react/dist/es/addons/Ref/Ref.js": "import PropTypes from 'prop-types';\nimport React from 'react';\nimport { isForwardRef } from 'react-is';\nimport RefFindNode from './RefFindNode';\nimport RefForward from './RefForward';\n/**\n * This component exposes a prop that supports functional and createRef() API and returns the DOM\n * node of both functional and class component children.\n */\n\nfunction Ref(props) {\n  var children = props.children,\n      innerRef = props.innerRef;\n  var child = React.Children.only(children);\n  var ElementType = isForwardRef(child) ? RefForward : RefFindNode;\n  return React.createElement(ElementType, {\n    innerRef: innerRef\n  }, child);\n}\n\nRef.handledProps = [\"children\", \"innerRef\"];\nRef.propTypes = process.env.NODE_ENV !== \"production\" ? {\n  /** Primary content. */\n  children: PropTypes.element.isRequired,\n\n  /**\n   * Called when a child component will be mounted or updated.\n   *\n   * @param {HTMLElement} node - Referred node.\n   */\n  innerRef: PropTypes.oneOfType([PropTypes.func, PropTypes.object])\n} : {};\nRef.FindNode = RefFindNode;\nRef.Forward = RefForward;\nexport default Ref;"
+      },
+      "lineCount": null
+    }
+  },
+  "error": null,
+  "hash": "82e296c5500445ea65e63370632c7001",
+  "cacheData": { "env": { "NODE_ENV": "development" } }
+}

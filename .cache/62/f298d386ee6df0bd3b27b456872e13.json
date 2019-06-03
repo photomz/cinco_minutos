@@ -1,0 +1,695 @@
+{
+  "id": "../src/component/NavBar.js",
+  "dependencies": [
+    {
+      "name": "/Users/23markusz/Code/js/cinco_minutos/package.json",
+      "includedInParent": true,
+      "mtime": 1559568641113
+    },
+    {
+      "name": "react",
+      "loc": { "line": 2, "column": 18 },
+      "parent": "/Users/23markusz/Code/js/cinco_minutos/src/component/NavBar.js",
+      "resolved": "/Users/23markusz/Code/js/cinco_minutos/node_modules/react/index.js"
+    },
+    {
+      "name": "semantic-ui-react",
+      "loc": { "line": 3, "column": 21 },
+      "parent": "/Users/23markusz/Code/js/cinco_minutos/src/component/NavBar.js",
+      "resolved": "/Users/23markusz/Code/js/cinco_minutos/node_modules/semantic-ui-react/dist/es/index.js"
+    },
+    {
+      "name": "prop-types",
+      "loc": { "line": 4, "column": 22 },
+      "parent": "/Users/23markusz/Code/js/cinco_minutos/src/component/NavBar.js",
+      "resolved": "/Users/23markusz/Code/js/cinco_minutos/node_modules/prop-types/index.js"
+    }
+  ],
+  "generated": {
+    "js": "\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.default = void 0;\n\nvar _react = _interopRequireDefault(require(\"react\"));\n\nvar _semanticUiReact = require(\"semantic-ui-react\");\n\nvar _propTypes = _interopRequireDefault(require(\"prop-types\"));\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n/* eslint-disable no-console */\nvar NavBar = function NavBar(_ref) {\n  var items = _ref.items,\n      onClick = _ref.onClick,\n      active = _ref.active;\n  console.log(items);\n  return _react.default.createElement(\"div\", null, _react.default.createElement(_semanticUiReact.Menu, {\n    pointing: true\n  }, _react.default.createElement(_semanticUiReact.Menu.Menu, {\n    position: \"right\"\n  }, items.map(function (elem, index) {\n    return _react.default.createElement(_semanticUiReact.Menu.Item, {\n      key: index,\n      name: elem,\n      active: active === elem,\n      onClick: onClick\n    });\n  }))));\n};\n\nNavBar.propTypes = {\n  items: _propTypes.default.array,\n  onClick: _propTypes.default.func,\n  active: _propTypes.default.string\n};\nvar _default = NavBar;\nexports.default = _default;"
+  },
+  "sourceMaps": {
+    "js": {
+      "mappings": [
+        {
+          "generated": { "line": 8, "column": 0 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 2, "column": 0 }
+        },
+        {
+          "generated": { "line": 10, "column": 0 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 3, "column": 0 }
+        },
+        {
+          "generated": { "line": 12, "column": 0 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 4, "column": 0 }
+        },
+        {
+          "generated": { "line": 16, "column": 0 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 1, "column": 0 }
+        },
+        {
+          "generated": { "line": 17, "column": 0 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 6, "column": 0 }
+        },
+        {
+          "name": "NavBar",
+          "generated": { "line": 17, "column": 4 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 6, "column": 6 }
+        },
+        {
+          "generated": { "line": 17, "column": 10 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 6, "column": 12 }
+        },
+        {
+          "generated": { "line": 17, "column": 13 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 6, "column": 15 }
+        },
+        {
+          "name": "NavBar",
+          "generated": { "line": 17, "column": 22 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 6, "column": 6 }
+        },
+        {
+          "generated": { "line": 17, "column": 28 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 6, "column": 15 }
+        },
+        {
+          "generated": { "line": 17, "column": 35 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 6, "column": 47 }
+        },
+        {
+          "generated": { "line": 18, "column": 0 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 6, "column": 47 }
+        },
+        {
+          "name": "items",
+          "generated": { "line": 18, "column": 6 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 6, "column": 18 }
+        },
+        {
+          "generated": { "line": 18, "column": 11 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 6, "column": 47 }
+        },
+        {
+          "name": "items",
+          "generated": { "line": 18, "column": 19 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 6, "column": 18 }
+        },
+        {
+          "generated": { "line": 18, "column": 24 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 6, "column": 47 }
+        },
+        {
+          "generated": { "line": 19, "column": 0 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 6, "column": 47 }
+        },
+        {
+          "name": "onClick",
+          "generated": { "line": 19, "column": 6 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 6, "column": 25 }
+        },
+        {
+          "generated": { "line": 19, "column": 13 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 6, "column": 47 }
+        },
+        {
+          "name": "onClick",
+          "generated": { "line": 19, "column": 21 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 6, "column": 25 }
+        },
+        {
+          "generated": { "line": 19, "column": 28 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 6, "column": 47 }
+        },
+        {
+          "generated": { "line": 20, "column": 0 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 6, "column": 47 }
+        },
+        {
+          "name": "active",
+          "generated": { "line": 20, "column": 6 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 6, "column": 34 }
+        },
+        {
+          "generated": { "line": 20, "column": 12 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 6, "column": 47 }
+        },
+        {
+          "name": "active",
+          "generated": { "line": 20, "column": 20 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 6, "column": 34 }
+        },
+        {
+          "generated": { "line": 20, "column": 26 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 6, "column": 47 }
+        },
+        {
+          "name": "console",
+          "generated": { "line": 21, "column": 0 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 7, "column": 2 }
+        },
+        {
+          "name": "console",
+          "generated": { "line": 21, "column": 2 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 7, "column": 2 }
+        },
+        {
+          "generated": { "line": 21, "column": 9 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 7, "column": 9 }
+        },
+        {
+          "name": "log",
+          "generated": { "line": 21, "column": 10 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 7, "column": 10 }
+        },
+        {
+          "generated": { "line": 21, "column": 13 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 7, "column": 2 }
+        },
+        {
+          "name": "items",
+          "generated": { "line": 21, "column": 14 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 7, "column": 14 }
+        },
+        {
+          "generated": { "line": 21, "column": 19 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 7, "column": 2 }
+        },
+        {
+          "generated": { "line": 22, "column": 0 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 8, "column": 2 }
+        },
+        {
+          "generated": { "line": 22, "column": 9 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 9, "column": 4 }
+        },
+        {
+          "generated": { "line": 22, "column": 51 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 10, "column": 6 }
+        },
+        {
+          "generated": { "line": 22, "column": 80 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 10, "column": 7 }
+        },
+        {
+          "generated": { "line": 22, "column": 101 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 10, "column": 6 }
+        },
+        {
+          "generated": { "line": 23, "column": 0 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 10, "column": 12 }
+        },
+        {
+          "generated": { "line": 23, "column": 4 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 10, "column": 12 }
+        },
+        {
+          "generated": { "line": 23, "column": 12 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 10, "column": 20 }
+        },
+        {
+          "generated": { "line": 24, "column": 0 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 10, "column": 6 }
+        },
+        {
+          "generated": { "line": 24, "column": 5 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 11, "column": 8 }
+        },
+        {
+          "generated": { "line": 24, "column": 34 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 11, "column": 9 }
+        },
+        {
+          "generated": { "line": 24, "column": 55 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 11, "column": 8 }
+        },
+        {
+          "generated": { "line": 24, "column": 56 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 11, "column": 14 }
+        },
+        {
+          "generated": { "line": 24, "column": 60 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 11, "column": 8 }
+        },
+        {
+          "generated": { "line": 25, "column": 0 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 11, "column": 19 }
+        },
+        {
+          "generated": { "line": 25, "column": 4 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 11, "column": 19 }
+        },
+        {
+          "generated": { "line": 25, "column": 12 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 11, "column": 27 }
+        },
+        {
+          "generated": { "line": 25, "column": 14 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 11, "column": 28 }
+        },
+        {
+          "generated": { "line": 26, "column": 0 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 11, "column": 8 }
+        },
+        {
+          "name": "items",
+          "generated": { "line": 26, "column": 5 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 12, "column": 11 }
+        },
+        {
+          "generated": { "line": 26, "column": 10 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 12, "column": 16 }
+        },
+        {
+          "name": "map",
+          "generated": { "line": 26, "column": 11 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 12, "column": 17 }
+        },
+        {
+          "generated": { "line": 26, "column": 14 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 12, "column": 11 }
+        },
+        {
+          "generated": { "line": 26, "column": 15 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 12, "column": 21 }
+        },
+        {
+          "name": "elem",
+          "generated": { "line": 26, "column": 25 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 12, "column": 22 }
+        },
+        {
+          "generated": { "line": 26, "column": 29 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 12, "column": 21 }
+        },
+        {
+          "name": "index",
+          "generated": { "line": 26, "column": 31 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 12, "column": 28 }
+        },
+        {
+          "generated": { "line": 26, "column": 36 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 12, "column": 21 }
+        },
+        {
+          "generated": { "line": 27, "column": 0 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 12, "column": 21 }
+        },
+        {
+          "generated": { "line": 27, "column": 11 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 13, "column": 12 }
+        },
+        {
+          "generated": { "line": 27, "column": 40 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 13, "column": 13 }
+        },
+        {
+          "generated": { "line": 27, "column": 61 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 13, "column": 12 }
+        },
+        {
+          "generated": { "line": 27, "column": 62 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 13, "column": 18 }
+        },
+        {
+          "generated": { "line": 27, "column": 66 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 13, "column": 12 }
+        },
+        {
+          "generated": { "line": 28, "column": 0 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 13, "column": 23 }
+        },
+        {
+          "generated": { "line": 28, "column": 6 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 13, "column": 23 }
+        },
+        {
+          "generated": { "line": 28, "column": 9 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 13, "column": 26 }
+        },
+        {
+          "name": "index",
+          "generated": { "line": 28, "column": 11 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 13, "column": 28 }
+        },
+        {
+          "generated": { "line": 28, "column": 16 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 13, "column": 12 }
+        },
+        {
+          "generated": { "line": 29, "column": 0 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 13, "column": 35 }
+        },
+        {
+          "generated": { "line": 29, "column": 6 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 13, "column": 35 }
+        },
+        {
+          "generated": { "line": 29, "column": 10 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 13, "column": 39 }
+        },
+        {
+          "name": "elem",
+          "generated": { "line": 29, "column": 12 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 13, "column": 41 }
+        },
+        {
+          "generated": { "line": 29, "column": 16 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 13, "column": 12 }
+        },
+        {
+          "generated": { "line": 30, "column": 0 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 13, "column": 47 }
+        },
+        {
+          "generated": { "line": 30, "column": 6 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 13, "column": 47 }
+        },
+        {
+          "generated": { "line": 30, "column": 12 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 13, "column": 53 }
+        },
+        {
+          "name": "active",
+          "generated": { "line": 30, "column": 14 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 13, "column": 55 }
+        },
+        {
+          "generated": { "line": 30, "column": 20 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 13, "column": 61 }
+        },
+        {
+          "name": "elem",
+          "generated": { "line": 30, "column": 25 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 13, "column": 66 }
+        },
+        {
+          "generated": { "line": 30, "column": 29 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 13, "column": 12 }
+        },
+        {
+          "generated": { "line": 31, "column": 0 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 13, "column": 72 }
+        },
+        {
+          "generated": { "line": 31, "column": 6 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 13, "column": 72 }
+        },
+        {
+          "generated": { "line": 31, "column": 13 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 13, "column": 79 }
+        },
+        {
+          "name": "onClick",
+          "generated": { "line": 31, "column": 15 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 13, "column": 81 }
+        },
+        {
+          "generated": { "line": 32, "column": 0 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 13, "column": 12 }
+        },
+        {
+          "generated": { "line": 32, "column": 6 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 12, "column": 21 }
+        },
+        {
+          "generated": { "line": 33, "column": 0 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 12, "column": 21 }
+        },
+        {
+          "generated": { "line": 33, "column": 3 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 12, "column": 11 }
+        },
+        {
+          "generated": { "line": 33, "column": 4 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 11, "column": 8 }
+        },
+        {
+          "generated": { "line": 33, "column": 5 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 10, "column": 6 }
+        },
+        {
+          "generated": { "line": 33, "column": 6 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 9, "column": 4 }
+        },
+        {
+          "generated": { "line": 33, "column": 7 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 8, "column": 2 }
+        },
+        {
+          "generated": { "line": 34, "column": 0 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 19, "column": 1 }
+        },
+        {
+          "generated": { "line": 34, "column": 1 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 6, "column": 0 }
+        },
+        {
+          "name": "NavBar",
+          "generated": { "line": 36, "column": 0 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 21, "column": 0 }
+        },
+        {
+          "generated": { "line": 36, "column": 6 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 21, "column": 6 }
+        },
+        {
+          "name": "propTypes",
+          "generated": { "line": 36, "column": 7 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 21, "column": 7 }
+        },
+        {
+          "generated": { "line": 36, "column": 16 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 21, "column": 0 }
+        },
+        {
+          "generated": { "line": 36, "column": 19 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 21, "column": 19 }
+        },
+        {
+          "name": "items",
+          "generated": { "line": 37, "column": 0 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 22, "column": 2 }
+        },
+        {
+          "name": "items",
+          "generated": { "line": 37, "column": 2 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 22, "column": 2 }
+        },
+        {
+          "generated": { "line": 37, "column": 7 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 22, "column": 7 }
+        },
+        {
+          "name": "PropTypes",
+          "generated": { "line": 37, "column": 9 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 22, "column": 9 }
+        },
+        {
+          "name": "array",
+          "generated": { "line": 37, "column": 28 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 22, "column": 19 }
+        },
+        {
+          "generated": { "line": 37, "column": 33 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 21, "column": 19 }
+        },
+        {
+          "name": "onClick",
+          "generated": { "line": 38, "column": 0 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 23, "column": 2 }
+        },
+        {
+          "name": "onClick",
+          "generated": { "line": 38, "column": 2 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 23, "column": 2 }
+        },
+        {
+          "generated": { "line": 38, "column": 9 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 23, "column": 9 }
+        },
+        {
+          "name": "PropTypes",
+          "generated": { "line": 38, "column": 11 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 23, "column": 11 }
+        },
+        {
+          "name": "func",
+          "generated": { "line": 38, "column": 30 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 23, "column": 21 }
+        },
+        {
+          "generated": { "line": 38, "column": 34 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 21, "column": 19 }
+        },
+        {
+          "name": "active",
+          "generated": { "line": 39, "column": 0 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 24, "column": 2 }
+        },
+        {
+          "name": "active",
+          "generated": { "line": 39, "column": 2 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 24, "column": 2 }
+        },
+        {
+          "generated": { "line": 39, "column": 8 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 24, "column": 8 }
+        },
+        {
+          "name": "PropTypes",
+          "generated": { "line": 39, "column": 10 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 24, "column": 10 }
+        },
+        {
+          "name": "string",
+          "generated": { "line": 39, "column": 29 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 24, "column": 20 }
+        },
+        {
+          "generated": { "line": 40, "column": 0 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 21, "column": 19 }
+        },
+        {
+          "generated": { "line": 40, "column": 1 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 21, "column": 0 }
+        },
+        {
+          "name": "NavBar",
+          "generated": { "line": 41, "column": 15 },
+          "source": "../src/component/NavBar.js",
+          "original": { "line": 27, "column": 15 }
+        }
+      ],
+      "sources": {
+        "../src/component/NavBar.js": "/* eslint-disable no-console */\nimport React from 'react';\nimport { Menu } from 'semantic-ui-react';\nimport PropTypes from 'prop-types';\n\nconst NavBar = ({ items, onClick, active }) => {\n  console.log(items);\n  return (\n    <div>\n      <Menu pointing>\n        <Menu.Menu position=\"right\">\n          {items.map((elem, index) => (\n            <Menu.Item key={index} name={elem} active={active === elem} onClick={onClick} />\n          ))}\n        </Menu.Menu>\n      </Menu>\n    </div>\n  );\n};\n\nNavBar.propTypes = {\n  items: PropTypes.array,\n  onClick: PropTypes.func,\n  active: PropTypes.string,\n};\n\nexport default NavBar;\n"
+      },
+      "lineCount": null
+    }
+  },
+  "error": null,
+  "hash": "13f46293386c9da456cb27db7a54da81",
+  "cacheData": { "env": {} }
+}
