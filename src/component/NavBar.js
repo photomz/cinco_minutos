@@ -3,40 +3,35 @@ import React from 'react';
 import { Menu, Icon } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 
-const NavBar = ({ items, onClick, active, icons, title }) => {
-  if (items.length !== icons.length) {
-    console.log(items, icons);
-    return <div>Unequal lengths of items and icons array passed into NavBar component.</div>;
-  }
+const NavBar = ({ content, onClick, active }) => {
+  const [title, ...navItems] = content;
   return (
-    <div>
-      <Menu pointing icon="labeled">
-        <Menu.Header
-          textAlign="center"
-          style={{ 'font-size': '3.5rem', 'letter-spacing': '0.5rem', 'padding-left': '10rem' }}
-          as="h1"
-        >
-          {title}
-        </Menu.Header>
-        <Menu.Menu position="right">
-          {items.map((elem, index) => (
-            <Menu.Item key={index} name={elem} active={active === elem} onClick={onClick}>
-              <Icon name={icons[index]} />
-              {elem.charAt(0).toUpperCase() + elem.slice(1) /* Capitalizes button*/}
-            </Menu.Item>
-          ))}
-        </Menu.Menu>
-      </Menu>
-    </div>
+    <Menu pointing>
+      <Menu.Header style={{ margin: '0 auto' }} as="h1">
+        <Icon name={title.icon} />
+        {title.name}
+      </Menu.Header>
+      <Menu.Menu position="right">
+        {navItems.map(elem => (
+          <Menu.Item
+            key={elem.name}
+            name={elem.name}
+            active={active === elem.name}
+            onClick={() => onClick(elem.name)}
+          >
+            <Icon name={elem.icon} />
+            {elem.name.charAt(0).toUpperCase() + elem.name.slice(1)}
+          </Menu.Item>
+        ))}
+      </Menu.Menu>
+    </Menu>
   );
 };
 
 NavBar.propTypes = {
-  items: PropTypes.array.isRequired,
-  icons: PropTypes.array.isRequired,
   onClick: PropTypes.func,
   active: PropTypes.string,
-  title: PropTypes.string.isRequired,
+  content: PropTypes.array.isRequired,
 };
 
 export default NavBar;
