@@ -1,52 +1,69 @@
 /* eslint-disable no-console */
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { Icon, Input, Button } from 'semantic-ui-react';
+import { Icon, Search } from 'semantic-ui-react';
+import _ from 'lodash';
+import faker from 'faker';
+
+const source = _.times(5, () => ({
+  title: faker.company.companyName(),
+  description: faker.company.catchPhrase(),
+  image: faker.internet.avatar(),
+  price: faker.finance.amount(0, 100, 2, '$'),
+}));
 
 // eslint-disable-next-line no-unused-vars
-let SearchBar = ({ buttons, ...props }) => {
-  let input = null;
-  let [inputVal, setInputVal] = useState('');
-
-  const onAccentClick = (e, accent) => {
-    setInputVal(inputVal + accent);
+const SearchBar = ({ onFilterResults, results, setResults, value, setValue, ...props }) => {
+  let [_isLoading, _setIsLoading] = useState(false);
+  const revertState = () => {
+    _setIsLoading(false);
+    setResults([]);
+    setValue('');
   };
-  const onChange = e => {
-    setInputVal(e.target.value);
+  const handleResultSelect = (e, { result }) => {
+    setValue(result.title);
+    handleResultSearch();
   };
-  useEffect(() => {
-    if (input) input.focus();
-  });
+  const handleResultSearch = () => {
+    console.log('Search button clicked');
+  };
+  const handleSearchChange = (e, { value }) => {
+    _setIsLoading(true);
+    setValue(value);
+    setTimeout(() => {
+      // adapt later
+      if (value.length < 1) return revertState();
+      const re = new RegExp(_.escapeRegExp(value), 'i'); // match not case sensitive
+      // adapt based upon json file structure
+      setResults(onFilterResults(re, source));
+      _setIsLoading(false);
+    }, 500);
+  };
   return (
-    <div>
-      <Input
-        circular
-        placeholder="Search"
-        onChange={onChange}
-        size="huge"
-        ref={node => {
-          input = node;
-        }}
-      >
-        <input value={inputVal} />
-        <Icon size="large" name="search" inverted circular link />
-      </Input>
-      <br />
-      <br />
-      <div>
-        {buttons.map(elem => (
-          <Button circular key={elem} size="tiny" onClick={e => onAccentClick(e, elem)}>
-            {elem}
-          </Button>
-        ))}
-      </div>
-    </div>
+    <Search
+      aligned="right"
+      size="massive"
+      loading={_isLoading}
+      onResultSelect={handleResultSelect}
+      onSearchChange={_.debounce(handleSearchChange, 500, {
+        leading: true,
+      })}
+      results={results}
+      value={value}
+      icon={<Icon inverted circular link name="search" onClick={handleResultSearch} />}
+      {...props}
+    />
   );
 };
 
 SearchBar.propTypes = {
   children: PropTypes.node,
   buttons: PropTypes.array,
+  onFilterResults: PropTypes.func,
+  results: PropTypes.array,
+  setResults: PropTypes.func,
+  value: PropTypes.string,
+  setValue: PropTypes.func,
 };
 
 export default SearchBar;
