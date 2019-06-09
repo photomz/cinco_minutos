@@ -1,0 +1,147 @@
+{
+  "verb": "adoquinar",
+  "definition": "to cobble",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["adoquino", "adoquinas", "adoquina", "adoquinamos", "adoquináis", "adoquinan"],
+      "Preterite": [
+        "adoquiné",
+        "adoquinaste",
+        "adoquinó",
+        "adoquinamos",
+        "adoquinasteis",
+        "adoquinaron"
+      ],
+      "Imperfect": [
+        "adoquinaba",
+        "adoquinabas",
+        "adoquinaba",
+        "adoquinábamos",
+        "adoquinabais",
+        "adoquinaban"
+      ],
+      "Conditional": [
+        "adoquinaría",
+        "adoquinarías",
+        "adoquinaría",
+        "adoquinaríamos",
+        "adoquinaríais",
+        "adoquinarían"
+      ],
+      "Future": [
+        "adoquinaré",
+        "adoquinarás",
+        "adoquinará",
+        "adoquinaremos",
+        "adoquinaréis",
+        "adoquinarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["adoquine", "adoquines", "adoquine", "adoquinemos", "adoquinéis", "adoquinen"],
+      "Imperfect (-ra)": [
+        "adoquinara",
+        "adoquinaras",
+        "adoquinara",
+        "adoquináramos",
+        "adoquinarais",
+        "adoquinaran"
+      ],
+      "Imperfect (-se)": [
+        "adoquinase",
+        "adoquinases",
+        "adoquinase",
+        "adoquinásemos",
+        "adoquinaseis",
+        "adoquinasen"
+      ],
+      "Future": [
+        "adoquinare",
+        "adoquinares",
+        "adoquinare",
+        "adoquináremos",
+        "adoquinareis",
+        "adoquinaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["adoquina", "adoquine", "adoquinemos", "adoquinad", "adoquinen"],
+      "Negative": ["no adoquines", "no adoquine", "no adoquinemos", "no adoquinéis", "no adoquinen"]
+    },
+    "Present Participle": "adoquinando",
+    "Past Participle": "adoquinado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/adoquinar",
+  "wordreference": {
+    "Indicative": {
+      "Present": ["adoquino", "adoquinas", "adoquina", "adoquinamos", "adoquináis", "adoquinan"],
+      "Preterite": [
+        "adoquiné",
+        "adoquinaste",
+        "adoquinó",
+        "adoquinamos",
+        "adoquinasteis",
+        "adoquinaron"
+      ],
+      "Imperfect": [
+        "adoquinaba",
+        "adoquinabas",
+        "adoquinaba",
+        "adoquinábamos",
+        "adoquinabais",
+        "adoquinaban"
+      ],
+      "Conditional": [
+        "adoquinaría",
+        "adoquinarías",
+        "adoquinaría",
+        "adoquinaríamos",
+        "adoquinaríais",
+        "adoquinarían"
+      ],
+      "Future": [
+        "adoquinaré",
+        "adoquinarás",
+        "adoquinará",
+        "adoquinaremos",
+        "adoquinaréis",
+        "adoquinarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["adoquine", "adoquines", "adoquine", "adoquinemos", "adoquinéis", "adoquinen"],
+      "Imperfect (-ra)": [
+        "adoquinara",
+        "adoquinaras",
+        "adoquinara",
+        "adoquináramos",
+        "adoquinarais",
+        "adoquinaran"
+      ],
+      "Imperfect (-se)": [
+        "adoquinase",
+        "adoquinases",
+        "adoquinase",
+        "adoquinásemos",
+        "adoquinaseis",
+        "adoquinasen"
+      ],
+      "Future": [
+        "adoquinare",
+        "adoquinares",
+        "adoquinare",
+        "adoquináremos",
+        "adoquinareis",
+        "adoquinaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["adoquina", "adoquine", "adoquinemos", "adoquinad", "adoquinen"],
+      "Negative": ["no adoquines", "no adoquine", "no adoquinemos", "no adoquinéis", "no adoquinen"]
+    },
+    "Present Participle": "adoquinando",
+    "Past Participle": "adoquinado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=adoquinar"
+}

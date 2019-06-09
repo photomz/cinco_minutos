@@ -1,0 +1,98 @@
+{
+  "verb": "agarrar",
+  "definition": "to grab",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me agarro",
+        "te agarras",
+        "se agarra",
+        "nos agarramos",
+        "os agarráis",
+        "se agarran"
+      ],
+      "Preterite": [
+        "me agarré",
+        "te agarraste",
+        "se agarró",
+        "nos agarramos",
+        "os agarrasteis",
+        "se agarraron"
+      ],
+      "Imperfect": [
+        "me agarraba",
+        "te agarrabas",
+        "se agarraba",
+        "nos agarrábamos",
+        "os agarrabais",
+        "se agarraban"
+      ],
+      "Conditional": [
+        "me agarraría",
+        "te agarrarías",
+        "se agarraría",
+        "nos agarraríamos",
+        "os agarraríais",
+        "se agarrarían"
+      ],
+      "Future": [
+        "me agarraré",
+        "te agarrarás",
+        "se agarrará",
+        "nos agarraremos",
+        "os agarraréis",
+        "se agarrarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me agarre",
+        "te agarres",
+        "se agarre",
+        "nos agarremos",
+        "os agarréis",
+        "se agarren"
+      ],
+      "Imperfect (-ra)": [
+        "me agarrara",
+        "te agarraras",
+        "se agarrara",
+        "nos agarráramos",
+        "os agarrarais",
+        "se agarraran"
+      ],
+      "Imperfect (-se)": [
+        "me agarrase",
+        "te agarrases",
+        "se agarrase",
+        "nos agarrásemos",
+        "os agarraseis",
+        "se agarrasen"
+      ],
+      "Future": [
+        "me agarrare",
+        "te agarrares",
+        "se agarrare",
+        "nos agarráremos",
+        "os agarrareis",
+        "se agarraren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["agárrate", "agárrese", "agarrémonos", "agarraos", "agárrense"],
+      "Negative": [
+        "no te agarres",
+        "no se agarre",
+        "no nos agarremos",
+        "no os agarréis",
+        "no se agarren"
+      ]
+    },
+    "Present Participle": "agarrando",
+    "Past Participle": "agarrado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acarrarse",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acarrarse"
+}

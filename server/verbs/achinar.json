@@ -1,0 +1,50 @@
+{
+  "verb": "achinar",
+  "definition": "to make Chinese-like",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["achino", "achinas", "achina", "achinamos", "achináis", "achinan"],
+      "Preterite": ["achiné", "achinaste", "achinó", "achinamos", "achinasteis", "achinaron"],
+      "Imperfect": ["achinaba", "achinabas", "achinaba", "achinábamos", "achinabais", "achinaban"],
+      "Conditional": [
+        "achinaría",
+        "achinarías",
+        "achinaría",
+        "achinaríamos",
+        "achinaríais",
+        "achinarían"
+      ],
+      "Future": ["achinaré", "achinarás", "achinará", "achinaremos", "achinaréis", "achinarán"]
+    },
+    "Subjunctive": {
+      "Present": ["achine", "achines", "achine", "achinemos", "achinéis", "achinen"],
+      "Imperfect (-ra)": [
+        "achinara",
+        "achinaras",
+        "achinara",
+        "achináramos",
+        "achinarais",
+        "achinaran"
+      ],
+      "Imperfect (-se)": [
+        "achinase",
+        "achinases",
+        "achinase",
+        "achinásemos",
+        "achinaseis",
+        "achinasen"
+      ],
+      "Future": ["achinare", "achinares", "achinare", "achináremos", "achinareis", "achinaren"]
+    },
+    "Imperative": {
+      "Affirmative": ["achina", "achine", "achinemos", "achinad", "achinen"],
+      "Negative": ["no achines", "no achine", "no achinemos", "no achinéis", "no achinen"]
+    },
+    "Present Participle": "achinando",
+    "Past Participle": "achinado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/achinar",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=achinar"
+}

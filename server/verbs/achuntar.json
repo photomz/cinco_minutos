@@ -1,0 +1,133 @@
+{
+  "verb": "achuntar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["achunto", "achuntas", "achunta", "achuntamos", "achuntáis", "achuntan"],
+      "Preterite": ["achunté", "achuntaste", "achuntó", "achuntamos", "achuntasteis", "achuntaron"],
+      "Imperfect": [
+        "achuntaba",
+        "achuntabas",
+        "achuntaba",
+        "achuntábamos",
+        "achuntabais",
+        "achuntaban"
+      ],
+      "Conditional": [
+        "achuntaría",
+        "achuntarías",
+        "achuntaría",
+        "achuntaríamos",
+        "achuntaríais",
+        "achuntarían"
+      ],
+      "Future": [
+        "achuntaré",
+        "achuntarás",
+        "achuntará",
+        "achuntaremos",
+        "achuntaréis",
+        "achuntarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["achunte", "achuntes", "achunte", "achuntemos", "achuntéis", "achunten"],
+      "Imperfect (-ra)": [
+        "achuntara",
+        "achuntaras",
+        "achuntara",
+        "achuntáramos",
+        "achuntarais",
+        "achuntaran"
+      ],
+      "Imperfect (-se)": [
+        "achuntase",
+        "achuntases",
+        "achuntase",
+        "achuntásemos",
+        "achuntaseis",
+        "achuntasen"
+      ],
+      "Future": [
+        "achuntare",
+        "achuntares",
+        "achuntare",
+        "achuntáremos",
+        "achuntareis",
+        "achuntaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["achunta", "achunte", "achuntemos", "achuntad", "achunten"],
+      "Negative": ["no achuntes", "no achunte", "no achuntemos", "no achuntéis", "no achunten"]
+    },
+    "Present Participle": "achuntando",
+    "Past Participle": "achuntado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/achuntar",
+  "wordreference": {
+    "Indicative": {
+      "Present": ["achunto", "achuntas", "achunta", "achuntamos", "achuntáis", "achuntan"],
+      "Preterite": ["achunté", "achuntaste", "achuntó", "achuntamos", "achuntasteis", "achuntaron"],
+      "Imperfect": [
+        "achuntaba",
+        "achuntabas",
+        "achuntaba",
+        "achuntábamos",
+        "achuntabais",
+        "achuntaban"
+      ],
+      "Conditional": [
+        "achuntaría",
+        "achuntarías",
+        "achuntaría",
+        "achuntaríamos",
+        "achuntaríais",
+        "achuntarían"
+      ],
+      "Future": [
+        "achuntaré",
+        "achuntarás",
+        "achuntará",
+        "achuntaremos",
+        "achuntaréis",
+        "achuntarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["achunte", "achuntes", "achunte", "achuntemos", "achuntéis", "achunten"],
+      "Imperfect (-ra)": [
+        "achuntara",
+        "achuntaras",
+        "achuntara",
+        "achuntáramos",
+        "achuntarais",
+        "achuntaran"
+      ],
+      "Imperfect (-se)": [
+        "achuntase",
+        "achuntases",
+        "achuntase",
+        "achuntásemos",
+        "achuntaseis",
+        "achuntasen"
+      ],
+      "Future": [
+        "achuntare",
+        "achuntares",
+        "achuntare",
+        "achuntáremos",
+        "achuntareis",
+        "achuntaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["achunta", "achunte", "achuntemos", "achuntad", "achunten"],
+      "Negative": ["no achuntes", "no achunte", "no achuntemos", "no achuntéis", "no achunten"]
+    },
+    "Present Participle": "achuntando",
+    "Past Participle": "achuntado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=achuntar"
+}

@@ -1,0 +1,187 @@
+{
+  "verb": "acoplar",
+  "definition": "to couple",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me acoplo",
+        "te acoplas",
+        "se acopla",
+        "nos acoplamos",
+        "os acopláis",
+        "se acoplan"
+      ],
+      "Preterite": [
+        "me acoplé",
+        "te acoplaste",
+        "se acopló",
+        "nos acoplamos",
+        "os acoplasteis",
+        "se acoplaron"
+      ],
+      "Imperfect": [
+        "me acoplaba",
+        "te acoplabas",
+        "se acoplaba",
+        "nos acoplábamos",
+        "os acoplabais",
+        "se acoplaban"
+      ],
+      "Conditional": [
+        "me acoplaría",
+        "te acoplarías",
+        "se acoplaría",
+        "nos acoplaríamos",
+        "os acoplaríais",
+        "se acoplarían"
+      ],
+      "Future": [
+        "me acoplaré",
+        "te acoplarás",
+        "se acoplará",
+        "nos acoplaremos",
+        "os acoplaréis",
+        "se acoplarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me acople",
+        "te acoples",
+        "se acople",
+        "nos acoplemos",
+        "os acopléis",
+        "se acoplen"
+      ],
+      "Imperfect (-ra)": [
+        "me acoplara",
+        "te acoplaras",
+        "se acoplara",
+        "nos acopláramos",
+        "os acoplarais",
+        "se acoplaran"
+      ],
+      "Imperfect (-se)": [
+        "me acoplase",
+        "te acoplases",
+        "se acoplase",
+        "nos acoplásemos",
+        "os acoplaseis",
+        "se acoplasen"
+      ],
+      "Future": [
+        "me acoplare",
+        "te acoplares",
+        "se acoplare",
+        "nos acopláremos",
+        "os acoplareis",
+        "se acoplaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acóplate", "acóplese", "acoplémonos", "acoplaos", "acóplense"],
+      "Negative": [
+        "no te acoples",
+        "no se acople",
+        "no nos acoplemos",
+        "no os acopléis",
+        "no se acoplen"
+      ]
+    },
+    "Present Participle": "acoplando",
+    "Past Participle": "acoplado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acoplarse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me acoplo",
+        "te acoplas",
+        "se acopla",
+        "nos acoplamos",
+        "os acopláis",
+        "se acoplan"
+      ],
+      "Preterite": [
+        "me acoplé",
+        "te acoplaste",
+        "se acopló",
+        "nos acoplamos",
+        "os acoplasteis",
+        "se acoplaron"
+      ],
+      "Imperfect": [
+        "me acoplaba",
+        "te acoplabas",
+        "se acoplaba",
+        "nos acoplábamos",
+        "os acoplabais",
+        "se acoplaban"
+      ],
+      "Conditional": [
+        "me acoplaría",
+        "te acoplarías",
+        "se acoplaría",
+        "nos acoplaríamos",
+        "os acoplaríais",
+        "se acoplarían"
+      ],
+      "Future": [
+        "me acoplaré",
+        "te acoplarás",
+        "se acoplará",
+        "nos acoplaremos",
+        "os acoplaréis",
+        "se acoplarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me acople",
+        "te acoples",
+        "se acople",
+        "nos acoplemos",
+        "os acopléis",
+        "se acoplen"
+      ],
+      "Imperfect (-ra)": [
+        "me acoplara",
+        "te acoplaras",
+        "se acoplara",
+        "nos acopláramos",
+        "os acoplarais u os acoplaseis",
+        "se acoplaran"
+      ],
+      "Imperfect (-se)": [
+        "me acoplase",
+        "te acoplases",
+        "se acoplase",
+        "nos acoplásemos",
+        "os acoplaseis",
+        "se acoplasen"
+      ],
+      "Future": [
+        "me acoplare",
+        "te acoplares",
+        "se acoplare",
+        "nos acopláremos",
+        "os acoplareis",
+        "se acoplaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acóplate", "acóplese", "acoplémonos", "acoplaos", "acóplense"],
+      "Negative": [
+        "no te acoples",
+        "no se acople",
+        "no nos acoplemos",
+        "no os acopléis",
+        "no se acoplen"
+      ]
+    },
+    "Present Participle": "acoplando",
+    "Past Participle": "acoplado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acoplarse"
+}

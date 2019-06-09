@@ -1,0 +1,36 @@
+{
+  "verb": "ahumar",
+  "definition": "to smoke",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["ahúmo", "ahúmas", "ahúma", "ahumamos", "ahumáis", "ahúman"],
+      "Preterite": ["ahumé", "ahumaste", "ahumó", "ahumamos", "ahumasteis", "ahumaron"],
+      "Imperfect": ["ahumaba", "ahumabas", "ahumaba", "ahumábamos", "ahumabais", "ahumaban"],
+      "Conditional": [
+        "ahumaría",
+        "ahumarías",
+        "ahumaría",
+        "ahumaríamos",
+        "ahumaríais",
+        "ahumarían"
+      ],
+      "Future": ["ahumaré", "ahumarás", "ahumará", "ahumaremos", "ahumaréis", "ahumarán"]
+    },
+    "Subjunctive": {
+      "Present": ["ahúme", "ahúmes", "ahúme", "ahumemos", "ahuméis", "ahúmen"],
+      "Imperfect (-ra)": ["ahumara", "ahumaras", "ahumara", "ahumáramos", "ahumarais", "ahumaran"],
+      "Imperfect (-se)": ["ahumase", "ahumases", "ahumase", "ahumásemos", "ahumaseis", "ahumasen"],
+      "Future": ["ahumare", "ahumares", "ahumare", "ahumáremos", "ahumareis", "ahumaren"]
+    },
+    "Imperative": {
+      "Affirmative": ["ahúma", "ahúme", "ahumemos", "ahumad", "ahúmen"],
+      "Negative": ["no ahúmes", "no ahúme", "no ahumemos", "no ahuméis", "no ahúmen"]
+    },
+    "Present Participle": "ahumando",
+    "Past Participle": "ahumado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/afumar",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=afumar"
+}

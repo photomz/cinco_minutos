@@ -1,0 +1,36 @@
+{
+  "verb": "animar",
+  "definition": "to encourage",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["animo", "animas", "anima", "animamos", "animáis", "animan"],
+      "Preterite": ["animé", "animaste", "animó", "animamos", "animasteis", "animaron"],
+      "Imperfect": ["animaba", "animabas", "animaba", "animábamos", "animabais", "animaban"],
+      "Conditional": [
+        "animaría",
+        "animarías",
+        "animaría",
+        "animaríamos",
+        "animaríais",
+        "animarían"
+      ],
+      "Future": ["animaré", "animarás", "animará", "animaremos", "animaréis", "animarán"]
+    },
+    "Subjunctive": {
+      "Present": ["anime", "animes", "anime", "animemos", "animéis", "animen"],
+      "Imperfect (-ra)": ["animara", "animaras", "animara", "animáramos", "animarais", "animaran"],
+      "Imperfect (-se)": ["animase", "animases", "animase", "animásemos", "animaseis", "animasen"],
+      "Future": ["animare", "animares", "animare", "animáremos", "animareis", "animaren"]
+    },
+    "Imperative": {
+      "Affirmative": ["anima", "anime", "animemos", "animad", "animen"],
+      "Negative": ["no animes", "no anime", "no animemos", "no animéis", "no animen"]
+    },
+    "Present Participle": "animando",
+    "Past Participle": "animado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/afimar",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=afimar"
+}

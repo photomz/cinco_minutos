@@ -1,0 +1,98 @@
+{
+  "verb": "adueñarse",
+  "definition": "to take over , take control of , take possession of , seize, own",
+  "reflexive": true,
+  "spanishdict": null,
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/adueñarse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me adueño",
+        "te adueñas",
+        "se adueña",
+        "nos adueñamos",
+        "os adueñáis",
+        "se adueñan"
+      ],
+      "Preterite": [
+        "me adueñé",
+        "te adueñaste",
+        "se adueñó",
+        "nos adueñamos",
+        "os adueñasteis",
+        "se adueñaron"
+      ],
+      "Imperfect": [
+        "me adueñaba",
+        "te adueñabas",
+        "se adueñaba",
+        "nos adueñábamos",
+        "os adueñabais",
+        "se adueñaban"
+      ],
+      "Conditional": [
+        "me adueñaría",
+        "te adueñarías",
+        "se adueñaría",
+        "nos adueñaríamos",
+        "os adueñaríais",
+        "se adueñarían"
+      ],
+      "Future": [
+        "me adueñaré",
+        "te adueñarás",
+        "se adueñará",
+        "nos adueñaremos",
+        "os adueñaréis",
+        "se adueñarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me adueñe",
+        "te adueñes",
+        "se adueñe",
+        "nos adueñemos",
+        "os adueñéis",
+        "se adueñen"
+      ],
+      "Imperfect (-ra)": [
+        "me adueñara",
+        "te adueñaras",
+        "se adueñara",
+        "nos adueñáramos",
+        "os adueñarais u os adueñaseis",
+        "se adueñaran"
+      ],
+      "Imperfect (-se)": [
+        "me adueñase",
+        "te adueñases",
+        "se adueñase",
+        "nos adueñásemos",
+        "os adueñaseis",
+        "se adueñasen"
+      ],
+      "Future": [
+        "me adueñare",
+        "te adueñares",
+        "se adueñare",
+        "nos adueñáremos",
+        "os adueñareis",
+        "se adueñaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["aduéñate", "aduéñese", "adueñémonos", "adueñaos", "aduéñense"],
+      "Negative": [
+        "no te adueñes",
+        "no se adueñe",
+        "no nos adueñemos",
+        "no os adueñéis",
+        "no se adueñen"
+      ]
+    },
+    "Present Participle": "adueñando",
+    "Past Participle": "adueñado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=adueñarse"
+}

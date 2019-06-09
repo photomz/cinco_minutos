@@ -1,0 +1,98 @@
+{
+  "verb": "adeudar",
+  "definition": "to debt , debit, charge",
+  "reflexive": false,
+  "spanishdict": null,
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/adeudarse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me adeudo",
+        "te adeudas",
+        "se adeuda",
+        "nos adeudamos",
+        "os adeudáis",
+        "se adeudan"
+      ],
+      "Preterite": [
+        "me adeudé",
+        "te adeudaste",
+        "se adeudó",
+        "nos adeudamos",
+        "os adeudasteis",
+        "se adeudaron"
+      ],
+      "Imperfect": [
+        "me adeudaba",
+        "te adeudabas",
+        "se adeudaba",
+        "nos adeudábamos",
+        "os adeudabais",
+        "se adeudaban"
+      ],
+      "Conditional": [
+        "me adeudaría",
+        "te adeudarías",
+        "se adeudaría",
+        "nos adeudaríamos",
+        "os adeudaríais",
+        "se adeudarían"
+      ],
+      "Future": [
+        "me adeudaré",
+        "te adeudarás",
+        "se adeudará",
+        "nos adeudaremos",
+        "os adeudaréis",
+        "se adeudarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me adeude",
+        "te adeudes",
+        "se adeude",
+        "nos adeudemos",
+        "os adeudéis",
+        "se adeuden"
+      ],
+      "Imperfect (-ra)": [
+        "me adeudara",
+        "te adeudaras",
+        "se adeudara",
+        "nos adeudáramos",
+        "os adeudarais u os adeudaseis",
+        "se adeudaran"
+      ],
+      "Imperfect (-se)": [
+        "me adeudase",
+        "te adeudases",
+        "se adeudase",
+        "nos adeudásemos",
+        "os adeudaseis",
+        "se adeudasen"
+      ],
+      "Future": [
+        "me adeudare",
+        "te adeudares",
+        "se adeudare",
+        "nos adeudáremos",
+        "os adeudareis",
+        "se adeudaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["adéudate", "adéudese", "adeudémonos", "adeudaos", "adéudense"],
+      "Negative": [
+        "no te adeudes",
+        "no se adeude",
+        "no nos adeudemos",
+        "no os adeudéis",
+        "no se adeuden"
+      ]
+    },
+    "Present Participle": "adeudando",
+    "Past Participle": "adeudado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=adeudarse"
+}

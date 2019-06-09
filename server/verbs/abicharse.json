@@ -1,0 +1,98 @@
+{
+  "verb": "abicharse",
+  "definition": null,
+  "reflexive": true,
+  "spanishdict": null,
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/abicharse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me abicho",
+        "te abichas",
+        "se abicha",
+        "nos abichamos",
+        "os abicháis",
+        "se abichan"
+      ],
+      "Preterite": [
+        "me abiché",
+        "te abichaste",
+        "se abichó",
+        "nos abichamos",
+        "os abichasteis",
+        "se abicharon"
+      ],
+      "Imperfect": [
+        "me abichaba",
+        "te abichabas",
+        "se abichaba",
+        "nos abichábamos",
+        "os abichabais",
+        "se abichaban"
+      ],
+      "Conditional": [
+        "me abicharía",
+        "te abicharías",
+        "se abicharía",
+        "nos abicharíamos",
+        "os abicharíais",
+        "se abicharían"
+      ],
+      "Future": [
+        "me abicharé",
+        "te abicharás",
+        "se abichará",
+        "nos abicharemos",
+        "os abicharéis",
+        "se abicharán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me abiche",
+        "te abiches",
+        "se abiche",
+        "nos abichemos",
+        "os abichéis",
+        "se abichen"
+      ],
+      "Imperfect (-ra)": [
+        "me abichara",
+        "te abicharas",
+        "se abichara",
+        "nos abicháramos",
+        "os abicharais u os abichaseis",
+        "se abicharan"
+      ],
+      "Imperfect (-se)": [
+        "me abichase",
+        "te abichases",
+        "se abichase",
+        "nos abichásemos",
+        "os abichaseis",
+        "se abichasen"
+      ],
+      "Future": [
+        "me abichare",
+        "te abichares",
+        "se abichare",
+        "nos abicháremos",
+        "os abichareis",
+        "se abicharen"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["abíchate", "abíchese", "abichémonos", "abichaos", "abíchense"],
+      "Negative": [
+        "no te abiches",
+        "no se abiche",
+        "no nos abichemos",
+        "no os abichéis",
+        "no se abichen"
+      ]
+    },
+    "Present Participle": "abichando",
+    "Past Participle": "abichado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=abicharse"
+}

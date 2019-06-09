@@ -1,0 +1,63 @@
+{
+  "verb": "adosar",
+  "definition": "to place against",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["adoso", "adosas", "adosa", "adosamos", "adosáis", "adosan"],
+      "Preterite": ["adosé", "adosaste", "adosó", "adosamos", "adosasteis", "adosaron"],
+      "Imperfect": ["adosaba", "adosabas", "adosaba", "adosábamos", "adosabais", "adosaban"],
+      "Conditional": [
+        "adosaría",
+        "adosarías",
+        "adosaría",
+        "adosaríamos",
+        "adosaríais",
+        "adosarían"
+      ],
+      "Future": ["adosaré", "adosarás", "adosará", "adosaremos", "adosaréis", "adosarán"]
+    },
+    "Subjunctive": {
+      "Present": ["adose", "adoses", "adose", "adosemos", "adoséis", "adosen"],
+      "Imperfect (-ra)": ["adosara", "adosaras", "adosara", "adosáramos", "adosarais", "adosaran"],
+      "Imperfect (-se)": ["adosase", "adosases", "adosase", "adosásemos", "adosaseis", "adosasen"],
+      "Future": ["adosare", "adosares", "adosare", "adosáremos", "adosareis", "adosaren"]
+    },
+    "Imperative": {
+      "Affirmative": ["adosa", "adose", "adosemos", "adosad", "adosen"],
+      "Negative": ["no adoses", "no adose", "no adosemos", "no adoséis", "no adosen"]
+    },
+    "Present Participle": "adosando",
+    "Past Participle": "adosado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/adosar",
+  "wordreference": {
+    "Indicative": {
+      "Present": ["adoso", "adosas", "adosa", "adosamos", "adosáis", "adosan"],
+      "Preterite": ["adosé", "adosaste", "adosó", "adosamos", "adosasteis", "adosaron"],
+      "Imperfect": ["adosaba", "adosabas", "adosaba", "adosábamos", "adosabais", "adosaban"],
+      "Conditional": [
+        "adosaría",
+        "adosarías",
+        "adosaría",
+        "adosaríamos",
+        "adosaríais",
+        "adosarían"
+      ],
+      "Future": ["adosaré", "adosarás", "adosará", "adosaremos", "adosaréis", "adosarán"]
+    },
+    "Subjunctive": {
+      "Present": ["adose", "adoses", "adose", "adosemos", "adoséis", "adosen"],
+      "Imperfect (-ra)": ["adosara", "adosaras", "adosara", "adosáramos", "adosarais", "adosaran"],
+      "Imperfect (-se)": ["adosase", "adosases", "adosase", "adosásemos", "adosaseis", "adosasen"],
+      "Future": ["adosare", "adosares", "adosare", "adosáremos", "adosareis", "adosaren"]
+    },
+    "Imperative": {
+      "Affirmative": ["adosa", "adose", "adosemos", "adosad", "adosen"],
+      "Negative": ["no adoses", "no adose", "no adosemos", "no adoséis", "no adosen"]
+    },
+    "Present Participle": "adosando",
+    "Past Participle": "adosado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=adosar"
+}

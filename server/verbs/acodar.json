@@ -1,0 +1,159 @@
+{
+  "verb": "acodar",
+  "definition": "to lean on",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["me acodo", "te acodas", "se acoda", "nos acodamos", "os acodáis", "se acodan"],
+      "Preterite": [
+        "me acodé",
+        "te acodaste",
+        "se acodó",
+        "nos acodamos",
+        "os acodasteis",
+        "se acodaron"
+      ],
+      "Imperfect": [
+        "me acodaba",
+        "te acodabas",
+        "se acodaba",
+        "nos acodábamos",
+        "os acodabais",
+        "se acodaban"
+      ],
+      "Conditional": [
+        "me acodaría",
+        "te acodarías",
+        "se acodaría",
+        "nos acodaríamos",
+        "os acodaríais",
+        "se acodarían"
+      ],
+      "Future": [
+        "me acodaré",
+        "te acodarás",
+        "se acodará",
+        "nos acodaremos",
+        "os acodaréis",
+        "se acodarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["me acode", "te acodes", "se acode", "nos acodemos", "os acodéis", "se acoden"],
+      "Imperfect (-ra)": [
+        "me acodara",
+        "te acodaras",
+        "se acodara",
+        "nos acodáramos",
+        "os acodarais",
+        "se acodaran"
+      ],
+      "Imperfect (-se)": [
+        "me acodase",
+        "te acodases",
+        "se acodase",
+        "nos acodásemos",
+        "os acodaseis",
+        "se acodasen"
+      ],
+      "Future": [
+        "me acodare",
+        "te acodares",
+        "se acodare",
+        "nos acodáremos",
+        "os acodareis",
+        "se acodaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acódate", "acódese", "acodémonos", "acodaos", "acódense"],
+      "Negative": [
+        "no te acodes",
+        "no se acode",
+        "no nos acodemos",
+        "no os acodéis",
+        "no se acoden"
+      ]
+    },
+    "Present Participle": "acodando",
+    "Past Participle": "acodado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acodarse",
+  "wordreference": {
+    "Indicative": {
+      "Present": ["me acodo", "te acodas", "se acoda", "nos acodamos", "os acodáis", "se acodan"],
+      "Preterite": [
+        "me acodé",
+        "te acodaste",
+        "se acodó",
+        "nos acodamos",
+        "os acodasteis",
+        "se acodaron"
+      ],
+      "Imperfect": [
+        "me acodaba",
+        "te acodabas",
+        "se acodaba",
+        "nos acodábamos",
+        "os acodabais",
+        "se acodaban"
+      ],
+      "Conditional": [
+        "me acodaría",
+        "te acodarías",
+        "se acodaría",
+        "nos acodaríamos",
+        "os acodaríais",
+        "se acodarían"
+      ],
+      "Future": [
+        "me acodaré",
+        "te acodarás",
+        "se acodará",
+        "nos acodaremos",
+        "os acodaréis",
+        "se acodarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["me acode", "te acodes", "se acode", "nos acodemos", "os acodéis", "se acoden"],
+      "Imperfect (-ra)": [
+        "me acodara",
+        "te acodaras",
+        "se acodara",
+        "nos acodáramos",
+        "os acodarais u os acodaseis",
+        "se acodaran"
+      ],
+      "Imperfect (-se)": [
+        "me acodase",
+        "te acodases",
+        "se acodase",
+        "nos acodásemos",
+        "os acodaseis",
+        "se acodasen"
+      ],
+      "Future": [
+        "me acodare",
+        "te acodares",
+        "se acodare",
+        "nos acodáremos",
+        "os acodareis",
+        "se acodaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acódate", "acódese", "acodémonos", "acodaos", "acódense"],
+      "Negative": [
+        "no te acodes",
+        "no se acode",
+        "no nos acodemos",
+        "no os acodéis",
+        "no se acoden"
+      ]
+    },
+    "Present Participle": "acodando",
+    "Past Participle": "acodado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acodarse"
+}

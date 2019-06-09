@@ -1,0 +1,147 @@
+{
+  "verb": "acordonar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["acordono", "acordonas", "acordona", "acordonamos", "acordonáis", "acordonan"],
+      "Preterite": [
+        "acordoné",
+        "acordonaste",
+        "acordonó",
+        "acordonamos",
+        "acordonasteis",
+        "acordonaron"
+      ],
+      "Imperfect": [
+        "acordonaba",
+        "acordonabas",
+        "acordonaba",
+        "acordonábamos",
+        "acordonabais",
+        "acordonaban"
+      ],
+      "Conditional": [
+        "acordonaría",
+        "acordonarías",
+        "acordonaría",
+        "acordonaríamos",
+        "acordonaríais",
+        "acordonarían"
+      ],
+      "Future": [
+        "acordonaré",
+        "acordonarás",
+        "acordonará",
+        "acordonaremos",
+        "acordonaréis",
+        "acordonarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["acordone", "acordones", "acordone", "acordonemos", "acordonéis", "acordonen"],
+      "Imperfect (-ra)": [
+        "acordonara",
+        "acordonaras",
+        "acordonara",
+        "acordonáramos",
+        "acordonarais",
+        "acordonaran"
+      ],
+      "Imperfect (-se)": [
+        "acordonase",
+        "acordonases",
+        "acordonase",
+        "acordonásemos",
+        "acordonaseis",
+        "acordonasen"
+      ],
+      "Future": [
+        "acordonare",
+        "acordonares",
+        "acordonare",
+        "acordonáremos",
+        "acordonareis",
+        "acordonaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acordona", "acordone", "acordonemos", "acordonad", "acordonen"],
+      "Negative": ["no acordones", "no acordone", "no acordonemos", "no acordonéis", "no acordonen"]
+    },
+    "Present Participle": "acordonando",
+    "Past Participle": "acordonado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acordonar",
+  "wordreference": {
+    "Indicative": {
+      "Present": ["acordono", "acordonas", "acordona", "acordonamos", "acordonáis", "acordonan"],
+      "Preterite": [
+        "acordoné",
+        "acordonaste",
+        "acordonó",
+        "acordonamos",
+        "acordonasteis",
+        "acordonaron"
+      ],
+      "Imperfect": [
+        "acordonaba",
+        "acordonabas",
+        "acordonaba",
+        "acordonábamos",
+        "acordonabais",
+        "acordonaban"
+      ],
+      "Conditional": [
+        "acordonaría",
+        "acordonarías",
+        "acordonaría",
+        "acordonaríamos",
+        "acordonaríais",
+        "acordonarían"
+      ],
+      "Future": [
+        "acordonaré",
+        "acordonarás",
+        "acordonará",
+        "acordonaremos",
+        "acordonaréis",
+        "acordonarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["acordone", "acordones", "acordone", "acordonemos", "acordonéis", "acordonen"],
+      "Imperfect (-ra)": [
+        "acordonara",
+        "acordonaras",
+        "acordonara",
+        "acordonáramos",
+        "acordonarais",
+        "acordonaran"
+      ],
+      "Imperfect (-se)": [
+        "acordonase",
+        "acordonases",
+        "acordonase",
+        "acordonásemos",
+        "acordonaseis",
+        "acordonasen"
+      ],
+      "Future": [
+        "acordonare",
+        "acordonares",
+        "acordonare",
+        "acordonáremos",
+        "acordonareis",
+        "acordonaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acordona", "acordone", "acordonemos", "acordonad", "acordonen"],
+      "Negative": ["no acordones", "no acordone", "no acordonemos", "no acordonéis", "no acordonen"]
+    },
+    "Present Participle": "acordonando",
+    "Past Participle": "acordonado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acordonar"
+}

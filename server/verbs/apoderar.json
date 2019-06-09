@@ -1,0 +1,98 @@
+{
+  "verb": "apoderar",
+  "definition": "to authorize",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me apodero",
+        "te apoderas",
+        "se apodera",
+        "nos apoderamos",
+        "os apoderáis",
+        "se apoderan"
+      ],
+      "Preterite": [
+        "me apoderé",
+        "te apoderaste",
+        "se apoderó",
+        "nos apoderamos",
+        "os apoderasteis",
+        "se apoderaron"
+      ],
+      "Imperfect": [
+        "me apoderaba",
+        "te apoderabas",
+        "se apoderaba",
+        "nos apoderábamos",
+        "os apoderabais",
+        "se apoderaban"
+      ],
+      "Conditional": [
+        "me apoderaría",
+        "te apoderarías",
+        "se apoderaría",
+        "nos apoderaríamos",
+        "os apoderaríais",
+        "se apoderarían"
+      ],
+      "Future": [
+        "me apoderaré",
+        "te apoderarás",
+        "se apoderará",
+        "nos apoderaremos",
+        "os apoderaréis",
+        "se apoderarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me apodere",
+        "te apoderes",
+        "se apodere",
+        "nos apoderemos",
+        "os apoderéis",
+        "se apoderen"
+      ],
+      "Imperfect (-ra)": [
+        "me apoderara",
+        "te apoderaras",
+        "se apoderara",
+        "nos apoderáramos",
+        "os apoderarais",
+        "se apoderaran"
+      ],
+      "Imperfect (-se)": [
+        "me apoderase",
+        "te apoderases",
+        "se apoderase",
+        "nos apoderásemos",
+        "os apoderaseis",
+        "se apoderasen"
+      ],
+      "Future": [
+        "me apoderare",
+        "te apoderares",
+        "se apoderare",
+        "nos apoderáremos",
+        "os apoderareis",
+        "se apoderaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["apodérate", "apodérese", "apoderémonos", "apoderaos", "apodérense"],
+      "Negative": [
+        "no te apoderes",
+        "no se apodere",
+        "no nos apoderemos",
+        "no os apoderéis",
+        "no se apoderen"
+      ]
+    },
+    "Present Participle": "apoderando",
+    "Past Participle": "apoderado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acoderarse",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acoderarse"
+}

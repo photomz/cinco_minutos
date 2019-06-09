@@ -1,0 +1,91 @@
+{
+  "verb": "abdicar",
+  "definition": "to abdicate",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["abdico", "abdicas", "abdica", "abdicamos", "abdicáis", "abdican"],
+      "Preterite": ["abdiqué", "abdicaste", "abdicó", "abdicamos", "abdicasteis", "abdicaron"],
+      "Imperfect": ["abdicaba", "abdicabas", "abdicaba", "abdicábamos", "abdicabais", "abdicaban"],
+      "Conditional": [
+        "abdicaría",
+        "abdicarías",
+        "abdicaría",
+        "abdicaríamos",
+        "abdicaríais",
+        "abdicarían"
+      ],
+      "Future": ["abdicaré", "abdicarás", "abdicará", "abdicaremos", "abdicaréis", "abdicarán"]
+    },
+    "Subjunctive": {
+      "Present": ["abdique", "abdiques", "abdique", "abdiquemos", "abdiquéis", "abdiquen"],
+      "Imperfect (-ra)": [
+        "abdicara",
+        "abdicaras",
+        "abdicara",
+        "abdicáramos",
+        "abdicarais",
+        "abdicaran"
+      ],
+      "Imperfect (-se)": [
+        "abdicase",
+        "abdicases",
+        "abdicase",
+        "abdicásemos",
+        "abdicaseis",
+        "abdicasen"
+      ],
+      "Future": ["abdicare", "abdicares", "abdicare", "abdicáremos", "abdicareis", "abdicaren"]
+    },
+    "Imperative": {
+      "Affirmative": ["abdica", "abdique", "abdiquemos", "abdicad", "abdiquen"],
+      "Negative": ["no abdiques", "no abdique", "no abdiquemos", "no abdiquéis", "no abdiquen"]
+    },
+    "Present Participle": "abdicando",
+    "Past Participle": "abdicado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/abdicar",
+  "wordreference": {
+    "Indicative": {
+      "Present": ["abdico", "abdicas", "abdica", "abdicamos", "abdicáis", "abdican"],
+      "Preterite": ["abdiqué", "abdicaste", "abdicó", "abdicamos", "abdicasteis", "abdicaron"],
+      "Imperfect": ["abdicaba", "abdicabas", "abdicaba", "abdicábamos", "abdicabais", "abdicaban"],
+      "Conditional": [
+        "abdicaría",
+        "abdicarías",
+        "abdicaría",
+        "abdicaríamos",
+        "abdicaríais",
+        "abdicarían"
+      ],
+      "Future": ["abdicaré", "abdicarás", "abdicará", "abdicaremos", "abdicaréis", "abdicarán"]
+    },
+    "Subjunctive": {
+      "Present": ["abdique", "abdiques", "abdique", "abdiquemos", "abdiquéis", "abdiquen"],
+      "Imperfect (-ra)": [
+        "abdicara",
+        "abdicaras",
+        "abdicara",
+        "abdicáramos",
+        "abdicarais",
+        "abdicaran"
+      ],
+      "Imperfect (-se)": [
+        "abdicase",
+        "abdicases",
+        "abdicase",
+        "abdicásemos",
+        "abdicaseis",
+        "abdicasen"
+      ],
+      "Future": ["abdicare", "abdicares", "abdicare", "abdicáremos", "abdicareis", "abdicaren"]
+    },
+    "Imperative": {
+      "Affirmative": ["abdica", "abdique", "abdiquemos", "abdicad", "abdiquen"],
+      "Negative": ["no abdiques", "no abdique", "no abdiquemos", "no abdiquéis", "no abdiquen"]
+    },
+    "Present Participle": "abdicando",
+    "Past Participle": "abdicado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=abdicar"
+}

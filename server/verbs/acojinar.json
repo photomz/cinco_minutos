@@ -1,0 +1,71 @@
+{
+  "verb": "acojinar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["acojino", "acojinas", "acojina", "acojinamos", "acojináis", "acojinan"],
+      "Preterite": ["acojiné", "acojinaste", "acojinó", "acojinamos", "acojinasteis", "acojinaron"],
+      "Imperfect": [
+        "acojinaba",
+        "acojinabas",
+        "acojinaba",
+        "acojinábamos",
+        "acojinabais",
+        "acojinaban"
+      ],
+      "Conditional": [
+        "acojinaría",
+        "acojinarías",
+        "acojinaría",
+        "acojinaríamos",
+        "acojinaríais",
+        "acojinarían"
+      ],
+      "Future": [
+        "acojinaré",
+        "acojinarás",
+        "acojinará",
+        "acojinaremos",
+        "acojinaréis",
+        "acojinarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["acojine", "acojines", "acojine", "acojinemos", "acojinéis", "acojinen"],
+      "Imperfect (-ra)": [
+        "acojinara",
+        "acojinaras",
+        "acojinara",
+        "acojináramos",
+        "acojinarais",
+        "acojinaran"
+      ],
+      "Imperfect (-se)": [
+        "acojinase",
+        "acojinases",
+        "acojinase",
+        "acojinásemos",
+        "acojinaseis",
+        "acojinasen"
+      ],
+      "Future": [
+        "acojinare",
+        "acojinares",
+        "acojinare",
+        "acojináremos",
+        "acojinareis",
+        "acojinaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acojina", "acojine", "acojinemos", "acojinad", "acojinen"],
+      "Negative": ["no acojines", "no acojine", "no acojinemos", "no acojinéis", "no acojinen"]
+    },
+    "Present Participle": "acojinando",
+    "Past Participle": "acojinado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acojinar",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acojinar"
+}

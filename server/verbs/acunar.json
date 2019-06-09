@@ -1,0 +1,36 @@
+{
+  "verb": "acunar",
+  "definition": "to rock",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["acuno", "acunas", "acuna", "acunamos", "acunáis", "acunan"],
+      "Preterite": ["acuné", "acunaste", "acunó", "acunamos", "acunasteis", "acunaron"],
+      "Imperfect": ["acunaba", "acunabas", "acunaba", "acunábamos", "acunabais", "acunaban"],
+      "Conditional": [
+        "acunaría",
+        "acunarías",
+        "acunaría",
+        "acunaríamos",
+        "acunaríais",
+        "acunarían"
+      ],
+      "Future": ["acunaré", "acunarás", "acunará", "acunaremos", "acunaréis", "acunarán"]
+    },
+    "Subjunctive": {
+      "Present": ["acune", "acunes", "acune", "acunemos", "acunéis", "acunen"],
+      "Imperfect (-ra)": ["acunara", "acunaras", "acunara", "acunáramos", "acunarais", "acunaran"],
+      "Imperfect (-se)": ["acunase", "acunases", "acunase", "acunásemos", "acunaseis", "acunasen"],
+      "Future": ["acunare", "acunares", "acunare", "acunáremos", "acunareis", "acunaren"]
+    },
+    "Imperative": {
+      "Affirmative": ["acuna", "acune", "acunemos", "acunad", "acunen"],
+      "Negative": ["no acunes", "no acune", "no acunemos", "no acunéis", "no acunen"]
+    },
+    "Present Participle": "acunando",
+    "Past Participle": "acunado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acunar",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acunar"
+}

@@ -1,0 +1,78 @@
+{
+  "verb": "acepillar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["acepillo", "acepillas", "acepilla", "acepillamos", "acepilláis", "acepillan"],
+      "Preterite": [
+        "acepillé",
+        "acepillaste",
+        "acepilló",
+        "acepillamos",
+        "acepillasteis",
+        "acepillaron"
+      ],
+      "Imperfect": [
+        "acepillaba",
+        "acepillabas",
+        "acepillaba",
+        "acepillábamos",
+        "acepillabais",
+        "acepillaban"
+      ],
+      "Conditional": [
+        "acepillaría",
+        "acepillarías",
+        "acepillaría",
+        "acepillaríamos",
+        "acepillaríais",
+        "acepillarían"
+      ],
+      "Future": [
+        "acepillaré",
+        "acepillarás",
+        "acepillará",
+        "acepillaremos",
+        "acepillaréis",
+        "acepillarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["acepille", "acepilles", "acepille", "acepillemos", "acepilléis", "acepillen"],
+      "Imperfect (-ra)": [
+        "acepillara",
+        "acepillaras",
+        "acepillara",
+        "acepilláramos",
+        "acepillarais",
+        "acepillaran"
+      ],
+      "Imperfect (-se)": [
+        "acepillase",
+        "acepillases",
+        "acepillase",
+        "acepillásemos",
+        "acepillaseis",
+        "acepillasen"
+      ],
+      "Future": [
+        "acepillare",
+        "acepillares",
+        "acepillare",
+        "acepilláremos",
+        "acepillareis",
+        "acepillaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acepilla", "acepille", "acepillemos", "acepillad", "acepillen"],
+      "Negative": ["no acepilles", "no acepille", "no acepillemos", "no acepilléis", "no acepillen"]
+    },
+    "Present Participle": "acepillando",
+    "Past Participle": "acepillado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acepillar",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acepillar"
+}

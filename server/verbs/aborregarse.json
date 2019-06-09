@@ -1,0 +1,98 @@
+{
+  "verb": "aborregarse",
+  "definition": "to follow like a sheep , tag along , act silly, act up , get silly, become silly , play the fool",
+  "reflexive": true,
+  "spanishdict": null,
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/aborregarse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me aborrego",
+        "te aborregas",
+        "se aborrega",
+        "nos aborregamos",
+        "os aborregáis",
+        "se aborregan"
+      ],
+      "Preterite": [
+        "me aborregué",
+        "te aborregaste",
+        "se aborregó",
+        "nos aborregamos",
+        "os aborregasteis",
+        "se aborregaron"
+      ],
+      "Imperfect": [
+        "me aborregaba",
+        "te aborregabas",
+        "se aborregaba",
+        "nos aborregábamos",
+        "os aborregabais",
+        "se aborregaban"
+      ],
+      "Conditional": [
+        "me aborregaría",
+        "te aborregarías",
+        "se aborregaría",
+        "nos aborregaríamos",
+        "os aborregaríais",
+        "se aborregarían"
+      ],
+      "Future": [
+        "me aborregaré",
+        "te aborregarás",
+        "se aborregará",
+        "nos aborregaremos",
+        "os aborregaréis",
+        "se aborregarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me aborregue",
+        "te aborregues",
+        "se aborregue",
+        "nos aborreguemos",
+        "os aborreguéis",
+        "se aborreguen"
+      ],
+      "Imperfect (-ra)": [
+        "me aborregara",
+        "te aborregaras",
+        "se aborregara",
+        "nos aborregáramos",
+        "os aborregarais u os aborregaseis",
+        "se aborregaran"
+      ],
+      "Imperfect (-se)": [
+        "me aborregase",
+        "te aborregases",
+        "se aborregase",
+        "nos aborregásemos",
+        "os aborregaseis",
+        "se aborregasen"
+      ],
+      "Future": [
+        "me aborregare",
+        "te aborregares",
+        "se aborregare",
+        "nos aborregáremos",
+        "os aborregareis",
+        "se aborregaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["aborrégate", "aborréguese", "aborreguémonos", "aborregaos", "aborréguense"],
+      "Negative": [
+        "no te aborregues",
+        "no se aborregue",
+        "no nos aborreguemos",
+        "no os aborreguéis",
+        "no se aborreguen"
+      ]
+    },
+    "Present Participle": "aborregando",
+    "Past Participle": "aborregado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=aborregarse"
+}

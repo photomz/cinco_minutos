@@ -1,0 +1,78 @@
+{
+  "verb": "acriminar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["acrimino", "acriminas", "acrimina", "acriminamos", "acrimináis", "acriminan"],
+      "Preterite": [
+        "acriminé",
+        "acriminaste",
+        "acriminó",
+        "acriminamos",
+        "acriminasteis",
+        "acriminaron"
+      ],
+      "Imperfect": [
+        "acriminaba",
+        "acriminabas",
+        "acriminaba",
+        "acriminábamos",
+        "acriminabais",
+        "acriminaban"
+      ],
+      "Conditional": [
+        "acriminaría",
+        "acriminarías",
+        "acriminaría",
+        "acriminaríamos",
+        "acriminaríais",
+        "acriminarían"
+      ],
+      "Future": [
+        "acriminaré",
+        "acriminarás",
+        "acriminará",
+        "acriminaremos",
+        "acriminaréis",
+        "acriminarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["acrimine", "acrimines", "acrimine", "acriminemos", "acriminéis", "acriminen"],
+      "Imperfect (-ra)": [
+        "acriminara",
+        "acriminaras",
+        "acriminara",
+        "acrimináramos",
+        "acriminarais",
+        "acriminaran"
+      ],
+      "Imperfect (-se)": [
+        "acriminase",
+        "acriminases",
+        "acriminase",
+        "acriminásemos",
+        "acriminaseis",
+        "acriminasen"
+      ],
+      "Future": [
+        "acriminare",
+        "acriminares",
+        "acriminare",
+        "acrimináremos",
+        "acriminareis",
+        "acriminaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acrimina", "acrimine", "acriminemos", "acriminad", "acriminen"],
+      "Negative": ["no acrimines", "no acrimine", "no acriminemos", "no acriminéis", "no acriminen"]
+    },
+    "Present Participle": "acriminando",
+    "Past Participle": "acriminado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acriminar",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acriminar"
+}

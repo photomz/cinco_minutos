@@ -1,0 +1,187 @@
+{
+  "verb": "abrasar",
+  "definition": "to burn",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me abraso",
+        "te abrasas",
+        "se abrasa",
+        "nos abrasamos",
+        "os abrasáis",
+        "se abrasan"
+      ],
+      "Preterite": [
+        "me abrasé",
+        "te abrasaste",
+        "se abrasó",
+        "nos abrasamos",
+        "os abrasasteis",
+        "se abrasaron"
+      ],
+      "Imperfect": [
+        "me abrasaba",
+        "te abrasabas",
+        "se abrasaba",
+        "nos abrasábamos",
+        "os abrasabais",
+        "se abrasaban"
+      ],
+      "Conditional": [
+        "me abrasaría",
+        "te abrasarías",
+        "se abrasaría",
+        "nos abrasaríamos",
+        "os abrasaríais",
+        "se abrasarían"
+      ],
+      "Future": [
+        "me abrasaré",
+        "te abrasarás",
+        "se abrasará",
+        "nos abrasaremos",
+        "os abrasaréis",
+        "se abrasarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me abrase",
+        "te abrases",
+        "se abrase",
+        "nos abrasemos",
+        "os abraséis",
+        "se abrasen"
+      ],
+      "Imperfect (-ra)": [
+        "me abrasara",
+        "te abrasaras",
+        "se abrasara",
+        "nos abrasáramos",
+        "os abrasarais",
+        "se abrasaran"
+      ],
+      "Imperfect (-se)": [
+        "me abrasase",
+        "te abrasases",
+        "se abrasase",
+        "nos abrasásemos",
+        "os abrasaseis",
+        "se abrasasen"
+      ],
+      "Future": [
+        "me abrasare",
+        "te abrasares",
+        "se abrasare",
+        "nos abrasáremos",
+        "os abrasareis",
+        "se abrasaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["abrásate", "abrásese", "abrasémonos", "abrasaos", "abrásense"],
+      "Negative": [
+        "no te abrases",
+        "no se abrase",
+        "no nos abrasemos",
+        "no os abraséis",
+        "no se abrasen"
+      ]
+    },
+    "Present Participle": "abrasando",
+    "Past Participle": "abrasado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/abrasarse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me abraso",
+        "te abrasas",
+        "se abrasa",
+        "nos abrasamos",
+        "os abrasáis",
+        "se abrasan"
+      ],
+      "Preterite": [
+        "me abrasé",
+        "te abrasaste",
+        "se abrasó",
+        "nos abrasamos",
+        "os abrasasteis",
+        "se abrasaron"
+      ],
+      "Imperfect": [
+        "me abrasaba",
+        "te abrasabas",
+        "se abrasaba",
+        "nos abrasábamos",
+        "os abrasabais",
+        "se abrasaban"
+      ],
+      "Conditional": [
+        "me abrasaría",
+        "te abrasarías",
+        "se abrasaría",
+        "nos abrasaríamos",
+        "os abrasaríais",
+        "se abrasarían"
+      ],
+      "Future": [
+        "me abrasaré",
+        "te abrasarás",
+        "se abrasará",
+        "nos abrasaremos",
+        "os abrasaréis",
+        "se abrasarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me abrase",
+        "te abrases",
+        "se abrase",
+        "nos abrasemos",
+        "os abraséis",
+        "se abrasen"
+      ],
+      "Imperfect (-ra)": [
+        "me abrasara",
+        "te abrasaras",
+        "se abrasara",
+        "nos abrasáramos",
+        "os abrasarais u os abrasaseis",
+        "se abrasaran"
+      ],
+      "Imperfect (-se)": [
+        "me abrasase",
+        "te abrasases",
+        "se abrasase",
+        "nos abrasásemos",
+        "os abrasaseis",
+        "se abrasasen"
+      ],
+      "Future": [
+        "me abrasare",
+        "te abrasares",
+        "se abrasare",
+        "nos abrasáremos",
+        "os abrasareis",
+        "se abrasaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["abrásate", "abrásese", "abrasémonos", "abrasaos", "abrásense"],
+      "Negative": [
+        "no te abrases",
+        "no se abrase",
+        "no nos abrasemos",
+        "no os abraséis",
+        "no se abrasen"
+      ]
+    },
+    "Present Participle": "abrasando",
+    "Past Participle": "abrasado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=abrasarse"
+}

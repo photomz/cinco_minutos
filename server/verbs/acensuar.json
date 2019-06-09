@@ -1,0 +1,71 @@
+{
+  "verb": "acensuar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["acensúo", "acensúas", "acensúa", "acensuamos", "acensuáis", "acensúan"],
+      "Preterite": ["acensué", "acensuaste", "acensuó", "acensuamos", "acensuasteis", "acensuaron"],
+      "Imperfect": [
+        "acensuaba",
+        "acensuabas",
+        "acensuaba",
+        "acensuábamos",
+        "acensuabais",
+        "acensuaban"
+      ],
+      "Conditional": [
+        "acensuaría",
+        "acensuarías",
+        "acensuaría",
+        "acensuaríamos",
+        "acensuaríais",
+        "acensuarían"
+      ],
+      "Future": [
+        "acensuaré",
+        "acensuarás",
+        "acensuará",
+        "acensuaremos",
+        "acensuaréis",
+        "acensuarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["acensúe", "acensúes", "acensúe", "acensuemos", "acensuéis", "acensúen"],
+      "Imperfect (-ra)": [
+        "acensuara",
+        "acensuaras",
+        "acensuara",
+        "acensuáramos",
+        "acensuarais",
+        "acensuaran"
+      ],
+      "Imperfect (-se)": [
+        "acensuase",
+        "acensuases",
+        "acensuase",
+        "acensuásemos",
+        "acensuaseis",
+        "acensuasen"
+      ],
+      "Future": [
+        "acensuare",
+        "acensuares",
+        "acensuare",
+        "acensuáremos",
+        "acensuareis",
+        "acensuaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acensúa", "acensúe", "acensuemos", "acensuad", "acensúen"],
+      "Negative": ["no acensúes", "no acensúe", "no acensuemos", "no acensuéis", "no acensúen"]
+    },
+    "Present Participle": "acensuando",
+    "Past Participle": "acensuado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acensuar",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acensuar"
+}

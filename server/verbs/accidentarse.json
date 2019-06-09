@@ -1,0 +1,104 @@
+{
+  "verb": "accidentarse",
+  "definition": "to an accident , have an accident",
+  "reflexive": true,
+  "spanishdict": null,
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/accidentarse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me accidento",
+        "te accidentas",
+        "se accidenta",
+        "nos accidentamos",
+        "os accidentáis",
+        "se accidentan"
+      ],
+      "Preterite": [
+        "me accidenté",
+        "te accidentaste",
+        "se accidentó",
+        "nos accidentamos",
+        "os accidentasteis",
+        "se accidentaron"
+      ],
+      "Imperfect": [
+        "me accidentaba",
+        "te accidentabas",
+        "se accidentaba",
+        "nos accidentábamos",
+        "os accidentabais",
+        "se accidentaban"
+      ],
+      "Conditional": [
+        "me accidentaría",
+        "te accidentarías",
+        "se accidentaría",
+        "nos accidentaríamos",
+        "os accidentaríais",
+        "se accidentarían"
+      ],
+      "Future": [
+        "me accidentaré",
+        "te accidentarás",
+        "se accidentará",
+        "nos accidentaremos",
+        "os accidentaréis",
+        "se accidentarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me accidente",
+        "te accidentes",
+        "se accidente",
+        "nos accidentemos",
+        "os accidentéis",
+        "se accidenten"
+      ],
+      "Imperfect (-ra)": [
+        "me accidentara",
+        "te accidentaras",
+        "se accidentara",
+        "nos accidentáramos",
+        "os accidentarais u os accidentaseis",
+        "se accidentaran"
+      ],
+      "Imperfect (-se)": [
+        "me accidentase",
+        "te accidentases",
+        "se accidentase",
+        "nos accidentásemos",
+        "os accidentaseis",
+        "se accidentasen"
+      ],
+      "Future": [
+        "me accidentare",
+        "te accidentares",
+        "se accidentare",
+        "nos accidentáremos",
+        "os accidentareis",
+        "se accidentaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": [
+        "accidéntate",
+        "accidéntese",
+        "accidentémonos",
+        "accidentaos",
+        "accidéntense"
+      ],
+      "Negative": [
+        "no te accidentes",
+        "no se accidente",
+        "no nos accidentemos",
+        "no os accidentéis",
+        "no se accidenten"
+      ]
+    },
+    "Present Participle": "accidentando",
+    "Past Participle": "accidentado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=accidentarse"
+}

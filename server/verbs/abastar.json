@@ -1,0 +1,50 @@
+{
+  "verb": "abastar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["abasto", "abastas", "abasta", "abastamos", "abastáis", "abastan"],
+      "Preterite": ["abasté", "abastaste", "abastó", "abastamos", "abastasteis", "abastaron"],
+      "Imperfect": ["abastaba", "abastabas", "abastaba", "abastábamos", "abastabais", "abastaban"],
+      "Conditional": [
+        "abastaría",
+        "abastarías",
+        "abastaría",
+        "abastaríamos",
+        "abastaríais",
+        "abastarían"
+      ],
+      "Future": ["abastaré", "abastarás", "abastará", "abastaremos", "abastaréis", "abastarán"]
+    },
+    "Subjunctive": {
+      "Present": ["abaste", "abastes", "abaste", "abastemos", "abastéis", "abasten"],
+      "Imperfect (-ra)": [
+        "abastara",
+        "abastaras",
+        "abastara",
+        "abastáramos",
+        "abastarais",
+        "abastaran"
+      ],
+      "Imperfect (-se)": [
+        "abastase",
+        "abastases",
+        "abastase",
+        "abastásemos",
+        "abastaseis",
+        "abastasen"
+      ],
+      "Future": ["abastare", "abastares", "abastare", "abastáremos", "abastareis", "abastaren"]
+    },
+    "Imperative": {
+      "Affirmative": ["abasta", "abaste", "abastemos", "abastad", "abasten"],
+      "Negative": ["no abastes", "no abaste", "no abastemos", "no abastéis", "no abasten"]
+    },
+    "Present Participle": "abastando",
+    "Past Participle": "abastado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/abastar",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=abastar"
+}

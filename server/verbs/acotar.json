@@ -1,0 +1,84 @@
+{
+  "verb": "acotar",
+  "definition": "to fence in",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["me acoto", "te acotas", "se acota", "nos acotamos", "os acotáis", "se acotan"],
+      "Preterite": [
+        "me acoté",
+        "te acotaste",
+        "se acotó",
+        "nos acotamos",
+        "os acotasteis",
+        "se acotaron"
+      ],
+      "Imperfect": [
+        "me acotaba",
+        "te acotabas",
+        "se acotaba",
+        "nos acotábamos",
+        "os acotabais",
+        "se acotaban"
+      ],
+      "Conditional": [
+        "me acotaría",
+        "te acotarías",
+        "se acotaría",
+        "nos acotaríamos",
+        "os acotaríais",
+        "se acotarían"
+      ],
+      "Future": [
+        "me acotaré",
+        "te acotarás",
+        "se acotará",
+        "nos acotaremos",
+        "os acotaréis",
+        "se acotarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["me acote", "te acotes", "se acote", "nos acotemos", "os acotéis", "se acoten"],
+      "Imperfect (-ra)": [
+        "me acotara",
+        "te acotaras",
+        "se acotara",
+        "nos acotáramos",
+        "os acotarais",
+        "se acotaran"
+      ],
+      "Imperfect (-se)": [
+        "me acotase",
+        "te acotases",
+        "se acotase",
+        "nos acotásemos",
+        "os acotaseis",
+        "se acotasen"
+      ],
+      "Future": [
+        "me acotare",
+        "te acotares",
+        "se acotare",
+        "nos acotáremos",
+        "os acotareis",
+        "se acotaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acótate", "acótese", "acotémonos", "acotaos", "acótense"],
+      "Negative": [
+        "no te acotes",
+        "no se acote",
+        "no nos acotemos",
+        "no os acotéis",
+        "no se acoten"
+      ]
+    },
+    "Present Participle": "acotando",
+    "Past Participle": "acotado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acotarse",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acotarse"
+}

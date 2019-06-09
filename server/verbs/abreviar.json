@@ -1,0 +1,187 @@
+{
+  "verb": "abreviar",
+  "definition": "to shorten",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me abrevio",
+        "te abrevias",
+        "se abrevia",
+        "nos abreviamos",
+        "os abreviáis",
+        "se abrevian"
+      ],
+      "Preterite": [
+        "me abrevié",
+        "te abreviaste",
+        "se abrevió",
+        "nos abreviamos",
+        "os abreviasteis",
+        "se abreviaron"
+      ],
+      "Imperfect": [
+        "me abreviaba",
+        "te abreviabas",
+        "se abreviaba",
+        "nos abreviábamos",
+        "os abreviabais",
+        "se abreviaban"
+      ],
+      "Conditional": [
+        "me abreviaría",
+        "te abreviarías",
+        "se abreviaría",
+        "nos abreviaríamos",
+        "os abreviaríais",
+        "se abreviarían"
+      ],
+      "Future": [
+        "me abreviaré",
+        "te abreviarás",
+        "se abreviará",
+        "nos abreviaremos",
+        "os abreviaréis",
+        "se abreviarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me abrevie",
+        "te abrevies",
+        "se abrevie",
+        "nos abreviemos",
+        "os abreviéis",
+        "se abrevien"
+      ],
+      "Imperfect (-ra)": [
+        "me abreviara",
+        "te abreviaras",
+        "se abreviara",
+        "nos abreviáramos",
+        "os abreviarais",
+        "se abreviaran"
+      ],
+      "Imperfect (-se)": [
+        "me abreviase",
+        "te abreviases",
+        "se abreviase",
+        "nos abreviásemos",
+        "os abreviaseis",
+        "se abreviasen"
+      ],
+      "Future": [
+        "me abreviare",
+        "te abreviares",
+        "se abreviare",
+        "nos abreviáremos",
+        "os abreviareis",
+        "se abreviaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["abréviate", "abréviese", "abreviémonos", "abreviaos", "abréviense"],
+      "Negative": [
+        "no te abrevies",
+        "no se abrevie",
+        "no nos abreviemos",
+        "no os abreviéis",
+        "no se abrevien"
+      ]
+    },
+    "Present Participle": "abreviando",
+    "Past Participle": "abreviado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/abreviarse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me abrevio",
+        "te abrevias",
+        "se abrevia",
+        "nos abreviamos",
+        "os abreviáis",
+        "se abrevian"
+      ],
+      "Preterite": [
+        "me abrevié",
+        "te abreviaste",
+        "se abrevió",
+        "nos abreviamos",
+        "os abreviasteis",
+        "se abreviaron"
+      ],
+      "Imperfect": [
+        "me abreviaba",
+        "te abreviabas",
+        "se abreviaba",
+        "nos abreviábamos",
+        "os abreviabais",
+        "se abreviaban"
+      ],
+      "Conditional": [
+        "me abreviaría",
+        "te abreviarías",
+        "se abreviaría",
+        "nos abreviaríamos",
+        "os abreviaríais",
+        "se abreviarían"
+      ],
+      "Future": [
+        "me abreviaré",
+        "te abreviarás",
+        "se abreviará",
+        "nos abreviaremos",
+        "os abreviaréis",
+        "se abreviarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me abrevie",
+        "te abrevies",
+        "se abrevie",
+        "nos abreviemos",
+        "os abreviéis",
+        "se abrevien"
+      ],
+      "Imperfect (-ra)": [
+        "me abreviara",
+        "te abreviaras",
+        "se abreviara",
+        "nos abreviáramos",
+        "os abreviarais u os abreviaseis",
+        "se abreviaran"
+      ],
+      "Imperfect (-se)": [
+        "me abreviase",
+        "te abreviases",
+        "se abreviase",
+        "nos abreviásemos",
+        "os abreviaseis",
+        "se abreviasen"
+      ],
+      "Future": [
+        "me abreviare",
+        "te abreviares",
+        "se abreviare",
+        "nos abreviáremos",
+        "os abreviareis",
+        "se abreviaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["abréviate", "abréviese", "abreviémonos", "abreviaos", "abréviense"],
+      "Negative": [
+        "no te abrevies",
+        "no se abrevie",
+        "no nos abreviemos",
+        "no os abreviéis",
+        "no se abrevien"
+      ]
+    },
+    "Present Participle": "abreviando",
+    "Past Participle": "abreviado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=abreviarse"
+}

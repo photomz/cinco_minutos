@@ -1,0 +1,98 @@
+{
+  "verb": "acollarar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me acollaro",
+        "te acollaras",
+        "se acollara",
+        "nos acollaramos",
+        "os acollaráis",
+        "se acollaran"
+      ],
+      "Preterite": [
+        "me acollaré",
+        "te acollaraste",
+        "se acollaró",
+        "nos acollaramos",
+        "os acollarasteis",
+        "se acollararon"
+      ],
+      "Imperfect": [
+        "me acollaraba",
+        "te acollarabas",
+        "se acollaraba",
+        "nos acollarábamos",
+        "os acollarabais",
+        "se acollaraban"
+      ],
+      "Conditional": [
+        "me acollararía",
+        "te acollararías",
+        "se acollararía",
+        "nos acollararíamos",
+        "os acollararíais",
+        "se acollararían"
+      ],
+      "Future": [
+        "me acollararé",
+        "te acollararás",
+        "se acollarará",
+        "nos acollararemos",
+        "os acollararéis",
+        "se acollararán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me acollare",
+        "te acollares",
+        "se acollare",
+        "nos acollaremos",
+        "os acollaréis",
+        "se acollaren"
+      ],
+      "Imperfect (-ra)": [
+        "me acollarara",
+        "te acollararas",
+        "se acollarara",
+        "nos acollaráramos",
+        "os acollararais",
+        "se acollararan"
+      ],
+      "Imperfect (-se)": [
+        "me acollarase",
+        "te acollarases",
+        "se acollarase",
+        "nos acollarásemos",
+        "os acollaraseis",
+        "se acollarasen"
+      ],
+      "Future": [
+        "me acollarare",
+        "te acollarares",
+        "se acollarare",
+        "nos acollaráremos",
+        "os acollarareis",
+        "se acollararen"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acollárate", "acollárese", "acollarémonos", "acollaraos", "acollárense"],
+      "Negative": [
+        "no te acollares",
+        "no se acollare",
+        "no nos acollaremos",
+        "no os acollaréis",
+        "no se acollaren"
+      ]
+    },
+    "Present Participle": "acollarando",
+    "Past Participle": "acollarado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acollararse",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acollararse"
+}

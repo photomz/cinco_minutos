@@ -1,0 +1,98 @@
+{
+  "verb": "abalanzarse",
+  "definition": "to leap on, jump on , spring at , pounce, rush, hurtle",
+  "reflexive": true,
+  "spanishdict": null,
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/abalanzarse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me abalanzo",
+        "te abalanzas",
+        "se abalanza",
+        "nos abalanzamos",
+        "os abalanzáis",
+        "se abalanzan"
+      ],
+      "Preterite": [
+        "me abalancé",
+        "te abalanzaste",
+        "se abalanzó",
+        "nos abalanzamos",
+        "os abalanzasteis",
+        "se abalanzaron"
+      ],
+      "Imperfect": [
+        "me abalanzaba",
+        "te abalanzabas",
+        "se abalanzaba",
+        "nos abalanzábamos",
+        "os abalanzabais",
+        "se abalanzaban"
+      ],
+      "Conditional": [
+        "me abalanzaría",
+        "te abalanzarías",
+        "se abalanzaría",
+        "nos abalanzaríamos",
+        "os abalanzaríais",
+        "se abalanzarían"
+      ],
+      "Future": [
+        "me abalanzaré",
+        "te abalanzarás",
+        "se abalanzará",
+        "nos abalanzaremos",
+        "os abalanzaréis",
+        "se abalanzarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me abalance",
+        "te abalances",
+        "se abalance",
+        "nos abalancemos",
+        "os abalancéis",
+        "se abalancen"
+      ],
+      "Imperfect (-ra)": [
+        "me abalanzara",
+        "te abalanzaras",
+        "se abalanzara",
+        "nos abalanzáramos",
+        "os abalanzarais u os abalanzaseis",
+        "se abalanzaran"
+      ],
+      "Imperfect (-se)": [
+        "me abalanzase",
+        "te abalanzases",
+        "se abalanzase",
+        "nos abalanzásemos",
+        "os abalanzaseis",
+        "se abalanzasen"
+      ],
+      "Future": [
+        "me abalanzare",
+        "te abalanzares",
+        "se abalanzare",
+        "nos abalanzáremos",
+        "os abalanzareis",
+        "se abalanzaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["abalánzate", "abaláncese", "abalancémonos", "abalanzaos", "abaláncense"],
+      "Negative": [
+        "no te abalances",
+        "no se abalance",
+        "no nos abalancemos",
+        "no os abalancéis",
+        "no se abalancen"
+      ]
+    },
+    "Present Participle": "abalanzando",
+    "Past Participle": "abalanzado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=abalanzarse"
+}

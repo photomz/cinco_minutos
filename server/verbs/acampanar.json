@@ -1,0 +1,78 @@
+{
+  "verb": "acampanar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": null,
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acampanar",
+  "wordreference": {
+    "Indicative": {
+      "Present": ["acampano", "acampanas", "acampana", "acampanamos", "acampanáis", "acampanan"],
+      "Preterite": [
+        "acampané",
+        "acampanaste",
+        "acampanó",
+        "acampanamos",
+        "acampanasteis",
+        "acampanaron"
+      ],
+      "Imperfect": [
+        "acampanaba",
+        "acampanabas",
+        "acampanaba",
+        "acampanábamos",
+        "acampanabais",
+        "acampanaban"
+      ],
+      "Conditional": [
+        "acampanaría",
+        "acampanarías",
+        "acampanaría",
+        "acampanaríamos",
+        "acampanaríais",
+        "acampanarían"
+      ],
+      "Future": [
+        "acampanaré",
+        "acampanarás",
+        "acampanará",
+        "acampanaremos",
+        "acampanaréis",
+        "acampanarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["acampane", "acampanes", "acampane", "acampanemos", "acampanéis", "acampanen"],
+      "Imperfect (-ra)": [
+        "acampanara",
+        "acampanaras",
+        "acampanara",
+        "acampanáramos",
+        "acampanarais",
+        "acampanaran"
+      ],
+      "Imperfect (-se)": [
+        "acampanase",
+        "acampanases",
+        "acampanase",
+        "acampanásemos",
+        "acampanaseis",
+        "acampanasen"
+      ],
+      "Future": [
+        "acampanare",
+        "acampanares",
+        "acampanare",
+        "acampanáremos",
+        "acampanareis",
+        "acampanaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acampana", "acampane", "acampanemos", "acampanad", "acampanen"],
+      "Negative": ["no acampanes", "no acampane", "no acampanemos", "no acampanéis", "no acampanen"]
+    },
+    "Present Participle": "acampanando",
+    "Past Participle": "acampanado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acampanar"
+}

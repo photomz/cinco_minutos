@@ -1,0 +1,187 @@
+{
+  "verb": "abastecer",
+  "definition": "to supply",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me abastezco",
+        "te abasteces",
+        "se abastece",
+        "nos abastecemos",
+        "os abastecéis",
+        "se abastecen"
+      ],
+      "Preterite": [
+        "me abastecí",
+        "te abasteciste",
+        "se abasteció",
+        "nos abastecimos",
+        "os abastecisteis",
+        "se abastecieron"
+      ],
+      "Imperfect": [
+        "me abastecía",
+        "te abastecías",
+        "se abastecía",
+        "nos abastecíamos",
+        "os abastecíais",
+        "se abastecían"
+      ],
+      "Conditional": [
+        "me abastecería",
+        "te abastecerías",
+        "se abastecería",
+        "nos abasteceríamos",
+        "os abasteceríais",
+        "se abastecerían"
+      ],
+      "Future": [
+        "me abasteceré",
+        "te abastecerás",
+        "se abastecerá",
+        "nos abasteceremos",
+        "os abasteceréis",
+        "se abastecerán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me abastezca",
+        "te abastezcas",
+        "se abastezca",
+        "nos abastezcamos",
+        "os abastezcáis",
+        "se abastezcan"
+      ],
+      "Imperfect (-ra)": [
+        "me abasteciera",
+        "te abastecieras",
+        "se abasteciera",
+        "nos abasteciéramos",
+        "os abastecierais",
+        "se abastecieran"
+      ],
+      "Imperfect (-se)": [
+        "me abasteciese",
+        "te abastecieses",
+        "se abasteciese",
+        "nos abasteciésemos",
+        "os abastecieseis",
+        "se abasteciesen"
+      ],
+      "Future": [
+        "me abasteciere",
+        "te abastecieres",
+        "se abasteciere",
+        "nos abasteciéremos",
+        "os abasteciereis",
+        "se abastecieren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["abastécete", "abastézcase", "abastezcámonos", "abasteceos", "abastézcanse"],
+      "Negative": [
+        "no te abastezcas",
+        "no se abastezca",
+        "no nos abastezcamos",
+        "no os abastezcáis",
+        "no se abastezcan"
+      ]
+    },
+    "Present Participle": "abasteciendo",
+    "Past Participle": "abastecido"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/abastecerse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me abastezco",
+        "te abasteces",
+        "se abastece",
+        "nos abastecemos",
+        "os abastecéis",
+        "se abastecen"
+      ],
+      "Preterite": [
+        "me abastecí",
+        "te abasteciste",
+        "se abasteció",
+        "nos abastecimos",
+        "os abastecisteis",
+        "se abastecieron"
+      ],
+      "Imperfect": [
+        "me abastecía",
+        "te abastecías",
+        "se abastecía",
+        "nos abastecíamos",
+        "os abastecíais",
+        "se abastecían"
+      ],
+      "Conditional": [
+        "me abastecería",
+        "te abastecerías",
+        "se abastecería",
+        "nos abasteceríamos",
+        "os abasteceríais",
+        "se abastecerían"
+      ],
+      "Future": [
+        "me abasteceré",
+        "te abastecerás",
+        "se abastecerá",
+        "nos abasteceremos",
+        "os abasteceréis",
+        "se abastecerán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me abastezca",
+        "te abastezcas",
+        "se abastezca",
+        "nos abastezcamos",
+        "os abastezcáis",
+        "se abastezcan"
+      ],
+      "Imperfect (-ra)": [
+        "me abasteciera",
+        "te abastecieras",
+        "se abasteciera",
+        "nos abasteciéramos",
+        "os abastecierais u os abastecieseis",
+        "se abastecieran"
+      ],
+      "Imperfect (-se)": [
+        "me abasteciese",
+        "te abastecieses",
+        "se abasteciese",
+        "nos abasteciésemos",
+        "os abastecieseis",
+        "se abasteciesen"
+      ],
+      "Future": [
+        "me abasteciere",
+        "te abastecieres",
+        "se abasteciere",
+        "nos abasteciéremos",
+        "os abasteciereis",
+        "se abastecieren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["abastécete", "abastézcase", "abastezcámonos", "abasteceos", "abastézcanse"],
+      "Negative": [
+        "no te abastezcas",
+        "no se abastezca",
+        "no nos abastezcamos",
+        "no os abastezcáis",
+        "no se abastezcan"
+      ]
+    },
+    "Present Participle": "abasteciendo",
+    "Past Participle": "abastecido"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=abastecerse"
+}

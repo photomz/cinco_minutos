@@ -1,0 +1,98 @@
+{
+  "verb": "abrazar",
+  "definition": "to hug",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me abrazo",
+        "te abrazas",
+        "se abraza",
+        "nos abrazamos",
+        "os abrazáis",
+        "se abrazan"
+      ],
+      "Preterite": [
+        "me abracé",
+        "te abrazaste",
+        "se abrazó",
+        "nos abrazamos",
+        "os abrazasteis",
+        "se abrazaron"
+      ],
+      "Imperfect": [
+        "me abrazaba",
+        "te abrazabas",
+        "se abrazaba",
+        "nos abrazábamos",
+        "os abrazabais",
+        "se abrazaban"
+      ],
+      "Conditional": [
+        "me abrazaría",
+        "te abrazarías",
+        "se abrazaría",
+        "nos abrazaríamos",
+        "os abrazaríais",
+        "se abrazarían"
+      ],
+      "Future": [
+        "me abrazaré",
+        "te abrazarás",
+        "se abrazará",
+        "nos abrazaremos",
+        "os abrazaréis",
+        "se abrazarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me abrace",
+        "te abraces",
+        "se abrace",
+        "nos abracemos",
+        "os abracéis",
+        "se abracen"
+      ],
+      "Imperfect (-ra)": [
+        "me abrazara",
+        "te abrazaras",
+        "se abrazara",
+        "nos abrazáramos",
+        "os abrazarais",
+        "se abrazaran"
+      ],
+      "Imperfect (-se)": [
+        "me abrazase",
+        "te abrazases",
+        "se abrazase",
+        "nos abrazásemos",
+        "os abrazaseis",
+        "se abrazasen"
+      ],
+      "Future": [
+        "me abrazare",
+        "te abrazares",
+        "se abrazare",
+        "nos abrazáremos",
+        "os abrazareis",
+        "se abrazaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["abrázate", "abrácese", "abracémonos", "abrazaos", "abrácense"],
+      "Negative": [
+        "no te abraces",
+        "no se abrace",
+        "no nos abracemos",
+        "no os abracéis",
+        "no se abracen"
+      ]
+    },
+    "Present Participle": "abrazando",
+    "Past Participle": "abrazado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/abruzarse",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=abruzarse"
+}

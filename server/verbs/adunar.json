@@ -1,0 +1,84 @@
+{
+  "verb": "adunar",
+  "definition": "to join",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["me aduno", "te adunas", "se aduna", "nos adunamos", "os adunáis", "se adunan"],
+      "Preterite": [
+        "me aduné",
+        "te adunaste",
+        "se adunó",
+        "nos adunamos",
+        "os adunasteis",
+        "se adunaron"
+      ],
+      "Imperfect": [
+        "me adunaba",
+        "te adunabas",
+        "se adunaba",
+        "nos adunábamos",
+        "os adunabais",
+        "se adunaban"
+      ],
+      "Conditional": [
+        "me adunaría",
+        "te adunarías",
+        "se adunaría",
+        "nos adunaríamos",
+        "os adunaríais",
+        "se adunarían"
+      ],
+      "Future": [
+        "me adunaré",
+        "te adunarás",
+        "se adunará",
+        "nos adunaremos",
+        "os adunaréis",
+        "se adunarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["me adune", "te adunes", "se adune", "nos adunemos", "os adunéis", "se adunen"],
+      "Imperfect (-ra)": [
+        "me adunara",
+        "te adunaras",
+        "se adunara",
+        "nos adunáramos",
+        "os adunarais",
+        "se adunaran"
+      ],
+      "Imperfect (-se)": [
+        "me adunase",
+        "te adunases",
+        "se adunase",
+        "nos adunásemos",
+        "os adunaseis",
+        "se adunasen"
+      ],
+      "Future": [
+        "me adunare",
+        "te adunares",
+        "se adunare",
+        "nos adunáremos",
+        "os adunareis",
+        "se adunaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["adúnate", "adúnese", "adunémonos", "adunaos", "adúnense"],
+      "Negative": [
+        "no te adunes",
+        "no se adune",
+        "no nos adunemos",
+        "no os adunéis",
+        "no se adunen"
+      ]
+    },
+    "Present Participle": "adunando",
+    "Past Participle": "adunado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/adundarse",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=adundarse"
+}

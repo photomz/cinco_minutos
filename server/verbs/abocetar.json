@@ -1,0 +1,133 @@
+{
+  "verb": "abocetar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["aboceto", "abocetas", "aboceta", "abocetamos", "abocetáis", "abocetan"],
+      "Preterite": ["aboceté", "abocetaste", "abocetó", "abocetamos", "abocetasteis", "abocetaron"],
+      "Imperfect": [
+        "abocetaba",
+        "abocetabas",
+        "abocetaba",
+        "abocetábamos",
+        "abocetabais",
+        "abocetaban"
+      ],
+      "Conditional": [
+        "abocetaría",
+        "abocetarías",
+        "abocetaría",
+        "abocetaríamos",
+        "abocetaríais",
+        "abocetarían"
+      ],
+      "Future": [
+        "abocetaré",
+        "abocetarás",
+        "abocetará",
+        "abocetaremos",
+        "abocetaréis",
+        "abocetarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["abocete", "abocetes", "abocete", "abocetemos", "abocetéis", "aboceten"],
+      "Imperfect (-ra)": [
+        "abocetara",
+        "abocetaras",
+        "abocetara",
+        "abocetáramos",
+        "abocetarais",
+        "abocetaran"
+      ],
+      "Imperfect (-se)": [
+        "abocetase",
+        "abocetases",
+        "abocetase",
+        "abocetásemos",
+        "abocetaseis",
+        "abocetasen"
+      ],
+      "Future": [
+        "abocetare",
+        "abocetares",
+        "abocetare",
+        "abocetáremos",
+        "abocetareis",
+        "abocetaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["aboceta", "abocete", "abocetemos", "abocetad", "aboceten"],
+      "Negative": ["no abocetes", "no abocete", "no abocetemos", "no abocetéis", "no aboceten"]
+    },
+    "Present Participle": "abocetando",
+    "Past Participle": "abocetado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/abocetar",
+  "wordreference": {
+    "Indicative": {
+      "Present": ["aboceto", "abocetas", "aboceta", "abocetamos", "abocetáis", "abocetan"],
+      "Preterite": ["aboceté", "abocetaste", "abocetó", "abocetamos", "abocetasteis", "abocetaron"],
+      "Imperfect": [
+        "abocetaba",
+        "abocetabas",
+        "abocetaba",
+        "abocetábamos",
+        "abocetabais",
+        "abocetaban"
+      ],
+      "Conditional": [
+        "abocetaría",
+        "abocetarías",
+        "abocetaría",
+        "abocetaríamos",
+        "abocetaríais",
+        "abocetarían"
+      ],
+      "Future": [
+        "abocetaré",
+        "abocetarás",
+        "abocetará",
+        "abocetaremos",
+        "abocetaréis",
+        "abocetarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["abocete", "abocetes", "abocete", "abocetemos", "abocetéis", "aboceten"],
+      "Imperfect (-ra)": [
+        "abocetara",
+        "abocetaras",
+        "abocetara",
+        "abocetáramos",
+        "abocetarais",
+        "abocetaran"
+      ],
+      "Imperfect (-se)": [
+        "abocetase",
+        "abocetases",
+        "abocetase",
+        "abocetásemos",
+        "abocetaseis",
+        "abocetasen"
+      ],
+      "Future": [
+        "abocetare",
+        "abocetares",
+        "abocetare",
+        "abocetáremos",
+        "abocetareis",
+        "abocetaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["aboceta", "abocete", "abocetemos", "abocetad", "aboceten"],
+      "Negative": ["no abocetes", "no abocete", "no abocetemos", "no abocetéis", "no aboceten"]
+    },
+    "Present Participle": "abocetando",
+    "Past Participle": "abocetado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=abocetar"
+}

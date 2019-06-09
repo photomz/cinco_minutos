@@ -1,0 +1,36 @@
+{
+  "verb": "adular",
+  "definition": "to flatter",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["adulo", "adulas", "adula", "adulamos", "aduláis", "adulan"],
+      "Preterite": ["adulé", "adulaste", "aduló", "adulamos", "adulasteis", "adularon"],
+      "Imperfect": ["adulaba", "adulabas", "adulaba", "adulábamos", "adulabais", "adulaban"],
+      "Conditional": [
+        "adularía",
+        "adularías",
+        "adularía",
+        "adularíamos",
+        "adularíais",
+        "adularían"
+      ],
+      "Future": ["adularé", "adularás", "adulará", "adularemos", "adularéis", "adularán"]
+    },
+    "Subjunctive": {
+      "Present": ["adule", "adules", "adule", "adulemos", "aduléis", "adulen"],
+      "Imperfect (-ra)": ["adulara", "adularas", "adulara", "aduláramos", "adularais", "adularan"],
+      "Imperfect (-se)": ["adulase", "adulases", "adulase", "adulásemos", "adulaseis", "adulasen"],
+      "Future": ["adulare", "adulares", "adulare", "aduláremos", "adulareis", "adularen"]
+    },
+    "Imperative": {
+      "Affirmative": ["adula", "adule", "adulemos", "adulad", "adulen"],
+      "Negative": ["no adules", "no adule", "no adulemos", "no aduléis", "no adulen"]
+    },
+    "Present Participle": "adulando",
+    "Past Participle": "adulado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/adulzar",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=adulzar"
+}

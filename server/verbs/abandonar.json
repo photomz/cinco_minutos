@@ -1,0 +1,187 @@
+{
+  "verb": "abandonar",
+  "definition": "to abandon",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me abandono",
+        "te abandonas",
+        "se abandona",
+        "nos abandonamos",
+        "os abandonáis",
+        "se abandonan"
+      ],
+      "Preterite": [
+        "me abandoné",
+        "te abandonaste",
+        "se abandonó",
+        "nos abandonamos",
+        "os abandonasteis",
+        "se abandonaron"
+      ],
+      "Imperfect": [
+        "me abandonaba",
+        "te abandonabas",
+        "se abandonaba",
+        "nos abandonábamos",
+        "os abandonabais",
+        "se abandonaban"
+      ],
+      "Conditional": [
+        "me abandonaría",
+        "te abandonarías",
+        "se abandonaría",
+        "nos abandonaríamos",
+        "os abandonaríais",
+        "se abandonarían"
+      ],
+      "Future": [
+        "me abandonaré",
+        "te abandonarás",
+        "se abandonará",
+        "nos abandonaremos",
+        "os abandonaréis",
+        "se abandonarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me abandone",
+        "te abandones",
+        "se abandone",
+        "nos abandonemos",
+        "os abandonéis",
+        "se abandonen"
+      ],
+      "Imperfect (-ra)": [
+        "me abandonara",
+        "te abandonaras",
+        "se abandonara",
+        "nos abandonáramos",
+        "os abandonarais",
+        "se abandonaran"
+      ],
+      "Imperfect (-se)": [
+        "me abandonase",
+        "te abandonases",
+        "se abandonase",
+        "nos abandonásemos",
+        "os abandonaseis",
+        "se abandonasen"
+      ],
+      "Future": [
+        "me abandonare",
+        "te abandonares",
+        "se abandonare",
+        "nos abandonáremos",
+        "os abandonareis",
+        "se abandonaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["abandónate", "abandónese", "abandonémonos", "abandonaos", "abandónense"],
+      "Negative": [
+        "no te abandones",
+        "no se abandone",
+        "no nos abandonemos",
+        "no os abandonéis",
+        "no se abandonen"
+      ]
+    },
+    "Present Participle": "abandonando",
+    "Past Participle": "abandonado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/abandonarse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me abandono",
+        "te abandonas",
+        "se abandona",
+        "nos abandonamos",
+        "os abandonáis",
+        "se abandonan"
+      ],
+      "Preterite": [
+        "me abandoné",
+        "te abandonaste",
+        "se abandonó",
+        "nos abandonamos",
+        "os abandonasteis",
+        "se abandonaron"
+      ],
+      "Imperfect": [
+        "me abandonaba",
+        "te abandonabas",
+        "se abandonaba",
+        "nos abandonábamos",
+        "os abandonabais",
+        "se abandonaban"
+      ],
+      "Conditional": [
+        "me abandonaría",
+        "te abandonarías",
+        "se abandonaría",
+        "nos abandonaríamos",
+        "os abandonaríais",
+        "se abandonarían"
+      ],
+      "Future": [
+        "me abandonaré",
+        "te abandonarás",
+        "se abandonará",
+        "nos abandonaremos",
+        "os abandonaréis",
+        "se abandonarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me abandone",
+        "te abandones",
+        "se abandone",
+        "nos abandonemos",
+        "os abandonéis",
+        "se abandonen"
+      ],
+      "Imperfect (-ra)": [
+        "me abandonara",
+        "te abandonaras",
+        "se abandonara",
+        "nos abandonáramos",
+        "os abandonarais u os abandonaseis",
+        "se abandonaran"
+      ],
+      "Imperfect (-se)": [
+        "me abandonase",
+        "te abandonases",
+        "se abandonase",
+        "nos abandonásemos",
+        "os abandonaseis",
+        "se abandonasen"
+      ],
+      "Future": [
+        "me abandonare",
+        "te abandonares",
+        "se abandonare",
+        "nos abandonáremos",
+        "os abandonareis",
+        "se abandonaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["abandónate", "abandónese", "abandonémonos", "abandonaos", "abandónense"],
+      "Negative": [
+        "no te abandones",
+        "no se abandone",
+        "no nos abandonemos",
+        "no os abandonéis",
+        "no se abandonen"
+      ]
+    },
+    "Present Participle": "abandonando",
+    "Past Participle": "abandonado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=abandonarse"
+}

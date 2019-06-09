@@ -1,0 +1,91 @@
+{
+  "verb": "anegar",
+  "definition": "to flood",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["me anego", "te anegas", "se anega", "nos anegamos", "os anegáis", "se anegan"],
+      "Preterite": [
+        "me anegué",
+        "te anegaste",
+        "se anegó",
+        "nos anegamos",
+        "os anegasteis",
+        "se anegaron"
+      ],
+      "Imperfect": [
+        "me anegaba",
+        "te anegabas",
+        "se anegaba",
+        "nos anegábamos",
+        "os anegabais",
+        "se anegaban"
+      ],
+      "Conditional": [
+        "me anegaría",
+        "te anegarías",
+        "se anegaría",
+        "nos anegaríamos",
+        "os anegaríais",
+        "se anegarían"
+      ],
+      "Future": [
+        "me anegaré",
+        "te anegarás",
+        "se anegará",
+        "nos anegaremos",
+        "os anegaréis",
+        "se anegarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me anegue",
+        "te anegues",
+        "se anegue",
+        "nos aneguemos",
+        "os aneguéis",
+        "se aneguen"
+      ],
+      "Imperfect (-ra)": [
+        "me anegara",
+        "te anegaras",
+        "se anegara",
+        "nos anegáramos",
+        "os anegarais",
+        "se anegaran"
+      ],
+      "Imperfect (-se)": [
+        "me anegase",
+        "te anegases",
+        "se anegase",
+        "nos anegásemos",
+        "os anegaseis",
+        "se anegasen"
+      ],
+      "Future": [
+        "me anegare",
+        "te anegares",
+        "se anegare",
+        "nos anegáremos",
+        "os anegareis",
+        "se anegaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["anégate", "anéguese", "aneguémonos", "anegaos", "anéguense"],
+      "Negative": [
+        "no te anegues",
+        "no se anegue",
+        "no nos aneguemos",
+        "no os aneguéis",
+        "no se aneguen"
+      ]
+    },
+    "Present Participle": "anegando",
+    "Past Participle": "anegado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/abnegarse",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=abnegarse"
+}

@@ -1,0 +1,187 @@
+{
+  "verb": "acrisolar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me acrisolo",
+        "te acrisolas",
+        "se acrisola",
+        "nos acrisolamos",
+        "os acrisoláis",
+        "se acrisolan"
+      ],
+      "Preterite": [
+        "me acrisolé",
+        "te acrisolaste",
+        "se acrisoló",
+        "nos acrisolamos",
+        "os acrisolasteis",
+        "se acrisolaron"
+      ],
+      "Imperfect": [
+        "me acrisolaba",
+        "te acrisolabas",
+        "se acrisolaba",
+        "nos acrisolábamos",
+        "os acrisolabais",
+        "se acrisolaban"
+      ],
+      "Conditional": [
+        "me acrisolaría",
+        "te acrisolarías",
+        "se acrisolaría",
+        "nos acrisolaríamos",
+        "os acrisolaríais",
+        "se acrisolarían"
+      ],
+      "Future": [
+        "me acrisolaré",
+        "te acrisolarás",
+        "se acrisolará",
+        "nos acrisolaremos",
+        "os acrisolaréis",
+        "se acrisolarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me acrisole",
+        "te acrisoles",
+        "se acrisole",
+        "nos acrisolemos",
+        "os acrisoléis",
+        "se acrisolen"
+      ],
+      "Imperfect (-ra)": [
+        "me acrisolara",
+        "te acrisolaras",
+        "se acrisolara",
+        "nos acrisoláramos",
+        "os acrisolarais",
+        "se acrisolaran"
+      ],
+      "Imperfect (-se)": [
+        "me acrisolase",
+        "te acrisolases",
+        "se acrisolase",
+        "nos acrisolásemos",
+        "os acrisolaseis",
+        "se acrisolasen"
+      ],
+      "Future": [
+        "me acrisolare",
+        "te acrisolares",
+        "se acrisolare",
+        "nos acrisoláremos",
+        "os acrisolareis",
+        "se acrisolaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acrisólate", "acrisólese", "acrisolémonos", "acrisolaos", "acrisólense"],
+      "Negative": [
+        "no te acrisoles",
+        "no se acrisole",
+        "no nos acrisolemos",
+        "no os acrisoléis",
+        "no se acrisolen"
+      ]
+    },
+    "Present Participle": "acrisolando",
+    "Past Participle": "acrisolado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acrisolarse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me acrisolo",
+        "te acrisolas",
+        "se acrisola",
+        "nos acrisolamos",
+        "os acrisoláis",
+        "se acrisolan"
+      ],
+      "Preterite": [
+        "me acrisolé",
+        "te acrisolaste",
+        "se acrisoló",
+        "nos acrisolamos",
+        "os acrisolasteis",
+        "se acrisolaron"
+      ],
+      "Imperfect": [
+        "me acrisolaba",
+        "te acrisolabas",
+        "se acrisolaba",
+        "nos acrisolábamos",
+        "os acrisolabais",
+        "se acrisolaban"
+      ],
+      "Conditional": [
+        "me acrisolaría",
+        "te acrisolarías",
+        "se acrisolaría",
+        "nos acrisolaríamos",
+        "os acrisolaríais",
+        "se acrisolarían"
+      ],
+      "Future": [
+        "me acrisolaré",
+        "te acrisolarás",
+        "se acrisolará",
+        "nos acrisolaremos",
+        "os acrisolaréis",
+        "se acrisolarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me acrisole",
+        "te acrisoles",
+        "se acrisole",
+        "nos acrisolemos",
+        "os acrisoléis",
+        "se acrisolen"
+      ],
+      "Imperfect (-ra)": [
+        "me acrisolara",
+        "te acrisolaras",
+        "se acrisolara",
+        "nos acrisoláramos",
+        "os acrisolarais u os acrisolaseis",
+        "se acrisolaran"
+      ],
+      "Imperfect (-se)": [
+        "me acrisolase",
+        "te acrisolases",
+        "se acrisolase",
+        "nos acrisolásemos",
+        "os acrisolaseis",
+        "se acrisolasen"
+      ],
+      "Future": [
+        "me acrisolare",
+        "te acrisolares",
+        "se acrisolare",
+        "nos acrisoláremos",
+        "os acrisolareis",
+        "se acrisolaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acrisólate", "acrisólese", "acrisolémonos", "acrisolaos", "acrisólense"],
+      "Negative": [
+        "no te acrisoles",
+        "no se acrisole",
+        "no nos acrisolemos",
+        "no os acrisoléis",
+        "no se acrisolen"
+      ]
+    },
+    "Present Participle": "acrisolando",
+    "Past Participle": "acrisolado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acrisolarse"
+}

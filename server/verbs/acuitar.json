@@ -1,0 +1,98 @@
+{
+  "verb": "acuitar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me acuito",
+        "te acuitas",
+        "se acuita",
+        "nos acuitamos",
+        "os acuitáis",
+        "se acuitan"
+      ],
+      "Preterite": [
+        "me acuité",
+        "te acuitaste",
+        "se acuitó",
+        "nos acuitamos",
+        "os acuitasteis",
+        "se acuitaron"
+      ],
+      "Imperfect": [
+        "me acuitaba",
+        "te acuitabas",
+        "se acuitaba",
+        "nos acuitábamos",
+        "os acuitabais",
+        "se acuitaban"
+      ],
+      "Conditional": [
+        "me acuitaría",
+        "te acuitarías",
+        "se acuitaría",
+        "nos acuitaríamos",
+        "os acuitaríais",
+        "se acuitarían"
+      ],
+      "Future": [
+        "me acuitaré",
+        "te acuitarás",
+        "se acuitará",
+        "nos acuitaremos",
+        "os acuitaréis",
+        "se acuitarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me acuite",
+        "te acuites",
+        "se acuite",
+        "nos acuitemos",
+        "os acuitéis",
+        "se acuiten"
+      ],
+      "Imperfect (-ra)": [
+        "me acuitara",
+        "te acuitaras",
+        "se acuitara",
+        "nos acuitáramos",
+        "os acuitarais",
+        "se acuitaran"
+      ],
+      "Imperfect (-se)": [
+        "me acuitase",
+        "te acuitases",
+        "se acuitase",
+        "nos acuitásemos",
+        "os acuitaseis",
+        "se acuitasen"
+      ],
+      "Future": [
+        "me acuitare",
+        "te acuitares",
+        "se acuitare",
+        "nos acuitáremos",
+        "os acuitareis",
+        "se acuitaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acuítate", "acuítese", "acuitémonos", "acuitaos", "acuítense"],
+      "Negative": [
+        "no te acuites",
+        "no se acuite",
+        "no nos acuitemos",
+        "no os acuitéis",
+        "no se acuiten"
+      ]
+    },
+    "Present Participle": "acuitando",
+    "Past Participle": "acuitado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acuitarse",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acuitarse"
+}

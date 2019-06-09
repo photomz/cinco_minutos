@@ -1,0 +1,98 @@
+{
+  "verb": "apartar",
+  "definition": "to move away",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me aparto",
+        "te apartas",
+        "se aparta",
+        "nos apartamos",
+        "os apartáis",
+        "se apartan"
+      ],
+      "Preterite": [
+        "me aparté",
+        "te apartaste",
+        "se apartó",
+        "nos apartamos",
+        "os apartasteis",
+        "se apartaron"
+      ],
+      "Imperfect": [
+        "me apartaba",
+        "te apartabas",
+        "se apartaba",
+        "nos apartábamos",
+        "os apartabais",
+        "se apartaban"
+      ],
+      "Conditional": [
+        "me apartaría",
+        "te apartarías",
+        "se apartaría",
+        "nos apartaríamos",
+        "os apartaríais",
+        "se apartarían"
+      ],
+      "Future": [
+        "me apartaré",
+        "te apartarás",
+        "se apartará",
+        "nos apartaremos",
+        "os apartaréis",
+        "se apartarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me aparte",
+        "te apartes",
+        "se aparte",
+        "nos apartemos",
+        "os apartéis",
+        "se aparten"
+      ],
+      "Imperfect (-ra)": [
+        "me apartara",
+        "te apartaras",
+        "se apartara",
+        "nos apartáramos",
+        "os apartarais",
+        "se apartaran"
+      ],
+      "Imperfect (-se)": [
+        "me apartase",
+        "te apartases",
+        "se apartase",
+        "nos apartásemos",
+        "os apartaseis",
+        "se apartasen"
+      ],
+      "Future": [
+        "me apartare",
+        "te apartares",
+        "se apartare",
+        "nos apartáremos",
+        "os apartareis",
+        "se apartaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["apártate", "apártese", "apartémonos", "apartaos", "apártense"],
+      "Negative": [
+        "no te apartes",
+        "no se aparte",
+        "no nos apartemos",
+        "no os apartéis",
+        "no se aparten"
+      ]
+    },
+    "Present Participle": "apartando",
+    "Past Participle": "apartado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/abartarse",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=abartarse"
+}

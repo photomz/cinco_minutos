@@ -1,0 +1,71 @@
+{
+  "verb": "acanalar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["acanalo", "acanalas", "acanala", "acanalamos", "acanaláis", "acanalan"],
+      "Preterite": ["acanalé", "acanalaste", "acanaló", "acanalamos", "acanalasteis", "acanalaron"],
+      "Imperfect": [
+        "acanalaba",
+        "acanalabas",
+        "acanalaba",
+        "acanalábamos",
+        "acanalabais",
+        "acanalaban"
+      ],
+      "Conditional": [
+        "acanalaría",
+        "acanalarías",
+        "acanalaría",
+        "acanalaríamos",
+        "acanalaríais",
+        "acanalarían"
+      ],
+      "Future": [
+        "acanalaré",
+        "acanalarás",
+        "acanalará",
+        "acanalaremos",
+        "acanalaréis",
+        "acanalarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["acanale", "acanales", "acanale", "acanalemos", "acanaléis", "acanalen"],
+      "Imperfect (-ra)": [
+        "acanalara",
+        "acanalaras",
+        "acanalara",
+        "acanaláramos",
+        "acanalarais",
+        "acanalaran"
+      ],
+      "Imperfect (-se)": [
+        "acanalase",
+        "acanalases",
+        "acanalase",
+        "acanalásemos",
+        "acanalaseis",
+        "acanalasen"
+      ],
+      "Future": [
+        "acanalare",
+        "acanalares",
+        "acanalare",
+        "acanaláremos",
+        "acanalareis",
+        "acanalaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acanala", "acanale", "acanalemos", "acanalad", "acanalen"],
+      "Negative": ["no acanales", "no acanale", "no acanalemos", "no acanaléis", "no acanalen"]
+    },
+    "Present Participle": "acanalando",
+    "Past Participle": "acanalado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acanallar",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acanallar"
+}

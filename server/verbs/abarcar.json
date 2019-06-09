@@ -1,0 +1,91 @@
+{
+  "verb": "abarcar",
+  "definition": "to cover",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["abarco", "abarcas", "abarca", "abarcamos", "abarcáis", "abarcan"],
+      "Preterite": ["abarqué", "abarcaste", "abarcó", "abarcamos", "abarcasteis", "abarcaron"],
+      "Imperfect": ["abarcaba", "abarcabas", "abarcaba", "abarcábamos", "abarcabais", "abarcaban"],
+      "Conditional": [
+        "abarcaría",
+        "abarcarías",
+        "abarcaría",
+        "abarcaríamos",
+        "abarcaríais",
+        "abarcarían"
+      ],
+      "Future": ["abarcaré", "abarcarás", "abarcará", "abarcaremos", "abarcaréis", "abarcarán"]
+    },
+    "Subjunctive": {
+      "Present": ["abarque", "abarques", "abarque", "abarquemos", "abarquéis", "abarquen"],
+      "Imperfect (-ra)": [
+        "abarcara",
+        "abarcaras",
+        "abarcara",
+        "abarcáramos",
+        "abarcarais",
+        "abarcaran"
+      ],
+      "Imperfect (-se)": [
+        "abarcase",
+        "abarcases",
+        "abarcase",
+        "abarcásemos",
+        "abarcaseis",
+        "abarcasen"
+      ],
+      "Future": ["abarcare", "abarcares", "abarcare", "abarcáremos", "abarcareis", "abarcaren"]
+    },
+    "Imperative": {
+      "Affirmative": ["abarca", "abarque", "abarquemos", "abarcad", "abarquen"],
+      "Negative": ["no abarques", "no abarque", "no abarquemos", "no abarquéis", "no abarquen"]
+    },
+    "Present Participle": "abarcando",
+    "Past Participle": "abarcado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/abarcar",
+  "wordreference": {
+    "Indicative": {
+      "Present": ["abarco", "abarcas", "abarca", "abarcamos", "abarcáis", "abarcan"],
+      "Preterite": ["abarqué", "abarcaste", "abarcó", "abarcamos", "abarcasteis", "abarcaron"],
+      "Imperfect": ["abarcaba", "abarcabas", "abarcaba", "abarcábamos", "abarcabais", "abarcaban"],
+      "Conditional": [
+        "abarcaría",
+        "abarcarías",
+        "abarcaría",
+        "abarcaríamos",
+        "abarcaríais",
+        "abarcarían"
+      ],
+      "Future": ["abarcaré", "abarcarás", "abarcará", "abarcaremos", "abarcaréis", "abarcarán"]
+    },
+    "Subjunctive": {
+      "Present": ["abarque", "abarques", "abarque", "abarquemos", "abarquéis", "abarquen"],
+      "Imperfect (-ra)": [
+        "abarcara",
+        "abarcaras",
+        "abarcara",
+        "abarcáramos",
+        "abarcarais",
+        "abarcaran"
+      ],
+      "Imperfect (-se)": [
+        "abarcase",
+        "abarcases",
+        "abarcase",
+        "abarcásemos",
+        "abarcaseis",
+        "abarcasen"
+      ],
+      "Future": ["abarcare", "abarcares", "abarcare", "abarcáremos", "abarcareis", "abarcaren"]
+    },
+    "Imperative": {
+      "Affirmative": ["abarca", "abarque", "abarquemos", "abarcad", "abarquen"],
+      "Negative": ["no abarques", "no abarque", "no abarquemos", "no abarquéis", "no abarquen"]
+    },
+    "Present Participle": "abarcando",
+    "Past Participle": "abarcado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=abarcar"
+}

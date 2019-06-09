@@ -1,0 +1,187 @@
+{
+  "verb": "afligir",
+  "definition": "to upset",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me aflijo",
+        "te afliges",
+        "se aflige",
+        "nos afligimos",
+        "os afligís",
+        "se afligen"
+      ],
+      "Preterite": [
+        "me afligí",
+        "te afligiste",
+        "se afligió",
+        "nos afligimos",
+        "os afligisteis",
+        "se afligieron"
+      ],
+      "Imperfect": [
+        "me afligía",
+        "te afligías",
+        "se afligía",
+        "nos afligíamos",
+        "os afligíais",
+        "se afligían"
+      ],
+      "Conditional": [
+        "me afligiría",
+        "te afligirías",
+        "se afligiría",
+        "nos afligiríamos",
+        "os afligiríais",
+        "se afligirían"
+      ],
+      "Future": [
+        "me afligiré",
+        "te afligirás",
+        "se afligirá",
+        "nos afligiremos",
+        "os afligiréis",
+        "se afligirán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me aflija",
+        "te aflijas",
+        "se aflija",
+        "nos aflijamos",
+        "os aflijáis",
+        "se aflijan"
+      ],
+      "Imperfect (-ra)": [
+        "me afligiera",
+        "te afligieras",
+        "se afligiera",
+        "nos afligiéramos",
+        "os afligierais",
+        "se afligieran"
+      ],
+      "Imperfect (-se)": [
+        "me afligiese",
+        "te afligieses",
+        "se afligiese",
+        "nos afligiésemos",
+        "os afligieseis",
+        "se afligiesen"
+      ],
+      "Future": [
+        "me afligiere",
+        "te afligieres",
+        "se afligiere",
+        "nos afligiéremos",
+        "os afligiereis",
+        "se afligieren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["aflígete", "aflíjase", "aflijámonos", "afligíos", "aflíjanse"],
+      "Negative": [
+        "no te aflijas",
+        "no se aflija",
+        "no nos aflijamos",
+        "no os aflijáis",
+        "no se aflijan"
+      ]
+    },
+    "Present Participle": "afligiendo",
+    "Past Participle": "afligido"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/afligirse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me aflijo",
+        "te afliges",
+        "se aflige",
+        "nos afligimos",
+        "os afligís",
+        "se afligen"
+      ],
+      "Preterite": [
+        "me afligí",
+        "te afligiste",
+        "se afligió",
+        "nos afligimos",
+        "os afligisteis",
+        "se afligieron"
+      ],
+      "Imperfect": [
+        "me afligía",
+        "te afligías",
+        "se afligía",
+        "nos afligíamos",
+        "os afligíais",
+        "se afligían"
+      ],
+      "Conditional": [
+        "me afligiría",
+        "te afligirías",
+        "se afligiría",
+        "nos afligiríamos",
+        "os afligiríais",
+        "se afligirían"
+      ],
+      "Future": [
+        "me afligiré",
+        "te afligirás",
+        "se afligirá",
+        "nos afligiremos",
+        "os afligiréis",
+        "se afligirán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me aflija",
+        "te aflijas",
+        "se aflija",
+        "nos aflijamos",
+        "os aflijáis",
+        "se aflijan"
+      ],
+      "Imperfect (-ra)": [
+        "me afligiera",
+        "te afligieras",
+        "se afligiera",
+        "nos afligiéramos",
+        "os afligierais u os afligieseis",
+        "se afligieran"
+      ],
+      "Imperfect (-se)": [
+        "me afligiese",
+        "te afligieses",
+        "se afligiese",
+        "nos afligiésemos",
+        "os afligieseis",
+        "se afligiesen"
+      ],
+      "Future": [
+        "me afligiere",
+        "te afligieres",
+        "se afligiere",
+        "nos afligiéremos",
+        "os afligiereis",
+        "se afligieren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["aflígete", "aflíjase", "aflijámonos", "afligíos", "aflíjanse"],
+      "Negative": [
+        "no te aflijas",
+        "no se aflija",
+        "no nos aflijamos",
+        "no os aflijáis",
+        "no se aflijan"
+      ]
+    },
+    "Present Participle": "afligiendo",
+    "Past Participle": "afligido"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=afligirse"
+}

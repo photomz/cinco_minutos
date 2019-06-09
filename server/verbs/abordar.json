@@ -1,0 +1,91 @@
+{
+  "verb": "abordar",
+  "definition": "to tackle",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["abordo", "abordas", "aborda", "abordamos", "abordáis", "abordan"],
+      "Preterite": ["abordé", "abordaste", "abordó", "abordamos", "abordasteis", "abordaron"],
+      "Imperfect": ["abordaba", "abordabas", "abordaba", "abordábamos", "abordabais", "abordaban"],
+      "Conditional": [
+        "abordaría",
+        "abordarías",
+        "abordaría",
+        "abordaríamos",
+        "abordaríais",
+        "abordarían"
+      ],
+      "Future": ["abordaré", "abordarás", "abordará", "abordaremos", "abordaréis", "abordarán"]
+    },
+    "Subjunctive": {
+      "Present": ["aborde", "abordes", "aborde", "abordemos", "abordéis", "aborden"],
+      "Imperfect (-ra)": [
+        "abordara",
+        "abordaras",
+        "abordara",
+        "abordáramos",
+        "abordarais",
+        "abordaran"
+      ],
+      "Imperfect (-se)": [
+        "abordase",
+        "abordases",
+        "abordase",
+        "abordásemos",
+        "abordaseis",
+        "abordasen"
+      ],
+      "Future": ["abordare", "abordares", "abordare", "abordáremos", "abordareis", "abordaren"]
+    },
+    "Imperative": {
+      "Affirmative": ["aborda", "aborde", "abordemos", "abordad", "aborden"],
+      "Negative": ["no abordes", "no aborde", "no abordemos", "no abordéis", "no aborden"]
+    },
+    "Present Participle": "abordando",
+    "Past Participle": "abordado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/abordar",
+  "wordreference": {
+    "Indicative": {
+      "Present": ["abordo", "abordas", "aborda", "abordamos", "abordáis", "abordan"],
+      "Preterite": ["abordé", "abordaste", "abordó", "abordamos", "abordasteis", "abordaron"],
+      "Imperfect": ["abordaba", "abordabas", "abordaba", "abordábamos", "abordabais", "abordaban"],
+      "Conditional": [
+        "abordaría",
+        "abordarías",
+        "abordaría",
+        "abordaríamos",
+        "abordaríais",
+        "abordarían"
+      ],
+      "Future": ["abordaré", "abordarás", "abordará", "abordaremos", "abordaréis", "abordarán"]
+    },
+    "Subjunctive": {
+      "Present": ["aborde", "abordes", "aborde", "abordemos", "abordéis", "aborden"],
+      "Imperfect (-ra)": [
+        "abordara",
+        "abordaras",
+        "abordara",
+        "abordáramos",
+        "abordarais",
+        "abordaran"
+      ],
+      "Imperfect (-se)": [
+        "abordase",
+        "abordases",
+        "abordase",
+        "abordásemos",
+        "abordaseis",
+        "abordasen"
+      ],
+      "Future": ["abordare", "abordares", "abordare", "abordáremos", "abordareis", "abordaren"]
+    },
+    "Imperative": {
+      "Affirmative": ["aborda", "aborde", "abordemos", "abordad", "aborden"],
+      "Negative": ["no abordes", "no aborde", "no abordemos", "no abordéis", "no aborden"]
+    },
+    "Present Participle": "abordando",
+    "Past Participle": "abordado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=abordar"
+}

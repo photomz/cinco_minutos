@@ -1,0 +1,133 @@
+{
+  "verb": "advertir",
+  "definition": "to warn",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["advierto", "adviertes", "advierte", "advertimos", "advertís", "advierten"],
+      "Preterite": [
+        "advertí",
+        "advertiste",
+        "advirtió",
+        "advertimos",
+        "advertisteis",
+        "advirtieron"
+      ],
+      "Imperfect": ["advertía", "advertías", "advertía", "advertíamos", "advertíais", "advertían"],
+      "Conditional": [
+        "advertiría",
+        "advertirías",
+        "advertiría",
+        "advertiríamos",
+        "advertiríais",
+        "advertirían"
+      ],
+      "Future": [
+        "advertiré",
+        "advertirás",
+        "advertirá",
+        "advertiremos",
+        "advertiréis",
+        "advertirán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["advierta", "adviertas", "advierta", "advirtamos", "advirtáis", "adviertan"],
+      "Imperfect (-ra)": [
+        "advirtiera",
+        "advirtieras",
+        "advirtiera",
+        "advirtiéramos",
+        "advirtierais",
+        "advirtieran"
+      ],
+      "Imperfect (-se)": [
+        "advirtiese",
+        "advirtieses",
+        "advirtiese",
+        "advirtiésemos",
+        "advirtieseis",
+        "advirtiesen"
+      ],
+      "Future": [
+        "advirtiere",
+        "advirtieres",
+        "advirtiere",
+        "advirtiéremos",
+        "advirtiereis",
+        "advirtieren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["advierte", "advierta", "advirtamos", "advertid", "adviertan"],
+      "Negative": ["no adviertas", "no advierta", "no advirtamos", "no advirtáis", "no adviertan"]
+    },
+    "Present Participle": "advirtiendo",
+    "Past Participle": "advertido"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/advertir",
+  "wordreference": {
+    "Indicative": {
+      "Present": ["advierto", "adviertes", "advierte", "advertimos", "advertís", "advierten"],
+      "Preterite": [
+        "advertí",
+        "advertiste",
+        "advirtió",
+        "advertimos",
+        "advertisteis",
+        "advirtieron"
+      ],
+      "Imperfect": ["advertía", "advertías", "advertía", "advertíamos", "advertíais", "advertían"],
+      "Conditional": [
+        "advertiría",
+        "advertirías",
+        "advertiría",
+        "advertiríamos",
+        "advertiríais",
+        "advertirían"
+      ],
+      "Future": [
+        "advertiré",
+        "advertirás",
+        "advertirá",
+        "advertiremos",
+        "advertiréis",
+        "advertirán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["advierta", "adviertas", "advierta", "advirtamos", "advirtáis", "adviertan"],
+      "Imperfect (-ra)": [
+        "advirtiera",
+        "advirtieras",
+        "advirtiera",
+        "advirtiéramos",
+        "advirtierais",
+        "advirtieran"
+      ],
+      "Imperfect (-se)": [
+        "advirtiese",
+        "advirtieses",
+        "advirtiese",
+        "advirtiésemos",
+        "advirtieseis",
+        "advirtiesen"
+      ],
+      "Future": [
+        "advirtiere",
+        "advirtieres",
+        "advirtiere",
+        "advirtiéremos",
+        "advirtiereis",
+        "advirtieren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["advierte", "advierta", "advirtamos", "advertid", "adviertan"],
+      "Negative": ["no adviertas", "no advierta", "no advirtamos", "no advirtáis", "no adviertan"]
+    },
+    "Present Participle": "advirtiendo",
+    "Past Participle": "advertido"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=advertir"
+}

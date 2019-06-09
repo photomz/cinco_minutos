@@ -1,0 +1,187 @@
+{
+  "verb": "acompañar",
+  "definition": "to go with",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me acompaño",
+        "te acompañas",
+        "se acompaña",
+        "nos acompañamos",
+        "os acompañáis",
+        "se acompañan"
+      ],
+      "Preterite": [
+        "me acompañé",
+        "te acompañaste",
+        "se acompañó",
+        "nos acompañamos",
+        "os acompañasteis",
+        "se acompañaron"
+      ],
+      "Imperfect": [
+        "me acompañaba",
+        "te acompañabas",
+        "se acompañaba",
+        "nos acompañábamos",
+        "os acompañabais",
+        "se acompañaban"
+      ],
+      "Conditional": [
+        "me acompañaría",
+        "te acompañarías",
+        "se acompañaría",
+        "nos acompañaríamos",
+        "os acompañaríais",
+        "se acompañarían"
+      ],
+      "Future": [
+        "me acompañaré",
+        "te acompañarás",
+        "se acompañará",
+        "nos acompañaremos",
+        "os acompañaréis",
+        "se acompañarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me acompañe",
+        "te acompañes",
+        "se acompañe",
+        "nos acompañemos",
+        "os acompañéis",
+        "se acompañen"
+      ],
+      "Imperfect (-ra)": [
+        "me acompañara",
+        "te acompañaras",
+        "se acompañara",
+        "nos acompañáramos",
+        "os acompañarais",
+        "se acompañaran"
+      ],
+      "Imperfect (-se)": [
+        "me acompañase",
+        "te acompañases",
+        "se acompañase",
+        "nos acompañásemos",
+        "os acompañaseis",
+        "se acompañasen"
+      ],
+      "Future": [
+        "me acompañare",
+        "te acompañares",
+        "se acompañare",
+        "nos acompañáremos",
+        "os acompañareis",
+        "se acompañaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acompáñate", "acompáñese", "acompañémonos", "acompañaos", "acompáñense"],
+      "Negative": [
+        "no te acompañes",
+        "no se acompañe",
+        "no nos acompañemos",
+        "no os acompañéis",
+        "no se acompañen"
+      ]
+    },
+    "Present Participle": "acompañando",
+    "Past Participle": "acompañado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acompañarse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me acompaño",
+        "te acompañas",
+        "se acompaña",
+        "nos acompañamos",
+        "os acompañáis",
+        "se acompañan"
+      ],
+      "Preterite": [
+        "me acompañé",
+        "te acompañaste",
+        "se acompañó",
+        "nos acompañamos",
+        "os acompañasteis",
+        "se acompañaron"
+      ],
+      "Imperfect": [
+        "me acompañaba",
+        "te acompañabas",
+        "se acompañaba",
+        "nos acompañábamos",
+        "os acompañabais",
+        "se acompañaban"
+      ],
+      "Conditional": [
+        "me acompañaría",
+        "te acompañarías",
+        "se acompañaría",
+        "nos acompañaríamos",
+        "os acompañaríais",
+        "se acompañarían"
+      ],
+      "Future": [
+        "me acompañaré",
+        "te acompañarás",
+        "se acompañará",
+        "nos acompañaremos",
+        "os acompañaréis",
+        "se acompañarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me acompañe",
+        "te acompañes",
+        "se acompañe",
+        "nos acompañemos",
+        "os acompañéis",
+        "se acompañen"
+      ],
+      "Imperfect (-ra)": [
+        "me acompañara",
+        "te acompañaras",
+        "se acompañara",
+        "nos acompañáramos",
+        "os acompañarais u os acompañaseis",
+        "se acompañaran"
+      ],
+      "Imperfect (-se)": [
+        "me acompañase",
+        "te acompañases",
+        "se acompañase",
+        "nos acompañásemos",
+        "os acompañaseis",
+        "se acompañasen"
+      ],
+      "Future": [
+        "me acompañare",
+        "te acompañares",
+        "se acompañare",
+        "nos acompañáremos",
+        "os acompañareis",
+        "se acompañaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acompáñate", "acompáñese", "acompañémonos", "acompañaos", "acompáñense"],
+      "Negative": [
+        "no te acompañes",
+        "no se acompañe",
+        "no nos acompañemos",
+        "no os acompañéis",
+        "no se acompañen"
+      ]
+    },
+    "Present Participle": "acompañando",
+    "Past Participle": "acompañado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acompañarse"
+}

@@ -1,0 +1,133 @@
+{
+  "verb": "abarajar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["abarajo", "abarajas", "abaraja", "abarajamos", "abarajáis", "abarajan"],
+      "Preterite": ["abarajé", "abarajaste", "abarajó", "abarajamos", "abarajasteis", "abarajaron"],
+      "Imperfect": [
+        "abarajaba",
+        "abarajabas",
+        "abarajaba",
+        "abarajábamos",
+        "abarajabais",
+        "abarajaban"
+      ],
+      "Conditional": [
+        "abarajaría",
+        "abarajarías",
+        "abarajaría",
+        "abarajaríamos",
+        "abarajaríais",
+        "abarajarían"
+      ],
+      "Future": [
+        "abarajaré",
+        "abarajarás",
+        "abarajará",
+        "abarajaremos",
+        "abarajaréis",
+        "abarajarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["abaraje", "abarajes", "abaraje", "abarajemos", "abarajéis", "abarajen"],
+      "Imperfect (-ra)": [
+        "abarajara",
+        "abarajaras",
+        "abarajara",
+        "abarajáramos",
+        "abarajarais",
+        "abarajaran"
+      ],
+      "Imperfect (-se)": [
+        "abarajase",
+        "abarajases",
+        "abarajase",
+        "abarajásemos",
+        "abarajaseis",
+        "abarajasen"
+      ],
+      "Future": [
+        "abarajare",
+        "abarajares",
+        "abarajare",
+        "abarajáremos",
+        "abarajareis",
+        "abarajaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["abaraja", "abaraje", "abarajemos", "abarajad", "abarajen"],
+      "Negative": ["no abarajes", "no abaraje", "no abarajemos", "no abarajéis", "no abarajen"]
+    },
+    "Present Participle": "abarajando",
+    "Past Participle": "abarajado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/abarajar",
+  "wordreference": {
+    "Indicative": {
+      "Present": ["abarajo", "abarajas", "abaraja", "abarajamos", "abarajáis", "abarajan"],
+      "Preterite": ["abarajé", "abarajaste", "abarajó", "abarajamos", "abarajasteis", "abarajaron"],
+      "Imperfect": [
+        "abarajaba",
+        "abarajabas",
+        "abarajaba",
+        "abarajábamos",
+        "abarajabais",
+        "abarajaban"
+      ],
+      "Conditional": [
+        "abarajaría",
+        "abarajarías",
+        "abarajaría",
+        "abarajaríamos",
+        "abarajaríais",
+        "abarajarían"
+      ],
+      "Future": [
+        "abarajaré",
+        "abarajarás",
+        "abarajará",
+        "abarajaremos",
+        "abarajaréis",
+        "abarajarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["abaraje", "abarajes", "abaraje", "abarajemos", "abarajéis", "abarajen"],
+      "Imperfect (-ra)": [
+        "abarajara",
+        "abarajaras",
+        "abarajara",
+        "abarajáramos",
+        "abarajarais",
+        "abarajaran"
+      ],
+      "Imperfect (-se)": [
+        "abarajase",
+        "abarajases",
+        "abarajase",
+        "abarajásemos",
+        "abarajaseis",
+        "abarajasen"
+      ],
+      "Future": [
+        "abarajare",
+        "abarajares",
+        "abarajare",
+        "abarajáremos",
+        "abarajareis",
+        "abarajaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["abaraja", "abaraje", "abarajemos", "abarajad", "abarajen"],
+      "Negative": ["no abarajes", "no abaraje", "no abarajemos", "no abarajéis", "no abarajen"]
+    },
+    "Present Participle": "abarajando",
+    "Past Participle": "abarajado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=abarajar"
+}

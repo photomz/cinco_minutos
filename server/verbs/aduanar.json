@@ -1,0 +1,50 @@
+{
+  "verb": "aduanar",
+  "definition": "to ms",
+  "reflexive": false,
+  "spanishdict": null,
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/aduanar",
+  "wordreference": {
+    "Indicative": {
+      "Present": ["aduano", "aduanas", "aduana", "aduanamos", "aduanáis", "aduanan"],
+      "Preterite": ["aduané", "aduanaste", "aduanó", "aduanamos", "aduanasteis", "aduanaron"],
+      "Imperfect": ["aduanaba", "aduanabas", "aduanaba", "aduanábamos", "aduanabais", "aduanaban"],
+      "Conditional": [
+        "aduanaría",
+        "aduanarías",
+        "aduanaría",
+        "aduanaríamos",
+        "aduanaríais",
+        "aduanarían"
+      ],
+      "Future": ["aduanaré", "aduanarás", "aduanará", "aduanaremos", "aduanaréis", "aduanarán"]
+    },
+    "Subjunctive": {
+      "Present": ["aduane", "aduanes", "aduane", "aduanemos", "aduanéis", "aduanen"],
+      "Imperfect (-ra)": [
+        "aduanara",
+        "aduanaras",
+        "aduanara",
+        "aduanáramos",
+        "aduanarais",
+        "aduanaran"
+      ],
+      "Imperfect (-se)": [
+        "aduanase",
+        "aduanases",
+        "aduanase",
+        "aduanásemos",
+        "aduanaseis",
+        "aduanasen"
+      ],
+      "Future": ["aduanare", "aduanares", "aduanare", "aduanáremos", "aduanareis", "aduanaren"]
+    },
+    "Imperative": {
+      "Affirmative": ["aduana", "aduane", "aduanemos", "aduanad", "aduanen"],
+      "Negative": ["no aduanes", "no aduane", "no aduanemos", "no aduanéis", "no aduanen"]
+    },
+    "Present Participle": "aduanando",
+    "Past Participle": "aduanado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=aduanar"
+}

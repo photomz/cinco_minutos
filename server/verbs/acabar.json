@@ -1,0 +1,159 @@
+{
+  "verb": "acabar",
+  "definition": "to finish",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["me acabo", "te acabas", "se acaba", "nos acabamos", "os acabáis", "se acaban"],
+      "Preterite": [
+        "me acabé",
+        "te acabaste",
+        "se acabó",
+        "nos acabamos",
+        "os acabasteis",
+        "se acabaron"
+      ],
+      "Imperfect": [
+        "me acababa",
+        "te acababas",
+        "se acababa",
+        "nos acabábamos",
+        "os acababais",
+        "se acababan"
+      ],
+      "Conditional": [
+        "me acabaría",
+        "te acabarías",
+        "se acabaría",
+        "nos acabaríamos",
+        "os acabaríais",
+        "se acabarían"
+      ],
+      "Future": [
+        "me acabaré",
+        "te acabarás",
+        "se acabará",
+        "nos acabaremos",
+        "os acabaréis",
+        "se acabarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["me acabe", "te acabes", "se acabe", "nos acabemos", "os acabéis", "se acaben"],
+      "Imperfect (-ra)": [
+        "me acabara",
+        "te acabaras",
+        "se acabara",
+        "nos acabáramos",
+        "os acabarais",
+        "se acabaran"
+      ],
+      "Imperfect (-se)": [
+        "me acabase",
+        "te acabases",
+        "se acabase",
+        "nos acabásemos",
+        "os acabaseis",
+        "se acabasen"
+      ],
+      "Future": [
+        "me acabare",
+        "te acabares",
+        "se acabare",
+        "nos acabáremos",
+        "os acabareis",
+        "se acabaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acábate", "acábese", "acabémonos", "acabaos", "acábense"],
+      "Negative": [
+        "no te acabes",
+        "no se acabe",
+        "no nos acabemos",
+        "no os acabéis",
+        "no se acaben"
+      ]
+    },
+    "Present Participle": "acabando",
+    "Past Participle": "acabado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acabarse",
+  "wordreference": {
+    "Indicative": {
+      "Present": ["me acabo", "te acabas", "se acaba", "nos acabamos", "os acabáis", "se acaban"],
+      "Preterite": [
+        "me acabé",
+        "te acabaste",
+        "se acabó",
+        "nos acabamos",
+        "os acabasteis",
+        "se acabaron"
+      ],
+      "Imperfect": [
+        "me acababa",
+        "te acababas",
+        "se acababa",
+        "nos acabábamos",
+        "os acababais",
+        "se acababan"
+      ],
+      "Conditional": [
+        "me acabaría",
+        "te acabarías",
+        "se acabaría",
+        "nos acabaríamos",
+        "os acabaríais",
+        "se acabarían"
+      ],
+      "Future": [
+        "me acabaré",
+        "te acabarás",
+        "se acabará",
+        "nos acabaremos",
+        "os acabaréis",
+        "se acabarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["me acabe", "te acabes", "se acabe", "nos acabemos", "os acabéis", "se acaben"],
+      "Imperfect (-ra)": [
+        "me acabara",
+        "te acabaras",
+        "se acabara",
+        "nos acabáramos",
+        "os acabarais u os acabaseis",
+        "se acabaran"
+      ],
+      "Imperfect (-se)": [
+        "me acabase",
+        "te acabases",
+        "se acabase",
+        "nos acabásemos",
+        "os acabaseis",
+        "se acabasen"
+      ],
+      "Future": [
+        "me acabare",
+        "te acabares",
+        "se acabare",
+        "nos acabáremos",
+        "os acabareis",
+        "se acabaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acábate", "acábese", "acabémonos", "acabaos", "acábense"],
+      "Negative": [
+        "no te acabes",
+        "no se acabe",
+        "no nos acabemos",
+        "no os acabéis",
+        "no se acaben"
+      ]
+    },
+    "Present Participle": "acabando",
+    "Past Participle": "acabado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acabarse"
+}

@@ -1,0 +1,78 @@
+{
+  "verb": "acapillar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["acapillo", "acapillas", "acapilla", "acapillamos", "acapilláis", "acapillan"],
+      "Preterite": [
+        "acapillé",
+        "acapillaste",
+        "acapilló",
+        "acapillamos",
+        "acapillasteis",
+        "acapillaron"
+      ],
+      "Imperfect": [
+        "acapillaba",
+        "acapillabas",
+        "acapillaba",
+        "acapillábamos",
+        "acapillabais",
+        "acapillaban"
+      ],
+      "Conditional": [
+        "acapillaría",
+        "acapillarías",
+        "acapillaría",
+        "acapillaríamos",
+        "acapillaríais",
+        "acapillarían"
+      ],
+      "Future": [
+        "acapillaré",
+        "acapillarás",
+        "acapillará",
+        "acapillaremos",
+        "acapillaréis",
+        "acapillarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["acapille", "acapilles", "acapille", "acapillemos", "acapilléis", "acapillen"],
+      "Imperfect (-ra)": [
+        "acapillara",
+        "acapillaras",
+        "acapillara",
+        "acapilláramos",
+        "acapillarais",
+        "acapillaran"
+      ],
+      "Imperfect (-se)": [
+        "acapillase",
+        "acapillases",
+        "acapillase",
+        "acapillásemos",
+        "acapillaseis",
+        "acapillasen"
+      ],
+      "Future": [
+        "acapillare",
+        "acapillares",
+        "acapillare",
+        "acapilláremos",
+        "acapillareis",
+        "acapillaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acapilla", "acapille", "acapillemos", "acapillad", "acapillen"],
+      "Negative": ["no acapilles", "no acapille", "no acapillemos", "no acapilléis", "no acapillen"]
+    },
+    "Present Participle": "acapillando",
+    "Past Participle": "acapillado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acapillar",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acapillar"
+}

@@ -1,0 +1,71 @@
+{
+  "verb": "acibarar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["acibaro", "acibaras", "acibara", "acibaramos", "acibaráis", "acibaran"],
+      "Preterite": ["acibaré", "acibaraste", "acibaró", "acibaramos", "acibarasteis", "acibararon"],
+      "Imperfect": [
+        "acibaraba",
+        "acibarabas",
+        "acibaraba",
+        "acibarábamos",
+        "acibarabais",
+        "acibaraban"
+      ],
+      "Conditional": [
+        "acibararía",
+        "acibararías",
+        "acibararía",
+        "acibararíamos",
+        "acibararíais",
+        "acibararían"
+      ],
+      "Future": [
+        "acibararé",
+        "acibararás",
+        "acibarará",
+        "acibararemos",
+        "acibararéis",
+        "acibararán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["acibare", "acibares", "acibare", "acibaremos", "acibaréis", "acibaren"],
+      "Imperfect (-ra)": [
+        "acibarara",
+        "acibararas",
+        "acibarara",
+        "acibaráramos",
+        "acibararais",
+        "acibararan"
+      ],
+      "Imperfect (-se)": [
+        "acibarase",
+        "acibarases",
+        "acibarase",
+        "acibarásemos",
+        "acibaraseis",
+        "acibarasen"
+      ],
+      "Future": [
+        "acibarare",
+        "acibarares",
+        "acibarare",
+        "acibaráremos",
+        "acibarareis",
+        "acibararen"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acibara", "acibare", "acibaremos", "acibarad", "acibaren"],
+      "Negative": ["no acibares", "no acibare", "no acibaremos", "no acibaréis", "no acibaren"]
+    },
+    "Present Participle": "acibarando",
+    "Past Participle": "acibarado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/aciberar",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=aciberar"
+}

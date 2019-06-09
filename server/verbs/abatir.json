@@ -1,0 +1,159 @@
+{
+  "verb": "abatir",
+  "definition": "to shoot down",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["me abato", "te abates", "se abate", "nos abatimos", "os abatís", "se abaten"],
+      "Preterite": [
+        "me abatí",
+        "te abatiste",
+        "se abatió",
+        "nos abatimos",
+        "os abatisteis",
+        "se abatieron"
+      ],
+      "Imperfect": [
+        "me abatía",
+        "te abatías",
+        "se abatía",
+        "nos abatíamos",
+        "os abatíais",
+        "se abatían"
+      ],
+      "Conditional": [
+        "me abatiría",
+        "te abatirías",
+        "se abatiría",
+        "nos abatiríamos",
+        "os abatiríais",
+        "se abatirían"
+      ],
+      "Future": [
+        "me abatiré",
+        "te abatirás",
+        "se abatirá",
+        "nos abatiremos",
+        "os abatiréis",
+        "se abatirán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["me abata", "te abatas", "se abata", "nos abatamos", "os abatáis", "se abatan"],
+      "Imperfect (-ra)": [
+        "me abatiera",
+        "te abatieras",
+        "se abatiera",
+        "nos abatiéramos",
+        "os abatierais",
+        "se abatieran"
+      ],
+      "Imperfect (-se)": [
+        "me abatiese",
+        "te abatieses",
+        "se abatiese",
+        "nos abatiésemos",
+        "os abatieseis",
+        "se abatiesen"
+      ],
+      "Future": [
+        "me abatiere",
+        "te abatieres",
+        "se abatiere",
+        "nos abatiéremos",
+        "os abatiereis",
+        "se abatieren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["abátete", "abátase", "abatámonos", "abatíos", "abátanse"],
+      "Negative": [
+        "no te abatas",
+        "no se abata",
+        "no nos abatamos",
+        "no os abatáis",
+        "no se abatan"
+      ]
+    },
+    "Present Participle": "abatiendo",
+    "Past Participle": "abatido"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/abatirse",
+  "wordreference": {
+    "Indicative": {
+      "Present": ["me abato", "te abates", "se abate", "nos abatimos", "os abatís", "se abaten"],
+      "Preterite": [
+        "me abatí",
+        "te abatiste",
+        "se abatió",
+        "nos abatimos",
+        "os abatisteis",
+        "se abatieron"
+      ],
+      "Imperfect": [
+        "me abatía",
+        "te abatías",
+        "se abatía",
+        "nos abatíamos",
+        "os abatíais",
+        "se abatían"
+      ],
+      "Conditional": [
+        "me abatiría",
+        "te abatirías",
+        "se abatiría",
+        "nos abatiríamos",
+        "os abatiríais",
+        "se abatirían"
+      ],
+      "Future": [
+        "me abatiré",
+        "te abatirás",
+        "se abatirá",
+        "nos abatiremos",
+        "os abatiréis",
+        "se abatirán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["me abata", "te abatas", "se abata", "nos abatamos", "os abatáis", "se abatan"],
+      "Imperfect (-ra)": [
+        "me abatiera",
+        "te abatieras",
+        "se abatiera",
+        "nos abatiéramos",
+        "os abatierais u os abatieseis",
+        "se abatieran"
+      ],
+      "Imperfect (-se)": [
+        "me abatiese",
+        "te abatieses",
+        "se abatiese",
+        "nos abatiésemos",
+        "os abatieseis",
+        "se abatiesen"
+      ],
+      "Future": [
+        "me abatiere",
+        "te abatieres",
+        "se abatiere",
+        "nos abatiéremos",
+        "os abatiereis",
+        "se abatieren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["abátete", "abátase", "abatámonos", "abatíos", "abátanse"],
+      "Negative": [
+        "no te abatas",
+        "no se abata",
+        "no nos abatamos",
+        "no os abatáis",
+        "no se abatan"
+      ]
+    },
+    "Present Participle": "abatiendo",
+    "Past Participle": "abatido"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=abatirse"
+}

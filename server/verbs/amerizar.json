@@ -1,0 +1,71 @@
+{
+  "verb": "amerizar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["amerizo", "amerizas", "ameriza", "amerizamos", "amerizáis", "amerizan"],
+      "Preterite": ["americé", "amerizaste", "amerizó", "amerizamos", "amerizasteis", "amerizaron"],
+      "Imperfect": [
+        "amerizaba",
+        "amerizabas",
+        "amerizaba",
+        "amerizábamos",
+        "amerizabais",
+        "amerizaban"
+      ],
+      "Conditional": [
+        "amerizaría",
+        "amerizarías",
+        "amerizaría",
+        "amerizaríamos",
+        "amerizaríais",
+        "amerizarían"
+      ],
+      "Future": [
+        "amerizaré",
+        "amerizarás",
+        "amerizará",
+        "amerizaremos",
+        "amerizaréis",
+        "amerizarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["americe", "americes", "americe", "americemos", "americéis", "americen"],
+      "Imperfect (-ra)": [
+        "amerizara",
+        "amerizaras",
+        "amerizara",
+        "amerizáramos",
+        "amerizarais",
+        "amerizaran"
+      ],
+      "Imperfect (-se)": [
+        "amerizase",
+        "amerizases",
+        "amerizase",
+        "amerizásemos",
+        "amerizaseis",
+        "amerizasen"
+      ],
+      "Future": [
+        "amerizare",
+        "amerizares",
+        "amerizare",
+        "amerizáremos",
+        "amerizareis",
+        "amerizaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["ameriza", "americe", "americemos", "amerizad", "americen"],
+      "Negative": ["no americes", "no americe", "no americemos", "no americéis", "no americen"]
+    },
+    "Present Participle": "amerizando",
+    "Past Participle": "amerizado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/aerizar",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=aerizar"
+}

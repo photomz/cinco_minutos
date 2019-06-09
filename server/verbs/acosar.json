@@ -1,0 +1,63 @@
+{
+  "verb": "acosar",
+  "definition": "to harass",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["acoso", "acosas", "acosa", "acosamos", "acosáis", "acosan"],
+      "Preterite": ["acosé", "acosaste", "acosó", "acosamos", "acosasteis", "acosaron"],
+      "Imperfect": ["acosaba", "acosabas", "acosaba", "acosábamos", "acosabais", "acosaban"],
+      "Conditional": [
+        "acosaría",
+        "acosarías",
+        "acosaría",
+        "acosaríamos",
+        "acosaríais",
+        "acosarían"
+      ],
+      "Future": ["acosaré", "acosarás", "acosará", "acosaremos", "acosaréis", "acosarán"]
+    },
+    "Subjunctive": {
+      "Present": ["acose", "acoses", "acose", "acosemos", "acoséis", "acosen"],
+      "Imperfect (-ra)": ["acosara", "acosaras", "acosara", "acosáramos", "acosarais", "acosaran"],
+      "Imperfect (-se)": ["acosase", "acosases", "acosase", "acosásemos", "acosaseis", "acosasen"],
+      "Future": ["acosare", "acosares", "acosare", "acosáremos", "acosareis", "acosaren"]
+    },
+    "Imperative": {
+      "Affirmative": ["acosa", "acose", "acosemos", "acosad", "acosen"],
+      "Negative": ["no acoses", "no acose", "no acosemos", "no acoséis", "no acosen"]
+    },
+    "Present Participle": "acosando",
+    "Past Participle": "acosado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acosar",
+  "wordreference": {
+    "Indicative": {
+      "Present": ["acoso", "acosas", "acosa", "acosamos", "acosáis", "acosan"],
+      "Preterite": ["acosé", "acosaste", "acosó", "acosamos", "acosasteis", "acosaron"],
+      "Imperfect": ["acosaba", "acosabas", "acosaba", "acosábamos", "acosabais", "acosaban"],
+      "Conditional": [
+        "acosaría",
+        "acosarías",
+        "acosaría",
+        "acosaríamos",
+        "acosaríais",
+        "acosarían"
+      ],
+      "Future": ["acosaré", "acosarás", "acosará", "acosaremos", "acosaréis", "acosarán"]
+    },
+    "Subjunctive": {
+      "Present": ["acose", "acoses", "acose", "acosemos", "acoséis", "acosen"],
+      "Imperfect (-ra)": ["acosara", "acosaras", "acosara", "acosáramos", "acosarais", "acosaran"],
+      "Imperfect (-se)": ["acosase", "acosases", "acosase", "acosásemos", "acosaseis", "acosasen"],
+      "Future": ["acosare", "acosares", "acosare", "acosáremos", "acosareis", "acosaren"]
+    },
+    "Imperative": {
+      "Affirmative": ["acosa", "acose", "acosemos", "acosad", "acosen"],
+      "Negative": ["no acoses", "no acose", "no acosemos", "no acoséis", "no acosen"]
+    },
+    "Present Participle": "acosando",
+    "Past Participle": "acosado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acosar"
+}

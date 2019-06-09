@@ -1,0 +1,98 @@
+{
+  "verb": "afrentar",
+  "definition": "to affront",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me afrento",
+        "te afrentas",
+        "se afrenta",
+        "nos afrentamos",
+        "os afrentáis",
+        "se afrentan"
+      ],
+      "Preterite": [
+        "me afrenté",
+        "te afrentaste",
+        "se afrentó",
+        "nos afrentamos",
+        "os afrentasteis",
+        "se afrentaron"
+      ],
+      "Imperfect": [
+        "me afrentaba",
+        "te afrentabas",
+        "se afrentaba",
+        "nos afrentábamos",
+        "os afrentabais",
+        "se afrentaban"
+      ],
+      "Conditional": [
+        "me afrentaría",
+        "te afrentarías",
+        "se afrentaría",
+        "nos afrentaríamos",
+        "os afrentaríais",
+        "se afrentarían"
+      ],
+      "Future": [
+        "me afrentaré",
+        "te afrentarás",
+        "se afrentará",
+        "nos afrentaremos",
+        "os afrentaréis",
+        "se afrentarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me afrente",
+        "te afrentes",
+        "se afrente",
+        "nos afrentemos",
+        "os afrentéis",
+        "se afrenten"
+      ],
+      "Imperfect (-ra)": [
+        "me afrentara",
+        "te afrentaras",
+        "se afrentara",
+        "nos afrentáramos",
+        "os afrentarais",
+        "se afrentaran"
+      ],
+      "Imperfect (-se)": [
+        "me afrentase",
+        "te afrentases",
+        "se afrentase",
+        "nos afrentásemos",
+        "os afrentaseis",
+        "se afrentasen"
+      ],
+      "Future": [
+        "me afrentare",
+        "te afrentares",
+        "se afrentare",
+        "nos afrentáremos",
+        "os afrentareis",
+        "se afrentaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["afréntate", "afréntese", "afrentémonos", "afrentaos", "afréntense"],
+      "Negative": [
+        "no te afrentes",
+        "no se afrente",
+        "no nos afrentemos",
+        "no os afrentéis",
+        "no se afrenten"
+      ]
+    },
+    "Present Participle": "afrentando",
+    "Past Participle": "afrentado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/afrentarse",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=afrentarse"
+}

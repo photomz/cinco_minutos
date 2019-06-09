@@ -1,0 +1,98 @@
+{
+  "verb": "acachetear",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "acacheteo",
+        "acacheteas",
+        "acachetea",
+        "acacheteamos",
+        "acacheteáis",
+        "acachetean"
+      ],
+      "Preterite": [
+        "acacheteé",
+        "acacheteaste",
+        "acacheteó",
+        "acacheteamos",
+        "acacheteasteis",
+        "acachetearon"
+      ],
+      "Imperfect": [
+        "acacheteaba",
+        "acacheteabas",
+        "acacheteaba",
+        "acacheteábamos",
+        "acacheteabais",
+        "acacheteaban"
+      ],
+      "Conditional": [
+        "acachetearía",
+        "acachetearías",
+        "acachetearía",
+        "acachetearíamos",
+        "acachetearíais",
+        "acachetearían"
+      ],
+      "Future": [
+        "acachetearé",
+        "acachetearás",
+        "acacheteará",
+        "acachetearemos",
+        "acachetearéis",
+        "acachetearán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "acachetee",
+        "acachetees",
+        "acachetee",
+        "acacheteemos",
+        "acacheteéis",
+        "acacheteen"
+      ],
+      "Imperfect (-ra)": [
+        "acacheteara",
+        "acachetearas",
+        "acacheteara",
+        "acacheteáramos",
+        "acachetearais",
+        "acachetearan"
+      ],
+      "Imperfect (-se)": [
+        "acachetease",
+        "acacheteases",
+        "acachetease",
+        "acacheteásemos",
+        "acacheteaseis",
+        "acacheteasen"
+      ],
+      "Future": [
+        "acacheteare",
+        "acacheteares",
+        "acacheteare",
+        "acacheteáremos",
+        "acacheteareis",
+        "acachetearen"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acachetea", "acachetee", "acacheteemos", "acachetead", "acacheteen"],
+      "Negative": [
+        "no acachetees",
+        "no acachetee",
+        "no acacheteemos",
+        "no acacheteéis",
+        "no acacheteen"
+      ]
+    },
+    "Present Participle": "acacheteando",
+    "Past Participle": "acacheteado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acachetear",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acachetear"
+}

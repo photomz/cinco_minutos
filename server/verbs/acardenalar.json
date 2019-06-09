@@ -1,0 +1,104 @@
+{
+  "verb": "acardenalar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me acardenalo",
+        "te acardenalas",
+        "se acardenala",
+        "nos acardenalamos",
+        "os acardenaláis",
+        "se acardenalan"
+      ],
+      "Preterite": [
+        "me acardenalé",
+        "te acardenalaste",
+        "se acardenaló",
+        "nos acardenalamos",
+        "os acardenalasteis",
+        "se acardenalaron"
+      ],
+      "Imperfect": [
+        "me acardenalaba",
+        "te acardenalabas",
+        "se acardenalaba",
+        "nos acardenalábamos",
+        "os acardenalabais",
+        "se acardenalaban"
+      ],
+      "Conditional": [
+        "me acardenalaría",
+        "te acardenalarías",
+        "se acardenalaría",
+        "nos acardenalaríamos",
+        "os acardenalaríais",
+        "se acardenalarían"
+      ],
+      "Future": [
+        "me acardenalaré",
+        "te acardenalarás",
+        "se acardenalará",
+        "nos acardenalaremos",
+        "os acardenalaréis",
+        "se acardenalarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me acardenale",
+        "te acardenales",
+        "se acardenale",
+        "nos acardenalemos",
+        "os acardenaléis",
+        "se acardenalen"
+      ],
+      "Imperfect (-ra)": [
+        "me acardenalara",
+        "te acardenalaras",
+        "se acardenalara",
+        "nos acardenaláramos",
+        "os acardenalarais",
+        "se acardenalaran"
+      ],
+      "Imperfect (-se)": [
+        "me acardenalase",
+        "te acardenalases",
+        "se acardenalase",
+        "nos acardenalásemos",
+        "os acardenalaseis",
+        "se acardenalasen"
+      ],
+      "Future": [
+        "me acardenalare",
+        "te acardenalares",
+        "se acardenalare",
+        "nos acardenaláremos",
+        "os acardenalareis",
+        "se acardenalaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": [
+        "acardenálate",
+        "acardenálese",
+        "acardenalémonos",
+        "acardenalaos",
+        "acardenálense"
+      ],
+      "Negative": [
+        "no te acardenales",
+        "no se acardenale",
+        "no nos acardenalemos",
+        "no os acardenaléis",
+        "no se acardenalen"
+      ]
+    },
+    "Present Participle": "acardenalando",
+    "Past Participle": "acardenalado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acardenalarse",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acardenalarse"
+}

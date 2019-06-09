@@ -1,0 +1,187 @@
+{
+  "verb": "acreditar",
+  "definition": "to confirm",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me acredito",
+        "te acreditas",
+        "se acredita",
+        "nos acreditamos",
+        "os acreditáis",
+        "se acreditan"
+      ],
+      "Preterite": [
+        "me acredité",
+        "te acreditaste",
+        "se acreditó",
+        "nos acreditamos",
+        "os acreditasteis",
+        "se acreditaron"
+      ],
+      "Imperfect": [
+        "me acreditaba",
+        "te acreditabas",
+        "se acreditaba",
+        "nos acreditábamos",
+        "os acreditabais",
+        "se acreditaban"
+      ],
+      "Conditional": [
+        "me acreditaría",
+        "te acreditarías",
+        "se acreditaría",
+        "nos acreditaríamos",
+        "os acreditaríais",
+        "se acreditarían"
+      ],
+      "Future": [
+        "me acreditaré",
+        "te acreditarás",
+        "se acreditará",
+        "nos acreditaremos",
+        "os acreditaréis",
+        "se acreditarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me acredite",
+        "te acredites",
+        "se acredite",
+        "nos acreditemos",
+        "os acreditéis",
+        "se acrediten"
+      ],
+      "Imperfect (-ra)": [
+        "me acreditara",
+        "te acreditaras",
+        "se acreditara",
+        "nos acreditáramos",
+        "os acreditarais",
+        "se acreditaran"
+      ],
+      "Imperfect (-se)": [
+        "me acreditase",
+        "te acreditases",
+        "se acreditase",
+        "nos acreditásemos",
+        "os acreditaseis",
+        "se acreditasen"
+      ],
+      "Future": [
+        "me acreditare",
+        "te acreditares",
+        "se acreditare",
+        "nos acreditáremos",
+        "os acreditareis",
+        "se acreditaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acredítate", "acredítese", "acreditémonos", "acreditaos", "acredítense"],
+      "Negative": [
+        "no te acredites",
+        "no se acredite",
+        "no nos acreditemos",
+        "no os acreditéis",
+        "no se acrediten"
+      ]
+    },
+    "Present Participle": "acreditando",
+    "Past Participle": "acreditado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acreditarse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me acredito",
+        "te acreditas",
+        "se acredita",
+        "nos acreditamos",
+        "os acreditáis",
+        "se acreditan"
+      ],
+      "Preterite": [
+        "me acredité",
+        "te acreditaste",
+        "se acreditó",
+        "nos acreditamos",
+        "os acreditasteis",
+        "se acreditaron"
+      ],
+      "Imperfect": [
+        "me acreditaba",
+        "te acreditabas",
+        "se acreditaba",
+        "nos acreditábamos",
+        "os acreditabais",
+        "se acreditaban"
+      ],
+      "Conditional": [
+        "me acreditaría",
+        "te acreditarías",
+        "se acreditaría",
+        "nos acreditaríamos",
+        "os acreditaríais",
+        "se acreditarían"
+      ],
+      "Future": [
+        "me acreditaré",
+        "te acreditarás",
+        "se acreditará",
+        "nos acreditaremos",
+        "os acreditaréis",
+        "se acreditarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me acredite",
+        "te acredites",
+        "se acredite",
+        "nos acreditemos",
+        "os acreditéis",
+        "se acrediten"
+      ],
+      "Imperfect (-ra)": [
+        "me acreditara",
+        "te acreditaras",
+        "se acreditara",
+        "nos acreditáramos",
+        "os acreditarais u os acreditaseis",
+        "se acreditaran"
+      ],
+      "Imperfect (-se)": [
+        "me acreditase",
+        "te acreditases",
+        "se acreditase",
+        "nos acreditásemos",
+        "os acreditaseis",
+        "se acreditasen"
+      ],
+      "Future": [
+        "me acreditare",
+        "te acreditares",
+        "se acreditare",
+        "nos acreditáremos",
+        "os acreditareis",
+        "se acreditaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acredítate", "acredítese", "acreditémonos", "acreditaos", "acredítense"],
+      "Negative": [
+        "no te acredites",
+        "no se acredite",
+        "no nos acreditemos",
+        "no os acreditéis",
+        "no se acrediten"
+      ]
+    },
+    "Present Participle": "acreditando",
+    "Past Participle": "acreditado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acreditarse"
+}

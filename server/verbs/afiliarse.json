@@ -1,0 +1,98 @@
+{
+  "verb": "afiliarse",
+  "definition": "to enrol, enroll, sign up , join",
+  "reflexive": true,
+  "spanishdict": null,
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/afiliarse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me afilio",
+        "te afilias",
+        "se afilia",
+        "nos afiliamos",
+        "os afiliáis",
+        "se afilian"
+      ],
+      "Preterite": [
+        "me afilié",
+        "te afiliaste",
+        "se afilió",
+        "nos afiliamos",
+        "os afiliasteis",
+        "se afiliaron"
+      ],
+      "Imperfect": [
+        "me afiliaba",
+        "te afiliabas",
+        "se afiliaba",
+        "nos afiliábamos",
+        "os afiliabais",
+        "se afiliaban"
+      ],
+      "Conditional": [
+        "me afiliaría",
+        "te afiliarías",
+        "se afiliaría",
+        "nos afiliaríamos",
+        "os afiliaríais",
+        "se afiliarían"
+      ],
+      "Future": [
+        "me afiliaré",
+        "te afiliarás",
+        "se afiliará",
+        "nos afiliaremos",
+        "os afiliaréis",
+        "se afiliarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me afilie",
+        "te afilies",
+        "se afilie",
+        "nos afiliemos",
+        "os afiliéis",
+        "se afilien"
+      ],
+      "Imperfect (-ra)": [
+        "me afiliara",
+        "te afiliaras",
+        "se afiliara",
+        "nos afiliáramos",
+        "os afiliarais u os afiliaseis",
+        "se afiliaran"
+      ],
+      "Imperfect (-se)": [
+        "me afiliase",
+        "te afiliases",
+        "se afiliase",
+        "nos afiliásemos",
+        "os afiliaseis",
+        "se afiliasen"
+      ],
+      "Future": [
+        "me afiliare",
+        "te afiliares",
+        "se afiliare",
+        "nos afiliáremos",
+        "os afiliareis",
+        "se afiliaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["afíliate", "afíliese", "afiliémonos", "afiliaos", "afíliense"],
+      "Negative": [
+        "no te afilies",
+        "no se afilie",
+        "no nos afiliemos",
+        "no os afiliéis",
+        "no se afilien"
+      ]
+    },
+    "Present Participle": "afiliando",
+    "Past Participle": "afiliado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=afiliarse"
+}

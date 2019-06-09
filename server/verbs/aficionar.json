@@ -1,0 +1,187 @@
+{
+  "verb": "aficionar",
+  "definition": "to get somebody interested in",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me aficiono",
+        "te aficionas",
+        "se aficiona",
+        "nos aficionamos",
+        "os aficionáis",
+        "se aficionan"
+      ],
+      "Preterite": [
+        "me aficioné",
+        "te aficionaste",
+        "se aficionó",
+        "nos aficionamos",
+        "os aficionasteis",
+        "se aficionaron"
+      ],
+      "Imperfect": [
+        "me aficionaba",
+        "te aficionabas",
+        "se aficionaba",
+        "nos aficionábamos",
+        "os aficionabais",
+        "se aficionaban"
+      ],
+      "Conditional": [
+        "me aficionaría",
+        "te aficionarías",
+        "se aficionaría",
+        "nos aficionaríamos",
+        "os aficionaríais",
+        "se aficionarían"
+      ],
+      "Future": [
+        "me aficionaré",
+        "te aficionarás",
+        "se aficionará",
+        "nos aficionaremos",
+        "os aficionaréis",
+        "se aficionarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me aficione",
+        "te aficiones",
+        "se aficione",
+        "nos aficionemos",
+        "os aficionéis",
+        "se aficionen"
+      ],
+      "Imperfect (-ra)": [
+        "me aficionara",
+        "te aficionaras",
+        "se aficionara",
+        "nos aficionáramos",
+        "os aficionarais",
+        "se aficionaran"
+      ],
+      "Imperfect (-se)": [
+        "me aficionase",
+        "te aficionases",
+        "se aficionase",
+        "nos aficionásemos",
+        "os aficionaseis",
+        "se aficionasen"
+      ],
+      "Future": [
+        "me aficionare",
+        "te aficionares",
+        "se aficionare",
+        "nos aficionáremos",
+        "os aficionareis",
+        "se aficionaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["aficiónate", "aficiónese", "aficionémonos", "aficionaos", "aficiónense"],
+      "Negative": [
+        "no te aficiones",
+        "no se aficione",
+        "no nos aficionemos",
+        "no os aficionéis",
+        "no se aficionen"
+      ]
+    },
+    "Present Participle": "aficionando",
+    "Past Participle": "aficionado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/aficionarse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me aficiono",
+        "te aficionas",
+        "se aficiona",
+        "nos aficionamos",
+        "os aficionáis",
+        "se aficionan"
+      ],
+      "Preterite": [
+        "me aficioné",
+        "te aficionaste",
+        "se aficionó",
+        "nos aficionamos",
+        "os aficionasteis",
+        "se aficionaron"
+      ],
+      "Imperfect": [
+        "me aficionaba",
+        "te aficionabas",
+        "se aficionaba",
+        "nos aficionábamos",
+        "os aficionabais",
+        "se aficionaban"
+      ],
+      "Conditional": [
+        "me aficionaría",
+        "te aficionarías",
+        "se aficionaría",
+        "nos aficionaríamos",
+        "os aficionaríais",
+        "se aficionarían"
+      ],
+      "Future": [
+        "me aficionaré",
+        "te aficionarás",
+        "se aficionará",
+        "nos aficionaremos",
+        "os aficionaréis",
+        "se aficionarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me aficione",
+        "te aficiones",
+        "se aficione",
+        "nos aficionemos",
+        "os aficionéis",
+        "se aficionen"
+      ],
+      "Imperfect (-ra)": [
+        "me aficionara",
+        "te aficionaras",
+        "se aficionara",
+        "nos aficionáramos",
+        "os aficionarais u os aficionaseis",
+        "se aficionaran"
+      ],
+      "Imperfect (-se)": [
+        "me aficionase",
+        "te aficionases",
+        "se aficionase",
+        "nos aficionásemos",
+        "os aficionaseis",
+        "se aficionasen"
+      ],
+      "Future": [
+        "me aficionare",
+        "te aficionares",
+        "se aficionare",
+        "nos aficionáremos",
+        "os aficionareis",
+        "se aficionaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["aficiónate", "aficiónese", "aficionémonos", "aficionaos", "aficiónense"],
+      "Negative": [
+        "no te aficiones",
+        "no se aficione",
+        "no nos aficionemos",
+        "no os aficionéis",
+        "no se aficionen"
+      ]
+    },
+    "Present Participle": "aficionando",
+    "Past Participle": "aficionado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=aficionarse"
+}

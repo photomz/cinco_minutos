@@ -1,0 +1,98 @@
+{
+  "verb": "afectar",
+  "definition": "to affect",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me afecto",
+        "te afectas",
+        "se afecta",
+        "nos afectamos",
+        "os afectáis",
+        "se afectan"
+      ],
+      "Preterite": [
+        "me afecté",
+        "te afectaste",
+        "se afectó",
+        "nos afectamos",
+        "os afectasteis",
+        "se afectaron"
+      ],
+      "Imperfect": [
+        "me afectaba",
+        "te afectabas",
+        "se afectaba",
+        "nos afectábamos",
+        "os afectabais",
+        "se afectaban"
+      ],
+      "Conditional": [
+        "me afectaría",
+        "te afectarías",
+        "se afectaría",
+        "nos afectaríamos",
+        "os afectaríais",
+        "se afectarían"
+      ],
+      "Future": [
+        "me afectaré",
+        "te afectarás",
+        "se afectará",
+        "nos afectaremos",
+        "os afectaréis",
+        "se afectarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me afecte",
+        "te afectes",
+        "se afecte",
+        "nos afectemos",
+        "os afectéis",
+        "se afecten"
+      ],
+      "Imperfect (-ra)": [
+        "me afectara",
+        "te afectaras",
+        "se afectara",
+        "nos afectáramos",
+        "os afectarais",
+        "se afectaran"
+      ],
+      "Imperfect (-se)": [
+        "me afectase",
+        "te afectases",
+        "se afectase",
+        "nos afectásemos",
+        "os afectaseis",
+        "se afectasen"
+      ],
+      "Future": [
+        "me afectare",
+        "te afectares",
+        "se afectare",
+        "nos afectáremos",
+        "os afectareis",
+        "se afectaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["aféctate", "aféctese", "afectémonos", "afectaos", "aféctense"],
+      "Negative": [
+        "no te afectes",
+        "no se afecte",
+        "no nos afectemos",
+        "no os afectéis",
+        "no se afecten"
+      ]
+    },
+    "Present Participle": "afectando",
+    "Past Participle": "afectado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/afectarse",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=afectarse"
+}

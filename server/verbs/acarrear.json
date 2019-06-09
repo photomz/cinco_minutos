@@ -1,0 +1,71 @@
+{
+  "verb": "acarrear",
+  "definition": "to carry",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["acarreo", "acarreas", "acarrea", "acarreamos", "acarreáis", "acarrean"],
+      "Preterite": ["acarreé", "acarreaste", "acarreó", "acarreamos", "acarreasteis", "acarrearon"],
+      "Imperfect": [
+        "acarreaba",
+        "acarreabas",
+        "acarreaba",
+        "acarreábamos",
+        "acarreabais",
+        "acarreaban"
+      ],
+      "Conditional": [
+        "acarrearía",
+        "acarrearías",
+        "acarrearía",
+        "acarrearíamos",
+        "acarrearíais",
+        "acarrearían"
+      ],
+      "Future": [
+        "acarrearé",
+        "acarrearás",
+        "acarreará",
+        "acarrearemos",
+        "acarrearéis",
+        "acarrearán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["acarree", "acarrees", "acarree", "acarreemos", "acarreéis", "acarreen"],
+      "Imperfect (-ra)": [
+        "acarreara",
+        "acarrearas",
+        "acarreara",
+        "acarreáramos",
+        "acarrearais",
+        "acarrearan"
+      ],
+      "Imperfect (-se)": [
+        "acarrease",
+        "acarreases",
+        "acarrease",
+        "acarreásemos",
+        "acarreaseis",
+        "acarreasen"
+      ],
+      "Future": [
+        "acarreare",
+        "acarreares",
+        "acarreare",
+        "acarreáremos",
+        "acarreareis",
+        "acarrearen"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acarrea", "acarree", "acarreemos", "acarread", "acarreen"],
+      "Negative": ["no acarrees", "no acarree", "no acarreemos", "no acarreéis", "no acarreen"]
+    },
+    "Present Participle": "acarreando",
+    "Past Participle": "acarreado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acarretar",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acarretar"
+}

@@ -1,0 +1,133 @@
+{
+  "verb": "abovedar",
+  "definition": "to vault",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["abovedo", "abovedas", "aboveda", "abovedamos", "abovedáis", "abovedan"],
+      "Preterite": ["abovedé", "abovedaste", "abovedó", "abovedamos", "abovedasteis", "abovedaron"],
+      "Imperfect": [
+        "abovedaba",
+        "abovedabas",
+        "abovedaba",
+        "abovedábamos",
+        "abovedabais",
+        "abovedaban"
+      ],
+      "Conditional": [
+        "abovedaría",
+        "abovedarías",
+        "abovedaría",
+        "abovedaríamos",
+        "abovedaríais",
+        "abovedarían"
+      ],
+      "Future": [
+        "abovedaré",
+        "abovedarás",
+        "abovedará",
+        "abovedaremos",
+        "abovedaréis",
+        "abovedarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["abovede", "abovedes", "abovede", "abovedemos", "abovedéis", "aboveden"],
+      "Imperfect (-ra)": [
+        "abovedara",
+        "abovedaras",
+        "abovedara",
+        "abovedáramos",
+        "abovedarais",
+        "abovedaran"
+      ],
+      "Imperfect (-se)": [
+        "abovedase",
+        "abovedases",
+        "abovedase",
+        "abovedásemos",
+        "abovedaseis",
+        "abovedasen"
+      ],
+      "Future": [
+        "abovedare",
+        "abovedares",
+        "abovedare",
+        "abovedáremos",
+        "abovedareis",
+        "abovedaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["aboveda", "abovede", "abovedemos", "abovedad", "aboveden"],
+      "Negative": ["no abovedes", "no abovede", "no abovedemos", "no abovedéis", "no aboveden"]
+    },
+    "Present Participle": "abovedando",
+    "Past Participle": "abovedado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/abovedar",
+  "wordreference": {
+    "Indicative": {
+      "Present": ["abovedo", "abovedas", "aboveda", "abovedamos", "abovedáis", "abovedan"],
+      "Preterite": ["abovedé", "abovedaste", "abovedó", "abovedamos", "abovedasteis", "abovedaron"],
+      "Imperfect": [
+        "abovedaba",
+        "abovedabas",
+        "abovedaba",
+        "abovedábamos",
+        "abovedabais",
+        "abovedaban"
+      ],
+      "Conditional": [
+        "abovedaría",
+        "abovedarías",
+        "abovedaría",
+        "abovedaríamos",
+        "abovedaríais",
+        "abovedarían"
+      ],
+      "Future": [
+        "abovedaré",
+        "abovedarás",
+        "abovedará",
+        "abovedaremos",
+        "abovedaréis",
+        "abovedarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["abovede", "abovedes", "abovede", "abovedemos", "abovedéis", "aboveden"],
+      "Imperfect (-ra)": [
+        "abovedara",
+        "abovedaras",
+        "abovedara",
+        "abovedáramos",
+        "abovedarais",
+        "abovedaran"
+      ],
+      "Imperfect (-se)": [
+        "abovedase",
+        "abovedases",
+        "abovedase",
+        "abovedásemos",
+        "abovedaseis",
+        "abovedasen"
+      ],
+      "Future": [
+        "abovedare",
+        "abovedares",
+        "abovedare",
+        "abovedáremos",
+        "abovedareis",
+        "abovedaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["aboveda", "abovede", "abovedemos", "abovedad", "aboveden"],
+      "Negative": ["no abovedes", "no abovede", "no abovedemos", "no abovedéis", "no aboveden"]
+    },
+    "Present Participle": "abovedando",
+    "Past Participle": "abovedado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=abovedar"
+}

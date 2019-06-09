@@ -1,0 +1,36 @@
+{
+  "verb": "acezar",
+  "definition": "to puff",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["acezo", "acezas", "aceza", "acezamos", "acezáis", "acezan"],
+      "Preterite": ["acecé", "acezaste", "acezó", "acezamos", "acezasteis", "acezaron"],
+      "Imperfect": ["acezaba", "acezabas", "acezaba", "acezábamos", "acezabais", "acezaban"],
+      "Conditional": [
+        "acezaría",
+        "acezarías",
+        "acezaría",
+        "acezaríamos",
+        "acezaríais",
+        "acezarían"
+      ],
+      "Future": ["acezaré", "acezarás", "acezará", "acezaremos", "acezaréis", "acezarán"]
+    },
+    "Subjunctive": {
+      "Present": ["acece", "aceces", "acece", "acecemos", "acecéis", "acecen"],
+      "Imperfect (-ra)": ["acezara", "acezaras", "acezara", "acezáramos", "acezarais", "acezaran"],
+      "Imperfect (-se)": ["acezase", "acezases", "acezase", "acezásemos", "acezaseis", "acezasen"],
+      "Future": ["acezare", "acezares", "acezare", "acezáremos", "acezareis", "acezaren"]
+    },
+    "Imperative": {
+      "Affirmative": ["aceza", "acece", "acecemos", "acezad", "acecen"],
+      "Negative": ["no aceces", "no acece", "no acecemos", "no acecéis", "no acecen"]
+    },
+    "Present Participle": "acezando",
+    "Past Participle": "acezado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acezar",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acezar"
+}

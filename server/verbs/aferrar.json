@@ -1,0 +1,187 @@
+{
+  "verb": "aferrar",
+  "definition": "to grasp",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me aferro",
+        "te aferras",
+        "se aferra",
+        "nos aferramos",
+        "os aferráis",
+        "se aferran"
+      ],
+      "Preterite": [
+        "me aferré",
+        "te aferraste",
+        "se aferró",
+        "nos aferramos",
+        "os aferrasteis",
+        "se aferraron"
+      ],
+      "Imperfect": [
+        "me aferraba",
+        "te aferrabas",
+        "se aferraba",
+        "nos aferrábamos",
+        "os aferrabais",
+        "se aferraban"
+      ],
+      "Conditional": [
+        "me aferraría",
+        "te aferrarías",
+        "se aferraría",
+        "nos aferraríamos",
+        "os aferraríais",
+        "se aferrarían"
+      ],
+      "Future": [
+        "me aferraré",
+        "te aferrarás",
+        "se aferrará",
+        "nos aferraremos",
+        "os aferraréis",
+        "se aferrarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me aferre",
+        "te aferres",
+        "se aferre",
+        "nos aferremos",
+        "os aferréis",
+        "se aferren"
+      ],
+      "Imperfect (-ra)": [
+        "me aferrara",
+        "te aferraras",
+        "se aferrara",
+        "nos aferráramos",
+        "os aferrarais",
+        "se aferraran"
+      ],
+      "Imperfect (-se)": [
+        "me aferrase",
+        "te aferrases",
+        "se aferrase",
+        "nos aferrásemos",
+        "os aferraseis",
+        "se aferrasen"
+      ],
+      "Future": [
+        "me aferrare",
+        "te aferrares",
+        "se aferrare",
+        "nos aferráremos",
+        "os aferrareis",
+        "se aferraren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["aférrate", "aférrese", "aferrémonos", "aferraos", "aférrense"],
+      "Negative": [
+        "no te aferres",
+        "no se aferre",
+        "no nos aferremos",
+        "no os aferréis",
+        "no se aferren"
+      ]
+    },
+    "Present Participle": "aferrando",
+    "Past Participle": "aferrado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/aferrarse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me aferro",
+        "te aferras",
+        "se aferra",
+        "nos aferramos",
+        "os aferráis",
+        "se aferran"
+      ],
+      "Preterite": [
+        "me aferré",
+        "te aferraste",
+        "se aferró",
+        "nos aferramos",
+        "os aferrasteis",
+        "se aferraron"
+      ],
+      "Imperfect": [
+        "me aferraba",
+        "te aferrabas",
+        "se aferraba",
+        "nos aferrábamos",
+        "os aferrabais",
+        "se aferraban"
+      ],
+      "Conditional": [
+        "me aferraría",
+        "te aferrarías",
+        "se aferraría",
+        "nos aferraríamos",
+        "os aferraríais",
+        "se aferrarían"
+      ],
+      "Future": [
+        "me aferraré",
+        "te aferrarás",
+        "se aferrará",
+        "nos aferraremos",
+        "os aferraréis",
+        "se aferrarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me aferre",
+        "te aferres",
+        "se aferre",
+        "nos aferremos",
+        "os aferréis",
+        "se aferren"
+      ],
+      "Imperfect (-ra)": [
+        "me aferrara",
+        "te aferraras",
+        "se aferrara",
+        "nos aferráramos",
+        "os aferrarais u os aferraseis",
+        "se aferraran"
+      ],
+      "Imperfect (-se)": [
+        "me aferrase",
+        "te aferrases",
+        "se aferrase",
+        "nos aferrásemos",
+        "os aferraseis",
+        "se aferrasen"
+      ],
+      "Future": [
+        "me aferrare",
+        "te aferrares",
+        "se aferrare",
+        "nos aferráremos",
+        "os aferrareis",
+        "se aferraren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["aférrate", "aférrese", "aferrémonos", "aferraos", "aférrense"],
+      "Negative": [
+        "no te aferres",
+        "no se aferre",
+        "no nos aferremos",
+        "no os aferréis",
+        "no se aferren"
+      ]
+    },
+    "Present Participle": "aferrando",
+    "Past Participle": "aferrado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=aferrarse"
+}

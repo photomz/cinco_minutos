@@ -1,0 +1,98 @@
+{
+  "verb": "abastardar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "abastardo",
+        "abastardas",
+        "abastarda",
+        "abastardamos",
+        "abastardáis",
+        "abastardan"
+      ],
+      "Preterite": [
+        "abastardé",
+        "abastardaste",
+        "abastardó",
+        "abastardamos",
+        "abastardasteis",
+        "abastardaron"
+      ],
+      "Imperfect": [
+        "abastardaba",
+        "abastardabas",
+        "abastardaba",
+        "abastardábamos",
+        "abastardabais",
+        "abastardaban"
+      ],
+      "Conditional": [
+        "abastardaría",
+        "abastardarías",
+        "abastardaría",
+        "abastardaríamos",
+        "abastardaríais",
+        "abastardarían"
+      ],
+      "Future": [
+        "abastardaré",
+        "abastardarás",
+        "abastardará",
+        "abastardaremos",
+        "abastardaréis",
+        "abastardarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "abastarde",
+        "abastardes",
+        "abastarde",
+        "abastardemos",
+        "abastardéis",
+        "abastarden"
+      ],
+      "Imperfect (-ra)": [
+        "abastardara",
+        "abastardaras",
+        "abastardara",
+        "abastardáramos",
+        "abastardarais",
+        "abastardaran"
+      ],
+      "Imperfect (-se)": [
+        "abastardase",
+        "abastardases",
+        "abastardase",
+        "abastardásemos",
+        "abastardaseis",
+        "abastardasen"
+      ],
+      "Future": [
+        "abastardare",
+        "abastardares",
+        "abastardare",
+        "abastardáremos",
+        "abastardareis",
+        "abastardaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["abastarda", "abastarde", "abastardemos", "abastardad", "abastarden"],
+      "Negative": [
+        "no abastardes",
+        "no abastarde",
+        "no abastardemos",
+        "no abastardéis",
+        "no abastarden"
+      ]
+    },
+    "Present Participle": "abastardando",
+    "Past Participle": "abastardado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/abastardar",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=abastardar"
+}

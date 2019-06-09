@@ -1,0 +1,105 @@
+{
+  "verb": "acceder",
+  "definition": "to agree",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["accedo", "accedes", "accede", "accedemos", "accedéis", "acceden"],
+      "Preterite": ["accedí", "accediste", "accedió", "accedimos", "accedisteis", "accedieron"],
+      "Imperfect": ["accedía", "accedías", "accedía", "accedíamos", "accedíais", "accedían"],
+      "Conditional": [
+        "accedería",
+        "accederías",
+        "accedería",
+        "accederíamos",
+        "accederíais",
+        "accederían"
+      ],
+      "Future": ["accederé", "accederás", "accederá", "accederemos", "accederéis", "accederán"]
+    },
+    "Subjunctive": {
+      "Present": ["acceda", "accedas", "acceda", "accedamos", "accedáis", "accedan"],
+      "Imperfect (-ra)": [
+        "accediera",
+        "accedieras",
+        "accediera",
+        "accediéramos",
+        "accedierais",
+        "accedieran"
+      ],
+      "Imperfect (-se)": [
+        "accediese",
+        "accedieses",
+        "accediese",
+        "accediésemos",
+        "accedieseis",
+        "accediesen"
+      ],
+      "Future": [
+        "accediere",
+        "accedieres",
+        "accediere",
+        "accediéremos",
+        "accediereis",
+        "accedieren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["accede", "acceda", "accedamos", "acceded", "accedan"],
+      "Negative": ["no accedas", "no acceda", "no accedamos", "no accedáis", "no accedan"]
+    },
+    "Present Participle": "accediendo",
+    "Past Participle": "accedido"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acceder",
+  "wordreference": {
+    "Indicative": {
+      "Present": ["accedo", "accedes", "accede", "accedemos", "accedéis", "acceden"],
+      "Preterite": ["accedí", "accediste", "accedió", "accedimos", "accedisteis", "accedieron"],
+      "Imperfect": ["accedía", "accedías", "accedía", "accedíamos", "accedíais", "accedían"],
+      "Conditional": [
+        "accedería",
+        "accederías",
+        "accedería",
+        "accederíamos",
+        "accederíais",
+        "accederían"
+      ],
+      "Future": ["accederé", "accederás", "accederá", "accederemos", "accederéis", "accederán"]
+    },
+    "Subjunctive": {
+      "Present": ["acceda", "accedas", "acceda", "accedamos", "accedáis", "accedan"],
+      "Imperfect (-ra)": [
+        "accediera",
+        "accedieras",
+        "accediera",
+        "accediéramos",
+        "accedierais",
+        "accedieran"
+      ],
+      "Imperfect (-se)": [
+        "accediese",
+        "accedieses",
+        "accediese",
+        "accediésemos",
+        "accedieseis",
+        "accediesen"
+      ],
+      "Future": [
+        "accediere",
+        "accedieres",
+        "accediere",
+        "accediéremos",
+        "accediereis",
+        "accedieren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["accede", "acceda", "accedamos", "acceded", "accedan"],
+      "Negative": ["no accedas", "no acceda", "no accedamos", "no accedáis", "no accedan"]
+    },
+    "Present Participle": "accediendo",
+    "Past Participle": "accedido"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acceder"
+}

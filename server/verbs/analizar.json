@@ -1,0 +1,71 @@
+{
+  "verb": "analizar",
+  "definition": "to analyze",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["analizo", "analizas", "analiza", "analizamos", "analizáis", "analizan"],
+      "Preterite": ["analicé", "analizaste", "analizó", "analizamos", "analizasteis", "analizaron"],
+      "Imperfect": [
+        "analizaba",
+        "analizabas",
+        "analizaba",
+        "analizábamos",
+        "analizabais",
+        "analizaban"
+      ],
+      "Conditional": [
+        "analizaría",
+        "analizarías",
+        "analizaría",
+        "analizaríamos",
+        "analizaríais",
+        "analizarían"
+      ],
+      "Future": [
+        "analizaré",
+        "analizarás",
+        "analizará",
+        "analizaremos",
+        "analizaréis",
+        "analizarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["analice", "analices", "analice", "analicemos", "analicéis", "analicen"],
+      "Imperfect (-ra)": [
+        "analizara",
+        "analizaras",
+        "analizara",
+        "analizáramos",
+        "analizarais",
+        "analizaran"
+      ],
+      "Imperfect (-se)": [
+        "analizase",
+        "analizases",
+        "analizase",
+        "analizásemos",
+        "analizaseis",
+        "analizasen"
+      ],
+      "Future": [
+        "analizare",
+        "analizares",
+        "analizare",
+        "analizáremos",
+        "analizareis",
+        "analizaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["analiza", "analice", "analicemos", "analizad", "analicen"],
+      "Negative": ["no analices", "no analice", "no analicemos", "no analicéis", "no analicen"]
+    },
+    "Present Participle": "analizando",
+    "Past Participle": "analizado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/abalizar",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=abalizar"
+}

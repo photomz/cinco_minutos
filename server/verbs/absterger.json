@@ -1,0 +1,78 @@
+{
+  "verb": "absterger",
+  "definition": "to absterge, clean",
+  "reflexive": false,
+  "spanishdict": null,
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/absterger",
+  "wordreference": {
+    "Indicative": {
+      "Present": ["absterjo", "absterges", "absterge", "abstergemos", "abstergéis", "abstergen"],
+      "Preterite": [
+        "abstergí",
+        "abstergiste",
+        "abstergió",
+        "abstergimos",
+        "abstergisteis",
+        "abstergieron"
+      ],
+      "Imperfect": [
+        "abstergía",
+        "abstergías",
+        "abstergía",
+        "abstergíamos",
+        "abstergíais",
+        "abstergían"
+      ],
+      "Conditional": [
+        "abstergería",
+        "abstergerías",
+        "abstergería",
+        "abstergeríamos",
+        "abstergeríais",
+        "abstergerían"
+      ],
+      "Future": [
+        "abstergeré",
+        "abstergerás",
+        "abstergerá",
+        "abstergeremos",
+        "abstergeréis",
+        "abstergerán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["absterja", "absterjas", "absterja", "absterjamos", "absterjáis", "absterjan"],
+      "Imperfect (-ra)": [
+        "abstergiera",
+        "abstergieras",
+        "abstergiera",
+        "abstergiéramos",
+        "abstergierais",
+        "abstergieran"
+      ],
+      "Imperfect (-se)": [
+        "abstergiese",
+        "abstergieses",
+        "abstergiese",
+        "abstergiésemos",
+        "abstergieseis",
+        "abstergiesen"
+      ],
+      "Future": [
+        "abstergiere",
+        "abstergieres",
+        "abstergiere",
+        "abstergiéremos",
+        "abstergiereis",
+        "abstergieren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["absterge", "absterja", "absterjamos", "absterged", "absterjan"],
+      "Negative": ["no absterjas", "no absterja", "no absterjamos", "no absterjáis", "no absterjan"]
+    },
+    "Present Participle": "abstergiendo",
+    "Past Participle": "abstergido"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=absterger"
+}

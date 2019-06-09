@@ -1,0 +1,91 @@
+{
+  "verb": "acopiar",
+  "definition": "to collect",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["acopio", "acopias", "acopia", "acopiamos", "acopiáis", "acopian"],
+      "Preterite": ["acopié", "acopiaste", "acopió", "acopiamos", "acopiasteis", "acopiaron"],
+      "Imperfect": ["acopiaba", "acopiabas", "acopiaba", "acopiábamos", "acopiabais", "acopiaban"],
+      "Conditional": [
+        "acopiaría",
+        "acopiarías",
+        "acopiaría",
+        "acopiaríamos",
+        "acopiaríais",
+        "acopiarían"
+      ],
+      "Future": ["acopiaré", "acopiarás", "acopiará", "acopiaremos", "acopiaréis", "acopiarán"]
+    },
+    "Subjunctive": {
+      "Present": ["acopie", "acopies", "acopie", "acopiemos", "acopiéis", "acopien"],
+      "Imperfect (-ra)": [
+        "acopiara",
+        "acopiaras",
+        "acopiara",
+        "acopiáramos",
+        "acopiarais",
+        "acopiaran"
+      ],
+      "Imperfect (-se)": [
+        "acopiase",
+        "acopiases",
+        "acopiase",
+        "acopiásemos",
+        "acopiaseis",
+        "acopiasen"
+      ],
+      "Future": ["acopiare", "acopiares", "acopiare", "acopiáremos", "acopiareis", "acopiaren"]
+    },
+    "Imperative": {
+      "Affirmative": ["acopia", "acopie", "acopiemos", "acopiad", "acopien"],
+      "Negative": ["no acopies", "no acopie", "no acopiemos", "no acopiéis", "no acopien"]
+    },
+    "Present Participle": "acopiando",
+    "Past Participle": "acopiado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acopiar",
+  "wordreference": {
+    "Indicative": {
+      "Present": ["acopio", "acopias", "acopia", "acopiamos", "acopiáis", "acopian"],
+      "Preterite": ["acopié", "acopiaste", "acopió", "acopiamos", "acopiasteis", "acopiaron"],
+      "Imperfect": ["acopiaba", "acopiabas", "acopiaba", "acopiábamos", "acopiabais", "acopiaban"],
+      "Conditional": [
+        "acopiaría",
+        "acopiarías",
+        "acopiaría",
+        "acopiaríamos",
+        "acopiaríais",
+        "acopiarían"
+      ],
+      "Future": ["acopiaré", "acopiarás", "acopiará", "acopiaremos", "acopiaréis", "acopiarán"]
+    },
+    "Subjunctive": {
+      "Present": ["acopie", "acopies", "acopie", "acopiemos", "acopiéis", "acopien"],
+      "Imperfect (-ra)": [
+        "acopiara",
+        "acopiaras",
+        "acopiara",
+        "acopiáramos",
+        "acopiarais",
+        "acopiaran"
+      ],
+      "Imperfect (-se)": [
+        "acopiase",
+        "acopiases",
+        "acopiase",
+        "acopiásemos",
+        "acopiaseis",
+        "acopiasen"
+      ],
+      "Future": ["acopiare", "acopiares", "acopiare", "acopiáremos", "acopiareis", "acopiaren"]
+    },
+    "Imperative": {
+      "Affirmative": ["acopia", "acopie", "acopiemos", "acopiad", "acopien"],
+      "Negative": ["no acopies", "no acopie", "no acopiemos", "no acopiéis", "no acopien"]
+    },
+    "Present Participle": "acopiando",
+    "Past Participle": "acopiado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acopiar"
+}

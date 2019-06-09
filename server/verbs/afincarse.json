@@ -1,0 +1,98 @@
+{
+  "verb": "afincarse",
+  "definition": "to settle, establish yourself , settle in , become a land owner , purchase land",
+  "reflexive": true,
+  "spanishdict": null,
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/afincarse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me afinco",
+        "te afincas",
+        "se afinca",
+        "nos afincamos",
+        "os afincáis",
+        "se afincan"
+      ],
+      "Preterite": [
+        "me afinqué",
+        "te afincaste",
+        "se afincó",
+        "nos afincamos",
+        "os afincasteis",
+        "se afincaron"
+      ],
+      "Imperfect": [
+        "me afincaba",
+        "te afincabas",
+        "se afincaba",
+        "nos afincábamos",
+        "os afincabais",
+        "se afincaban"
+      ],
+      "Conditional": [
+        "me afincaría",
+        "te afincarías",
+        "se afincaría",
+        "nos afincaríamos",
+        "os afincaríais",
+        "se afincarían"
+      ],
+      "Future": [
+        "me afincaré",
+        "te afincarás",
+        "se afincará",
+        "nos afincaremos",
+        "os afincaréis",
+        "se afincarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me afinque",
+        "te afinques",
+        "se afinque",
+        "nos afinquemos",
+        "os afinquéis",
+        "se afinquen"
+      ],
+      "Imperfect (-ra)": [
+        "me afincara",
+        "te afincaras",
+        "se afincara",
+        "nos afincáramos",
+        "os afincarais u os afincaseis",
+        "se afincaran"
+      ],
+      "Imperfect (-se)": [
+        "me afincase",
+        "te afincases",
+        "se afincase",
+        "nos afincásemos",
+        "os afincaseis",
+        "se afincasen"
+      ],
+      "Future": [
+        "me afincare",
+        "te afincares",
+        "se afincare",
+        "nos afincáremos",
+        "os afincareis",
+        "se afincaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["afíncate", "afínquese", "afinquémonos", "afincaos", "afínquense"],
+      "Negative": [
+        "no te afinques",
+        "no se afinque",
+        "no nos afinquemos",
+        "no os afinquéis",
+        "no se afinquen"
+      ]
+    },
+    "Present Participle": "afincando",
+    "Past Participle": "afincado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=afincarse"
+}

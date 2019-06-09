@@ -1,0 +1,84 @@
+{
+  "verb": "acorar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["me acoro", "te acoras", "se acora", "nos acoramos", "os acoráis", "se acoran"],
+      "Preterite": [
+        "me acoré",
+        "te acoraste",
+        "se acoró",
+        "nos acoramos",
+        "os acorasteis",
+        "se acoraron"
+      ],
+      "Imperfect": [
+        "me acoraba",
+        "te acorabas",
+        "se acoraba",
+        "nos acorábamos",
+        "os acorabais",
+        "se acoraban"
+      ],
+      "Conditional": [
+        "me acoraría",
+        "te acorarías",
+        "se acoraría",
+        "nos acoraríamos",
+        "os acoraríais",
+        "se acorarían"
+      ],
+      "Future": [
+        "me acoraré",
+        "te acorarás",
+        "se acorará",
+        "nos acoraremos",
+        "os acoraréis",
+        "se acorarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["me acore", "te acores", "se acore", "nos acoremos", "os acoréis", "se acoren"],
+      "Imperfect (-ra)": [
+        "me acorara",
+        "te acoraras",
+        "se acorara",
+        "nos acoráramos",
+        "os acorarais",
+        "se acoraran"
+      ],
+      "Imperfect (-se)": [
+        "me acorase",
+        "te acorases",
+        "se acorase",
+        "nos acorásemos",
+        "os acoraseis",
+        "se acorasen"
+      ],
+      "Future": [
+        "me acorare",
+        "te acorares",
+        "se acorare",
+        "nos acoráremos",
+        "os acorareis",
+        "se acoraren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acórate", "acórese", "acorémonos", "acoraos", "acórense"],
+      "Negative": [
+        "no te acores",
+        "no se acore",
+        "no nos acoremos",
+        "no os acoréis",
+        "no se acoren"
+      ]
+    },
+    "Present Participle": "acorando",
+    "Past Participle": "acorado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acorarse",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acorarse"
+}

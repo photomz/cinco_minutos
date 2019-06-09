@@ -1,0 +1,84 @@
+{
+  "verb": "actuar",
+  "definition": "to act",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["me actúo", "te actúas", "se actúa", "nos actuamos", "os actuáis", "se actúan"],
+      "Preterite": [
+        "me actué",
+        "te actuaste",
+        "se actuó",
+        "nos actuamos",
+        "os actuasteis",
+        "se actuaron"
+      ],
+      "Imperfect": [
+        "me actuaba",
+        "te actuabas",
+        "se actuaba",
+        "nos actuábamos",
+        "os actuabais",
+        "se actuaban"
+      ],
+      "Conditional": [
+        "me actuaría",
+        "te actuarías",
+        "se actuaría",
+        "nos actuaríamos",
+        "os actuaríais",
+        "se actuarían"
+      ],
+      "Future": [
+        "me actuaré",
+        "te actuarás",
+        "se actuará",
+        "nos actuaremos",
+        "os actuaréis",
+        "se actuarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["me actúe", "te actúes", "se actúe", "nos actuemos", "os actuéis", "se actúen"],
+      "Imperfect (-ra)": [
+        "me actuara",
+        "te actuaras",
+        "se actuara",
+        "nos actuáramos",
+        "os actuarais",
+        "se actuaran"
+      ],
+      "Imperfect (-se)": [
+        "me actuase",
+        "te actuases",
+        "se actuase",
+        "nos actuásemos",
+        "os actuaseis",
+        "se actuasen"
+      ],
+      "Future": [
+        "me actuare",
+        "te actuares",
+        "se actuare",
+        "nos actuáremos",
+        "os actuareis",
+        "se actuaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["actúate", "actúese", "actuémonos", "actuaos", "actúense"],
+      "Negative": [
+        "no te actúes",
+        "no se actúe",
+        "no nos actuemos",
+        "no os actuéis",
+        "no se actúen"
+      ]
+    },
+    "Present Participle": "actuando",
+    "Past Participle": "actuado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/actuarse",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=actuarse"
+}

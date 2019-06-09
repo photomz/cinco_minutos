@@ -1,0 +1,187 @@
+{
+  "verb": "achantar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me achanto",
+        "te achantas",
+        "se achanta",
+        "nos achantamos",
+        "os achantáis",
+        "se achantan"
+      ],
+      "Preterite": [
+        "me achanté",
+        "te achantaste",
+        "se achantó",
+        "nos achantamos",
+        "os achantasteis",
+        "se achantaron"
+      ],
+      "Imperfect": [
+        "me achantaba",
+        "te achantabas",
+        "se achantaba",
+        "nos achantábamos",
+        "os achantabais",
+        "se achantaban"
+      ],
+      "Conditional": [
+        "me achantaría",
+        "te achantarías",
+        "se achantaría",
+        "nos achantaríamos",
+        "os achantaríais",
+        "se achantarían"
+      ],
+      "Future": [
+        "me achantaré",
+        "te achantarás",
+        "se achantará",
+        "nos achantaremos",
+        "os achantaréis",
+        "se achantarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me achante",
+        "te achantes",
+        "se achante",
+        "nos achantemos",
+        "os achantéis",
+        "se achanten"
+      ],
+      "Imperfect (-ra)": [
+        "me achantara",
+        "te achantaras",
+        "se achantara",
+        "nos achantáramos",
+        "os achantarais",
+        "se achantaran"
+      ],
+      "Imperfect (-se)": [
+        "me achantase",
+        "te achantases",
+        "se achantase",
+        "nos achantásemos",
+        "os achantaseis",
+        "se achantasen"
+      ],
+      "Future": [
+        "me achantare",
+        "te achantares",
+        "se achantare",
+        "nos achantáremos",
+        "os achantareis",
+        "se achantaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["achántate", "achántese", "achantémonos", "achantaos", "achántense"],
+      "Negative": [
+        "no te achantes",
+        "no se achante",
+        "no nos achantemos",
+        "no os achantéis",
+        "no se achanten"
+      ]
+    },
+    "Present Participle": "achantando",
+    "Past Participle": "achantado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/achantarse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me achanto",
+        "te achantas",
+        "se achanta",
+        "nos achantamos",
+        "os achantáis",
+        "se achantan"
+      ],
+      "Preterite": [
+        "me achanté",
+        "te achantaste",
+        "se achantó",
+        "nos achantamos",
+        "os achantasteis",
+        "se achantaron"
+      ],
+      "Imperfect": [
+        "me achantaba",
+        "te achantabas",
+        "se achantaba",
+        "nos achantábamos",
+        "os achantabais",
+        "se achantaban"
+      ],
+      "Conditional": [
+        "me achantaría",
+        "te achantarías",
+        "se achantaría",
+        "nos achantaríamos",
+        "os achantaríais",
+        "se achantarían"
+      ],
+      "Future": [
+        "me achantaré",
+        "te achantarás",
+        "se achantará",
+        "nos achantaremos",
+        "os achantaréis",
+        "se achantarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me achante",
+        "te achantes",
+        "se achante",
+        "nos achantemos",
+        "os achantéis",
+        "se achanten"
+      ],
+      "Imperfect (-ra)": [
+        "me achantara",
+        "te achantaras",
+        "se achantara",
+        "nos achantáramos",
+        "os achantarais u os achantaseis",
+        "se achantaran"
+      ],
+      "Imperfect (-se)": [
+        "me achantase",
+        "te achantases",
+        "se achantase",
+        "nos achantásemos",
+        "os achantaseis",
+        "se achantasen"
+      ],
+      "Future": [
+        "me achantare",
+        "te achantares",
+        "se achantare",
+        "nos achantáremos",
+        "os achantareis",
+        "se achantaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["achántate", "achántese", "achantémonos", "achantaos", "achántense"],
+      "Negative": [
+        "no te achantes",
+        "no se achante",
+        "no nos achantemos",
+        "no os achantéis",
+        "no se achanten"
+      ]
+    },
+    "Present Participle": "achantando",
+    "Past Participle": "achantado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=achantarse"
+}

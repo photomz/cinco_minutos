@@ -1,0 +1,187 @@
+{
+  "verb": "abroncar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me abronco",
+        "te abroncas",
+        "se abronca",
+        "nos abroncamos",
+        "os abroncáis",
+        "se abroncan"
+      ],
+      "Preterite": [
+        "me abronqué",
+        "te abroncaste",
+        "se abroncó",
+        "nos abroncamos",
+        "os abroncasteis",
+        "se abroncaron"
+      ],
+      "Imperfect": [
+        "me abroncaba",
+        "te abroncabas",
+        "se abroncaba",
+        "nos abroncábamos",
+        "os abroncabais",
+        "se abroncaban"
+      ],
+      "Conditional": [
+        "me abroncaría",
+        "te abroncarías",
+        "se abroncaría",
+        "nos abroncaríamos",
+        "os abroncaríais",
+        "se abroncarían"
+      ],
+      "Future": [
+        "me abroncaré",
+        "te abroncarás",
+        "se abroncará",
+        "nos abroncaremos",
+        "os abroncaréis",
+        "se abroncarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me abronque",
+        "te abronques",
+        "se abronque",
+        "nos abronquemos",
+        "os abronquéis",
+        "se abronquen"
+      ],
+      "Imperfect (-ra)": [
+        "me abroncara",
+        "te abroncaras",
+        "se abroncara",
+        "nos abroncáramos",
+        "os abroncarais",
+        "se abroncaran"
+      ],
+      "Imperfect (-se)": [
+        "me abroncase",
+        "te abroncases",
+        "se abroncase",
+        "nos abroncásemos",
+        "os abroncaseis",
+        "se abroncasen"
+      ],
+      "Future": [
+        "me abroncare",
+        "te abroncares",
+        "se abroncare",
+        "nos abroncáremos",
+        "os abroncareis",
+        "se abroncaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["abróncate", "abrónquese", "abronquémonos", "abroncaos", "abrónquense"],
+      "Negative": [
+        "no te abronques",
+        "no se abronque",
+        "no nos abronquemos",
+        "no os abronquéis",
+        "no se abronquen"
+      ]
+    },
+    "Present Participle": "abroncando",
+    "Past Participle": "abroncado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/abroncarse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me abronco",
+        "te abroncas",
+        "se abronca",
+        "nos abroncamos",
+        "os abroncáis",
+        "se abroncan"
+      ],
+      "Preterite": [
+        "me abronqué",
+        "te abroncaste",
+        "se abroncó",
+        "nos abroncamos",
+        "os abroncasteis",
+        "se abroncaron"
+      ],
+      "Imperfect": [
+        "me abroncaba",
+        "te abroncabas",
+        "se abroncaba",
+        "nos abroncábamos",
+        "os abroncabais",
+        "se abroncaban"
+      ],
+      "Conditional": [
+        "me abroncaría",
+        "te abroncarías",
+        "se abroncaría",
+        "nos abroncaríamos",
+        "os abroncaríais",
+        "se abroncarían"
+      ],
+      "Future": [
+        "me abroncaré",
+        "te abroncarás",
+        "se abroncará",
+        "nos abroncaremos",
+        "os abroncaréis",
+        "se abroncarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me abronque",
+        "te abronques",
+        "se abronque",
+        "nos abronquemos",
+        "os abronquéis",
+        "se abronquen"
+      ],
+      "Imperfect (-ra)": [
+        "me abroncara",
+        "te abroncaras",
+        "se abroncara",
+        "nos abroncáramos",
+        "os abroncarais u os abroncaseis",
+        "se abroncaran"
+      ],
+      "Imperfect (-se)": [
+        "me abroncase",
+        "te abroncases",
+        "se abroncase",
+        "nos abroncásemos",
+        "os abroncaseis",
+        "se abroncasen"
+      ],
+      "Future": [
+        "me abroncare",
+        "te abroncares",
+        "se abroncare",
+        "nos abroncáremos",
+        "os abroncareis",
+        "se abroncaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["abróncate", "abrónquese", "abronquémonos", "abroncaos", "abrónquense"],
+      "Negative": [
+        "no te abronques",
+        "no se abronque",
+        "no nos abronquemos",
+        "no os abronquéis",
+        "no se abronquen"
+      ]
+    },
+    "Present Participle": "abroncando",
+    "Past Participle": "abroncado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=abroncarse"
+}

@@ -1,0 +1,199 @@
+{
+  "verb": "acondicionar",
+  "definition": "to prepare",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me acondiciono",
+        "te acondicionas",
+        "se acondiciona",
+        "nos acondicionamos",
+        "os acondicionáis",
+        "se acondicionan"
+      ],
+      "Preterite": [
+        "me acondicioné",
+        "te acondicionaste",
+        "se acondicionó",
+        "nos acondicionamos",
+        "os acondicionasteis",
+        "se acondicionaron"
+      ],
+      "Imperfect": [
+        "me acondicionaba",
+        "te acondicionabas",
+        "se acondicionaba",
+        "nos acondicionábamos",
+        "os acondicionabais",
+        "se acondicionaban"
+      ],
+      "Conditional": [
+        "me acondicionaría",
+        "te acondicionarías",
+        "se acondicionaría",
+        "nos acondicionaríamos",
+        "os acondicionaríais",
+        "se acondicionarían"
+      ],
+      "Future": [
+        "me acondicionaré",
+        "te acondicionarás",
+        "se acondicionará",
+        "nos acondicionaremos",
+        "os acondicionaréis",
+        "se acondicionarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me acondicione",
+        "te acondiciones",
+        "se acondicione",
+        "nos acondicionemos",
+        "os acondicionéis",
+        "se acondicionen"
+      ],
+      "Imperfect (-ra)": [
+        "me acondicionara",
+        "te acondicionaras",
+        "se acondicionara",
+        "nos acondicionáramos",
+        "os acondicionarais",
+        "se acondicionaran"
+      ],
+      "Imperfect (-se)": [
+        "me acondicionase",
+        "te acondicionases",
+        "se acondicionase",
+        "nos acondicionásemos",
+        "os acondicionaseis",
+        "se acondicionasen"
+      ],
+      "Future": [
+        "me acondicionare",
+        "te acondicionares",
+        "se acondicionare",
+        "nos acondicionáremos",
+        "os acondicionareis",
+        "se acondicionaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": [
+        "acondiciónate",
+        "acondiciónese",
+        "acondicionémonos",
+        "acondicionaos",
+        "acondiciónense"
+      ],
+      "Negative": [
+        "no te acondiciones",
+        "no se acondicione",
+        "no nos acondicionemos",
+        "no os acondicionéis",
+        "no se acondicionen"
+      ]
+    },
+    "Present Participle": "acondicionando",
+    "Past Participle": "acondicionado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acondicionarse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me acondiciono",
+        "te acondicionas",
+        "se acondiciona",
+        "nos acondicionamos",
+        "os acondicionáis",
+        "se acondicionan"
+      ],
+      "Preterite": [
+        "me acondicioné",
+        "te acondicionaste",
+        "se acondicionó",
+        "nos acondicionamos",
+        "os acondicionasteis",
+        "se acondicionaron"
+      ],
+      "Imperfect": [
+        "me acondicionaba",
+        "te acondicionabas",
+        "se acondicionaba",
+        "nos acondicionábamos",
+        "os acondicionabais",
+        "se acondicionaban"
+      ],
+      "Conditional": [
+        "me acondicionaría",
+        "te acondicionarías",
+        "se acondicionaría",
+        "nos acondicionaríamos",
+        "os acondicionaríais",
+        "se acondicionarían"
+      ],
+      "Future": [
+        "me acondicionaré",
+        "te acondicionarás",
+        "se acondicionará",
+        "nos acondicionaremos",
+        "os acondicionaréis",
+        "se acondicionarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me acondicione",
+        "te acondiciones",
+        "se acondicione",
+        "nos acondicionemos",
+        "os acondicionéis",
+        "se acondicionen"
+      ],
+      "Imperfect (-ra)": [
+        "me acondicionara",
+        "te acondicionaras",
+        "se acondicionara",
+        "nos acondicionáramos",
+        "os acondicionarais u os acondicionaseis",
+        "se acondicionaran"
+      ],
+      "Imperfect (-se)": [
+        "me acondicionase",
+        "te acondicionases",
+        "se acondicionase",
+        "nos acondicionásemos",
+        "os acondicionaseis",
+        "se acondicionasen"
+      ],
+      "Future": [
+        "me acondicionare",
+        "te acondicionares",
+        "se acondicionare",
+        "nos acondicionáremos",
+        "os acondicionareis",
+        "se acondicionaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": [
+        "acondiciónate",
+        "acondiciónese",
+        "acondicionémonos",
+        "acondicionaos",
+        "acondiciónense"
+      ],
+      "Negative": [
+        "no te acondiciones",
+        "no se acondicione",
+        "no nos acondicionemos",
+        "no os acondicionéis",
+        "no se acondicionen"
+      ]
+    },
+    "Present Participle": "acondicionando",
+    "Past Participle": "acondicionado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acondicionarse"
+}

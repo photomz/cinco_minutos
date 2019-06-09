@@ -1,0 +1,50 @@
+{
+  "verb": "apretar",
+  "definition": "to press",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["aprieto", "aprietas", "aprieta", "apretamos", "apretáis", "aprietan"],
+      "Preterite": ["apreté", "apretaste", "apretó", "apretamos", "apretasteis", "apretaron"],
+      "Imperfect": ["apretaba", "apretabas", "apretaba", "apretábamos", "apretabais", "apretaban"],
+      "Conditional": [
+        "apretaría",
+        "apretarías",
+        "apretaría",
+        "apretaríamos",
+        "apretaríais",
+        "apretarían"
+      ],
+      "Future": ["apretaré", "apretarás", "apretará", "apretaremos", "apretaréis", "apretarán"]
+    },
+    "Subjunctive": {
+      "Present": ["apriete", "aprietes", "apriete", "apretemos", "apretéis", "aprieten"],
+      "Imperfect (-ra)": [
+        "apretara",
+        "apretaras",
+        "apretara",
+        "apretáramos",
+        "apretarais",
+        "apretaran"
+      ],
+      "Imperfect (-se)": [
+        "apretase",
+        "apretases",
+        "apretase",
+        "apretásemos",
+        "apretaseis",
+        "apretasen"
+      ],
+      "Future": ["apretare", "apretares", "apretare", "apretáremos", "apretareis", "apretaren"]
+    },
+    "Imperative": {
+      "Affirmative": ["aprieta", "apriete", "apretemos", "apretad", "aprieten"],
+      "Negative": ["no aprietes", "no apriete", "no apretemos", "no apretéis", "no aprieten"]
+    },
+    "Present Participle": "apretando",
+    "Past Participle": "apretado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/afretar",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=afretar"
+}

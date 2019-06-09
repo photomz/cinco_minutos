@@ -1,0 +1,98 @@
+{
+  "verb": "acogollar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me acogollo",
+        "te acogollas",
+        "se acogolla",
+        "nos acogollamos",
+        "os acogolláis",
+        "se acogollan"
+      ],
+      "Preterite": [
+        "me acogollé",
+        "te acogollaste",
+        "se acogolló",
+        "nos acogollamos",
+        "os acogollasteis",
+        "se acogollaron"
+      ],
+      "Imperfect": [
+        "me acogollaba",
+        "te acogollabas",
+        "se acogollaba",
+        "nos acogollábamos",
+        "os acogollabais",
+        "se acogollaban"
+      ],
+      "Conditional": [
+        "me acogollaría",
+        "te acogollarías",
+        "se acogollaría",
+        "nos acogollaríamos",
+        "os acogollaríais",
+        "se acogollarían"
+      ],
+      "Future": [
+        "me acogollaré",
+        "te acogollarás",
+        "se acogollará",
+        "nos acogollaremos",
+        "os acogollaréis",
+        "se acogollarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me acogolle",
+        "te acogolles",
+        "se acogolle",
+        "nos acogollemos",
+        "os acogolléis",
+        "se acogollen"
+      ],
+      "Imperfect (-ra)": [
+        "me acogollara",
+        "te acogollaras",
+        "se acogollara",
+        "nos acogolláramos",
+        "os acogollarais",
+        "se acogollaran"
+      ],
+      "Imperfect (-se)": [
+        "me acogollase",
+        "te acogollases",
+        "se acogollase",
+        "nos acogollásemos",
+        "os acogollaseis",
+        "se acogollasen"
+      ],
+      "Future": [
+        "me acogollare",
+        "te acogollares",
+        "se acogollare",
+        "nos acogolláremos",
+        "os acogollareis",
+        "se acogollaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acogóllate", "acogóllese", "acogollémonos", "acogollaos", "acogóllense"],
+      "Negative": [
+        "no te acogolles",
+        "no se acogolle",
+        "no nos acogollemos",
+        "no os acogolléis",
+        "no se acogollen"
+      ]
+    },
+    "Present Participle": "acogollando",
+    "Past Participle": "acogollado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acogollarse",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acogollarse"
+}

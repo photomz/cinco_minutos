@@ -1,0 +1,71 @@
+{
+  "verb": "acidular",
+  "definition": "to acidulate, make sour",
+  "reflexive": false,
+  "spanishdict": null,
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acidular",
+  "wordreference": {
+    "Indicative": {
+      "Present": ["acidulo", "acidulas", "acidula", "acidulamos", "aciduláis", "acidulan"],
+      "Preterite": ["acidulé", "acidulaste", "aciduló", "acidulamos", "acidulasteis", "acidularon"],
+      "Imperfect": [
+        "acidulaba",
+        "acidulabas",
+        "acidulaba",
+        "acidulábamos",
+        "acidulabais",
+        "acidulaban"
+      ],
+      "Conditional": [
+        "acidularía",
+        "acidularías",
+        "acidularía",
+        "acidularíamos",
+        "acidularíais",
+        "acidularían"
+      ],
+      "Future": [
+        "acidularé",
+        "acidularás",
+        "acidulará",
+        "acidularemos",
+        "acidularéis",
+        "acidularán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["acidule", "acidules", "acidule", "acidulemos", "aciduléis", "acidulen"],
+      "Imperfect (-ra)": [
+        "acidulara",
+        "acidularas",
+        "acidulara",
+        "aciduláramos",
+        "acidularais",
+        "acidularan"
+      ],
+      "Imperfect (-se)": [
+        "acidulase",
+        "acidulases",
+        "acidulase",
+        "acidulásemos",
+        "acidulaseis",
+        "acidulasen"
+      ],
+      "Future": [
+        "acidulare",
+        "acidulares",
+        "acidulare",
+        "aciduláremos",
+        "acidulareis",
+        "acidularen"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acidula", "acidule", "acidulemos", "acidulad", "acidulen"],
+      "Negative": ["no acidules", "no acidule", "no acidulemos", "no aciduléis", "no acidulen"]
+    },
+    "Present Participle": "acidulando",
+    "Past Participle": "acidulado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acidular"
+}

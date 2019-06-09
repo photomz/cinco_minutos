@@ -1,0 +1,91 @@
+{
+  "verb": "acullicar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["acullico", "acullicas", "acullica", "acullicamos", "acullicáis", "acullican"],
+      "Preterite": [
+        "aculliqué",
+        "acullicaste",
+        "acullicó",
+        "acullicamos",
+        "acullicasteis",
+        "acullicaron"
+      ],
+      "Imperfect": [
+        "acullicaba",
+        "acullicabas",
+        "acullicaba",
+        "acullicábamos",
+        "acullicabais",
+        "acullicaban"
+      ],
+      "Conditional": [
+        "acullicaría",
+        "acullicarías",
+        "acullicaría",
+        "acullicaríamos",
+        "acullicaríais",
+        "acullicarían"
+      ],
+      "Future": [
+        "acullicaré",
+        "acullicarás",
+        "acullicará",
+        "acullicaremos",
+        "acullicaréis",
+        "acullicarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "acullique",
+        "aculliques",
+        "acullique",
+        "aculliquemos",
+        "aculliquéis",
+        "aculliquen"
+      ],
+      "Imperfect (-ra)": [
+        "acullicara",
+        "acullicaras",
+        "acullicara",
+        "acullicáramos",
+        "acullicarais",
+        "acullicaran"
+      ],
+      "Imperfect (-se)": [
+        "acullicase",
+        "acullicases",
+        "acullicase",
+        "acullicásemos",
+        "acullicaseis",
+        "acullicasen"
+      ],
+      "Future": [
+        "acullicare",
+        "acullicares",
+        "acullicare",
+        "acullicáremos",
+        "acullicareis",
+        "acullicaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acullica", "acullique", "aculliquemos", "acullicad", "aculliquen"],
+      "Negative": [
+        "no aculliques",
+        "no acullique",
+        "no aculliquemos",
+        "no aculliquéis",
+        "no aculliquen"
+      ]
+    },
+    "Present Participle": "acullicando",
+    "Past Participle": "acullicado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acullicar",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acullicar"
+}

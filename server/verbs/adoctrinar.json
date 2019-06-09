@@ -1,0 +1,98 @@
+{
+  "verb": "adoctrinar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "adoctrino",
+        "adoctrinas",
+        "adoctrina",
+        "adoctrinamos",
+        "adoctrináis",
+        "adoctrinan"
+      ],
+      "Preterite": [
+        "adoctriné",
+        "adoctrinaste",
+        "adoctrinó",
+        "adoctrinamos",
+        "adoctrinasteis",
+        "adoctrinaron"
+      ],
+      "Imperfect": [
+        "adoctrinaba",
+        "adoctrinabas",
+        "adoctrinaba",
+        "adoctrinábamos",
+        "adoctrinabais",
+        "adoctrinaban"
+      ],
+      "Conditional": [
+        "adoctrinaría",
+        "adoctrinarías",
+        "adoctrinaría",
+        "adoctrinaríamos",
+        "adoctrinaríais",
+        "adoctrinarían"
+      ],
+      "Future": [
+        "adoctrinaré",
+        "adoctrinarás",
+        "adoctrinará",
+        "adoctrinaremos",
+        "adoctrinaréis",
+        "adoctrinarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "adoctrine",
+        "adoctrines",
+        "adoctrine",
+        "adoctrinemos",
+        "adoctrinéis",
+        "adoctrinen"
+      ],
+      "Imperfect (-ra)": [
+        "adoctrinara",
+        "adoctrinaras",
+        "adoctrinara",
+        "adoctrináramos",
+        "adoctrinarais",
+        "adoctrinaran"
+      ],
+      "Imperfect (-se)": [
+        "adoctrinase",
+        "adoctrinases",
+        "adoctrinase",
+        "adoctrinásemos",
+        "adoctrinaseis",
+        "adoctrinasen"
+      ],
+      "Future": [
+        "adoctrinare",
+        "adoctrinares",
+        "adoctrinare",
+        "adoctrináremos",
+        "adoctrinareis",
+        "adoctrinaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["adoctrina", "adoctrine", "adoctrinemos", "adoctrinad", "adoctrinen"],
+      "Negative": [
+        "no adoctrines",
+        "no adoctrine",
+        "no adoctrinemos",
+        "no adoctrinéis",
+        "no adoctrinen"
+      ]
+    },
+    "Present Participle": "adoctrinando",
+    "Past Participle": "adoctrinado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/adotrinar",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=adotrinar"
+}

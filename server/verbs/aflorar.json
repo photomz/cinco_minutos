@@ -1,0 +1,91 @@
+{
+  "verb": "aflorar",
+  "definition": "to the surface",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["afloro", "afloras", "aflora", "afloramos", "afloráis", "afloran"],
+      "Preterite": ["afloré", "afloraste", "afloró", "afloramos", "aflorasteis", "afloraron"],
+      "Imperfect": ["afloraba", "aflorabas", "afloraba", "aflorábamos", "aflorabais", "afloraban"],
+      "Conditional": [
+        "afloraría",
+        "aflorarías",
+        "afloraría",
+        "afloraríamos",
+        "afloraríais",
+        "aflorarían"
+      ],
+      "Future": ["afloraré", "aflorarás", "aflorará", "afloraremos", "afloraréis", "aflorarán"]
+    },
+    "Subjunctive": {
+      "Present": ["aflore", "aflores", "aflore", "afloremos", "afloréis", "afloren"],
+      "Imperfect (-ra)": [
+        "aflorara",
+        "afloraras",
+        "aflorara",
+        "afloráramos",
+        "aflorarais",
+        "afloraran"
+      ],
+      "Imperfect (-se)": [
+        "aflorase",
+        "aflorases",
+        "aflorase",
+        "aflorásemos",
+        "afloraseis",
+        "aflorasen"
+      ],
+      "Future": ["aflorare", "aflorares", "aflorare", "afloráremos", "aflorareis", "afloraren"]
+    },
+    "Imperative": {
+      "Affirmative": ["aflora", "aflore", "afloremos", "aflorad", "afloren"],
+      "Negative": ["no aflores", "no aflore", "no afloremos", "no afloréis", "no afloren"]
+    },
+    "Present Participle": "aflorando",
+    "Past Participle": "aflorado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/aflorar",
+  "wordreference": {
+    "Indicative": {
+      "Present": ["afloro", "afloras", "aflora", "afloramos", "afloráis", "afloran"],
+      "Preterite": ["afloré", "afloraste", "afloró", "afloramos", "aflorasteis", "afloraron"],
+      "Imperfect": ["afloraba", "aflorabas", "afloraba", "aflorábamos", "aflorabais", "afloraban"],
+      "Conditional": [
+        "afloraría",
+        "aflorarías",
+        "afloraría",
+        "afloraríamos",
+        "afloraríais",
+        "aflorarían"
+      ],
+      "Future": ["afloraré", "aflorarás", "aflorará", "afloraremos", "afloraréis", "aflorarán"]
+    },
+    "Subjunctive": {
+      "Present": ["aflore", "aflores", "aflore", "afloremos", "afloréis", "afloren"],
+      "Imperfect (-ra)": [
+        "aflorara",
+        "afloraras",
+        "aflorara",
+        "afloráramos",
+        "aflorarais",
+        "afloraran"
+      ],
+      "Imperfect (-se)": [
+        "aflorase",
+        "aflorases",
+        "aflorase",
+        "aflorásemos",
+        "afloraseis",
+        "aflorasen"
+      ],
+      "Future": ["aflorare", "aflorares", "aflorare", "afloráremos", "aflorareis", "afloraren"]
+    },
+    "Imperative": {
+      "Affirmative": ["aflora", "aflore", "afloremos", "aflorad", "afloren"],
+      "Negative": ["no aflores", "no aflore", "no afloremos", "no afloréis", "no afloren"]
+    },
+    "Present Participle": "aflorando",
+    "Past Participle": "aflorado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=aflorar"
+}

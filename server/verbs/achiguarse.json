@@ -1,0 +1,98 @@
+{
+  "verb": "achiguarse",
+  "definition": null,
+  "reflexive": true,
+  "spanishdict": null,
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/achiguarse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me achiguo",
+        "te achiguas",
+        "se achigua",
+        "nos achiguamos",
+        "os achiguáis",
+        "se achiguan"
+      ],
+      "Preterite": [
+        "me achigüé",
+        "te achiguaste",
+        "se achiguó",
+        "nos achiguamos",
+        "os achiguasteis",
+        "se achiguaron"
+      ],
+      "Imperfect": [
+        "me achiguaba",
+        "te achiguabas",
+        "se achiguaba",
+        "nos achiguábamos",
+        "os achiguabais",
+        "se achiguaban"
+      ],
+      "Conditional": [
+        "me achiguaría",
+        "te achiguarías",
+        "se achiguaría",
+        "nos achiguaríamos",
+        "os achiguaríais",
+        "se achiguarían"
+      ],
+      "Future": [
+        "me achiguaré",
+        "te achiguarás",
+        "se achiguará",
+        "nos achiguaremos",
+        "os achiguaréis",
+        "se achiguarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me achigüe",
+        "te achigües",
+        "se achigüe",
+        "nos achigüemos",
+        "os achigüéis",
+        "se achigüen"
+      ],
+      "Imperfect (-ra)": [
+        "me achiguara",
+        "te achiguaras",
+        "se achiguara",
+        "nos achiguáramos",
+        "os achiguarais u os achiguaseis",
+        "se achiguaran"
+      ],
+      "Imperfect (-se)": [
+        "me achiguase",
+        "te achiguases",
+        "se achiguase",
+        "nos achiguásemos",
+        "os achiguaseis",
+        "se achiguasen"
+      ],
+      "Future": [
+        "me achiguare",
+        "te achiguares",
+        "se achiguare",
+        "nos achiguáremos",
+        "os achiguareis",
+        "se achiguaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["achíguate", "achígüese", "achigüémonos", "achiguaos", "achígüense"],
+      "Negative": [
+        "no te achigües",
+        "no se achigüe",
+        "no nos achigüemos",
+        "no os achigüéis",
+        "no se achigüen"
+      ]
+    },
+    "Present Participle": "achiguando",
+    "Past Participle": "achiguado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=achiguarse"
+}

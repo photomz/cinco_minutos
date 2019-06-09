@@ -1,0 +1,71 @@
+{
+  "verb": "ablandar",
+  "definition": "to soften",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["ablando", "ablandas", "ablanda", "ablandamos", "ablandáis", "ablandan"],
+      "Preterite": ["ablandé", "ablandaste", "ablandó", "ablandamos", "ablandasteis", "ablandaron"],
+      "Imperfect": [
+        "ablandaba",
+        "ablandabas",
+        "ablandaba",
+        "ablandábamos",
+        "ablandabais",
+        "ablandaban"
+      ],
+      "Conditional": [
+        "ablandaría",
+        "ablandarías",
+        "ablandaría",
+        "ablandaríamos",
+        "ablandaríais",
+        "ablandarían"
+      ],
+      "Future": [
+        "ablandaré",
+        "ablandarás",
+        "ablandará",
+        "ablandaremos",
+        "ablandaréis",
+        "ablandarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["ablande", "ablandes", "ablande", "ablandemos", "ablandéis", "ablanden"],
+      "Imperfect (-ra)": [
+        "ablandara",
+        "ablandaras",
+        "ablandara",
+        "ablandáramos",
+        "ablandarais",
+        "ablandaran"
+      ],
+      "Imperfect (-se)": [
+        "ablandase",
+        "ablandases",
+        "ablandase",
+        "ablandásemos",
+        "ablandaseis",
+        "ablandasen"
+      ],
+      "Future": [
+        "ablandare",
+        "ablandares",
+        "ablandare",
+        "ablandáremos",
+        "ablandareis",
+        "ablandaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["ablanda", "ablande", "ablandemos", "ablandad", "ablanden"],
+      "Negative": ["no ablandes", "no ablande", "no ablandemos", "no ablandéis", "no ablanden"]
+    },
+    "Present Participle": "ablandando",
+    "Past Participle": "ablandado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/ablandir",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=ablandir"
+}

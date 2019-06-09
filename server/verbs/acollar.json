@@ -1,0 +1,50 @@
+{
+  "verb": "acollar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["acollo", "acollas", "acolla", "acollamos", "acolláis", "acollan"],
+      "Preterite": ["acollé", "acollaste", "acolló", "acollamos", "acollasteis", "acollaron"],
+      "Imperfect": ["acollaba", "acollabas", "acollaba", "acollábamos", "acollabais", "acollaban"],
+      "Conditional": [
+        "acollaría",
+        "acollarías",
+        "acollaría",
+        "acollaríamos",
+        "acollaríais",
+        "acollarían"
+      ],
+      "Future": ["acollaré", "acollarás", "acollará", "acollaremos", "acollaréis", "acollarán"]
+    },
+    "Subjunctive": {
+      "Present": ["acolle", "acolles", "acolle", "acollemos", "acolléis", "acollen"],
+      "Imperfect (-ra)": [
+        "acollara",
+        "acollaras",
+        "acollara",
+        "acolláramos",
+        "acollarais",
+        "acollaran"
+      ],
+      "Imperfect (-se)": [
+        "acollase",
+        "acollases",
+        "acollase",
+        "acollásemos",
+        "acollaseis",
+        "acollasen"
+      ],
+      "Future": ["acollare", "acollares", "acollare", "acolláremos", "acollareis", "acollaren"]
+    },
+    "Imperative": {
+      "Affirmative": ["acolla", "acolle", "acollemos", "acollad", "acollen"],
+      "Negative": ["no acolles", "no acolle", "no acollemos", "no acolléis", "no acollen"]
+    },
+    "Present Participle": "acollando",
+    "Past Participle": "acollado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acollar",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acollar"
+}

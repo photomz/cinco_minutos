@@ -1,0 +1,199 @@
+{
+  "verb": "acaudillar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me acaudillo",
+        "te acaudillas",
+        "se acaudilla",
+        "nos acaudillamos",
+        "os acaudilláis",
+        "se acaudillan"
+      ],
+      "Preterite": [
+        "me acaudillé",
+        "te acaudillaste",
+        "se acaudilló",
+        "nos acaudillamos",
+        "os acaudillasteis",
+        "se acaudillaron"
+      ],
+      "Imperfect": [
+        "me acaudillaba",
+        "te acaudillabas",
+        "se acaudillaba",
+        "nos acaudillábamos",
+        "os acaudillabais",
+        "se acaudillaban"
+      ],
+      "Conditional": [
+        "me acaudillaría",
+        "te acaudillarías",
+        "se acaudillaría",
+        "nos acaudillaríamos",
+        "os acaudillaríais",
+        "se acaudillarían"
+      ],
+      "Future": [
+        "me acaudillaré",
+        "te acaudillarás",
+        "se acaudillará",
+        "nos acaudillaremos",
+        "os acaudillaréis",
+        "se acaudillarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me acaudille",
+        "te acaudilles",
+        "se acaudille",
+        "nos acaudillemos",
+        "os acaudilléis",
+        "se acaudillen"
+      ],
+      "Imperfect (-ra)": [
+        "me acaudillara",
+        "te acaudillaras",
+        "se acaudillara",
+        "nos acaudilláramos",
+        "os acaudillarais",
+        "se acaudillaran"
+      ],
+      "Imperfect (-se)": [
+        "me acaudillase",
+        "te acaudillases",
+        "se acaudillase",
+        "nos acaudillásemos",
+        "os acaudillaseis",
+        "se acaudillasen"
+      ],
+      "Future": [
+        "me acaudillare",
+        "te acaudillares",
+        "se acaudillare",
+        "nos acaudilláremos",
+        "os acaudillareis",
+        "se acaudillaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": [
+        "acaudíllate",
+        "acaudíllese",
+        "acaudillémonos",
+        "acaudillaos",
+        "acaudíllense"
+      ],
+      "Negative": [
+        "no te acaudilles",
+        "no se acaudille",
+        "no nos acaudillemos",
+        "no os acaudilléis",
+        "no se acaudillen"
+      ]
+    },
+    "Present Participle": "acaudillando",
+    "Past Participle": "acaudillado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acaudillarse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me acaudillo",
+        "te acaudillas",
+        "se acaudilla",
+        "nos acaudillamos",
+        "os acaudilláis",
+        "se acaudillan"
+      ],
+      "Preterite": [
+        "me acaudillé",
+        "te acaudillaste",
+        "se acaudilló",
+        "nos acaudillamos",
+        "os acaudillasteis",
+        "se acaudillaron"
+      ],
+      "Imperfect": [
+        "me acaudillaba",
+        "te acaudillabas",
+        "se acaudillaba",
+        "nos acaudillábamos",
+        "os acaudillabais",
+        "se acaudillaban"
+      ],
+      "Conditional": [
+        "me acaudillaría",
+        "te acaudillarías",
+        "se acaudillaría",
+        "nos acaudillaríamos",
+        "os acaudillaríais",
+        "se acaudillarían"
+      ],
+      "Future": [
+        "me acaudillaré",
+        "te acaudillarás",
+        "se acaudillará",
+        "nos acaudillaremos",
+        "os acaudillaréis",
+        "se acaudillarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me acaudille",
+        "te acaudilles",
+        "se acaudille",
+        "nos acaudillemos",
+        "os acaudilléis",
+        "se acaudillen"
+      ],
+      "Imperfect (-ra)": [
+        "me acaudillara",
+        "te acaudillaras",
+        "se acaudillara",
+        "nos acaudilláramos",
+        "os acaudillarais u os acaudillaseis",
+        "se acaudillaran"
+      ],
+      "Imperfect (-se)": [
+        "me acaudillase",
+        "te acaudillases",
+        "se acaudillase",
+        "nos acaudillásemos",
+        "os acaudillaseis",
+        "se acaudillasen"
+      ],
+      "Future": [
+        "me acaudillare",
+        "te acaudillares",
+        "se acaudillare",
+        "nos acaudilláremos",
+        "os acaudillareis",
+        "se acaudillaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": [
+        "acaudíllate",
+        "acaudíllese",
+        "acaudillémonos",
+        "acaudillaos",
+        "acaudíllense"
+      ],
+      "Negative": [
+        "no te acaudilles",
+        "no se acaudille",
+        "no nos acaudillemos",
+        "no os acaudilléis",
+        "no se acaudillen"
+      ]
+    },
+    "Present Participle": "acaudillando",
+    "Past Participle": "acaudillado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acaudillarse"
+}

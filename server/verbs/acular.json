@@ -1,0 +1,84 @@
+{
+  "verb": "acular",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["me aculo", "te aculas", "se acula", "nos aculamos", "os aculáis", "se aculan"],
+      "Preterite": [
+        "me aculé",
+        "te aculaste",
+        "se aculó",
+        "nos aculamos",
+        "os aculasteis",
+        "se acularon"
+      ],
+      "Imperfect": [
+        "me aculaba",
+        "te aculabas",
+        "se aculaba",
+        "nos aculábamos",
+        "os aculabais",
+        "se aculaban"
+      ],
+      "Conditional": [
+        "me acularía",
+        "te acularías",
+        "se acularía",
+        "nos acularíamos",
+        "os acularíais",
+        "se acularían"
+      ],
+      "Future": [
+        "me acularé",
+        "te acularás",
+        "se aculará",
+        "nos acularemos",
+        "os acularéis",
+        "se acularán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["me acule", "te acules", "se acule", "nos aculemos", "os aculéis", "se aculen"],
+      "Imperfect (-ra)": [
+        "me aculara",
+        "te acularas",
+        "se aculara",
+        "nos aculáramos",
+        "os acularais",
+        "se acularan"
+      ],
+      "Imperfect (-se)": [
+        "me aculase",
+        "te aculases",
+        "se aculase",
+        "nos aculásemos",
+        "os aculaseis",
+        "se aculasen"
+      ],
+      "Future": [
+        "me aculare",
+        "te aculares",
+        "se aculare",
+        "nos aculáremos",
+        "os aculareis",
+        "se acularen"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acúlate", "acúlese", "aculémonos", "aculaos", "acúlense"],
+      "Negative": [
+        "no te acules",
+        "no se acule",
+        "no nos aculemos",
+        "no os aculéis",
+        "no se aculen"
+      ]
+    },
+    "Present Participle": "aculando",
+    "Past Participle": "aculado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acularse",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acularse"
+}

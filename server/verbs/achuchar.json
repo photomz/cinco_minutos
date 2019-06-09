@@ -1,0 +1,187 @@
+{
+  "verb": "achuchar",
+  "definition": "to hug",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me achucho",
+        "te achuchas",
+        "se achucha",
+        "nos achuchamos",
+        "os achucháis",
+        "se achuchan"
+      ],
+      "Preterite": [
+        "me achuché",
+        "te achuchaste",
+        "se achuchó",
+        "nos achuchamos",
+        "os achuchasteis",
+        "se achucharon"
+      ],
+      "Imperfect": [
+        "me achuchaba",
+        "te achuchabas",
+        "se achuchaba",
+        "nos achuchábamos",
+        "os achuchabais",
+        "se achuchaban"
+      ],
+      "Conditional": [
+        "me achucharía",
+        "te achucharías",
+        "se achucharía",
+        "nos achucharíamos",
+        "os achucharíais",
+        "se achucharían"
+      ],
+      "Future": [
+        "me achucharé",
+        "te achucharás",
+        "se achuchará",
+        "nos achucharemos",
+        "os achucharéis",
+        "se achucharán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me achuche",
+        "te achuches",
+        "se achuche",
+        "nos achuchemos",
+        "os achuchéis",
+        "se achuchen"
+      ],
+      "Imperfect (-ra)": [
+        "me achuchara",
+        "te achucharas",
+        "se achuchara",
+        "nos achucháramos",
+        "os achucharais",
+        "se achucharan"
+      ],
+      "Imperfect (-se)": [
+        "me achuchase",
+        "te achuchases",
+        "se achuchase",
+        "nos achuchásemos",
+        "os achuchaseis",
+        "se achuchasen"
+      ],
+      "Future": [
+        "me achuchare",
+        "te achuchares",
+        "se achuchare",
+        "nos achucháremos",
+        "os achuchareis",
+        "se achucharen"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["achúchate", "achúchese", "achuchémonos", "achuchaos", "achúchense"],
+      "Negative": [
+        "no te achuches",
+        "no se achuche",
+        "no nos achuchemos",
+        "no os achuchéis",
+        "no se achuchen"
+      ]
+    },
+    "Present Participle": "achuchando",
+    "Past Participle": "achuchado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/achucharse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me achucho",
+        "te achuchas",
+        "se achucha",
+        "nos achuchamos",
+        "os achucháis",
+        "se achuchan"
+      ],
+      "Preterite": [
+        "me achuché",
+        "te achuchaste",
+        "se achuchó",
+        "nos achuchamos",
+        "os achuchasteis",
+        "se achucharon"
+      ],
+      "Imperfect": [
+        "me achuchaba",
+        "te achuchabas",
+        "se achuchaba",
+        "nos achuchábamos",
+        "os achuchabais",
+        "se achuchaban"
+      ],
+      "Conditional": [
+        "me achucharía",
+        "te achucharías",
+        "se achucharía",
+        "nos achucharíamos",
+        "os achucharíais",
+        "se achucharían"
+      ],
+      "Future": [
+        "me achucharé",
+        "te achucharás",
+        "se achuchará",
+        "nos achucharemos",
+        "os achucharéis",
+        "se achucharán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me achuche",
+        "te achuches",
+        "se achuche",
+        "nos achuchemos",
+        "os achuchéis",
+        "se achuchen"
+      ],
+      "Imperfect (-ra)": [
+        "me achuchara",
+        "te achucharas",
+        "se achuchara",
+        "nos achucháramos",
+        "os achucharais u os achuchaseis",
+        "se achucharan"
+      ],
+      "Imperfect (-se)": [
+        "me achuchase",
+        "te achuchases",
+        "se achuchase",
+        "nos achuchásemos",
+        "os achuchaseis",
+        "se achuchasen"
+      ],
+      "Future": [
+        "me achuchare",
+        "te achuchares",
+        "se achuchare",
+        "nos achucháremos",
+        "os achuchareis",
+        "se achucharen"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["achúchate", "achúchese", "achuchémonos", "achuchaos", "achúchense"],
+      "Negative": [
+        "no te achuches",
+        "no se achuche",
+        "no nos achuchemos",
+        "no os achuchéis",
+        "no se achuchen"
+      ]
+    },
+    "Present Participle": "achuchando",
+    "Past Participle": "achuchado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=achucharse"
+}

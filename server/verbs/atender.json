@@ -1,0 +1,57 @@
+{
+  "verb": "atender",
+  "definition": "to look after",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["atiendo", "atiendes", "atiende", "atendemos", "atendéis", "atienden"],
+      "Preterite": ["atendí", "atendiste", "atendió", "atendimos", "atendisteis", "atendieron"],
+      "Imperfect": ["atendía", "atendías", "atendía", "atendíamos", "atendíais", "atendían"],
+      "Conditional": [
+        "atendería",
+        "atenderías",
+        "atendería",
+        "atenderíamos",
+        "atenderíais",
+        "atenderían"
+      ],
+      "Future": ["atenderé", "atenderás", "atenderá", "atenderemos", "atenderéis", "atenderán"]
+    },
+    "Subjunctive": {
+      "Present": ["atienda", "atiendas", "atienda", "atendamos", "atendáis", "atiendan"],
+      "Imperfect (-ra)": [
+        "atendiera",
+        "atendieras",
+        "atendiera",
+        "atendiéramos",
+        "atendierais",
+        "atendieran"
+      ],
+      "Imperfect (-se)": [
+        "atendiese",
+        "atendieses",
+        "atendiese",
+        "atendiésemos",
+        "atendieseis",
+        "atendiesen"
+      ],
+      "Future": [
+        "atendiere",
+        "atendieres",
+        "atendiere",
+        "atendiéremos",
+        "atendiereis",
+        "atendieren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["atiende", "atienda", "atendamos", "atended", "atiendan"],
+      "Negative": ["no atiendas", "no atienda", "no atendamos", "no atendáis", "no atiendan"]
+    },
+    "Present Participle": "atendiendo",
+    "Past Participle": "atendido,atento"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acender",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acender"
+}

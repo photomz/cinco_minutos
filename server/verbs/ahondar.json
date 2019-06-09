@@ -1,0 +1,98 @@
+{
+  "verb": "ahondar",
+  "definition": "to deepen",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me ahondo",
+        "te ahondas",
+        "se ahonda",
+        "nos ahondamos",
+        "os ahondáis",
+        "se ahondan"
+      ],
+      "Preterite": [
+        "me ahondé",
+        "te ahondaste",
+        "se ahondó",
+        "nos ahondamos",
+        "os ahondasteis",
+        "se ahondaron"
+      ],
+      "Imperfect": [
+        "me ahondaba",
+        "te ahondabas",
+        "se ahondaba",
+        "nos ahondábamos",
+        "os ahondabais",
+        "se ahondaban"
+      ],
+      "Conditional": [
+        "me ahondaría",
+        "te ahondarías",
+        "se ahondaría",
+        "nos ahondaríamos",
+        "os ahondaríais",
+        "se ahondarían"
+      ],
+      "Future": [
+        "me ahondaré",
+        "te ahondarás",
+        "se ahondará",
+        "nos ahondaremos",
+        "os ahondaréis",
+        "se ahondarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me ahonde",
+        "te ahondes",
+        "se ahonde",
+        "nos ahondemos",
+        "os ahondéis",
+        "se ahonden"
+      ],
+      "Imperfect (-ra)": [
+        "me ahondara",
+        "te ahondaras",
+        "se ahondara",
+        "nos ahondáramos",
+        "os ahondarais",
+        "se ahondaran"
+      ],
+      "Imperfect (-se)": [
+        "me ahondase",
+        "te ahondases",
+        "se ahondase",
+        "nos ahondásemos",
+        "os ahondaseis",
+        "se ahondasen"
+      ],
+      "Future": [
+        "me ahondare",
+        "te ahondares",
+        "se ahondare",
+        "nos ahondáremos",
+        "os ahondareis",
+        "se ahondaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["ahóndate", "ahóndese", "ahondémonos", "ahondaos", "ahóndense"],
+      "Negative": [
+        "no te ahondes",
+        "no se ahonde",
+        "no nos ahondemos",
+        "no os ahondéis",
+        "no se ahonden"
+      ]
+    },
+    "Present Participle": "ahondando",
+    "Past Participle": "ahondado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/afondarse",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=afondarse"
+}

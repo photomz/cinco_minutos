@@ -1,0 +1,104 @@
+{
+  "verb": "acaramelar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me acaramelo",
+        "te acaramelas",
+        "se acaramela",
+        "nos acaramelamos",
+        "os acarameláis",
+        "se acaramelan"
+      ],
+      "Preterite": [
+        "me acaramelé",
+        "te acaramelaste",
+        "se acarameló",
+        "nos acaramelamos",
+        "os acaramelasteis",
+        "se acaramelaron"
+      ],
+      "Imperfect": [
+        "me acaramelaba",
+        "te acaramelabas",
+        "se acaramelaba",
+        "nos acaramelábamos",
+        "os acaramelabais",
+        "se acaramelaban"
+      ],
+      "Conditional": [
+        "me acaramelaría",
+        "te acaramelarías",
+        "se acaramelaría",
+        "nos acaramelaríamos",
+        "os acaramelaríais",
+        "se acaramelarían"
+      ],
+      "Future": [
+        "me acaramelaré",
+        "te acaramelarás",
+        "se acaramelará",
+        "nos acaramelaremos",
+        "os acaramelaréis",
+        "se acaramelarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me acaramele",
+        "te acarameles",
+        "se acaramele",
+        "nos acaramelemos",
+        "os acarameléis",
+        "se acaramelen"
+      ],
+      "Imperfect (-ra)": [
+        "me acaramelara",
+        "te acaramelaras",
+        "se acaramelara",
+        "nos acarameláramos",
+        "os acaramelarais",
+        "se acaramelaran"
+      ],
+      "Imperfect (-se)": [
+        "me acaramelase",
+        "te acaramelases",
+        "se acaramelase",
+        "nos acaramelásemos",
+        "os acaramelaseis",
+        "se acaramelasen"
+      ],
+      "Future": [
+        "me acaramelare",
+        "te acaramelares",
+        "se acaramelare",
+        "nos acarameláremos",
+        "os acaramelareis",
+        "se acaramelaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": [
+        "acaramélate",
+        "acaramélese",
+        "acaramelémonos",
+        "acaramelaos",
+        "acaramélense"
+      ],
+      "Negative": [
+        "no te acarameles",
+        "no se acaramele",
+        "no nos acaramelemos",
+        "no os acarameléis",
+        "no se acaramelen"
+      ]
+    },
+    "Present Participle": "acaramelando",
+    "Past Participle": "acaramelado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acaramelarse",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acaramelarse"
+}

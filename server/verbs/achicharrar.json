@@ -1,0 +1,199 @@
+{
+  "verb": "achicharrar",
+  "definition": "to scorch",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me achicharro",
+        "te achicharras",
+        "se achicharra",
+        "nos achicharramos",
+        "os achicharráis",
+        "se achicharran"
+      ],
+      "Preterite": [
+        "me achicharré",
+        "te achicharraste",
+        "se achicharró",
+        "nos achicharramos",
+        "os achicharrasteis",
+        "se achicharraron"
+      ],
+      "Imperfect": [
+        "me achicharraba",
+        "te achicharrabas",
+        "se achicharraba",
+        "nos achicharrábamos",
+        "os achicharrabais",
+        "se achicharraban"
+      ],
+      "Conditional": [
+        "me achicharraría",
+        "te achicharrarías",
+        "se achicharraría",
+        "nos achicharraríamos",
+        "os achicharraríais",
+        "se achicharrarían"
+      ],
+      "Future": [
+        "me achicharraré",
+        "te achicharrarás",
+        "se achicharrará",
+        "nos achicharraremos",
+        "os achicharraréis",
+        "se achicharrarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me achicharre",
+        "te achicharres",
+        "se achicharre",
+        "nos achicharremos",
+        "os achicharréis",
+        "se achicharren"
+      ],
+      "Imperfect (-ra)": [
+        "me achicharrara",
+        "te achicharraras",
+        "se achicharrara",
+        "nos achicharráramos",
+        "os achicharrarais",
+        "se achicharraran"
+      ],
+      "Imperfect (-se)": [
+        "me achicharrase",
+        "te achicharrases",
+        "se achicharrase",
+        "nos achicharrásemos",
+        "os achicharraseis",
+        "se achicharrasen"
+      ],
+      "Future": [
+        "me achicharrare",
+        "te achicharrares",
+        "se achicharrare",
+        "nos achicharráremos",
+        "os achicharrareis",
+        "se achicharraren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": [
+        "achichárrate",
+        "achichárrese",
+        "achicharrémonos",
+        "achicharraos",
+        "achichárrense"
+      ],
+      "Negative": [
+        "no te achicharres",
+        "no se achicharre",
+        "no nos achicharremos",
+        "no os achicharréis",
+        "no se achicharren"
+      ]
+    },
+    "Present Participle": "achicharrando",
+    "Past Participle": "achicharrado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/achucharrarse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me achucharro",
+        "te achucharras",
+        "se achucharra",
+        "nos achucharramos",
+        "os achucharráis",
+        "se achucharran"
+      ],
+      "Preterite": [
+        "me achucharré",
+        "te achucharraste",
+        "se achucharró",
+        "nos achucharramos",
+        "os achucharrasteis",
+        "se achucharraron"
+      ],
+      "Imperfect": [
+        "me achucharraba",
+        "te achucharrabas",
+        "se achucharraba",
+        "nos achucharrábamos",
+        "os achucharrabais",
+        "se achucharraban"
+      ],
+      "Conditional": [
+        "me achucharraría",
+        "te achucharrarías",
+        "se achucharraría",
+        "nos achucharraríamos",
+        "os achucharraríais",
+        "se achucharrarían"
+      ],
+      "Future": [
+        "me achucharraré",
+        "te achucharrarás",
+        "se achucharrará",
+        "nos achucharraremos",
+        "os achucharraréis",
+        "se achucharrarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me achucharre",
+        "te achucharres",
+        "se achucharre",
+        "nos achucharremos",
+        "os achucharréis",
+        "se achucharren"
+      ],
+      "Imperfect (-ra)": [
+        "me achucharrara",
+        "te achucharraras",
+        "se achucharrara",
+        "nos achucharráramos",
+        "os achucharrarais u os achucharraseis",
+        "se achucharraran"
+      ],
+      "Imperfect (-se)": [
+        "me achucharrase",
+        "te achucharrases",
+        "se achucharrase",
+        "nos achucharrásemos",
+        "os achucharraseis",
+        "se achucharrasen"
+      ],
+      "Future": [
+        "me achucharrare",
+        "te achucharrares",
+        "se achucharrare",
+        "nos achucharráremos",
+        "os achucharrareis",
+        "se achucharraren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": [
+        "achuchárrate",
+        "achuchárrese",
+        "achucharrémonos",
+        "achucharraos",
+        "achuchárrense"
+      ],
+      "Negative": [
+        "no te achucharres",
+        "no se achucharre",
+        "no nos achucharremos",
+        "no os achucharréis",
+        "no se achucharren"
+      ]
+    },
+    "Present Participle": "achucharrando",
+    "Past Participle": "achucharrado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=achucharrarse"
+}

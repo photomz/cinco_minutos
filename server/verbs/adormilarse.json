@@ -1,0 +1,98 @@
+{
+  "verb": "adormilarse",
+  "definition": "to doze",
+  "reflexive": true,
+  "spanishdict": null,
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/adormilarse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me adormilo",
+        "te adormilas",
+        "se adormila",
+        "nos adormilamos",
+        "os adormiláis",
+        "se adormilan"
+      ],
+      "Preterite": [
+        "me adormilé",
+        "te adormilaste",
+        "se adormiló",
+        "nos adormilamos",
+        "os adormilasteis",
+        "se adormilaron"
+      ],
+      "Imperfect": [
+        "me adormilaba",
+        "te adormilabas",
+        "se adormilaba",
+        "nos adormilábamos",
+        "os adormilabais",
+        "se adormilaban"
+      ],
+      "Conditional": [
+        "me adormilaría",
+        "te adormilarías",
+        "se adormilaría",
+        "nos adormilaríamos",
+        "os adormilaríais",
+        "se adormilarían"
+      ],
+      "Future": [
+        "me adormilaré",
+        "te adormilarás",
+        "se adormilará",
+        "nos adormilaremos",
+        "os adormilaréis",
+        "se adormilarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me adormile",
+        "te adormiles",
+        "se adormile",
+        "nos adormilemos",
+        "os adormiléis",
+        "se adormilen"
+      ],
+      "Imperfect (-ra)": [
+        "me adormilara",
+        "te adormilaras",
+        "se adormilara",
+        "nos adormiláramos",
+        "os adormilarais u os adormilaseis",
+        "se adormilaran"
+      ],
+      "Imperfect (-se)": [
+        "me adormilase",
+        "te adormilases",
+        "se adormilase",
+        "nos adormilásemos",
+        "os adormilaseis",
+        "se adormilasen"
+      ],
+      "Future": [
+        "me adormilare",
+        "te adormilares",
+        "se adormilare",
+        "nos adormiláremos",
+        "os adormilareis",
+        "se adormilaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["adormílate", "adormílese", "adormilémonos", "adormilaos", "adormílense"],
+      "Negative": [
+        "no te adormiles",
+        "no se adormile",
+        "no nos adormilemos",
+        "no os adormiléis",
+        "no se adormilen"
+      ]
+    },
+    "Present Participle": "adormilando",
+    "Past Participle": "adormilado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=adormilarse"
+}

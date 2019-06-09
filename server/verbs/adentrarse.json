@@ -1,0 +1,98 @@
+{
+  "verb": "adentrarse",
+  "definition": "to the heart of",
+  "reflexive": true,
+  "spanishdict": null,
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/adentrarse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me adentro",
+        "te adentras",
+        "se adentra",
+        "nos adentramos",
+        "os adentráis",
+        "se adentran"
+      ],
+      "Preterite": [
+        "me adentré",
+        "te adentraste",
+        "se adentró",
+        "nos adentramos",
+        "os adentrasteis",
+        "se adentraron"
+      ],
+      "Imperfect": [
+        "me adentraba",
+        "te adentrabas",
+        "se adentraba",
+        "nos adentrábamos",
+        "os adentrabais",
+        "se adentraban"
+      ],
+      "Conditional": [
+        "me adentraría",
+        "te adentrarías",
+        "se adentraría",
+        "nos adentraríamos",
+        "os adentraríais",
+        "se adentrarían"
+      ],
+      "Future": [
+        "me adentraré",
+        "te adentrarás",
+        "se adentrará",
+        "nos adentraremos",
+        "os adentraréis",
+        "se adentrarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me adentre",
+        "te adentres",
+        "se adentre",
+        "nos adentremos",
+        "os adentréis",
+        "se adentren"
+      ],
+      "Imperfect (-ra)": [
+        "me adentrara",
+        "te adentraras",
+        "se adentrara",
+        "nos adentráramos",
+        "os adentrarais u os adentraseis",
+        "se adentraran"
+      ],
+      "Imperfect (-se)": [
+        "me adentrase",
+        "te adentrases",
+        "se adentrase",
+        "nos adentrásemos",
+        "os adentraseis",
+        "se adentrasen"
+      ],
+      "Future": [
+        "me adentrare",
+        "te adentrares",
+        "se adentrare",
+        "nos adentráremos",
+        "os adentrareis",
+        "se adentraren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["adéntrate", "adéntrese", "adentrémonos", "adentraos", "adéntrense"],
+      "Negative": [
+        "no te adentres",
+        "no se adentre",
+        "no nos adentremos",
+        "no os adentréis",
+        "no se adentren"
+      ]
+    },
+    "Present Participle": "adentrando",
+    "Past Participle": "adentrado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=adentrarse"
+}

@@ -1,0 +1,98 @@
+{
+  "verb": "acaserarse",
+  "definition": null,
+  "reflexive": true,
+  "spanishdict": null,
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acaserarse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me acasero",
+        "te acaseras",
+        "se acasera",
+        "nos acaseramos",
+        "os acaseráis",
+        "se acaseran"
+      ],
+      "Preterite": [
+        "me acaseré",
+        "te acaseraste",
+        "se acaseró",
+        "nos acaseramos",
+        "os acaserasteis",
+        "se acaseraron"
+      ],
+      "Imperfect": [
+        "me acaseraba",
+        "te acaserabas",
+        "se acaseraba",
+        "nos acaserábamos",
+        "os acaserabais",
+        "se acaseraban"
+      ],
+      "Conditional": [
+        "me acaseraría",
+        "te acaserarías",
+        "se acaseraría",
+        "nos acaseraríamos",
+        "os acaseraríais",
+        "se acaserarían"
+      ],
+      "Future": [
+        "me acaseraré",
+        "te acaserarás",
+        "se acaserará",
+        "nos acaseraremos",
+        "os acaseraréis",
+        "se acaserarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me acasere",
+        "te acaseres",
+        "se acasere",
+        "nos acaseremos",
+        "os acaseréis",
+        "se acaseren"
+      ],
+      "Imperfect (-ra)": [
+        "me acaserara",
+        "te acaseraras",
+        "se acaserara",
+        "nos acaseráramos",
+        "os acaserarais u os acaseraseis",
+        "se acaseraran"
+      ],
+      "Imperfect (-se)": [
+        "me acaserase",
+        "te acaserases",
+        "se acaserase",
+        "nos acaserásemos",
+        "os acaseraseis",
+        "se acaserasen"
+      ],
+      "Future": [
+        "me acaserare",
+        "te acaserares",
+        "se acaserare",
+        "nos acaseráremos",
+        "os acaserareis",
+        "se acaseraren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acasérate", "acasérese", "acaserémonos", "acaseraos", "acasérense"],
+      "Negative": [
+        "no te acaseres",
+        "no se acasere",
+        "no nos acaseremos",
+        "no os acaseréis",
+        "no se acaseren"
+      ]
+    },
+    "Present Participle": "acaserando",
+    "Past Participle": "acaserado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acaserarse"
+}

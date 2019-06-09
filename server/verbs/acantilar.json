@@ -1,0 +1,78 @@
+{
+  "verb": "acantilar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": null,
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acantilar",
+  "wordreference": {
+    "Indicative": {
+      "Present": ["acantilo", "acantilas", "acantila", "acantilamos", "acantiláis", "acantilan"],
+      "Preterite": [
+        "acantilé",
+        "acantilaste",
+        "acantiló",
+        "acantilamos",
+        "acantilasteis",
+        "acantilaron"
+      ],
+      "Imperfect": [
+        "acantilaba",
+        "acantilabas",
+        "acantilaba",
+        "acantilábamos",
+        "acantilabais",
+        "acantilaban"
+      ],
+      "Conditional": [
+        "acantilaría",
+        "acantilarías",
+        "acantilaría",
+        "acantilaríamos",
+        "acantilaríais",
+        "acantilarían"
+      ],
+      "Future": [
+        "acantilaré",
+        "acantilarás",
+        "acantilará",
+        "acantilaremos",
+        "acantilaréis",
+        "acantilarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["acantile", "acantiles", "acantile", "acantilemos", "acantiléis", "acantilen"],
+      "Imperfect (-ra)": [
+        "acantilara",
+        "acantilaras",
+        "acantilara",
+        "acantiláramos",
+        "acantilarais",
+        "acantilaran"
+      ],
+      "Imperfect (-se)": [
+        "acantilase",
+        "acantilases",
+        "acantilase",
+        "acantilásemos",
+        "acantilaseis",
+        "acantilasen"
+      ],
+      "Future": [
+        "acantilare",
+        "acantilares",
+        "acantilare",
+        "acantiláremos",
+        "acantilareis",
+        "acantilaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acantila", "acantile", "acantilemos", "acantilad", "acantilen"],
+      "Negative": ["no acantiles", "no acantile", "no acantilemos", "no acantiléis", "no acantilen"]
+    },
+    "Present Participle": "acantilando",
+    "Past Participle": "acantilado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acantilar"
+}

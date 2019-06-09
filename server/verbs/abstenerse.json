@@ -1,0 +1,98 @@
+{
+  "verb": "abstenerse",
+  "definition": "to abstain from doing , abstain from doing , refrain, abstain, abstain from",
+  "reflexive": true,
+  "spanishdict": null,
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/abstenerse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me abstengo",
+        "te abstienes",
+        "se abstiene",
+        "nos abstenemos",
+        "os abstenéis",
+        "se abstienen"
+      ],
+      "Preterite": [
+        "me abstuve",
+        "te abstuviste",
+        "se abstuvo",
+        "nos abstuvimos",
+        "os abstuvisteis",
+        "se abstuvieron"
+      ],
+      "Imperfect": [
+        "me abstenía",
+        "te abstenías",
+        "se abstenía",
+        "nos absteníamos",
+        "os absteníais",
+        "se abstenían"
+      ],
+      "Conditional": [
+        "me abstendría",
+        "te abstendrías",
+        "se abstendría",
+        "nos abstendríamos",
+        "os abstendríais",
+        "se abstendrían"
+      ],
+      "Future": [
+        "me abstendré",
+        "te abstendrás",
+        "se abstendrá",
+        "nos abstendremos",
+        "os abstendréis",
+        "se abstendrán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me abstenga",
+        "te abstengas",
+        "se abstenga",
+        "nos abstengamos",
+        "os abstengáis",
+        "se abstengan"
+      ],
+      "Imperfect (-ra)": [
+        "me abstuviera",
+        "te abstuvieras",
+        "se abstuviera",
+        "nos abstuviéramos",
+        "os abstuvierais u os abstuvieseis",
+        "se abstuvieran"
+      ],
+      "Imperfect (-se)": [
+        "me abstuviese",
+        "te abstuvieses",
+        "se abstuviese",
+        "nos abstuviésemos",
+        "os abstuvieseis",
+        "se abstuviesen"
+      ],
+      "Future": [
+        "me abstuviere",
+        "te abstuvieres",
+        "se abstuviere",
+        "nos abstuviéremos",
+        "os abstuviereis",
+        "se abstuvieren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["abstente", "absténgase", "abstengámonos", "absteneos", "absténganse"],
+      "Negative": [
+        "no te abstengas",
+        "no se abstenga",
+        "no nos abstengamos",
+        "no os abstengáis",
+        "no se abstengan"
+      ]
+    },
+    "Present Participle": "absteniendo",
+    "Past Participle": "abstenido"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=abstenerse"
+}

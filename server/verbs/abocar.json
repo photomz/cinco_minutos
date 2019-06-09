@@ -1,0 +1,36 @@
+{
+  "verb": "abocar",
+  "definition": "to end in",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["aboco", "abocas", "aboca", "abocamos", "abocáis", "abocan"],
+      "Preterite": ["aboqué", "abocaste", "abocó", "abocamos", "abocasteis", "abocaron"],
+      "Imperfect": ["abocaba", "abocabas", "abocaba", "abocábamos", "abocabais", "abocaban"],
+      "Conditional": [
+        "abocaría",
+        "abocarías",
+        "abocaría",
+        "abocaríamos",
+        "abocaríais",
+        "abocarían"
+      ],
+      "Future": ["abocaré", "abocarás", "abocará", "abocaremos", "abocaréis", "abocarán"]
+    },
+    "Subjunctive": {
+      "Present": ["aboque", "aboques", "aboque", "aboquemos", "aboquéis", "aboquen"],
+      "Imperfect (-ra)": ["abocara", "abocaras", "abocara", "abocáramos", "abocarais", "abocaran"],
+      "Imperfect (-se)": ["abocase", "abocases", "abocase", "abocásemos", "abocaseis", "abocasen"],
+      "Future": ["abocare", "abocares", "abocare", "abocáremos", "abocareis", "abocaren"]
+    },
+    "Imperative": {
+      "Affirmative": ["aboca", "aboque", "aboquemos", "abocad", "aboquen"],
+      "Negative": ["no aboques", "no aboque", "no aboquemos", "no aboquéis", "no aboquen"]
+    },
+    "Present Participle": "abocando",
+    "Past Participle": "abocado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/afocar",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=afocar"
+}

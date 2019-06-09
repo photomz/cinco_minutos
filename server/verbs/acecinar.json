@@ -1,0 +1,98 @@
+{
+  "verb": "acecinar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me acecino",
+        "te acecinas",
+        "se acecina",
+        "nos acecinamos",
+        "os acecináis",
+        "se acecinan"
+      ],
+      "Preterite": [
+        "me aceciné",
+        "te acecinaste",
+        "se acecinó",
+        "nos acecinamos",
+        "os acecinasteis",
+        "se acecinaron"
+      ],
+      "Imperfect": [
+        "me acecinaba",
+        "te acecinabas",
+        "se acecinaba",
+        "nos acecinábamos",
+        "os acecinabais",
+        "se acecinaban"
+      ],
+      "Conditional": [
+        "me acecinaría",
+        "te acecinarías",
+        "se acecinaría",
+        "nos acecinaríamos",
+        "os acecinaríais",
+        "se acecinarían"
+      ],
+      "Future": [
+        "me acecinaré",
+        "te acecinarás",
+        "se acecinará",
+        "nos acecinaremos",
+        "os acecinaréis",
+        "se acecinarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me acecine",
+        "te acecines",
+        "se acecine",
+        "nos acecinemos",
+        "os acecinéis",
+        "se acecinen"
+      ],
+      "Imperfect (-ra)": [
+        "me acecinara",
+        "te acecinaras",
+        "se acecinara",
+        "nos acecináramos",
+        "os acecinarais",
+        "se acecinaran"
+      ],
+      "Imperfect (-se)": [
+        "me acecinase",
+        "te acecinases",
+        "se acecinase",
+        "nos acecinásemos",
+        "os acecinaseis",
+        "se acecinasen"
+      ],
+      "Future": [
+        "me acecinare",
+        "te acecinares",
+        "se acecinare",
+        "nos acecináremos",
+        "os acecinareis",
+        "se acecinaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acecínate", "acecínese", "acecinémonos", "acecinaos", "acecínense"],
+      "Negative": [
+        "no te acecines",
+        "no se acecine",
+        "no nos acecinemos",
+        "no os acecinéis",
+        "no se acecinen"
+      ]
+    },
+    "Present Participle": "acecinando",
+    "Past Participle": "acecinado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acecinarse",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acecinarse"
+}

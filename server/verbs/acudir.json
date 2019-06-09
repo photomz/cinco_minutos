@@ -1,0 +1,91 @@
+{
+  "verb": "acudir",
+  "definition": "to come",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["acudo", "acudes", "acude", "acudimos", "acudís", "acuden"],
+      "Preterite": ["acudí", "acudiste", "acudió", "acudimos", "acudisteis", "acudieron"],
+      "Imperfect": ["acudía", "acudías", "acudía", "acudíamos", "acudíais", "acudían"],
+      "Conditional": [
+        "acudiría",
+        "acudirías",
+        "acudiría",
+        "acudiríamos",
+        "acudiríais",
+        "acudirían"
+      ],
+      "Future": ["acudiré", "acudirás", "acudirá", "acudiremos", "acudiréis", "acudirán"]
+    },
+    "Subjunctive": {
+      "Present": ["acuda", "acudas", "acuda", "acudamos", "acudáis", "acudan"],
+      "Imperfect (-ra)": [
+        "acudiera",
+        "acudieras",
+        "acudiera",
+        "acudiéramos",
+        "acudierais",
+        "acudieran"
+      ],
+      "Imperfect (-se)": [
+        "acudiese",
+        "acudieses",
+        "acudiese",
+        "acudiésemos",
+        "acudieseis",
+        "acudiesen"
+      ],
+      "Future": ["acudiere", "acudieres", "acudiere", "acudiéremos", "acudiereis", "acudieren"]
+    },
+    "Imperative": {
+      "Affirmative": ["acude", "acuda", "acudamos", "acudid", "acudan"],
+      "Negative": ["no acudas", "no acuda", "no acudamos", "no acudáis", "no acudan"]
+    },
+    "Present Participle": "acudiendo",
+    "Past Participle": "acudido"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acudir",
+  "wordreference": {
+    "Indicative": {
+      "Present": ["acudo", "acudes", "acude", "acudimos", "acudís", "acuden"],
+      "Preterite": ["acudí", "acudiste", "acudió", "acudimos", "acudisteis", "acudieron"],
+      "Imperfect": ["acudía", "acudías", "acudía", "acudíamos", "acudíais", "acudían"],
+      "Conditional": [
+        "acudiría",
+        "acudirías",
+        "acudiría",
+        "acudiríamos",
+        "acudiríais",
+        "acudirían"
+      ],
+      "Future": ["acudiré", "acudirás", "acudirá", "acudiremos", "acudiréis", "acudirán"]
+    },
+    "Subjunctive": {
+      "Present": ["acuda", "acudas", "acuda", "acudamos", "acudáis", "acudan"],
+      "Imperfect (-ra)": [
+        "acudiera",
+        "acudieras",
+        "acudiera",
+        "acudiéramos",
+        "acudierais",
+        "acudieran"
+      ],
+      "Imperfect (-se)": [
+        "acudiese",
+        "acudieses",
+        "acudiese",
+        "acudiésemos",
+        "acudieseis",
+        "acudiesen"
+      ],
+      "Future": ["acudiere", "acudieres", "acudiere", "acudiéremos", "acudiereis", "acudieren"]
+    },
+    "Imperative": {
+      "Affirmative": ["acude", "acuda", "acudamos", "acudid", "acudan"],
+      "Negative": ["no acudas", "no acuda", "no acudamos", "no acudáis", "no acudan"]
+    },
+    "Present Participle": "acudiendo",
+    "Past Participle": "acudido"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acudir"
+}

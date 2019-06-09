@@ -1,0 +1,84 @@
+{
+  "verb": "afufar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["me afufo", "te afufas", "se afufa", "nos afufamos", "os afufáis", "se afufan"],
+      "Preterite": [
+        "me afufé",
+        "te afufaste",
+        "se afufó",
+        "nos afufamos",
+        "os afufasteis",
+        "se afufaron"
+      ],
+      "Imperfect": [
+        "me afufaba",
+        "te afufabas",
+        "se afufaba",
+        "nos afufábamos",
+        "os afufabais",
+        "se afufaban"
+      ],
+      "Conditional": [
+        "me afufaría",
+        "te afufarías",
+        "se afufaría",
+        "nos afufaríamos",
+        "os afufaríais",
+        "se afufarían"
+      ],
+      "Future": [
+        "me afufaré",
+        "te afufarás",
+        "se afufará",
+        "nos afufaremos",
+        "os afufaréis",
+        "se afufarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["me afufe", "te afufes", "se afufe", "nos afufemos", "os afuféis", "se afufen"],
+      "Imperfect (-ra)": [
+        "me afufara",
+        "te afufaras",
+        "se afufara",
+        "nos afufáramos",
+        "os afufarais",
+        "se afufaran"
+      ],
+      "Imperfect (-se)": [
+        "me afufase",
+        "te afufases",
+        "se afufase",
+        "nos afufásemos",
+        "os afufaseis",
+        "se afufasen"
+      ],
+      "Future": [
+        "me afufare",
+        "te afufares",
+        "se afufare",
+        "nos afufáremos",
+        "os afufareis",
+        "se afufaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["afúfate", "afúfese", "afufémonos", "afufaos", "afúfense"],
+      "Negative": [
+        "no te afufes",
+        "no se afufe",
+        "no nos afufemos",
+        "no os afuféis",
+        "no se afufen"
+      ]
+    },
+    "Present Participle": "afufando",
+    "Past Participle": "afufado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/afufarse",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=afufarse"
+}

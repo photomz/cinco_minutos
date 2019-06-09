@@ -1,0 +1,98 @@
+{
+  "verb": "afrancesar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": null,
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/afrancesar",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "afranceso",
+        "afrancesas",
+        "afrancesa",
+        "afrancesamos",
+        "afrancesáis",
+        "afrancesan"
+      ],
+      "Preterite": [
+        "afrancesé",
+        "afrancesaste",
+        "afrancesó",
+        "afrancesamos",
+        "afrancesasteis",
+        "afrancesaron"
+      ],
+      "Imperfect": [
+        "afrancesaba",
+        "afrancesabas",
+        "afrancesaba",
+        "afrancesábamos",
+        "afrancesabais",
+        "afrancesaban"
+      ],
+      "Conditional": [
+        "afrancesaría",
+        "afrancesarías",
+        "afrancesaría",
+        "afrancesaríamos",
+        "afrancesaríais",
+        "afrancesarían"
+      ],
+      "Future": [
+        "afrancesaré",
+        "afrancesarás",
+        "afrancesará",
+        "afrancesaremos",
+        "afrancesaréis",
+        "afrancesarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "afrancese",
+        "afranceses",
+        "afrancese",
+        "afrancesemos",
+        "afranceséis",
+        "afrancesen"
+      ],
+      "Imperfect (-ra)": [
+        "afrancesara",
+        "afrancesaras",
+        "afrancesara",
+        "afrancesáramos",
+        "afrancesarais",
+        "afrancesaran"
+      ],
+      "Imperfect (-se)": [
+        "afrancesase",
+        "afrancesases",
+        "afrancesase",
+        "afrancesásemos",
+        "afrancesaseis",
+        "afrancesasen"
+      ],
+      "Future": [
+        "afrancesare",
+        "afrancesares",
+        "afrancesare",
+        "afrancesáremos",
+        "afrancesareis",
+        "afrancesaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["afrancesa", "afrancese", "afrancesemos", "afrancesad", "afrancesen"],
+      "Negative": [
+        "no afranceses",
+        "no afrancese",
+        "no afrancesemos",
+        "no afranceséis",
+        "no afrancesen"
+      ]
+    },
+    "Present Participle": "afrancesando",
+    "Past Participle": "afrancesado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=afrancesar"
+}

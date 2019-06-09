@@ -1,0 +1,98 @@
+{
+  "verb": "acotejar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me acotejo",
+        "te acotejas",
+        "se acoteja",
+        "nos acotejamos",
+        "os acotejáis",
+        "se acotejan"
+      ],
+      "Preterite": [
+        "me acotejé",
+        "te acotejaste",
+        "se acotejó",
+        "nos acotejamos",
+        "os acotejasteis",
+        "se acotejaron"
+      ],
+      "Imperfect": [
+        "me acotejaba",
+        "te acotejabas",
+        "se acotejaba",
+        "nos acotejábamos",
+        "os acotejabais",
+        "se acotejaban"
+      ],
+      "Conditional": [
+        "me acotejaría",
+        "te acotejarías",
+        "se acotejaría",
+        "nos acotejaríamos",
+        "os acotejaríais",
+        "se acotejarían"
+      ],
+      "Future": [
+        "me acotejaré",
+        "te acotejarás",
+        "se acotejará",
+        "nos acotejaremos",
+        "os acotejaréis",
+        "se acotejarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me acoteje",
+        "te acotejes",
+        "se acoteje",
+        "nos acotejemos",
+        "os acotejéis",
+        "se acotejen"
+      ],
+      "Imperfect (-ra)": [
+        "me acotejara",
+        "te acotejaras",
+        "se acotejara",
+        "nos acotejáramos",
+        "os acotejarais",
+        "se acotejaran"
+      ],
+      "Imperfect (-se)": [
+        "me acotejase",
+        "te acotejases",
+        "se acotejase",
+        "nos acotejásemos",
+        "os acotejaseis",
+        "se acotejasen"
+      ],
+      "Future": [
+        "me acotejare",
+        "te acotejares",
+        "se acotejare",
+        "nos acotejáremos",
+        "os acotejareis",
+        "se acotejaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acotéjate", "acotéjese", "acotejémonos", "acotejaos", "acotéjense"],
+      "Negative": [
+        "no te acotejes",
+        "no se acoteje",
+        "no nos acotejemos",
+        "no os acotejéis",
+        "no se acotejen"
+      ]
+    },
+    "Present Participle": "acotejando",
+    "Past Participle": "acotejado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acotejarse",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acotejarse"
+}

@@ -1,0 +1,199 @@
+{
+  "verb": "abarquillar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me abarquillo",
+        "te abarquillas",
+        "se abarquilla",
+        "nos abarquillamos",
+        "os abarquilláis",
+        "se abarquillan"
+      ],
+      "Preterite": [
+        "me abarquillé",
+        "te abarquillaste",
+        "se abarquilló",
+        "nos abarquillamos",
+        "os abarquillasteis",
+        "se abarquillaron"
+      ],
+      "Imperfect": [
+        "me abarquillaba",
+        "te abarquillabas",
+        "se abarquillaba",
+        "nos abarquillábamos",
+        "os abarquillabais",
+        "se abarquillaban"
+      ],
+      "Conditional": [
+        "me abarquillaría",
+        "te abarquillarías",
+        "se abarquillaría",
+        "nos abarquillaríamos",
+        "os abarquillaríais",
+        "se abarquillarían"
+      ],
+      "Future": [
+        "me abarquillaré",
+        "te abarquillarás",
+        "se abarquillará",
+        "nos abarquillaremos",
+        "os abarquillaréis",
+        "se abarquillarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me abarquille",
+        "te abarquilles",
+        "se abarquille",
+        "nos abarquillemos",
+        "os abarquilléis",
+        "se abarquillen"
+      ],
+      "Imperfect (-ra)": [
+        "me abarquillara",
+        "te abarquillaras",
+        "se abarquillara",
+        "nos abarquilláramos",
+        "os abarquillarais",
+        "se abarquillaran"
+      ],
+      "Imperfect (-se)": [
+        "me abarquillase",
+        "te abarquillases",
+        "se abarquillase",
+        "nos abarquillásemos",
+        "os abarquillaseis",
+        "se abarquillasen"
+      ],
+      "Future": [
+        "me abarquillare",
+        "te abarquillares",
+        "se abarquillare",
+        "nos abarquilláremos",
+        "os abarquillareis",
+        "se abarquillaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": [
+        "abarquíllate",
+        "abarquíllese",
+        "abarquillémonos",
+        "abarquillaos",
+        "abarquíllense"
+      ],
+      "Negative": [
+        "no te abarquilles",
+        "no se abarquille",
+        "no nos abarquillemos",
+        "no os abarquilléis",
+        "no se abarquillen"
+      ]
+    },
+    "Present Participle": "abarquillando",
+    "Past Participle": "abarquillado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/abarquillarse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me abarquillo",
+        "te abarquillas",
+        "se abarquilla",
+        "nos abarquillamos",
+        "os abarquilláis",
+        "se abarquillan"
+      ],
+      "Preterite": [
+        "me abarquillé",
+        "te abarquillaste",
+        "se abarquilló",
+        "nos abarquillamos",
+        "os abarquillasteis",
+        "se abarquillaron"
+      ],
+      "Imperfect": [
+        "me abarquillaba",
+        "te abarquillabas",
+        "se abarquillaba",
+        "nos abarquillábamos",
+        "os abarquillabais",
+        "se abarquillaban"
+      ],
+      "Conditional": [
+        "me abarquillaría",
+        "te abarquillarías",
+        "se abarquillaría",
+        "nos abarquillaríamos",
+        "os abarquillaríais",
+        "se abarquillarían"
+      ],
+      "Future": [
+        "me abarquillaré",
+        "te abarquillarás",
+        "se abarquillará",
+        "nos abarquillaremos",
+        "os abarquillaréis",
+        "se abarquillarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me abarquille",
+        "te abarquilles",
+        "se abarquille",
+        "nos abarquillemos",
+        "os abarquilléis",
+        "se abarquillen"
+      ],
+      "Imperfect (-ra)": [
+        "me abarquillara",
+        "te abarquillaras",
+        "se abarquillara",
+        "nos abarquilláramos",
+        "os abarquillarais u os abarquillaseis",
+        "se abarquillaran"
+      ],
+      "Imperfect (-se)": [
+        "me abarquillase",
+        "te abarquillases",
+        "se abarquillase",
+        "nos abarquillásemos",
+        "os abarquillaseis",
+        "se abarquillasen"
+      ],
+      "Future": [
+        "me abarquillare",
+        "te abarquillares",
+        "se abarquillare",
+        "nos abarquilláremos",
+        "os abarquillareis",
+        "se abarquillaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": [
+        "abarquíllate",
+        "abarquíllese",
+        "abarquillémonos",
+        "abarquillaos",
+        "abarquíllense"
+      ],
+      "Negative": [
+        "no te abarquilles",
+        "no se abarquille",
+        "no nos abarquillemos",
+        "no os abarquilléis",
+        "no se abarquillen"
+      ]
+    },
+    "Present Participle": "abarquillando",
+    "Past Participle": "abarquillado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=abarquillarse"
+}

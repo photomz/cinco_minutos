@@ -1,0 +1,133 @@
+{
+  "verb": "absolver",
+  "definition": "to acquit",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["absuelvo", "absuelves", "absuelve", "absolvemos", "absolvéis", "absuelven"],
+      "Preterite": [
+        "absolví",
+        "absolviste",
+        "absolvió",
+        "absolvimos",
+        "absolvisteis",
+        "absolvieron"
+      ],
+      "Imperfect": ["absolvía", "absolvías", "absolvía", "absolvíamos", "absolvíais", "absolvían"],
+      "Conditional": [
+        "absolvería",
+        "absolverías",
+        "absolvería",
+        "absolveríamos",
+        "absolveríais",
+        "absolverían"
+      ],
+      "Future": [
+        "absolveré",
+        "absolverás",
+        "absolverá",
+        "absolveremos",
+        "absolveréis",
+        "absolverán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["absuelva", "absuelvas", "absuelva", "absolvamos", "absolváis", "absuelvan"],
+      "Imperfect (-ra)": [
+        "absolviera",
+        "absolvieras",
+        "absolviera",
+        "absolviéramos",
+        "absolvierais",
+        "absolvieran"
+      ],
+      "Imperfect (-se)": [
+        "absolviese",
+        "absolvieses",
+        "absolviese",
+        "absolviésemos",
+        "absolvieseis",
+        "absolviesen"
+      ],
+      "Future": [
+        "absolviere",
+        "absolvieres",
+        "absolviere",
+        "absolviéremos",
+        "absolviereis",
+        "absolvieren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["absuelve", "absuelva", "absolvamos", "absolved", "absuelvan"],
+      "Negative": ["no absuelvas", "no absuelva", "no absolvamos", "no absolváis", "no absuelvan"]
+    },
+    "Present Participle": "absolviendo",
+    "Past Participle": "absuelto"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/absolver",
+  "wordreference": {
+    "Indicative": {
+      "Present": ["absuelvo", "absuelves", "absuelve", "absolvemos", "absolvéis", "absuelven"],
+      "Preterite": [
+        "absolví",
+        "absolviste",
+        "absolvió",
+        "absolvimos",
+        "absolvisteis",
+        "absolvieron"
+      ],
+      "Imperfect": ["absolvía", "absolvías", "absolvía", "absolvíamos", "absolvíais", "absolvían"],
+      "Conditional": [
+        "absolvería",
+        "absolverías",
+        "absolvería",
+        "absolveríamos",
+        "absolveríais",
+        "absolverían"
+      ],
+      "Future": [
+        "absolveré",
+        "absolverás",
+        "absolverá",
+        "absolveremos",
+        "absolveréis",
+        "absolverán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["absuelva", "absuelvas", "absuelva", "absolvamos", "absolváis", "absuelvan"],
+      "Imperfect (-ra)": [
+        "absolviera",
+        "absolvieras",
+        "absolviera",
+        "absolviéramos",
+        "absolvierais",
+        "absolvieran"
+      ],
+      "Imperfect (-se)": [
+        "absolviese",
+        "absolvieses",
+        "absolviese",
+        "absolviésemos",
+        "absolvieseis",
+        "absolviesen"
+      ],
+      "Future": [
+        "absolviere",
+        "absolvieres",
+        "absolviere",
+        "absolviéremos",
+        "absolviereis",
+        "absolvieren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["absuelve", "absuelva", "absolvamos", "absolved", "absuelvan"],
+      "Negative": ["no absuelvas", "no absuelva", "no absolvamos", "no absolváis", "no absuelvan"]
+    },
+    "Present Participle": "absolviendo",
+    "Past Participle": "absuelto"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=absolver"
+}

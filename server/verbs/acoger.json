@@ -1,0 +1,159 @@
+{
+  "verb": "acoger",
+  "definition": "to receive",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["me acojo", "te acoges", "se acoge", "nos acogemos", "os acogéis", "se acogen"],
+      "Preterite": [
+        "me acogí",
+        "te acogiste",
+        "se acogió",
+        "nos acogimos",
+        "os acogisteis",
+        "se acogieron"
+      ],
+      "Imperfect": [
+        "me acogía",
+        "te acogías",
+        "se acogía",
+        "nos acogíamos",
+        "os acogíais",
+        "se acogían"
+      ],
+      "Conditional": [
+        "me acogería",
+        "te acogerías",
+        "se acogería",
+        "nos acogeríamos",
+        "os acogeríais",
+        "se acogerían"
+      ],
+      "Future": [
+        "me acogeré",
+        "te acogerás",
+        "se acogerá",
+        "nos acogeremos",
+        "os acogeréis",
+        "se acogerán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["me acoja", "te acojas", "se acoja", "nos acojamos", "os acojáis", "se acojan"],
+      "Imperfect (-ra)": [
+        "me acogiera",
+        "te acogieras",
+        "se acogiera",
+        "nos acogiéramos",
+        "os acogierais",
+        "se acogieran"
+      ],
+      "Imperfect (-se)": [
+        "me acogiese",
+        "te acogieses",
+        "se acogiese",
+        "nos acogiésemos",
+        "os acogieseis",
+        "se acogiesen"
+      ],
+      "Future": [
+        "me acogiere",
+        "te acogieres",
+        "se acogiere",
+        "nos acogiéremos",
+        "os acogiereis",
+        "se acogieren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acógete", "acójase", "acojámonos", "acogeos", "acójanse"],
+      "Negative": [
+        "no te acojas",
+        "no se acoja",
+        "no nos acojamos",
+        "no os acojáis",
+        "no se acojan"
+      ]
+    },
+    "Present Participle": "acogiendo",
+    "Past Participle": "acogido"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acogerse",
+  "wordreference": {
+    "Indicative": {
+      "Present": ["me acojo", "te acoges", "se acoge", "nos acogemos", "os acogéis", "se acogen"],
+      "Preterite": [
+        "me acogí",
+        "te acogiste",
+        "se acogió",
+        "nos acogimos",
+        "os acogisteis",
+        "se acogieron"
+      ],
+      "Imperfect": [
+        "me acogía",
+        "te acogías",
+        "se acogía",
+        "nos acogíamos",
+        "os acogíais",
+        "se acogían"
+      ],
+      "Conditional": [
+        "me acogería",
+        "te acogerías",
+        "se acogería",
+        "nos acogeríamos",
+        "os acogeríais",
+        "se acogerían"
+      ],
+      "Future": [
+        "me acogeré",
+        "te acogerás",
+        "se acogerá",
+        "nos acogeremos",
+        "os acogeréis",
+        "se acogerán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["me acoja", "te acojas", "se acoja", "nos acojamos", "os acojáis", "se acojan"],
+      "Imperfect (-ra)": [
+        "me acogiera",
+        "te acogieras",
+        "se acogiera",
+        "nos acogiéramos",
+        "os acogierais u os acogieseis",
+        "se acogieran"
+      ],
+      "Imperfect (-se)": [
+        "me acogiese",
+        "te acogieses",
+        "se acogiese",
+        "nos acogiésemos",
+        "os acogieseis",
+        "se acogiesen"
+      ],
+      "Future": [
+        "me acogiere",
+        "te acogieres",
+        "se acogiere",
+        "nos acogiéremos",
+        "os acogiereis",
+        "se acogieren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acógete", "acójase", "acojámonos", "acogeos", "acójanse"],
+      "Negative": [
+        "no te acojas",
+        "no se acoja",
+        "no nos acojamos",
+        "no os acojáis",
+        "no se acojan"
+      ]
+    },
+    "Present Participle": "acogiendo",
+    "Past Participle": "acogido"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acogerse"
+}

@@ -1,0 +1,98 @@
+{
+  "verb": "acabildar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me acabildo",
+        "te acabildas",
+        "se acabilda",
+        "nos acabildamos",
+        "os acabildáis",
+        "se acabildan"
+      ],
+      "Preterite": [
+        "me acabildé",
+        "te acabildaste",
+        "se acabildó",
+        "nos acabildamos",
+        "os acabildasteis",
+        "se acabildaron"
+      ],
+      "Imperfect": [
+        "me acabildaba",
+        "te acabildabas",
+        "se acabildaba",
+        "nos acabildábamos",
+        "os acabildabais",
+        "se acabildaban"
+      ],
+      "Conditional": [
+        "me acabildaría",
+        "te acabildarías",
+        "se acabildaría",
+        "nos acabildaríamos",
+        "os acabildaríais",
+        "se acabildarían"
+      ],
+      "Future": [
+        "me acabildaré",
+        "te acabildarás",
+        "se acabildará",
+        "nos acabildaremos",
+        "os acabildaréis",
+        "se acabildarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me acabilde",
+        "te acabildes",
+        "se acabilde",
+        "nos acabildemos",
+        "os acabildéis",
+        "se acabilden"
+      ],
+      "Imperfect (-ra)": [
+        "me acabildara",
+        "te acabildaras",
+        "se acabildara",
+        "nos acabildáramos",
+        "os acabildarais",
+        "se acabildaran"
+      ],
+      "Imperfect (-se)": [
+        "me acabildase",
+        "te acabildases",
+        "se acabildase",
+        "nos acabildásemos",
+        "os acabildaseis",
+        "se acabildasen"
+      ],
+      "Future": [
+        "me acabildare",
+        "te acabildares",
+        "se acabildare",
+        "nos acabildáremos",
+        "os acabildareis",
+        "se acabildaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acabíldate", "acabíldese", "acabildémonos", "acabildaos", "acabíldense"],
+      "Negative": [
+        "no te acabildes",
+        "no se acabilde",
+        "no nos acabildemos",
+        "no os acabildéis",
+        "no se acabilden"
+      ]
+    },
+    "Present Participle": "acabildando",
+    "Past Participle": "acabildado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acabildarse",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acabildarse"
+}

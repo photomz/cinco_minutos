@@ -1,0 +1,159 @@
+{
+  "verb": "acedar",
+  "definition": "to sour",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["me acedo", "te acedas", "se aceda", "nos acedamos", "os acedáis", "se acedan"],
+      "Preterite": [
+        "me acedé",
+        "te acedaste",
+        "se acedó",
+        "nos acedamos",
+        "os acedasteis",
+        "se acedaron"
+      ],
+      "Imperfect": [
+        "me acedaba",
+        "te acedabas",
+        "se acedaba",
+        "nos acedábamos",
+        "os acedabais",
+        "se acedaban"
+      ],
+      "Conditional": [
+        "me acedaría",
+        "te acedarías",
+        "se acedaría",
+        "nos acedaríamos",
+        "os acedaríais",
+        "se acedarían"
+      ],
+      "Future": [
+        "me acedaré",
+        "te acedarás",
+        "se acedará",
+        "nos acedaremos",
+        "os acedaréis",
+        "se acedarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["me acede", "te acedes", "se acede", "nos acedemos", "os acedéis", "se aceden"],
+      "Imperfect (-ra)": [
+        "me acedara",
+        "te acedaras",
+        "se acedara",
+        "nos acedáramos",
+        "os acedarais",
+        "se acedaran"
+      ],
+      "Imperfect (-se)": [
+        "me acedase",
+        "te acedases",
+        "se acedase",
+        "nos acedásemos",
+        "os acedaseis",
+        "se acedasen"
+      ],
+      "Future": [
+        "me acedare",
+        "te acedares",
+        "se acedare",
+        "nos acedáremos",
+        "os acedareis",
+        "se acedaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acédate", "acédese", "acedémonos", "acedaos", "acédense"],
+      "Negative": [
+        "no te acedes",
+        "no se acede",
+        "no nos acedemos",
+        "no os acedéis",
+        "no se aceden"
+      ]
+    },
+    "Present Participle": "acedando",
+    "Past Participle": "acedado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acedarse",
+  "wordreference": {
+    "Indicative": {
+      "Present": ["me acedo", "te acedas", "se aceda", "nos acedamos", "os acedáis", "se acedan"],
+      "Preterite": [
+        "me acedé",
+        "te acedaste",
+        "se acedó",
+        "nos acedamos",
+        "os acedasteis",
+        "se acedaron"
+      ],
+      "Imperfect": [
+        "me acedaba",
+        "te acedabas",
+        "se acedaba",
+        "nos acedábamos",
+        "os acedabais",
+        "se acedaban"
+      ],
+      "Conditional": [
+        "me acedaría",
+        "te acedarías",
+        "se acedaría",
+        "nos acedaríamos",
+        "os acedaríais",
+        "se acedarían"
+      ],
+      "Future": [
+        "me acedaré",
+        "te acedarás",
+        "se acedará",
+        "nos acedaremos",
+        "os acedaréis",
+        "se acedarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["me acede", "te acedes", "se acede", "nos acedemos", "os acedéis", "se aceden"],
+      "Imperfect (-ra)": [
+        "me acedara",
+        "te acedaras",
+        "se acedara",
+        "nos acedáramos",
+        "os acedarais u os acedaseis",
+        "se acedaran"
+      ],
+      "Imperfect (-se)": [
+        "me acedase",
+        "te acedases",
+        "se acedase",
+        "nos acedásemos",
+        "os acedaseis",
+        "se acedasen"
+      ],
+      "Future": [
+        "me acedare",
+        "te acedares",
+        "se acedare",
+        "nos acedáremos",
+        "os acedareis",
+        "se acedaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acédate", "acédese", "acedémonos", "acedaos", "acédense"],
+      "Negative": [
+        "no te acedes",
+        "no se acede",
+        "no nos acedemos",
+        "no os acedéis",
+        "no se aceden"
+      ]
+    },
+    "Present Participle": "acedando",
+    "Past Participle": "acedado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acedarse"
+}

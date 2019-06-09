@@ -1,0 +1,91 @@
+{
+  "verb": "alocar",
+  "definition": "to drive crazy",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["me aloco", "te alocas", "se aloca", "nos alocamos", "os alocáis", "se alocan"],
+      "Preterite": [
+        "me aloqué",
+        "te alocaste",
+        "se alocó",
+        "nos alocamos",
+        "os alocasteis",
+        "se alocaron"
+      ],
+      "Imperfect": [
+        "me alocaba",
+        "te alocabas",
+        "se alocaba",
+        "nos alocábamos",
+        "os alocabais",
+        "se alocaban"
+      ],
+      "Conditional": [
+        "me alocaría",
+        "te alocarías",
+        "se alocaría",
+        "nos alocaríamos",
+        "os alocaríais",
+        "se alocarían"
+      ],
+      "Future": [
+        "me alocaré",
+        "te alocarás",
+        "se alocará",
+        "nos alocaremos",
+        "os alocaréis",
+        "se alocarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me aloque",
+        "te aloques",
+        "se aloque",
+        "nos aloquemos",
+        "os aloquéis",
+        "se aloquen"
+      ],
+      "Imperfect (-ra)": [
+        "me alocara",
+        "te alocaras",
+        "se alocara",
+        "nos alocáramos",
+        "os alocarais",
+        "se alocaran"
+      ],
+      "Imperfect (-se)": [
+        "me alocase",
+        "te alocases",
+        "se alocase",
+        "nos alocásemos",
+        "os alocaseis",
+        "se alocasen"
+      ],
+      "Future": [
+        "me alocare",
+        "te alocares",
+        "se alocare",
+        "nos alocáremos",
+        "os alocareis",
+        "se alocaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["alócate", "alóquese", "aloquémonos", "alocaos", "alóquense"],
+      "Negative": [
+        "no te aloques",
+        "no se aloque",
+        "no nos aloquemos",
+        "no os aloquéis",
+        "no se aloquen"
+      ]
+    },
+    "Present Participle": "alocando",
+    "Past Participle": "alocado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/aclocarse",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=aclocarse"
+}

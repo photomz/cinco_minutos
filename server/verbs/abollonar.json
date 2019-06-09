@@ -1,0 +1,78 @@
+{
+  "verb": "abollonar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["abollono", "abollonas", "abollona", "abollonamos", "abollonáis", "abollonan"],
+      "Preterite": [
+        "abolloné",
+        "abollonaste",
+        "abollonó",
+        "abollonamos",
+        "abollonasteis",
+        "abollonaron"
+      ],
+      "Imperfect": [
+        "abollonaba",
+        "abollonabas",
+        "abollonaba",
+        "abollonábamos",
+        "abollonabais",
+        "abollonaban"
+      ],
+      "Conditional": [
+        "abollonaría",
+        "abollonarías",
+        "abollonaría",
+        "abollonaríamos",
+        "abollonaríais",
+        "abollonarían"
+      ],
+      "Future": [
+        "abollonaré",
+        "abollonarás",
+        "abollonará",
+        "abollonaremos",
+        "abollonaréis",
+        "abollonarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["abollone", "abollones", "abollone", "abollonemos", "abollonéis", "abollonen"],
+      "Imperfect (-ra)": [
+        "abollonara",
+        "abollonaras",
+        "abollonara",
+        "abollonáramos",
+        "abollonarais",
+        "abollonaran"
+      ],
+      "Imperfect (-se)": [
+        "abollonase",
+        "abollonases",
+        "abollonase",
+        "abollonásemos",
+        "abollonaseis",
+        "abollonasen"
+      ],
+      "Future": [
+        "abollonare",
+        "abollonares",
+        "abollonare",
+        "abollonáremos",
+        "abollonareis",
+        "abollonaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["abollona", "abollone", "abollonemos", "abollonad", "abollonen"],
+      "Negative": ["no abollones", "no abollone", "no abollonemos", "no abollonéis", "no abollonen"]
+    },
+    "Present Participle": "abollonando",
+    "Past Participle": "abollonado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acollonar",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acollonar"
+}

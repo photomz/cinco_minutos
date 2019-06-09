@@ -1,0 +1,91 @@
+{
+  "verb": "abrogar",
+  "definition": "to abrogate",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["abrogo", "abrogas", "abroga", "abrogamos", "abrogáis", "abrogan"],
+      "Preterite": ["abrogué", "abrogaste", "abrogó", "abrogamos", "abrogasteis", "abrogaron"],
+      "Imperfect": ["abrogaba", "abrogabas", "abrogaba", "abrogábamos", "abrogabais", "abrogaban"],
+      "Conditional": [
+        "abrogaría",
+        "abrogarías",
+        "abrogaría",
+        "abrogaríamos",
+        "abrogaríais",
+        "abrogarían"
+      ],
+      "Future": ["abrogaré", "abrogarás", "abrogará", "abrogaremos", "abrogaréis", "abrogarán"]
+    },
+    "Subjunctive": {
+      "Present": ["abrogue", "abrogues", "abrogue", "abroguemos", "abroguéis", "abroguen"],
+      "Imperfect (-ra)": [
+        "abrogara",
+        "abrogaras",
+        "abrogara",
+        "abrogáramos",
+        "abrogarais",
+        "abrogaran"
+      ],
+      "Imperfect (-se)": [
+        "abrogase",
+        "abrogases",
+        "abrogase",
+        "abrogásemos",
+        "abrogaseis",
+        "abrogasen"
+      ],
+      "Future": ["abrogare", "abrogares", "abrogare", "abrogáremos", "abrogareis", "abrogaren"]
+    },
+    "Imperative": {
+      "Affirmative": ["abroga", "abrogue", "abroguemos", "abrogad", "abroguen"],
+      "Negative": ["no abrogues", "no abrogue", "no abroguemos", "no abroguéis", "no abroguen"]
+    },
+    "Present Participle": "abrogando",
+    "Past Participle": "abrogado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/abrogar",
+  "wordreference": {
+    "Indicative": {
+      "Present": ["abrogo", "abrogas", "abroga", "abrogamos", "abrogáis", "abrogan"],
+      "Preterite": ["abrogué", "abrogaste", "abrogó", "abrogamos", "abrogasteis", "abrogaron"],
+      "Imperfect": ["abrogaba", "abrogabas", "abrogaba", "abrogábamos", "abrogabais", "abrogaban"],
+      "Conditional": [
+        "abrogaría",
+        "abrogarías",
+        "abrogaría",
+        "abrogaríamos",
+        "abrogaríais",
+        "abrogarían"
+      ],
+      "Future": ["abrogaré", "abrogarás", "abrogará", "abrogaremos", "abrogaréis", "abrogarán"]
+    },
+    "Subjunctive": {
+      "Present": ["abrogue", "abrogues", "abrogue", "abroguemos", "abroguéis", "abroguen"],
+      "Imperfect (-ra)": [
+        "abrogara",
+        "abrogaras",
+        "abrogara",
+        "abrogáramos",
+        "abrogarais",
+        "abrogaran"
+      ],
+      "Imperfect (-se)": [
+        "abrogase",
+        "abrogases",
+        "abrogase",
+        "abrogásemos",
+        "abrogaseis",
+        "abrogasen"
+      ],
+      "Future": ["abrogare", "abrogares", "abrogare", "abrogáremos", "abrogareis", "abrogaren"]
+    },
+    "Imperative": {
+      "Affirmative": ["abroga", "abrogue", "abroguemos", "abrogad", "abroguen"],
+      "Negative": ["no abrogues", "no abrogue", "no abroguemos", "no abroguéis", "no abroguen"]
+    },
+    "Present Participle": "abrogando",
+    "Past Participle": "abrogado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=abrogar"
+}

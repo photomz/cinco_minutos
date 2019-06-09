@@ -1,0 +1,133 @@
+{
+  "verb": "afrontar",
+  "definition": "to confront",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["afronto", "afrontas", "afronta", "afrontamos", "afrontáis", "afrontan"],
+      "Preterite": ["afronté", "afrontaste", "afrontó", "afrontamos", "afrontasteis", "afrontaron"],
+      "Imperfect": [
+        "afrontaba",
+        "afrontabas",
+        "afrontaba",
+        "afrontábamos",
+        "afrontabais",
+        "afrontaban"
+      ],
+      "Conditional": [
+        "afrontaría",
+        "afrontarías",
+        "afrontaría",
+        "afrontaríamos",
+        "afrontaríais",
+        "afrontarían"
+      ],
+      "Future": [
+        "afrontaré",
+        "afrontarás",
+        "afrontará",
+        "afrontaremos",
+        "afrontaréis",
+        "afrontarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["afronte", "afrontes", "afronte", "afrontemos", "afrontéis", "afronten"],
+      "Imperfect (-ra)": [
+        "afrontara",
+        "afrontaras",
+        "afrontara",
+        "afrontáramos",
+        "afrontarais",
+        "afrontaran"
+      ],
+      "Imperfect (-se)": [
+        "afrontase",
+        "afrontases",
+        "afrontase",
+        "afrontásemos",
+        "afrontaseis",
+        "afrontasen"
+      ],
+      "Future": [
+        "afrontare",
+        "afrontares",
+        "afrontare",
+        "afrontáremos",
+        "afrontareis",
+        "afrontaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["afronta", "afronte", "afrontemos", "afrontad", "afronten"],
+      "Negative": ["no afrontes", "no afronte", "no afrontemos", "no afrontéis", "no afronten"]
+    },
+    "Present Participle": "afrontando",
+    "Past Participle": "afrontado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/afrontar",
+  "wordreference": {
+    "Indicative": {
+      "Present": ["afronto", "afrontas", "afronta", "afrontamos", "afrontáis", "afrontan"],
+      "Preterite": ["afronté", "afrontaste", "afrontó", "afrontamos", "afrontasteis", "afrontaron"],
+      "Imperfect": [
+        "afrontaba",
+        "afrontabas",
+        "afrontaba",
+        "afrontábamos",
+        "afrontabais",
+        "afrontaban"
+      ],
+      "Conditional": [
+        "afrontaría",
+        "afrontarías",
+        "afrontaría",
+        "afrontaríamos",
+        "afrontaríais",
+        "afrontarían"
+      ],
+      "Future": [
+        "afrontaré",
+        "afrontarás",
+        "afrontará",
+        "afrontaremos",
+        "afrontaréis",
+        "afrontarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["afronte", "afrontes", "afronte", "afrontemos", "afrontéis", "afronten"],
+      "Imperfect (-ra)": [
+        "afrontara",
+        "afrontaras",
+        "afrontara",
+        "afrontáramos",
+        "afrontarais",
+        "afrontaran"
+      ],
+      "Imperfect (-se)": [
+        "afrontase",
+        "afrontases",
+        "afrontase",
+        "afrontásemos",
+        "afrontaseis",
+        "afrontasen"
+      ],
+      "Future": [
+        "afrontare",
+        "afrontares",
+        "afrontare",
+        "afrontáremos",
+        "afrontareis",
+        "afrontaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["afronta", "afronte", "afrontemos", "afrontad", "afronten"],
+      "Negative": ["no afrontes", "no afronte", "no afrontemos", "no afrontéis", "no afronten"]
+    },
+    "Present Participle": "afrontando",
+    "Past Participle": "afrontado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=afrontar"
+}

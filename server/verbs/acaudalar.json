@@ -1,0 +1,147 @@
+{
+  "verb": "acaudalar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["acaudalo", "acaudalas", "acaudala", "acaudalamos", "acaudaláis", "acaudalan"],
+      "Preterite": [
+        "acaudalé",
+        "acaudalaste",
+        "acaudaló",
+        "acaudalamos",
+        "acaudalasteis",
+        "acaudalaron"
+      ],
+      "Imperfect": [
+        "acaudalaba",
+        "acaudalabas",
+        "acaudalaba",
+        "acaudalábamos",
+        "acaudalabais",
+        "acaudalaban"
+      ],
+      "Conditional": [
+        "acaudalaría",
+        "acaudalarías",
+        "acaudalaría",
+        "acaudalaríamos",
+        "acaudalaríais",
+        "acaudalarían"
+      ],
+      "Future": [
+        "acaudalaré",
+        "acaudalarás",
+        "acaudalará",
+        "acaudalaremos",
+        "acaudalaréis",
+        "acaudalarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["acaudale", "acaudales", "acaudale", "acaudalemos", "acaudaléis", "acaudalen"],
+      "Imperfect (-ra)": [
+        "acaudalara",
+        "acaudalaras",
+        "acaudalara",
+        "acaudaláramos",
+        "acaudalarais",
+        "acaudalaran"
+      ],
+      "Imperfect (-se)": [
+        "acaudalase",
+        "acaudalases",
+        "acaudalase",
+        "acaudalásemos",
+        "acaudalaseis",
+        "acaudalasen"
+      ],
+      "Future": [
+        "acaudalare",
+        "acaudalares",
+        "acaudalare",
+        "acaudaláremos",
+        "acaudalareis",
+        "acaudalaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acaudala", "acaudale", "acaudalemos", "acaudalad", "acaudalen"],
+      "Negative": ["no acaudales", "no acaudale", "no acaudalemos", "no acaudaléis", "no acaudalen"]
+    },
+    "Present Participle": "acaudalando",
+    "Past Participle": "acaudalado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acaudalar",
+  "wordreference": {
+    "Indicative": {
+      "Present": ["acaudalo", "acaudalas", "acaudala", "acaudalamos", "acaudaláis", "acaudalan"],
+      "Preterite": [
+        "acaudalé",
+        "acaudalaste",
+        "acaudaló",
+        "acaudalamos",
+        "acaudalasteis",
+        "acaudalaron"
+      ],
+      "Imperfect": [
+        "acaudalaba",
+        "acaudalabas",
+        "acaudalaba",
+        "acaudalábamos",
+        "acaudalabais",
+        "acaudalaban"
+      ],
+      "Conditional": [
+        "acaudalaría",
+        "acaudalarías",
+        "acaudalaría",
+        "acaudalaríamos",
+        "acaudalaríais",
+        "acaudalarían"
+      ],
+      "Future": [
+        "acaudalaré",
+        "acaudalarás",
+        "acaudalará",
+        "acaudalaremos",
+        "acaudalaréis",
+        "acaudalarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["acaudale", "acaudales", "acaudale", "acaudalemos", "acaudaléis", "acaudalen"],
+      "Imperfect (-ra)": [
+        "acaudalara",
+        "acaudalaras",
+        "acaudalara",
+        "acaudaláramos",
+        "acaudalarais",
+        "acaudalaran"
+      ],
+      "Imperfect (-se)": [
+        "acaudalase",
+        "acaudalases",
+        "acaudalase",
+        "acaudalásemos",
+        "acaudalaseis",
+        "acaudalasen"
+      ],
+      "Future": [
+        "acaudalare",
+        "acaudalares",
+        "acaudalare",
+        "acaudaláremos",
+        "acaudalareis",
+        "acaudalaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acaudala", "acaudale", "acaudalemos", "acaudalad", "acaudalen"],
+      "Negative": ["no acaudales", "no acaudale", "no acaudalemos", "no acaudaléis", "no acaudalen"]
+    },
+    "Present Participle": "acaudalando",
+    "Past Participle": "acaudalado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acaudalar"
+}

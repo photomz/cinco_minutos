@@ -1,0 +1,50 @@
+{
+  "verb": "achacar",
+  "definition": "to attribute",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["achaco", "achacas", "achaca", "achacamos", "achacáis", "achacan"],
+      "Preterite": ["achaqué", "achacaste", "achacó", "achacamos", "achacasteis", "achacaron"],
+      "Imperfect": ["achacaba", "achacabas", "achacaba", "achacábamos", "achacabais", "achacaban"],
+      "Conditional": [
+        "achacaría",
+        "achacarías",
+        "achacaría",
+        "achacaríamos",
+        "achacaríais",
+        "achacarían"
+      ],
+      "Future": ["achacaré", "achacarás", "achacará", "achacaremos", "achacaréis", "achacarán"]
+    },
+    "Subjunctive": {
+      "Present": ["achaque", "achaques", "achaque", "achaquemos", "achaquéis", "achaquen"],
+      "Imperfect (-ra)": [
+        "achacara",
+        "achacaras",
+        "achacara",
+        "achacáramos",
+        "achacarais",
+        "achacaran"
+      ],
+      "Imperfect (-se)": [
+        "achacase",
+        "achacases",
+        "achacase",
+        "achacásemos",
+        "achacaseis",
+        "achacasen"
+      ],
+      "Future": ["achacare", "achacares", "achacare", "achacáremos", "achacareis", "achacaren"]
+    },
+    "Imperative": {
+      "Affirmative": ["achaca", "achaque", "achaquemos", "achacad", "achaquen"],
+      "Negative": ["no achaques", "no achaque", "no achaquemos", "no achaquéis", "no achaquen"]
+    },
+    "Present Participle": "achacando",
+    "Past Participle": "achacado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/achancar",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=achancar"
+}

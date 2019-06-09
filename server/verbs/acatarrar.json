@@ -1,0 +1,78 @@
+{
+  "verb": "acatarrar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["acatarro", "acatarras", "acatarra", "acatarramos", "acatarráis", "acatarran"],
+      "Preterite": [
+        "acatarré",
+        "acatarraste",
+        "acatarró",
+        "acatarramos",
+        "acatarrasteis",
+        "acatarraron"
+      ],
+      "Imperfect": [
+        "acatarraba",
+        "acatarrabas",
+        "acatarraba",
+        "acatarrábamos",
+        "acatarrabais",
+        "acatarraban"
+      ],
+      "Conditional": [
+        "acatarraría",
+        "acatarrarías",
+        "acatarraría",
+        "acatarraríamos",
+        "acatarraríais",
+        "acatarrarían"
+      ],
+      "Future": [
+        "acatarraré",
+        "acatarrarás",
+        "acatarrará",
+        "acatarraremos",
+        "acatarraréis",
+        "acatarrarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["acatarre", "acatarres", "acatarre", "acatarremos", "acatarréis", "acatarren"],
+      "Imperfect (-ra)": [
+        "acatarrara",
+        "acatarraras",
+        "acatarrara",
+        "acatarráramos",
+        "acatarrarais",
+        "acatarraran"
+      ],
+      "Imperfect (-se)": [
+        "acatarrase",
+        "acatarrases",
+        "acatarrase",
+        "acatarrásemos",
+        "acatarraseis",
+        "acatarrasen"
+      ],
+      "Future": [
+        "acatarrare",
+        "acatarrares",
+        "acatarrare",
+        "acatarráremos",
+        "acatarrareis",
+        "acatarraren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acatarra", "acatarre", "acatarremos", "acatarrad", "acatarren"],
+      "Negative": ["no acatarres", "no acatarre", "no acatarremos", "no acatarréis", "no acatarren"]
+    },
+    "Present Participle": "acatarrando",
+    "Past Participle": "acatarrado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/achatarrar",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=achatarrar"
+}

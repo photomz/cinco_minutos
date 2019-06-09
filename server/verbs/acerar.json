@@ -1,0 +1,159 @@
+{
+  "verb": "acerar",
+  "definition": "to pave",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["me acero", "te aceras", "se acera", "nos aceramos", "os aceráis", "se aceran"],
+      "Preterite": [
+        "me aceré",
+        "te aceraste",
+        "se aceró",
+        "nos aceramos",
+        "os acerasteis",
+        "se aceraron"
+      ],
+      "Imperfect": [
+        "me aceraba",
+        "te acerabas",
+        "se aceraba",
+        "nos acerábamos",
+        "os acerabais",
+        "se aceraban"
+      ],
+      "Conditional": [
+        "me aceraría",
+        "te acerarías",
+        "se aceraría",
+        "nos aceraríamos",
+        "os aceraríais",
+        "se acerarían"
+      ],
+      "Future": [
+        "me aceraré",
+        "te acerarás",
+        "se acerará",
+        "nos aceraremos",
+        "os aceraréis",
+        "se acerarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["me acere", "te aceres", "se acere", "nos aceremos", "os aceréis", "se aceren"],
+      "Imperfect (-ra)": [
+        "me acerara",
+        "te aceraras",
+        "se acerara",
+        "nos aceráramos",
+        "os acerarais",
+        "se aceraran"
+      ],
+      "Imperfect (-se)": [
+        "me acerase",
+        "te acerases",
+        "se acerase",
+        "nos acerásemos",
+        "os aceraseis",
+        "se acerasen"
+      ],
+      "Future": [
+        "me acerare",
+        "te acerares",
+        "se acerare",
+        "nos aceráremos",
+        "os acerareis",
+        "se aceraren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acérate", "acérese", "acerémonos", "aceraos", "acérense"],
+      "Negative": [
+        "no te aceres",
+        "no se acere",
+        "no nos aceremos",
+        "no os aceréis",
+        "no se aceren"
+      ]
+    },
+    "Present Participle": "acerando",
+    "Past Participle": "acerado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acerarse",
+  "wordreference": {
+    "Indicative": {
+      "Present": ["me acero", "te aceras", "se acera", "nos aceramos", "os aceráis", "se aceran"],
+      "Preterite": [
+        "me aceré",
+        "te aceraste",
+        "se aceró",
+        "nos aceramos",
+        "os acerasteis",
+        "se aceraron"
+      ],
+      "Imperfect": [
+        "me aceraba",
+        "te acerabas",
+        "se aceraba",
+        "nos acerábamos",
+        "os acerabais",
+        "se aceraban"
+      ],
+      "Conditional": [
+        "me aceraría",
+        "te acerarías",
+        "se aceraría",
+        "nos aceraríamos",
+        "os aceraríais",
+        "se acerarían"
+      ],
+      "Future": [
+        "me aceraré",
+        "te acerarás",
+        "se acerará",
+        "nos aceraremos",
+        "os aceraréis",
+        "se acerarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["me acere", "te aceres", "se acere", "nos aceremos", "os aceréis", "se aceren"],
+      "Imperfect (-ra)": [
+        "me acerara",
+        "te aceraras",
+        "se acerara",
+        "nos aceráramos",
+        "os acerarais u os aceraseis",
+        "se aceraran"
+      ],
+      "Imperfect (-se)": [
+        "me acerase",
+        "te acerases",
+        "se acerase",
+        "nos acerásemos",
+        "os aceraseis",
+        "se acerasen"
+      ],
+      "Future": [
+        "me acerare",
+        "te acerares",
+        "se acerare",
+        "nos aceráremos",
+        "os acerareis",
+        "se aceraren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acérate", "acérese", "acerémonos", "aceraos", "acérense"],
+      "Negative": [
+        "no te aceres",
+        "no se acere",
+        "no nos aceremos",
+        "no os aceréis",
+        "no se aceren"
+      ]
+    },
+    "Present Participle": "acerando",
+    "Past Participle": "acerado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acerarse"
+}

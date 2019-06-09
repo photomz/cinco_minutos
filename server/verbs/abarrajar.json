@@ -1,0 +1,98 @@
+{
+  "verb": "abarrajar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me abarrajo",
+        "te abarrajas",
+        "se abarraja",
+        "nos abarrajamos",
+        "os abarrajáis",
+        "se abarrajan"
+      ],
+      "Preterite": [
+        "me abarrajé",
+        "te abarrajaste",
+        "se abarrajó",
+        "nos abarrajamos",
+        "os abarrajasteis",
+        "se abarrajaron"
+      ],
+      "Imperfect": [
+        "me abarrajaba",
+        "te abarrajabas",
+        "se abarrajaba",
+        "nos abarrajábamos",
+        "os abarrajabais",
+        "se abarrajaban"
+      ],
+      "Conditional": [
+        "me abarrajaría",
+        "te abarrajarías",
+        "se abarrajaría",
+        "nos abarrajaríamos",
+        "os abarrajaríais",
+        "se abarrajarían"
+      ],
+      "Future": [
+        "me abarrajaré",
+        "te abarrajarás",
+        "se abarrajará",
+        "nos abarrajaremos",
+        "os abarrajaréis",
+        "se abarrajarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me abarraje",
+        "te abarrajes",
+        "se abarraje",
+        "nos abarrajemos",
+        "os abarrajéis",
+        "se abarrajen"
+      ],
+      "Imperfect (-ra)": [
+        "me abarrajara",
+        "te abarrajaras",
+        "se abarrajara",
+        "nos abarrajáramos",
+        "os abarrajarais",
+        "se abarrajaran"
+      ],
+      "Imperfect (-se)": [
+        "me abarrajase",
+        "te abarrajases",
+        "se abarrajase",
+        "nos abarrajásemos",
+        "os abarrajaseis",
+        "se abarrajasen"
+      ],
+      "Future": [
+        "me abarrajare",
+        "te abarrajares",
+        "se abarrajare",
+        "nos abarrajáremos",
+        "os abarrajareis",
+        "se abarrajaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["abarrájate", "abarrájese", "abarrajémonos", "abarrajaos", "abarrájense"],
+      "Negative": [
+        "no te abarrajes",
+        "no se abarraje",
+        "no nos abarrajemos",
+        "no os abarrajéis",
+        "no se abarrajen"
+      ]
+    },
+    "Present Participle": "abarrajando",
+    "Past Participle": "abarrajado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/abarrajarse",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=abarrajarse"
+}

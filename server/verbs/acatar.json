@@ -1,0 +1,36 @@
+{
+  "verb": "acatar",
+  "definition": "to comply with",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["acato", "acatas", "acata", "acatamos", "acatáis", "acatan"],
+      "Preterite": ["acaté", "acataste", "acató", "acatamos", "acatasteis", "acataron"],
+      "Imperfect": ["acataba", "acatabas", "acataba", "acatábamos", "acatabais", "acataban"],
+      "Conditional": [
+        "acataría",
+        "acatarías",
+        "acataría",
+        "acataríamos",
+        "acataríais",
+        "acatarían"
+      ],
+      "Future": ["acataré", "acatarás", "acatará", "acataremos", "acataréis", "acatarán"]
+    },
+    "Subjunctive": {
+      "Present": ["acate", "acates", "acate", "acatemos", "acatéis", "acaten"],
+      "Imperfect (-ra)": ["acatara", "acataras", "acatara", "acatáramos", "acatarais", "acataran"],
+      "Imperfect (-se)": ["acatase", "acatases", "acatase", "acatásemos", "acataseis", "acatasen"],
+      "Future": ["acatare", "acatares", "acatare", "acatáremos", "acatareis", "acataren"]
+    },
+    "Imperative": {
+      "Affirmative": ["acata", "acate", "acatemos", "acatad", "acaten"],
+      "Negative": ["no acates", "no acate", "no acatemos", "no acatéis", "no acaten"]
+    },
+    "Present Participle": "acatando",
+    "Past Participle": "acatado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/afatar",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=afatar"
+}

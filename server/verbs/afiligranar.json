@@ -1,0 +1,98 @@
+{
+  "verb": "afiligranar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": null,
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/afiligranar",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "afiligrano",
+        "afiligranas",
+        "afiligrana",
+        "afiligranamos",
+        "afiligranáis",
+        "afiligranan"
+      ],
+      "Preterite": [
+        "afiligrané",
+        "afiligranaste",
+        "afiligranó",
+        "afiligranamos",
+        "afiligranasteis",
+        "afiligranaron"
+      ],
+      "Imperfect": [
+        "afiligranaba",
+        "afiligranabas",
+        "afiligranaba",
+        "afiligranábamos",
+        "afiligranabais",
+        "afiligranaban"
+      ],
+      "Conditional": [
+        "afiligranaría",
+        "afiligranarías",
+        "afiligranaría",
+        "afiligranaríamos",
+        "afiligranaríais",
+        "afiligranarían"
+      ],
+      "Future": [
+        "afiligranaré",
+        "afiligranarás",
+        "afiligranará",
+        "afiligranaremos",
+        "afiligranaréis",
+        "afiligranarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "afiligrane",
+        "afiligranes",
+        "afiligrane",
+        "afiligranemos",
+        "afiligranéis",
+        "afiligranen"
+      ],
+      "Imperfect (-ra)": [
+        "afiligranara",
+        "afiligranaras",
+        "afiligranara",
+        "afiligranáramos",
+        "afiligranarais",
+        "afiligranaran"
+      ],
+      "Imperfect (-se)": [
+        "afiligranase",
+        "afiligranases",
+        "afiligranase",
+        "afiligranásemos",
+        "afiligranaseis",
+        "afiligranasen"
+      ],
+      "Future": [
+        "afiligranare",
+        "afiligranares",
+        "afiligranare",
+        "afiligranáremos",
+        "afiligranareis",
+        "afiligranaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["afiligrana", "afiligrane", "afiligranemos", "afiligranad", "afiligranen"],
+      "Negative": [
+        "no afiligranes",
+        "no afiligrane",
+        "no afiligranemos",
+        "no afiligranéis",
+        "no afiligranen"
+      ]
+    },
+    "Present Participle": "afiligranando",
+    "Past Participle": "afiligranado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=afiligranar"
+}

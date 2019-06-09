@@ -1,0 +1,111 @@
+{
+  "verb": "acontecer",
+  "definition": "to take place",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["acontezco", "aconteces", "acontece", "acontecemos", "acontecéis", "acontecen"],
+      "Preterite": [
+        "acontecí",
+        "aconteciste",
+        "aconteció",
+        "acontecimos",
+        "acontecisteis",
+        "acontecieron"
+      ],
+      "Imperfect": [
+        "acontecía",
+        "acontecías",
+        "acontecía",
+        "acontecíamos",
+        "acontecíais",
+        "acontecían"
+      ],
+      "Conditional": [
+        "acontecería",
+        "acontecerías",
+        "acontecería",
+        "aconteceríamos",
+        "aconteceríais",
+        "acontecerían"
+      ],
+      "Future": [
+        "aconteceré",
+        "acontecerás",
+        "acontecerá",
+        "aconteceremos",
+        "aconteceréis",
+        "acontecerán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "acontezca",
+        "acontezcas",
+        "acontezca",
+        "acontezcamos",
+        "acontezcáis",
+        "acontezcan"
+      ],
+      "Imperfect (-ra)": [
+        "aconteciera",
+        "acontecieras",
+        "aconteciera",
+        "aconteciéramos",
+        "acontecierais",
+        "acontecieran"
+      ],
+      "Imperfect (-se)": [
+        "aconteciese",
+        "acontecieses",
+        "aconteciese",
+        "aconteciésemos",
+        "acontecieseis",
+        "aconteciesen"
+      ],
+      "Future": [
+        "aconteciere",
+        "acontecieres",
+        "aconteciere",
+        "aconteciéremos",
+        "aconteciereis",
+        "acontecieren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acontece", "acontezca", "acontezcamos", "aconteced", "acontezcan"],
+      "Negative": [
+        "no acontezcas",
+        "no acontezca",
+        "no acontezcamos",
+        "no acontezcáis",
+        "no acontezcan"
+      ]
+    },
+    "Present Participle": "aconteciendo",
+    "Past Participle": "acontecido"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acontecer",
+  "wordreference": {
+    "Indicative": {
+      "Present": ["–", "–", "acontece", "–", "–", "acontecen"],
+      "Preterite": ["–", "–", "aconteció", "–", "–", "acontecieron"],
+      "Imperfect": ["–", "–", "acontecía", "–", "–", "acontecían"],
+      "Conditional": ["–", "–", "acontecería", "–", "–", "acontecerían"],
+      "Future": ["–", "–", "acontecerá", "–", "–", "acontecerán"]
+    },
+    "Subjunctive": {
+      "Present": ["–", "–", "acontezca", "–", "–", "acontezcan"],
+      "Imperfect (-ra)": ["–", "–", "aconteciera", "–", "–", "acontecieran"],
+      "Imperfect (-se)": ["–", "–", "aconteciese", "–", "–", "aconteciesen"],
+      "Future": ["–", "–", "aconteciere", "–", "–", "acontecieren"]
+    },
+    "Imperative": {
+      "Affirmative": ["", "", "", "", ""],
+      "Negative": ["", "", "", "", ""]
+    },
+    "Present Participle": "aconteciendo",
+    "Past Participle": "–"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acontecer"
+}

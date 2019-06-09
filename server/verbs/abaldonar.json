@@ -1,0 +1,98 @@
+{
+  "verb": "abaldonar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me abaldono",
+        "te abaldonas",
+        "se abaldona",
+        "nos abaldonamos",
+        "os abaldonáis",
+        "se abaldonan"
+      ],
+      "Preterite": [
+        "me abaldoné",
+        "te abaldonaste",
+        "se abaldonó",
+        "nos abaldonamos",
+        "os abaldonasteis",
+        "se abaldonaron"
+      ],
+      "Imperfect": [
+        "me abaldonaba",
+        "te abaldonabas",
+        "se abaldonaba",
+        "nos abaldonábamos",
+        "os abaldonabais",
+        "se abaldonaban"
+      ],
+      "Conditional": [
+        "me abaldonaría",
+        "te abaldonarías",
+        "se abaldonaría",
+        "nos abaldonaríamos",
+        "os abaldonaríais",
+        "se abaldonarían"
+      ],
+      "Future": [
+        "me abaldonaré",
+        "te abaldonarás",
+        "se abaldonará",
+        "nos abaldonaremos",
+        "os abaldonaréis",
+        "se abaldonarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me abaldone",
+        "te abaldones",
+        "se abaldone",
+        "nos abaldonemos",
+        "os abaldonéis",
+        "se abaldonen"
+      ],
+      "Imperfect (-ra)": [
+        "me abaldonara",
+        "te abaldonaras",
+        "se abaldonara",
+        "nos abaldonáramos",
+        "os abaldonarais",
+        "se abaldonaran"
+      ],
+      "Imperfect (-se)": [
+        "me abaldonase",
+        "te abaldonases",
+        "se abaldonase",
+        "nos abaldonásemos",
+        "os abaldonaseis",
+        "se abaldonasen"
+      ],
+      "Future": [
+        "me abaldonare",
+        "te abaldonares",
+        "se abaldonare",
+        "nos abaldonáremos",
+        "os abaldonareis",
+        "se abaldonaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["abaldónate", "abaldónese", "abaldonémonos", "abaldonaos", "abaldónense"],
+      "Negative": [
+        "no te abaldones",
+        "no se abaldone",
+        "no nos abaldonemos",
+        "no os abaldonéis",
+        "no se abaldonen"
+      ]
+    },
+    "Present Participle": "abaldonando",
+    "Past Participle": "abaldonado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/abaldonarse",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=abaldonarse"
+}

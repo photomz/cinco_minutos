@@ -1,0 +1,199 @@
+{
+  "verb": "administrar",
+  "definition": "to manage",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me administro",
+        "te administras",
+        "se administra",
+        "nos administramos",
+        "os administráis",
+        "se administran"
+      ],
+      "Preterite": [
+        "me administré",
+        "te administraste",
+        "se administró",
+        "nos administramos",
+        "os administrasteis",
+        "se administraron"
+      ],
+      "Imperfect": [
+        "me administraba",
+        "te administrabas",
+        "se administraba",
+        "nos administrábamos",
+        "os administrabais",
+        "se administraban"
+      ],
+      "Conditional": [
+        "me administraría",
+        "te administrarías",
+        "se administraría",
+        "nos administraríamos",
+        "os administraríais",
+        "se administrarían"
+      ],
+      "Future": [
+        "me administraré",
+        "te administrarás",
+        "se administrará",
+        "nos administraremos",
+        "os administraréis",
+        "se administrarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me administre",
+        "te administres",
+        "se administre",
+        "nos administremos",
+        "os administréis",
+        "se administren"
+      ],
+      "Imperfect (-ra)": [
+        "me administrara",
+        "te administraras",
+        "se administrara",
+        "nos administráramos",
+        "os administrarais",
+        "se administraran"
+      ],
+      "Imperfect (-se)": [
+        "me administrase",
+        "te administrases",
+        "se administrase",
+        "nos administrásemos",
+        "os administraseis",
+        "se administrasen"
+      ],
+      "Future": [
+        "me administrare",
+        "te administrares",
+        "se administrare",
+        "nos administráremos",
+        "os administrareis",
+        "se administraren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": [
+        "adminístrate",
+        "adminístrese",
+        "administrémonos",
+        "administraos",
+        "adminístrense"
+      ],
+      "Negative": [
+        "no te administres",
+        "no se administre",
+        "no nos administremos",
+        "no os administréis",
+        "no se administren"
+      ]
+    },
+    "Present Participle": "administrando",
+    "Past Participle": "administrado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/administrarse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me administro",
+        "te administras",
+        "se administra",
+        "nos administramos",
+        "os administráis",
+        "se administran"
+      ],
+      "Preterite": [
+        "me administré",
+        "te administraste",
+        "se administró",
+        "nos administramos",
+        "os administrasteis",
+        "se administraron"
+      ],
+      "Imperfect": [
+        "me administraba",
+        "te administrabas",
+        "se administraba",
+        "nos administrábamos",
+        "os administrabais",
+        "se administraban"
+      ],
+      "Conditional": [
+        "me administraría",
+        "te administrarías",
+        "se administraría",
+        "nos administraríamos",
+        "os administraríais",
+        "se administrarían"
+      ],
+      "Future": [
+        "me administraré",
+        "te administrarás",
+        "se administrará",
+        "nos administraremos",
+        "os administraréis",
+        "se administrarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me administre",
+        "te administres",
+        "se administre",
+        "nos administremos",
+        "os administréis",
+        "se administren"
+      ],
+      "Imperfect (-ra)": [
+        "me administrara",
+        "te administraras",
+        "se administrara",
+        "nos administráramos",
+        "os administrarais u os administraseis",
+        "se administraran"
+      ],
+      "Imperfect (-se)": [
+        "me administrase",
+        "te administrases",
+        "se administrase",
+        "nos administrásemos",
+        "os administraseis",
+        "se administrasen"
+      ],
+      "Future": [
+        "me administrare",
+        "te administrares",
+        "se administrare",
+        "nos administráremos",
+        "os administrareis",
+        "se administraren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": [
+        "adminístrate",
+        "adminístrese",
+        "administrémonos",
+        "administraos",
+        "adminístrense"
+      ],
+      "Negative": [
+        "no te administres",
+        "no se administre",
+        "no nos administremos",
+        "no os administréis",
+        "no se administren"
+      ]
+    },
+    "Present Participle": "administrando",
+    "Past Participle": "administrado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=administrarse"
+}

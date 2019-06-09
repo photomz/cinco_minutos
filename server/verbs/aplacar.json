@@ -1,0 +1,50 @@
+{
+  "verb": "aplacar",
+  "definition": "to appease",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["aplaco", "aplacas", "aplaca", "aplacamos", "aplacáis", "aplacan"],
+      "Preterite": ["aplaqué", "aplacaste", "aplacó", "aplacamos", "aplacasteis", "aplacaron"],
+      "Imperfect": ["aplacaba", "aplacabas", "aplacaba", "aplacábamos", "aplacabais", "aplacaban"],
+      "Conditional": [
+        "aplacaría",
+        "aplacarías",
+        "aplacaría",
+        "aplacaríamos",
+        "aplacaríais",
+        "aplacarían"
+      ],
+      "Future": ["aplacaré", "aplacarás", "aplacará", "aplacaremos", "aplacaréis", "aplacarán"]
+    },
+    "Subjunctive": {
+      "Present": ["aplaque", "aplaques", "aplaque", "aplaquemos", "aplaquéis", "aplaquen"],
+      "Imperfect (-ra)": [
+        "aplacara",
+        "aplacaras",
+        "aplacara",
+        "aplacáramos",
+        "aplacarais",
+        "aplacaran"
+      ],
+      "Imperfect (-se)": [
+        "aplacase",
+        "aplacases",
+        "aplacase",
+        "aplacásemos",
+        "aplacaseis",
+        "aplacasen"
+      ],
+      "Future": ["aplacare", "aplacares", "aplacare", "aplacáremos", "aplacareis", "aplacaren"]
+    },
+    "Imperative": {
+      "Affirmative": ["aplaca", "aplaque", "aplaquemos", "aplacad", "aplaquen"],
+      "Negative": ["no aplaques", "no aplaque", "no aplaquemos", "no aplaquéis", "no aplaquen"]
+    },
+    "Present Participle": "aplacando",
+    "Past Participle": "aplacado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/aflacar",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=aflacar"
+}

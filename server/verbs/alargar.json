@@ -1,0 +1,98 @@
+{
+  "verb": "alargar",
+  "definition": "to extend",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me alargo",
+        "te alargas",
+        "se alarga",
+        "nos alargamos",
+        "os alargáis",
+        "se alargan"
+      ],
+      "Preterite": [
+        "me alargué",
+        "te alargaste",
+        "se alargó",
+        "nos alargamos",
+        "os alargasteis",
+        "se alargaron"
+      ],
+      "Imperfect": [
+        "me alargaba",
+        "te alargabas",
+        "se alargaba",
+        "nos alargábamos",
+        "os alargabais",
+        "se alargaban"
+      ],
+      "Conditional": [
+        "me alargaría",
+        "te alargarías",
+        "se alargaría",
+        "nos alargaríamos",
+        "os alargaríais",
+        "se alargarían"
+      ],
+      "Future": [
+        "me alargaré",
+        "te alargarás",
+        "se alargará",
+        "nos alargaremos",
+        "os alargaréis",
+        "se alargarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me alargue",
+        "te alargues",
+        "se alargue",
+        "nos alarguemos",
+        "os alarguéis",
+        "se alarguen"
+      ],
+      "Imperfect (-ra)": [
+        "me alargara",
+        "te alargaras",
+        "se alargara",
+        "nos alargáramos",
+        "os alargarais",
+        "se alargaran"
+      ],
+      "Imperfect (-se)": [
+        "me alargase",
+        "te alargases",
+        "se alargase",
+        "nos alargásemos",
+        "os alargaseis",
+        "se alargasen"
+      ],
+      "Future": [
+        "me alargare",
+        "te alargares",
+        "se alargare",
+        "nos alargáremos",
+        "os alargareis",
+        "se alargaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["alárgate", "alárguese", "alarguémonos", "alargaos", "alárguense"],
+      "Negative": [
+        "no te alargues",
+        "no se alargue",
+        "no nos alarguemos",
+        "no os alarguéis",
+        "no se alarguen"
+      ]
+    },
+    "Present Participle": "alargando",
+    "Past Participle": "alargado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/adargarse",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=adargarse"
+}

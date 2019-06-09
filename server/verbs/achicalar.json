@@ -1,0 +1,98 @@
+{
+  "verb": "achicalar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me achicalo",
+        "te achicalas",
+        "se achicala",
+        "nos achicalamos",
+        "os achicaláis",
+        "se achicalan"
+      ],
+      "Preterite": [
+        "me achicalé",
+        "te achicalaste",
+        "se achicaló",
+        "nos achicalamos",
+        "os achicalasteis",
+        "se achicalaron"
+      ],
+      "Imperfect": [
+        "me achicalaba",
+        "te achicalabas",
+        "se achicalaba",
+        "nos achicalábamos",
+        "os achicalabais",
+        "se achicalaban"
+      ],
+      "Conditional": [
+        "me achicalaría",
+        "te achicalarías",
+        "se achicalaría",
+        "nos achicalaríamos",
+        "os achicalaríais",
+        "se achicalarían"
+      ],
+      "Future": [
+        "me achicalaré",
+        "te achicalarás",
+        "se achicalará",
+        "nos achicalaremos",
+        "os achicalaréis",
+        "se achicalarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me achicale",
+        "te achicales",
+        "se achicale",
+        "nos achicalemos",
+        "os achicaléis",
+        "se achicalen"
+      ],
+      "Imperfect (-ra)": [
+        "me achicalara",
+        "te achicalaras",
+        "se achicalara",
+        "nos achicaláramos",
+        "os achicalarais",
+        "se achicalaran"
+      ],
+      "Imperfect (-se)": [
+        "me achicalase",
+        "te achicalases",
+        "se achicalase",
+        "nos achicalásemos",
+        "os achicalaseis",
+        "se achicalasen"
+      ],
+      "Future": [
+        "me achicalare",
+        "te achicalares",
+        "se achicalare",
+        "nos achicaláremos",
+        "os achicalareis",
+        "se achicalaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["achicálate", "achicálese", "achicalémonos", "achicalaos", "achicálense"],
+      "Negative": [
+        "no te achicales",
+        "no se achicale",
+        "no nos achicalemos",
+        "no os achicaléis",
+        "no se achicalen"
+      ]
+    },
+    "Present Participle": "achicalando",
+    "Past Participle": "achicalado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/achicalarse",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=achicalarse"
+}

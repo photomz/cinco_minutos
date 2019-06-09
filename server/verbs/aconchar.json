@@ -1,0 +1,98 @@
+{
+  "verb": "aconchar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me aconcho",
+        "te aconchas",
+        "se aconcha",
+        "nos aconchamos",
+        "os aconcháis",
+        "se aconchan"
+      ],
+      "Preterite": [
+        "me aconché",
+        "te aconchaste",
+        "se aconchó",
+        "nos aconchamos",
+        "os aconchasteis",
+        "se aconcharon"
+      ],
+      "Imperfect": [
+        "me aconchaba",
+        "te aconchabas",
+        "se aconchaba",
+        "nos aconchábamos",
+        "os aconchabais",
+        "se aconchaban"
+      ],
+      "Conditional": [
+        "me aconcharía",
+        "te aconcharías",
+        "se aconcharía",
+        "nos aconcharíamos",
+        "os aconcharíais",
+        "se aconcharían"
+      ],
+      "Future": [
+        "me aconcharé",
+        "te aconcharás",
+        "se aconchará",
+        "nos aconcharemos",
+        "os aconcharéis",
+        "se aconcharán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me aconche",
+        "te aconches",
+        "se aconche",
+        "nos aconchemos",
+        "os aconchéis",
+        "se aconchen"
+      ],
+      "Imperfect (-ra)": [
+        "me aconchara",
+        "te aconcharas",
+        "se aconchara",
+        "nos aconcháramos",
+        "os aconcharais",
+        "se aconcharan"
+      ],
+      "Imperfect (-se)": [
+        "me aconchase",
+        "te aconchases",
+        "se aconchase",
+        "nos aconchásemos",
+        "os aconchaseis",
+        "se aconchasen"
+      ],
+      "Future": [
+        "me aconchare",
+        "te aconchares",
+        "se aconchare",
+        "nos aconcháremos",
+        "os aconchareis",
+        "se aconcharen"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acónchate", "acónchese", "aconchémonos", "aconchaos", "acónchense"],
+      "Negative": [
+        "no te aconches",
+        "no se aconche",
+        "no nos aconchemos",
+        "no os aconchéis",
+        "no se aconchen"
+      ]
+    },
+    "Present Participle": "aconchando",
+    "Past Participle": "aconchado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/aconcharse",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=aconcharse"
+}

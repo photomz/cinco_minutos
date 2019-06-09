@@ -1,0 +1,91 @@
+{
+  "verb": "abundar",
+  "definition": "to abound",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["abundo", "abundas", "abunda", "abundamos", "abundáis", "abundan"],
+      "Preterite": ["abundé", "abundaste", "abundó", "abundamos", "abundasteis", "abundaron"],
+      "Imperfect": ["abundaba", "abundabas", "abundaba", "abundábamos", "abundabais", "abundaban"],
+      "Conditional": [
+        "abundaría",
+        "abundarías",
+        "abundaría",
+        "abundaríamos",
+        "abundaríais",
+        "abundarían"
+      ],
+      "Future": ["abundaré", "abundarás", "abundará", "abundaremos", "abundaréis", "abundarán"]
+    },
+    "Subjunctive": {
+      "Present": ["abunde", "abundes", "abunde", "abundemos", "abundéis", "abunden"],
+      "Imperfect (-ra)": [
+        "abundara",
+        "abundaras",
+        "abundara",
+        "abundáramos",
+        "abundarais",
+        "abundaran"
+      ],
+      "Imperfect (-se)": [
+        "abundase",
+        "abundases",
+        "abundase",
+        "abundásemos",
+        "abundaseis",
+        "abundasen"
+      ],
+      "Future": ["abundare", "abundares", "abundare", "abundáremos", "abundareis", "abundaren"]
+    },
+    "Imperative": {
+      "Affirmative": ["abunda", "abunde", "abundemos", "abundad", "abunden"],
+      "Negative": ["no abundes", "no abunde", "no abundemos", "no abundéis", "no abunden"]
+    },
+    "Present Participle": "abundando",
+    "Past Participle": "abundado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/abundar",
+  "wordreference": {
+    "Indicative": {
+      "Present": ["abundo", "abundas", "abunda", "abundamos", "abundáis", "abundan"],
+      "Preterite": ["abundé", "abundaste", "abundó", "abundamos", "abundasteis", "abundaron"],
+      "Imperfect": ["abundaba", "abundabas", "abundaba", "abundábamos", "abundabais", "abundaban"],
+      "Conditional": [
+        "abundaría",
+        "abundarías",
+        "abundaría",
+        "abundaríamos",
+        "abundaríais",
+        "abundarían"
+      ],
+      "Future": ["abundaré", "abundarás", "abundará", "abundaremos", "abundaréis", "abundarán"]
+    },
+    "Subjunctive": {
+      "Present": ["abunde", "abundes", "abunde", "abundemos", "abundéis", "abunden"],
+      "Imperfect (-ra)": [
+        "abundara",
+        "abundaras",
+        "abundara",
+        "abundáramos",
+        "abundarais",
+        "abundaran"
+      ],
+      "Imperfect (-se)": [
+        "abundase",
+        "abundases",
+        "abundase",
+        "abundásemos",
+        "abundaseis",
+        "abundasen"
+      ],
+      "Future": ["abundare", "abundares", "abundare", "abundáremos", "abundareis", "abundaren"]
+    },
+    "Imperative": {
+      "Affirmative": ["abunda", "abunde", "abundemos", "abundad", "abunden"],
+      "Negative": ["no abundes", "no abunde", "no abundemos", "no abundéis", "no abunden"]
+    },
+    "Present Participle": "abundando",
+    "Past Participle": "abundado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=abundar"
+}

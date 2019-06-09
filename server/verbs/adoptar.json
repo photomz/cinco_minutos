@@ -1,0 +1,91 @@
+{
+  "verb": "adoptar",
+  "definition": "to adopt",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["adopto", "adoptas", "adopta", "adoptamos", "adoptáis", "adoptan"],
+      "Preterite": ["adopté", "adoptaste", "adoptó", "adoptamos", "adoptasteis", "adoptaron"],
+      "Imperfect": ["adoptaba", "adoptabas", "adoptaba", "adoptábamos", "adoptabais", "adoptaban"],
+      "Conditional": [
+        "adoptaría",
+        "adoptarías",
+        "adoptaría",
+        "adoptaríamos",
+        "adoptaríais",
+        "adoptarían"
+      ],
+      "Future": ["adoptaré", "adoptarás", "adoptará", "adoptaremos", "adoptaréis", "adoptarán"]
+    },
+    "Subjunctive": {
+      "Present": ["adopte", "adoptes", "adopte", "adoptemos", "adoptéis", "adopten"],
+      "Imperfect (-ra)": [
+        "adoptara",
+        "adoptaras",
+        "adoptara",
+        "adoptáramos",
+        "adoptarais",
+        "adoptaran"
+      ],
+      "Imperfect (-se)": [
+        "adoptase",
+        "adoptases",
+        "adoptase",
+        "adoptásemos",
+        "adoptaseis",
+        "adoptasen"
+      ],
+      "Future": ["adoptare", "adoptares", "adoptare", "adoptáremos", "adoptareis", "adoptaren"]
+    },
+    "Imperative": {
+      "Affirmative": ["adopta", "adopte", "adoptemos", "adoptad", "adopten"],
+      "Negative": ["no adoptes", "no adopte", "no adoptemos", "no adoptéis", "no adopten"]
+    },
+    "Present Participle": "adoptando",
+    "Past Participle": "adoptado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/adoptar",
+  "wordreference": {
+    "Indicative": {
+      "Present": ["adopto", "adoptas", "adopta", "adoptamos", "adoptáis", "adoptan"],
+      "Preterite": ["adopté", "adoptaste", "adoptó", "adoptamos", "adoptasteis", "adoptaron"],
+      "Imperfect": ["adoptaba", "adoptabas", "adoptaba", "adoptábamos", "adoptabais", "adoptaban"],
+      "Conditional": [
+        "adoptaría",
+        "adoptarías",
+        "adoptaría",
+        "adoptaríamos",
+        "adoptaríais",
+        "adoptarían"
+      ],
+      "Future": ["adoptaré", "adoptarás", "adoptará", "adoptaremos", "adoptaréis", "adoptarán"]
+    },
+    "Subjunctive": {
+      "Present": ["adopte", "adoptes", "adopte", "adoptemos", "adoptéis", "adopten"],
+      "Imperfect (-ra)": [
+        "adoptara",
+        "adoptaras",
+        "adoptara",
+        "adoptáramos",
+        "adoptarais",
+        "adoptaran"
+      ],
+      "Imperfect (-se)": [
+        "adoptase",
+        "adoptases",
+        "adoptase",
+        "adoptásemos",
+        "adoptaseis",
+        "adoptasen"
+      ],
+      "Future": ["adoptare", "adoptares", "adoptare", "adoptáremos", "adoptareis", "adoptaren"]
+    },
+    "Imperative": {
+      "Affirmative": ["adopta", "adopte", "adoptemos", "adoptad", "adopten"],
+      "Negative": ["no adoptes", "no adopte", "no adoptemos", "no adoptéis", "no adopten"]
+    },
+    "Present Participle": "adoptando",
+    "Past Participle": "adoptado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=adoptar"
+}

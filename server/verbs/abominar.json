@@ -1,0 +1,133 @@
+{
+  "verb": "abominar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["abomino", "abominas", "abomina", "abominamos", "abomináis", "abominan"],
+      "Preterite": ["abominé", "abominaste", "abominó", "abominamos", "abominasteis", "abominaron"],
+      "Imperfect": [
+        "abominaba",
+        "abominabas",
+        "abominaba",
+        "abominábamos",
+        "abominabais",
+        "abominaban"
+      ],
+      "Conditional": [
+        "abominaría",
+        "abominarías",
+        "abominaría",
+        "abominaríamos",
+        "abominaríais",
+        "abominarían"
+      ],
+      "Future": [
+        "abominaré",
+        "abominarás",
+        "abominará",
+        "abominaremos",
+        "abominaréis",
+        "abominarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["abomine", "abomines", "abomine", "abominemos", "abominéis", "abominen"],
+      "Imperfect (-ra)": [
+        "abominara",
+        "abominaras",
+        "abominara",
+        "abomináramos",
+        "abominarais",
+        "abominaran"
+      ],
+      "Imperfect (-se)": [
+        "abominase",
+        "abominases",
+        "abominase",
+        "abominásemos",
+        "abominaseis",
+        "abominasen"
+      ],
+      "Future": [
+        "abominare",
+        "abominares",
+        "abominare",
+        "abomináremos",
+        "abominareis",
+        "abominaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["abomina", "abomine", "abominemos", "abominad", "abominen"],
+      "Negative": ["no abomines", "no abomine", "no abominemos", "no abominéis", "no abominen"]
+    },
+    "Present Participle": "abominando",
+    "Past Participle": "abominado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/abominar",
+  "wordreference": {
+    "Indicative": {
+      "Present": ["abomino", "abominas", "abomina", "abominamos", "abomináis", "abominan"],
+      "Preterite": ["abominé", "abominaste", "abominó", "abominamos", "abominasteis", "abominaron"],
+      "Imperfect": [
+        "abominaba",
+        "abominabas",
+        "abominaba",
+        "abominábamos",
+        "abominabais",
+        "abominaban"
+      ],
+      "Conditional": [
+        "abominaría",
+        "abominarías",
+        "abominaría",
+        "abominaríamos",
+        "abominaríais",
+        "abominarían"
+      ],
+      "Future": [
+        "abominaré",
+        "abominarás",
+        "abominará",
+        "abominaremos",
+        "abominaréis",
+        "abominarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["abomine", "abomines", "abomine", "abominemos", "abominéis", "abominen"],
+      "Imperfect (-ra)": [
+        "abominara",
+        "abominaras",
+        "abominara",
+        "abomináramos",
+        "abominarais",
+        "abominaran"
+      ],
+      "Imperfect (-se)": [
+        "abominase",
+        "abominases",
+        "abominase",
+        "abominásemos",
+        "abominaseis",
+        "abominasen"
+      ],
+      "Future": [
+        "abominare",
+        "abominares",
+        "abominare",
+        "abomináremos",
+        "abominareis",
+        "abominaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["abomina", "abomine", "abominemos", "abominad", "abominen"],
+      "Negative": ["no abomines", "no abomine", "no abominemos", "no abominéis", "no abominen"]
+    },
+    "Present Participle": "abominando",
+    "Past Participle": "abominado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=abominar"
+}

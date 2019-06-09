@@ -1,0 +1,147 @@
+{
+  "verb": "abanderar",
+  "definition": "to register",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["abandero", "abanderas", "abandera", "abanderamos", "abanderáis", "abanderan"],
+      "Preterite": [
+        "abanderé",
+        "abanderaste",
+        "abanderó",
+        "abanderamos",
+        "abanderasteis",
+        "abanderaron"
+      ],
+      "Imperfect": [
+        "abanderaba",
+        "abanderabas",
+        "abanderaba",
+        "abanderábamos",
+        "abanderabais",
+        "abanderaban"
+      ],
+      "Conditional": [
+        "abanderaría",
+        "abanderarías",
+        "abanderaría",
+        "abanderaríamos",
+        "abanderaríais",
+        "abanderarían"
+      ],
+      "Future": [
+        "abanderaré",
+        "abanderarás",
+        "abanderará",
+        "abanderaremos",
+        "abanderaréis",
+        "abanderarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["abandere", "abanderes", "abandere", "abanderemos", "abanderéis", "abanderen"],
+      "Imperfect (-ra)": [
+        "abanderara",
+        "abanderaras",
+        "abanderara",
+        "abanderáramos",
+        "abanderarais",
+        "abanderaran"
+      ],
+      "Imperfect (-se)": [
+        "abanderase",
+        "abanderases",
+        "abanderase",
+        "abanderásemos",
+        "abanderaseis",
+        "abanderasen"
+      ],
+      "Future": [
+        "abanderare",
+        "abanderares",
+        "abanderare",
+        "abanderáremos",
+        "abanderareis",
+        "abanderaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["abandera", "abandere", "abanderemos", "abanderad", "abanderen"],
+      "Negative": ["no abanderes", "no abandere", "no abanderemos", "no abanderéis", "no abanderen"]
+    },
+    "Present Participle": "abanderando",
+    "Past Participle": "abanderado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/abanderar",
+  "wordreference": {
+    "Indicative": {
+      "Present": ["abandero", "abanderas", "abandera", "abanderamos", "abanderáis", "abanderan"],
+      "Preterite": [
+        "abanderé",
+        "abanderaste",
+        "abanderó",
+        "abanderamos",
+        "abanderasteis",
+        "abanderaron"
+      ],
+      "Imperfect": [
+        "abanderaba",
+        "abanderabas",
+        "abanderaba",
+        "abanderábamos",
+        "abanderabais",
+        "abanderaban"
+      ],
+      "Conditional": [
+        "abanderaría",
+        "abanderarías",
+        "abanderaría",
+        "abanderaríamos",
+        "abanderaríais",
+        "abanderarían"
+      ],
+      "Future": [
+        "abanderaré",
+        "abanderarás",
+        "abanderará",
+        "abanderaremos",
+        "abanderaréis",
+        "abanderarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["abandere", "abanderes", "abandere", "abanderemos", "abanderéis", "abanderen"],
+      "Imperfect (-ra)": [
+        "abanderara",
+        "abanderaras",
+        "abanderara",
+        "abanderáramos",
+        "abanderarais",
+        "abanderaran"
+      ],
+      "Imperfect (-se)": [
+        "abanderase",
+        "abanderases",
+        "abanderase",
+        "abanderásemos",
+        "abanderaseis",
+        "abanderasen"
+      ],
+      "Future": [
+        "abanderare",
+        "abanderares",
+        "abanderare",
+        "abanderáremos",
+        "abanderareis",
+        "abanderaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["abandera", "abandere", "abanderemos", "abanderad", "abanderen"],
+      "Negative": ["no abanderes", "no abandere", "no abanderemos", "no abanderéis", "no abanderen"]
+    },
+    "Present Participle": "abanderando",
+    "Past Participle": "abanderado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=abanderar"
+}

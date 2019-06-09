@@ -1,0 +1,98 @@
+{
+  "verb": "acorralar",
+  "definition": "to corral",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me acorralo",
+        "te acorralas",
+        "se acorrala",
+        "nos acorralamos",
+        "os acorraláis",
+        "se acorralan"
+      ],
+      "Preterite": [
+        "me acorralé",
+        "te acorralaste",
+        "se acorraló",
+        "nos acorralamos",
+        "os acorralasteis",
+        "se acorralaron"
+      ],
+      "Imperfect": [
+        "me acorralaba",
+        "te acorralabas",
+        "se acorralaba",
+        "nos acorralábamos",
+        "os acorralabais",
+        "se acorralaban"
+      ],
+      "Conditional": [
+        "me acorralaría",
+        "te acorralarías",
+        "se acorralaría",
+        "nos acorralaríamos",
+        "os acorralaríais",
+        "se acorralarían"
+      ],
+      "Future": [
+        "me acorralaré",
+        "te acorralarás",
+        "se acorralará",
+        "nos acorralaremos",
+        "os acorralaréis",
+        "se acorralarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me acorrale",
+        "te acorrales",
+        "se acorrale",
+        "nos acorralemos",
+        "os acorraléis",
+        "se acorralen"
+      ],
+      "Imperfect (-ra)": [
+        "me acorralara",
+        "te acorralaras",
+        "se acorralara",
+        "nos acorraláramos",
+        "os acorralarais",
+        "se acorralaran"
+      ],
+      "Imperfect (-se)": [
+        "me acorralase",
+        "te acorralases",
+        "se acorralase",
+        "nos acorralásemos",
+        "os acorralaseis",
+        "se acorralasen"
+      ],
+      "Future": [
+        "me acorralare",
+        "te acorralares",
+        "se acorralare",
+        "nos acorraláremos",
+        "os acorralareis",
+        "se acorralaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acorrálate", "acorrálese", "acorralémonos", "acorralaos", "acorrálense"],
+      "Negative": [
+        "no te acorrales",
+        "no se acorrale",
+        "no nos acorralemos",
+        "no os acorraléis",
+        "no se acorralen"
+      ]
+    },
+    "Present Participle": "acorralando",
+    "Past Participle": "acorralado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acorralarse",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acorralarse"
+}

@@ -1,0 +1,91 @@
+{
+  "verb": "aceitar",
+  "definition": "to oil",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["aceito", "aceitas", "aceita", "aceitamos", "aceitáis", "aceitan"],
+      "Preterite": ["aceité", "aceitaste", "aceitó", "aceitamos", "aceitasteis", "aceitaron"],
+      "Imperfect": ["aceitaba", "aceitabas", "aceitaba", "aceitábamos", "aceitabais", "aceitaban"],
+      "Conditional": [
+        "aceitaría",
+        "aceitarías",
+        "aceitaría",
+        "aceitaríamos",
+        "aceitaríais",
+        "aceitarían"
+      ],
+      "Future": ["aceitaré", "aceitarás", "aceitará", "aceitaremos", "aceitaréis", "aceitarán"]
+    },
+    "Subjunctive": {
+      "Present": ["aceite", "aceites", "aceite", "aceitemos", "aceitéis", "aceiten"],
+      "Imperfect (-ra)": [
+        "aceitara",
+        "aceitaras",
+        "aceitara",
+        "aceitáramos",
+        "aceitarais",
+        "aceitaran"
+      ],
+      "Imperfect (-se)": [
+        "aceitase",
+        "aceitases",
+        "aceitase",
+        "aceitásemos",
+        "aceitaseis",
+        "aceitasen"
+      ],
+      "Future": ["aceitare", "aceitares", "aceitare", "aceitáremos", "aceitareis", "aceitaren"]
+    },
+    "Imperative": {
+      "Affirmative": ["aceita", "aceite", "aceitemos", "aceitad", "aceiten"],
+      "Negative": ["no aceites", "no aceite", "no aceitemos", "no aceitéis", "no aceiten"]
+    },
+    "Present Participle": "aceitando",
+    "Past Participle": "aceitado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/aceitar",
+  "wordreference": {
+    "Indicative": {
+      "Present": ["aceito", "aceitas", "aceita", "aceitamos", "aceitáis", "aceitan"],
+      "Preterite": ["aceité", "aceitaste", "aceitó", "aceitamos", "aceitasteis", "aceitaron"],
+      "Imperfect": ["aceitaba", "aceitabas", "aceitaba", "aceitábamos", "aceitabais", "aceitaban"],
+      "Conditional": [
+        "aceitaría",
+        "aceitarías",
+        "aceitaría",
+        "aceitaríamos",
+        "aceitaríais",
+        "aceitarían"
+      ],
+      "Future": ["aceitaré", "aceitarás", "aceitará", "aceitaremos", "aceitaréis", "aceitarán"]
+    },
+    "Subjunctive": {
+      "Present": ["aceite", "aceites", "aceite", "aceitemos", "aceitéis", "aceiten"],
+      "Imperfect (-ra)": [
+        "aceitara",
+        "aceitaras",
+        "aceitara",
+        "aceitáramos",
+        "aceitarais",
+        "aceitaran"
+      ],
+      "Imperfect (-se)": [
+        "aceitase",
+        "aceitases",
+        "aceitase",
+        "aceitásemos",
+        "aceitaseis",
+        "aceitasen"
+      ],
+      "Future": ["aceitare", "aceitares", "aceitare", "aceitáremos", "aceitareis", "aceitaren"]
+    },
+    "Imperative": {
+      "Affirmative": ["aceita", "aceite", "aceitemos", "aceitad", "aceiten"],
+      "Negative": ["no aceites", "no aceite", "no aceitemos", "no aceitéis", "no aceiten"]
+    },
+    "Present Participle": "aceitando",
+    "Past Participle": "aceitado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=aceitar"
+}

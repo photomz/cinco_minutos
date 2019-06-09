@@ -1,0 +1,187 @@
+{
+  "verb": "acortar",
+  "definition": "to shorten",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me acorto",
+        "te acortas",
+        "se acorta",
+        "nos acortamos",
+        "os acortáis",
+        "se acortan"
+      ],
+      "Preterite": [
+        "me acorté",
+        "te acortaste",
+        "se acortó",
+        "nos acortamos",
+        "os acortasteis",
+        "se acortaron"
+      ],
+      "Imperfect": [
+        "me acortaba",
+        "te acortabas",
+        "se acortaba",
+        "nos acortábamos",
+        "os acortabais",
+        "se acortaban"
+      ],
+      "Conditional": [
+        "me acortaría",
+        "te acortarías",
+        "se acortaría",
+        "nos acortaríamos",
+        "os acortaríais",
+        "se acortarían"
+      ],
+      "Future": [
+        "me acortaré",
+        "te acortarás",
+        "se acortará",
+        "nos acortaremos",
+        "os acortaréis",
+        "se acortarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me acorte",
+        "te acortes",
+        "se acorte",
+        "nos acortemos",
+        "os acortéis",
+        "se acorten"
+      ],
+      "Imperfect (-ra)": [
+        "me acortara",
+        "te acortaras",
+        "se acortara",
+        "nos acortáramos",
+        "os acortarais",
+        "se acortaran"
+      ],
+      "Imperfect (-se)": [
+        "me acortase",
+        "te acortases",
+        "se acortase",
+        "nos acortásemos",
+        "os acortaseis",
+        "se acortasen"
+      ],
+      "Future": [
+        "me acortare",
+        "te acortares",
+        "se acortare",
+        "nos acortáremos",
+        "os acortareis",
+        "se acortaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acórtate", "acórtese", "acortémonos", "acortaos", "acórtense"],
+      "Negative": [
+        "no te acortes",
+        "no se acorte",
+        "no nos acortemos",
+        "no os acortéis",
+        "no se acorten"
+      ]
+    },
+    "Present Participle": "acortando",
+    "Past Participle": "acortado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acortarse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me acorto",
+        "te acortas",
+        "se acorta",
+        "nos acortamos",
+        "os acortáis",
+        "se acortan"
+      ],
+      "Preterite": [
+        "me acorté",
+        "te acortaste",
+        "se acortó",
+        "nos acortamos",
+        "os acortasteis",
+        "se acortaron"
+      ],
+      "Imperfect": [
+        "me acortaba",
+        "te acortabas",
+        "se acortaba",
+        "nos acortábamos",
+        "os acortabais",
+        "se acortaban"
+      ],
+      "Conditional": [
+        "me acortaría",
+        "te acortarías",
+        "se acortaría",
+        "nos acortaríamos",
+        "os acortaríais",
+        "se acortarían"
+      ],
+      "Future": [
+        "me acortaré",
+        "te acortarás",
+        "se acortará",
+        "nos acortaremos",
+        "os acortaréis",
+        "se acortarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me acorte",
+        "te acortes",
+        "se acorte",
+        "nos acortemos",
+        "os acortéis",
+        "se acorten"
+      ],
+      "Imperfect (-ra)": [
+        "me acortara",
+        "te acortaras",
+        "se acortara",
+        "nos acortáramos",
+        "os acortarais u os acortaseis",
+        "se acortaran"
+      ],
+      "Imperfect (-se)": [
+        "me acortase",
+        "te acortases",
+        "se acortase",
+        "nos acortásemos",
+        "os acortaseis",
+        "se acortasen"
+      ],
+      "Future": [
+        "me acortare",
+        "te acortares",
+        "se acortare",
+        "nos acortáremos",
+        "os acortareis",
+        "se acortaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acórtate", "acórtese", "acortémonos", "acortaos", "acórtense"],
+      "Negative": [
+        "no te acortes",
+        "no se acorte",
+        "no nos acortemos",
+        "no os acortéis",
+        "no se acorten"
+      ]
+    },
+    "Present Participle": "acortando",
+    "Past Participle": "acortado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acortarse"
+}

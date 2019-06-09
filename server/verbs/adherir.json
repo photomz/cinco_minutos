@@ -1,0 +1,187 @@
+{
+  "verb": "adherir",
+  "definition": "to stick",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me adhiero",
+        "te adhieres",
+        "se adhiere",
+        "nos adherimos",
+        "os adherís",
+        "se adhieren"
+      ],
+      "Preterite": [
+        "me adherí",
+        "te adheriste",
+        "se adhirió",
+        "nos adherimos",
+        "os adheristeis",
+        "se adhirieron"
+      ],
+      "Imperfect": [
+        "me adhería",
+        "te adherías",
+        "se adhería",
+        "nos adheríamos",
+        "os adheríais",
+        "se adherían"
+      ],
+      "Conditional": [
+        "me adheriría",
+        "te adherirías",
+        "se adheriría",
+        "nos adheriríamos",
+        "os adheriríais",
+        "se adherirían"
+      ],
+      "Future": [
+        "me adheriré",
+        "te adherirás",
+        "se adherirá",
+        "nos adheriremos",
+        "os adheriréis",
+        "se adherirán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me adhiera",
+        "te adhieras",
+        "se adhiera",
+        "nos adhiramos",
+        "os adhiráis",
+        "se adhieran"
+      ],
+      "Imperfect (-ra)": [
+        "me adhiriera",
+        "te adhirieras",
+        "se adhiriera",
+        "nos adhiriéramos",
+        "os adhirierais",
+        "se adhirieran"
+      ],
+      "Imperfect (-se)": [
+        "me adhiriese",
+        "te adhirieses",
+        "se adhiriese",
+        "nos adhiriésemos",
+        "os adhirieseis",
+        "se adhiriesen"
+      ],
+      "Future": [
+        "me adhiriere",
+        "te adhirieres",
+        "se adhiriere",
+        "nos adhiriéremos",
+        "os adhiriereis",
+        "se adhirieren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["adhiérete", "adhiérase", "adhirámonos", "adheríos", "adhiéranse"],
+      "Negative": [
+        "no te adhieras",
+        "no se adhiera",
+        "no nos adhiramos",
+        "no os adhiráis",
+        "no se adhieran"
+      ]
+    },
+    "Present Participle": "adhiriendo",
+    "Past Participle": "adherido"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/adherirse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me adhiero",
+        "te adhieres",
+        "se adhiere",
+        "nos adherimos",
+        "os adherís",
+        "se adhieren"
+      ],
+      "Preterite": [
+        "me adherí",
+        "te adheriste",
+        "se adhirió",
+        "nos adherimos",
+        "os adheristeis",
+        "se adhirieron"
+      ],
+      "Imperfect": [
+        "me adhería",
+        "te adherías",
+        "se adhería",
+        "nos adheríamos",
+        "os adheríais",
+        "se adherían"
+      ],
+      "Conditional": [
+        "me adheriría",
+        "te adherirías",
+        "se adheriría",
+        "nos adheriríamos",
+        "os adheriríais",
+        "se adherirían"
+      ],
+      "Future": [
+        "me adheriré",
+        "te adherirás",
+        "se adherirá",
+        "nos adheriremos",
+        "os adheriréis",
+        "se adherirán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me adhiera",
+        "te adhieras",
+        "se adhiera",
+        "nos adhiramos",
+        "os adhiráis",
+        "se adhieran"
+      ],
+      "Imperfect (-ra)": [
+        "me adhiriera",
+        "te adhirieras",
+        "se adhiriera",
+        "nos adhiriéramos",
+        "os adhirierais u os adhirieseis",
+        "se adhirieran"
+      ],
+      "Imperfect (-se)": [
+        "me adhiriese",
+        "te adhirieses",
+        "se adhiriese",
+        "nos adhiriésemos",
+        "os adhirieseis",
+        "se adhiriesen"
+      ],
+      "Future": [
+        "me adhiriere",
+        "te adhirieres",
+        "se adhiriere",
+        "nos adhiriéremos",
+        "os adhiriereis",
+        "se adhirieren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["adhiérete", "adhiérase", "adhirámonos", "adheríos", "adhiéranse"],
+      "Negative": [
+        "no te adhieras",
+        "no se adhiera",
+        "no nos adhiramos",
+        "no os adhiráis",
+        "no se adhieran"
+      ]
+    },
+    "Present Participle": "adhiriendo",
+    "Past Participle": "adherido"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=adherirse"
+}

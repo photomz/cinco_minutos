@@ -1,0 +1,98 @@
+{
+  "verb": "acallar",
+  "definition": "to silence",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me acallo",
+        "te acallas",
+        "se acalla",
+        "nos acallamos",
+        "os acalláis",
+        "se acallan"
+      ],
+      "Preterite": [
+        "me acallé",
+        "te acallaste",
+        "se acalló",
+        "nos acallamos",
+        "os acallasteis",
+        "se acallaron"
+      ],
+      "Imperfect": [
+        "me acallaba",
+        "te acallabas",
+        "se acallaba",
+        "nos acallábamos",
+        "os acallabais",
+        "se acallaban"
+      ],
+      "Conditional": [
+        "me acallaría",
+        "te acallarías",
+        "se acallaría",
+        "nos acallaríamos",
+        "os acallaríais",
+        "se acallarían"
+      ],
+      "Future": [
+        "me acallaré",
+        "te acallarás",
+        "se acallará",
+        "nos acallaremos",
+        "os acallaréis",
+        "se acallarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me acalle",
+        "te acalles",
+        "se acalle",
+        "nos acallemos",
+        "os acalléis",
+        "se acallen"
+      ],
+      "Imperfect (-ra)": [
+        "me acallara",
+        "te acallaras",
+        "se acallara",
+        "nos acalláramos",
+        "os acallarais",
+        "se acallaran"
+      ],
+      "Imperfect (-se)": [
+        "me acallase",
+        "te acallases",
+        "se acallase",
+        "nos acallásemos",
+        "os acallaseis",
+        "se acallasen"
+      ],
+      "Future": [
+        "me acallare",
+        "te acallares",
+        "se acallare",
+        "nos acalláremos",
+        "os acallareis",
+        "se acallaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acállate", "acállese", "acallémonos", "acallaos", "acállense"],
+      "Negative": [
+        "no te acalles",
+        "no se acalle",
+        "no nos acallemos",
+        "no os acalléis",
+        "no se acallen"
+      ]
+    },
+    "Present Participle": "acallando",
+    "Past Participle": "acallado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/agallarse",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=agallarse"
+}

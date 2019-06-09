@@ -1,0 +1,84 @@
+{
+  "verb": "adobar",
+  "definition": "to marinate",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["me adobo", "te adobas", "se adoba", "nos adobamos", "os adobáis", "se adoban"],
+      "Preterite": [
+        "me adobé",
+        "te adobaste",
+        "se adobó",
+        "nos adobamos",
+        "os adobasteis",
+        "se adobaron"
+      ],
+      "Imperfect": [
+        "me adobaba",
+        "te adobabas",
+        "se adobaba",
+        "nos adobábamos",
+        "os adobabais",
+        "se adobaban"
+      ],
+      "Conditional": [
+        "me adobaría",
+        "te adobarías",
+        "se adobaría",
+        "nos adobaríamos",
+        "os adobaríais",
+        "se adobarían"
+      ],
+      "Future": [
+        "me adobaré",
+        "te adobarás",
+        "se adobará",
+        "nos adobaremos",
+        "os adobaréis",
+        "se adobarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["me adobe", "te adobes", "se adobe", "nos adobemos", "os adobéis", "se adoben"],
+      "Imperfect (-ra)": [
+        "me adobara",
+        "te adobaras",
+        "se adobara",
+        "nos adobáramos",
+        "os adobarais",
+        "se adobaran"
+      ],
+      "Imperfect (-se)": [
+        "me adobase",
+        "te adobases",
+        "se adobase",
+        "nos adobásemos",
+        "os adobaseis",
+        "se adobasen"
+      ],
+      "Future": [
+        "me adobare",
+        "te adobares",
+        "se adobare",
+        "nos adobáremos",
+        "os adobareis",
+        "se adobaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["adóbate", "adóbese", "adobémonos", "adobaos", "adóbense"],
+      "Negative": [
+        "no te adobes",
+        "no se adobe",
+        "no nos adobemos",
+        "no os adobéis",
+        "no se adoben"
+      ]
+    },
+    "Present Participle": "adobando",
+    "Past Participle": "adobado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/adobarse",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=adobarse"
+}

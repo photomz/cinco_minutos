@@ -1,0 +1,98 @@
+{
+  "verb": "abocinar",
+  "definition": "to shape , turn , fall on your face , fall flat on your face",
+  "reflexive": false,
+  "spanishdict": null,
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/abocinarse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me abocino",
+        "te abocinas",
+        "se abocina",
+        "nos abocinamos",
+        "os abocináis",
+        "se abocinan"
+      ],
+      "Preterite": [
+        "me abociné",
+        "te abocinaste",
+        "se abocinó",
+        "nos abocinamos",
+        "os abocinasteis",
+        "se abocinaron"
+      ],
+      "Imperfect": [
+        "me abocinaba",
+        "te abocinabas",
+        "se abocinaba",
+        "nos abocinábamos",
+        "os abocinabais",
+        "se abocinaban"
+      ],
+      "Conditional": [
+        "me abocinaría",
+        "te abocinarías",
+        "se abocinaría",
+        "nos abocinaríamos",
+        "os abocinaríais",
+        "se abocinarían"
+      ],
+      "Future": [
+        "me abocinaré",
+        "te abocinarás",
+        "se abocinará",
+        "nos abocinaremos",
+        "os abocinaréis",
+        "se abocinarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me abocine",
+        "te abocines",
+        "se abocine",
+        "nos abocinemos",
+        "os abocinéis",
+        "se abocinen"
+      ],
+      "Imperfect (-ra)": [
+        "me abocinara",
+        "te abocinaras",
+        "se abocinara",
+        "nos abocináramos",
+        "os abocinarais u os abocinaseis",
+        "se abocinaran"
+      ],
+      "Imperfect (-se)": [
+        "me abocinase",
+        "te abocinases",
+        "se abocinase",
+        "nos abocinásemos",
+        "os abocinaseis",
+        "se abocinasen"
+      ],
+      "Future": [
+        "me abocinare",
+        "te abocinares",
+        "se abocinare",
+        "nos abocináremos",
+        "os abocinareis",
+        "se abocinaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["abocínate", "abocínese", "abocinémonos", "abocinaos", "abocínense"],
+      "Negative": [
+        "no te abocines",
+        "no se abocine",
+        "no nos abocinemos",
+        "no os abocinéis",
+        "no se abocinen"
+      ]
+    },
+    "Present Participle": "abocinando",
+    "Past Participle": "abocinado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=abocinarse"
+}

@@ -1,0 +1,71 @@
+{
+  "verb": "adocenar",
+  "definition": "to dozens , become commonplace , divide",
+  "reflexive": false,
+  "spanishdict": null,
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/adocenar",
+  "wordreference": {
+    "Indicative": {
+      "Present": ["adoceno", "adocenas", "adocena", "adocenamos", "adocenáis", "adocenan"],
+      "Preterite": ["adocené", "adocenaste", "adocenó", "adocenamos", "adocenasteis", "adocenaron"],
+      "Imperfect": [
+        "adocenaba",
+        "adocenabas",
+        "adocenaba",
+        "adocenábamos",
+        "adocenabais",
+        "adocenaban"
+      ],
+      "Conditional": [
+        "adocenaría",
+        "adocenarías",
+        "adocenaría",
+        "adocenaríamos",
+        "adocenaríais",
+        "adocenarían"
+      ],
+      "Future": [
+        "adocenaré",
+        "adocenarás",
+        "adocenará",
+        "adocenaremos",
+        "adocenaréis",
+        "adocenarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["adocene", "adocenes", "adocene", "adocenemos", "adocenéis", "adocenen"],
+      "Imperfect (-ra)": [
+        "adocenara",
+        "adocenaras",
+        "adocenara",
+        "adocenáramos",
+        "adocenarais",
+        "adocenaran"
+      ],
+      "Imperfect (-se)": [
+        "adocenase",
+        "adocenases",
+        "adocenase",
+        "adocenásemos",
+        "adocenaseis",
+        "adocenasen"
+      ],
+      "Future": [
+        "adocenare",
+        "adocenares",
+        "adocenare",
+        "adocenáremos",
+        "adocenareis",
+        "adocenaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["adocena", "adocene", "adocenemos", "adocenad", "adocenen"],
+      "Negative": ["no adocenes", "no adocene", "no adocenemos", "no adocenéis", "no adocenen"]
+    },
+    "Present Participle": "adocenando",
+    "Past Participle": "adocenado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=adocenar"
+}

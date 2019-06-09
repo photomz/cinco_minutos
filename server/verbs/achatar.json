@@ -1,0 +1,187 @@
+{
+  "verb": "achatar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me achato",
+        "te achatas",
+        "se achata",
+        "nos achatamos",
+        "os achatáis",
+        "se achatan"
+      ],
+      "Preterite": [
+        "me achaté",
+        "te achataste",
+        "se acható",
+        "nos achatamos",
+        "os achatasteis",
+        "se achataron"
+      ],
+      "Imperfect": [
+        "me achataba",
+        "te achatabas",
+        "se achataba",
+        "nos achatábamos",
+        "os achatabais",
+        "se achataban"
+      ],
+      "Conditional": [
+        "me achataría",
+        "te achatarías",
+        "se achataría",
+        "nos achataríamos",
+        "os achataríais",
+        "se achatarían"
+      ],
+      "Future": [
+        "me achataré",
+        "te achatarás",
+        "se achatará",
+        "nos achataremos",
+        "os achataréis",
+        "se achatarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me achate",
+        "te achates",
+        "se achate",
+        "nos achatemos",
+        "os achatéis",
+        "se achaten"
+      ],
+      "Imperfect (-ra)": [
+        "me achatara",
+        "te achataras",
+        "se achatara",
+        "nos achatáramos",
+        "os achatarais",
+        "se achataran"
+      ],
+      "Imperfect (-se)": [
+        "me achatase",
+        "te achatases",
+        "se achatase",
+        "nos achatásemos",
+        "os achataseis",
+        "se achatasen"
+      ],
+      "Future": [
+        "me achatare",
+        "te achatares",
+        "se achatare",
+        "nos achatáremos",
+        "os achatareis",
+        "se achataren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["achátate", "achátese", "achatémonos", "achataos", "achátense"],
+      "Negative": [
+        "no te achates",
+        "no se achate",
+        "no nos achatemos",
+        "no os achatéis",
+        "no se achaten"
+      ]
+    },
+    "Present Participle": "achatando",
+    "Past Participle": "achatado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/achatarse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me achato",
+        "te achatas",
+        "se achata",
+        "nos achatamos",
+        "os achatáis",
+        "se achatan"
+      ],
+      "Preterite": [
+        "me achaté",
+        "te achataste",
+        "se acható",
+        "nos achatamos",
+        "os achatasteis",
+        "se achataron"
+      ],
+      "Imperfect": [
+        "me achataba",
+        "te achatabas",
+        "se achataba",
+        "nos achatábamos",
+        "os achatabais",
+        "se achataban"
+      ],
+      "Conditional": [
+        "me achataría",
+        "te achatarías",
+        "se achataría",
+        "nos achataríamos",
+        "os achataríais",
+        "se achatarían"
+      ],
+      "Future": [
+        "me achataré",
+        "te achatarás",
+        "se achatará",
+        "nos achataremos",
+        "os achataréis",
+        "se achatarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me achate",
+        "te achates",
+        "se achate",
+        "nos achatemos",
+        "os achatéis",
+        "se achaten"
+      ],
+      "Imperfect (-ra)": [
+        "me achatara",
+        "te achataras",
+        "se achatara",
+        "nos achatáramos",
+        "os achatarais u os achataseis",
+        "se achataran"
+      ],
+      "Imperfect (-se)": [
+        "me achatase",
+        "te achatases",
+        "se achatase",
+        "nos achatásemos",
+        "os achataseis",
+        "se achatasen"
+      ],
+      "Future": [
+        "me achatare",
+        "te achatares",
+        "se achatare",
+        "nos achatáremos",
+        "os achatareis",
+        "se achataren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["achátate", "achátese", "achatémonos", "achataos", "achátense"],
+      "Negative": [
+        "no te achates",
+        "no se achate",
+        "no nos achatemos",
+        "no os achatéis",
+        "no se achaten"
+      ]
+    },
+    "Present Participle": "achatando",
+    "Past Participle": "achatado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=achatarse"
+}

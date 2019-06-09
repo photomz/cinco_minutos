@@ -1,0 +1,187 @@
+{
+  "verb": "abrigar",
+  "definition": "to wrap up",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me abrigo",
+        "te abrigas",
+        "se abriga",
+        "nos abrigamos",
+        "os abrigáis",
+        "se abrigan"
+      ],
+      "Preterite": [
+        "me abrigué",
+        "te abrigaste",
+        "se abrigó",
+        "nos abrigamos",
+        "os abrigasteis",
+        "se abrigaron"
+      ],
+      "Imperfect": [
+        "me abrigaba",
+        "te abrigabas",
+        "se abrigaba",
+        "nos abrigábamos",
+        "os abrigabais",
+        "se abrigaban"
+      ],
+      "Conditional": [
+        "me abrigaría",
+        "te abrigarías",
+        "se abrigaría",
+        "nos abrigaríamos",
+        "os abrigaríais",
+        "se abrigarían"
+      ],
+      "Future": [
+        "me abrigaré",
+        "te abrigarás",
+        "se abrigará",
+        "nos abrigaremos",
+        "os abrigaréis",
+        "se abrigarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me abrigue",
+        "te abrigues",
+        "se abrigue",
+        "nos abriguemos",
+        "os abriguéis",
+        "se abriguen"
+      ],
+      "Imperfect (-ra)": [
+        "me abrigara",
+        "te abrigaras",
+        "se abrigara",
+        "nos abrigáramos",
+        "os abrigarais",
+        "se abrigaran"
+      ],
+      "Imperfect (-se)": [
+        "me abrigase",
+        "te abrigases",
+        "se abrigase",
+        "nos abrigásemos",
+        "os abrigaseis",
+        "se abrigasen"
+      ],
+      "Future": [
+        "me abrigare",
+        "te abrigares",
+        "se abrigare",
+        "nos abrigáremos",
+        "os abrigareis",
+        "se abrigaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["abrígate", "abríguese", "abriguémonos", "abrigaos", "abríguense"],
+      "Negative": [
+        "no te abrigues",
+        "no se abrigue",
+        "no nos abriguemos",
+        "no os abriguéis",
+        "no se abriguen"
+      ]
+    },
+    "Present Participle": "abrigando",
+    "Past Participle": "abrigado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/abrigarse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me abrigo",
+        "te abrigas",
+        "se abriga",
+        "nos abrigamos",
+        "os abrigáis",
+        "se abrigan"
+      ],
+      "Preterite": [
+        "me abrigué",
+        "te abrigaste",
+        "se abrigó",
+        "nos abrigamos",
+        "os abrigasteis",
+        "se abrigaron"
+      ],
+      "Imperfect": [
+        "me abrigaba",
+        "te abrigabas",
+        "se abrigaba",
+        "nos abrigábamos",
+        "os abrigabais",
+        "se abrigaban"
+      ],
+      "Conditional": [
+        "me abrigaría",
+        "te abrigarías",
+        "se abrigaría",
+        "nos abrigaríamos",
+        "os abrigaríais",
+        "se abrigarían"
+      ],
+      "Future": [
+        "me abrigaré",
+        "te abrigarás",
+        "se abrigará",
+        "nos abrigaremos",
+        "os abrigaréis",
+        "se abrigarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me abrigue",
+        "te abrigues",
+        "se abrigue",
+        "nos abriguemos",
+        "os abriguéis",
+        "se abriguen"
+      ],
+      "Imperfect (-ra)": [
+        "me abrigara",
+        "te abrigaras",
+        "se abrigara",
+        "nos abrigáramos",
+        "os abrigarais u os abrigaseis",
+        "se abrigaran"
+      ],
+      "Imperfect (-se)": [
+        "me abrigase",
+        "te abrigases",
+        "se abrigase",
+        "nos abrigásemos",
+        "os abrigaseis",
+        "se abrigasen"
+      ],
+      "Future": [
+        "me abrigare",
+        "te abrigares",
+        "se abrigare",
+        "nos abrigáremos",
+        "os abrigareis",
+        "se abrigaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["abrígate", "abríguese", "abriguémonos", "abrigaos", "abríguense"],
+      "Negative": [
+        "no te abrigues",
+        "no se abrigue",
+        "no nos abriguemos",
+        "no os abriguéis",
+        "no se abriguen"
+      ]
+    },
+    "Present Participle": "abrigando",
+    "Past Participle": "abrigado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=abrigarse"
+}

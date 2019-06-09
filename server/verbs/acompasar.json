@@ -1,0 +1,147 @@
+{
+  "verb": "acompasar",
+  "definition": "to keep in step with",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["acompaso", "acompasas", "acompasa", "acompasamos", "acompasáis", "acompasan"],
+      "Preterite": [
+        "acompasé",
+        "acompasaste",
+        "acompasó",
+        "acompasamos",
+        "acompasasteis",
+        "acompasaron"
+      ],
+      "Imperfect": [
+        "acompasaba",
+        "acompasabas",
+        "acompasaba",
+        "acompasábamos",
+        "acompasabais",
+        "acompasaban"
+      ],
+      "Conditional": [
+        "acompasaría",
+        "acompasarías",
+        "acompasaría",
+        "acompasaríamos",
+        "acompasaríais",
+        "acompasarían"
+      ],
+      "Future": [
+        "acompasaré",
+        "acompasarás",
+        "acompasará",
+        "acompasaremos",
+        "acompasaréis",
+        "acompasarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["acompase", "acompases", "acompase", "acompasemos", "acompaséis", "acompasen"],
+      "Imperfect (-ra)": [
+        "acompasara",
+        "acompasaras",
+        "acompasara",
+        "acompasáramos",
+        "acompasarais",
+        "acompasaran"
+      ],
+      "Imperfect (-se)": [
+        "acompasase",
+        "acompasases",
+        "acompasase",
+        "acompasásemos",
+        "acompasaseis",
+        "acompasasen"
+      ],
+      "Future": [
+        "acompasare",
+        "acompasares",
+        "acompasare",
+        "acompasáremos",
+        "acompasareis",
+        "acompasaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acompasa", "acompase", "acompasemos", "acompasad", "acompasen"],
+      "Negative": ["no acompases", "no acompase", "no acompasemos", "no acompaséis", "no acompasen"]
+    },
+    "Present Participle": "acompasando",
+    "Past Participle": "acompasado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acompasar",
+  "wordreference": {
+    "Indicative": {
+      "Present": ["acompaso", "acompasas", "acompasa", "acompasamos", "acompasáis", "acompasan"],
+      "Preterite": [
+        "acompasé",
+        "acompasaste",
+        "acompasó",
+        "acompasamos",
+        "acompasasteis",
+        "acompasaron"
+      ],
+      "Imperfect": [
+        "acompasaba",
+        "acompasabas",
+        "acompasaba",
+        "acompasábamos",
+        "acompasabais",
+        "acompasaban"
+      ],
+      "Conditional": [
+        "acompasaría",
+        "acompasarías",
+        "acompasaría",
+        "acompasaríamos",
+        "acompasaríais",
+        "acompasarían"
+      ],
+      "Future": [
+        "acompasaré",
+        "acompasarás",
+        "acompasará",
+        "acompasaremos",
+        "acompasaréis",
+        "acompasarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["acompase", "acompases", "acompase", "acompasemos", "acompaséis", "acompasen"],
+      "Imperfect (-ra)": [
+        "acompasara",
+        "acompasaras",
+        "acompasara",
+        "acompasáramos",
+        "acompasarais",
+        "acompasaran"
+      ],
+      "Imperfect (-se)": [
+        "acompasase",
+        "acompasases",
+        "acompasase",
+        "acompasásemos",
+        "acompasaseis",
+        "acompasasen"
+      ],
+      "Future": [
+        "acompasare",
+        "acompasares",
+        "acompasare",
+        "acompasáremos",
+        "acompasareis",
+        "acompasaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acompasa", "acompase", "acompasemos", "acompasad", "acompasen"],
+      "Negative": ["no acompases", "no acompase", "no acompasemos", "no acompaséis", "no acompasen"]
+    },
+    "Present Participle": "acompasando",
+    "Past Participle": "acompasado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acompasar"
+}

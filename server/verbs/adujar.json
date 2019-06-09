@@ -1,0 +1,84 @@
+{
+  "verb": "adujar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["me adujo", "te adujas", "se aduja", "nos adujamos", "os adujáis", "se adujan"],
+      "Preterite": [
+        "me adujé",
+        "te adujaste",
+        "se adujó",
+        "nos adujamos",
+        "os adujasteis",
+        "se adujaron"
+      ],
+      "Imperfect": [
+        "me adujaba",
+        "te adujabas",
+        "se adujaba",
+        "nos adujábamos",
+        "os adujabais",
+        "se adujaban"
+      ],
+      "Conditional": [
+        "me adujaría",
+        "te adujarías",
+        "se adujaría",
+        "nos adujaríamos",
+        "os adujaríais",
+        "se adujarían"
+      ],
+      "Future": [
+        "me adujaré",
+        "te adujarás",
+        "se adujará",
+        "nos adujaremos",
+        "os adujaréis",
+        "se adujarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["me aduje", "te adujes", "se aduje", "nos adujemos", "os adujéis", "se adujen"],
+      "Imperfect (-ra)": [
+        "me adujara",
+        "te adujaras",
+        "se adujara",
+        "nos adujáramos",
+        "os adujarais",
+        "se adujaran"
+      ],
+      "Imperfect (-se)": [
+        "me adujase",
+        "te adujases",
+        "se adujase",
+        "nos adujásemos",
+        "os adujaseis",
+        "se adujasen"
+      ],
+      "Future": [
+        "me adujare",
+        "te adujares",
+        "se adujare",
+        "nos adujáremos",
+        "os adujareis",
+        "se adujaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["adújate", "adújese", "adujémonos", "adujaos", "adújense"],
+      "Negative": [
+        "no te adujes",
+        "no se aduje",
+        "no nos adujemos",
+        "no os adujéis",
+        "no se adujen"
+      ]
+    },
+    "Present Participle": "adujando",
+    "Past Participle": "adujado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/adujarse",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=adujarse"
+}

@@ -1,0 +1,91 @@
+{
+  "verb": "abolir",
+  "definition": "to abolish",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["abolo", "aboles", "abole", "abolimos", "abolís", "abolen"],
+      "Preterite": ["abolí", "aboliste", "abolió", "abolimos", "abolisteis", "abolieron"],
+      "Imperfect": ["abolía", "abolías", "abolía", "abolíamos", "abolíais", "abolían"],
+      "Conditional": [
+        "aboliría",
+        "abolirías",
+        "aboliría",
+        "aboliríamos",
+        "aboliríais",
+        "abolirían"
+      ],
+      "Future": ["aboliré", "abolirás", "abolirá", "aboliremos", "aboliréis", "abolirán"]
+    },
+    "Subjunctive": {
+      "Present": ["abola", "abolas", "abola", "abolamos", "aboláis", "abolan"],
+      "Imperfect (-ra)": [
+        "aboliera",
+        "abolieras",
+        "aboliera",
+        "aboliéramos",
+        "abolierais",
+        "abolieran"
+      ],
+      "Imperfect (-se)": [
+        "aboliese",
+        "abolieses",
+        "aboliese",
+        "aboliésemos",
+        "abolieseis",
+        "aboliesen"
+      ],
+      "Future": ["aboliere", "abolieres", "aboliere", "aboliéremos", "aboliereis", "abolieren"]
+    },
+    "Imperative": {
+      "Affirmative": ["abole", "abola", "abolamos", "abolid", "abolan"],
+      "Negative": ["no abolas", "no abola", "no abolamos", "no aboláis", "no abolan"]
+    },
+    "Present Participle": "aboliendo",
+    "Past Participle": "abolido"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/abolir",
+  "wordreference": {
+    "Indicative": {
+      "Present": ["abolo", "aboles", "abole", "abolimos", "abolís", "abolen"],
+      "Preterite": ["abolí", "aboliste", "abolió", "abolimos", "abolisteis", "abolieron"],
+      "Imperfect": ["abolía", "abolías", "abolía", "abolíamos", "abolíais", "abolían"],
+      "Conditional": [
+        "aboliría",
+        "abolirías",
+        "aboliría",
+        "aboliríamos",
+        "aboliríais",
+        "abolirían"
+      ],
+      "Future": ["aboliré", "abolirás", "abolirá", "aboliremos", "aboliréis", "abolirán"]
+    },
+    "Subjunctive": {
+      "Present": ["abola", "abolas", "abola", "abolamos", "aboláis", "abolan"],
+      "Imperfect (-ra)": [
+        "aboliera",
+        "abolieras",
+        "aboliera",
+        "aboliéramos",
+        "abolierais",
+        "abolieran"
+      ],
+      "Imperfect (-se)": [
+        "aboliese",
+        "abolieses",
+        "aboliese",
+        "aboliésemos",
+        "abolieseis",
+        "aboliesen"
+      ],
+      "Future": ["aboliere", "abolieres", "aboliere", "aboliéremos", "aboliereis", "abolieren"]
+    },
+    "Imperative": {
+      "Affirmative": ["abole", "abola", "abolamos", "abolid", "abolan"],
+      "Negative": ["no abolas", "no abola", "no abolamos", "no aboláis", "no abolan"]
+    },
+    "Present Participle": "aboliendo",
+    "Past Participle": "abolido"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=abolir"
+}

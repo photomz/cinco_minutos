@@ -1,0 +1,78 @@
+{
+  "verb": "adelantar",
+  "definition": "to pass",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["adelanto", "adelantas", "adelanta", "adelantamos", "adelantáis", "adelantan"],
+      "Preterite": [
+        "adelanté",
+        "adelantaste",
+        "adelantó",
+        "adelantamos",
+        "adelantasteis",
+        "adelantaron"
+      ],
+      "Imperfect": [
+        "adelantaba",
+        "adelantabas",
+        "adelantaba",
+        "adelantábamos",
+        "adelantabais",
+        "adelantaban"
+      ],
+      "Conditional": [
+        "adelantaría",
+        "adelantarías",
+        "adelantaría",
+        "adelantaríamos",
+        "adelantaríais",
+        "adelantarían"
+      ],
+      "Future": [
+        "adelantaré",
+        "adelantarás",
+        "adelantará",
+        "adelantaremos",
+        "adelantaréis",
+        "adelantarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["adelante", "adelantes", "adelante", "adelantemos", "adelantéis", "adelanten"],
+      "Imperfect (-ra)": [
+        "adelantara",
+        "adelantaras",
+        "adelantara",
+        "adelantáramos",
+        "adelantarais",
+        "adelantaran"
+      ],
+      "Imperfect (-se)": [
+        "adelantase",
+        "adelantases",
+        "adelantase",
+        "adelantásemos",
+        "adelantaseis",
+        "adelantasen"
+      ],
+      "Future": [
+        "adelantare",
+        "adelantares",
+        "adelantare",
+        "adelantáremos",
+        "adelantareis",
+        "adelantaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["adelanta", "adelante", "adelantemos", "adelantad", "adelanten"],
+      "Negative": ["no adelantes", "no adelante", "no adelantemos", "no adelantéis", "no adelanten"]
+    },
+    "Present Participle": "adelantando",
+    "Past Participle": "adelantado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/adelantrar",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=adelantrar"
+}

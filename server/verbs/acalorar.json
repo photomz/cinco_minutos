@@ -1,0 +1,187 @@
+{
+  "verb": "acalorar",
+  "definition": "to make hot",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me acaloro",
+        "te acaloras",
+        "se acalora",
+        "nos acaloramos",
+        "os acaloráis",
+        "se acaloran"
+      ],
+      "Preterite": [
+        "me acaloré",
+        "te acaloraste",
+        "se acaloró",
+        "nos acaloramos",
+        "os acalorasteis",
+        "se acaloraron"
+      ],
+      "Imperfect": [
+        "me acaloraba",
+        "te acalorabas",
+        "se acaloraba",
+        "nos acalorábamos",
+        "os acalorabais",
+        "se acaloraban"
+      ],
+      "Conditional": [
+        "me acaloraría",
+        "te acalorarías",
+        "se acaloraría",
+        "nos acaloraríamos",
+        "os acaloraríais",
+        "se acalorarían"
+      ],
+      "Future": [
+        "me acaloraré",
+        "te acalorarás",
+        "se acalorará",
+        "nos acaloraremos",
+        "os acaloraréis",
+        "se acalorarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me acalore",
+        "te acalores",
+        "se acalore",
+        "nos acaloremos",
+        "os acaloréis",
+        "se acaloren"
+      ],
+      "Imperfect (-ra)": [
+        "me acalorara",
+        "te acaloraras",
+        "se acalorara",
+        "nos acaloráramos",
+        "os acalorarais",
+        "se acaloraran"
+      ],
+      "Imperfect (-se)": [
+        "me acalorase",
+        "te acalorases",
+        "se acalorase",
+        "nos acalorásemos",
+        "os acaloraseis",
+        "se acalorasen"
+      ],
+      "Future": [
+        "me acalorare",
+        "te acalorares",
+        "se acalorare",
+        "nos acaloráremos",
+        "os acalorareis",
+        "se acaloraren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acalórate", "acalórese", "acalorémonos", "acaloraos", "acalórense"],
+      "Negative": [
+        "no te acalores",
+        "no se acalore",
+        "no nos acaloremos",
+        "no os acaloréis",
+        "no se acaloren"
+      ]
+    },
+    "Present Participle": "acalorando",
+    "Past Participle": "acalorado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acalorarse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me acaloro",
+        "te acaloras",
+        "se acalora",
+        "nos acaloramos",
+        "os acaloráis",
+        "se acaloran"
+      ],
+      "Preterite": [
+        "me acaloré",
+        "te acaloraste",
+        "se acaloró",
+        "nos acaloramos",
+        "os acalorasteis",
+        "se acaloraron"
+      ],
+      "Imperfect": [
+        "me acaloraba",
+        "te acalorabas",
+        "se acaloraba",
+        "nos acalorábamos",
+        "os acalorabais",
+        "se acaloraban"
+      ],
+      "Conditional": [
+        "me acaloraría",
+        "te acalorarías",
+        "se acaloraría",
+        "nos acaloraríamos",
+        "os acaloraríais",
+        "se acalorarían"
+      ],
+      "Future": [
+        "me acaloraré",
+        "te acalorarás",
+        "se acalorará",
+        "nos acaloraremos",
+        "os acaloraréis",
+        "se acalorarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me acalore",
+        "te acalores",
+        "se acalore",
+        "nos acaloremos",
+        "os acaloréis",
+        "se acaloren"
+      ],
+      "Imperfect (-ra)": [
+        "me acalorara",
+        "te acaloraras",
+        "se acalorara",
+        "nos acaloráramos",
+        "os acalorarais u os acaloraseis",
+        "se acaloraran"
+      ],
+      "Imperfect (-se)": [
+        "me acalorase",
+        "te acalorases",
+        "se acalorase",
+        "nos acalorásemos",
+        "os acaloraseis",
+        "se acalorasen"
+      ],
+      "Future": [
+        "me acalorare",
+        "te acalorares",
+        "se acalorare",
+        "nos acaloráremos",
+        "os acalorareis",
+        "se acaloraren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acalórate", "acalórese", "acalorémonos", "acaloraos", "acalórense"],
+      "Negative": [
+        "no te acalores",
+        "no se acalore",
+        "no nos acaloremos",
+        "no os acaloréis",
+        "no se acaloren"
+      ]
+    },
+    "Present Participle": "acalorando",
+    "Past Participle": "acalorado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acalorarse"
+}

@@ -1,0 +1,78 @@
+{
+  "verb": "acerrojar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["acerrojo", "acerrojas", "acerroja", "acerrojamos", "acerrojáis", "acerrojan"],
+      "Preterite": [
+        "acerrojé",
+        "acerrojaste",
+        "acerrojó",
+        "acerrojamos",
+        "acerrojasteis",
+        "acerrojaron"
+      ],
+      "Imperfect": [
+        "acerrojaba",
+        "acerrojabas",
+        "acerrojaba",
+        "acerrojábamos",
+        "acerrojabais",
+        "acerrojaban"
+      ],
+      "Conditional": [
+        "acerrojaría",
+        "acerrojarías",
+        "acerrojaría",
+        "acerrojaríamos",
+        "acerrojaríais",
+        "acerrojarían"
+      ],
+      "Future": [
+        "acerrojaré",
+        "acerrojarás",
+        "acerrojará",
+        "acerrojaremos",
+        "acerrojaréis",
+        "acerrojarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["acerroje", "acerrojes", "acerroje", "acerrojemos", "acerrojéis", "acerrojen"],
+      "Imperfect (-ra)": [
+        "acerrojara",
+        "acerrojaras",
+        "acerrojara",
+        "acerrojáramos",
+        "acerrojarais",
+        "acerrojaran"
+      ],
+      "Imperfect (-se)": [
+        "acerrojase",
+        "acerrojases",
+        "acerrojase",
+        "acerrojásemos",
+        "acerrojaseis",
+        "acerrojasen"
+      ],
+      "Future": [
+        "acerrojare",
+        "acerrojares",
+        "acerrojare",
+        "acerrojáremos",
+        "acerrojareis",
+        "acerrojaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acerroja", "acerroje", "acerrojemos", "acerrojad", "acerrojen"],
+      "Negative": ["no acerrojes", "no acerroje", "no acerrojemos", "no acerrojéis", "no acerrojen"]
+    },
+    "Present Participle": "acerrojando",
+    "Past Participle": "acerrojado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acerrojar",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acerrojar"
+}

@@ -1,0 +1,98 @@
+{
+  "verb": "accidental",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": null,
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/accidentar",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "accidento",
+        "accidentas",
+        "accidenta",
+        "accidentamos",
+        "accidentáis",
+        "accidentan"
+      ],
+      "Preterite": [
+        "accidenté",
+        "accidentaste",
+        "accidentó",
+        "accidentamos",
+        "accidentasteis",
+        "accidentaron"
+      ],
+      "Imperfect": [
+        "accidentaba",
+        "accidentabas",
+        "accidentaba",
+        "accidentábamos",
+        "accidentabais",
+        "accidentaban"
+      ],
+      "Conditional": [
+        "accidentaría",
+        "accidentarías",
+        "accidentaría",
+        "accidentaríamos",
+        "accidentaríais",
+        "accidentarían"
+      ],
+      "Future": [
+        "accidentaré",
+        "accidentarás",
+        "accidentará",
+        "accidentaremos",
+        "accidentaréis",
+        "accidentarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "accidente",
+        "accidentes",
+        "accidente",
+        "accidentemos",
+        "accidentéis",
+        "accidenten"
+      ],
+      "Imperfect (-ra)": [
+        "accidentara",
+        "accidentaras",
+        "accidentara",
+        "accidentáramos",
+        "accidentarais",
+        "accidentaran"
+      ],
+      "Imperfect (-se)": [
+        "accidentase",
+        "accidentases",
+        "accidentase",
+        "accidentásemos",
+        "accidentaseis",
+        "accidentasen"
+      ],
+      "Future": [
+        "accidentare",
+        "accidentares",
+        "accidentare",
+        "accidentáremos",
+        "accidentareis",
+        "accidentaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["accidenta", "accidente", "accidentemos", "accidentad", "accidenten"],
+      "Negative": [
+        "no accidentes",
+        "no accidente",
+        "no accidentemos",
+        "no accidentéis",
+        "no accidenten"
+      ]
+    },
+    "Present Participle": "accidentando",
+    "Past Participle": "accidentado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=accidentar"
+}

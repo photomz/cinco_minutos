@@ -1,0 +1,187 @@
+{
+  "verb": "acentuar",
+  "definition": "to accent",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me acentúo",
+        "te acentúas",
+        "se acentúa",
+        "nos acentuamos",
+        "os acentuáis",
+        "se acentúan"
+      ],
+      "Preterite": [
+        "me acentué",
+        "te acentuaste",
+        "se acentuó",
+        "nos acentuamos",
+        "os acentuasteis",
+        "se acentuaron"
+      ],
+      "Imperfect": [
+        "me acentuaba",
+        "te acentuabas",
+        "se acentuaba",
+        "nos acentuábamos",
+        "os acentuabais",
+        "se acentuaban"
+      ],
+      "Conditional": [
+        "me acentuaría",
+        "te acentuarías",
+        "se acentuaría",
+        "nos acentuaríamos",
+        "os acentuaríais",
+        "se acentuarían"
+      ],
+      "Future": [
+        "me acentuaré",
+        "te acentuarás",
+        "se acentuará",
+        "nos acentuaremos",
+        "os acentuaréis",
+        "se acentuarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me acentúe",
+        "te acentúes",
+        "se acentúe",
+        "nos acentuemos",
+        "os acentuéis",
+        "se acentúen"
+      ],
+      "Imperfect (-ra)": [
+        "me acentuara",
+        "te acentuaras",
+        "se acentuara",
+        "nos acentuáramos",
+        "os acentuarais",
+        "se acentuaran"
+      ],
+      "Imperfect (-se)": [
+        "me acentuase",
+        "te acentuases",
+        "se acentuase",
+        "nos acentuásemos",
+        "os acentuaseis",
+        "se acentuasen"
+      ],
+      "Future": [
+        "me acentuare",
+        "te acentuares",
+        "se acentuare",
+        "nos acentuáremos",
+        "os acentuareis",
+        "se acentuaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acentúate", "acentúese", "acentuémonos", "acentuaos", "acentúense"],
+      "Negative": [
+        "no te acentúes",
+        "no se acentúe",
+        "no nos acentuemos",
+        "no os acentuéis",
+        "no se acentúen"
+      ]
+    },
+    "Present Participle": "acentuando",
+    "Past Participle": "acentuado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acentuarse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me acentúo",
+        "te acentúas",
+        "se acentúa",
+        "nos acentuamos",
+        "os acentuáis",
+        "se acentúan"
+      ],
+      "Preterite": [
+        "me acentué",
+        "te acentuaste",
+        "se acentuó",
+        "nos acentuamos",
+        "os acentuasteis",
+        "se acentuaron"
+      ],
+      "Imperfect": [
+        "me acentuaba",
+        "te acentuabas",
+        "se acentuaba",
+        "nos acentuábamos",
+        "os acentuabais",
+        "se acentuaban"
+      ],
+      "Conditional": [
+        "me acentuaría",
+        "te acentuarías",
+        "se acentuaría",
+        "nos acentuaríamos",
+        "os acentuaríais",
+        "se acentuarían"
+      ],
+      "Future": [
+        "me acentuaré",
+        "te acentuarás",
+        "se acentuará",
+        "nos acentuaremos",
+        "os acentuaréis",
+        "se acentuarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me acentúe",
+        "te acentúes",
+        "se acentúe",
+        "nos acentuemos",
+        "os acentuéis",
+        "se acentúen"
+      ],
+      "Imperfect (-ra)": [
+        "me acentuara",
+        "te acentuaras",
+        "se acentuara",
+        "nos acentuáramos",
+        "os acentuarais u os acentuaseis",
+        "se acentuaran"
+      ],
+      "Imperfect (-se)": [
+        "me acentuase",
+        "te acentuases",
+        "se acentuase",
+        "nos acentuásemos",
+        "os acentuaseis",
+        "se acentuasen"
+      ],
+      "Future": [
+        "me acentuare",
+        "te acentuares",
+        "se acentuare",
+        "nos acentuáremos",
+        "os acentuareis",
+        "se acentuaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acentúate", "acentúese", "acentuémonos", "acentuaos", "acentúense"],
+      "Negative": [
+        "no te acentúes",
+        "no se acentúe",
+        "no nos acentuemos",
+        "no os acentuéis",
+        "no se acentúen"
+      ]
+    },
+    "Present Participle": "acentuando",
+    "Past Participle": "acentuado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acentuarse"
+}

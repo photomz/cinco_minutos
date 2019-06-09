@@ -1,0 +1,98 @@
+{
+  "verb": "acurrucarse",
+  "definition": "to curl up , nestle, snuggle, curl up",
+  "reflexive": true,
+  "spanishdict": null,
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acurrucarse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me acurruco",
+        "te acurrucas",
+        "se acurruca",
+        "nos acurrucamos",
+        "os acurrucáis",
+        "se acurrucan"
+      ],
+      "Preterite": [
+        "me acurruqué",
+        "te acurrucaste",
+        "se acurrucó",
+        "nos acurrucamos",
+        "os acurrucasteis",
+        "se acurrucaron"
+      ],
+      "Imperfect": [
+        "me acurrucaba",
+        "te acurrucabas",
+        "se acurrucaba",
+        "nos acurrucábamos",
+        "os acurrucabais",
+        "se acurrucaban"
+      ],
+      "Conditional": [
+        "me acurrucaría",
+        "te acurrucarías",
+        "se acurrucaría",
+        "nos acurrucaríamos",
+        "os acurrucaríais",
+        "se acurrucarían"
+      ],
+      "Future": [
+        "me acurrucaré",
+        "te acurrucarás",
+        "se acurrucará",
+        "nos acurrucaremos",
+        "os acurrucaréis",
+        "se acurrucarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me acurruque",
+        "te acurruques",
+        "se acurruque",
+        "nos acurruquemos",
+        "os acurruquéis",
+        "se acurruquen"
+      ],
+      "Imperfect (-ra)": [
+        "me acurrucara",
+        "te acurrucaras",
+        "se acurrucara",
+        "nos acurrucáramos",
+        "os acurrucarais u os acurrucaseis",
+        "se acurrucaran"
+      ],
+      "Imperfect (-se)": [
+        "me acurrucase",
+        "te acurrucases",
+        "se acurrucase",
+        "nos acurrucásemos",
+        "os acurrucaseis",
+        "se acurrucasen"
+      ],
+      "Future": [
+        "me acurrucare",
+        "te acurrucares",
+        "se acurrucare",
+        "nos acurrucáremos",
+        "os acurrucareis",
+        "se acurrucaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acurrúcate", "acurrúquese", "acurruquémonos", "acurrucaos", "acurrúquense"],
+      "Negative": [
+        "no te acurruques",
+        "no se acurruque",
+        "no nos acurruquemos",
+        "no os acurruquéis",
+        "no se acurruquen"
+      ]
+    },
+    "Present Participle": "acurrucando",
+    "Past Participle": "acurrucado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acurrucarse"
+}

@@ -1,0 +1,147 @@
+{
+  "verb": "afear",
+  "definition": "to make ugly",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["me afeo", "te afeas", "se afea", "nos afeamos", "os afeáis", "se afean"],
+      "Preterite": [
+        "me afeé",
+        "te afeaste",
+        "se afeó",
+        "nos afeamos",
+        "os afeasteis",
+        "se afearon"
+      ],
+      "Imperfect": [
+        "me afeaba",
+        "te afeabas",
+        "se afeaba",
+        "nos afeábamos",
+        "os afeabais",
+        "se afeaban"
+      ],
+      "Conditional": [
+        "me afearía",
+        "te afearías",
+        "se afearía",
+        "nos afearíamos",
+        "os afearíais",
+        "se afearían"
+      ],
+      "Future": [
+        "me afearé",
+        "te afearás",
+        "se afeará",
+        "nos afearemos",
+        "os afearéis",
+        "se afearán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["me afee", "te afees", "se afee", "nos afeemos", "os afeéis", "se afeen"],
+      "Imperfect (-ra)": [
+        "me afeara",
+        "te afearas",
+        "se afeara",
+        "nos afeáramos",
+        "os afearais",
+        "se afearan"
+      ],
+      "Imperfect (-se)": [
+        "me afease",
+        "te afeases",
+        "se afease",
+        "nos afeásemos",
+        "os afeaseis",
+        "se afeasen"
+      ],
+      "Future": [
+        "me afeare",
+        "te afeares",
+        "se afeare",
+        "nos afeáremos",
+        "os afeareis",
+        "se afearen"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["aféate", "aféese", "aféemonos", "afeaos", "aféense"],
+      "Negative": ["no te afees", "no se afee", "no nos afeemos", "no os afeéis", "no se afeen"]
+    },
+    "Present Participle": "afeando",
+    "Past Participle": "afeado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/afearse",
+  "wordreference": {
+    "Indicative": {
+      "Present": ["me afeo", "te afeas", "se afea", "nos afeamos", "os afeáis", "se afean"],
+      "Preterite": [
+        "me afeé",
+        "te afeaste",
+        "se afeó",
+        "nos afeamos",
+        "os afeasteis",
+        "se afearon"
+      ],
+      "Imperfect": [
+        "me afeaba",
+        "te afeabas",
+        "se afeaba",
+        "nos afeábamos",
+        "os afeabais",
+        "se afeaban"
+      ],
+      "Conditional": [
+        "me afearía",
+        "te afearías",
+        "se afearía",
+        "nos afearíamos",
+        "os afearíais",
+        "se afearían"
+      ],
+      "Future": [
+        "me afearé",
+        "te afearás",
+        "se afeará",
+        "nos afearemos",
+        "os afearéis",
+        "se afearán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["me afee", "te afees", "se afee", "nos afeemos", "os afeéis", "se afeen"],
+      "Imperfect (-ra)": [
+        "me afeara",
+        "te afearas",
+        "se afeara",
+        "nos afeáramos",
+        "os afearais u os afeaseis",
+        "se afearan"
+      ],
+      "Imperfect (-se)": [
+        "me afease",
+        "te afeases",
+        "se afease",
+        "nos afeásemos",
+        "os afeaseis",
+        "se afeasen"
+      ],
+      "Future": [
+        "me afeare",
+        "te afeares",
+        "se afeare",
+        "nos afeáremos",
+        "os afeareis",
+        "se afearen"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["aféate", "aféese", "afeémonos", "afeaos", "aféense"],
+      "Negative": ["no te afees", "no se afee", "no nos afeemos", "no os afeéis", "no se afeen"]
+    },
+    "Present Participle": "afeando",
+    "Past Participle": "afeado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=afearse"
+}

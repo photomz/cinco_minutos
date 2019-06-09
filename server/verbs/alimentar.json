@@ -1,0 +1,98 @@
+{
+  "verb": "alimentar",
+  "definition": "to feed",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me alimento",
+        "te alimentas",
+        "se alimenta",
+        "nos alimentamos",
+        "os alimentáis",
+        "se alimentan"
+      ],
+      "Preterite": [
+        "me alimenté",
+        "te alimentaste",
+        "se alimentó",
+        "nos alimentamos",
+        "os alimentasteis",
+        "se alimentaron"
+      ],
+      "Imperfect": [
+        "me alimentaba",
+        "te alimentabas",
+        "se alimentaba",
+        "nos alimentábamos",
+        "os alimentabais",
+        "se alimentaban"
+      ],
+      "Conditional": [
+        "me alimentaría",
+        "te alimentarías",
+        "se alimentaría",
+        "nos alimentaríamos",
+        "os alimentaríais",
+        "se alimentarían"
+      ],
+      "Future": [
+        "me alimentaré",
+        "te alimentarás",
+        "se alimentará",
+        "nos alimentaremos",
+        "os alimentaréis",
+        "se alimentarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me alimente",
+        "te alimentes",
+        "se alimente",
+        "nos alimentemos",
+        "os alimentéis",
+        "se alimenten"
+      ],
+      "Imperfect (-ra)": [
+        "me alimentara",
+        "te alimentaras",
+        "se alimentara",
+        "nos alimentáramos",
+        "os alimentarais",
+        "se alimentaran"
+      ],
+      "Imperfect (-se)": [
+        "me alimentase",
+        "te alimentases",
+        "se alimentase",
+        "nos alimentásemos",
+        "os alimentaseis",
+        "se alimentasen"
+      ],
+      "Future": [
+        "me alimentare",
+        "te alimentares",
+        "se alimentare",
+        "nos alimentáremos",
+        "os alimentareis",
+        "se alimentaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["aliméntate", "aliméntese", "alimentémonos", "alimentaos", "aliméntense"],
+      "Negative": [
+        "no te alimentes",
+        "no se alimente",
+        "no nos alimentemos",
+        "no os alimentéis",
+        "no se alimenten"
+      ]
+    },
+    "Present Participle": "alimentando",
+    "Past Participle": "alimentado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acimentarse",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acimentarse"
+}

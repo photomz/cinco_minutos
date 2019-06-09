@@ -1,0 +1,71 @@
+{
+  "verb": "adolecer",
+  "definition": "to suffer from",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["adolezco", "adoleces", "adolece", "adolecemos", "adolecéis", "adolecen"],
+      "Preterite": [
+        "adolecí",
+        "adoleciste",
+        "adoleció",
+        "adolecimos",
+        "adolecisteis",
+        "adolecieron"
+      ],
+      "Imperfect": ["adolecía", "adolecías", "adolecía", "adolecíamos", "adolecíais", "adolecían"],
+      "Conditional": [
+        "adolecería",
+        "adolecerías",
+        "adolecería",
+        "adoleceríamos",
+        "adoleceríais",
+        "adolecerían"
+      ],
+      "Future": [
+        "adoleceré",
+        "adolecerás",
+        "adolecerá",
+        "adoleceremos",
+        "adoleceréis",
+        "adolecerán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["adolezca", "adolezcas", "adolezca", "adolezcamos", "adolezcáis", "adolezcan"],
+      "Imperfect (-ra)": [
+        "adoleciera",
+        "adolecieras",
+        "adoleciera",
+        "adoleciéramos",
+        "adolecierais",
+        "adolecieran"
+      ],
+      "Imperfect (-se)": [
+        "adoleciese",
+        "adolecieses",
+        "adoleciese",
+        "adoleciésemos",
+        "adolecieseis",
+        "adoleciesen"
+      ],
+      "Future": [
+        "adoleciere",
+        "adolecieres",
+        "adoleciere",
+        "adoleciéremos",
+        "adoleciereis",
+        "adolecieren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["adolece", "adolezca", "adolezcamos", "adoleced", "adolezcan"],
+      "Negative": ["no adolezcas", "no adolezca", "no adolezcamos", "no adolezcáis", "no adolezcan"]
+    },
+    "Present Participle": "adoleciendo",
+    "Past Participle": "adolecido"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/adonecer",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=adonecer"
+}

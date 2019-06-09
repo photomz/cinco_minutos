@@ -1,0 +1,187 @@
+{
+  "verb": "adormecer",
+  "definition": "to make sleepy",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me adormezco",
+        "te adormeces",
+        "se adormece",
+        "nos adormecemos",
+        "os adormecéis",
+        "se adormecen"
+      ],
+      "Preterite": [
+        "me adormecí",
+        "te adormeciste",
+        "se adormeció",
+        "nos adormecimos",
+        "os adormecisteis",
+        "se adormecieron"
+      ],
+      "Imperfect": [
+        "me adormecía",
+        "te adormecías",
+        "se adormecía",
+        "nos adormecíamos",
+        "os adormecíais",
+        "se adormecían"
+      ],
+      "Conditional": [
+        "me adormecería",
+        "te adormecerías",
+        "se adormecería",
+        "nos adormeceríamos",
+        "os adormeceríais",
+        "se adormecerían"
+      ],
+      "Future": [
+        "me adormeceré",
+        "te adormecerás",
+        "se adormecerá",
+        "nos adormeceremos",
+        "os adormeceréis",
+        "se adormecerán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me adormezca",
+        "te adormezcas",
+        "se adormezca",
+        "nos adormezcamos",
+        "os adormezcáis",
+        "se adormezcan"
+      ],
+      "Imperfect (-ra)": [
+        "me adormeciera",
+        "te adormecieras",
+        "se adormeciera",
+        "nos adormeciéramos",
+        "os adormecierais",
+        "se adormecieran"
+      ],
+      "Imperfect (-se)": [
+        "me adormeciese",
+        "te adormecieses",
+        "se adormeciese",
+        "nos adormeciésemos",
+        "os adormecieseis",
+        "se adormeciesen"
+      ],
+      "Future": [
+        "me adormeciere",
+        "te adormecieres",
+        "se adormeciere",
+        "nos adormeciéremos",
+        "os adormeciereis",
+        "se adormecieren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["adormécete", "adormézcase", "adormezcámonos", "adormeceos", "adormézcanse"],
+      "Negative": [
+        "no te adormezcas",
+        "no se adormezca",
+        "no nos adormezcamos",
+        "no os adormezcáis",
+        "no se adormezcan"
+      ]
+    },
+    "Present Participle": "adormeciendo",
+    "Past Participle": "adormecido"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/adormecerse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me adormezco",
+        "te adormeces",
+        "se adormece",
+        "nos adormecemos",
+        "os adormecéis",
+        "se adormecen"
+      ],
+      "Preterite": [
+        "me adormecí",
+        "te adormeciste",
+        "se adormeció",
+        "nos adormecimos",
+        "os adormecisteis",
+        "se adormecieron"
+      ],
+      "Imperfect": [
+        "me adormecía",
+        "te adormecías",
+        "se adormecía",
+        "nos adormecíamos",
+        "os adormecíais",
+        "se adormecían"
+      ],
+      "Conditional": [
+        "me adormecería",
+        "te adormecerías",
+        "se adormecería",
+        "nos adormeceríamos",
+        "os adormeceríais",
+        "se adormecerían"
+      ],
+      "Future": [
+        "me adormeceré",
+        "te adormecerás",
+        "se adormecerá",
+        "nos adormeceremos",
+        "os adormeceréis",
+        "se adormecerán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me adormezca",
+        "te adormezcas",
+        "se adormezca",
+        "nos adormezcamos",
+        "os adormezcáis",
+        "se adormezcan"
+      ],
+      "Imperfect (-ra)": [
+        "me adormeciera",
+        "te adormecieras",
+        "se adormeciera",
+        "nos adormeciéramos",
+        "os adormecierais u os adormecieseis",
+        "se adormecieran"
+      ],
+      "Imperfect (-se)": [
+        "me adormeciese",
+        "te adormecieses",
+        "se adormeciese",
+        "nos adormeciésemos",
+        "os adormecieseis",
+        "se adormeciesen"
+      ],
+      "Future": [
+        "me adormeciere",
+        "te adormecieres",
+        "se adormeciere",
+        "nos adormeciéremos",
+        "os adormeciereis",
+        "se adormecieren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["adormécete", "adormézcase", "adormezcámonos", "adormeceos", "adormézcanse"],
+      "Negative": [
+        "no te adormezcas",
+        "no se adormezca",
+        "no nos adormezcamos",
+        "no os adormezcáis",
+        "no se adormezcan"
+      ]
+    },
+    "Present Participle": "adormeciendo",
+    "Past Participle": "adormecido"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=adormecerse"
+}

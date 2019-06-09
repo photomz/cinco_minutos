@@ -1,0 +1,187 @@
+{
+  "verb": "afianzar",
+  "definition": "to consolidate",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me afianzo",
+        "te afianzas",
+        "se afianza",
+        "nos afianzamos",
+        "os afianzáis",
+        "se afianzan"
+      ],
+      "Preterite": [
+        "me afiancé",
+        "te afianzaste",
+        "se afianzó",
+        "nos afianzamos",
+        "os afianzasteis",
+        "se afianzaron"
+      ],
+      "Imperfect": [
+        "me afianzaba",
+        "te afianzabas",
+        "se afianzaba",
+        "nos afianzábamos",
+        "os afianzabais",
+        "se afianzaban"
+      ],
+      "Conditional": [
+        "me afianzaría",
+        "te afianzarías",
+        "se afianzaría",
+        "nos afianzaríamos",
+        "os afianzaríais",
+        "se afianzarían"
+      ],
+      "Future": [
+        "me afianzaré",
+        "te afianzarás",
+        "se afianzará",
+        "nos afianzaremos",
+        "os afianzaréis",
+        "se afianzarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me afiance",
+        "te afiances",
+        "se afiance",
+        "nos afiancemos",
+        "os afiancéis",
+        "se afiancen"
+      ],
+      "Imperfect (-ra)": [
+        "me afianzara",
+        "te afianzaras",
+        "se afianzara",
+        "nos afianzáramos",
+        "os afianzarais",
+        "se afianzaran"
+      ],
+      "Imperfect (-se)": [
+        "me afianzase",
+        "te afianzases",
+        "se afianzase",
+        "nos afianzásemos",
+        "os afianzaseis",
+        "se afianzasen"
+      ],
+      "Future": [
+        "me afianzare",
+        "te afianzares",
+        "se afianzare",
+        "nos afianzáremos",
+        "os afianzareis",
+        "se afianzaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["afiánzate", "afiáncese", "afiancémonos", "afianzaos", "afiáncense"],
+      "Negative": [
+        "no te afiances",
+        "no se afiance",
+        "no nos afiancemos",
+        "no os afiancéis",
+        "no se afiancen"
+      ]
+    },
+    "Present Participle": "afianzando",
+    "Past Participle": "afianzado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/afianzarse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me afianzo",
+        "te afianzas",
+        "se afianza",
+        "nos afianzamos",
+        "os afianzáis",
+        "se afianzan"
+      ],
+      "Preterite": [
+        "me afiancé",
+        "te afianzaste",
+        "se afianzó",
+        "nos afianzamos",
+        "os afianzasteis",
+        "se afianzaron"
+      ],
+      "Imperfect": [
+        "me afianzaba",
+        "te afianzabas",
+        "se afianzaba",
+        "nos afianzábamos",
+        "os afianzabais",
+        "se afianzaban"
+      ],
+      "Conditional": [
+        "me afianzaría",
+        "te afianzarías",
+        "se afianzaría",
+        "nos afianzaríamos",
+        "os afianzaríais",
+        "se afianzarían"
+      ],
+      "Future": [
+        "me afianzaré",
+        "te afianzarás",
+        "se afianzará",
+        "nos afianzaremos",
+        "os afianzaréis",
+        "se afianzarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me afiance",
+        "te afiances",
+        "se afiance",
+        "nos afiancemos",
+        "os afiancéis",
+        "se afiancen"
+      ],
+      "Imperfect (-ra)": [
+        "me afianzara",
+        "te afianzaras",
+        "se afianzara",
+        "nos afianzáramos",
+        "os afianzarais u os afianzaseis",
+        "se afianzaran"
+      ],
+      "Imperfect (-se)": [
+        "me afianzase",
+        "te afianzases",
+        "se afianzase",
+        "nos afianzásemos",
+        "os afianzaseis",
+        "se afianzasen"
+      ],
+      "Future": [
+        "me afianzare",
+        "te afianzares",
+        "se afianzare",
+        "nos afianzáremos",
+        "os afianzareis",
+        "se afianzaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["afiánzate", "afiáncese", "afiancémonos", "afianzaos", "afiáncense"],
+      "Negative": [
+        "no te afiances",
+        "no se afiance",
+        "no nos afiancemos",
+        "no os afiancéis",
+        "no se afiancen"
+      ]
+    },
+    "Present Participle": "afianzando",
+    "Past Participle": "afianzado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=afianzarse"
+}

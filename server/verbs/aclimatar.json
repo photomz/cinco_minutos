@@ -1,0 +1,187 @@
+{
+  "verb": "aclimatar",
+  "definition": "to acclimate",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me aclimato",
+        "te aclimatas",
+        "se aclimata",
+        "nos aclimatamos",
+        "os aclimatáis",
+        "se aclimatan"
+      ],
+      "Preterite": [
+        "me aclimaté",
+        "te aclimataste",
+        "se aclimató",
+        "nos aclimatamos",
+        "os aclimatasteis",
+        "se aclimataron"
+      ],
+      "Imperfect": [
+        "me aclimataba",
+        "te aclimatabas",
+        "se aclimataba",
+        "nos aclimatábamos",
+        "os aclimatabais",
+        "se aclimataban"
+      ],
+      "Conditional": [
+        "me aclimataría",
+        "te aclimatarías",
+        "se aclimataría",
+        "nos aclimataríamos",
+        "os aclimataríais",
+        "se aclimatarían"
+      ],
+      "Future": [
+        "me aclimataré",
+        "te aclimatarás",
+        "se aclimatará",
+        "nos aclimataremos",
+        "os aclimataréis",
+        "se aclimatarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me aclimate",
+        "te aclimates",
+        "se aclimate",
+        "nos aclimatemos",
+        "os aclimatéis",
+        "se aclimaten"
+      ],
+      "Imperfect (-ra)": [
+        "me aclimatara",
+        "te aclimataras",
+        "se aclimatara",
+        "nos aclimatáramos",
+        "os aclimatarais",
+        "se aclimataran"
+      ],
+      "Imperfect (-se)": [
+        "me aclimatase",
+        "te aclimatases",
+        "se aclimatase",
+        "nos aclimatásemos",
+        "os aclimataseis",
+        "se aclimatasen"
+      ],
+      "Future": [
+        "me aclimatare",
+        "te aclimatares",
+        "se aclimatare",
+        "nos aclimatáremos",
+        "os aclimatareis",
+        "se aclimataren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["aclimátate", "aclimátese", "aclimatémonos", "aclimataos", "aclimátense"],
+      "Negative": [
+        "no te aclimates",
+        "no se aclimate",
+        "no nos aclimatemos",
+        "no os aclimatéis",
+        "no se aclimaten"
+      ]
+    },
+    "Present Participle": "aclimatando",
+    "Past Participle": "aclimatado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/aclimatarse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me aclimato",
+        "te aclimatas",
+        "se aclimata",
+        "nos aclimatamos",
+        "os aclimatáis",
+        "se aclimatan"
+      ],
+      "Preterite": [
+        "me aclimaté",
+        "te aclimataste",
+        "se aclimató",
+        "nos aclimatamos",
+        "os aclimatasteis",
+        "se aclimataron"
+      ],
+      "Imperfect": [
+        "me aclimataba",
+        "te aclimatabas",
+        "se aclimataba",
+        "nos aclimatábamos",
+        "os aclimatabais",
+        "se aclimataban"
+      ],
+      "Conditional": [
+        "me aclimataría",
+        "te aclimatarías",
+        "se aclimataría",
+        "nos aclimataríamos",
+        "os aclimataríais",
+        "se aclimatarían"
+      ],
+      "Future": [
+        "me aclimataré",
+        "te aclimatarás",
+        "se aclimatará",
+        "nos aclimataremos",
+        "os aclimataréis",
+        "se aclimatarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me aclimate",
+        "te aclimates",
+        "se aclimate",
+        "nos aclimatemos",
+        "os aclimatéis",
+        "se aclimaten"
+      ],
+      "Imperfect (-ra)": [
+        "me aclimatara",
+        "te aclimataras",
+        "se aclimatara",
+        "nos aclimatáramos",
+        "os aclimatarais u os aclimataseis",
+        "se aclimataran"
+      ],
+      "Imperfect (-se)": [
+        "me aclimatase",
+        "te aclimatases",
+        "se aclimatase",
+        "nos aclimatásemos",
+        "os aclimataseis",
+        "se aclimatasen"
+      ],
+      "Future": [
+        "me aclimatare",
+        "te aclimatares",
+        "se aclimatare",
+        "nos aclimatáremos",
+        "os aclimatareis",
+        "se aclimataren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["aclimátate", "aclimátese", "aclimatémonos", "aclimataos", "aclimátense"],
+      "Negative": [
+        "no te aclimates",
+        "no se aclimate",
+        "no nos aclimatemos",
+        "no os aclimatéis",
+        "no se aclimaten"
+      ]
+    },
+    "Present Participle": "aclimatando",
+    "Past Participle": "aclimatado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=aclimatarse"
+}

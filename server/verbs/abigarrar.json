@@ -1,0 +1,187 @@
+{
+  "verb": "abigarrar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me abigarro",
+        "te abigarras",
+        "se abigarra",
+        "nos abigarramos",
+        "os abigarráis",
+        "se abigarran"
+      ],
+      "Preterite": [
+        "me abigarré",
+        "te abigarraste",
+        "se abigarró",
+        "nos abigarramos",
+        "os abigarrasteis",
+        "se abigarraron"
+      ],
+      "Imperfect": [
+        "me abigarraba",
+        "te abigarrabas",
+        "se abigarraba",
+        "nos abigarrábamos",
+        "os abigarrabais",
+        "se abigarraban"
+      ],
+      "Conditional": [
+        "me abigarraría",
+        "te abigarrarías",
+        "se abigarraría",
+        "nos abigarraríamos",
+        "os abigarraríais",
+        "se abigarrarían"
+      ],
+      "Future": [
+        "me abigarraré",
+        "te abigarrarás",
+        "se abigarrará",
+        "nos abigarraremos",
+        "os abigarraréis",
+        "se abigarrarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me abigarre",
+        "te abigarres",
+        "se abigarre",
+        "nos abigarremos",
+        "os abigarréis",
+        "se abigarren"
+      ],
+      "Imperfect (-ra)": [
+        "me abigarrara",
+        "te abigarraras",
+        "se abigarrara",
+        "nos abigarráramos",
+        "os abigarrarais",
+        "se abigarraran"
+      ],
+      "Imperfect (-se)": [
+        "me abigarrase",
+        "te abigarrases",
+        "se abigarrase",
+        "nos abigarrásemos",
+        "os abigarraseis",
+        "se abigarrasen"
+      ],
+      "Future": [
+        "me abigarrare",
+        "te abigarrares",
+        "se abigarrare",
+        "nos abigarráremos",
+        "os abigarrareis",
+        "se abigarraren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["abigárrate", "abigárrese", "abigarrémonos", "abigarraos", "abigárrense"],
+      "Negative": [
+        "no te abigarres",
+        "no se abigarre",
+        "no nos abigarremos",
+        "no os abigarréis",
+        "no se abigarren"
+      ]
+    },
+    "Present Participle": "abigarrando",
+    "Past Participle": "abigarrado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/abigarrarse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me abigarro",
+        "te abigarras",
+        "se abigarra",
+        "nos abigarramos",
+        "os abigarráis",
+        "se abigarran"
+      ],
+      "Preterite": [
+        "me abigarré",
+        "te abigarraste",
+        "se abigarró",
+        "nos abigarramos",
+        "os abigarrasteis",
+        "se abigarraron"
+      ],
+      "Imperfect": [
+        "me abigarraba",
+        "te abigarrabas",
+        "se abigarraba",
+        "nos abigarrábamos",
+        "os abigarrabais",
+        "se abigarraban"
+      ],
+      "Conditional": [
+        "me abigarraría",
+        "te abigarrarías",
+        "se abigarraría",
+        "nos abigarraríamos",
+        "os abigarraríais",
+        "se abigarrarían"
+      ],
+      "Future": [
+        "me abigarraré",
+        "te abigarrarás",
+        "se abigarrará",
+        "nos abigarraremos",
+        "os abigarraréis",
+        "se abigarrarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me abigarre",
+        "te abigarres",
+        "se abigarre",
+        "nos abigarremos",
+        "os abigarréis",
+        "se abigarren"
+      ],
+      "Imperfect (-ra)": [
+        "me abigarrara",
+        "te abigarraras",
+        "se abigarrara",
+        "nos abigarráramos",
+        "os abigarrarais u os abigarraseis",
+        "se abigarraran"
+      ],
+      "Imperfect (-se)": [
+        "me abigarrase",
+        "te abigarrases",
+        "se abigarrase",
+        "nos abigarrásemos",
+        "os abigarraseis",
+        "se abigarrasen"
+      ],
+      "Future": [
+        "me abigarrare",
+        "te abigarrares",
+        "se abigarrare",
+        "nos abigarráremos",
+        "os abigarrareis",
+        "se abigarraren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["abigárrate", "abigárrese", "abigarrémonos", "abigarraos", "abigárrense"],
+      "Negative": [
+        "no te abigarres",
+        "no se abigarre",
+        "no nos abigarremos",
+        "no os abigarréis",
+        "no se abigarren"
+      ]
+    },
+    "Present Participle": "abigarrando",
+    "Past Participle": "abigarrado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=abigarrarse"
+}

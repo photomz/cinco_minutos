@@ -1,0 +1,78 @@
+{
+  "verb": "aherrojar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["aherrojo", "aherrojas", "aherroja", "aherrojamos", "aherrojáis", "aherrojan"],
+      "Preterite": [
+        "aherrojé",
+        "aherrojaste",
+        "aherrojó",
+        "aherrojamos",
+        "aherrojasteis",
+        "aherrojaron"
+      ],
+      "Imperfect": [
+        "aherrojaba",
+        "aherrojabas",
+        "aherrojaba",
+        "aherrojábamos",
+        "aherrojabais",
+        "aherrojaban"
+      ],
+      "Conditional": [
+        "aherrojaría",
+        "aherrojarías",
+        "aherrojaría",
+        "aherrojaríamos",
+        "aherrojaríais",
+        "aherrojarían"
+      ],
+      "Future": [
+        "aherrojaré",
+        "aherrojarás",
+        "aherrojará",
+        "aherrojaremos",
+        "aherrojaréis",
+        "aherrojarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["aherroje", "aherrojes", "aherroje", "aherrojemos", "aherrojéis", "aherrojen"],
+      "Imperfect (-ra)": [
+        "aherrojara",
+        "aherrojaras",
+        "aherrojara",
+        "aherrojáramos",
+        "aherrojarais",
+        "aherrojaran"
+      ],
+      "Imperfect (-se)": [
+        "aherrojase",
+        "aherrojases",
+        "aherrojase",
+        "aherrojásemos",
+        "aherrojaseis",
+        "aherrojasen"
+      ],
+      "Future": [
+        "aherrojare",
+        "aherrojares",
+        "aherrojare",
+        "aherrojáremos",
+        "aherrojareis",
+        "aherrojaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["aherroja", "aherroje", "aherrojemos", "aherrojad", "aherrojen"],
+      "Negative": ["no aherrojes", "no aherroje", "no aherrojemos", "no aherrojéis", "no aherrojen"]
+    },
+    "Present Participle": "aherrojando",
+    "Past Participle": "aherrojado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/aferrojar",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=aferrojar"
+}

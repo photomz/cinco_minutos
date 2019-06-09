@@ -1,0 +1,187 @@
+{
+  "verb": "afeitar",
+  "definition": "to shave",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me afeito",
+        "te afeitas",
+        "se afeita",
+        "nos afeitamos",
+        "os afeitáis",
+        "se afeitan"
+      ],
+      "Preterite": [
+        "me afeité",
+        "te afeitaste",
+        "se afeitó",
+        "nos afeitamos",
+        "os afeitasteis",
+        "se afeitaron"
+      ],
+      "Imperfect": [
+        "me afeitaba",
+        "te afeitabas",
+        "se afeitaba",
+        "nos afeitábamos",
+        "os afeitabais",
+        "se afeitaban"
+      ],
+      "Conditional": [
+        "me afeitaría",
+        "te afeitarías",
+        "se afeitaría",
+        "nos afeitaríamos",
+        "os afeitaríais",
+        "se afeitarían"
+      ],
+      "Future": [
+        "me afeitaré",
+        "te afeitarás",
+        "se afeitará",
+        "nos afeitaremos",
+        "os afeitaréis",
+        "se afeitarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me afeite",
+        "te afeites",
+        "se afeite",
+        "nos afeitemos",
+        "os afeitéis",
+        "se afeiten"
+      ],
+      "Imperfect (-ra)": [
+        "me afeitara",
+        "te afeitaras",
+        "se afeitara",
+        "nos afeitáramos",
+        "os afeitarais",
+        "se afeitaran"
+      ],
+      "Imperfect (-se)": [
+        "me afeitase",
+        "te afeitases",
+        "se afeitase",
+        "nos afeitásemos",
+        "os afeitaseis",
+        "se afeitasen"
+      ],
+      "Future": [
+        "me afeitare",
+        "te afeitares",
+        "se afeitare",
+        "nos afeitáremos",
+        "os afeitareis",
+        "se afeitaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["aféitate", "aféitese", "afeitémonos", "afeitaos", "aféitense"],
+      "Negative": [
+        "no te afeites",
+        "no se afeite",
+        "no nos afeitemos",
+        "no os afeitéis",
+        "no se afeiten"
+      ]
+    },
+    "Present Participle": "afeitando",
+    "Past Participle": "afeitado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/afeitarse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me afeito",
+        "te afeitas",
+        "se afeita",
+        "nos afeitamos",
+        "os afeitáis",
+        "se afeitan"
+      ],
+      "Preterite": [
+        "me afeité",
+        "te afeitaste",
+        "se afeitó",
+        "nos afeitamos",
+        "os afeitasteis",
+        "se afeitaron"
+      ],
+      "Imperfect": [
+        "me afeitaba",
+        "te afeitabas",
+        "se afeitaba",
+        "nos afeitábamos",
+        "os afeitabais",
+        "se afeitaban"
+      ],
+      "Conditional": [
+        "me afeitaría",
+        "te afeitarías",
+        "se afeitaría",
+        "nos afeitaríamos",
+        "os afeitaríais",
+        "se afeitarían"
+      ],
+      "Future": [
+        "me afeitaré",
+        "te afeitarás",
+        "se afeitará",
+        "nos afeitaremos",
+        "os afeitaréis",
+        "se afeitarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me afeite",
+        "te afeites",
+        "se afeite",
+        "nos afeitemos",
+        "os afeitéis",
+        "se afeiten"
+      ],
+      "Imperfect (-ra)": [
+        "me afeitara",
+        "te afeitaras",
+        "se afeitara",
+        "nos afeitáramos",
+        "os afeitarais u os afeitaseis",
+        "se afeitaran"
+      ],
+      "Imperfect (-se)": [
+        "me afeitase",
+        "te afeitases",
+        "se afeitase",
+        "nos afeitásemos",
+        "os afeitaseis",
+        "se afeitasen"
+      ],
+      "Future": [
+        "me afeitare",
+        "te afeitares",
+        "se afeitare",
+        "nos afeitáremos",
+        "os afeitareis",
+        "se afeitaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["aféitate", "aféitese", "afeitémonos", "afeitaos", "aféitense"],
+      "Negative": [
+        "no te afeites",
+        "no se afeite",
+        "no nos afeitemos",
+        "no os afeitéis",
+        "no se afeiten"
+      ]
+    },
+    "Present Participle": "afeitando",
+    "Past Participle": "afeitado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=afeitarse"
+}

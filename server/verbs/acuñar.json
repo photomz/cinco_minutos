@@ -1,0 +1,36 @@
+{
+  "verb": "acuñar",
+  "definition": "to mint",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["acuño", "acuñas", "acuña", "acuñamos", "acuñáis", "acuñan"],
+      "Preterite": ["acuñé", "acuñaste", "acuñó", "acuñamos", "acuñasteis", "acuñaron"],
+      "Imperfect": ["acuñaba", "acuñabas", "acuñaba", "acuñábamos", "acuñabais", "acuñaban"],
+      "Conditional": [
+        "acuñaría",
+        "acuñarías",
+        "acuñaría",
+        "acuñaríamos",
+        "acuñaríais",
+        "acuñarían"
+      ],
+      "Future": ["acuñaré", "acuñarás", "acuñará", "acuñaremos", "acuñaréis", "acuñarán"]
+    },
+    "Subjunctive": {
+      "Present": ["acuñe", "acuñes", "acuñe", "acuñemos", "acuñéis", "acuñen"],
+      "Imperfect (-ra)": ["acuñara", "acuñaras", "acuñara", "acuñáramos", "acuñarais", "acuñaran"],
+      "Imperfect (-se)": ["acuñase", "acuñases", "acuñase", "acuñásemos", "acuñaseis", "acuñasen"],
+      "Future": ["acuñare", "acuñares", "acuñare", "acuñáremos", "acuñareis", "acuñaren"]
+    },
+    "Imperative": {
+      "Affirmative": ["acuña", "acuñe", "acuñemos", "acuñad", "acuñen"],
+      "Negative": ["no acuñes", "no acuñe", "no acuñemos", "no acuñéis", "no acuñen"]
+    },
+    "Present Participle": "acuñando",
+    "Past Participle": "acuñado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acuñar",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acuñar"
+}

@@ -1,0 +1,98 @@
+{
+  "verb": "acochinar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me acochino",
+        "te acochinas",
+        "se acochina",
+        "nos acochinamos",
+        "os acochináis",
+        "se acochinan"
+      ],
+      "Preterite": [
+        "me acochiné",
+        "te acochinaste",
+        "se acochinó",
+        "nos acochinamos",
+        "os acochinasteis",
+        "se acochinaron"
+      ],
+      "Imperfect": [
+        "me acochinaba",
+        "te acochinabas",
+        "se acochinaba",
+        "nos acochinábamos",
+        "os acochinabais",
+        "se acochinaban"
+      ],
+      "Conditional": [
+        "me acochinaría",
+        "te acochinarías",
+        "se acochinaría",
+        "nos acochinaríamos",
+        "os acochinaríais",
+        "se acochinarían"
+      ],
+      "Future": [
+        "me acochinaré",
+        "te acochinarás",
+        "se acochinará",
+        "nos acochinaremos",
+        "os acochinaréis",
+        "se acochinarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me acochine",
+        "te acochines",
+        "se acochine",
+        "nos acochinemos",
+        "os acochinéis",
+        "se acochinen"
+      ],
+      "Imperfect (-ra)": [
+        "me acochinara",
+        "te acochinaras",
+        "se acochinara",
+        "nos acochináramos",
+        "os acochinarais",
+        "se acochinaran"
+      ],
+      "Imperfect (-se)": [
+        "me acochinase",
+        "te acochinases",
+        "se acochinase",
+        "nos acochinásemos",
+        "os acochinaseis",
+        "se acochinasen"
+      ],
+      "Future": [
+        "me acochinare",
+        "te acochinares",
+        "se acochinare",
+        "nos acochináremos",
+        "os acochinareis",
+        "se acochinaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acochínate", "acochínese", "acochinémonos", "acochinaos", "acochínense"],
+      "Negative": [
+        "no te acochines",
+        "no se acochine",
+        "no nos acochinemos",
+        "no os acochinéis",
+        "no se acochinen"
+      ]
+    },
+    "Present Participle": "acochinando",
+    "Past Participle": "acochinado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acochinarse",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acochinarse"
+}

@@ -1,0 +1,187 @@
+{
+  "verb": "activar",
+  "definition": "to activate",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me activo",
+        "te activas",
+        "se activa",
+        "nos activamos",
+        "os activáis",
+        "se activan"
+      ],
+      "Preterite": [
+        "me activé",
+        "te activaste",
+        "se activó",
+        "nos activamos",
+        "os activasteis",
+        "se activaron"
+      ],
+      "Imperfect": [
+        "me activaba",
+        "te activabas",
+        "se activaba",
+        "nos activábamos",
+        "os activabais",
+        "se activaban"
+      ],
+      "Conditional": [
+        "me activaría",
+        "te activarías",
+        "se activaría",
+        "nos activaríamos",
+        "os activaríais",
+        "se activarían"
+      ],
+      "Future": [
+        "me activaré",
+        "te activarás",
+        "se activará",
+        "nos activaremos",
+        "os activaréis",
+        "se activarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me active",
+        "te actives",
+        "se active",
+        "nos activemos",
+        "os activéis",
+        "se activen"
+      ],
+      "Imperfect (-ra)": [
+        "me activara",
+        "te activaras",
+        "se activara",
+        "nos activáramos",
+        "os activarais",
+        "se activaran"
+      ],
+      "Imperfect (-se)": [
+        "me activase",
+        "te activases",
+        "se activase",
+        "nos activásemos",
+        "os activaseis",
+        "se activasen"
+      ],
+      "Future": [
+        "me activare",
+        "te activares",
+        "se activare",
+        "nos activáremos",
+        "os activareis",
+        "se activaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["actívate", "actívese", "activémonos", "activaos", "actívense"],
+      "Negative": [
+        "no te actives",
+        "no se active",
+        "no nos activemos",
+        "no os activéis",
+        "no se activen"
+      ]
+    },
+    "Present Participle": "activando",
+    "Past Participle": "activado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/activarse",
+  "wordreference": {
+    "Indicative": {
+      "Present": [
+        "me activo",
+        "te activas",
+        "se activa",
+        "nos activamos",
+        "os activáis",
+        "se activan"
+      ],
+      "Preterite": [
+        "me activé",
+        "te activaste",
+        "se activó",
+        "nos activamos",
+        "os activasteis",
+        "se activaron"
+      ],
+      "Imperfect": [
+        "me activaba",
+        "te activabas",
+        "se activaba",
+        "nos activábamos",
+        "os activabais",
+        "se activaban"
+      ],
+      "Conditional": [
+        "me activaría",
+        "te activarías",
+        "se activaría",
+        "nos activaríamos",
+        "os activaríais",
+        "se activarían"
+      ],
+      "Future": [
+        "me activaré",
+        "te activarás",
+        "se activará",
+        "nos activaremos",
+        "os activaréis",
+        "se activarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me active",
+        "te actives",
+        "se active",
+        "nos activemos",
+        "os activéis",
+        "se activen"
+      ],
+      "Imperfect (-ra)": [
+        "me activara",
+        "te activaras",
+        "se activara",
+        "nos activáramos",
+        "os activarais u os activaseis",
+        "se activaran"
+      ],
+      "Imperfect (-se)": [
+        "me activase",
+        "te activases",
+        "se activase",
+        "nos activásemos",
+        "os activaseis",
+        "se activasen"
+      ],
+      "Future": [
+        "me activare",
+        "te activares",
+        "se activare",
+        "nos activáremos",
+        "os activareis",
+        "se activaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["actívate", "actívese", "activémonos", "activaos", "actívense"],
+      "Negative": [
+        "no te actives",
+        "no se active",
+        "no nos activemos",
+        "no os activéis",
+        "no se activen"
+      ]
+    },
+    "Present Participle": "activando",
+    "Past Participle": "activado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=activarse"
+}

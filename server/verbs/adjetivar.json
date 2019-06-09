@@ -1,0 +1,98 @@
+{
+  "verb": "adjetivar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": [
+        "me adjetivo",
+        "te adjetivas",
+        "se adjetiva",
+        "nos adjetivamos",
+        "os adjetiváis",
+        "se adjetivan"
+      ],
+      "Preterite": [
+        "me adjetivé",
+        "te adjetivaste",
+        "se adjetivó",
+        "nos adjetivamos",
+        "os adjetivasteis",
+        "se adjetivaron"
+      ],
+      "Imperfect": [
+        "me adjetivaba",
+        "te adjetivabas",
+        "se adjetivaba",
+        "nos adjetivábamos",
+        "os adjetivabais",
+        "se adjetivaban"
+      ],
+      "Conditional": [
+        "me adjetivaría",
+        "te adjetivarías",
+        "se adjetivaría",
+        "nos adjetivaríamos",
+        "os adjetivaríais",
+        "se adjetivarían"
+      ],
+      "Future": [
+        "me adjetivaré",
+        "te adjetivarás",
+        "se adjetivará",
+        "nos adjetivaremos",
+        "os adjetivaréis",
+        "se adjetivarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": [
+        "me adjetive",
+        "te adjetives",
+        "se adjetive",
+        "nos adjetivemos",
+        "os adjetivéis",
+        "se adjetiven"
+      ],
+      "Imperfect (-ra)": [
+        "me adjetivara",
+        "te adjetivaras",
+        "se adjetivara",
+        "nos adjetiváramos",
+        "os adjetivarais",
+        "se adjetivaran"
+      ],
+      "Imperfect (-se)": [
+        "me adjetivase",
+        "te adjetivases",
+        "se adjetivase",
+        "nos adjetivásemos",
+        "os adjetivaseis",
+        "se adjetivasen"
+      ],
+      "Future": [
+        "me adjetivare",
+        "te adjetivares",
+        "se adjetivare",
+        "nos adjetiváremos",
+        "os adjetivareis",
+        "se adjetivaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["adjetívate", "adjetívese", "adjetivémonos", "adjetivaos", "adjetívense"],
+      "Negative": [
+        "no te adjetives",
+        "no se adjetive",
+        "no nos adjetivemos",
+        "no os adjetivéis",
+        "no se adjetiven"
+      ]
+    },
+    "Present Participle": "adjetivando",
+    "Past Participle": "adjetivado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/adjetivarse",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=adjetivarse"
+}

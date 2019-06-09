@@ -1,0 +1,147 @@
+{
+  "verb": "acariciar",
+  "definition": "to pet",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["acaricio", "acaricias", "acaricia", "acariciamos", "acariciáis", "acarician"],
+      "Preterite": [
+        "acaricié",
+        "acariciaste",
+        "acarició",
+        "acariciamos",
+        "acariciasteis",
+        "acariciaron"
+      ],
+      "Imperfect": [
+        "acariciaba",
+        "acariciabas",
+        "acariciaba",
+        "acariciábamos",
+        "acariciabais",
+        "acariciaban"
+      ],
+      "Conditional": [
+        "acariciaría",
+        "acariciarías",
+        "acariciaría",
+        "acariciaríamos",
+        "acariciaríais",
+        "acariciarían"
+      ],
+      "Future": [
+        "acariciaré",
+        "acariciarás",
+        "acariciará",
+        "acariciaremos",
+        "acariciaréis",
+        "acariciarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["acaricie", "acaricies", "acaricie", "acariciemos", "acariciéis", "acaricien"],
+      "Imperfect (-ra)": [
+        "acariciara",
+        "acariciaras",
+        "acariciara",
+        "acariciáramos",
+        "acariciarais",
+        "acariciaran"
+      ],
+      "Imperfect (-se)": [
+        "acariciase",
+        "acariciases",
+        "acariciase",
+        "acariciásemos",
+        "acariciaseis",
+        "acariciasen"
+      ],
+      "Future": [
+        "acariciare",
+        "acariciares",
+        "acariciare",
+        "acariciáremos",
+        "acariciareis",
+        "acariciaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acaricia", "acaricie", "acariciemos", "acariciad", "acaricien"],
+      "Negative": ["no acaricies", "no acaricie", "no acariciemos", "no acariciéis", "no acaricien"]
+    },
+    "Present Participle": "acariciando",
+    "Past Participle": "acariciado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/acariciar",
+  "wordreference": {
+    "Indicative": {
+      "Present": ["acaricio", "acaricias", "acaricia", "acariciamos", "acariciáis", "acarician"],
+      "Preterite": [
+        "acaricié",
+        "acariciaste",
+        "acarició",
+        "acariciamos",
+        "acariciasteis",
+        "acariciaron"
+      ],
+      "Imperfect": [
+        "acariciaba",
+        "acariciabas",
+        "acariciaba",
+        "acariciábamos",
+        "acariciabais",
+        "acariciaban"
+      ],
+      "Conditional": [
+        "acariciaría",
+        "acariciarías",
+        "acariciaría",
+        "acariciaríamos",
+        "acariciaríais",
+        "acariciarían"
+      ],
+      "Future": [
+        "acariciaré",
+        "acariciarás",
+        "acariciará",
+        "acariciaremos",
+        "acariciaréis",
+        "acariciarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["acaricie", "acaricies", "acaricie", "acariciemos", "acariciéis", "acaricien"],
+      "Imperfect (-ra)": [
+        "acariciara",
+        "acariciaras",
+        "acariciara",
+        "acariciáramos",
+        "acariciarais",
+        "acariciaran"
+      ],
+      "Imperfect (-se)": [
+        "acariciase",
+        "acariciases",
+        "acariciase",
+        "acariciásemos",
+        "acariciaseis",
+        "acariciasen"
+      ],
+      "Future": [
+        "acariciare",
+        "acariciares",
+        "acariciare",
+        "acariciáremos",
+        "acariciareis",
+        "acariciaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["acaricia", "acaricie", "acariciemos", "acariciad", "acaricien"],
+      "Negative": ["no acaricies", "no acaricie", "no acariciemos", "no acariciéis", "no acaricien"]
+    },
+    "Present Participle": "acariciando",
+    "Past Participle": "acariciado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=acariciar"
+}

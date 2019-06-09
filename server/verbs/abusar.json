@@ -1,0 +1,84 @@
+{
+  "verb": "abusar",
+  "definition": "to abuse",
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["me abuso", "te abusas", "se abusa", "nos abusamos", "os abusáis", "se abusan"],
+      "Preterite": [
+        "me abusé",
+        "te abusaste",
+        "se abusó",
+        "nos abusamos",
+        "os abusasteis",
+        "se abusaron"
+      ],
+      "Imperfect": [
+        "me abusaba",
+        "te abusabas",
+        "se abusaba",
+        "nos abusábamos",
+        "os abusabais",
+        "se abusaban"
+      ],
+      "Conditional": [
+        "me abusaría",
+        "te abusarías",
+        "se abusaría",
+        "nos abusaríamos",
+        "os abusaríais",
+        "se abusarían"
+      ],
+      "Future": [
+        "me abusaré",
+        "te abusarás",
+        "se abusará",
+        "nos abusaremos",
+        "os abusaréis",
+        "se abusarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["me abuse", "te abuses", "se abuse", "nos abusemos", "os abuséis", "se abusen"],
+      "Imperfect (-ra)": [
+        "me abusara",
+        "te abusaras",
+        "se abusara",
+        "nos abusáramos",
+        "os abusarais",
+        "se abusaran"
+      ],
+      "Imperfect (-se)": [
+        "me abusase",
+        "te abusases",
+        "se abusase",
+        "nos abusásemos",
+        "os abusaseis",
+        "se abusasen"
+      ],
+      "Future": [
+        "me abusare",
+        "te abusares",
+        "se abusare",
+        "nos abusáremos",
+        "os abusareis",
+        "se abusaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["abúsate", "abúsese", "abusémonos", "abusaos", "abúsense"],
+      "Negative": [
+        "no te abuses",
+        "no se abuse",
+        "no nos abusemos",
+        "no os abuséis",
+        "no se abusen"
+      ]
+    },
+    "Present Participle": "abusando",
+    "Past Participle": "abusado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/abuzarse",
+  "wordreference": null,
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=abuzarse"
+}

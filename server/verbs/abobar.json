@@ -1,0 +1,159 @@
+{
+  "verb": "abobar",
+  "definition": null,
+  "reflexive": false,
+  "spanishdict": {
+    "Indicative": {
+      "Present": ["me abobo", "te abobas", "se aboba", "nos abobamos", "os abobáis", "se aboban"],
+      "Preterite": [
+        "me abobé",
+        "te abobaste",
+        "se abobó",
+        "nos abobamos",
+        "os abobasteis",
+        "se abobaron"
+      ],
+      "Imperfect": [
+        "me abobaba",
+        "te abobabas",
+        "se abobaba",
+        "nos abobábamos",
+        "os abobabais",
+        "se abobaban"
+      ],
+      "Conditional": [
+        "me abobaría",
+        "te abobarías",
+        "se abobaría",
+        "nos abobaríamos",
+        "os abobaríais",
+        "se abobarían"
+      ],
+      "Future": [
+        "me abobaré",
+        "te abobarás",
+        "se abobará",
+        "nos abobaremos",
+        "os abobaréis",
+        "se abobarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["me abobe", "te abobes", "se abobe", "nos abobemos", "os abobéis", "se aboben"],
+      "Imperfect (-ra)": [
+        "me abobara",
+        "te abobaras",
+        "se abobara",
+        "nos abobáramos",
+        "os abobarais",
+        "se abobaran"
+      ],
+      "Imperfect (-se)": [
+        "me abobase",
+        "te abobases",
+        "se abobase",
+        "nos abobásemos",
+        "os abobaseis",
+        "se abobasen"
+      ],
+      "Future": [
+        "me abobare",
+        "te abobares",
+        "se abobare",
+        "nos abobáremos",
+        "os abobareis",
+        "se abobaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["abóbate", "abóbese", "abobémonos", "abobaos", "abóbense"],
+      "Negative": [
+        "no te abobes",
+        "no se abobe",
+        "no nos abobemos",
+        "no os abobéis",
+        "no se aboben"
+      ]
+    },
+    "Present Participle": "abobando",
+    "Past Participle": "abobado"
+  },
+  "spanishdictLink": "http://www.spanishdict.com/conjugate/abobarse",
+  "wordreference": {
+    "Indicative": {
+      "Present": ["me abobo", "te abobas", "se aboba", "nos abobamos", "os abobáis", "se aboban"],
+      "Preterite": [
+        "me abobé",
+        "te abobaste",
+        "se abobó",
+        "nos abobamos",
+        "os abobasteis",
+        "se abobaron"
+      ],
+      "Imperfect": [
+        "me abobaba",
+        "te abobabas",
+        "se abobaba",
+        "nos abobábamos",
+        "os abobabais",
+        "se abobaban"
+      ],
+      "Conditional": [
+        "me abobaría",
+        "te abobarías",
+        "se abobaría",
+        "nos abobaríamos",
+        "os abobaríais",
+        "se abobarían"
+      ],
+      "Future": [
+        "me abobaré",
+        "te abobarás",
+        "se abobará",
+        "nos abobaremos",
+        "os abobaréis",
+        "se abobarán"
+      ]
+    },
+    "Subjunctive": {
+      "Present": ["me abobe", "te abobes", "se abobe", "nos abobemos", "os abobéis", "se aboben"],
+      "Imperfect (-ra)": [
+        "me abobara",
+        "te abobaras",
+        "se abobara",
+        "nos abobáramos",
+        "os abobarais u os abobaseis",
+        "se abobaran"
+      ],
+      "Imperfect (-se)": [
+        "me abobase",
+        "te abobases",
+        "se abobase",
+        "nos abobásemos",
+        "os abobaseis",
+        "se abobasen"
+      ],
+      "Future": [
+        "me abobare",
+        "te abobares",
+        "se abobare",
+        "nos abobáremos",
+        "os abobareis",
+        "se abobaren"
+      ]
+    },
+    "Imperative": {
+      "Affirmative": ["abóbate", "abóbese", "abobémonos", "abobaos", "abóbense"],
+      "Negative": [
+        "no te abobes",
+        "no se abobe",
+        "no nos abobemos",
+        "no os abobéis",
+        "no se aboben"
+      ]
+    },
+    "Present Participle": "abobando",
+    "Past Participle": "abobado"
+  },
+  "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=abobarse"
+}
