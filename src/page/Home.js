@@ -1,18 +1,29 @@
 /* eslint-disable no-console */
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import SearchBar from '../component/SearchBar.js';
 import { Header, Button, Grid } from 'semantic-ui-react';
+// import faker from 'faker';
+
+import SearchBar from '../component/SearchBar.js';
+import filterVerbs from '../logic/filterVerbs.js';
+
+// const source = [...Array(5).keys()].map(() => ({
+//   title: faker.company.companyName(),
+//   description: faker.company.catchPhrase(),
+//   image: faker.internet.avatar(),
+//   price: faker.finance.amount(0, 100, 2, '$'),
+// }));
 
 const accentButtons = ['á', 'é', 'í', 'ó', 'ú', 'ü', 'ñ'];
 
 const Home = () => {
   let [searchResults, setSearchResults] = useState([]);
   let [searchValue, setSearchValue] = useState('');
-  console.log(searchResults);
   //let [results, setResults] = useState([]);
-  const handleFilterResults = (re, source) => {
-    return source.filter(result => re.test(result.title));
+  const handleFilterResults = value => {
+    console.log('searchValue - ', searchValue);
+    console.log('value in Home - ', value);
+    return filterVerbs(value, 5);
   };
   const handleAccentClick = (e, accent) => {
     setSearchValue(searchValue + accent);

@@ -3,54 +3,51 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Icon, Search } from 'semantic-ui-react';
 import _ from 'lodash';
-import faker from 'faker';
-
-const source = _.times(5, () => ({
-  title: faker.company.companyName(),
-  description: faker.company.catchPhrase(),
-  image: faker.internet.avatar(),
-  price: faker.finance.amount(0, 100, 2, '$'),
-}));
 
 // eslint-disable-next-line no-unused-vars
 const SearchBar = ({ onFilterResults, results, setResults, value, setValue, ...props }) => {
   let [_isLoading, _setIsLoading] = useState(false);
+
   const revertState = () => {
     _setIsLoading(false);
     setResults([]);
     setValue('');
   };
-  const handleResultSelect = (e, { result }) => {
+
+  const _handleResultSelect = (e, { result }) => {
     setValue(result.title);
-    handleResultSearch();
+    _handleResultSearch();
   };
-  const handleResultSearch = () => {
+
+  const _handleResultSearch = () => {
     console.log('Search button clicked');
   };
-  const handleSearchChange = (e, { value }) => {
+
+  const _handleSearchChange = (e, { value }) => {
     _setIsLoading(true);
     setValue(value);
+    console.log('value - ', value);
     setTimeout(() => {
-      // adapt later
       if (value.length < 1) return revertState();
-      const re = new RegExp(_.escapeRegExp(value), 'i'); // match not case sensitive
-      // adapt based upon json file structure
-      setResults(onFilterResults(re, source));
+      console.log('value in timeout - ', value);
+      setResults(onFilterResults(value));
       _setIsLoading(false);
-    }, 500);
+    }, 100);
   };
+
   return (
     <Search
       aligned="right"
-      size="massive"
+      size="large"
       loading={_isLoading}
-      onResultSelect={handleResultSelect}
-      onSearchChange={_.debounce(handleSearchChange, 500, {
+      onResultSelect={_handleResultSelect}
+      onSearchChange={_.debounce(_handleSearchChange, 500, {
         leading: true,
       })}
       results={results}
       value={value}
-      icon={<Icon inverted circular link name="search" onClick={handleResultSearch} />}
+      noResultsDescription="Make sure to use the infintive form."
+      icon={<Icon inverted circular link name="search" onClick={_handleResultSearch} />}
       {...props}
     />
   );
