@@ -1,5 +1,7 @@
-node_modules/*
+node_modules/**/*
 dist/*
-.cache/*
+.cache/**/*
 .DS_Store
 server/__pycache__/*
+server/index.json
+yarn-error.log

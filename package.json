@@ -31,7 +31,7 @@
     "build": "NODE_ENV=production parcel build public/index.html --public-url ./"
   },
   "lint-staged": {
-    "*.{js,jsx,json,scss,css,md}": [
+    "*.{js,jsx,scss,css,md}": [
       "prettier --write",
       "git add"
     ]
