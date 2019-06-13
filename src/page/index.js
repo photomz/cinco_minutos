@@ -7,8 +7,8 @@ import Settings from './Settings.js';
 import About from './About.js';
 
 // eslint-disable-next-line react/display-name
-const PageHoc = (Component, page) => ({ currentPage, ...props }) =>
-  page === currentPage ? <Component {...props} /> : '';
+const PageHoc = (Component, page) => ({ current, ...props }) =>
+  page === current ? <Component {...props} /> : '';
 PageHoc.displayName = 'PageContent';
 
 const HomePage = PageHoc(Home, 'home');
@@ -17,4 +17,4 @@ const CollectionsPage = PageHoc(Collections, 'collections');
 const SettingsPage = PageHoc(Settings, 'settings');
 const AboutPage = PageHoc(About, 'about');
 
-export { HomePage, BrowsePage, CollectionsPage, SettingsPage, AboutPage };
+export { HomePage, BrowsePage, CollectionsPage, SettingsPage, AboutPage, PageHoc };

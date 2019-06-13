@@ -9,7 +9,7 @@ from time import time
 from math import floor
 from re import compile
 
-PATH = expanduser('~/Code/js/cinco_minutos/server/')
+PATH = expanduser('~/Code/js/cinco_minutos/server/data/')
 
 # order
 o = ['Indicative', 'Subjunctive', 'Imperative', 'Progressive', 'Perfect', 'Perfect Subjunctive']
@@ -207,10 +207,14 @@ class Conjugation:
         strConj = ''
         for site in self.conj:
             strConj += '\n{}\n'.format(site.upper())
-            for dct in self.conj[site]:
-                strConj += '\n{}\n'.format(dct.upper())
-                for lst in self.conj[site][dct]:
-                    strConj += "{:12} {}\n".format(lst + ':', ', '.join(self.conj[site][dct][lst]))
+            try: 
+                for dct in self.conj[site]:
+                    if dct != "Present Participle" and dct != "Past Participle":
+                        strConj += '\n{}\n'.format(dct.upper())
+                        for lst in self.conj[site][dct]:
+                            strConj += "{:12} {}\n".format(lst + ':', ', '.join(self.conj[site][dct][lst]))
+                    else: strConj += "\n{:12} {}\n".format(dct.upper() + ':', self.conj[site][dct])
+            except TypeError: strConj += "null\n";
         return strConj
 
 def all_download():
@@ -309,5 +313,50 @@ def test_Conjugation():
     conj.find(input("Input a verb: ").lower())
     print(str(conj))
 
+def transform():
+    with open(PATH + "verbs.json", 'a+') as f:
+        f.seek(0, 0);
+        f_write = json.load(f);
+        for verb in f_write:
+            conj = []
+            i=0
+            conj1 = f_write[verb].pop("wordreference")
+            conj2 = f_write[verb].pop("spanishdict")
+            if conj2 is not None: conj1 = conj2
+            f_write[verb]["conjugation"] = conj1
+            for mood in f_write[verb]["conjugation"]:
+                if mood != 'Present Participle' and mood != 'Past Participle':
+                    conj.append([])
+                    for tense in f_write[verb]['conjugation'][mood]:
+                        try:conj[i].append([lst for lst in f_write[verb]['conjugation'][mood][tense]])
+                        except TypeError: print(mood+" "+tense);
+                    i+=1
+                else: conj.append(f_write[verb]["conjugation"][mood])
+            f_write[verb]['conjugation'] = conj
+        f.truncate(0);
+        json.dump(f_write, f, ensure_ascii=False)
+    print("Successful")
+
+def examine_same():
+    iter1 = ['spanishdict', 'wordreference']
+    sel, al = 0,0
+    with open(PATH + "verbs.json", 'r') as f:
+        f_write = json.load(f);
+        for verb in f_write:
+            al += 1
+            sd = f_write[verb][iter1[0]]
+            wr = f_write[verb][iter1[1]]
+            if sd and wr and sd != wr:
+                sel += 1
+                for mood in sd:
+                    if mood != 'PresentParticiple' and mood != 'PastParticiple':
+                        assert wr[mood]
+                        for tense in sd[mood]:
+                            assert wr[mood][tense]
+                            for i in range(len(sd[mood][tense])):
+                                if sd[mood][tense][i] != wr[mood][tense][i]:
+                                    print(mood+" "+tense+"---"+sd[mood][tense][i] + " vs " + wr[mood][tense][i])
+    print("{}/{}".format(sel, al))
+
 if __name__ == "__main__":
-    all_download()
+    test_Conjugation()

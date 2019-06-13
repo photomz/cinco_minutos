@@ -1,0 +1,30 @@
+{
+  "advertir": {
+    "verb": "advertir",
+    "definition": "to warn",
+    "reflexive": false, 
+    "spanishdictLink": "http://www.spanishdict.com/conjugate/advertir",
+    "wordreferenceLink": "http://www.wordreference.com/es/en/translation.asp?spen=advertir",
+    "conjugation": [
+      [
+        ["advierto", "adviertes", "advierte", "advertimos", "advertís", "advierten"],
+        ["advertí", "advertiste", "advirtió", "advertimos", "advertisteis", "advirtieron"],
+        ["advertía", "advertías", "advertía", "advertíamos", "advertíais", "advertían"],
+        ["advertiría", "advertirías", "advertiría", "advertiríamos", "advertiríais", "advertirían"],
+        ["advertiré", "advertirás", "advertirá", "advertiremos", "advertiréis", "advertirán"]
+      ],
+      [
+        ["advierta", "adviertas", "advierta", "advirtamos", "advirtáis", "adviertan"],
+        ["advirtiera", "advirtieras", "advirtiera", "advirtiéramos", "advirtierais", "advirtieran"],
+        ["advirtiese", "advirtieses", "advirtiese", "advirtiésemos", "advirtieseis", "advirtiesen"],
+        ["advirtiere", "advirtieres", "advirtiere", "advirtiéremos", "advirtiereis", "advirtieren"]
+      ],
+      [
+        ["advierte", "advierta", "advirtamos", "advertid", "adviertan"],
+        ["no adviertas", "no advierta", "no advirtamos", "no advirtáis", "no adviertan"]
+      ], 
+      "advirtiendo", 
+      "advertido"
+    ]
+  }
+}

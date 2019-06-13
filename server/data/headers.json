@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Indicative",
+    "headers": ["Present", "Preterite", "Imperfect", "Conditional", "Future"],
+    "columns": ["yo", "tú", "él/ella/Ud.", "nosotros", "vosotros", "ellos/ellas/Uds."]
+  },
+  {
+    "title": "Subjunctive",
+    "headers" : ["Present", "Imperfect (-ra)", "Imperfect (-se)", "Future"],
+    "columns": ["yo", "tú", "él/ella/Ud.", "nosotros", "vosotros", "ellos/ellas/Uds."]
+  },
+  {
+    "title": "Imperative",
+    "headers": ["Affirmative", "Negative"],
+    "columns": ["tú", "Ud.", "nosotros", "vosotros", "Uds."]
+  },
+  {
+    "title": "Progressive",
+    "headers": ["Present", "Preterite", "Imperfect", "Conditional", "Future"],
+    "columns": ["yo", "tú", "él/ella/Ud.", "nosotros", "vosotros", "ellos/ellas/Uds."]
+  },
+  {
+    "title": "Perfect",
+    "headers": ["Present", "Preterite", "Past", "Conditional", "Future"],
+    "columns": ["yo", "tú", "él/ella/Ud.", "nosotros", "vosotros", "ellos/ellas/Uds."]
+  },
+  {
+    "title": "Perfect Subjunctive",
+    "headers" : ["Present", "Past (-ra)", "Past (-se)", "Future"],
+    "columns": ["yo", "tú", "él/ella/Ud.", "nosotros", "vosotros", "ellos/ellas/Uds."]
+  }
+]

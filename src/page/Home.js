@@ -1,36 +1,39 @@
 /* eslint-disable no-console */
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { Header, Button, Grid } from 'semantic-ui-react';
-// import faker from 'faker';
+import { Header, Button, Grid, Segment } from 'semantic-ui-react';
 
 import SearchBar from '../component/SearchBar.js';
-import filterVerbs from '../logic/filterVerbs.js';
-
-// const source = [...Array(5).keys()].map(() => ({
-//   title: faker.company.companyName(),
-//   description: faker.company.catchPhrase(),
-//   image: faker.internet.avatar(),
-//   price: faker.finance.amount(0, 100, 2, '$'),
-// }));
+import ConjugationTable from '../component/ConjugationTable.js';
+import { filterVerbs } from '../logic';
+import conjugation from '../../server/server.js'; // delete this later
 
 const accentButtons = ['á', 'é', 'í', 'ó', 'ú', 'ü', 'ñ'];
+const icons = [
+  'chess rook',
+  'chess knight',
+  'chess king',
+  'chess bishop',
+  'chess queen',
+  'chess pawn',
+];
 
 const Home = () => {
   let [searchResults, setSearchResults] = useState([]);
   let [searchValue, setSearchValue] = useState('');
-  //let [results, setResults] = useState([]);
-  const handleFilterResults = value => {
-    console.log('searchValue - ', searchValue);
-    console.log('value in Home - ', value);
-    return filterVerbs(value, 5);
+  let [isSearched, setIsSearched] = useState(false);
+  let [conjResults, setConjResults] = useState({});
+
+  const handleFilterResults = value => filterVerbs(value, 5);
+  const handleSearchClick = value => {
+    const result = conjugation(value);
+    setIsSearched(!!result); // force to bool
+    setConjResults(result);
   };
-  const handleAccentClick = (e, accent) => {
-    setSearchValue(searchValue + accent);
-  };
+  const handleAccentClick = (e, accent) => setSearchValue(searchValue + accent);
   return (
     <div>
-      <Grid textAlign="center" style={{ height: '100vh' }}>
+      <Grid textAlign="center" style={{ height: '70vh' }}>
         <Grid.Row>
           <Grid.Column style={{ maxWidth: 450 }}>
             <Header
@@ -41,6 +44,7 @@ const Home = () => {
             />
             <SearchBar
               onFilterResults={handleFilterResults}
+              onSearchClick={handleSearchClick}
               results={searchResults}
               setResults={setSearchResults}
               value={searchValue}
@@ -56,7 +60,28 @@ const Home = () => {
             </Button.Group>
           </Grid.Column>
         </Grid.Row>
-        <Grid.Row />
+        <Grid.Row>
+          <Grid.Column style={{ maxWidth: 1000 }}>
+            {conjResults.verb ? (
+              <div>
+                <Segment raised stacked padded>
+                  <Header as="h2" content={conjResults.verb} textAlign="left" />
+                  <Header as="h3" content={conjResults.definition} textAlign="left" />
+                </Segment>
+                <ConjugationTable
+                  raised
+                  stacked
+                  icons={icons}
+                  conjugation={conjResults.conjugation.slice(0, 6)}
+                />
+              </div>
+            ) : (
+              <Segment raised stacked padded>
+                <Header as="h2" content="¡Vámos!" textAlign="left" />
+              </Segment>
+            )}
+          </Grid.Column>
+        </Grid.Row>
       </Grid>
     </div>
   );

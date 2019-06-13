@@ -9,10 +9,10 @@ import {
   CollectionsPage as Collections,
   SettingsPage as Settings,
   AboutPage as About,
-} from '../page/index.js';
+} from '../page';
 
 const navContent = [
-  { name: 'ℭ𝔦𝔫𝔠𝔬𝔐𝔦𝔫𝔲𝔱𝔬𝔰', icon: 'life ring' },
+  { name: 'ℭ𝔦𝔫𝔠𝔬𝔐𝔦𝔫𝔲𝔱𝔬𝔰', icon: 'chess' },
   { name: 'home', icon: 'home' },
   { name: 'browse', icon: 'book' },
   { name: 'collections', icon: 'archive' },
@@ -29,11 +29,11 @@ const App = () => {
   return (
     <div>
       <NavBar onClick={onNavBarClick} active={page} content={navContent} />
-      <Home currentPage={page} />
-      <Browse currentPage={page} />
-      <Collections currentPage={page} />
-      <Settings currentPage={page} />
-      <About currentPage={page} />
+      <Home current={page} />
+      <Browse current={page} />
+      <Collections current={page} />
+      <Settings current={page} />
+      <About current={page} />
     </div>
   );
 };
