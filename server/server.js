@@ -1,4 +1,11 @@
 /* eslint-disable no-console */
+const express = require('express');
+const bodyParser = require('body-parser');
+const cors = require('cors');
+let app = express();
+app.use(cors());
+app.use(bodyParser.json());
+
 const verbs = require('./data/verbs.json');
 //const fullSearch = require('./data/fullSearch.json');
 const headers = require('./data/headers.json');
@@ -38,4 +45,15 @@ const conjugate = verb => {
   };
 };
 
-export default conjugate;
+app.get('/', (req, res) => {
+  res.send("I'm a teapot.");
+});
+
+app.get('/conjugate', (req, res) => {
+  console.log('HIIIII');
+  res.setHeader('access-control-allow-origin', '*');
+  console.log(req.query.verb);
+  res.json(conjugate(req.query.verb));
+});
+
+app.listen(3000);

@@ -27,7 +27,7 @@
     "test:eslint": "eslint src/ --ext .js --ext .jsx",
     "pretest": "yarn run test:eslint",
     "precommit": "lint-staged",
-    "start": "parcel public/index.html",
+    "start": "nodemon server/server.js & parcel public/index.html",
     "build": "NODE_ENV=production parcel build public/index.html --public-url ./"
   },
   "lint-staged": {
@@ -37,6 +37,8 @@
     ]
   },
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
     "lodash": "^4.17.11",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",

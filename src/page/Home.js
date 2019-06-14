@@ -6,10 +6,10 @@ import { Header, Button, Grid, Segment, Image, Label, Icon, Loader } from 'seman
 import SearchBar from '../component/SearchBar.js';
 import ConjugationTable from '../component/ConjugationTable.js';
 import { filterVerbs } from '../logic';
-import conjugation from '../../server/server.js'; // delete this later
 import spanishdictImage from '../spanishdict.png';
 import wordreferenceImage from '../wordreference.png';
 
+const SERVER_URL = 'http://localhost:3000';
 const accentButtons = ['á', 'é', 'í', 'ó', 'ú', 'ü', 'ñ'];
 const icons = [
   'chess rook',
@@ -39,9 +39,21 @@ const Home = () => {
   const handleSearchClick = value => {
     setIsSearched(false);
     setAction('loading');
-    const result = conjugation(value);
-    setIsSearched(!!result); // force to bool
-    setConjResults(result);
+    const params = {
+      headers: {
+        verb: value,
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
+    };
+    fetch(SERVER_URL + '/conjugate?verb=' + value, params)
+      .then(res => res.json())
+      .then(val => {
+        setConjResults(val);
+        setIsSearched(Boolean(Object.entries(val).length)); // force to bool
+      })
+      .catch(err => console.log(err));
+    //const result = conjugation(value);
     setAction('idle');
   };
   const handleAccentClick = (e, accent) => setSearchValue(searchValue + accent);
@@ -75,14 +87,14 @@ const Home = () => {
         <Grid.Column style={{ maxWidth: 1000 }}>
           <Label
             onClick={() => setAction(action === 'verbCheck' ? 'idle' : 'verbCheck')}
-            color={action === 'verbCheck' ? 'blue' : ''}
+            color={action === 'verbCheck' ? 'blue' : null}
           >
             <Icon name="pencil" size="large" />
             Verb Check
           </Label>
           <Label
             onClick={() => setAction(action === 'addingCollection' ? 'idle' : 'addingCollection')}
-            color={action === 'addingCollection' ? 'blue' : ''}
+            color={action === 'addingCollection' ? 'blue' : null}
           >
             <Icon name="list" size="large" />
             Add To Collection
