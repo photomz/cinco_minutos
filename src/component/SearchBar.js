@@ -5,20 +5,13 @@ import { Icon, Search } from 'semantic-ui-react';
 import _ from 'lodash';
 
 // eslint-disable-next-line no-unused-vars
-const SearchBar = ({
-  onFilterResults,
-  onSearchClick,
-  results,
-  setResults,
-  value,
-  setValue,
-  ...props
-}) => {
+const SearchBar = ({ onFilterResults, onSearchClick, value, setValue, ...props }) => {
   let [_isLoading, _setIsLoading] = useState(false);
+  let [_results, _setResults] = useState([]);
 
   const revertState = () => {
     _setIsLoading(false);
-    setResults([]);
+    _setResults([]);
     setValue('');
   };
   const _handleResultSelect = (e, { result }) => {
@@ -35,21 +28,20 @@ const SearchBar = ({
     setTimeout(() => {
       if (value.length < 1) return revertState();
       //console.log('value in timeout - ', value);
-      setResults(onFilterResults(value));
+      _setResults(onFilterResults(value));
       _setIsLoading(false);
     }, 200);
   };
 
   return (
     <Search
-      aligned="right"
       size="large"
       loading={_isLoading}
       onResultSelect={_handleResultSelect}
       onSearchChange={_.debounce(_handleSearchChange, 500, {
         leading: true,
       })}
-      results={results}
+      results={_results}
       value={value}
       noResultsDescription="Make sure to use the infintive form."
       icon={<Icon inverted circular link name="search" onClick={_handleSearchClick} />}
@@ -63,8 +55,8 @@ SearchBar.propTypes = {
   buttons: PropTypes.array,
   onFilterResults: PropTypes.func,
   onSearchClick: PropTypes.func,
-  results: PropTypes.array,
-  setResults: PropTypes.func,
+  _results: PropTypes.array,
+  _setResults: PropTypes.func,
   value: PropTypes.string,
   setValue: PropTypes.func,
 };
