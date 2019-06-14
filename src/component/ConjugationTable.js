@@ -26,15 +26,17 @@ const ConjugationTable = ({ conjugation, icons, ...props }) => (
         {/* <Header as="h3" content={title} /> */}
         <Table celled>
           <Table.Header>
-            <Table.HeaderCell>
-              <Label size="large" color="red" ribbon>
-                <Icon name={icons[i]} />
-                {title}
-              </Label>
-            </Table.HeaderCell>
-            {headers.map(elem => (
-              <Table.HeaderCell key={`${title}_${elem}`}>{elem}</Table.HeaderCell>
-            ))}
+            <Table.Row>
+              <Table.HeaderCell>
+                <Label size="large" color="red" ribbon>
+                  <Icon name={icons[i]} />
+                  {title}
+                </Label>
+              </Table.HeaderCell>
+              {headers.map(elem => (
+                <Table.HeaderCell key={`${title}_${elem}`}>{elem}</Table.HeaderCell>
+              ))}
+            </Table.Row>
           </Table.Header>
           <Table.Body>
             {body.map((rowArr, i) => (

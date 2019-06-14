@@ -1,12 +1,14 @@
 /* eslint-disable no-console */
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { Header, Button, Grid, Segment } from 'semantic-ui-react';
+import { Header, Button, Grid, Segment, Label } from 'semantic-ui-react';
 
 import SearchBar from '../component/SearchBar.js';
 import ConjugationTable from '../component/ConjugationTable.js';
 import { filterVerbs } from '../logic';
 import conjugation from '../../server/server.js'; // delete this later
+import spanishdictImage from '../spanishdict.png';
+import wordreferenceImage from '../wordreference.png';
 
 const accentButtons = ['á', 'é', 'í', 'ó', 'ú', 'ü', 'ñ'];
 const icons = [
@@ -62,11 +64,16 @@ const Home = () => {
         </Grid.Row>
         <Grid.Row>
           <Grid.Column style={{ maxWidth: 1000 }}>
-            {conjResults.verb ? (
+            {isSearched ? (
               <div>
                 <Segment raised stacked padded>
                   <Header as="h2" content={conjResults.verb} textAlign="left" />
                   <Header as="h3" content={conjResults.definition} textAlign="left" />
+                  <Button as="div">
+                    <Label>
+                      <img src={spanishdictImage} alt="SpanishDict Image" />
+                    </Label>
+                  </Button>
                 </Segment>
                 <ConjugationTable
                   raised

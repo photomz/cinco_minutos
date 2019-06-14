@@ -12,11 +12,6 @@
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
     "babel-eslint": "^10.0.1",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "cpy-cli": "^2.0.0",
     "enzyme": "^3.9.0",
     "eslint": "^5.16.0",
     "eslint-plugin-react": "^7.13.0",
@@ -42,14 +37,12 @@
     ]
   },
   "dependencies": {
-    "faker": "^4.1.0",
     "lodash": "^4.17.11",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "semantic-ui-css": "^2.4.1",
-    "semantic-ui-react": "^0.87.1",
-    "uuid": "^3.3.2"
+    "semantic-ui-react": "^0.87.1"
   },
   "jest": {
     "moduleNameMapper": {
