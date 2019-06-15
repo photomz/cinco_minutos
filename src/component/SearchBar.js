@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { Icon, Search } from 'semantic-ui-react';
+import { Icon, Search, Ref } from 'semantic-ui-react';
 import _ from 'lodash';
 
 // eslint-disable-next-line no-unused-vars
@@ -13,6 +13,10 @@ const SearchBar = ({ onFilterResults, onSearchClick, value, setValue, ...props }
     _setIsLoading(false);
     _setResults([]);
     setValue('');
+  };
+  const getSearchDOM = node => {
+    console.log(node);
+    node.firstChild.firstChild.id = 'homeSearchInput';
   };
   const _handleResultSelect = (e, { result }) => {
     setValue(result.title);
@@ -34,19 +38,21 @@ const SearchBar = ({ onFilterResults, onSearchClick, value, setValue, ...props }
   };
 
   return (
-    <Search
-      size="large"
-      loading={_isLoading}
-      onResultSelect={_handleResultSelect}
-      onSearchChange={_.debounce(_handleSearchChange, 500, {
-        leading: true,
-      })}
-      results={_results}
-      value={value}
-      noResultsDescription="Make sure to use the infintive form."
-      icon={<Icon inverted circular link name="search" onClick={_handleSearchClick} />}
-      {...props}
-    />
+    <Ref innerRef={getSearchDOM}>
+      <Search
+        size="large"
+        loading={_isLoading}
+        onResultSelect={_handleResultSelect}
+        onSearchChange={_.debounce(_handleSearchChange, 500, {
+          leading: true,
+        })}
+        results={_results}
+        value={value}
+        noResultsDescription="Make sure to use the infintive form."
+        icon={<Icon inverted circular link name="search" onClick={_handleSearchClick} />}
+        {...props}
+      />
+    </Ref>
   );
 };
 
@@ -59,6 +65,7 @@ SearchBar.propTypes = {
   _setResults: PropTypes.func,
   value: PropTypes.string,
   setValue: PropTypes.func,
+  inputRef: PropTypes.any,
 };
 
 export default SearchBar;

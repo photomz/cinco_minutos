@@ -10,7 +10,12 @@ import spanishdictImage from '../spanishdict.png';
 import wordreferenceImage from '../wordreference.png';
 
 const SERVER_URL = 'http://localhost:3000';
-const accentButtons = ['á', 'é', 'í', 'ó', 'ú', 'ü', 'ñ'];
+const accentButtons = ['´', '¨', '˜'];
+const toggleAccent = [
+  { á: 'a', é: 'e', í: 'i', ó: 'o', ú: 'u', a: 'á', e: 'é', i: 'í', o: 'ó', u: 'ú', ü: 'ú' },
+  { ü: 'u', u: 'ü', ú: 'ü' },
+  { ñ: 'n', n: 'ñ' },
+];
 const icons = [
   'chess rook',
   'chess knight',
@@ -34,7 +39,6 @@ const Home = () => {
   let [isSearched, setIsSearched] = useState(false);
   // action === idle || loading || verbCheck || addingCollection
   let [action, setAction] = useState('idle');
-
   const handleFilterResults = value => filterVerbs(value, 5);
   const handleSearchClick = value => {
     setIsSearched(false);
@@ -56,7 +60,16 @@ const Home = () => {
     //const result = conjugation(value);
     setAction('idle');
   };
-  const handleAccentClick = (e, accent) => setSearchValue(searchValue + accent);
+  const handleAccentClick = (e, accent) => {
+    const cChar = searchValue.slice(-1);
+    const nChar = toggleAccent[accentButtons.indexOf(accent)][cChar];
+    //console.log(searchRef.current)
+    //eslint-disable-next-line
+    if (nChar) {
+      setSearchValue(searchValue.slice(0, -1) + nChar);
+      document.getElementById('homeSearchInput').focus();
+    }
+  };
   return (
     <Grid textAlign="center">
       <Grid.Row>
