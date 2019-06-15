@@ -15,8 +15,7 @@ const SearchBar = ({ onFilterResults, onSearchClick, value, setValue, ...props }
     setValue('');
   };
   const getSearchDOM = node => {
-    console.log(node);
-    node.firstChild.firstChild.id = 'homeSearchInput';
+    if (node !== null) node.firstChild.firstChild.id = 'homeSearchInput';
   };
   const _handleResultSelect = (e, { result }) => {
     setValue(result.title);
