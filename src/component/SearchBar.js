@@ -35,7 +35,6 @@ const SearchBar = ({ onFilterResults, onSearchClick, value, setValue, ...props }
       _setIsLoading(false);
     }, 200);
   };
-
   return (
     <Ref innerRef={getSearchDOM}>
       <Search
@@ -66,5 +65,4 @@ SearchBar.propTypes = {
   setValue: PropTypes.func,
   inputRef: PropTypes.any,
 };
-
 export default SearchBar;

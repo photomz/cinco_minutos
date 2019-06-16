@@ -29,8 +29,10 @@ const menuDefault = {
   style: { marginRight: 10, display: 'inline', height: '1.5em', width: '1.5em' },
 };
 const setMenuImgStyle = node => {
-  node.style.setProperty('width', '1.286rem', 'important');
-  node.style.setProperty('height', 'auto', 'important');
+  if (node !== null) {
+    node.style.setProperty('width', '1.286rem', 'important');
+    node.style.setProperty('height', 'auto', 'important');
+  }
 };
 const Home = () => {
   let [searchValue, setSearchValue] = useState('');
@@ -101,6 +103,7 @@ const Home = () => {
             onClick={() => setAction(action === 'verbCheck' ? 'idle' : 'verbCheck')}
             color={action === 'verbCheck' ? 'blue' : null}
             as="a"
+            style={{ margin: '0.5em 0.25em' }}
           >
             <Icon name="pencil" size="large" />
             Verb Check
@@ -109,17 +112,26 @@ const Home = () => {
             onClick={() => setAction(action === 'addingCollection' ? 'idle' : 'addingCollection')}
             color={action === 'addingCollection' ? 'blue' : null}
             as="a"
+            style={{ margin: '0.5em 0.25em' }}
           >
             <Icon name="list" size="large" />
             Add To Collection
           </Label>
-          <Label onClick={() => window.open(conjResults.spanishdictLink)} as="a">
+          <Label
+            onClick={() => window.open(conjResults.spanishdictLink)}
+            as="a"
+            style={{ margin: '0.5em 0.25em' }}
+          >
             <Ref innerRef={setMenuImgStyle}>
               <Image {...menuDefault} src={spanishdictImage} />
             </Ref>
             SpanishDict
           </Label>
-          <Label onClick={() => window.open(conjResults.wordreferenceLink)} as="a">
+          <Label
+            onClick={() => window.open(conjResults.wordreferenceLink)}
+            as="a"
+            style={{ margin: '0.5em 0.25em' }}
+          >
             <Ref innerRef={setMenuImgStyle}>
               <Image {...menuDefault} src={wordreferenceImage} />
             </Ref>
@@ -128,7 +140,7 @@ const Home = () => {
         </Grid.Column>
       </Grid.Row>
       <Grid.Row>
-        <Grid.Column style={{ maxWidth: 1000 }}>
+        <Grid.Column style={{ maxWidth: '80vw' }}>
           <Segment raised stacked padded>
             {isSearched ? (
               <div>
@@ -145,7 +157,7 @@ const Home = () => {
       </Grid.Row>
       {isSearched && (
         <Grid.Row>
-          <Grid.Column style={{ maxWidth: 1000 }}>
+          <Grid.Column style={{ maxWidth: '80vw' }}>
             <ConjugationTable
               raised
               stacked
