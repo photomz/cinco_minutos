@@ -68,12 +68,11 @@ const Home = () => {
     const cChar = searchValue.slice(-1);
     const nChar = toggleAccent[accentButtons.indexOf(accent)][cChar];
     //eslint-disable-next-line
-    if (nChar) setSearchValue(searchValue.slice(0, -1) + nChar);
+    if (nChar) {
+      setSearchValue(searchValue.slice(0, -1) + nChar);
+      document.querySelector('#homeSearchInput').focus();
+    }
   };
-
-  useEffect(() => {
-    document.querySelector('#homeSearchInput').focus();
-  }, [searchValue]);
 
   return (
     <Grid textAlign="center">
@@ -131,7 +130,7 @@ const Home = () => {
       </Grid.Row>
       <Grid.Row>
         <Grid.Column style={{ maxWidth: '80vw' }}>
-          <Segment raised stacked padded>
+          <Segment raised padded>
             {isSearched ? (
               <div>
                 <Header as="h2" content={conjResults.verb} textAlign="left" />
@@ -150,7 +149,6 @@ const Home = () => {
           <Grid.Column style={{ maxWidth: '80vw' }}>
             <ConjugationTable
               raised
-              stacked
               icons={icons}
               conjugation={conjResults.conjugation.slice(0, 6)}
             />
