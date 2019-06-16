@@ -9,8 +9,6 @@ import filterVerbs from './logic/filterVerbs.js';
 import spanishdictImage from '../static/spanishdict.png';
 import wordreferenceImage from '../static/wordreference.png';
 
-import './index.css';
-
 const SERVER_URL = 'http://localhost:3000';
 const accentButtons = ['´', '¨', '˜'];
 const toggleAccent = [
@@ -41,7 +39,6 @@ const Home = () => {
   const handleFilterResults = value => filterVerbs(value, 5);
 
   const handleSearchClick = value => {
-    if (value === conjResults.verb) return;
     setIsSearched(false);
     setAction('loading');
     const params = {
@@ -118,11 +115,11 @@ const Home = () => {
             Add To Collection
           </Label>
           <Label onClick={() => window.open(conjResults.spanishdictLink)} as="a">
-            <Image {...menuDefault} src={spanishdictImage} id="menuImage" />
+            <Image {...menuDefault} src={spanishdictImage} className="menuImage" />
             SpanishDict
           </Label>
           <Label onClick={() => window.open(conjResults.wordreferenceLink)} as="a">
-            <Image {...menuDefault} src={wordreferenceImage} id="menuImage" />
+            <Image {...menuDefault} src={wordreferenceImage} className="menuImage" />
             WordReference
           </Label>
         </Grid.Column>
