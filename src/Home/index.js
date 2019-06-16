@@ -115,11 +115,11 @@ const Home = () => {
             Add To Collection
           </Label>
           <Label onClick={() => window.open(conjResults.spanishdictLink)} as="a">
-            <Image {...menuDefault} src={spanishdictImage} className="menuImage" />
+            <Image {...menuDefault} src={spanishdictImage} id="menuImage" />
             SpanishDict
           </Label>
           <Label onClick={() => window.open(conjResults.wordreferenceLink)} as="a">
-            <Image {...menuDefault} src={wordreferenceImage} className="menuImage" />
+            <Image {...menuDefault} src={wordreferenceImage} id="menuImage" />
             WordReference
           </Label>
         </Grid.Column>
