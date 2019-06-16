@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { Header, Button, Grid, Segment, Image, Label, Icon, Loader } from 'semantic-ui-react';
+import { Header, Button, Grid, Segment, Image, Label, Icon, Loader, Ref } from 'semantic-ui-react';
 
 import SearchBar from '../component/SearchBar.js';
 import ConjugationTable from '../component/ConjugationTable.js';
@@ -10,7 +10,12 @@ import spanishdictImage from '../spanishdict.png';
 import wordreferenceImage from '../wordreference.png';
 
 const SERVER_URL = 'http://localhost:3000';
-const accentButtons = ['á', 'é', 'í', 'ó', 'ú', 'ü', 'ñ'];
+const accentButtons = ['´', '¨', '˜'];
+const toggleAccent = [
+  { á: 'a', é: 'e', í: 'i', ó: 'o', ú: 'u', a: 'á', e: 'é', i: 'í', o: 'ó', u: 'ú', ü: 'ú' },
+  { ü: 'u', u: 'ü', ú: 'ü' },
+  { ñ: 'n', n: 'ñ' },
+];
 const icons = [
   'chess rook',
   'chess knight',
@@ -20,21 +25,19 @@ const icons = [
   'chess pawn',
 ];
 const menuDefault = {
-  width: '18',
-  height: '18',
-  src: spanishdictImage,
-  as: 'a',
-  href: '#',
-  style: { marginRight: 10 },
+  as: 'img',
+  style: { marginRight: 10, display: 'inline', height: '1.5em', width: '1.5em' },
 };
-
+const setMenuImgStyle = node => {
+  node.style.setProperty('width', '1.286rem', 'important');
+  node.style.setProperty('height', 'auto', 'important');
+};
 const Home = () => {
   let [searchValue, setSearchValue] = useState('');
   let [conjResults, setConjResults] = useState({});
   let [isSearched, setIsSearched] = useState(false);
   // action === idle || loading || verbCheck || addingCollection
   let [action, setAction] = useState('idle');
-
   const handleFilterResults = value => filterVerbs(value, 5);
   const handleSearchClick = value => {
     setIsSearched(false);
@@ -56,7 +59,16 @@ const Home = () => {
     //const result = conjugation(value);
     setAction('idle');
   };
-  const handleAccentClick = (e, accent) => setSearchValue(searchValue + accent);
+  const handleAccentClick = (e, accent) => {
+    const cChar = searchValue.slice(-1);
+    const nChar = toggleAccent[accentButtons.indexOf(accent)][cChar];
+    //console.log(searchRef.current)
+    //eslint-disable-next-line
+    if (nChar) {
+      setSearchValue(searchValue.slice(0, -1) + nChar);
+      document.getElementById('homeSearchInput').focus();
+    }
+  };
   return (
     <Grid textAlign="center">
       <Grid.Row>
@@ -88,6 +100,7 @@ const Home = () => {
           <Label
             onClick={() => setAction(action === 'verbCheck' ? 'idle' : 'verbCheck')}
             color={action === 'verbCheck' ? 'blue' : null}
+            as="a"
           >
             <Icon name="pencil" size="large" />
             Verb Check
@@ -95,16 +108,21 @@ const Home = () => {
           <Label
             onClick={() => setAction(action === 'addingCollection' ? 'idle' : 'addingCollection')}
             color={action === 'addingCollection' ? 'blue' : null}
+            as="a"
           >
             <Icon name="list" size="large" />
             Add To Collection
           </Label>
-          <Label onClick={() => window.open(conjResults.spanishdictLink)}>
-            <Image {...menuDefault} src={spanishdictImage} />
+          <Label onClick={() => window.open(conjResults.spanishdictLink)} as="a">
+            <Ref innerRef={setMenuImgStyle}>
+              <Image {...menuDefault} src={spanishdictImage} />
+            </Ref>
             SpanishDict
           </Label>
-          <Label onClick={() => window.open(conjResults.wordreferenceLink)}>
-            <Image {...menuDefault} src={wordreferenceImage} />
+          <Label onClick={() => window.open(conjResults.wordreferenceLink)} as="a">
+            <Ref innerRef={setMenuImgStyle}>
+              <Image {...menuDefault} src={wordreferenceImage} />
+            </Ref>
             WordReference
           </Label>
         </Grid.Column>
