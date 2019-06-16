@@ -6,9 +6,9 @@ let app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-const verbs = require('./data/verbs.json');
-//const fullSearch = require('./data/fullSearch.json');
-const headers = require('./data/headers.json');
+const verbs = require('./static/verbs.json');
+//const fullSearch = require('./static/fullSearch.json');
+const headers = require('./static/headers.json');
 let { estar, haber } = verbs;
 estar = estar.conjugation;
 haber = haber.conjugation;
@@ -50,9 +50,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/conjugate', (req, res) => {
-  console.log('HIIIII');
   res.setHeader('access-control-allow-origin', '*');
-  console.log(req.query.verb);
   res.json(conjugate(req.query.verb));
 });
 
