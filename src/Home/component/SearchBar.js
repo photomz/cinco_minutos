@@ -19,6 +19,7 @@ const SearchBar = ({ onFilterResults, onSearchClick, value, setValue, ...props }
     _handleSearchClick();
   };
   const _handleSearchClick = () => {
+    document.querySelector('#homeSearchInput').blur();
     onSearchClick(value);
   };
   const _handleSearchChange = (e, { value }) => {
@@ -32,6 +33,9 @@ const SearchBar = ({ onFilterResults, onSearchClick, value, setValue, ...props }
       _setIsLoading(false);
     }, 200);
   };
+  const _handleKeyPress = e => {
+    if (e.charCode === 13) _handleSearchClick();
+  };
   return (
     <Search
       id="homeSearchInput"
@@ -39,6 +43,9 @@ const SearchBar = ({ onFilterResults, onSearchClick, value, setValue, ...props }
       loading={_isLoading}
       onResultSelect={_handleResultSelect}
       onSearchChange={_.debounce(_handleSearchChange, 500, {
+        leading: true,
+      })}
+      onKeyPress={_.debounce(_handleKeyPress, 500, {
         leading: true,
       })}
       results={_results}

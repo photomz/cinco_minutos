@@ -48,13 +48,18 @@ const Home = () => {
         Accept: 'application/json',
       },
     };
-    fetch(SERVER_URL + '/conjugate?verb=' + value, params)
-      .then(res => res.json())
-      .then(val => {
-        setConjResults(val);
-        setIsSearched(Boolean(Object.entries(val).length)); // force to bool
-      })
-      .catch(err => console.log(err));
+    if (value !== conjResults.verb) {
+      fetch(SERVER_URL + '/conjugate?verb=' + value, params)
+        .then(res => res.json())
+        .then(val => {
+          setConjResults(val);
+          setIsSearched(Boolean(Object.entries(val).length)); // force to bool
+        })
+        .catch(err => console.log(err));
+    } else {
+      setConjResults(conjResults);
+      setIsSearched(true);
+    }
     //const result = conjugation(value);
     setAction('idle');
   };
