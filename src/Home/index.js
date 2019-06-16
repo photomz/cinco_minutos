@@ -3,11 +3,11 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { Header, Button, Grid, Segment, Image, Label, Icon, Loader } from 'semantic-ui-react';
 
-import SearchBar from '../component/SearchBar.js';
-import ConjugationTable from '../component/ConjugationTable.js';
-import { filterVerbs } from '../logic';
-import spanishdictImage from '../spanishdict.png';
-import wordreferenceImage from '../wordreference.png';
+import SearchBar from './component/SearchBar.js';
+import ConjugationTable from './component/ConjugationTable.js';
+import filterVerbs from './logic/filterVerbs.js';
+import spanishdictImage from '../static/spanishdict.png';
+import wordreferenceImage from '../static/wordreference.png';
 
 const SERVER_URL = 'http://localhost:3000';
 const accentButtons = ['´', '¨', '˜'];

@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { Icon, Search, Ref } from 'semantic-ui-react';
+import { Icon, Search } from 'semantic-ui-react';
 import _ from 'lodash';
 
 // eslint-disable-next-line no-unused-vars

@@ -1,7 +1,7 @@
 /* global module */
 import React from 'react';
 import { render } from 'react-dom';
-import App from './component/App';
+import App from './App';
 import 'semantic-ui-css/semantic.css';
 
 const renderApp = () => {

@@ -1,6 +1,5 @@
 /* eslint-disable no-console */
-import search from './quickSearch.json';
-import _ from 'lodash';
+import search from '../../static/quickSearch.json';
 
 const searchKeys = Object.keys(search);
 
