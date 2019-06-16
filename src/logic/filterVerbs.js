@@ -5,8 +5,8 @@ import _ from 'lodash';
 const searchKeys = Object.keys(search);
 
 const filterVerbs = (value, len) => {
-  const startsWith = new RegExp(_.escapeRegExp('^' + value), 'i'); // match not case sensitive
-  const contains = new RegExp(_.escapeRegExp(value), 'i');
+  const startsWith = new RegExp('^' + value, 'i'); // match not case sensitive
+  const contains = new RegExp(value, 'i');
 
   let results = searchKeys.includes(value) ? [value] : [];
   results = results.concat(searchKeys.filter(verb => startsWith.test(verb)));

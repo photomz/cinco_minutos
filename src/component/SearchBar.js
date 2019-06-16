@@ -14,9 +14,6 @@ const SearchBar = ({ onFilterResults, onSearchClick, value, setValue, ...props }
     _setResults([]);
     setValue('');
   };
-  const getSearchDOM = node => {
-    if (node !== null) node.firstChild.firstChild.id = 'homeSearchInput';
-  };
   const _handleResultSelect = (e, { result }) => {
     setValue(result.title);
     _handleSearchClick();
@@ -36,21 +33,20 @@ const SearchBar = ({ onFilterResults, onSearchClick, value, setValue, ...props }
     }, 200);
   };
   return (
-    <Ref innerRef={getSearchDOM}>
-      <Search
-        size="large"
-        loading={_isLoading}
-        onResultSelect={_handleResultSelect}
-        onSearchChange={_.debounce(_handleSearchChange, 500, {
-          leading: true,
-        })}
-        results={_results}
-        value={value}
-        noResultsDescription="Make sure to use the infintive form."
-        icon={<Icon inverted circular link name="search" onClick={_handleSearchClick} />}
-        {...props}
-      />
-    </Ref>
+    <Search
+      id="homeSearchInput"
+      size="large"
+      loading={_isLoading}
+      onResultSelect={_handleResultSelect}
+      onSearchChange={_.debounce(_handleSearchChange, 500, {
+        leading: true,
+      })}
+      results={_results}
+      value={value}
+      noResultsDescription="Make sure to use the infintive form."
+      icon={<Icon inverted circular link name="search" onClick={_handleSearchClick} />}
+      {...props}
+    />
   );
 };
 

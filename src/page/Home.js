@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { Header, Button, Grid, Segment, Image, Label, Icon, Loader, Ref } from 'semantic-ui-react';
+import { Header, Button, Grid, Segment, Image, Label, Icon, Loader } from 'semantic-ui-react';
 
 import SearchBar from '../component/SearchBar.js';
 import ConjugationTable from '../component/ConjugationTable.js';
@@ -28,19 +28,16 @@ const menuDefault = {
   as: 'img',
   style: { marginRight: 10, display: 'inline', height: '1.5em', width: '1.5em' },
 };
-const setMenuImgStyle = node => {
-  if (node !== null) {
-    node.style.setProperty('width', '1.286rem', 'important');
-    node.style.setProperty('height', 'auto', 'important');
-  }
-};
+
 const Home = () => {
   let [searchValue, setSearchValue] = useState('');
   let [conjResults, setConjResults] = useState({});
   let [isSearched, setIsSearched] = useState(false);
   // action === idle || loading || verbCheck || addingCollection
   let [action, setAction] = useState('idle');
+
   const handleFilterResults = value => filterVerbs(value, 5);
+
   const handleSearchClick = value => {
     setIsSearched(false);
     setAction('loading');
@@ -61,16 +58,18 @@ const Home = () => {
     //const result = conjugation(value);
     setAction('idle');
   };
+
   const handleAccentClick = (e, accent) => {
     const cChar = searchValue.slice(-1);
     const nChar = toggleAccent[accentButtons.indexOf(accent)][cChar];
-    //console.log(searchRef.current)
     //eslint-disable-next-line
-    if (nChar) {
-      setSearchValue(searchValue.slice(0, -1) + nChar);
-      document.getElementById('homeSearchInput').focus();
-    }
+    if (nChar) setSearchValue(searchValue.slice(0, -1) + nChar);
   };
+
+  useEffect(() => {
+    document.querySelector('#homeSearchInput').focus();
+  }, [searchValue]);
+
   return (
     <Grid textAlign="center">
       <Grid.Row>
@@ -98,12 +97,11 @@ const Home = () => {
         </Grid.Column>
       </Grid.Row>
       <Grid.Row>
-        <Grid.Column style={{ maxWidth: 1000 }}>
+        <Grid.Column style={{ maxWidth: 1000 }} id="labelColumn">
           <Label
             onClick={() => setAction(action === 'verbCheck' ? 'idle' : 'verbCheck')}
             color={action === 'verbCheck' ? 'blue' : null}
             as="a"
-            style={{ margin: '0.5em 0.25em' }}
           >
             <Icon name="pencil" size="large" />
             Verb Check
@@ -112,29 +110,16 @@ const Home = () => {
             onClick={() => setAction(action === 'addingCollection' ? 'idle' : 'addingCollection')}
             color={action === 'addingCollection' ? 'blue' : null}
             as="a"
-            style={{ margin: '0.5em 0.25em' }}
           >
             <Icon name="list" size="large" />
             Add To Collection
           </Label>
-          <Label
-            onClick={() => window.open(conjResults.spanishdictLink)}
-            as="a"
-            style={{ margin: '0.5em 0.25em' }}
-          >
-            <Ref innerRef={setMenuImgStyle}>
-              <Image {...menuDefault} src={spanishdictImage} />
-            </Ref>
+          <Label onClick={() => window.open(conjResults.spanishdictLink)} as="a">
+            <Image {...menuDefault} src={spanishdictImage} className="menuImage" />
             SpanishDict
           </Label>
-          <Label
-            onClick={() => window.open(conjResults.wordreferenceLink)}
-            as="a"
-            style={{ margin: '0.5em 0.25em' }}
-          >
-            <Ref innerRef={setMenuImgStyle}>
-              <Image {...menuDefault} src={wordreferenceImage} />
-            </Ref>
+          <Label onClick={() => window.open(conjResults.wordreferenceLink)} as="a">
+            <Image {...menuDefault} src={wordreferenceImage} className="menuImage" />
             WordReference
           </Label>
         </Grid.Column>

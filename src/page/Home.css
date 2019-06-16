@@ -1,0 +1,8 @@
+.menuImage {
+  width: 1.286rem !important;
+  height: auto !important;
+}
+
+#labelColumn > * {
+  margin: 0.5em 0.25em;
+}
