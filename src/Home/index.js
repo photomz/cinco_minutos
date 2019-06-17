@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Header, Button, Grid, Segment, Image, Label, Icon, Loader } from 'semantic-ui-react';
 
@@ -8,8 +8,7 @@ import ConjugationTable from './component/ConjugationTable.js';
 import filterVerbs from './logic/filterVerbs.js';
 import spanishdictImage from '../static/spanishdict.png';
 import wordreferenceImage from '../static/wordreference.png';
-
-const SERVER_URL = 'http://localhost:3000';
+const info = require('../../globals.json');
 const accentButtons = ['´', '¨', '˜'];
 const toggleAccent = [
   { á: 'a', é: 'e', í: 'i', ó: 'o', ú: 'u', a: 'á', e: 'é', i: 'í', o: 'ó', u: 'ú', ü: 'ú' },
@@ -49,10 +48,11 @@ const Home = () => {
       },
     };
     if (value !== conjResults.verb) {
-      fetch(SERVER_URL + '/conjugate?verb=' + value, params)
+      fetch(info.SERVER_URL + '/conjugate?verb=' + value, params)
         .then(res => res.json())
         .then(val => {
           setConjResults(val);
+          console.log('madeitayy ' + value);
           setIsSearched(Boolean(Object.entries(val).length)); // force to bool
         })
         .catch(err => console.log(err));
