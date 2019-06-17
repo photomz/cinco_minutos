@@ -1,5 +1,6 @@
 /* eslint-disable no-console */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { createBrowserHistory } from 'history';
 import PropTypes from 'prop-types';
 import { Header, Button, Grid, Segment, Image, Label, Icon, Loader } from 'semantic-ui-react';
 
@@ -8,6 +9,8 @@ import ConjugationTable from './component/ConjugationTable.js';
 import filterVerbs from './logic/filterVerbs.js';
 import spanishdictImage from '../static/spanishdict.png';
 import wordreferenceImage from '../static/wordreference.png';
+import './index.css';
+const history = createBrowserHistory();
 const info = require('../../globals.json');
 const accentButtons = ['´', '¨', '˜'];
 const toggleAccent = [
@@ -27,17 +30,16 @@ const menuDefault = {
   as: 'img',
   style: { marginRight: 10, display: 'inline', height: '1.5em', width: '1.5em' },
 };
-
+let first = true;
 const Home = () => {
   let [searchValue, setSearchValue] = useState('');
   let [conjResults, setConjResults] = useState({});
   let [isSearched, setIsSearched] = useState(false);
   // action === idle || loading || verbCheck || addingCollection
   let [action, setAction] = useState('idle');
-
   const handleFilterResults = value => filterVerbs(value, 5);
-
   const handleSearchClick = value => {
+    if (value === conjResults.verb) return;
     setIsSearched(false);
     setAction('loading');
     const params = {
@@ -55,14 +57,20 @@ const Home = () => {
           setIsSearched(Boolean(Object.entries(val).length)); // force to bool
         })
         .catch(err => console.log(err));
-    } else {
-      setConjResults(conjResults);
-      setIsSearched(true);
     }
     //const result = conjugation(value);
+    if (window.location.pathname !== '/conjugate/' + value) {
+      history.push(window.location.pathname);
+      history.replace('/conjugate/' + value);
+    }
+    setSearchValue(value);
     setAction('idle');
   };
-
+  useEffect(() => {
+    if (['conjugate', 'conjugar'].indexOf(window.location.pathname.slice(1, 10)) > -1) {
+      handleSearchClick(window.location.pathname.slice(11));
+    }
+  }, [window.location.pathname]);
   const handleAccentClick = (e, accent) => {
     const cChar = searchValue.slice(-1);
     const nChar = toggleAccent[accentButtons.indexOf(accent)][cChar];

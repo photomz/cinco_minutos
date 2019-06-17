@@ -3,5 +3,7 @@
   "Collections": "/collections",
   "Browse": "/browse",
   "Settings": "/settings",
-  "About": "/about"
+  "About": "/about",
+  "Conjugate": "/conjugate",
+  "GitHub": "//github.com/photomz/cinco_minutos"
 }

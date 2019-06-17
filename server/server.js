@@ -51,7 +51,9 @@ const conjugate = verb => {
   };
 };
 app.get('/', (req, res) => {
-  res.send("I'm a teapot.");
+  res.send(
+    'Cinco Minutos API - access /popularity for most popularly searched verbs, access /conjugate?verb=MYVERB to access conjugations in JSON.',
+  );
 });
 
 app.get('/conjugate', (req, res) => {
@@ -63,5 +65,7 @@ app.get('/popularity', (req, res) => {
   res.setHeader('access-control-allow-origin', '*');
   res.json(popularity);
 });
-
+app.get('*', (req, res) => {
+  res.redirect('/');
+});
 app.listen(info.PORT);

@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-console */
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
 
 import NavBar from './NavBar.js';
 import Home from '../Home';
@@ -35,7 +35,7 @@ const navContent = [
 const App = () => {
   let [page, setPage] = useState('home');
   const onNavBarClick = name => {
-    if (name === 'github') window.open('https://github.com/photomz/cinco_minutos');
+    if (name === 'github') window.open(ROUTES.GitHub);
     else setPage(name);
   };
   return (
@@ -46,6 +46,7 @@ const App = () => {
       <Route path={ROUTES.Collections} component={Collections} />
       <Route path={ROUTES.Settings} component={Settings} />
       <Route path={ROUTES.About} component={About} />
+      <Route path={ROUTES.Conjugate} component={Home} />
     </Router>
   );
 };
