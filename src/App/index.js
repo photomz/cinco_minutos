@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-console */
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import NavBar from './NavBar.js';
 import Home from '../Home';
@@ -8,26 +9,27 @@ import Browse from '../Browse';
 import Collections from '../Collections';
 import Settings from '../Settings';
 import About from '../About';
+import ROUTES from '../static/routes.json';
 import './index.css';
 
 // eslint-disable-next-line react/display-name
-const PageHoc = (Component, page) => ({ current, ...props }) =>
-  page === current ? <Component {...props} /> : '';
-PageHoc.displayName = 'PageContent';
+// const PageHoc = (Component, page) => ({ current, ...props }) =>
+//   page === current ? <Component {...props} /> : '';
+// PageHoc.displayName = 'PageContent';
 
-const HomePage = PageHoc(Home, 'home');
-const BrowsePage = PageHoc(Browse, 'browse');
-const CollectionsPage = PageHoc(Collections, 'collections');
-const SettingsPage = PageHoc(Settings, 'settings');
-const AboutPage = PageHoc(About, 'about');
+// const HomePage = PageHoc(Home, 'home');
+// const BrowsePage = PageHoc(Browse, 'browse');
+// const CollectionsPage = PageHoc(Collections, 'collections');
+// const SettingsPage = PageHoc(Settings, 'settings');
+// const AboutPage = PageHoc(About, 'about');
 
 const navContent = [
   { name: 'ℭ𝔦𝔫𝔠𝔬𝔐𝔦𝔫𝔲𝔱𝔬𝔰', icon: 'chess' },
-  { name: 'home', icon: 'home' },
-  { name: 'browse', icon: 'book' },
-  { name: 'collections', icon: 'archive' },
-  { name: 'settings', icon: 'settings' },
-  { name: 'about', icon: 'code' },
+  { name: 'home', icon: 'home', route: ROUTES.Home },
+  { name: 'browse', icon: 'book', route: ROUTES.Browse },
+  { name: 'collections', icon: 'archive', route: ROUTES.Collections },
+  { name: 'settings', icon: 'settings', route: ROUTES.Settings },
+  { name: 'about', icon: 'code', route: ROUTES.About },
   { name: 'github', icon: 'github' },
 ];
 const App = () => {
@@ -37,14 +39,14 @@ const App = () => {
     else setPage(name);
   };
   return (
-    <div>
+    <Router>
       <NavBar onClick={onNavBarClick} active={page} content={navContent} />
-      <HomePage current={page} />
-      <BrowsePage current={page} />
-      <CollectionsPage current={page} />
-      <SettingsPage current={page} />
-      <AboutPage current={page} />
-    </div>
+      <Route exact path={ROUTES.Home} component={Home} />
+      <Route path={ROUTES.Browse} component={Browse} />
+      <Route path={ROUTES.Collections} component={Collections} />
+      <Route path={ROUTES.Settings} component={Settings} />
+      <Route path={ROUTES.About} component={About} />
+    </Router>
   );
 };
 
