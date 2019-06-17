@@ -30,7 +30,6 @@ const menuDefault = {
   as: 'img',
   style: { marginRight: 10, display: 'inline', height: '1.5em', width: '1.5em' },
 };
-let first = true;
 const Home = () => {
   let [searchValue, setSearchValue] = useState('');
   let [conjResults, setConjResults] = useState({});
