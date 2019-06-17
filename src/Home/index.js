@@ -38,6 +38,7 @@ const Home = () => {
   let [action, setAction] = useState('idle');
   const handleFilterResults = value => filterVerbs(value, 5);
   const handleSearchClick = value => {
+    value = value.toLowerCase();
     if (value === conjResults.verb) return;
     setIsSearched(false);
     setAction('loading');
@@ -53,6 +54,10 @@ const Home = () => {
         .then(res => res.json())
         .then(val => {
           setConjResults(val);
+          document.title =
+            value.charAt(0).toUpperCase() +
+            value.slice(1).toLowerCase() +
+            ' Conjugation | CincoMinutos';
           setIsSearched(Boolean(Object.entries(val).length)); // force to bool
         })
         .catch(err => console.log(err));
