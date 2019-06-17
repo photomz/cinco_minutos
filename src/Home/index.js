@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Header, Button, Grid, Segment, Image, Label, Icon, Loader } from 'semantic-ui-react';
 
@@ -8,8 +8,7 @@ import ConjugationTable from './component/ConjugationTable.js';
 import filterVerbs from './logic/filterVerbs.js';
 import spanishdictImage from '../static/spanishdict.png';
 import wordreferenceImage from '../static/wordreference.png';
-
-const SERVER_URL = 'http://localhost:3000';
+const info = require('../../globals.json');
 const accentButtons = ['´', '¨', '˜'];
 const toggleAccent = [
   { á: 'a', é: 'e', í: 'i', ó: 'o', ú: 'u', a: 'á', e: 'é', i: 'í', o: 'ó', u: 'ú', ü: 'ú' },
@@ -48,13 +47,18 @@ const Home = () => {
         Accept: 'application/json',
       },
     };
-    fetch(SERVER_URL + '/conjugate?verb=' + value, params)
-      .then(res => res.json())
-      .then(val => {
-        setConjResults(val);
-        setIsSearched(Boolean(Object.entries(val).length)); // force to bool
-      })
-      .catch(err => console.log(err));
+    if (value !== conjResults.verb) {
+      fetch(info.SERVER_URL + '/conjugate?verb=' + value, params)
+        .then(res => res.json())
+        .then(val => {
+          setConjResults(val);
+          setIsSearched(Boolean(Object.entries(val).length)); // force to bool
+        })
+        .catch(err => console.log(err));
+    } else {
+      setConjResults(conjResults);
+      setIsSearched(true);
+    }
     //const result = conjugation(value);
     setAction('idle');
   };
@@ -63,12 +67,11 @@ const Home = () => {
     const cChar = searchValue.slice(-1);
     const nChar = toggleAccent[accentButtons.indexOf(accent)][cChar];
     //eslint-disable-next-line
-    if (nChar) setSearchValue(searchValue.slice(0, -1) + nChar);
+    if (nChar) {
+      setSearchValue(searchValue.slice(0, -1) + nChar);
+      document.querySelector('#homeSearchInput').focus();
+    }
   };
-
-  useEffect(() => {
-    document.querySelector('#homeSearchInput').focus();
-  }, [searchValue]);
 
   return (
     <Grid textAlign="center">
@@ -126,7 +129,7 @@ const Home = () => {
       </Grid.Row>
       <Grid.Row>
         <Grid.Column style={{ maxWidth: '80vw' }}>
-          <Segment raised stacked padded>
+          <Segment raised padded>
             {isSearched ? (
               <div>
                 <Header as="h2" content={conjResults.verb} textAlign="left" />
@@ -145,7 +148,6 @@ const Home = () => {
           <Grid.Column style={{ maxWidth: '80vw' }}>
             <ConjugationTable
               raised
-              stacked
               icons={icons}
               conjugation={conjResults.conjugation.slice(0, 6)}
             />

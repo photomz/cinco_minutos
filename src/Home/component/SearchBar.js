@@ -16,11 +16,15 @@ const SearchBar = ({ onFilterResults, onSearchClick, value, setValue, ...props }
   };
   const _handleResultSelect = (e, { result }) => {
     setValue(result.title);
-    _handleSearchClick();
+    _handleSearchClick(result.title);
   };
-  const _handleSearchClick = () => {
+  const _handleSearchClick = val => {
     document.querySelector('#homeSearchInput').blur();
-    onSearchClick(value);
+    if (typeof val === 'string') {
+      onSearchClick(val);
+    } else {
+      onSearchClick(value);
+    }
   };
   const _handleSearchChange = (e, { value }) => {
     _setIsLoading(true);
