@@ -63,7 +63,7 @@ const Home = () => {
         .catch(err => console.log(err));
     }
     //const result = conjugation(value);
-    if (window.location.pathname !== '/conjugate/' + value) {
+    if (window.location.pathname !== '/conjugate/' + value && value) {
       history.push(window.location.pathname);
       history.replace('/conjugate/' + value);
     }
@@ -73,6 +73,9 @@ const Home = () => {
   useEffect(() => {
     if (['conjugate', 'conjugar'].indexOf(window.location.pathname.slice(1, 10)) > -1) {
       handleSearchClick(window.location.pathname.slice(11));
+    }
+    if (window.location.pathname === '/') {
+      handleSearchClick('');
     }
   }, [window.location.pathname]);
   const handleAccentClick = (e, accent) => {
