@@ -6,3 +6,7 @@
 #labelColumn > * {
   margin: 0.5em 0.25em;
 }
+
+.results.visible {
+  left: calc(50% - 9em) !important;
+}
