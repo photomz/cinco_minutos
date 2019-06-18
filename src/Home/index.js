@@ -85,7 +85,6 @@ const Home = () => {
       document.querySelector('#homeSearchInput').focus();
     }
   };
-  console.log(conjResults);
   return (
     <Grid textAlign="center">
       <Grid.Row>

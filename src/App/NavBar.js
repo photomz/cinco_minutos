@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import { Menu, Icon, Responsive, Sidebar, Segment } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 
+import './NavBar.css';
+
 const NavItem = ({ elem, onClick, active, under, expanded }) => (
   <Responsive
     as={Menu.Item}
@@ -24,6 +26,8 @@ NavItem.propTypes = {
   elem: PropTypes.object,
   onClick: PropTypes.func,
   active: PropTypes.any,
+  under: PropTypes.bool,
+  expanded: PropTypes.bool,
 };
 
 const NavBar = ({ content, onClick, active, expanded, width }) => {
@@ -39,24 +43,13 @@ const NavBar = ({ content, onClick, active, expanded, width }) => {
       vertical={expanded && width <= 768}
     >
       <Menu.Header as="h1" style={{ textAlign: 'left' }}>
-        <Icon name={title.icon} />
-        {title.name}
-        <Responsive
-          as={Segment}
-          maxWidth={767}
-          style={{
-            position: 'absolute',
-            top: '-0.6em',
-            right: '0.5em',
-            height: 'calc(52px - 1em)',
-            width: '4em',
-            paddingTop: '0.1em',
-            paddingRight: '0.6em',
-            textAlign: 'center',
-          }}
-          onClick={onClick}
-        >
-          <Icon name={'bars'} />
+        <Responsive as="div" minWidth={310}>
+          <Icon name={title.icon} />
+          {title.name}
+        </Responsive>
+
+        <Responsive as={Segment} maxWidth={767} id="barSegment" onClick={onClick}>
+          <Icon name="bars" />
         </Responsive>
       </Menu.Header>
       <Menu.Menu position="right">
@@ -85,6 +78,8 @@ NavBar.propTypes = {
   onClick: PropTypes.func,
   active: PropTypes.any,
   content: PropTypes.array.isRequired,
+  width: PropTypes.number,
+  expanded: PropTypes.bool,
 };
 
 export default NavBar;
