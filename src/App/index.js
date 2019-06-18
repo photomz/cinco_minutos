@@ -40,8 +40,19 @@ const App = () => {
     if (name === 'github') {
       window.open(ROUTES.GitHub);
     } else if (typeof name !== 'string') {
-      setExpansionNavBar(!expandedNavBar);
-    } else setPage(name);
+      document.querySelector('#navbar').classList.add('transitioning');
+      const wasExpanded = expandedNavBar;
+      setExpansionNavBar(true);
+      setTimeout(() => {
+        if (wasExpanded) {
+          setExpansionNavBar(false);
+        }
+        document.querySelector('#navbar').classList.remove('transitioning');
+      }, 400);
+    } else {
+      setPage(name);
+      setExpansionNavBar(false);
+    }
   };
   useEffect(() => {
     const handleResize = () => setWidth(window.innerWidth);

@@ -1,14 +1,22 @@
 #navbar + * {
-  margin-top: 40px;
-}
-#navbar:not(.vertical) {
-  height: 54px !important;
-}
-#navbar:not(.vertical) .header {
-  margin: auto 0.5em;
+  margin-top: 52px;
 }
 #navbar .header {
   margin: 0.3em 0.5em;
+}
+#navbar {
+  overflow: hidden !important;
+  height: 54px !important;
+  transition: height 400ms ease-in-out;
+}
+#navbar.transitioning:not(.vertical) {
+  height: calc(54px + 22em) !important;
+}
+#navbar.vertical {
+  height: calc(54px + 22em) !important;
+}
+#navbar.transitioning.vertical {
+  height: 54px !important;
 }
 @media only screen and (min-width: 768px) {
   #navbar + * {
