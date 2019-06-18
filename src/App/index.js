@@ -51,7 +51,7 @@ const App = () => {
       }, 400);
     } else {
       setPage(name);
-      setExpansionNavBar(false);
+      onNavBarClick(null);
     }
   };
   useEffect(() => {

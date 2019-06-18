@@ -1,9 +1,6 @@
 #navbar + * {
   margin-top: 52px;
 }
-#navbar .header {
-  margin: 0.3em 0.5em;
-}
 #navbar {
   overflow: hidden !important;
   height: 54px !important;
