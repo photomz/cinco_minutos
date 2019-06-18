@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { createBrowserHistory } from 'history';
 import PropTypes from 'prop-types';
-import { Header, Button, Grid, Segment, Loader } from 'semantic-ui-react';
+import { Header, Button, Grid, Segment } from 'semantic-ui-react';
 
 import SearchBar from './component/SearchBar.js';
 import ConjugationTable from './component/ConjugationTable.js';
@@ -61,7 +61,7 @@ const Home = () => {
         .catch(err => console.log(err));
     }
     //const result = conjugation(value);
-    if (window.location.pathname !== '/conjugate/' + value) {
+    if (window.location.pathname !== '/conjugate/' + value && value) {
       history.push(window.location.pathname);
       history.replace('/conjugate/' + value);
     }
@@ -71,6 +71,9 @@ const Home = () => {
   useEffect(() => {
     if (['conjugate', 'conjugar'].indexOf(window.location.pathname.slice(1, 10)) > -1) {
       handleSearchClick(window.location.pathname.slice(11));
+    }
+    if (window.location.pathname === '/') {
+      handleSearchClick('');
     }
   }, [window.location.pathname]);
   const handleAccentClick = (e, accent) => {
