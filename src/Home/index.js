@@ -112,7 +112,7 @@ const Home = () => {
         </Grid.Column>
       </Grid.Row>
       <Grid.Row>
-        <Grid.Column style={{ maxWidth: '80vw' }}>
+        <Grid.Column style={{ maxWidth: 1000 }}>
           <Segment.Group raised>
             <OptionLabels
               action={action}
@@ -134,7 +134,7 @@ const Home = () => {
       </Grid.Row>
       {isSearched && (
         <Grid.Row>
-          <Grid.Column style={{ maxWidth: '80vw' }}>
+          <Grid.Column style={{ maxWidth: 1000 }}>
             <ConjugationTable
               raised
               icons={icons}

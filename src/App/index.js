@@ -34,7 +34,7 @@ const navContent = [
 ];
 const App = () => {
   let [page, setPage] = useState('home');
-  let [width, setWidth] = useState(false);
+  let [width, setWidth] = useState(0);
   let [expandedNavBar, setExpansionNavBar] = useState(false);
   const onNavBarClick = name => {
     if (name === 'github') {

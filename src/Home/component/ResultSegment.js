@@ -8,8 +8,8 @@ const ResultSegment = ({ verb, def, presentPart, pastPart, isSearched, action })
       <div>
         <Header as="h1" content={verb} textAlign="center" />
         <Header as="h3" content={def} textAlign="center" />
-        <Label content={`Present Participle - ${presentPart}`} color="blue" />
-        <Label content={`Past Participle - ${pastPart}`} color="blue" style={{ marginLeft: 10 }} />
+        <Label content={`Present Participle - ${presentPart}`} />
+        <Label content={`Past Participle - ${pastPart}`} style={{ marginLeft: 10 }} />
       </div>
     ) : action === 'loading' ? (
       <Loader active content="Loading" inline="centered" />
