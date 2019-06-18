@@ -2,13 +2,14 @@
 import React, { useState, useEffect } from 'react';
 import { createBrowserHistory } from 'history';
 import PropTypes from 'prop-types';
-import { Header, Button, Grid, Segment, Image, Label, Icon, Loader } from 'semantic-ui-react';
+import { Header, Button, Grid, Segment, Loader } from 'semantic-ui-react';
 
 import SearchBar from './component/SearchBar.js';
 import ConjugationTable from './component/ConjugationTable.js';
+import OptionLabels from './component/OptionLabels.js';
+import ResultSegment from './component/ResultSegment.js';
 import filterVerbs from './logic/filterVerbs.js';
-import spanishdictImage from '../static/spanishdict.png';
-import wordreferenceImage from '../static/wordreference.png';
+
 import './index.css';
 const history = createBrowserHistory();
 const info = require('../../globals.json');
@@ -26,10 +27,7 @@ const icons = [
   'chess queen',
   'chess pawn',
 ];
-const menuDefault = {
-  as: 'img',
-  style: { marginRight: 10, display: 'inline', height: '1.5em', width: '1.5em' },
-};
+
 const Home = () => {
   let [searchValue, setSearchValue] = useState('');
   let [conjResults, setConjResults] = useState({});
@@ -84,7 +82,7 @@ const Home = () => {
       document.querySelector('#homeSearchInput').focus();
     }
   };
-
+  console.log(conjResults);
   return (
     <Grid textAlign="center">
       <Grid.Row>
@@ -112,47 +110,24 @@ const Home = () => {
         </Grid.Column>
       </Grid.Row>
       <Grid.Row>
-        <Grid.Column style={{ maxWidth: 1000 }} id="labelColumn">
-          <Label
-            onClick={() => setAction(action === 'verbCheck' ? 'idle' : 'verbCheck')}
-            color={action === 'verbCheck' ? 'blue' : null}
-            as="a"
-          >
-            <Icon name="pencil" size="large" />
-            Verb Check
-          </Label>
-          <Label
-            onClick={() => setAction(action === 'addingCollection' ? 'idle' : 'addingCollection')}
-            color={action === 'addingCollection' ? 'blue' : null}
-            as="a"
-          >
-            <Icon name="list" size="large" />
-            Add To Collection
-          </Label>
-          <Label onClick={() => window.open(conjResults.spanishdictLink)} as="a">
-            <Image {...menuDefault} src={spanishdictImage} id="menuImage" />
-            SpanishDict
-          </Label>
-          <Label onClick={() => window.open(conjResults.wordreferenceLink)} as="a">
-            <Image {...menuDefault} src={wordreferenceImage} id="menuImage" />
-            WordReference
-          </Label>
-        </Grid.Column>
-      </Grid.Row>
-      <Grid.Row>
         <Grid.Column style={{ maxWidth: '80vw' }}>
-          <Segment raised padded>
-            {isSearched ? (
-              <div>
-                <Header as="h2" content={conjResults.verb} textAlign="left" />
-                <Header as="h3" content={conjResults.definition} textAlign="left" />
-              </div>
-            ) : action === 'loading' ? (
-              <Loader active content="Loading" inline="centered" />
-            ) : (
-              <Header as="h2" content="¡Vámos!" textAlign="left" />
-            )}
-          </Segment>
+          <Segment.Group raised>
+            <OptionLabels
+              action={action}
+              setAction={setAction}
+              spanishdictLink={conjResults.spanishdictLink}
+              wordreferenceLink={conjResults.wordreferenceLink}
+              id="labelColumn"
+            />
+            <ResultSegment
+              action={action}
+              verb={conjResults.verb}
+              def={conjResults.definition}
+              isSearched={isSearched}
+              presentPart={conjResults.conjugation ? conjResults.conjugation[6].body : ''}
+              pastPart={conjResults.conjugation ? conjResults.conjugation[7].body : ''}
+            />
+          </Segment.Group>
         </Grid.Column>
       </Grid.Row>
       {isSearched && (
