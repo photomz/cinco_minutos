@@ -11,7 +11,7 @@ const menuDefault = {
 };
 
 const OptionLabels = ({ action, spanishdictLink, wordreferenceLink, setAction, ...props }) => (
-  <Segment textAlign="left" {...props}>
+  <Segment textAlign="center" {...props}>
     <Label
       onClick={() => setAction(action === 'verbCheck' ? 'idle' : 'verbCheck')}
       color={action === 'verbCheck' ? 'blue' : null}

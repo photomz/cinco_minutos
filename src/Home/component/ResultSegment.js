@@ -14,7 +14,7 @@ const ResultSegment = ({ verb, def, presentPart, pastPart, isSearched, action })
     ) : action === 'loading' ? (
       <Loader active content="Loading" inline="centered" />
     ) : (
-      <Header as="h2" content="¡Vámos!" textAlign="left" />
+      <Header as="h2" content="¡Vámos!" textAlign="center" />
     )}
   </Segment>
 );
