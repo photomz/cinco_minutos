@@ -34,7 +34,7 @@ const navContent = [
 ];
 const App = () => {
   let [page, setPage] = useState('home');
-  let [width, setWidth] = useState(0);
+  let [width, setWidth] = useState(window.innerWidth);
   let [expandedNavBar, setExpansionNavBar] = useState(false);
   const onNavBarClick = name => {
     if (name === 'github') {
@@ -42,7 +42,7 @@ const App = () => {
     } else if (typeof name !== 'string') {
       document.querySelector('#navbar').classList.add('transitioning');
       const wasExpanded = expandedNavBar;
-      setExpansionNavBar(true);
+      if (width && width <= 768) setExpansionNavBar(true);
       setTimeout(() => {
         if (wasExpanded) {
           setExpansionNavBar(false);
@@ -57,10 +57,7 @@ const App = () => {
   useEffect(() => {
     const handleResize = () => setWidth(window.innerWidth);
     window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  });
+  }, [width]);
   return (
     <Router>
       <NavBar

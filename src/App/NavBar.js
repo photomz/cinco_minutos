@@ -40,13 +40,13 @@ const NavBar = ({ content, onClick, active, expanded, width }) => {
       icon="labeled"
       visible={true}
       direction="top"
-      vertical={expanded && width <= 768}
+      vertical={expanded && width <= 768 && width}
     >
       <Menu.Header
         as="h1"
         style={{
           textAlign: 'left',
-          margin: (width > 768 || window.screen.width > 768 ? 'auto' : '0.3em') + ' 0.5em',
+          margin: (width ? (width > 768 ? 'auto' : '0.3em') : 'auto') + ' 0.5em',
         }}
       >
         <Responsive as="div" minWidth={310}>

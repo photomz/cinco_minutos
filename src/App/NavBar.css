@@ -22,6 +22,9 @@
   #navbar:not(.vertical) {
     height: auto !important;
   }
+  #navbar {
+    max-height: 73px;
+  }
 }
 
 #barSegment {
