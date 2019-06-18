@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-console */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
 
 import NavBar from './NavBar.js';
@@ -34,13 +34,31 @@ const navContent = [
 ];
 const App = () => {
   let [page, setPage] = useState('home');
+  let [width, setWidth] = useState(false);
+  let [expandedNavBar, setExpansionNavBar] = useState(false);
   const onNavBarClick = name => {
-    if (name === 'github') window.open(ROUTES.GitHub);
-    else setPage(name);
+    if (name === 'github') {
+      window.open(ROUTES.GitHub);
+    } else if (typeof name !== 'string') {
+      setExpansionNavBar(!expandedNavBar);
+    } else setPage(name);
   };
+  useEffect(() => {
+    const handleResize = () => setWidth(window.innerWidth);
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  });
   return (
     <Router>
-      <NavBar onClick={onNavBarClick} active={page} content={navContent} />
+      <NavBar
+        onClick={onNavBarClick}
+        active={page}
+        content={navContent}
+        expanded={expandedNavBar}
+        width={width}
+      />
       <Route exact path={ROUTES.Home} component={Home} />
       <Route path={ROUTES.Browse} component={Browse} />
       <Route path={ROUTES.Collections} component={Collections} />
