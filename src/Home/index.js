@@ -92,7 +92,7 @@ const Home = () => {
         <Grid.Column style={{ maxWidth: 450 }}>
           <Header
             as="h1"
-            content="ℭ𝔦𝔫𝔠𝔬𝔐𝔦𝔫𝔲𝔱𝔬𝔰"
+            content={'ℭ𝔦𝔫𝔠𝔬\n𝔐𝔦𝔫𝔲𝔱𝔬𝔰'}
             textAlign="center"
             style={{ fontSize: '4em', marginTop: '2em', marginBottom: '0.5em' }}
           />
