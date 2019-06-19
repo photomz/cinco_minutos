@@ -2,7 +2,7 @@
 /* eslint-disable no-console */
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-
+import { Segment } from 'semantic-ui-react';
 import NavBar from './NavBar.js';
 import Home from '../Home';
 import Browse from '../Browse';
@@ -10,8 +10,8 @@ import Collections from '../Collections';
 import Settings from '../Settings';
 import About from '../About';
 import ROUTES from '../static/routes.json';
+import { createBrowserHistory } from 'history';
 import './index.css';
-
 // eslint-disable-next-line react/display-name
 // const PageHoc = (Component, page) => ({ current, ...props }) =>
 //   page === current ? <Component {...props} /> : '';
@@ -32,6 +32,7 @@ const navContent = [
   { name: 'about', icon: 'code', route: ROUTES.About },
   { name: 'github', icon: 'github' },
 ];
+const history = createBrowserHistory();
 const App = () => {
   let [page, setPage] = useState('home');
   let [width, setWidth] = useState(window.innerWidth);
@@ -67,12 +68,62 @@ const App = () => {
         expanded={expandedNavBar}
         width={width}
       />
-      <Route exact path={ROUTES.Home} component={Home} />
-      <Route path={ROUTES.Browse} component={Browse} />
-      <Route path={ROUTES.Collections} component={Collections} />
-      <Route path={ROUTES.Settings} component={Settings} />
-      <Route path={ROUTES.About} component={About} />
-      <Route path={ROUTES.Conjugate} component={Home} />
+      <Route
+        exact
+        path={ROUTES.Home}
+        render={() => {
+          setPage('home');
+          return <Home />;
+        }}
+      />
+      <Route
+        path={ROUTES.Browse}
+        render={() => {
+          setPage('browse');
+          return <Browse />;
+        }}
+      />
+      <Route
+        path={ROUTES.Collections}
+        render={() => {
+          setPage('collections');
+          return <Collections />;
+        }}
+      />
+      <Route
+        path={ROUTES.Settings}
+        render={() => {
+          setPage('settings');
+          return <Settings />;
+        }}
+      />
+      <Route
+        path={ROUTES.About}
+        render={() => {
+          setPage('about');
+          return <About />;
+        }}
+      />
+      <Route
+        path={ROUTES.Conjugate}
+        render={() => {
+          setPage('home');
+          return <Home />;
+        }}
+      />
+      <Route
+        path="/github"
+        render={() => {
+          window.location = ROUTES.GitHub;
+          history.replace('/');
+          setPage('github');
+          return (
+            <Segment raised padded style={{ margin: '25vh auto', width: '80vw', height: 'auto' }}>
+              <h1 style={{ textAlign: 'center', fontSize: '5em' }}>Loading GitHub Page...</h1>
+            </Segment>
+          );
+        }}
+      />
     </Router>
   );
 };

@@ -20,11 +20,7 @@ const SearchBar = ({ onFilterResults, onSearchClick, value, setValue, ...props }
   };
   const _handleSearchClick = val => {
     document.querySelector('#homeSearchInput').blur();
-    if (typeof val === 'string') {
-      onSearchClick(val);
-    } else {
-      onSearchClick(value);
-    }
+    onSearchClick(typeof val === 'string' ? val : value);
   };
   const _handleSearchChange = (e, { value }) => {
     _setIsLoading(true);

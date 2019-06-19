@@ -27,7 +27,6 @@ const icons = [
   'chess queen',
   'chess pawn',
 ];
-
 const Home = () => {
   let [searchValue, setSearchValue] = useState('');
   let [conjResults, setConjResults] = useState({});
@@ -35,20 +34,16 @@ const Home = () => {
   // action === idle || loading || verbCheck || addingCollection
   let [action, setAction] = useState('idle');
   const handleFilterResults = value => filterVerbs(value, 5);
-  const handleSearchClick = value => {
-    value = value.toLowerCase();
-    if (value === conjResults.verb) return;
-    setIsSearched(false);
-    setAction('loading');
-    const params = {
-      headers: {
-        verb: value,
-        'Content-Type': 'application/json',
-        Accept: 'application/json',
-      },
-    };
-    if (value !== conjResults.verb) {
-      fetch(info.SERVER_URL + '/conjugate?verb=' + value, params)
+  const fetchResults = value => {
+    if (history.location.pathname === '/conjugate/' + value) {
+      console.log('update');
+      fetch(info.SERVER_URL + '/conjugate?verb=' + value, {
+        headers: {
+          verb: value,
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+      })
         .then(res => res.json())
         .then(val => {
           setConjResults(val);
@@ -60,22 +55,35 @@ const Home = () => {
         })
         .catch(err => console.log(err));
     }
-    //const result = conjugation(value);
-    if (window.location.pathname !== '/conjugate/' + value && value) {
-      history.push(window.location.pathname);
-      history.replace('/conjugate/' + value);
+  };
+  const handleSearchClick = value => {
+    value = value.toLowerCase();
+    if (value === conjResults.verb) return;
+    setIsSearched(false);
+    setAction('loading');
+    if (value !== conjResults.verb) {
+      fetchResults(value);
+      document.title =
+        value.charAt(0).toUpperCase() +
+        value.slice(1).toLowerCase() +
+        ' Conjugation | CincoMinutos';
+      if (history.location.pathname !== '/conjugate/' + value && value) {
+        history.push(history.location.pathname);
+        history.replace('/conjugate/' + value);
+        handleSearchClick(value);
+      }
     }
     setSearchValue(value);
     setAction('idle');
   };
   useEffect(() => {
-    if (['conjugate', 'conjugar'].indexOf(window.location.pathname.slice(1, 10)) > -1) {
-      handleSearchClick(window.location.pathname.slice(11));
+    if (['conjugate', 'conjugar'].indexOf(history.location.pathname.slice(1, 10)) > -1) {
+      handleSearchClick(history.location.pathname.slice(11));
     }
-    if (window.location.pathname === '/') {
+    if (history.location.pathname === '/') {
       handleSearchClick('');
     }
-  }, [window.location.pathname]);
+  }, []);
   const handleAccentClick = (e, accent) => {
     const cChar = searchValue.slice(-1);
     const nChar = toggleAccent[accentButtons.indexOf(accent)][cChar];
