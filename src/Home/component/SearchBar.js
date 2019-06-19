@@ -4,8 +4,6 @@ import PropTypes from 'prop-types';
 import { Icon, Search } from 'semantic-ui-react';
 import _ from 'lodash';
 
-const input = document.querySelector('#homeSearchInput');
-
 // eslint-disable-next-line no-unused-vars
 const SearchBar = ({ onFilterResults, onSearchClick, value, setValue, ...props }) => {
   let [_isLoading, _setIsLoading] = useState(false);
@@ -22,7 +20,7 @@ const SearchBar = ({ onFilterResults, onSearchClick, value, setValue, ...props }
     _handleSearchClick(result.title);
   };
   const _handleSearchClick = key => {
-    input.blur();
+    document.querySelector('#homeSearchInput').blur();
     onSearchClick(key);
   };
   const _handleSearchChange = (e, { value }) => {

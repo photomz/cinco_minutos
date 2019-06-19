@@ -11,6 +11,7 @@ import Settings from '../Settings';
 import About from '../About';
 import ROUTES from '../static/routes.json';
 import './index.css';
+import { Segment } from 'semantic-ui-react';
 
 // eslint-disable-next-line react/display-name
 // const PageHoc = (Component, page) => ({ current, ...props }) =>
@@ -67,12 +68,61 @@ const App = () => {
         expanded={expandedNavBar}
         width={width}
       />
-      <Route exact path={ROUTES.Home} component={Home} />
-      <Route path={ROUTES.Browse} component={Browse} />
-      <Route path={ROUTES.Collections} component={Collections} />
-      <Route path={ROUTES.Settings} component={Settings} />
-      <Route path={ROUTES.About} component={About} />
-      <Route path={ROUTES.Conjugate} component={Home} />
+      <Route
+        exact
+        path={ROUTES.Home}
+        render={() => {
+          setPage('home');
+          return <Home />;
+        }}
+      />
+      <Route
+        path={ROUTES.Browse}
+        render={() => {
+          setPage('browse');
+          return <Browse />;
+        }}
+      />
+      <Route
+        path={ROUTES.Collections}
+        render={() => {
+          setPage('collections');
+          return <Collections />;
+        }}
+      />
+      <Route
+        path={ROUTES.Settings}
+        render={() => {
+          setPage('settings');
+          return <Settings />;
+        }}
+      />
+      <Route
+        path={ROUTES.About}
+        render={() => {
+          setPage('about');
+          return <About />;
+        }}
+      />
+      <Route
+        path={ROUTES.Conjugate}
+        render={() => {
+          setPage('home');
+          return <Home />;
+        }}
+      />
+      <Route
+        path="/github"
+        render={() => {
+          window.location = ROUTES.GitHub;
+          setPage('github');
+          return (
+            <Segment raised padded style={{ margin: '25vh auto', width: '80vw', height: 'auto' }}>
+              <h1 style={{ textAlign: 'center', fontSize: '5em' }}>Loading GitHub Page...</h1>
+            </Segment>
+          );
+        }}
+      />
     </Router>
   );
 };
