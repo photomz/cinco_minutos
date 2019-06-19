@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Label, Table, Segment, Icon, Responsive, Header, Accordion } from 'semantic-ui-react';
+import uuidv1 from 'uuid/v1';
 
 const MobileAccordion = ({ conjugation, icons }) => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -12,12 +13,12 @@ const MobileAccordion = ({ conjugation, icons }) => {
       {conjugation.map(({ title, headers, body }, i) => {
         //const newHeaders = body.map(rowArr => rowArr[0]); // yo, tu ,... headers
         return (
-          <Segment key={title}>
+          <Segment key={uuidv1()}>
             <Header as="h2" content={title} icon={icons[i]} />
             {headers.map((elem, j) => {
               k++;
               return (
-                <Accordion key={`${title}_${elem}`} styled>
+                <Accordion key={uuidv1()} styled>
                   <Accordion.Title
                     active={activeIndex === k}
                     index={k}
@@ -28,7 +29,7 @@ const MobileAccordion = ({ conjugation, icons }) => {
                     <Table unstackable collapsing textAlign="center" style={{ margin: '0 auto' }}>
                       <Table.Body>
                         {body.map((rowArr, l) => (
-                          <Table.Row key={`${title}_${elem}_${rowArr[j + 1]}`}>
+                          <Table.Row key={uuidv1()}>
                             <Table.Cell>{body[l][0]}</Table.Cell>
                             <Table.Cell>{rowArr[j + 1]}</Table.Cell>
                           </Table.Row>
@@ -54,7 +55,7 @@ MobileAccordion.propTypes = {
 const WidescreenTable = ({ conjugation, icons }) => (
   <Responsive minWidth={768}>
     {conjugation.map(({ title, headers, body }, i) => (
-      <Segment key={title}>
+      <Segment key={uuidv1()}>
         <Table celled>
           <Table.Header>
             <Table.Row>
@@ -65,15 +66,15 @@ const WidescreenTable = ({ conjugation, icons }) => (
                 </Label>
               </Table.HeaderCell>
               {headers.map(elem => (
-                <Table.HeaderCell key={`${title}_${elem}`}>{elem}</Table.HeaderCell>
+                <Table.HeaderCell key={uuidv1()}>{elem}</Table.HeaderCell>
               ))}
             </Table.Row>
           </Table.Header>
           <Table.Body>
-            {body.map((rowArr, i) => (
-              <Table.Row key={`${title}_${i}`}>
-                {rowArr.map((elem, j) => (
-                  <Table.Cell key={`${title}_${i}_${j}`}>{elem}</Table.Cell>
+            {body.map(rowArr => (
+              <Table.Row key={uuidv1()}>
+                {rowArr.map(elem => (
+                  <Table.Cell key={uuidv1()}>{elem}</Table.Cell>
                 ))}
               </Table.Row>
             ))}

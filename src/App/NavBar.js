@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, Icon, Responsive, Sidebar, Segment } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
+import uuidv1 from 'uuid/v1';
 
 import './NavBar.css';
 
@@ -11,7 +12,7 @@ const NavItem = ({ elem, onClick, active, under, expanded }) => (
     as={Menu.Item}
     minWidth={under || expanded ? null : 768}
     maxWidth={under ? 767 : null}
-    key={elem.name}
+    key={uuidv1()}
     name={elem.name}
     active={active === elem.name && !!elem.name}
     onClick={() => onClick(elem.name)}
@@ -40,7 +41,7 @@ const NavBar = ({ content, onClick, active, expanded, width }) => {
       icon="labeled"
       visible={true}
       direction="top"
-      vertical={expanded && width <= 768 && width}
+      vertical={!!(expanded && width <= 768 && width)}
     >
       <Menu.Header
         as="h1"
@@ -61,7 +62,7 @@ const NavBar = ({ content, onClick, active, expanded, width }) => {
       <Menu.Menu position="right">
         {navItems.map(elem =>
           elem.route ? (
-            <Link to={elem.route} key={elem.name}>
+            <Link to={elem.route} key={uuidv1()}>
               <NavItem onClick={onClick} active={active} elem={elem} expanded={expanded} />
             </Link>
           ) : (
@@ -69,7 +70,7 @@ const NavBar = ({ content, onClick, active, expanded, width }) => {
               onClick={onClick}
               active={active}
               elem={elem}
-              key={elem.name}
+              key={uuidv1()}
               under={!elem.name}
               expanded={expanded}
             />
