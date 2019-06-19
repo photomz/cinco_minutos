@@ -10,7 +10,14 @@ const menuDefault = {
   style: { marginRight: 10, display: 'inline', height: '1.5em', width: '1.5em' },
 };
 
-const OptionLabels = ({ action, spanishdictLink, wordreferenceLink, setAction, ...props }) => (
+const OptionLabels = ({
+  action,
+  spanishdictLink,
+  wordreferenceLink,
+  buttonsDisabled,
+  setAction,
+  ...props
+}) => (
   <Segment textAlign="center" {...props}>
     <Label
       onClick={() => setAction(action === 'verbCheck' ? 'idle' : 'verbCheck')}
@@ -28,11 +35,22 @@ const OptionLabels = ({ action, spanishdictLink, wordreferenceLink, setAction, .
       <Icon name="list" size="large" />
       Add To Collection
     </Label>
-    <Label onClick={() => window.open(spanishdictLink)} as="a">
+    <Label
+      onClick={() => {
+        if (!buttonsDisabled) window.open(spanishdictLink);
+      }}
+      as="a"
+    >
       <Image {...menuDefault} src={spanishdictImage} id="menuImage" />
       SpanishDict
     </Label>
-    <Label onClick={() => window.open(wordreferenceLink)} as="a">
+    <Label
+      onClick={() => {
+        if (!buttonsDisabled) window.open(wordreferenceLink);
+      }}
+      as="a"
+      disabled={buttonsDisabled}
+    >
       <Image {...menuDefault} src={wordreferenceImage} id="menuImage" />
       WordReference
     </Label>

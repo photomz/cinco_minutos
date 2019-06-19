@@ -130,6 +130,7 @@ const Home = () => {
               action={action}
               setAction={setAction}
               spanishdictLink={conjResults.spanishdictLink}
+              buttonsDisabled={!isSearched}
               wordreferenceLink={conjResults.wordreferenceLink}
               id="labelColumn"
             />
