@@ -27,6 +27,7 @@ const icons = [
   'chess queen',
   'chess pawn',
 ];
+let oldLoc = window.location.pathname;
 const Home = () => {
   let [searchValue, setSearchValue] = useState('');
   let [conjResults, setConjResults] = useState({});
@@ -35,8 +36,7 @@ const Home = () => {
   let [action, setAction] = useState('idle');
   const handleFilterResults = value => filterVerbs(value, 5);
   const fetchResults = value => {
-    if (history.location.pathname === '/conjugate/' + value) {
-      console.log('update');
+    if (window.location.pathname === '/conjugate/' + value) {
       fetch(info.SERVER_URL + '/conjugate?verb=' + value, {
         headers: {
           verb: value,
@@ -67,23 +67,27 @@ const Home = () => {
         value.charAt(0).toUpperCase() +
         value.slice(1).toLowerCase() +
         ' Conjugation | CincoMinutos';
-      if (history.location.pathname !== '/conjugate/' + value && value) {
-        history.push(history.location.pathname);
+      if (window.location.pathname !== '/conjugate/' + value && value) {
+        history.push(window.location.pathname);
         history.replace('/conjugate/' + value);
-        handleSearchClick(value);
       }
     }
     setSearchValue(value);
     setAction('idle');
   };
-  useEffect(() => {
-    if (['conjugate', 'conjugar'].indexOf(history.location.pathname.slice(1, 10)) > -1) {
-      handleSearchClick(history.location.pathname.slice(11));
+  const checkPath = () => {
+    if (['conjugate', 'conjugar'].indexOf(window.location.pathname.slice(1, 10)) > -1) {
+      handleSearchClick(window.location.pathname.slice(11));
     }
-    if (history.location.pathname === '/') {
+    if (window.location.pathname === '/') {
       handleSearchClick('');
     }
-  }, []);
+  };
+  useEffect(checkPath, []);
+  if (window.location.pathname !== oldLoc) {
+    oldLoc = window.location.pathname;
+    checkPath();
+  }
   const handleAccentClick = (e, accent) => {
     const cChar = searchValue.slice(-1);
     const nChar = toggleAccent[accentButtons.indexOf(accent)][cChar];
