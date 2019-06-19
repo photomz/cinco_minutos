@@ -60,7 +60,7 @@ const WidescreenTable = ({ conjugation, icons }) => (
           <Table.Header>
             <Table.Row>
               <Table.HeaderCell>
-                <Label size="large" color="red" ribbon>
+                <Label size="large" color="blue" ribbon>
                   <Icon name={icons[i]} />
                   {title}
                 </Label>

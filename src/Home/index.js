@@ -29,53 +29,55 @@ const icons = [
 ];
 
 const Home = () => {
-  let [searchValue, setSearchValue] = useState('');
+  let [searchValue, setSearchValue] = useState(''); // value to call fetch
   let [conjResults, setConjResults] = useState({});
   let [isSearched, setIsSearched] = useState(false);
-  // action === idle || loading || verbCheck || addingCollection
   let [action, setAction] = useState('idle');
-  const handleFilterResults = value => filterVerbs(value, 5);
+  // action === idle || loading || verbCheck || addingCollection
+
+  const handleFilterResults = value => filterVerbs(value, 5); // 5 is no. of results
+
   const handleSearchClick = value => {
     value = value.toLowerCase();
+    setSearchValue(value);
     if (value === conjResults.verb) return;
     setIsSearched(false);
     setAction('loading');
-    const params = {
-      headers: {
-        verb: value,
-        'Content-Type': 'application/json',
-        Accept: 'application/json',
-      },
-    };
-    if (value !== conjResults.verb) {
-      fetch(info.SERVER_URL + '/conjugate?verb=' + value, params)
-        .then(res => res.json())
-        .then(val => {
-          setConjResults(val);
-          document.title =
-            value.charAt(0).toUpperCase() +
-            value.slice(1).toLowerCase() +
-            ' Conjugation | CincoMinutos';
-          setIsSearched(Boolean(Object.entries(val).length)); // force to bool
-        })
-        .catch(err => console.log(err));
-    }
-    //const result = conjugation(value);
-    if (window.location.pathname !== '/conjugate/' + value && value) {
-      history.push(window.location.pathname);
-      history.replace('/conjugate/' + value);
-    }
-    setSearchValue(value);
+    fetchSearch(value);
+  };
+
+  const fetchSearch = query => {
+    fetch(info.SERVER_URL + '/conjugate?verb=' + query)
+      .then(res => res.json())
+      .then(val => setSearch(val))
+      .catch(err => console.log(err));
+  };
+
+  const setSearch = result => {
+    setConjResults(result);
+    setIsSearched(!!Object.entries(result).length); // force to bool
     setAction('idle');
   };
   useEffect(() => {
-    if (['conjugate', 'conjugar'].indexOf(window.location.pathname.slice(1, 10)) > -1) {
-      handleSearchClick(window.location.pathname.slice(11));
-    }
-    if (window.location.pathname === '/') {
-      handleSearchClick('');
-    }
+    const split = window.location.pathname.split('/');
+    if (split[1] === 'conjugate' && split.length === 3) handleSearchClick(split[2]);
   }, [window.location.pathname]);
+
+  useEffect(() => {
+    console.log(searchValue);
+    if (searchValue)
+      document.title =
+        searchValue.charAt(0).toUpperCase() +
+        searchValue.slice(1).toLowerCase() +
+        ' Conjugation | CincoMinutos';
+  }, [searchValue]);
+
+  useEffect(() => {
+    if (window.location.pathname !== '/conjugate/' + searchValue && searchValue) {
+      history.push(window.location.pathname);
+      history.replace('/conjugate/' + searchValue);
+    }
+  }, [searchValue]);
   const handleAccentClick = (e, accent) => {
     const cChar = searchValue.slice(-1);
     const nChar = toggleAccent[accentButtons.indexOf(accent)][cChar];

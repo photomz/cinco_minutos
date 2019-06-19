@@ -4,35 +4,32 @@ import PropTypes from 'prop-types';
 import { Icon, Search } from 'semantic-ui-react';
 import _ from 'lodash';
 
+const input = document.querySelector('#homeSearchInput');
+
 // eslint-disable-next-line no-unused-vars
 const SearchBar = ({ onFilterResults, onSearchClick, value, setValue, ...props }) => {
   let [_isLoading, _setIsLoading] = useState(false);
   let [_results, _setResults] = useState([]);
+  let [_searchKey, _setSearchKey] = useState(''); // value of searchbar, changes constantly
 
   const revertState = () => {
     _setIsLoading(false);
     _setResults([]);
-    setValue('');
+    _setSearchKey('');
   };
   const _handleResultSelect = (e, { result }) => {
     setValue(result.title);
     _handleSearchClick(result.title);
   };
-  const _handleSearchClick = val => {
-    document.querySelector('#homeSearchInput').blur();
-    if (typeof val === 'string') {
-      onSearchClick(val);
-    } else {
-      onSearchClick(value);
-    }
+  const _handleSearchClick = key => {
+    input.blur();
+    onSearchClick(key);
   };
   const _handleSearchChange = (e, { value }) => {
     _setIsLoading(true);
-    setValue(value);
-    //console.log('value - ', value);
+    _setSearchKey(value);
     setTimeout(() => {
       if (value.length < 1) return revertState();
-      //console.log('value in timeout - ', value);
       _setResults(onFilterResults(value));
       _setIsLoading(false);
     }, 200);
@@ -53,7 +50,7 @@ const SearchBar = ({ onFilterResults, onSearchClick, value, setValue, ...props }
         leading: true,
       })}
       results={_results}
-      value={value}
+      value={_searchKey}
       noResultsDescription="Make sure to use the infintive form."
       icon={<Icon inverted circular link name="search" onClick={_handleSearchClick} />}
       {...props}
