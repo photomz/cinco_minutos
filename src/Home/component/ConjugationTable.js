@@ -9,7 +9,7 @@ const MobileAccordion = ({ conjugation, icons }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   let k = -1; // index for calculating active index
   return (
-    <Responsive maxWidth={767}>
+    <Responsive maxWidth={863}>
       {conjugation.map(({ title, headers, body }, i) => {
         //const newHeaders = body.map(rowArr => rowArr[0]); // yo, tu ,... headers
         return (
@@ -53,10 +53,10 @@ MobileAccordion.propTypes = {
 };
 
 const WidescreenTable = ({ conjugation, icons }) => (
-  <Responsive minWidth={768}>
+  <Responsive minWidth={864}>
     {conjugation.map(({ title, headers, body }, i) => (
       <Segment key={uuidv1()}>
-        <Table celled style={{ tableLayout: 'fixed' }}>
+        <Table celled>
           <Table.Header>
             <Table.Row>
               <Table.HeaderCell>
