@@ -18,7 +18,7 @@ const MobileAccordion = ({ conjugation, icons }) => {
             {headers.map((elem, j) => {
               k++;
               return (
-                <Accordion key={uuidv1()} styled>
+                <Accordion key={uuidv1()} styled style={{ margin: '0 auto' }}>
                   <Accordion.Title
                     active={activeIndex === k}
                     index={k}
@@ -56,7 +56,7 @@ const WidescreenTable = ({ conjugation, icons }) => (
   <Responsive minWidth={768}>
     {conjugation.map(({ title, headers, body }, i) => (
       <Segment key={uuidv1()}>
-        <Table celled>
+        <Table celled style={{ tableLayout: 'fixed' }}>
           <Table.Header>
             <Table.Row>
               <Table.HeaderCell>
@@ -74,7 +74,12 @@ const WidescreenTable = ({ conjugation, icons }) => (
             {body.map(rowArr => (
               <Table.Row key={uuidv1()}>
                 {rowArr.map(elem => (
-                  <Table.Cell key={uuidv1()}>{elem}</Table.Cell>
+                  <Table.Cell
+                    key={uuidv1()}
+                    style={{ overflowWrap: 'break-word', hyphens: 'auto' }}
+                  >
+                    {elem}
+                  </Table.Cell>
                 ))}
               </Table.Row>
             ))}
