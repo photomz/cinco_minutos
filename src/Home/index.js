@@ -87,6 +87,7 @@ const Home = () => {
     }
     if (window.location.pathname === '/') {
       handleSearchClick('');
+      setPlaceholder('¡Vámos!');
     }
   };
   useEffect(checkPath, []);

@@ -73,6 +73,7 @@ const App = () => {
         path={ROUTES.Home}
         render={() => {
           setPage('home');
+          window.scrollTo(0, 0);
           return <Home />;
         }}
       />
@@ -80,6 +81,7 @@ const App = () => {
         path={ROUTES.Browse}
         render={() => {
           setPage('browse');
+          window.scrollTo(0, 0);
           return <Browse />;
         }}
       />
@@ -87,6 +89,7 @@ const App = () => {
         path={ROUTES.Collections}
         render={() => {
           setPage('collections');
+          window.scrollTo(0, 0);
           return <Collections />;
         }}
       />
@@ -94,6 +97,7 @@ const App = () => {
         path={ROUTES.Settings}
         render={() => {
           setPage('settings');
+          window.scrollTo(0, 0);
           return <Settings />;
         }}
       />
@@ -101,6 +105,7 @@ const App = () => {
         path={ROUTES.About}
         render={() => {
           setPage('about');
+          window.scrollTo(0, 0);
           return <About />;
         }}
       />
@@ -108,6 +113,7 @@ const App = () => {
         path={ROUTES.Conjugate}
         render={() => {
           setPage('home');
+          window.scrollTo(0, 0);
           return <Home />;
         }}
       />
@@ -117,6 +123,7 @@ const App = () => {
           window.location = ROUTES.GitHub;
           history.replace('/');
           setPage('github');
+          window.scrollTo(0, 0);
           return (
             <Segment raised padded style={{ margin: '25vh auto', width: '80vw', height: 'auto' }}>
               <h1 style={{ textAlign: 'center', fontSize: '5em' }}>Loading GitHub Page...</h1>
