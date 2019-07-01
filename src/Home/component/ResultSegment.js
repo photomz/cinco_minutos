@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Segment, Header, Loader, Label } from 'semantic-ui-react';
 
-const ResultSegment = ({ verb, def, presentPart, pastPart, isSearched, action }) => (
+const ResultSegment = ({ verb, def, presentPart, pastPart, isSearched, unsearchedVal, action }) => (
   <Segment padded>
     {isSearched ? (
       <div>
@@ -14,7 +14,7 @@ const ResultSegment = ({ verb, def, presentPart, pastPart, isSearched, action })
     ) : action === 'loading' ? (
       <Loader active content="Loading" inline="centered" />
     ) : (
-      <Header as="h2" content="¡Vámos!" textAlign="center" />
+      <Header as="h2" content={unsearchedVal} textAlign="center" />
     )}
   </Segment>
 );

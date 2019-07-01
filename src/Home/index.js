@@ -32,6 +32,7 @@ const Home = () => {
   let [searchValue, setSearchValue] = useState('');
   let [conjResults, setConjResults] = useState({});
   let [isSearched, setIsSearched] = useState(false);
+  let [placeholder, setPlaceholder] = useState('¡Vámos!');
   // action === idle || loading || verbCheck || addingCollection
   let [action, setAction] = useState('idle');
   const handleFilterResults = value => filterVerbs(value, 5);
@@ -46,7 +47,11 @@ const Home = () => {
       })
         .then(res => res.json())
         .then(val => {
-          setConjResults(val);
+          if (Object.entries(val).length) setConjResults(val);
+          else {
+            setConjResults({ verb: value });
+            setPlaceholder('Invalid verb "' + value + '"!');
+          }
           document.title =
             value.charAt(0).toUpperCase() +
             value.slice(1).toLowerCase() +
@@ -59,9 +64,9 @@ const Home = () => {
   const handleSearchClick = value => {
     value = value.toLowerCase();
     if (value === conjResults.verb) return;
-    console.log(conjResults);
     setIsSearched(false);
     setAction('loading');
+    setPlaceholder('Loading...');
     if (value !== conjResults.verb) {
       fetchResults(value);
       document.title =
@@ -142,6 +147,7 @@ const Home = () => {
               verb={conjResults.verb}
               def={conjResults.definition}
               isSearched={isSearched}
+              unsearchedVal={placeholder}
               presentPart={conjResults.conjugation ? conjResults.conjugation[6].body : ''}
               pastPart={conjResults.conjugation ? conjResults.conjugation[7].body : ''}
             />

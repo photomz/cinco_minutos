@@ -20,10 +20,8 @@ haber = haber.conjugation;
 const transpose = arr => arr[0].map((col, i) => arr.map(row => row[i]));
 const insertEnd = (arr, add) => arr.map(row => row.map(col => col.split(',')[0] + ' ' + add));
 
-const conjugate = verb => {
-  //const query = fullSearch[verb];
-  //if (typeof query === 'undefined') return null;
-  const dataP = webScrape.getVerb(verb, verbs, result => {
+const conjugate = verb =>
+  webScrape.getVerb(verb, verbs, result => {
     if (typeof result === 'undefined' || result == {}) return {};
     if (!popularity[verb]++) popularity[verb] = 1;
 
@@ -50,8 +48,6 @@ const conjugate = verb => {
       conjugation: formatted,
     };
   });
-  return dataP;
-};
 app.get('/', (req, res) => {
   res.send(
     'Cinco Minutos API - access /popularity for most popularly searched verbs, access /conjugate?verb=MYVERB to access conjugations in JSON.',
