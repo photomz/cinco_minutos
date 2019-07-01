@@ -59,6 +59,7 @@ const Home = () => {
   const handleSearchClick = value => {
     value = value.toLowerCase();
     if (value === conjResults.verb) return;
+    console.log(conjResults);
     setIsSearched(false);
     setAction('loading');
     if (value !== conjResults.verb) {
@@ -129,9 +130,11 @@ const Home = () => {
             <OptionLabels
               action={action}
               setAction={setAction}
-              spanishdictLink={conjResults.spanishdictLink}
+              spanishdictLink={'https://www.spanishdict.com/conjugate/' + conjResults.verb}
               buttonsDisabled={!isSearched}
-              wordreferenceLink={conjResults.wordreferenceLink}
+              wordreferenceLink={
+                'https://www.wordreference.com/es/en/translation.asp?spen=' + conjResults.verb
+              }
               id="labelColumn"
             />
             <ResultSegment

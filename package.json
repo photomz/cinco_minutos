@@ -41,6 +41,7 @@
     "express": "^4.17.1",
     "history": "^4.9.0",
     "lodash": "^4.17.11",
+    "node-html-parser": "^1.1.15",
     "nodemon": "^1.19.1",
     "prop-types": "^15.7.2",
     "react": ">=15",
