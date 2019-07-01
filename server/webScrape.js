@@ -2,6 +2,8 @@
 /* eslint-disable no-unused-vars */
 const https = require('https');
 const parser = require('node-html-parser');
+const fs = require('fs');
+
 const getVerbSD = verb => {
   const SDURL = 'https://www.spanishdict.com/conjugate/' + verb;
   return new Promise((resolve, reject) => {
@@ -25,21 +27,20 @@ const getVerbSD = verb => {
     });
   })
     .then(data => {
-      /* eslint-disable-next-line */
-      document = parser.parse(data);
-      if (document.querySelector('#headword-en')) {
-        const forwardVerb = document.querySelector('#quickdef1-en a');
+      const html = parser.parse(data);
+      if (html.querySelector('#headword-en')) {
+        const forwardVerb = html.querySelector('#quickdef1-en a');
         if (forwardVerb) {
           return getVerbSD(forwardVerb.innerHTML);
         }
         throw new Error('could not convert "' + verb + '" to a spanish verb');
       }
-      const def = document
+      const def = html
         .querySelectorAll('#headword-and-quickdefs-es a')
         .filter(el => !el.rawAttrs.includes('aria-label'))
         .map(el => el.innerHTML)
         .join(', ');
-      const n = document
+      const n = html
         .querySelectorAll('.vtable-word-text')
         .map(el =>
           el.childNodes.length > 1
@@ -47,14 +48,14 @@ const getVerbSD = verb => {
             : el.innerHTML,
         );
       const reflexive = n[0].slice(0, 3) == 'me ';
-      const [presPart, pastPart] = document
+      const [presPart, pastPart] = html
         .querySelectorAll('.conj-basic-word')
         .map(el =>
           el.childNodes.length > 1
             ? el.childNodes.map(el2 => (el2.rawText ? el2.rawText : el2.innerHTML)).join('')
             : el.innerHTML,
         );
-      verb = document.querySelector('#headword-es').innerHTML + (reflexive ? 'se' : '');
+      verb = html.querySelector('#headword-es').innerHTML + (reflexive ? 'se' : '');
       const allConj = [[[], [], [], [], []], [[], [], [], []], [[], []], presPart, pastPart];
       for (let i = 0; i < 64; i++) {
         if (i < 30) {
@@ -77,6 +78,58 @@ const getVerbSD = verb => {
 const getVerb = verb => {
   // TODO: add WordReference support
   return getVerbSD(verb);
+};
+const getAllVerbs = () => {
+  const NUMTOGET = 15348; // Entire database
+
+  return new Promise((resolve, reject) =>
+    https.get('https://cooljugator.com/es/list/all', res => {
+      if (res.statusCode !== 200) throw new Error('error ' + res.statusCode);
+      else {
+        let data = '';
+        res.on('data', c => {
+          data += c;
+        });
+        res.on('end', () => resolve(data));
+      }
+    }),
+  )
+    .then(data => {
+      const html = parser.parse(data);
+      return html.querySelectorAll('.ui.segment.stacked ul .item a').map(el => el.innerHTML);
+    })
+    .then(allVerbs => {
+      let currFile = {};
+      try {
+        currFile = require('./verbs.json');
+      } catch (e) {
+        currFile = {};
+      }
+      const minLength = Object.keys(currFile).length;
+      allVerbs = allVerbs.slice(minLength, minLength + NUMTOGET);
+      return [recursePromiseConj(allVerbs, {}), currFile];
+    })
+    .then(vals => {
+      const [allVerbsConj, currFile] = vals;
+      allVerbsConj.then(allConj => {
+        fs.writeFileSync('./verbs.json', JSON.stringify({ ...currFile, ...allConj }));
+      });
+    });
+};
+const addConj = (obj, verb) => {
+  return getVerb(verb).then(conj => {
+    obj[verb] = conj;
+    return obj;
+  });
+};
+const recursePromiseConj = (allVerbs, allVerbsConj, i = 0) => {
+  if (allVerbs[i])
+    return addConj(allVerbsConj, allVerbs[i]).then(newObj => {
+      console.log('Conjugated ' + allVerbs[i]);
+      return recursePromiseConj(allVerbs, newObj, i + 1);
+    });
+  console.log('Finished!');
+  return allVerbsConj;
 };
 /* eslint-disable-next-line */
 module.exports.getVerb = (verb, cachedList, callback) => {
