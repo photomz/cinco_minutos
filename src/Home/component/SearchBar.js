@@ -2,13 +2,16 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Icon, Search } from 'semantic-ui-react';
-import _ from 'lodash';
+import debounce from 'lodash/debounce';
 
+let prevTime = performance.now();
+let prevFilterCall = setTimeout(() => null, 0);
+let cached = false;
+let timesFast = 0;
 // eslint-disable-next-line no-unused-vars
 const SearchBar = ({ onFilterResults, onSearchClick, value, setValue, ...props }) => {
   let [_isLoading, _setIsLoading] = useState(false);
   let [_results, _setResults] = useState([]);
-
   const revertState = () => {
     _setIsLoading(false);
     _setResults([]);
@@ -29,7 +32,24 @@ const SearchBar = ({ onFilterResults, onSearchClick, value, setValue, ...props }
     setTimeout(() => {
       if (value.length < 1) return revertState();
       //console.log('value in timeout - ', value);
-      _setResults(onFilterResults(value));
+      if (!cached) {
+        clearTimeout(prevFilterCall);
+        if (performance.now() - prevTime >= 400) {
+          onFilterResults(value).then(val => {
+            _setResults(val[0]);
+            cached = val[1];
+          });
+          prevTime = performance.now();
+          ++timesFast;
+        } else {
+          prevFilterCall = setTimeout(() => {
+            onFilterResults(value).then(val => _setResults(val[0]));
+          }, 400 + timesFast * 100);
+          timesFast = 0;
+        }
+      } else {
+        onFilterResults(value).then(val => _setResults(val[0]));
+      }
       _setIsLoading(false);
     }, 200);
   };
@@ -42,12 +62,8 @@ const SearchBar = ({ onFilterResults, onSearchClick, value, setValue, ...props }
       size="large"
       loading={_isLoading}
       onResultSelect={_handleResultSelect}
-      onSearchChange={_.debounce(_handleSearchChange, 500, {
-        leading: true,
-      })}
-      onKeyPress={_.debounce(_handleKeyPress, 500, {
-        leading: true,
-      })}
+      onSearchChange={_handleSearchChange}
+      onKeyPress={_handleKeyPress}
       results={_results}
       value={value}
       noResultsDescription="Make sure to use the infintive form."

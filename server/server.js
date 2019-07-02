@@ -51,12 +51,6 @@ const conjugate = verb =>
       conjugation: formatted,
     };
   });
-app.get('/', (req, res) => {
-  res.send(
-    'Cinco Minutos API - access /popularity for most popularly searched verbs, access /conjugate?verb=MYVERB to access conjugations in JSON.',
-  );
-});
-
 const sorter = (v1, v2) =>
   (popularity[v2] ? popularity[v2] : 0) - (popularity[v1] ? popularity[v1] : 0);
 const filterVerbs = (value, len) => {
@@ -71,10 +65,25 @@ const filterVerbs = (value, len) => {
     extraResults = searchKeys.filter(verb => contains.test(verb));
     extraResults.sort(sorter);
   }
-  results = [...new Set(results.concat(extraResults))].slice(0, len);
-  results = results.map(verb => ({ title: verb, description: search[verb] }));
-  return results;
+  results = [...new Set(results.concat(extraResults))]; // Remove duplicates
+  let blankResults = [];
+  results = results.filter(val => {
+    if (searchObj[val] === '') {
+      blankResults.push(val);
+      return false;
+    } else {
+      return true;
+    }
+  });
+  results = results.concat(blankResults).slice(0, len);
+  results = results.map(verb => ({ title: verb, description: searchObj[verb] }));
 };
+
+app.get('/', (req, res) => {
+  res.send(
+    'Cinco Minutos API - access /popularity for most popularly searched verbs, access /conjugate?verb=MYVERB to access conjugations in JSON.',
+  );
+});
 
 app.get('/conjugate', (req, res) => {
   res.setHeader('access-control-allow-origin', '*');
@@ -88,7 +97,12 @@ app.get('/popularity', (req, res) => {
 
 app.get('/suggest', (req, res) => {
   res.setHeader('access-control-allow-origin', '*');
-  res.json(filterVerbs(req.query.verb));
+  res.json(filterVerbs(req.query.verb, req.query.num));
+});
+
+app.get('/suggestAll', (req, res) => {
+  res.setHeader('access-control-allow-origin', '*');
+  res.json(search);
 });
 
 app.get('*', (req, res) => {
