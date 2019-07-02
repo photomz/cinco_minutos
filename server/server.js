@@ -12,6 +12,9 @@ const verbs = require('./static/verbs.json');
 //const fullSearch = require('./static/fullSearch.json');
 const headers = require('./static/headers.json');
 const webScrape = require('./webScrape');
+const search = require('./static/quickSearch.json');
+const searchKeys = Object.keys(search);
+
 let popularity = {};
 let { estar, haber } = verbs;
 estar = estar.conjugation;
@@ -54,6 +57,25 @@ app.get('/', (req, res) => {
   );
 });
 
+const sorter = (v1, v2) =>
+  (popularity[v2] ? popularity[v2] : 0) - (popularity[v1] ? popularity[v1] : 0);
+const filterVerbs = (value, len) => {
+  const startsWith = new RegExp('^' + value, 'i'); // match not case sensitive
+  const contains = new RegExp(value, 'i');
+
+  let results = searchKeys.includes(value) ? [value] : [];
+  results = results.concat(searchKeys.filter(verb => startsWith.test(verb)));
+  results.sort(sorter);
+  let extraResults = [];
+  if (results.length < len) {
+    extraResults = searchKeys.filter(verb => contains.test(verb));
+    extraResults.sort(sorter);
+  }
+  results = [...new Set(results.concat(extraResults))].slice(0, len);
+  results = results.map(verb => ({ title: verb, description: search[verb] }));
+  return results;
+};
+
 app.get('/conjugate', (req, res) => {
   res.setHeader('access-control-allow-origin', '*');
   conjugate(req.query.verb).then(v => res.json(v));
@@ -63,6 +85,12 @@ app.get('/popularity', (req, res) => {
   res.setHeader('access-control-allow-origin', '*');
   res.json(popularity);
 });
+
+app.get('/suggest', (req, res) => {
+  res.setHeader('access-control-allow-origin', '*');
+  res.json(filterVerbs(req.query.verb));
+});
+
 app.get('*', (req, res) => {
   res.redirect('/');
 });

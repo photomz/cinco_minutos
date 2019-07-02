@@ -80,7 +80,8 @@ const getVerb = verb => {
   return getVerbSD(verb);
 };
 const getAllVerbs = () => {
-  const NUMTOGET = 15348; // Entire database
+  const NUMTOGET = 0; // Entire database 15348
+  let totalSum = NUMTOGET;
 
   return new Promise((resolve, reject) =>
     https.get('https://cooljugator.com/es/list/all', res => {
@@ -100,19 +101,28 @@ const getAllVerbs = () => {
     })
     .then(allVerbs => {
       let currFile = {};
+      let finished = 0;
       try {
         currFile = require('./verbs.json');
       } catch (e) {
         currFile = {};
       }
-      const minLength = Object.keys(currFile).length;
-      allVerbs = allVerbs.slice(minLength, minLength + NUMTOGET);
+      try {
+        const finishedJSON = require('./finished.json');
+        finished = Number(finishedJSON['finished']);
+      } catch (e) {
+        finished = 0;
+      }
+      const minLength = finished;
+      totalSum = minLength + NUMTOGET;
+      allVerbs = allVerbs.slice(minLength, totalSum);
       return [recursePromiseConj(allVerbs, {}), currFile];
     })
     .then(vals => {
       const [allVerbsConj, currFile] = vals;
       allVerbsConj.then(allConj => {
         fs.writeFileSync('./verbs.json', JSON.stringify({ ...currFile, ...allConj }));
+        fs.writeFileSync('./finished.json', JSON.stringify({ finished: totalSum }));
       });
     });
 };
@@ -130,6 +140,12 @@ const recursePromiseConj = (allVerbs, allVerbsConj, i = 0) => {
     });
   console.log('Finished!');
   return allVerbsConj;
+};
+const createQuickSearch = obj => {
+  Object.keys(obj).map(key => {
+    obj[key] = obj[key]['definition'];
+  });
+  fs.writeFileSync('./quickSearch.json', JSON.stringify(obj));
 };
 /* eslint-disable-next-line */
 module.exports.getVerb = (verb, cachedList, callback) => {
