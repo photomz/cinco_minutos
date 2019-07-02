@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Icon, Search } from 'semantic-ui-react';
-import debounce from 'lodash/debounce';
 
 let prevTime = performance.now();
 let prevFilterCall = setTimeout(() => null, 0);
