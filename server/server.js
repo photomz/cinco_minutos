@@ -68,7 +68,7 @@ const filterVerbs = (value, len) => {
   results = [...new Set(results.concat(extraResults))]; // Remove duplicates
   let blankResults = [];
   results = results.filter(val => {
-    if (searchObj[val] === '') {
+    if (search[val] === '') {
       blankResults.push(val);
       return false;
     } else {
@@ -76,7 +76,8 @@ const filterVerbs = (value, len) => {
     }
   });
   results = results.concat(blankResults).slice(0, len);
-  results = results.map(verb => ({ title: verb, description: searchObj[verb] }));
+  results = results.map(verb => ({ title: verb, description: search[verb] }));
+  return results;
 };
 
 app.get('/', (req, res) => {

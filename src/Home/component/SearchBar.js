@@ -34,7 +34,7 @@ const SearchBar = ({ onFilterResults, onSearchClick, value, setValue, ...props }
       //console.log('value in timeout - ', value);
       if (!cached) {
         clearTimeout(prevFilterCall);
-        if (performance.now() - prevTime >= 400) {
+        if (performance.now() - prevTime >= 500) {
           onFilterResults(value).then(val => {
             _setResults(val[0]);
             cached = val[1];
@@ -44,7 +44,7 @@ const SearchBar = ({ onFilterResults, onSearchClick, value, setValue, ...props }
         } else {
           prevFilterCall = setTimeout(() => {
             onFilterResults(value).then(val => _setResults(val[0]));
-          }, 400 + timesFast * 100);
+          }, 500 + timesFast * 100);
           timesFast = 0;
         }
       } else {
