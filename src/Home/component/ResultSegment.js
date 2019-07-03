@@ -25,6 +25,7 @@ ResultSegment.propTypes = {
   presentPart: PropTypes.string,
   pastPart: PropTypes.string,
   isSearched: PropTypes.bool.isRequired,
+  unsearchedVal: PropTypes.string,
   action: PropTypes.string,
 };
 

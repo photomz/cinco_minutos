@@ -6,7 +6,7 @@ import { Icon, Search } from 'semantic-ui-react';
 let prevTime = performance.now();
 let prevFilterCall = setTimeout(() => null, 0);
 let cached = false;
-let timesFast = 0;
+let timePassed = 0;
 // eslint-disable-next-line no-unused-vars
 const SearchBar = ({ onFilterResults, onSearchClick, value, setValue, ...props }) => {
   let [_isLoading, _setIsLoading] = useState(false);
@@ -33,23 +33,24 @@ const SearchBar = ({ onFilterResults, onSearchClick, value, setValue, ...props }
       //console.log('value in timeout - ', value);
       if (!cached) {
         clearTimeout(prevFilterCall);
-        if (performance.now() - prevTime >= 500) {
+        timePassed = performance.now() - prevTime;
+        prevTime = performance.now();
+        if (timePassed >= 250 && value.length > 1) {
           onFilterResults(value).then(val => {
             _setResults(val[0]);
             cached = val[1];
+            _setIsLoading(false);
           });
-          prevTime = performance.now();
-          ++timesFast;
         } else {
           prevFilterCall = setTimeout(() => {
             onFilterResults(value).then(val => _setResults(val[0]));
-          }, 500 + timesFast * 100);
-          timesFast = 0;
+            _setIsLoading(false);
+          }, 250);
         }
       } else {
         onFilterResults(value).then(val => _setResults(val[0]));
+        _setIsLoading(false);
       }
-      _setIsLoading(false);
     }, 200);
   };
   const _handleKeyPress = e => {

@@ -12,10 +12,7 @@ let search = (v, len) =>
       Accept: 'application/json',
     },
   })
-    .then(res => {
-      console.log('api call');
-      return res.json();
-    })
+    .then(res => res.json())
     .then(obj => [obj, false]);
 fetch(info.SERVER_URL + '/suggestAll', {
   headers: {
