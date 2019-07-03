@@ -3,6 +3,7 @@
 const https = require('https');
 const parser = require('node-html-parser');
 const fs = require('fs');
+const popularityScale = require('../globals.json').POPULARITY_SCALE;
 
 const getVerbSD = verb => {
   const SDURL = 'https://www.spanishdict.com/conjugate/' + verb;
@@ -85,8 +86,10 @@ const getAllVerbs = () => {
 
   return new Promise((resolve, reject) =>
     https.get('https://cooljugator.com/es/list/all', res => {
-      if (res.statusCode !== 200) throw new Error('error ' + res.statusCode);
-      else {
+      if (res.statusCode !== 200) {
+        reject(new Error('error ' + res.statusCode));
+        return;
+      } else {
         let data = '';
         res.on('data', c => {
           data += c;
@@ -146,6 +149,58 @@ const createQuickSearch = obj => {
     obj[key] = obj[key]['definition'];
   });
   fs.writeFileSync('./quickSearch.json', JSON.stringify(obj));
+};
+const createPopularity = (max = 61) => {
+  let popularity = {};
+  try {
+    popularity = require('./popularity.json');
+  } catch (e) {
+    popularity = {};
+  }
+  recursePromisePopularity(popularity, 0, max).then(val => {
+    const minVal = Math.min(...Object.values(val));
+    for (let v in val) {
+      val[v] = Math.round((popularityScale * val[v]) / minVal);
+    }
+    fs.writeFileSync('./popularity.json', JSON.stringify(val));
+  });
+};
+const recursePromisePopularity = (obj, num = 0, max = 61) => {
+  if (num > max) {
+    console.log('Finished!');
+    return obj;
+  }
+  return getPopularity(obj, num).then(newObj => {
+    console.log('Page ' + num + ' scraped');
+    return recursePromisePopularity(newObj, num + 1, max);
+  });
+};
+const getPopularity = (obj, num) => {
+  return new Promise((resolve, reject) =>
+    https.get('https://lingolex.com/verbs/popular_verbs.php?page=' + num, res => {
+      if (res.statusCode !== 200) {
+        reject(new Error('error ' + res.statusCode));
+        return;
+      }
+      let page = '';
+      res.on('data', c => {
+        page += c;
+      });
+      res.on('end', () => resolve(page));
+    }),
+  ).then(data => {
+    html = parser.parse(data);
+    const allVerbs = [...html.querySelectorAll('td')].slice(7, 87);
+    allVerbs.map((el, ind) => {
+      if (ind % 4 === 1) {
+        let val = parseInt(allVerbs[ind - 1].innerHTML);
+        let elTXT = el.firstChild.innerHTML ? el.firstChild.innerHTML : el.innerHTML;
+        if (!obj[elTXT]) obj[elTXT] = val;
+        else obj[elTXT] += val;
+      }
+    });
+    return obj;
+  });
 };
 /* eslint-disable-next-line */
 module.exports.getVerb = (verb, cachedList, callback) => {

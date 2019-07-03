@@ -1,4 +1,5 @@
 {
     "SERVER_URL": "http://localhost:3000",
-    "PORT": 3000
+    "PORT": 3000,
+    "POPULARITY_SCALE": 100
 }

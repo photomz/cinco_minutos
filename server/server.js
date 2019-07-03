@@ -3,6 +3,8 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const info = require('../globals.json');
+const fs = require('fs');
+const path = require('path');
 
 let app = express();
 app.use(cors());
@@ -15,7 +17,7 @@ const webScrape = require('./webScrape');
 const search = require('./static/quickSearch.json');
 const searchKeys = Object.keys(search);
 
-let popularity = {};
+let popularity = require('./static/popularity.json');
 let { estar, haber } = verbs;
 estar = estar.conjugation;
 haber = haber.conjugation;
@@ -26,7 +28,7 @@ const insertEnd = (arr, add) => arr.map(row => row.map(col => col.split(',')[0] 
 const conjugate = verb =>
   webScrape.getVerb(verb, verbs, result => {
     if (typeof result === 'undefined' || result == {}) return {};
-    if (!popularity[verb]++) popularity[verb] = 1;
+    increasePopularity(verb);
 
     const conj = result.conjugation;
     const fullConj = [
@@ -79,7 +81,17 @@ const filterVerbs = (value, len) => {
   results = results.map(verb => ({ title: verb, description: search[verb] }));
   return results;
 };
-
+const increasePopularity = verb => {
+  if (!popularity[verb]) popularity[verb] = info.POPULARITY_SCALE;
+  else popularity[verb] += info.POPULARITY_SCALE;
+  fs.writeFile(
+    path.join(__dirname, './static/popularity.json'),
+    JSON.stringify(popularity),
+    err => {
+      if (err) console.log(err);
+    },
+  );
+};
 app.get('/', (req, res) => {
   res.send(
     'Cinco Minutos API - access /popularity for most popularly searched verbs, access /conjugate?verb=MYVERB to access conjugations in JSON.',
