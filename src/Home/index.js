@@ -57,6 +57,7 @@ const Home = () => {
             value.slice(1).toLowerCase() +
             ' Conjugation | CincoMinutos';
           setIsSearched(Boolean(Object.entries(val).length)); // force to bool
+          setAction('idle');
         })
         .catch(err => console.log(err));
     }
@@ -79,13 +80,12 @@ const Home = () => {
       }
     }
     setSearchValue(value);
-    setAction('idle');
   };
   const checkPath = () => {
-    if (['conjugate', 'conjugar'].indexOf(window.location.pathname.slice(1, 10)) > -1) {
+    let pn = window.location.pathname;
+    if (pn.slice(1, 10) === 'conjugate') {
       handleSearchClick(window.location.pathname.slice(11));
-    }
-    if (window.location.pathname === '/') {
+    } else if (window.location.pathname === '/') {
       handleSearchClick('');
       setPlaceholder('¡Vámos!');
     }

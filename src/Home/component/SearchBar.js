@@ -1,10 +1,10 @@
 /* eslint-disable no-console */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { Icon, Search } from 'semantic-ui-react';
 
 let prevTime = performance.now();
-let prevFilterCall = setTimeout(() => null, 0);
+let prevTimeoutCall = setTimeout(() => null, 0);
 let cached = false;
 let timePassed = 0;
 // eslint-disable-next-line no-unused-vars
@@ -28,30 +28,31 @@ const SearchBar = ({ onFilterResults, onSearchClick, value, setValue, ...props }
     _setIsLoading(true);
     setValue(value);
     //console.log('value - ', value);
-    setTimeout(() => {
-      if (value.length < 1) return revertState();
-      //console.log('value in timeout - ', value);
-      if (!cached) {
-        clearTimeout(prevFilterCall);
-        timePassed = performance.now() - prevTime;
-        prevTime = performance.now();
-        if (timePassed >= 250 && value.length > 1) {
-          onFilterResults(value).then(val => {
-            _setResults(val[0]);
-            cached = val[1];
-            _setIsLoading(false);
-          });
-        } else {
-          prevFilterCall = setTimeout(() => {
-            onFilterResults(value).then(val => _setResults(val[0]));
-            _setIsLoading(false);
-          }, 250);
-        }
+    if (value.length < 1) return revertState();
+    //console.log('value in timeout - ', value);
+    if (!cached) {
+      clearTimeout(prevTimeoutCall);
+      timePassed = performance.now() - prevTime;
+      prevTime = performance.now();
+      if (timePassed >= 250 && value.length > 1) {
+        onFilterResults(value).then(val => {
+          _setResults(val[0]);
+          cached = val[1];
+          _setIsLoading(false);
+        });
       } else {
-        onFilterResults(value).then(val => _setResults(val[0]));
-        _setIsLoading(false);
+        prevTimeoutCall = setTimeout(() => {
+          onFilterResults(value).then(val => _setResults(val[0]));
+          _setIsLoading(false);
+        }, 250);
       }
-    }, 200);
+    } else {
+      clearTimeout(prevTimeoutCall);
+      onFilterResults(value).then(val => {
+        _setResults(val[0]);
+        prevTimeoutCall = setTimeout(() => _setIsLoading(false), 200);
+      });
+    }
   };
   const _handleKeyPress = e => {
     if (e.charCode === 13) _handleSearchClick();

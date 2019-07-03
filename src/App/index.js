@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-console */
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import { Segment } from 'semantic-ui-react';
 import NavBar from './NavBar.js';
 import Home from '../Home';
@@ -68,69 +68,72 @@ const App = () => {
         expanded={expandedNavBar}
         width={width}
       />
-      <Route
-        exact
-        path={ROUTES.Home}
-        render={() => {
-          setPage('home');
-          window.scrollTo(0, 0);
-          return <Home />;
-        }}
-      />
-      <Route
-        path={ROUTES.Browse}
-        render={() => {
-          setPage('browse');
-          window.scrollTo(0, 0);
-          return <Browse />;
-        }}
-      />
-      <Route
-        path={ROUTES.Collections}
-        render={() => {
-          setPage('collections');
-          window.scrollTo(0, 0);
-          return <Collections />;
-        }}
-      />
-      <Route
-        path={ROUTES.Settings}
-        render={() => {
-          setPage('settings');
-          window.scrollTo(0, 0);
-          return <Settings />;
-        }}
-      />
-      <Route
-        path={ROUTES.About}
-        render={() => {
-          setPage('about');
-          window.scrollTo(0, 0);
-          return <About />;
-        }}
-      />
-      <Route
-        path={ROUTES.Conjugate}
-        render={() => {
-          setPage('home');
-          window.scrollTo(0, 0);
-          return <Home />;
-        }}
-      />
-      <Route
-        path="/github"
-        render={() => {
-          window.location = ROUTES.GitHub;
-          history.replace('/');
-          setPage('github');
-          window.scrollTo(0, 0);
-          return (
-            <Segment raised padded style={{ margin: '25vh auto', width: '80vw', height: 'auto' }}>
-              <h1 style={{ textAlign: 'center', fontSize: '5em' }}>Loading GitHub Page...</h1>
-            </Segment>
-          );
-        }}
-      />
+      <Switch>
+        <Route
+          exact
+          path={ROUTES.Home}
+          render={() => {
+            setPage('home');
+            window.scrollTo(0, 0);
+            return <Home />;
+          }}
+        />
+        <Route
+          path={ROUTES.Browse}
+          render={() => {
+            setPage('browse');
+            window.scrollTo(0, 0);
+            return <Browse />;
+          }}
+        />
+        <Route
+          path={ROUTES.Collections}
+          render={() => {
+            setPage('collections');
+            window.scrollTo(0, 0);
+            return <Collections />;
+          }}
+        />
+        <Route
+          path={ROUTES.Settings}
+          render={() => {
+            setPage('settings');
+            window.scrollTo(0, 0);
+            return <Settings />;
+          }}
+        />
+        <Route
+          path={ROUTES.About}
+          render={() => {
+            setPage('about');
+            window.scrollTo(0, 0);
+            return <About />;
+          }}
+        />
+        <Route
+          path={ROUTES.Conjugate}
+          render={() => {
+            setPage('home');
+            window.scrollTo(0, 0);
+            return <Home />;
+          }}
+        />
+        <Route
+          path="/github"
+          render={() => {
+            window.location = ROUTES.GitHub;
+            history.replace('/');
+            setPage('github');
+            window.scrollTo(0, 0);
+            return (
+              <Segment raised padded style={{ margin: '25vh auto', width: '80vw', height: 'auto' }}>
+                <h1 style={{ textAlign: 'center', fontSize: '5em' }}>Loading GitHub Page...</h1>
+              </Segment>
+            );
+          }}
+        />
+        <Route path="*" render={() => <Redirect to="/" />} />
+      </Switch>
     </Router>
   );
 };
