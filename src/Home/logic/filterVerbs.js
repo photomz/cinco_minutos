@@ -3,6 +3,7 @@ const info = require('../../../globals.json');
 let popularity = {};
 let searchObj = {};
 let searchKeys = Object.keys(searchObj);
+const serviceWorkerExists = 'serviceWorker' in navigator && navigator.serviceWorker.controller;
 let search = (v, len) =>
   fetch(info.SERVER_URL + '/suggest?verb=' + v + '&num=' + len, {
     headers: {
@@ -14,29 +15,47 @@ let search = (v, len) =>
   })
     .then(res => res.json())
     .then(obj => [obj, false]);
-fetch(info.SERVER_URL + '/suggestAll', {
-  headers: {
-    'Content-Type': 'application/json',
-    Accept: 'application/json',
-  },
-})
-  .then(val => {
-    fetch(info.SERVER_URL + '/popularity', {
+if (serviceWorkerExists) localStorage.clear();
+const searchObjLS = localStorage.getItem('suggestions');
+const popularityLS = localStorage.getItem('popularity');
+(searchObjLS
+  ? new Promise(r => {
+      r(searchObjLS);
+    })
+  : fetch(info.SERVER_URL + '/suggestAll', {
       headers: {
         'Content-Type': 'application/json',
         Accept: 'application/json',
       },
     })
-      .then(res => res.json())
-      .then(obj => {
-        popularity = obj;
-      });
-    return val.json();
+)
+  .then(val => {
+    if (popularityLS) popularity = JSON.parse(popularityLS);
+    else
+      fetch(info.SERVER_URL + '/popularity', {
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+      })
+        .then(res => res.json())
+        .then(obj => {
+          popularity = obj;
+          if (serviceWorkerExists) localStorage.setItem('popularity', JSON.stringify(obj));
+        });
+    return val;
   })
   .then(v => {
-    searchObj = v;
-    localStorage.setItem('suggestions', JSON.stringify(searchObj));
-    searchKeys = Object.keys(searchObj);
+    if (typeof v === 'object') {
+      v.json().then(val => {
+        searchObj = val;
+        if (serviceWorkerExists) localStorage.setItem('suggestions', JSON.stringify(searchObj));
+        searchKeys = Object.keys(searchObj);
+      });
+    } else {
+      searchObj = JSON.parse(v);
+      searchKeys = Object.keys(searchObj);
+    }
   });
 const sorter = (v1, v2) =>
   (popularity[v2] ? popularity[v2] : 0) - (popularity[v1] ? popularity[v1] : 0);
