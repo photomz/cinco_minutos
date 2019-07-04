@@ -9,13 +9,15 @@ const renderApp = () => {
 };
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker
-    .register('./sw.js')
+    .register('/sw.js')
     .then(reg => {
-      console.log('success: ' + reg);
+      console.log('success: ' + reg.scope);
     })
     .catch(e => {
       console.log(e);
     });
+} else {
+  console.log('FETAL');
 }
 renderApp();
 
