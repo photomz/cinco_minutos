@@ -11,7 +11,7 @@ const ResultSegment = ({ verb, def, presentPart, pastPart, isSearched, unsearche
         <Label content={`Present Participle - ${presentPart}`} />
         <Label content={`Past Participle - ${pastPart}`} style={{ marginLeft: 10 }} />
       </div>
-    ) : action === 'loading' ? (
+    ) : action === 'loading' && window.location.pathname !== '/' ? (
       <Loader active content="Loading" inline="centered" />
     ) : (
       <Header as="h2" content={unsearchedVal} textAlign="center" />
