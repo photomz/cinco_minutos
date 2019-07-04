@@ -1,0 +1,9 @@
+{
+    "short_name": "Cinco Minutos",
+    "name": "¡Cinco Minutos!",
+    "icons": [
+        {
+            "src": "favicon.ico"
+        }
+    ]
+}
