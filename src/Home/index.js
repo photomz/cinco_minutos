@@ -119,6 +119,7 @@ const Home = () => {
             onSearchClick={handleSearchClick}
             value={searchValue}
             setValue={setSearchValue}
+            aria-label="search"
           />
           <br />
           <Button.Group basic size="mini" style={{ margin: '0 auto' }}>

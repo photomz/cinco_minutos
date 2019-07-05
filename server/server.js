@@ -16,6 +16,8 @@ const headers = require('./static/headers.json');
 const webScrape = require('./webScrape');
 const search = require('./static/quickSearch.json');
 const searchKeys = Object.keys(search);
+// eslint-disable-next-line
+const distDir = fs.readdirSync(path.join(__dirname, '../dist'));
 
 let popularity = require('./static/popularity.json');
 let { estar, haber } = verbs;
@@ -116,6 +118,11 @@ app.get('/suggest', (req, res) => {
 app.get('/suggestAll', (req, res) => {
   res.setHeader('access-control-allow-origin', '*');
   res.json(search);
+});
+
+app.get('/SW_LS', (req, res) => {
+  res.setHeader('access-control-allow-origin', '*');
+  res.json(distDir);
 });
 
 app.get('*', (req, res) => {

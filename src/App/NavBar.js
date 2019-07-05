@@ -62,7 +62,7 @@ const NavBar = ({ content, onClick, active, expanded, width }) => {
       <Menu.Menu position="right">
         {navItems.map(elem =>
           elem.route ? (
-            <Link to={elem.route} key={uuidv1()}>
+            <Link to={elem.route} key={uuidv1()} aria-label={elem.name}>
               <NavItem onClick={onClick} active={active} elem={elem} expanded={expanded} />
             </Link>
           ) : (

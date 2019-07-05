@@ -8,16 +8,7 @@ const renderApp = () => {
   render(<App />, document.getElementById('root'));
 };
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker
-    .register('/sw.js')
-    .then(reg => {
-      console.log('success: ' + reg.scope);
-    })
-    .catch(e => {
-      console.log(e);
-    });
-} else {
-  console.log('FETAL');
+  navigator.serviceWorker.register('/sw.js').catch(() => {});
 }
 renderApp();
 
