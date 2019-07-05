@@ -29,7 +29,7 @@ const insertEnd = (arr, add) => arr.map(row => row.map(col => col.split(',')[0] 
 
 const conjugate = verb =>
   webScrape.getVerb(verb, verbs, result => {
-    if (typeof result === 'undefined' || result == {}) return {};
+    if (typeof result === 'undefined' || Object.keys(result).length === 0) return {};
     increasePopularity(verb);
 
     const conj = result.conjugation;
@@ -123,6 +123,11 @@ app.get('/suggestAll', (req, res) => {
 app.get('/SW_LS', (req, res) => {
   res.setHeader('access-control-allow-origin', '*');
   res.json(distDir);
+});
+
+app.get('/SW_allConj', (req, res) => {
+  res.setHeader('access-control-allow-origin', '*');
+  res.json(verbs);
 });
 
 app.get('*', (req, res) => {
