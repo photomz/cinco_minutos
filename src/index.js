@@ -8,7 +8,7 @@ const renderApp = () => {
   render(<App />, document.getElementById('root'));
 };
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js').catch(() => {});
+  navigator.serviceWorker.register('/sw.js', { scope: '/' }).catch(() => {});
 }
 renderApp();
 

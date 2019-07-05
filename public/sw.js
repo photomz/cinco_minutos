@@ -9,10 +9,14 @@ self.addEventListener('install', e => {
       },
     })
       .then(res => res.json())
-      .then(res =>
-        caches
-          .open(CURR_CACHE)
-          .then(cache => cache.addAll(res.map(el => info.SERVER_URL + '/' + el))),
-      ),
+      .then(res => res.filter(el => !el.startsWith('sw.js')).map(el => '/' + el))
+      .then(vals => caches.open(CURR_CACHE).then(cache => cache.addAll(vals))),
+  );
+});
+self.addEventListener('fetch', function(event) {
+  event.respondWith(
+    caches.match(event.request).then(res => {
+      return res ? res : fetch(event.request);
+    }),
   );
 });
