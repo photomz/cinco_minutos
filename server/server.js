@@ -17,7 +17,7 @@ const webScrape = require('./webScrape');
 const search = require('./static/quickSearch.json');
 const searchKeys = Object.keys(search);
 // eslint-disable-next-line
-const distDir = fs.readdirSync(path.join(__dirname, '../dist'));
+const distDir = fs.readdirSync(path.join(__dirname, '..', 'dist'));
 
 let popularity = require('./static/popularity.json');
 let { estar, haber } = verbs;
@@ -87,6 +87,7 @@ const increasePopularity = verb => {
   if (!popularity[verb]) popularity[verb] = info.POPULARITY_SCALE;
   else popularity[verb] += info.POPULARITY_SCALE;
   fs.writeFile(
+    // eslint-disable-next-line
     path.join(__dirname, './static/popularity.json'),
     JSON.stringify(popularity),
     err => {
