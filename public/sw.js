@@ -108,10 +108,10 @@ self.addEventListener('fetch', e => {
         : e.request.url.startsWith(info.SERVER_URL)
         ? fetch(e.request).then(
             res => res,
-            err =>
+            () =>
               url.pathname === '/conjugate'
                 ? conjugate(url.searchParams.get('verb'))
-                : console.log('ERROR:', err),
+                : new Response(),
           )
         : caches.match('/index.html');
     }),
@@ -168,7 +168,7 @@ const transpose = arr => arr[0].map((col, i) => arr.map(row => row[i]));
 const insertEnd = (arr, add) => arr.map(row => row.map(col => col.split(',')[0] + ' ' + add));
 const conjugate = verb => {
   const result = closestConj(verb);
-  if (Object.keys(result).length === 0) return {};
+  if (Object.keys(result).length === 0) return new Response('{}');
   const conj = result.conjugation;
   const fullConj = [
     ...conj.slice(0, 3), // Indicative, Subjunctive, Imperative
