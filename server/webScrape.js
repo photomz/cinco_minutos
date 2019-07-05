@@ -76,9 +76,11 @@ const getVerbSD = verb => {
     })
     .catch(e => console.log(e));
 };
-const getVerb = verb => {
+const getVerb = (verb, cachedList = {}, callback = () => null) => {
   // TODO: add WordReference support
-  return getVerbSD(verb);
+  return cachedList[verb]
+    ? new Promise(r => r(cachedList[verb])).then(callback)
+    : getVerbSD(verb).then(callback);
 };
 const getAllVerbs = () => {
   const NUMTOGET = 0; // Entire database 15348
@@ -203,8 +205,4 @@ const getPopularity = (obj, num) => {
   });
 };
 /* eslint-disable-next-line */
-module.exports.getVerb = (verb, cachedList, callback) => {
-  return cachedList[verb]
-    ? new Promise(r => r(cachedList[verb])).then(callback)
-    : getVerb(verb).then(callback);
-};
+module.exports.getVerb = getVerb;

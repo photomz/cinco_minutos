@@ -3,6 +3,7 @@ const info = require('../../../globals.json');
 let popularity = {};
 let searchObj = {};
 let searchKeys = Object.keys(searchObj);
+const serviceWorkerExists = !!('serviceWorker' in navigator && navigator.serviceWorker.controller);
 let search = (v, len) =>
   fetch(info.SERVER_URL + '/suggest?verb=' + v + '&num=' + len, {
     headers: {
@@ -14,6 +15,8 @@ let search = (v, len) =>
   })
     .then(res => res.json())
     .then(obj => [obj, false]);
+if (serviceWorkerExists) localStorage.clear();
+if (serviceWorkerExists) console.log('Service worker active! Offline functionality avaialable.');
 const searchObjLS = localStorage.getItem('suggestions');
 const popularityLS = localStorage.getItem('popularity');
 (searchObjLS
@@ -39,7 +42,9 @@ const popularityLS = localStorage.getItem('popularity');
         .then(res => res.json())
         .then(obj => {
           popularity = obj;
-          localStorage.setItem('popularity', JSON.stringify(obj));
+          if (!serviceWorkerExists) {
+            localStorage.setItem('popularity', JSON.stringify(obj));
+          }
         });
     return val;
   })
@@ -47,10 +52,13 @@ const popularityLS = localStorage.getItem('popularity');
     if (typeof v === 'object') {
       v.json().then(val => {
         searchObj = val;
-        localStorage.setItem('suggestions', JSON.stringify(searchObj));
+        if (!serviceWorkerExists) {
+          localStorage.setItem('suggestions', JSON.stringify(searchObj));
+        }
         searchKeys = Object.keys(searchObj);
       });
     } else {
+      console.log('pls');
       searchObj = JSON.parse(v);
       searchKeys = Object.keys(searchObj);
     }

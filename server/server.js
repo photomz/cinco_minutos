@@ -16,6 +16,8 @@ const headers = require('./static/headers.json');
 const webScrape = require('./webScrape');
 const search = require('./static/quickSearch.json');
 const searchKeys = Object.keys(search);
+// eslint-disable-next-line
+const distDir = fs.readdirSync(path.join(__dirname, '../dist'));
 
 let popularity = require('./static/popularity.json');
 let { estar, haber } = verbs;
@@ -27,7 +29,7 @@ const insertEnd = (arr, add) => arr.map(row => row.map(col => col.split(',')[0] 
 
 const conjugate = verb =>
   webScrape.getVerb(verb, verbs, result => {
-    if (typeof result === 'undefined' || result == {}) return {};
+    if (typeof result === 'undefined' || Object.keys(result).length === 0) return {};
     increasePopularity(verb);
 
     const conj = result.conjugation;
@@ -116,6 +118,16 @@ app.get('/suggest', (req, res) => {
 app.get('/suggestAll', (req, res) => {
   res.setHeader('access-control-allow-origin', '*');
   res.json(search);
+});
+
+app.get('/SW_LS', (req, res) => {
+  res.setHeader('access-control-allow-origin', '*');
+  res.json(distDir);
+});
+
+app.get('/SW_allConj', (req, res) => {
+  res.setHeader('access-control-allow-origin', '*');
+  res.json(verbs);
 });
 
 app.get('*', (req, res) => {

@@ -41,7 +41,7 @@ const OptionLabels = ({
       }}
       as="a"
     >
-      <Image {...menuDefault} src={spanishdictImage} id="menuImage" />
+      <Image {...menuDefault} src={spanishdictImage} className="menuImage" alt="" />
       SpanishDict
     </Label>
     <Label
@@ -51,7 +51,7 @@ const OptionLabels = ({
       as="a"
       disabled={buttonsDisabled}
     >
-      <Image {...menuDefault} src={wordreferenceImage} id="menuImage" />
+      <Image {...menuDefault} src={wordreferenceImage} className="menuImage" alt="" />
       WordReference
     </Label>
   </Segment>
@@ -61,6 +61,7 @@ OptionLabels.propTypes = {
   action: PropTypes.string,
   spanishdictLink: PropTypes.string,
   wordreferenceLink: PropTypes.string,
+  buttonsDisabled: PropTypes.bool,
   setAction: PropTypes.func,
 };
 

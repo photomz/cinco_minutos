@@ -7,7 +7,9 @@ import 'semantic-ui-css/semantic.css';
 const renderApp = () => {
   render(<App />, document.getElementById('root'));
 };
-
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js', { scope: '/' }).catch(() => {});
+}
 renderApp();
 
 if (module.hot) module.hot.accept(renderApp);
