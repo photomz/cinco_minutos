@@ -8,18 +8,18 @@ import uuidv1 from 'uuid/v1';
 import './NavBar.css';
 
 const NavItem = ({ elem, onClick, active, under, expanded }) => (
-  <Responsive
-    as={Menu.Item}
-    minWidth={under || expanded ? null : 768}
-    maxWidth={under ? 767 : null}
-    key={uuidv1()}
-    name={elem.name}
-    active={active === elem.name && !!elem.name}
-    onClick={() => onClick(elem.name)}
-    style={{ paddingRight: '0.7em', paddingLeft: '0.7em' }}
-  >
-    <Icon name={elem.icon} />
-    {elem.name.charAt(0).toUpperCase() + elem.name.slice(1)}
+  <Responsive minWidth={under || expanded ? null : 768} maxWidth={under ? 767 : null}>
+    <Menu.Item
+      key={uuidv1()}
+      name={elem.name}
+      active={active === elem.name && !!elem.name}
+      onClick={() => onClick(elem.name)}
+      as="div"
+      style={{ paddingRight: '0.7em', paddingLeft: '0.7em' }}
+    >
+      <Icon name={elem.icon} />
+      {elem.name.charAt(0).toUpperCase() + elem.name.slice(1)}
+    </Menu.Item>
   </Responsive>
 );
 
