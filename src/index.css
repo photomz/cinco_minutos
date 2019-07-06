@@ -1,0 +1,11 @@
+#tooSmall {
+  display: none;
+}
+@media only screen and (max-width: 310px) {
+  #root {
+    display: none !important;
+  }
+  #tooSmall {
+    display: block;
+  }
+}
