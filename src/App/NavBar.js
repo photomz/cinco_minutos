@@ -50,10 +50,8 @@ const NavBar = ({ content, onClick, active, expanded, width }) => {
           margin: (width ? (width > 768 ? 'auto' : '0.3em') : 'auto') + ' 0.5em',
         }}
       >
-        <Responsive as="div" minWidth={310}>
-          <Icon name={title.icon} />
-          {title.name}
-        </Responsive>
+        <Icon name={title.icon} />
+        {title.name}
 
         <Responsive as={Segment} maxWidth={767} id="barSegment" onClick={onClick}>
           <Icon name="bars" />

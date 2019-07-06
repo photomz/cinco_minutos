@@ -45,7 +45,6 @@ self.addEventListener('install', e => {
       },
     })
       .then(res => res.json())
-      .then(res => res.map(el => '/' + el))
       .then(vals =>
         caches
           .open(CURR_CACHE)
@@ -105,7 +104,7 @@ self.addEventListener('fetch', e => {
       const url = new URL(e.request.url);
       return res
         ? res
-        : e.request.url.startsWith(info.SERVER_URL)
+        : url.origin === info.SERVER_URL
         ? fetch(e.request).then(
             res => res,
             () =>
