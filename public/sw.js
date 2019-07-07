@@ -99,9 +99,9 @@ self.addEventListener('install', e => {
   );
 });
 self.addEventListener('fetch', e => {
+  const url = new URL(e.request.url);
   e.respondWith(
-    caches.match(e.request).then(res => {
-      const url = new URL(e.request.url);
+    caches.match(url.origin + '/' + url.pathname.split('/').pop()).then(res => {
       return res
         ? res
         : url.origin === info.SERVER_URL
