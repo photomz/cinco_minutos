@@ -41,21 +41,9 @@ const getVerbSD = verb => {
         .filter(el => !el.rawAttrs.includes('aria-label'))
         .map(el => el.innerHTML)
         .join(', ');
-      const n = html
-        .querySelectorAll('.vtable-word-text')
-        .map(el =>
-          el.childNodes.length > 1
-            ? el.childNodes.map(el2 => (el2.rawText ? el2.rawText : el2.innerHTML)).join('')
-            : el.innerHTML,
-        );
+      const n = html.querySelectorAll('.vtable-word-text').map(el => el.rawText);
       const reflexive = n[0].slice(0, 3) == 'me ';
-      const [presPart, pastPart] = html
-        .querySelectorAll('.conj-basic-word')
-        .map(el =>
-          el.childNodes.length > 1
-            ? el.childNodes.map(el2 => (el2.rawText ? el2.rawText : el2.innerHTML)).join('')
-            : el.innerHTML,
-        );
+      const [presPart, pastPart] = html.querySelectorAll('.conj-basic-word').map(el => el.rawText);
       verb = html.querySelector('#headword-es').innerHTML + (reflexive ? 'se' : '');
       const allConj = [[[], [], [], [], []], [[], [], [], []], [[], []], presPart, pastPart];
       for (let i = 0; i < 64; i++) {
@@ -76,7 +64,7 @@ const getVerbSD = verb => {
     })
     .catch(e => console.log(e));
 };
-const getVerb = (verb, cachedList = {}, callback = () => null) => {
+const getVerb = (verb, cachedList = {}, callback = val => val) => {
   // TODO: add WordReference support
   return cachedList[verb]
     ? new Promise(r => r(cachedList[verb])).then(callback)
