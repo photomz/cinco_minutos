@@ -47,6 +47,7 @@ const Home = () => {
       })
         .then(res => res.json())
         .then(val => {
+          value = decodeURI(value);
           if (Object.entries(val).length) setConjResults(val);
           else {
             setConjResults({ verb: value });
@@ -63,17 +64,14 @@ const Home = () => {
     }
   };
   const handleSearchClick = value => {
+    value = decodeURI(value);
     value = value.toLowerCase();
     if (value === conjResults.verb) return;
     setIsSearched(false);
     setAction('loading');
     setPlaceholder('Loading...');
     if (value !== conjResults.verb) {
-      fetchResults(value);
-      document.title =
-        value.charAt(0).toUpperCase() +
-        value.slice(1).toLowerCase() +
-        ' Conjugation | CincoMinutos';
+      fetchResults(encodeURI(value));
       if (window.location.pathname !== '/conjugate/' + value && value) {
         history.push(window.location.pathname);
         history.replace('/conjugate/' + value);

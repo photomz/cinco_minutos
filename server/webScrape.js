@@ -179,7 +179,7 @@ const getPopularity = (obj, num) => {
       res.on('end', () => resolve(page));
     }),
   ).then(data => {
-    html = parser.parse(data);
+    const html = parser.parse(data);
     const allVerbs = [...html.querySelectorAll('td')].slice(7, 87);
     allVerbs.map((el, ind) => {
       if (ind % 4 === 1) {
