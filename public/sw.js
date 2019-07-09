@@ -140,63 +140,63 @@ let verbKeys = [];
 let estar = {};
 let haber = {};
 self.addEventListener('install', e => {
-  e.waitUntil(
-    fetch(info.SERVER_URL + '/SW_LS', {
-      headers: {
-        'Content-Type': 'application/json',
-        Accept: 'application/json',
-      },
-    })
-      .then(res => res.json())
-      .then(vals =>
-        caches
-          .open(CURR_CACHE)
-          .then(cache => {
-            cache.addAll(vals);
-            return cache;
-          })
-          .then(cache => {
-            fetch(info.SERVER_URL + '/suggestAll_min', {
-              headers: {
-                'Content-Type': 'application/json',
-                Accept: 'text/plain',
-              },
-            })
-              .then(res => res.text())
-              .then(val => cache.put(info.SERVER_URL + '/suggestAll_min', new Response(val)));
-            return cache;
-          })
-          .then(cache => {
-            fetch(info.SERVER_URL + '/popularity_min', {
-              headers: {
-                'Content-Type': 'application/json',
-                Accept: 'text/plain',
-              },
-            })
-              .then(res => res.text())
-              .then(val => cache.put(info.SERVER_URL + '/popularity_min', new Response(val)));
-            return cache;
-          })
-          .then(cache => {
-            fetch(info.SERVER_URL + '/SW_allConj_min', {
-              headers: {
-                'Content-Type': 'application/json',
-                Accept: 'text/plain',
-              },
-            })
-              .then(res => res.text())
-              .then(val => {
-                verbs = JSON.parse(LZString.decompressFromUTF16(val));
-                verbKeys = Object.keys(verbs);
-                estar = verbs['estar'].conjugation;
-                haber = verbs['haber'].conjugation;
-                return cache.put(info.SERVER_URL + '/SW_allConj_min', new Response(val));
-              });
-            return cache;
-          }),
-      ),
-  );
+  e.waitUntil(prepareForOffline());
 });
+const prepareForOffline = () =>
+  fetch(info.SERVER_URL + '/SW_LS', {
+    headers: {
+      'Content-Type': 'application/json',
+      Accept: 'application/json',
+    },
+  })
+    .then(res => res.json())
+    .then(vals =>
+      caches
+        .open(CURR_CACHE)
+        .then(cache => {
+          cache.addAll(vals);
+          return cache;
+        })
+        .then(cache => {
+          fetch(info.SERVER_URL + '/suggestAll_min', {
+            headers: {
+              'Content-Type': 'application/json',
+              Accept: 'text/plain',
+            },
+          })
+            .then(res => res.text())
+            .then(val => cache.put(info.SERVER_URL + '/suggestAll_min', new Response(val)));
+          return cache;
+        })
+        .then(cache => {
+          fetch(info.SERVER_URL + '/popularity_min', {
+            headers: {
+              'Content-Type': 'application/json',
+              Accept: 'text/plain',
+            },
+          })
+            .then(res => res.text())
+            .then(val => cache.put(info.SERVER_URL + '/popularity_min', new Response(val)));
+          return cache;
+        })
+        .then(cache => {
+          fetch(info.SERVER_URL + '/SW_allConj_min', {
+            headers: {
+              'Content-Type': 'application/json',
+              Accept: 'text/plain',
+            },
+          })
+            .then(res => res.text())
+            .then(val => {
+              verbs = JSON.parse(LZString.decompressFromUTF16(val));
+              verbKeys = Object.keys(verbs);
+              estar = verbs['estar'].conjugation;
+              haber = verbs['haber'].conjugation;
+              return cache.put(info.SERVER_URL + '/SW_allConj_min', new Response(val));
+            });
+          return cache;
+        }),
+    );
 self.addEventListener('fetch', e => {
   const url = new URL(e.request.url);
   e.respondWith(
@@ -205,16 +205,56 @@ self.addEventListener('fetch', e => {
         ? res
         : url.origin === info.SERVER_URL
         ? fetch(e.request).then(
-            res => res,
+            res => {
+              caches
+                .open(CURR_CACHE)
+                .then(cache => cache.put(url.origin + '/' + url.pathname.split('/').pop(), res));
+              return res.clone();
+            },
             () =>
               url.pathname === '/conjugate'
                 ? conjugate(url.searchParams.get('verb'))
                 : new Response(),
           )
-        : caches.match('/index.html');
+        : caches.match('/index.html').then(val => (val ? val : fetch(e.request)));
     }),
   );
 });
+self.addEventListener('message', e => {
+  const data = JSON.parse(e.data);
+  e.waitUntil(messageCallback(data));
+});
+const messageCallback = data => {
+  if (data.category === 'settings') {
+    if (data.type === 'offline') {
+      if (data.value) {
+        return caches
+          .open(CURR_CACHE)
+          .then(cache => cache.keys())
+          .then(res => {
+            if (!res.length) return prepareForOffline();
+            return new Promise(r => r(null));
+          });
+      } else {
+        return clearCache(false);
+      }
+    }
+  }
+  return new Promise(r => r(null));
+};
+self.addEventListener('activate', e => {
+  e.waitUntil(clearCache());
+});
+const clearCache = (keepCurrCache = true) =>
+  caches.keys().then(names =>
+    Promise.all(
+      names.map(cacheName => {
+        if (cacheName !== CURR_CACHE || !keepCurrCache) {
+          return caches.delete(cacheName);
+        }
+      }),
+    ),
+  );
 // Copied from string-similarity
 const cS = (first, second) => {
   first = first.replace(/\s+/g, '');
