@@ -11,15 +11,23 @@ app.use(cors());
 app.use(bodyParser.json());
 
 const verbs = require('./static/verbs.json');
+// eslint-disable-next-line
+const verbsMin = fs.readFileSync(path.join(__dirname, './static/verbs.json.min')).toString();
 //const fullSearch = require('./static/fullSearch.json');
 const headers = require('./static/headers.json');
 const webScrape = require('./webScrape');
 const search = require('./static/quickSearch.json');
+// eslint-disable-next-line
+const searchMin = fs.readFileSync(path.join(__dirname, './static/quickSearch.json.min')).toString();
 const searchKeys = Object.keys(search);
 // eslint-disable-next-line
 const distDir = fs.readdirSync(path.join(__dirname, '..', 'dist'));
 
 let popularity = require('./static/popularity.json');
+// eslint-disable-next-line
+const popularityMin = fs
+  .readFileSync(path.join(__dirname, './static/popularity.json.min'))
+  .toString();
 let { estar, haber } = verbs;
 estar = estar.conjugation;
 haber = haber.conjugation;
@@ -111,6 +119,12 @@ app.get('/popularity', (req, res) => {
   res.json(popularity);
 });
 
+app.get('/popularity_min', (req, res) => {
+  res.setHeader('access-control-allow-origin', '*');
+  res.set('Content-Type', 'text/plain');
+  res.send(popularityMin);
+});
+
 app.get('/suggest', (req, res) => {
   res.setHeader('access-control-allow-origin', '*');
   res.json(filterVerbs(req.query.verb, req.query.num));
@@ -121,6 +135,12 @@ app.get('/suggestAll', (req, res) => {
   res.json(search);
 });
 
+app.get('/suggestAll_min', (req, res) => {
+  res.setHeader('access-control-allow-origin', '*');
+  res.set('Content-Type', 'text/plain');
+  res.send(searchMin);
+});
+
 app.get('/SW_LS', (req, res) => {
   res.setHeader('access-control-allow-origin', '*');
   res.json(distDir);
@@ -129,6 +149,12 @@ app.get('/SW_LS', (req, res) => {
 app.get('/SW_allConj', (req, res) => {
   res.setHeader('access-control-allow-origin', '*');
   res.json(verbs);
+});
+
+app.get('/SW_allConj_min', (req, res) => {
+  res.setHeader('access-control-allow-origin', '*');
+  res.set('Content-Type', 'text/plain');
+  res.send(verbsMin);
 });
 
 app.get('*', (req, res) => {

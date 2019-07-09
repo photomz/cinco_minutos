@@ -1,3 +1,106 @@
+// eslint-disable-next-line
+const LZString = (function() {
+  var o = String.fromCharCode,
+    i = {
+      decompressFromUTF16: function(o) {
+        return null == o
+          ? ''
+          : '' == o
+          ? null
+          : i._decompress(o.length, 16384, function(i) {
+              return o.charCodeAt(i) - 32;
+            });
+      },
+      _decompress: function(i, n, t) {
+        var e,
+          r,
+          s,
+          p,
+          a,
+          l,
+          f,
+          u = [],
+          d = 4,
+          c = 4,
+          h = 3,
+          v = '',
+          w = [],
+          m = { val: t(0), position: n, index: 1 };
+        for (e = 0; 3 > e; e += 1) u[e] = e;
+        for (s = 0, a = Math.pow(2, 2), l = 1; l != a; )
+          (p = m.val & m.position),
+            (m.position >>= 1),
+            0 == m.position && ((m.position = n), (m.val = t(m.index++))),
+            (s |= (p > 0 ? 1 : 0) * l),
+            (l <<= 1);
+        switch (s) {
+          case 0:
+            for (s = 0, a = Math.pow(2, 8), l = 1; l != a; )
+              (p = m.val & m.position),
+                (m.position >>= 1),
+                0 == m.position && ((m.position = n), (m.val = t(m.index++))),
+                (s |= (p > 0 ? 1 : 0) * l),
+                (l <<= 1);
+            f = o(s);
+            break;
+          case 1:
+            for (s = 0, a = Math.pow(2, 16), l = 1; l != a; )
+              (p = m.val & m.position),
+                (m.position >>= 1),
+                0 == m.position && ((m.position = n), (m.val = t(m.index++))),
+                (s |= (p > 0 ? 1 : 0) * l),
+                (l <<= 1);
+            f = o(s);
+            break;
+          case 2:
+            return '';
+        }
+        for (u[3] = f, r = f, w.push(f); ; ) {
+          if (m.index > i) return '';
+          for (s = 0, a = Math.pow(2, h), l = 1; l != a; )
+            (p = m.val & m.position),
+              (m.position >>= 1),
+              0 == m.position && ((m.position = n), (m.val = t(m.index++))),
+              (s |= (p > 0 ? 1 : 0) * l),
+              (l <<= 1);
+          switch ((f = s)) {
+            case 0:
+              for (s = 0, a = Math.pow(2, 8), l = 1; l != a; )
+                (p = m.val & m.position),
+                  (m.position >>= 1),
+                  0 == m.position && ((m.position = n), (m.val = t(m.index++))),
+                  (s |= (p > 0 ? 1 : 0) * l),
+                  (l <<= 1);
+              (u[c++] = o(s)), (f = c - 1), d--;
+              break;
+            case 1:
+              for (s = 0, a = Math.pow(2, 16), l = 1; l != a; )
+                (p = m.val & m.position),
+                  (m.position >>= 1),
+                  0 == m.position && ((m.position = n), (m.val = t(m.index++))),
+                  (s |= (p > 0 ? 1 : 0) * l),
+                  (l <<= 1);
+              (u[c++] = o(s)), (f = c - 1), d--;
+              break;
+            case 2:
+              return w.join('');
+          }
+          if ((0 == d && ((d = Math.pow(2, h)), h++), u[f])) v = u[f];
+          else {
+            if (f !== c) return null;
+            v = r + r.charAt(0);
+          }
+          w.push(v), (u[c++] = r + v.charAt(0)), (r = v), 0 == --d && ((d = Math.pow(2, h)), h++);
+        }
+      },
+    };
+  return i;
+})();
+'function' == typeof define && define.amd
+  ? define(function() {
+      return LZString;
+    })
+  : 'undefined' != typeof module && null != module && (module.exports = LZString);
 const info = require('../globals.json');
 const CURR_CACHE = 'v1';
 const headers = [
@@ -53,45 +156,41 @@ self.addEventListener('install', e => {
             return cache;
           })
           .then(cache => {
-            fetch(info.SERVER_URL + '/suggestAll', {
+            fetch(info.SERVER_URL + '/suggestAll_min', {
               headers: {
                 'Content-Type': 'application/json',
-                Accept: 'application/json',
+                Accept: 'text/plain',
               },
             })
-              .then(res => res.json())
-              .then(val =>
-                cache.put(info.SERVER_URL + '/suggestAll', new Response(JSON.stringify(val))),
-              );
+              .then(res => res.text())
+              .then(val => cache.put(info.SERVER_URL + '/suggestAll_min', new Response(val)));
             return cache;
           })
           .then(cache => {
-            fetch(info.SERVER_URL + '/popularity', {
+            fetch(info.SERVER_URL + '/popularity_min', {
               headers: {
                 'Content-Type': 'application/json',
-                Accept: 'application/json',
+                Accept: 'text/plain',
               },
             })
-              .then(res => res.json())
-              .then(val =>
-                cache.put(info.SERVER_URL + '/popularity', new Response(JSON.stringify(val))),
-              );
+              .then(res => res.text())
+              .then(val => cache.put(info.SERVER_URL + '/popularity_min', new Response(val)));
             return cache;
           })
           .then(cache => {
-            fetch(info.SERVER_URL + '/SW_allConj', {
+            fetch(info.SERVER_URL + '/SW_allConj_min', {
               headers: {
                 'Content-Type': 'application/json',
-                Accept: 'application/json',
+                Accept: 'text/plain',
               },
             })
-              .then(res => res.json())
+              .then(res => res.text())
               .then(val => {
-                verbs = val;
+                verbs = JSON.parse(LZString.decompressFromUTF16(val));
                 verbKeys = Object.keys(verbs);
                 estar = verbs['estar'].conjugation;
                 haber = verbs['haber'].conjugation;
-                return cache.put('conjugations', new Response(JSON.stringify(val)));
+                return cache.put('conjugations', new Response(val));
               });
             return cache;
           }),
@@ -146,11 +245,11 @@ caches
   .match('conjugations')
   .then(res => {
     if (!res) return null;
-    return res.json();
+    return res.text();
   })
   .then(val => {
     if (!val) return;
-    verbs = val;
+    verbs = JSON.parse(LZString.decompressFromUTF16(val));
     verbKeys = Object.keys(val);
     estar = verbs['estar'].conjugation;
     haber = verbs['haber'].conjugation;

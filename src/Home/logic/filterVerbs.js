@@ -1,4 +1,5 @@
 /* eslint-disable no-console */
+import lzString from 'lz-string';
 const info = require('../../../globals.json');
 let popularity = {};
 let searchObj = {};
@@ -21,44 +22,43 @@ const searchObjLS = localStorage.getItem('suggestions');
 const popularityLS = localStorage.getItem('popularity');
 (searchObjLS
   ? new Promise(r => {
-      r(searchObjLS);
+      r(lzString.decompressFromUTF16(searchObjLS));
     })
-  : fetch(info.SERVER_URL + '/suggestAll', {
+  : fetch(info.SERVER_URL + '/suggestAll_min', {
       headers: {
         'Content-Type': 'application/json',
-        Accept: 'application/json',
+        Accept: 'text/plain',
       },
     })
 )
   .then(val => {
-    if (popularityLS) popularity = JSON.parse(popularityLS);
+    if (popularityLS) popularity = JSON.parse(lzString.decompressFromUTF16(popularityLS));
     else
-      fetch(info.SERVER_URL + '/popularity', {
+      fetch(info.SERVER_URL + '/popularity_min', {
         headers: {
           'Content-Type': 'application/json',
-          Accept: 'application/json',
+          Accept: 'text/plain',
         },
       })
-        .then(res => res.json())
+        .then(res => res.text())
         .then(obj => {
-          popularity = obj;
           if (!serviceWorkerExists) {
-            localStorage.setItem('popularity', JSON.stringify(obj));
+            localStorage.setItem('popularity', obj);
           }
+          popularity = JSON.parse(lzString.decompressFromUTF16(obj));
         });
     return val;
   })
   .then(v => {
     if (typeof v === 'object') {
-      v.json().then(val => {
-        searchObj = val;
+      v.text().then(val => {
         if (!serviceWorkerExists) {
-          localStorage.setItem('suggestions', JSON.stringify(searchObj));
+          localStorage.setItem('suggestions', val);
         }
+        searchObj = JSON.parse(lzString.decompressFromUTF16(val));
         searchKeys = Object.keys(searchObj);
       });
     } else {
-      console.log('pls');
       searchObj = JSON.parse(v);
       searchKeys = Object.keys(searchObj);
     }
