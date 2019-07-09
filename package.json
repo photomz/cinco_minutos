@@ -29,7 +29,7 @@
     "precommit": "lint-staged",
     "start": "node server/server.js & parcel public/index.html",
     "build": "NODE_ENV=production parcel build public/index.html --public-url ./ --no-source-maps",
-    "host": "yarn build; node scripts/host.js & node server/server.js"
+    "host": "yarn build; sudo node scripts/host.js & node server/server.js"
   },
   "lint-staged": {
     "*.{js,jsx,scss,css,md}": [

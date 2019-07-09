@@ -22,5 +22,7 @@ app.get('*', (req, res) => {
   // eslint-disable-next-line
   res.sendFile(path.resolve(__dirname, '../dist/index.html'));
 });
+/* Following only if SSL certificate exists
 http.createServer(httpRedirect).listen(80);
-https.createServer(app).listen(443);
+https.createServer(app).listen(443); */
+http.createServer(app).listen(80);

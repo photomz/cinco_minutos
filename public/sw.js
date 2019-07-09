@@ -190,7 +190,7 @@ self.addEventListener('install', e => {
                 verbKeys = Object.keys(verbs);
                 estar = verbs['estar'].conjugation;
                 haber = verbs['haber'].conjugation;
-                return cache.put('conjugations', new Response(val));
+                return cache.put(info.SERVER_URL + '/SW_allConj_min', new Response(val));
               });
             return cache;
           }),
@@ -242,7 +242,7 @@ const cS = (first, second) => {
   return (2.0 * intersectionSize) / (first.length + second.length - 2);
 };
 caches
-  .match('conjugations')
+  .match(info.SERVER_URL + '/SW_allConj_min')
   .then(res => {
     if (!res) return null;
     return res.text();
