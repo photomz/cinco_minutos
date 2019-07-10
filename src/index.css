@@ -1,5 +1,5 @@
 #tooSmall {
-  display: none;
+  display: none !important;
 }
 @media only screen and (max-width: 310px) {
   #root {
