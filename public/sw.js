@@ -221,10 +221,20 @@ self.addEventListener('fetch', e => {
   );
 });
 self.addEventListener('message', e => {
-  const data = JSON.parse(e.data);
-  e.waitUntil(messageCallback(data));
+  e.waitUntil(
+    messageCallback(e).then(p => {
+      let message = 'OK';
+      if (Array.isArray(p)) {
+        message = p[0];
+        p = p[1];
+      }
+      e.ports[0].postMessage(message);
+      return p;
+    }),
+  );
 });
-const messageCallback = data => {
+const messageCallback = e => {
+  const data = JSON.parse(e.data);
   if (data.category === 'settings') {
     if (data.type === 'offline') {
       if (data.value) {
@@ -235,8 +245,13 @@ const messageCallback = data => {
             if (!res.length) return prepareForOffline();
             return new Promise(r => r(null));
           });
-      } else {
+      } else if (data.value !== undefined) {
         return clearCache(false);
+      } else {
+        return caches
+          .open(CURR_CACHE)
+          .then(cache => cache.keys())
+          .then(keys => [keys.length > 3, null]);
       }
     }
   }
