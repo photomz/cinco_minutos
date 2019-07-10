@@ -205,7 +205,7 @@ self.addEventListener('fetch', e => {
         ? res
         : url.origin === info.SERVER_URL
         ? fetch(e.request).then(
-            url.pathname === '/conjugate'
+            url.pathname !== '/conjugate'
               ? res => {
                   caches
                     .open(CURR_CACHE)

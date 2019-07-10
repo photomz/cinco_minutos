@@ -8,7 +8,6 @@ const path = require('path');
 const https = require('https');
 let app = express();
 app.use(cors());
-3000;
 app.use(bodyParser.json());
 
 const verbs = require('./static/verbs.json');
