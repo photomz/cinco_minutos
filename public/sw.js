@@ -201,7 +201,7 @@ self.addEventListener('fetch', e => {
   const url = new URL(e.request.url);
   e.respondWith(
     caches.match(url.origin + '/' + url.pathname.split('/').pop()).then(res => {
-      return res
+      return res && !(url.pathname === '/' && url.origin === info.SERVER_URL)
         ? res
         : url.origin === info.SERVER_URL
         ? fetch(e.request).then(

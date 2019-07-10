@@ -3,24 +3,44 @@ import React, { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { Button, Segment, Popup, Header, Divider } from 'semantic-ui-react';
 import sendMessage, { serviceWorker } from './logic/updateSW.js';
+import info from '../../globals.json';
 
 let updateOffline = setTimeout(() => null, 0);
 
 let Settings = props => {
   const serviceWorkerExists = !!serviceWorker();
+  let [toggleOfflineAllowed, setToggleOfflineAllowed] = useState(serviceWorkerExists);
   let [offline, setOffline] = useState(serviceWorkerExists);
   let [isLoading, setIsLoading] = useState(false);
+  let [errorContent, setErrorContent] = useState(
+    "You need a modern browser that supports Service Workers to use offline functionality. If you're using a modern browser, try refreshing the page.",
+  );
   useEffect(() => {
     if (serviceWorkerExists) {
       sendMessage('offline').then(val => {
-        console.log(val);
         setOffline(val);
       });
+      fetch(info.SERVER_URL).then(
+        res =>
+          res.text().then(val => {
+            if (!val.length) {
+              whenOffline();
+            }
+          }),
+        whenOffline,
+      );
     }
   }, []);
+  const whenOffline = () => {
+    console.log('Offline!');
+    setErrorContent(
+      'You are currently offline and therefore cannot turn off offline compatibility.',
+    );
+    setToggleOfflineAllowed(false);
+  };
   let offlineRef = useRef(null);
   const toggleOffline = () => {
-    offlineRef.current.ref.current.blur();
+    blur(offlineRef);
     if (isLoading) {
       clearTimeout(updateOffline);
       setIsLoading(false);
@@ -36,7 +56,11 @@ let Settings = props => {
       2000,
     );
   };
-  const NOP = () => {};
+  const blur = ref => {
+    if (ref) {
+      ref.current.ref.current.blur();
+    }
+  };
   return (
     <div id="settings">
       <Header size="huge" textAlign="center" style={{ marginTop: '15vh' }}>
@@ -45,14 +69,14 @@ let Settings = props => {
       <Divider horizontal clearing />
       <Segment padded raised textAlign="center" style={{ maxWidth: '80vw', margin: '0 auto' }}>
         <Popup
-          disabled={serviceWorkerExists}
-          content="You need a modern browser that supports Service Workers to use offline functionality. If you're using a modern browser, try refreshing the page."
+          disabled={toggleOfflineAllowed}
+          content={errorContent}
           trigger={
             <Button
               as="div"
               positive={!offline && serviceWorkerExists}
               negative={offline && isLoading}
-              onClick={(!serviceWorkerExists && NOP) || toggleOffline}
+              onClick={(!toggleOfflineAllowed && (() => blur(offlineRef))) || toggleOffline}
               animated={isLoading}
               ref={offlineRef}
             >
