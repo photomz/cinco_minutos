@@ -165,6 +165,7 @@ app.get('*', (req, res) => {
 httpsOptions = {
   cert: fs.readFileSync(path.join(__dirname, "../cert.pem")),
   key: fs.readFileSync(path.join(__dirname, "../privkey.pem"))
-}
+};
+https.createServer(httpsOptions, app).listen(info.PORT);
 */
 app.listen(info.PORT);
