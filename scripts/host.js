@@ -3,9 +3,11 @@ const http = require('http');
 const https = require('https');
 const path = require('path');
 const fs = require('fs');
+const compression = require('compression');
 //eslint-disable-next-line
 const distDir = fs.readdirSync(path.join(__dirname, '../dist'));
 let app = express();
+app.use(compression());
 let httpRedirect = express();
 //eslint-disable-next-line
 httpRedirect.get('*', (req, res) => {
