@@ -135,11 +135,8 @@ const Home = () => {
             <OptionLabels
               action={action}
               setAction={setAction}
-              spanishdictLink={'https://www.spanishdict.com/conjugate/' + conjResults.verb}
+              verb={conjResults.verb}
               buttonsDisabled={!isSearched}
-              wordreferenceLink={
-                'https://www.wordreference.com/es/en/translation.asp?spen=' + conjResults.verb
-              }
               id="labelColumn"
             />
             <ResultSegment
