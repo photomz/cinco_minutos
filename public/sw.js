@@ -205,12 +205,16 @@ self.addEventListener('fetch', e => {
         ? res
         : url.origin === info.SERVER_URL
         ? fetch(e.request).then(
-            res => {
-              caches
-                .open(CURR_CACHE)
-                .then(cache => cache.put(url.origin + '/' + url.pathname.split('/').pop(), res));
-              return res.clone();
-            },
+            url.pathname === '/conjugate'
+              ? res => {
+                  caches
+                    .open(CURR_CACHE)
+                    .then(cache =>
+                      cache.put(url.origin + '/' + url.pathname.split('/').pop(), res),
+                    );
+                  return res.clone();
+                }
+              : res => res,
             () =>
               url.pathname === '/conjugate'
                 ? conjugate(url.searchParams.get('verb'))

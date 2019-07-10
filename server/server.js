@@ -5,9 +5,10 @@ const cors = require('cors');
 const info = require('../globals.json');
 const fs = require('fs');
 const path = require('path');
-
+const https = require('https');
 let app = express();
 app.use(cors());
+3000;
 app.use(bodyParser.json());
 
 const verbs = require('./static/verbs.json');
@@ -160,4 +161,10 @@ app.get('/SW_allConj_min', (req, res) => {
 app.get('*', (req, res) => {
   res.redirect('/');
 });
+/* Only use if SSL certificate exists 
+httpsOptions = {
+  cert: fs.readFileSync(path.join(__dirname, "../cert.pem")),
+  key: fs.readFileSync(path.join(__dirname, "../privkey.pem"))
+}
+*/
 app.listen(info.PORT);

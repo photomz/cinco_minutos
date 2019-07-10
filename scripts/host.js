@@ -24,8 +24,8 @@ app.get('*', (req, res) => {
 });
 /* Following only if SSL certificate exists
 const httpsOptions =  {
-  cert: fs.readFileSync(path.join(__dirname, "./cert.pem")),
-  key: fs.readFileSync(path.join(__dirname, "./privkey.pem")),
+  cert: fs.readFileSync(path.join(__dirname, "../cert.pem")),
+  key: fs.readFileSync(path.join(__dirname, "../privkey.pem")),
 }
 http.createServer(httpRedirect).listen(80);
 https.createServer(httpsOptions, app).listen(443); */
