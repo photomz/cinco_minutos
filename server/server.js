@@ -6,7 +6,9 @@ const info = require('../globals.json');
 const fs = require('fs');
 const path = require('path');
 const https = require('https');
+const compression = require('compression');
 let app = express();
+app.use(compression());
 app.use(cors());
 app.use(bodyParser.json());
 
