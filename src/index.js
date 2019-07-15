@@ -7,7 +7,7 @@ import 'semantic-ui-css/semantic.css';
 const renderApp = () => {
   render(<App />, document.getElementById('root'));
 };
-if ('serviceWorker' in navigator) {
+if ('serviceWorker' in navigator && !navigator.serviceWorker.controller) {
   navigator.serviceWorker.register('/sw.js', { scope: '/' }).catch(() => {});
 }
 renderApp();

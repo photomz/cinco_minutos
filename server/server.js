@@ -23,8 +23,11 @@ const search = require('./static/quickSearch.json');
 const searchMin = fs.readFileSync(path.join(__dirname, './static/quickSearch.json.min')).toString();
 const searchKeys = Object.keys(search);
 // eslint-disable-next-line
-const distDir = fs.readdirSync(path.join(__dirname, '..', 'dist'));
-
+const getDistDir = () => fs.readdirSync(path.join(__dirname, '..', 'dist'));
+let distDir = getDistDir();
+fs.watch(path.join(__dirname, '../dist'), () => {
+  distDir = getDistDir();
+});
 let popularity = require('./static/popularity.json');
 // eslint-disable-next-line
 const popularityMin = fs

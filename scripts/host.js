@@ -5,7 +5,7 @@ const path = require('path');
 const fs = require('fs');
 const compression = require('compression');
 //eslint-disable-next-line
-const distDir = fs.readdirSync(path.join(__dirname, '../dist'));
+const distDir = fs.readdirSync(path.join(__dirname, '..', 'dist'));
 let app = express();
 app.use(compression());
 let httpRedirect = express();
@@ -13,12 +13,13 @@ let httpRedirect = express();
 httpRedirect.get('*', (req, res) => {
   res.redirect('https://' + req.get('Host') + req.url);
 });
-distDir.map(el =>
-  app.get('/' + el, (req, res) => {
+distDir.map(el => {
+  app.get(['/' + el, '/*/' + el], (req, res) => {
+    if (el == 'sw.js') res.set('Service-Worker-Allowed', '/');
     // eslint-disable-next-line
     res.sendFile(path.resolve(__dirname, '../dist/' + el));
-  }),
-);
+  });
+});
 
 app.get('*', (req, res) => {
   // eslint-disable-next-line

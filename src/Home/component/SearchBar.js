@@ -21,7 +21,6 @@ const SearchBar = ({ onFilterResults, onSearchClick, value, setValue, ...props }
     _handleSearchClick(result.title);
   };
   const _handleSearchClick = val => {
-    document.querySelector('#homeSearchInput').blur();
     onSearchClick(typeof val === 'string' ? val : value);
   };
   const _handleSearchChange = (e, { value }) => {
@@ -55,11 +54,13 @@ const SearchBar = ({ onFilterResults, onSearchClick, value, setValue, ...props }
     }
   };
   const _handleKeyPress = e => {
-    if (e.charCode === 13) _handleSearchClick();
+    if (e.charCode === 13) {
+      e.target.blur();
+      _handleSearchClick();
+    }
   };
   return (
     <Search
-      id="homeSearchInput"
       size="large"
       loading={_isLoading}
       onResultSelect={_handleResultSelect}
