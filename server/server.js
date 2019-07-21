@@ -120,14 +120,16 @@ const translate = (text, fromEs, exact = false) => {
         to: 'es',
       };
   return gTrans(text, options).then(res => {
-    if (res.text) return res;
+    if (res.text.toUpperCase() !== text.toUpperCase()) return res;
     if (!exact) return translate(text, !fromEs, true);
     return {};
   });
 };
 app.get('/', (req, res) => {
   res.send(
-    'Cinco Minutos API - access /popularity for most popularly searched verbs, access /conjugate?verb=MYVERB to access conjugations in JSON.',
+    'Cinco Minutos API - access /popularity for most popularly searched verbs, ' +
+      'access /conjugate?verb=MYVERB to access conjugations in JSON, ' +
+      'access /translate?text=MYTEXT to translate from EN to ES and vice versa.',
   );
 });
 
