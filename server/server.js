@@ -6,6 +6,7 @@ const info = require('../globals.json');
 const fs = require('fs');
 const path = require('path');
 const https = require('https');
+const he = require('he');
 const compression = require('compression');
 const gTrans = require('@vitalets/google-translate-api');
 let app = express();
@@ -120,7 +121,14 @@ const translate = (text, fromEs, exact = false) => {
         to: 'es',
       };
   return gTrans(text, options).then(res => {
-    if (res.text.toUpperCase() !== text.toUpperCase()) return res;
+    if (res.text.toUpperCase() !== text.toUpperCase())
+      return {
+        val: res.text,
+        correctedText: res.from.text.autoCorrected
+          ? he.decode(res.from.text.value).replace(/[\[\]]/g, '')
+          : text,
+        origLang: fromEs ? 'es' : 'en',
+      };
     if (!exact) return translate(text, !fromEs, true);
     return {};
   });
