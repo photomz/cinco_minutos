@@ -7,6 +7,7 @@ const fs = require('fs');
 const path = require('path');
 const https = require('https');
 const compression = require('compression');
+const gTrans = require('@vitalets/google-translate-api');
 let app = express();
 app.use(compression());
 app.use(cors());
@@ -108,6 +109,22 @@ const increasePopularity = verb => {
     },
   );
 };
+const translate = (text, fromEs, exact = false) => {
+  const options = fromEs
+    ? {
+        from: 'es',
+        to: 'en',
+      }
+    : {
+        from: 'en',
+        to: 'es',
+      };
+  return gTrans(text, options).then(res => {
+    if (res.text) return res;
+    if (!exact) return translate(text, !fromEs, true);
+    return {};
+  });
+};
 app.get('/', (req, res) => {
   res.send(
     'Cinco Minutos API - access /popularity for most popularly searched verbs, access /conjugate?verb=MYVERB to access conjugations in JSON.',
@@ -116,7 +133,20 @@ app.get('/', (req, res) => {
 
 app.get('/conjugate', (req, res) => {
   res.setHeader('access-control-allow-origin', '*');
+  if (!req.query.verb) {
+    res.json({});
+    return;
+  }
   conjugate(req.query.verb).then(v => res.json(v));
+});
+
+app.get('/translate', (req, res) => {
+  res.setHeader('access-control-allow-origin', '*');
+  if (!req.query.text) {
+    res.json({});
+    return;
+  }
+  translate(req.query.text).then(v => res.json(v));
 });
 
 app.get('/popularity', (req, res) => {

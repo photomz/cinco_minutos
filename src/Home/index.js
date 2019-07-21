@@ -118,6 +118,7 @@ const Home = () => {
             value={searchValue}
             setValue={setSearchValue}
             aria-label="search"
+            id="homeSearchInput"
           />
           <br />
           <Button.Group basic size="mini" style={{ margin: '0 auto' }}>
