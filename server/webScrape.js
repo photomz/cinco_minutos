@@ -66,9 +66,10 @@ const getVerbSD = verb => {
 };
 const getVerb = (verb, cachedList = {}, callback = val => val) => {
   // TODO: add WordReference support
-  return cachedList[verb]
-    ? new Promise(r => r(cachedList[verb])).then(callback)
-    : getVerbSD(verb).then(callback);
+  if (cachedList[verb]) return new Promise(r => r(cachedList[verb])).then(callback);
+  return getVerbSD(verb)
+    .then(r => cachedList[r.verb] || r)
+    .then(callback);
 };
 const getAllVerbs = () => {
   const NUMTOGET = 0; // Entire database 15348

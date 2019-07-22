@@ -9,6 +9,7 @@ import Browse from '../Browse';
 import Collections from '../Collections';
 import Settings from '../Settings';
 import About from '../About';
+import Translate from '../Translate';
 import ROUTES from '../static/routes.json';
 import { createBrowserHistory } from 'history';
 import './index.css';
@@ -26,7 +27,7 @@ import './index.css';
 const navContent = [
   { name: 'ℭ𝔦𝔫𝔠𝔬𝔐𝔦𝔫𝔲𝔱𝔬𝔰', icon: 'chess' },
   { name: 'home', icon: 'home', route: ROUTES.Home, JSX: <Home /> },
-  { name: 'translate', icon: 'language', route: ROUTES.Translate, JSX: <Home /> },
+  { name: 'translate', icon: 'language', route: ROUTES.Translate, JSX: <Translate /> },
   { name: 'browse', icon: 'book', route: ROUTES.Browse, JSX: <Browse /> },
   { name: 'collections', icon: 'archive', route: ROUTES.Collections, JSX: <Collections /> },
   { name: 'settings', icon: 'settings', route: ROUTES.Settings, JSX: <Settings /> },
