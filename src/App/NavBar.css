@@ -15,17 +15,14 @@
 #navbar.transitioning.vertical {
   height: 54px !important;
 }
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
   #navbar + * {
     margin-top: 73px;
   }
   #navbar:not(.vertical) {
     height: auto !important;
   }
-  #navbar {
-    max-height: 73px;
-  }
-}
+} */
 
 #barSegment {
   position: absolute;

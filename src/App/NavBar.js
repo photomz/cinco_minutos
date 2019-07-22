@@ -7,8 +7,11 @@ import uuidv1 from 'uuid/v1';
 
 import './NavBar.css';
 
-const NavItem = ({ elem, onClick, active, under, expanded }) => (
-  <Responsive minWidth={under || expanded ? null : 768} maxWidth={under ? 767 : null}>
+const NavItem = ({ elem, onClick, active, under, expanded, toggleWidth }) => (
+  <Responsive
+    minWidth={under || expanded ? null : toggleWidth}
+    maxWidth={under ? toggleWidth - 1 : null}
+  >
     <Menu.Item
       key={uuidv1()}
       name={elem.name}
@@ -29,9 +32,9 @@ NavItem.propTypes = {
   active: PropTypes.any,
   under: PropTypes.bool,
   expanded: PropTypes.bool,
+  toggleWidth: PropTypes.number,
 };
-
-const NavBar = ({ content, onClick, active, expanded, width }) => {
+const NavBar = ({ content, onClick, active, expanded, width, toggleWidth }) => {
   const [title, ...navItems] = content;
   return (
     <Sidebar
@@ -39,21 +42,32 @@ const NavBar = ({ content, onClick, active, expanded, width }) => {
       as={Menu}
       animation="overlay"
       icon="labeled"
-      visible={true}
+      visible
       direction="top"
-      vertical={!!(expanded && width <= 768 && width)}
+      vertical={!!(expanded && width <= toggleWidth && width)}
+      style={width >= toggleWidth && width ? { maxHeight: '73px' } : {}}
+      ref={el => {
+        // We need to do this because ReactJS removed support for important styling in v15.
+        if (el) {
+          if (el.ref.current) {
+            if (width >= toggleWidth && width)
+              el.ref.current.style.setProperty('height', 'auto', 'important');
+            else el.ref.current.style.removeProperty('height');
+          }
+        }
+      }}
     >
       <Menu.Header
         as="h1"
         style={{
           textAlign: 'left',
-          margin: (width ? (width > 768 ? 'auto' : '0.3em') : 'auto') + ' 0.5em',
+          margin: (width ? (width >= toggleWidth ? 'auto' : '0.3em') : 'auto') + ' 0.5em',
         }}
       >
         <Icon name={title.icon} />
         {title.name}
 
-        <Responsive as={Segment} maxWidth={767} id="barSegment" onClick={onClick}>
+        <Responsive as={Segment} maxWidth={toggleWidth - 1} id="barSegment" onClick={onClick}>
           <Icon name="bars" />
         </Responsive>
       </Menu.Header>
@@ -61,7 +75,13 @@ const NavBar = ({ content, onClick, active, expanded, width }) => {
         {navItems.map(elem =>
           elem.route ? (
             <Link to={elem.route} key={uuidv1()} aria-label={elem.name}>
-              <NavItem onClick={onClick} active={active} elem={elem} expanded={expanded} />
+              <NavItem
+                onClick={onClick}
+                active={active}
+                elem={elem}
+                expanded={expanded}
+                toggleWidth={toggleWidth}
+              />
             </Link>
           ) : (
             <NavItem
@@ -71,6 +91,7 @@ const NavBar = ({ content, onClick, active, expanded, width }) => {
               key={uuidv1()}
               under={!elem.name}
               expanded={expanded}
+              toggleWidth={toggleWidth}
             />
           ),
         )}
@@ -85,6 +106,7 @@ NavBar.propTypes = {
   content: PropTypes.array.isRequired,
   width: PropTypes.number,
   expanded: PropTypes.bool,
+  toggleWidth: PropTypes.number,
 };
 
 export default NavBar;

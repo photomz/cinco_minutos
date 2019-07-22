@@ -25,13 +25,15 @@ import './index.css';
 
 const navContent = [
   { name: 'ℭ𝔦𝔫𝔠𝔬𝔐𝔦𝔫𝔲𝔱𝔬𝔰', icon: 'chess' },
-  { name: 'home', icon: 'home', route: ROUTES.Home },
-  { name: 'browse', icon: 'book', route: ROUTES.Browse },
-  { name: 'collections', icon: 'archive', route: ROUTES.Collections },
-  { name: 'settings', icon: 'settings', route: ROUTES.Settings },
-  { name: 'about', icon: 'code', route: ROUTES.About },
+  { name: 'home', icon: 'home', route: ROUTES.Home, JSX: <Home /> },
+  { name: 'translate', icon: 'language', route: ROUTES.Translate, JSX: <Home /> },
+  { name: 'browse', icon: 'book', route: ROUTES.Browse, JSX: <Browse /> },
+  { name: 'collections', icon: 'archive', route: ROUTES.Collections, JSX: <Collections /> },
+  { name: 'settings', icon: 'settings', route: ROUTES.Settings, JSX: <Settings /> },
+  { name: 'about', icon: 'code', route: ROUTES.About, JSX: <About /> },
   { name: 'github', icon: 'github' },
 ];
+const toggleWidth = 250 + 90 * (navContent.filter(el => !!el.route).length + 1);
 const history = createBrowserHistory();
 const App = () => {
   let [page, setPage] = useState('home');
@@ -43,7 +45,7 @@ const App = () => {
     } else if (typeof name !== 'string') {
       document.querySelector('#navbar').classList.add('transitioning');
       const wasExpanded = expandedNavBar;
-      if (width && width <= 768) setExpansionNavBar(true);
+      if (width && width <= toggleWidth) setExpansionNavBar(true);
       setTimeout(() => {
         if (wasExpanded) {
           setExpansionNavBar(false);
@@ -67,6 +69,7 @@ const App = () => {
         content={navContent}
         expanded={expandedNavBar}
         width={width}
+        toggleWidth={toggleWidth}
       />
       <Switch>
         <Route
@@ -78,46 +81,19 @@ const App = () => {
             return <Home />;
           }}
         />
-        <Route
-          path={ROUTES.Browse}
-          render={() => {
-            setPage('browse');
-            window.scrollTo(0, 0);
-            return <Browse />;
-          }}
-        />
-        <Route
-          path={ROUTES.Collections}
-          render={() => {
-            setPage('collections');
-            window.scrollTo(0, 0);
-            return <Collections />;
-          }}
-        />
-        <Route
-          path={ROUTES.Settings}
-          render={() => {
-            setPage('settings');
-            window.scrollTo(0, 0);
-            return <Settings />;
-          }}
-        />
-        <Route
-          path={ROUTES.About}
-          render={() => {
-            setPage('about');
-            window.scrollTo(0, 0);
-            return <About />;
-          }}
-        />
-        <Route
-          path={ROUTES.Conjugate}
-          render={() => {
-            setPage('home');
-            window.scrollTo(0, 0);
-            return <Home />;
-          }}
-        />
+        {navContent
+          .filter(el => !!el.JSX)
+          .map(el => (
+            <Route
+              exact={el.name === 'home'}
+              path={el.route}
+              render={() => {
+                setPage(el.name);
+                window.scrollTo(0, 0);
+                return el.JSX;
+              }}
+            />
+          ))}
         <Route
           path="/github"
           render={() => {
