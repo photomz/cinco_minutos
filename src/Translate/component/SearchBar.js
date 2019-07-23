@@ -1,23 +1,32 @@
 /* eslint-disable no-console */
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { Icon, Search, Popup } from 'semantic-ui-react';
+import { Input, Popup } from 'semantic-ui-react';
 
 // eslint-disable-next-line no-unused-vars
-const SearchBar = ({ onFilterResults, onSearchClick, value, setValue, offline, ...props }) => {
+let prevTimeoutCall = setTimeout(() => null, 0);
+let timePassed = 0;
+let prevTime = performance.now();
+const SearchBar = ({ onSearch, value, setValue, offline, ...props }) => {
   let [_isLoading, _setIsLoading] = useState(false);
-  const _handleSearchClick = val => {
-    _setIsLoading(true);
-    onSearchClick(typeof val === 'string' ? val : value);
-    _setIsLoading(false);
-  };
   const _handleSearchChange = (e, { value }) => {
     setValue(value);
+    _setIsLoading(true);
+    clearTimeout(prevTimeoutCall);
+    timePassed = performance.now() - prevTime;
+    prevTime = performance.now();
+    if (timePassed >= 400) {
+      onSearch(value);
+      _setIsLoading(false);
+    } else
+      prevTimeoutCall = setTimeout(() => {
+        onSearch(value);
+        _setIsLoading(false);
+      }, 250);
   };
   const _handleKeyPress = e => {
     if (e.charCode === 13) {
       e.target.blur();
-      _handleSearchClick();
     }
   };
   return (
@@ -25,16 +34,20 @@ const SearchBar = ({ onFilterResults, onSearchClick, value, setValue, offline, .
       content={'You are offline, therefore you cannot use the translation feature.'}
       disabled={!offline}
       trigger={
-        <Search
-          size="large"
-          loading={_isLoading}
-          onSearchChange={_handleSearchChange}
-          onKeyPress={_handleKeyPress}
-          value={value}
-          noResultsDescription="Make sure to use the infintive form."
-          icon={<Icon inverted circular link name="search" onClick={_handleSearchClick} />}
-          {...props}
-        />
+        <div style={{ display: 'inline-block' }}>
+          <Input
+            size="large"
+            placeholder="Translate some text..."
+            icon="search"
+            loading={_isLoading}
+            onChange={_handleSearchChange}
+            onKeyPress={_handleKeyPress}
+            value={value}
+            size={value.length}
+            disabled={offline}
+            {...props}
+          />
+        </div>
       }
     />
   );
@@ -43,10 +56,7 @@ const SearchBar = ({ onFilterResults, onSearchClick, value, setValue, offline, .
 SearchBar.propTypes = {
   children: PropTypes.node,
   buttons: PropTypes.array,
-  onFilterResults: PropTypes.func,
   onSearchClick: PropTypes.func,
-  _results: PropTypes.array,
-  _setResults: PropTypes.func,
   value: PropTypes.string,
   setValue: PropTypes.func,
   inputRef: PropTypes.any,
