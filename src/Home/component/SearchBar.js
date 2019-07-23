@@ -24,10 +24,10 @@ const SearchBar = ({ onFilterResults, onSearchClick, value, setValue, ...props }
     onSearchClick(typeof val === 'string' ? val : value);
   };
   const _handleSearchChange = (e, { value }) => {
-    _setIsLoading(true);
     setValue(value);
     //console.log('value - ', value);
-    if (value.length < 1) return revertState();
+    if (value.length < 1) return _setResults([]);
+    _setIsLoading(true);
     //console.log('value in timeout - ', value);
     if (!cached) {
       clearTimeout(prevTimeoutCall);

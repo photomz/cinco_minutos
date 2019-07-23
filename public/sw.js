@@ -201,26 +201,26 @@ self.addEventListener('fetch', e => {
   const url = new URL(e.request.url);
   e.respondWith(
     caches.match(url.origin + '/' + url.pathname.split('/').pop()).then(res => {
-      return res && !(url.pathname === '/' && url.origin === info.SERVER_URL)
-        ? res
-        : url.origin === info.SERVER_URL
-        ? fetch(e.request).then(
-            url.pathname !== '/conjugate'
-              ? res => {
-                  caches
-                    .open(CURR_CACHE)
-                    .then(cache =>
-                      cache.put(url.origin + '/' + url.pathname.split('/').pop(), res),
-                    );
-                  return res.clone();
-                }
-              : res => res,
-            () =>
-              url.pathname === '/conjugate'
-                ? conjugate(url.searchParams.get('verb'))
-                : new Response(),
-          )
-        : caches.match('/index.html').then(val => (val ? val : fetch(e.request)));
+      return !res
+        ? url.origin === info.SERVER_URL
+          ? fetch(e.request).then(
+              url.pathname !== '/conjugate'
+                ? res => {
+                    caches
+                      .open(CURR_CACHE)
+                      .then(cache =>
+                        cache.put(url.origin + '/' + url.pathname.split('/').pop(), res),
+                      );
+                    return res.clone();
+                  }
+                : res => res,
+              () =>
+                url.pathname === '/conjugate'
+                  ? conjugate(url.searchParams.get('verb'))
+                  : new Response(),
+            )
+          : caches.match('/index.html').then(val => (val ? val : fetch(e.request)))
+        : res;
     }),
   );
 });
@@ -239,24 +239,22 @@ self.addEventListener('message', e => {
 });
 const messageCallback = e => {
   const data = JSON.parse(e.data);
-  if (data.category === 'settings') {
-    if (data.type === 'offline') {
-      if (data.value) {
-        return caches
-          .open(CURR_CACHE)
-          .then(cache => cache.keys())
-          .then(res => {
-            if (!res.length) return prepareForOffline();
-            return new Promise(r => r(null));
-          });
-      } else if (data.value !== undefined) {
-        return clearCache(false);
-      } else {
-        return caches
-          .open(CURR_CACHE)
-          .then(cache => cache.keys())
-          .then(keys => [keys.length > 3, null]);
-      }
+  if (data.type === 'offline') {
+    if (data.value) {
+      return caches
+        .open(CURR_CACHE)
+        .then(cache => cache.keys())
+        .then(res => {
+          if (res.length <= 3) return prepareForOffline();
+          return new Promise(r => r(null));
+        });
+    } else if (data.value !== undefined) {
+      return clearCache(false);
+    } else {
+      return caches
+        .open(CURR_CACHE)
+        .then(cache => cache.keys())
+        .then(keys => [keys.length > 3, null]);
     }
   }
   return new Promise(r => r(null));
