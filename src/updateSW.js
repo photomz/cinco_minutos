@@ -17,9 +17,10 @@ const sendMessage = opts => {
   return new Promise(r => r(null));
 };
 const checkOffline = () =>
-  fetch(info.SERVER_URL).then(res => res.text().then(val => !val.length), () => true);
+  fetch(info.SERVER_URL + '/conjugate')
+    .then(res => res.text())
+    .then(val => !val.length, () => true);
 const serviceWorker = () =>
   ('serviceWorker' in navigator && navigator.serviceWorker.controller) || null;
 export default sendMessage;
-export { serviceWorker };
-export { checkOffline };
+export { serviceWorker, checkOffline };

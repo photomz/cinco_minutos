@@ -3,7 +3,6 @@ import React, { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { Button, Segment, Popup, Header, Divider } from 'semantic-ui-react';
 import sendMessage, { serviceWorker, checkOffline } from '../updateSW.js';
-import info from '../../globals.json';
 
 let updateOffline = setTimeout(() => null, 0);
 

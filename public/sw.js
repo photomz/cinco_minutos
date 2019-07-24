@@ -155,7 +155,7 @@ const prepareForOffline = () =>
         .open(CURR_CACHE)
         .then(cache => {
           vals;
-          cache.addAll(vals.filter(el => el !== 'sw.js'));
+          cache.addAll(vals.filter(el => el !== 'sw.js').map(el => '/' + el));
           return cache;
         })
         .then(cache => {
@@ -205,17 +205,7 @@ self.addEventListener('fetch', e => {
       return !res
         ? url.origin === info.SERVER_URL
           ? fetch(e.request).then(
-              url.pathname !== '/conjugate'
-                ? res => {
-                    if (url.pathname === '/') return res; // Used to verify if online
-                    caches
-                      .open(CURR_CACHE)
-                      .then(cache =>
-                        cache.put(url.origin + '/' + url.pathname.split('/').pop(), res),
-                      );
-                    return res.clone();
-                  }
-                : res => res,
+              res => res,
               () =>
                 url.pathname === '/conjugate'
                   ? conjugate(url.searchParams.get('verb'))

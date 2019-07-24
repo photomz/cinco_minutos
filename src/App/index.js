@@ -44,18 +44,10 @@ const App = () => {
     if (name === 'github') {
       window.open(ROUTES.GitHub);
     } else if (typeof name !== 'string') {
-      document.querySelector('#navbar').classList.add('transitioning');
-      const wasExpanded = expandedNavBar;
-      if (width && width <= toggleWidth) setExpansionNavBar(true);
-      setTimeout(() => {
-        if (wasExpanded) {
-          setExpansionNavBar(false);
-        }
-        document.querySelector('#navbar').classList.remove('transitioning');
-      }, 400);
+      setExpansionNavBar(!expandedNavBar);
     } else {
       setPage(name);
-      onNavBarClick(null);
+      setExpansionNavBar(false);
     }
   };
   useEffect(() => {
@@ -73,15 +65,6 @@ const App = () => {
         toggleWidth={toggleWidth}
       />
       <Switch>
-        <Route
-          exact
-          path={ROUTES.Home}
-          render={() => {
-            setPage('home');
-            window.scrollTo(0, 0);
-            return <Home />;
-          }}
-        />
         {navContent
           .filter(el => !!el.JSX)
           .map(el => (

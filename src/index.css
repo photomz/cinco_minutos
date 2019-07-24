@@ -6,6 +6,6 @@
     display: none !important;
   }
   #tooSmall {
-    display: block;
+    display: block !important;
   }
 }

@@ -37,62 +37,53 @@ const Home = () => {
   let [action, setAction] = useState('idle');
   const handleFilterResults = value => filterVerbs(value, 5);
   const fetchResults = value => {
-    if (window.location.pathname === '/conjugate/' + value) {
-      fetch(info.SERVER_URL + '/conjugate?verb=' + value, {
-        headers: {
-          verb: value,
-          'Content-Type': 'application/json',
-          Accept: 'application/json',
-        },
+    fetch(info.SERVER_URL + '/conjugate?verb=' + value, {
+      headers: {
+        verb: value,
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
+    })
+      .then(res => res.json())
+      .then(val => {
+        value = decodeURI(value);
+        if (Object.entries(val).length) setConjResults(val);
+        else {
+          setConjResults({ verb: value });
+          setPlaceholder('Invalid verb "' + value + '"!');
+        }
+        document.title =
+          value.charAt(0).toUpperCase() +
+          value.slice(1).toLowerCase() +
+          ' Conjugation | CincoMinutos';
+        setIsSearched(Boolean(Object.entries(val).length)); // force to bool
+        setAction('idle');
       })
-        .then(res => res.json())
-        .then(val => {
-          value = decodeURI(value);
-          if (Object.entries(val).length) setConjResults(val);
-          else {
-            setConjResults({ verb: value });
-            setPlaceholder('Invalid verb "' + value + '"!');
-          }
-          document.title =
-            value.charAt(0).toUpperCase() +
-            value.slice(1).toLowerCase() +
-            ' Conjugation | CincoMinutos';
-          setIsSearched(Boolean(Object.entries(val).length)); // force to bool
-          setAction('idle');
-        })
-        .catch(err => console.log(err));
-    }
+      .catch(err => console.log(err));
   };
-  const handleSearchClick = value => {
+  const handleSearchClick = (value, noHistoryUpdate) => {
     value = decodeURI(value);
     value = value.toLowerCase();
     if (value === conjResults.verb) return;
     setIsSearched(false);
     setAction('loading');
     setPlaceholder('Loading...');
-    if (value !== conjResults.verb) {
-      fetchResults(encodeURI(value));
-      if (window.location.pathname !== '/conjugate/' + value && value) {
-        history.push(window.location.pathname);
-        history.replace('/conjugate/' + value);
-      }
-    }
+    fetchResults(encodeURI(value));
+    if (!noHistoryUpdate) history.push('/conjugate/' + value);
     setSearchValue(value);
   };
-  const checkPath = () => {
-    let pn = window.location.pathname;
-    if (pn.slice(1, 10) === 'conjugate') {
-      handleSearchClick(window.location.pathname.slice(11));
-    } else if (window.location.pathname === '/') {
-      handleSearchClick('');
-      setPlaceholder('¡Vámos!');
-    }
-  };
-  useEffect(checkPath, []);
-  if (window.location.pathname !== oldLoc) {
-    oldLoc = window.location.pathname;
-    checkPath();
-  }
+  useEffect(
+    history.listen(location => {
+      let pn = location.pathname;
+      console.log(pn);
+      if (pn.slice(1, 10) === 'conjugate') {
+        handleSearchClick(pn.slice(11), true);
+      } else if (pn === '/') {
+        setPlaceholder('¡Vámos!');
+      }
+    }),
+    [],
+  );
   const handleAccentClick = (e, accent) => {
     const cChar = searchValue.slice(-1);
     const nChar = toggleAccent[accentButtons.indexOf(accent)][cChar];

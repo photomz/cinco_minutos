@@ -15,19 +15,21 @@ const SearchBar = ({ onSearch, value, setValue, offline, ...props }) => {
     clearTimeout(prevTimeoutCall);
     timePassed = performance.now() - prevTime;
     prevTime = performance.now();
-    if (timePassed >= 400) {
-      onSearch(value);
-      _setIsLoading(false);
-    } else
+    if (timePassed >= 500) onSearch(value).then(() => _setIsLoading(false));
+    else
       prevTimeoutCall = setTimeout(() => {
-        onSearch(value);
-        _setIsLoading(false);
+        onSearch(value).then(() => _setIsLoading(false));
       }, 250);
   };
   const _handleKeyPress = e => {
     if (e.charCode === 13) {
       e.target.blur();
     }
+  };
+  const onBlur = () => {
+    clearTimeout(prevTimeoutCall);
+    _setIsLoading(true);
+    onSearch(value, true).then(() => _setIsLoading(false));
   };
   return (
     <Popup
@@ -36,15 +38,15 @@ const SearchBar = ({ onSearch, value, setValue, offline, ...props }) => {
       trigger={
         <div style={{ display: 'inline-block' }}>
           <Input
-            size="large"
             placeholder="Translate some text..."
             icon="search"
             loading={_isLoading}
             onChange={_handleSearchChange}
             onKeyPress={_handleKeyPress}
             value={value}
-            size={value.length}
+            size="large"
             disabled={offline}
+            onBlur={onBlur}
             {...props}
           />
         </div>
