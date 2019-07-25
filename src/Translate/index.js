@@ -16,6 +16,7 @@ const toggleAccent = [
   { ü: 'u', u: 'ü', ú: 'ü' },
   { ñ: 'n', n: 'ñ' },
 ];
+let oldLoc = null;
 const Translate = props => {
   let [offline, setOffline] = useState(false);
   let [searchValue, setSearchValue] = useState('');
@@ -24,7 +25,7 @@ const Translate = props => {
   checkOffline().then(val => setOffline(val));
   const onSearch = (val, unfocused) => {
     clearTimeout(oldLoad);
-    if (val.toLowerCase() === (content.val || '').toLowerCase()) return;
+    if (content.val && val.toLowerCase() === content.val.toLowerCase()) return;
     if (val.length === 0) {
       setAction('hidden');
       return Promise.resolve(null);
@@ -53,19 +54,16 @@ const Translate = props => {
       );
     });
   };
-  useEffect(
-    () =>
-      history.listen(location => {
-        let desiredPart = location.pathname.split('/')[2];
-        console.log(desiredPart);
-        if (desiredPart !== undefined) {
-          desiredPart = decodeURI(desiredPart);
-          setSearchValue(desiredPart);
-          onSearch(desiredPart);
-        }
-      }),
-    [],
-  );
+  const checkPath = location => {
+    if (location === oldLoc) return;
+    let desiredPart = location.pathname.split('/')[2] || '';
+    desiredPart = decodeURI(desiredPart);
+    setSearchValue(desiredPart);
+    onSearch(desiredPart);
+    oldLoc = location;
+  };
+  useEffect(() => checkPath(window.location), []);
+  useEffect(history.listen(checkPath), []);
   const handleAccentClick = (e, accent) => {
     const cChar = searchValue.slice(-1);
     const nChar = toggleAccent[accentButtons.indexOf(accent)][cChar];

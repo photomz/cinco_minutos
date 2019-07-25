@@ -79,6 +79,14 @@ const App = () => {
             />
           ))}
         <Route
+          path={ROUTES.Conjugate}
+          render={() => {
+            setPage('home');
+            window.scrollTo(0, 0);
+            return <Home />;
+          }}
+        />
+        <Route
           path="/github"
           render={() => {
             window.location = ROUTES.GitHub;

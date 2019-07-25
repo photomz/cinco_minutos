@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, Icon, Responsive, Sidebar, Segment } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
@@ -7,11 +7,8 @@ import uuidv1 from 'uuid/v1';
 
 import './NavBar.css';
 
-const NavItem = ({ elem, onClick, active, under, expanded, toggleWidth }) => (
-  <Responsive
-    minWidth={under || expanded ? null : toggleWidth}
-    maxWidth={under ? toggleWidth - 1 : null}
-  >
+const NavItem = ({ elem, onClick, active, under, toggleWidth }) => (
+  <Responsive maxWidth={under ? toggleWidth - 1 : null}>
     <Menu.Item
       key={uuidv1()}
       name={elem.name}
@@ -44,18 +41,9 @@ const NavBar = ({ content, onClick, active, expanded, width, toggleWidth }) => {
       icon="labeled"
       visible
       direction="top"
-      vertical={!!(expanded && width <= toggleWidth && width)}
+      vertical={width < toggleWidth}
+      className={expanded ? 'expanded' : ''}
       style={width >= toggleWidth && width ? { maxHeight: '73px' } : {}}
-      ref={el => {
-        // We need to do this because ReactJS removed support for important styling in v15.
-        if (el) {
-          if (el.ref.current) {
-            if (width >= toggleWidth && width)
-              el.ref.current.style.setProperty('height', 'auto', 'important');
-            else el.ref.current.style.removeProperty('height');
-          }
-        }
-      }}
     >
       <Menu.Header
         as="h1"
@@ -75,13 +63,7 @@ const NavBar = ({ content, onClick, active, expanded, width, toggleWidth }) => {
         {navItems.map(elem =>
           elem.route ? (
             <Link to={elem.route} key={uuidv1()} aria-label={elem.name}>
-              <NavItem
-                onClick={onClick}
-                active={active}
-                elem={elem}
-                expanded={expanded}
-                toggleWidth={toggleWidth}
-              />
+              <NavItem onClick={onClick} active={active} elem={elem} toggleWidth={toggleWidth} />
             </Link>
           ) : (
             <NavItem
@@ -90,7 +72,6 @@ const NavBar = ({ content, onClick, active, expanded, width, toggleWidth }) => {
               elem={elem}
               key={uuidv1()}
               under={!elem.name}
-              expanded={expanded}
               toggleWidth={toggleWidth}
             />
           ),

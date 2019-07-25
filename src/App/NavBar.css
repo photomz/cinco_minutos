@@ -3,10 +3,13 @@
 }
 #navbar {
   overflow: hidden !important;
-  height: 54px !important;
+  height: auto !important;
   transition: height 400ms ease-in-out;
 }
 #navbar.vertical {
+  height: 54px !important;
+}
+#navbar.vertical.expanded {
   height: calc(54px + 22em) !important;
 }
 /* @media only screen and (min-width: 768px) {

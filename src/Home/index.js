@@ -27,7 +27,8 @@ const icons = [
   'chess queen',
   'chess pawn',
 ];
-let oldLoc = window.location.pathname;
+let oldLoc = null;
+let ignoreURL = null;
 const Home = () => {
   let [searchValue, setSearchValue] = useState('');
   let [conjResults, setConjResults] = useState({});
@@ -69,21 +70,26 @@ const Home = () => {
     setAction('loading');
     setPlaceholder('Loading...');
     fetchResults(encodeURI(value));
-    if (!noHistoryUpdate) history.push('/conjugate/' + value);
+    if (!noHistoryUpdate) {
+      history.push('/conjugate/' + value);
+      ignoreURL = '/conjugate/' + value;
+    }
     setSearchValue(value);
   };
-  useEffect(
-    history.listen(location => {
-      let pn = location.pathname;
-      console.log(pn);
-      if (pn.slice(1, 10) === 'conjugate') {
-        handleSearchClick(pn.slice(11), true);
-      } else if (pn === '/') {
-        setPlaceholder('¡Vámos!');
-      }
-    }),
-    [],
-  );
+  const checkPath = (location, action) => {
+    let pn = location.pathname;
+    if (action === 'POP') ignoreURL = null;
+    if (oldLoc === pn || ignoreURL === pn) return;
+    if (pn.slice(1, 10) === 'conjugate') {
+      setSearchValue(decodeURI(pn.slice(11)));
+      fetchResults(pn.slice(11));
+    } else if (pn === '/') {
+      setPlaceholder('¡Vámos!');
+    }
+    oldLoc = pn;
+  };
+  useEffect(() => checkPath(window.location), []);
+  useEffect(history.listen(checkPath), []);
   const handleAccentClick = (e, accent) => {
     const cChar = searchValue.slice(-1);
     const nChar = toggleAccent[accentButtons.indexOf(accent)][cChar];
