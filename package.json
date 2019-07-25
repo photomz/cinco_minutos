@@ -27,7 +27,7 @@
     "test:eslint": "eslint src/ --ext .js --ext .jsx",
     "pretest": "yarn run test:eslint",
     "precommit": "lint-staged",
-    "start": "rm -r dist; node server/server.js & parcel public/index.html",
+    "start": "yarn host",
     "build": "rm -r dist; NODE_ENV=production parcel build public/index.html --public-url ./ --no-source-maps && cp public/robots.txt dist",
     "host": "yarn build; sudo node scripts/host.js & node server/server.js"
   },
@@ -63,10 +63,5 @@
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
       "\\.(css|less|scss|sass)$": "identity-obj-proxy"
     }
-  },
-  "nodemonConfig": {
-    "ignore": [
-      "src/static/quickSearch.json"
-    ]
   }
 }

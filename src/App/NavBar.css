@@ -1,19 +1,16 @@
 #navbar + * {
-  margin-top: 100px;
+  margin-top: 75px;
 }
 #navbar {
   overflow: hidden !important;
-  height: 54px !important;
+  height: auto !important;
   transition: height 400ms ease-in-out;
 }
-#navbar.transitioning:not(.vertical) {
-  height: calc(54px + 22em) !important;
-}
 #navbar.vertical {
-  height: calc(54px + 22em) !important;
-}
-#navbar.transitioning.vertical {
   height: 54px !important;
+}
+#navbar.vertical.expanded {
+  height: calc(54px + 22em) !important;
 }
 /* @media only screen and (min-width: 768px) {
   #navbar + * {

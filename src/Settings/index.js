@@ -2,33 +2,26 @@
 import React, { useState, useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { Button, Segment, Popup, Header, Divider } from 'semantic-ui-react';
-import sendMessage, { serviceWorker } from './logic/updateSW.js';
-import info from '../../globals.json';
+import sendMessage, { serviceWorker, checkOffline } from '../updateSW.js';
 
 let updateOffline = setTimeout(() => null, 0);
 
 let Settings = props => {
   const serviceWorkerExists = !!serviceWorker();
   let [toggleOfflineAllowed, setToggleOfflineAllowed] = useState(serviceWorkerExists);
-  let [offline, setOffline] = useState(serviceWorkerExists);
+  let [offlineAvailable, setOfflineAvailable] = useState(serviceWorkerExists);
   let [isLoading, setIsLoading] = useState(false);
   let [errorContent, setErrorContent] = useState(
     "You need a modern browser that supports Service Workers to use offline functionality. If you're using a modern browser, try refreshing the page.",
   );
   useEffect(() => {
     if (serviceWorkerExists) {
-      sendMessage('offline').then(val => {
-        setOffline(val);
+      sendMessage({ type: 'offline' }).then(val => {
+        setOfflineAvailable(val);
       });
-      fetch(info.SERVER_URL).then(
-        res =>
-          res.text().then(val => {
-            if (!val.length) {
-              whenOffline();
-            }
-          }),
-        whenOffline,
-      );
+      checkOffline().then(offline => {
+        if (offline) whenOffline();
+      });
     }
   }, []);
   const whenOffline = () => {
@@ -49,8 +42,8 @@ let Settings = props => {
     setIsLoading(true);
     updateOffline = setTimeout(
       () =>
-        sendMessage('offline', !offline).then(() => {
-          setOffline(!offline);
+        sendMessage({ type: 'offline', value: !offlineAvailable }).then(() => {
+          setOfflineAvailable(!offlineAvailable);
           setIsLoading(false);
         }),
       2000,
@@ -74,16 +67,15 @@ let Settings = props => {
           trigger={
             <Button
               as="div"
-              positive={!offline && serviceWorkerExists}
-              negative={offline && isLoading}
+              positive={!offlineAvailable && serviceWorkerExists}
+              negative={offlineAvailable && isLoading}
               onClick={(!toggleOfflineAllowed && (() => blur(offlineRef))) || toggleOffline}
               animated={isLoading}
               ref={offlineRef}
             >
               <Button.Content visible>
-                {isLoading
-                  ? (offline ? 'Disabl' : 'Enabl') + 'ing offline access...'
-                  : (offline ? 'Disable' : 'Enable') + ' offline access'}
+                {(offlineAvailable ? 'Disabl' : 'Enabl') +
+                  (isLoading ? 'ing offline access...' : 'e offline access')}
               </Button.Content>
               <Button.Content hidden>{isLoading ? 'Cancel' : ''}</Button.Content>
             </Button>
