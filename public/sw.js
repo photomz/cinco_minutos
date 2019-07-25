@@ -201,7 +201,7 @@ const prepareForOffline = () =>
 self.addEventListener('fetch', e => {
   const url = new URL(e.request.url);
   e.respondWith(
-    caches.match(url.origin + '/' + url.pathname.split('/').pop()).then(res => {
+    caches.match(e.request).then(res => {
       return !res
         ? url.origin === info.SERVER_URL
           ? fetch(e.request).then(

@@ -5,14 +5,11 @@ const cors = require('cors');
 const info = require('../globals.json');
 const fs = require('fs');
 const path = require('path');
+const http = require('http');
 const https = require('https');
 const he = require('he');
 const compression = require('compression');
 const gTrans = require('@vitalets/google-translate-api');
-let app = express();
-app.use(compression());
-app.use(cors());
-app.use(bodyParser.json());
 
 const verbs = require('./static/verbs.json');
 // eslint-disable-next-line
@@ -25,11 +22,6 @@ const search = require('./static/quickSearch.json');
 const searchMin = fs.readFileSync(path.join(__dirname, './static/quickSearch.json.min')).toString();
 const searchKeys = Object.keys(search);
 // eslint-disable-next-line
-const getDistDir = () => fs.readdirSync(path.join(__dirname, '..', 'dist'));
-let distDir = getDistDir();
-fs.watch(path.join(__dirname, '../dist'), () => {
-  distDir = getDistDir();
-});
 let popularity = require('./static/popularity.json');
 // eslint-disable-next-line
 const popularityMin = fs
@@ -133,83 +125,102 @@ const translate = (text, fromEs, exact = false) => {
     return {};
   });
 };
-app.get('/', (req, res) => {
-  res.send(
-    'Cinco Minutos API - access /popularity for most popularly searched verbs, ' +
-      'access /conjugate?verb=MYVERB to access conjugations in JSON, ' +
-      'access /translate?text=MYTEXT to translate from EN to ES and vice versa.',
-  );
-});
+const createExpressApp = getDistDir => {
+  let app = express();
+  app.use(compression());
+  app.use(cors());
+  let distDir = getDistDir();
+  fs.watch(path.join(__dirname, '../dist'), () => {
+    distDir = getDistDir();
+  });
+  app.get('/', (req, res) => {
+    res.send(
+      'Cinco Minutos API - access /popularity for most popularly searched verbs, ' +
+        'access /conjugate?verb=MYVERB to access conjugations in JSON, ' +
+        'access /translate?text=MYTEXT to translate from EN to ES and vice versa.',
+    );
+  });
 
-app.get('/conjugate', (req, res) => {
-  res.setHeader('access-control-allow-origin', '*');
-  if (!req.query.verb) {
-    res.json({});
-    return;
-  }
-  conjugate(req.query.verb).then(v => res.json(v));
-});
+  app.get('/conjugate', (req, res) => {
+    res.setHeader('access-control-allow-origin', '*');
+    if (!req.query.verb) {
+      res.json({});
+      return;
+    }
+    conjugate(req.query.verb).then(v => res.json(v));
+  });
 
-app.get('/translate', (req, res) => {
-  res.setHeader('access-control-allow-origin', '*');
-  if (!req.query.text) {
-    res.json({});
-    return;
-  }
-  translate(req.query.text).then(v => res.json(v));
-});
+  app.get('/translate', (req, res) => {
+    res.setHeader('access-control-allow-origin', '*');
+    if (!req.query.text) {
+      res.json({});
+      return;
+    }
+    translate(req.query.text).then(v => res.json(v));
+  });
 
-app.get('/popularity', (req, res) => {
-  res.setHeader('access-control-allow-origin', '*');
-  res.json(popularity);
-});
+  app.get('/popularity', (req, res) => {
+    res.setHeader('access-control-allow-origin', '*');
+    res.json(popularity);
+  });
 
-app.get('/popularity_min', (req, res) => {
-  res.setHeader('access-control-allow-origin', '*');
-  res.set('Content-Type', 'text/plain');
-  res.send(popularityMin);
-});
+  app.get('/popularity_min', (req, res) => {
+    res.setHeader('access-control-allow-origin', '*');
+    res.set('Content-Type', 'text/plain');
+    res.send(popularityMin);
+  });
 
-app.get('/suggest', (req, res) => {
-  res.setHeader('access-control-allow-origin', '*');
-  res.json(filterVerbs(req.query.verb, req.query.num));
-});
+  app.get('/suggest', (req, res) => {
+    res.setHeader('access-control-allow-origin', '*');
+    res.json(filterVerbs(req.query.verb, req.query.num));
+  });
 
-app.get('/suggestAll', (req, res) => {
-  res.setHeader('access-control-allow-origin', '*');
-  res.json(search);
-});
+  app.get('/suggestAll', (req, res) => {
+    res.setHeader('access-control-allow-origin', '*');
+    res.json(search);
+  });
 
-app.get('/suggestAll_min', (req, res) => {
-  res.setHeader('access-control-allow-origin', '*');
-  res.set('Content-Type', 'text/plain');
-  res.send(searchMin);
-});
+  app.get('/suggestAll_min', (req, res) => {
+    res.setHeader('access-control-allow-origin', '*');
+    res.set('Content-Type', 'text/plain');
+    res.send(searchMin);
+  });
 
-app.get('/SW_LS', (req, res) => {
-  res.setHeader('access-control-allow-origin', '*');
-  res.json(distDir);
-});
+  app.get('/SW_LS', (req, res) => {
+    res.setHeader('access-control-allow-origin', '*');
+    res.json(distDir);
+  });
 
-app.get('/SW_allConj', (req, res) => {
-  res.setHeader('access-control-allow-origin', '*');
-  res.json(verbs);
-});
+  app.get('/SW_allConj', (req, res) => {
+    res.setHeader('access-control-allow-origin', '*');
+    res.json(verbs);
+  });
 
-app.get('/SW_allConj_min', (req, res) => {
-  res.setHeader('access-control-allow-origin', '*');
-  res.set('Content-Type', 'text/plain');
-  res.send(verbsMin);
-});
+  app.get('/SW_allConj_min', (req, res) => {
+    res.setHeader('access-control-allow-origin', '*');
+    res.set('Content-Type', 'text/plain');
+    res.send(verbsMin);
+  });
 
-app.get('*', (req, res) => {
-  res.redirect('/');
-});
-/* Only use if SSL certificate exists 
-httpsOptions = {
-  cert: fs.readFileSync(path.join(__dirname, "../cert.pem")),
-  key: fs.readFileSync(path.join(__dirname, "../privkey.pem"))
+  app.get('*', (req, res) => {
+    res.redirect('/');
+  });
+  return app;
 };
-https.createServer(httpsOptions, app).listen(info.PORT);
-*/
-app.listen(info.PORT);
+const start = (secure = false) => {
+  const getDistDir = () => fs.readdirSync(path.join(__dirname, '..', 'dist'));
+  let server = null;
+  let app = createExpressApp(getDistDir);
+  if (secure) {
+    httpsOptions = {
+      cert: fs.readFileSync(path.join(__dirname, '../cert.pem')),
+      key: fs.readFileSync(path.join(__dirname, '../privkey.pem')),
+    };
+    server = https.createServer(httpsOptions, app);
+  } else {
+    server = http.createServer(app);
+  }
+  server.listen(info.PORT);
+};
+if (!module.parent) start(process.argv.includes('secure') || process.env.NODE_ENV === 'production');
+module.exports = { start };
