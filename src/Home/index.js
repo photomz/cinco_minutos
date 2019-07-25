@@ -84,6 +84,8 @@ const Home = () => {
       setSearchValue(decodeURI(pn.slice(11)));
       fetchResults(pn.slice(11));
     } else if (pn === '/') {
+      setSearchValue('');
+      setIsSearched(false);
       setPlaceholder('¡Vámos!');
     }
     oldLoc = pn;
@@ -167,5 +169,4 @@ const Home = () => {
 Home.propTypes = {
   children: PropTypes.node,
 };
-
 export default Home;

@@ -34,6 +34,33 @@ haber = haber.conjugation;
 const transpose = arr => arr[0].map((col, i) => arr.map(row => row[i]));
 const insertEnd = (arr, add) => arr.map(row => row.map(col => col.split(',')[0] + ' ' + add));
 
+// Copied from string-similarity
+const cS = (first, second) => {
+  first = first.replace(/\s+/g, '');
+  second = second.replace(/\s+/g, '');
+  if (!first.length && !second.length) return 1;
+  if (!first.length || !second.length) return 0;
+  if (first === second) return 1;
+  if (first.length === 1 && second.length === 1) return 0;
+  if (first.length < 2 || second.length < 2) return 0;
+  let firstBigrams = new Map();
+  for (let i = 0; i < first.length - 1; i++) {
+    const bigram = first.substr(i, 2);
+    const count = firstBigrams.has(bigram) ? firstBigrams.get(bigram) + 1 : 1;
+    firstBigrams.set(bigram, count);
+  }
+  let intersectionSize = 0;
+  for (let i = 0; i < second.length - 1; i++) {
+    const bigram = second.substr(i, 2);
+    const count = firstBigrams.has(bigram) ? firstBigrams.get(bigram) : 0;
+    if (count > 0) {
+      firstBigrams.set(bigram, count - 1);
+      intersectionSize++;
+    }
+  }
+  return (2.0 * intersectionSize) / (first.length + second.length - 2);
+};
+
 const conjugate = verb =>
   webScrape.getVerb(verb, verbs, result => {
     if (typeof result === 'undefined' || Object.keys(result).length === 0) return {};
@@ -108,21 +135,52 @@ const translate = (text, fromEs, exact = false) => {
         from: 'es',
         to: 'en',
       }
+    : fromEs === undefined
+    ? { to: 'en' }
     : {
         from: 'en',
         to: 'es',
       };
   return gTrans(text, options).then(res => {
-    if (res.text.toUpperCase() !== text.toUpperCase())
-      return {
+    if (fromEs === undefined) {
+      if (res.from.iso === 'en' || res.from.iso === 'es')
+        return {
+          val: res.text,
+          correctedText: res.from.text.autoCorrected
+            ? he.decode(res.from.text.value).replace(/[\[\]]/g, '')
+            : text,
+          origLang: res.from.iso,
+        };
+      return translate(text, true, false);
+    }
+    if (res.from.didYouMean && (res.from.iso === 'es' || res.from.iso === 'en'))
+      return translate(text, res.from.iso === 'es' ? true : false, true);
+
+    if (!exact) {
+      return translate(text, !fromEs, true).then(otherOpt => {
+        if (cS(otherOpt.val, text) < cS(res.text, text)) {
+          return new Promise(r => r(otherOpt));
+        }
+        return new Promise(r =>
+          r({
+            val: res.text,
+            correctedText: res.from.text.autoCorrected
+              ? he.decode(res.from.text.value).replace(/[\[\]]/g, '')
+              : text,
+            origLang: fromEs ? 'es' : 'en',
+          }),
+        );
+      });
+    }
+    return new Promise(r =>
+      r({
         val: res.text,
         correctedText: res.from.text.autoCorrected
           ? he.decode(res.from.text.value).replace(/[\[\]]/g, '')
           : text,
         origLang: fromEs ? 'es' : 'en',
-      };
-    if (!exact) return translate(text, !fromEs, true);
-    return {};
+      }),
+    );
   });
 };
 const createExpressApp = getDistDir => {

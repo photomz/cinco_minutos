@@ -31,7 +31,7 @@
     "pretest": "yarn run test:eslint",
     "precommit": "lint-staged",
     "start": "sudo NODE_ENV=production node scripts/host.js dev",
-    "build": "rm -r dist; NODE_ENV=production parcel build public/index.html --no-source-maps && cp public/robots.txt dist",
+    "build": "rm dist/*; NODE_ENV=production parcel build public/index.html --no-source-maps && cp public/robots.txt dist",
     "host": "sudo NODE_ENV=production node scripts/host.js"
   },
   "lint-staged": {

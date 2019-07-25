@@ -54,6 +54,7 @@ const hostApp = (dev = false, secure = !dev) => {
   bundler = new Bundler(path.join(__dirname, '..', 'public', 'index.html'), {
     watch: dev,
     sourceMaps: false,
+    publicUrl: '/',
   });
   const getDistDir = () => fs.readdirSync(path.join(__dirname, '..', 'dist'));
   const removeDist = () => {
