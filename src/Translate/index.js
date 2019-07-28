@@ -32,6 +32,7 @@ const Translate = props => {
     }
     if (unfocused) setAction('idle');
     else setAction('loading');
+    console.log(val);
     return new Promise(resolve => {
       oldLoad = setTimeout(
         () =>

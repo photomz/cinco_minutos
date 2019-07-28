@@ -35,6 +35,8 @@ const navContent = [
   { name: 'github', icon: 'github' },
 ];
 const toggleWidth = 250 + 90 * (navContent.filter(el => !!el.route).length + 1);
+const expandedHeight =
+  'calc(54px + ' + (22 / 6) * (navContent.filter(el => !!el.route).length + 1) + 'em)';
 const history = createBrowserHistory();
 const App = () => {
   let [page, setPage] = useState('home');
@@ -54,6 +56,10 @@ const App = () => {
     const handleResize = () => setWidth(window.innerWidth);
     window.addEventListener('resize', handleResize);
   }, [width]);
+  useEffect(
+    () => document.documentElement.style.setProperty('--expanded-height', expandedHeight),
+    [],
+  );
   return (
     <Router>
       <NavBar
