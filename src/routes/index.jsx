@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
-import shortid from 'shortid';
+import nanoid from 'nanoid';
 
 import ROUTES from '../global/routes';
 import NavBarLayout from '../layouts/NavBarLayout';
@@ -12,7 +12,7 @@ const Routes = () => {
       <Switch>
         {normalRoutesMap.map(({ path, component, exact }) => (
           <Route
-            key={shortid.generate()}
+            key={nanoid()}
             exact={!!exact}
             path={path}
             render={() => <NavBarLayout>{component}</NavBarLayout>}

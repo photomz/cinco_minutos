@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, Icon, Segment } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
-import shortid from 'shortid';
+import nanoid from 'nanoid/non-secure';
 
 import ROUTES from '../../global/routes';
 import NavItem from './NavItem';
@@ -50,7 +50,7 @@ const NavBar = ({ onClick, active, expanded, width, toggleWidth }) => {
       <Menu.Menu position="right">
         {navItems.map(elem =>
           elem.route ? (
-            <Link to={elem.route} key={shortid.generate()} aria-label={elem.name}>
+            <Link to={elem.route} key={nanoid()} aria-label={elem.name}>
               <NavItem onClick={onClick} active={active} elem={elem} toggleWidth={toggleWidth} />
             </Link>
           ) : (
@@ -58,7 +58,7 @@ const NavBar = ({ onClick, active, expanded, width, toggleWidth }) => {
               onClick={onClick}
               active={active}
               elem={elem}
-              key={shortid.generate()}
+              key={nanoid()}
               under={!elem.name}
               toggleWidth={toggleWidth}
             />

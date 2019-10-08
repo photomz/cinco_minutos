@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Label, Table, Segment, Icon, Responsive, Header, Accordion } from 'semantic-ui-react';
-import shortid from 'shortid';
+import nanoid from 'nanoid/non-secure';
 
 const MobileAccordion = ({ conjugation, icons }) => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -13,12 +13,12 @@ const MobileAccordion = ({ conjugation, icons }) => {
       {conjugation.map(({ title, headers, body }, i) => {
         //const newHeaders = body.map(rowArr => rowArr[0]); // yo, tu ,... headers
         return (
-          <Segment key={shortid.generate()()}>
+          <Segment key={nanoid()}>
             <Header as="h2" content={title} icon={icons[i]} />
             {headers.map((elem, j) => {
               k++;
               return (
-                <Accordion key={shortid.generate()()} styled style={{ margin: '0 auto' }}>
+                <Accordion key={nanoid()} styled style={{ margin: '0 auto' }}>
                   <Accordion.Title
                     active={activeIndex === k}
                     index={k}
@@ -29,7 +29,7 @@ const MobileAccordion = ({ conjugation, icons }) => {
                     <Table unstackable collapsing textAlign="center" style={{ margin: '0 auto' }}>
                       <Table.Body>
                         {body.map((rowArr, l) => (
-                          <Table.Row key={shortid.generate()()}>
+                          <Table.Row key={nanoid()}>
                             <Table.Cell>{body[l][0]}</Table.Cell>
                             <Table.Cell>{rowArr[j + 1]}</Table.Cell>
                           </Table.Row>
@@ -55,7 +55,7 @@ MobileAccordion.propTypes = {
 const WidescreenTable = ({ conjugation, icons }) => (
   <Responsive minWidth={864}>
     {conjugation.map(({ title, headers, body }, i) => (
-      <Segment key={shortid.generate()()}>
+      <Segment key={nanoid()}>
         <Table celled>
           <Table.Header>
             <Table.Row>
@@ -66,16 +66,16 @@ const WidescreenTable = ({ conjugation, icons }) => (
                 </Label>
               </Table.HeaderCell>
               {headers.map(elem => (
-                <Table.HeaderCell key={shortid.generate()()}>{elem}</Table.HeaderCell>
+                <Table.HeaderCell key={nanoid()}>{elem}</Table.HeaderCell>
               ))}
             </Table.Row>
           </Table.Header>
           <Table.Body>
             {body.map(rowArr => (
-              <Table.Row key={shortid.generate()()}>
+              <Table.Row key={nanoid()}>
                 {rowArr.map(elem => (
                   <Table.Cell
-                    key={shortid.generate()()}
+                    key={nanoid()}
                     style={{ overflowWrap: 'break-word', hyphens: 'auto' }}
                   >
                     {elem}
