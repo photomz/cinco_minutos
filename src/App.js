@@ -10,7 +10,7 @@ import Collections from './pages/Collections';
 import Settings from './pages/Settings';
 import About from './pages/About';
 import Translate from './pages/Translate';
-import ROUTES from './assets/routes.json';
+import ROUTES from './global/routes';
 import { createBrowserHistory } from 'history';
 import './index.css';
 
