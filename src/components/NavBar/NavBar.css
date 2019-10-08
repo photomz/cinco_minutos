@@ -1,7 +1,3 @@
-:root {
-  --expanded-height: 54px;
-}
-
 #navbar {
   overflow: hidden !important;
   height: auto !important;
@@ -14,7 +10,7 @@
   height: 54px !important;
 }
 #navbar.vertical.expanded {
-  height: var(--expanded-height) !important;
+  height: 56px !important;
 }
 #barSegment {
   position: absolute;

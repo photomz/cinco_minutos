@@ -1,49 +1,37 @@
 /* eslint-disable no-console */
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, Icon, Responsive, Sidebar, Segment } from 'semantic-ui-react';
+import { Menu, Icon, Segment } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import shortid from 'shortid';
 
-import './NavBar.css';
+import ROUTES from '../../global/routes';
+import NavItem from './NavItem';
+import { StyledNavBar, BarSegment } from './styled';
 
-const NavItem = ({ elem, onClick, active, under, toggleWidth }) => (
-  <Responsive maxWidth={under ? toggleWidth - 1 : null}>
-    <Menu.Item
-      key={shortid.generate()()}
-      name={elem.name}
-      active={active === elem.name && !!elem.name}
-      onClick={() => onClick(elem.name)}
-      as="div"
-      style={{ paddingRight: '0.7em', paddingLeft: '0.7em' }}
-    >
-      <Icon name={elem.icon} />
-      {elem.name.charAt(0).toUpperCase() + elem.name.slice(1)}
-    </Menu.Item>
-  </Responsive>
-);
+const content = [
+  { name: 'ℭ𝔦𝔫𝔠𝔬𝔐𝔦𝔫𝔲𝔱𝔬𝔰', icon: 'chess' },
+  { name: 'home', icon: 'home', route: ROUTES.Home },
+  { name: 'translate', icon: 'language', route: ROUTES.Translate },
+  { name: 'browse', icon: 'book', route: ROUTES.Browse },
+  { name: 'collections', icon: 'archive', route: ROUTES.Collections },
+  { name: 'settings', icon: 'settings', route: ROUTES.Settings },
+  { name: 'about', icon: 'code', route: ROUTES.About },
+  { name: 'github', icon: 'github' },
+];
 
-NavItem.propTypes = {
-  elem: PropTypes.object,
-  onClick: PropTypes.func,
-  active: PropTypes.any,
-  under: PropTypes.bool,
-  expanded: PropTypes.bool,
-  toggleWidth: PropTypes.number,
-};
-const NavBar = ({ content, onClick, active, expanded, width, toggleWidth }) => {
+const NavBar = ({ onClick, active, expanded, width, toggleWidth }) => {
   const [title, ...navItems] = content;
   return (
-    <Sidebar
-      id="navbar"
+    <StyledNavBar
       as={Menu}
       animation="overlay"
       icon="labeled"
       visible
       direction="top"
       vertical={width < toggleWidth}
-      className={expanded ? 'expanded' : ''}
-      style={width >= toggleWidth && width ? { maxHeight: '73px' } : {}}
+      expanded={expanded}
+      ceilingHeight={width >= toggleWidth && width}
     >
       <Menu.Header
         as="h1"
@@ -55,14 +43,14 @@ const NavBar = ({ content, onClick, active, expanded, width, toggleWidth }) => {
         <Icon name={title.icon} />
         {title.name}
 
-        <Responsive as={Segment} maxWidth={toggleWidth - 1} id="barSegment" onClick={onClick}>
+        <BarSegment as={Segment} maxWidth={toggleWidth - 1} onClick={onClick}>
           <Icon name="bars" />
-        </Responsive>
+        </BarSegment>
       </Menu.Header>
       <Menu.Menu position="right">
         {navItems.map(elem =>
           elem.route ? (
-            <Link to={elem.route} key={shortid.generate()()} aria-label={elem.name}>
+            <Link to={elem.route} key={shortid.generate()} aria-label={elem.name}>
               <NavItem onClick={onClick} active={active} elem={elem} toggleWidth={toggleWidth} />
             </Link>
           ) : (
@@ -70,14 +58,14 @@ const NavBar = ({ content, onClick, active, expanded, width, toggleWidth }) => {
               onClick={onClick}
               active={active}
               elem={elem}
-              key={shortid.generate()()}
+              key={shortid.generate()}
               under={!elem.name}
               toggleWidth={toggleWidth}
             />
           ),
         )}
       </Menu.Menu>
-    </Sidebar>
+    </StyledNavBar>
   );
 };
 
