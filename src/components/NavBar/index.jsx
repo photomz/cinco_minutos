@@ -5,22 +5,10 @@ import { Menu, Icon, Segment } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import nanoid from 'nanoid/non-secure';
 
-import ROUTES from '../../global/routes';
 import NavItem from './NavItem';
 import { StyledNavBar, BarSegment } from './styled';
 
-const content = [
-  { name: 'ℭ𝔦𝔫𝔠𝔬𝔐𝔦𝔫𝔲𝔱𝔬𝔰', icon: 'chess' },
-  { name: 'home', icon: 'home', route: ROUTES.Home },
-  { name: 'translate', icon: 'language', route: ROUTES.Translate },
-  { name: 'browse', icon: 'book', route: ROUTES.Browse },
-  { name: 'collections', icon: 'archive', route: ROUTES.Collections },
-  { name: 'settings', icon: 'settings', route: ROUTES.Settings },
-  { name: 'about', icon: 'code', route: ROUTES.About },
-  { name: 'github', icon: 'github' },
-];
-
-const NavBar = ({ onClick, active, expanded, width, toggleWidth }) => {
+const NavBar = ({ content, onClick, active, expanded, width, toggleWidth }) => {
   const [title, ...navItems] = content;
   return (
     <StyledNavBar

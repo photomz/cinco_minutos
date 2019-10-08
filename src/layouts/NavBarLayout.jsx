@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import NavBar from '../components/NavBar/NavItem';
+import NavBar from '../components/NavBar';
 import ROUTES from '../global/routes';
 
 const navContent = [
@@ -46,6 +46,7 @@ const NavBarLayout = () => {
       expanded={expandedNavBar}
       width={width}
       toggleWidth={toggleWidth}
+      content={navContent}
     />
   );
 };

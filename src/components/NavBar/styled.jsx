@@ -24,4 +24,4 @@ const BarSegment = styled(Responsive)`
   text-align: center;
 `;
 
-export default { StyledNavBar, BarSegment };
+export { StyledNavBar, BarSegment };
