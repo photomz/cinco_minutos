@@ -4,15 +4,15 @@ import { createBrowserHistory } from 'history';
 import PropTypes from 'prop-types';
 import { Header, Button, Grid, Segment } from 'semantic-ui-react';
 
-import SearchBar from './component/SearchBar.js.js';
-import ConjugationTable from './component/ConjugationTable.js.js';
-import OptionLabels from './component/OptionLabels.js.js';
-import ResultSegment from './component/ResultSegment.js.js';
-import filterVerbs from './logic/filterVerbs.js.js';
+import SearchBar from './component/SearchBar';
+import ConjugationTable from './component/ConjugationTable';
+import OptionLabels from './component/OptionLabels';
+import ResultSegment from './component/ResultSegment';
+import filterVerbs from './logic/filterVerbs';
 
 import './index.css';
 const history = createBrowserHistory();
-const info = require('../../globals.json');
+import info from '../../../globals.json';
 const accentButtons = ['´', '¨', '˜'];
 const toggleAccent = [
   { á: 'a', é: 'e', í: 'i', ó: 'o', ú: 'u', a: 'á', e: 'é', i: 'í', o: 'ó', u: 'ú', ü: 'ú' },

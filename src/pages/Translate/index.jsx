@@ -4,10 +4,10 @@ import PropTypes from 'prop-types';
 import { Grid, Button } from 'semantic-ui-react';
 import { checkOffline } from '../../updateSW.js';
 
-import SearchBar from './component/SearchBar.js.js.js';
-import ResultSegment from './component/ResultSegment.js.js.js';
+import SearchBar from './component/SearchBar';
+import ResultSegment from './component/ResultSegment';
 import { createBrowserHistory } from 'history';
-const info = require('../../globals.json');
+import info from '../../../globals.json';
 let oldLoad = setTimeout(() => {}, 0);
 let history = createBrowserHistory();
 const accentButtons = ['´', '¨', '˜'];
