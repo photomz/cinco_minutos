@@ -1,12 +1,10 @@
 /* eslint-disable no-console */
+/* eslint-disable no-useless-escape */
 const express = require('express');
-const bodyParser = require('body-parser');
 const cors = require('cors');
 const info = require('../globals.json');
 const fs = require('fs');
 const path = require('path');
-const http = require('http');
-const https = require('https');
 const he = require('he');
 const compression = require('compression');
 const gTrans = require('@vitalets/google-translate-api');
@@ -183,14 +181,10 @@ const translate = (text, fromEs, exact = false) => {
     );
   });
 };
-const createExpressApp = getDistDir => {
+const createExpressApp = (secure = false) => {
   let app = express();
   app.use(compression());
   app.use(cors());
-  let distDir = getDistDir();
-  fs.watch(path.join(__dirname, '../dist'), () => {
-    distDir = getDistDir();
-  });
   app.get('/', (req, res) => {
     res.send(
       'Cinco Minutos API - access /popularity for most popularly searched verbs, ' +
@@ -244,11 +238,6 @@ const createExpressApp = getDistDir => {
     res.send(searchMin);
   });
 
-  app.get('/SW_LS', (req, res) => {
-    res.setHeader('access-control-allow-origin', '*');
-    res.json(distDir);
-  });
-
   app.get('/SW_allConj', (req, res) => {
     res.setHeader('access-control-allow-origin', '*');
     res.json(verbs);
@@ -263,22 +252,21 @@ const createExpressApp = getDistDir => {
   app.get('*', (req, res) => {
     res.redirect('/');
   });
+  if (secure) {
+    require('https').createServer(
+      {
+        key: path.join(__dirname, '..', 'privkey.pem'),
+        cert: path.join(__dirname, '..', 'cert.pem'),
+      },
+      app,
+    );
+  }
   return app;
 };
 const start = (secure = false) => {
-  const getDistDir = () => fs.readdirSync(path.join(__dirname, '..', 'dist'));
-  let server = null;
-  let app = createExpressApp(getDistDir);
-  if (secure) {
-    httpsOptions = {
-      cert: fs.readFileSync(path.join(__dirname, '../cert.pem')),
-      key: fs.readFileSync(path.join(__dirname, '../privkey.pem')),
-    };
-    server = https.createServer(httpsOptions, app);
-  } else {
-    server = http.createServer(app);
-  }
-  server.listen(info.PORT);
+  let app = createExpressApp(secure);
+  app.listen(info.PORT);
 };
-if (!module.parent) start(process.argv.includes('secure') || process.env.NODE_ENV === 'production');
-module.exports = { start };
+if (!module.parent)
+  start(47226, process.argv.includes('secure') || process.env.NODE_ENV === 'production');
+module.exports = { start, createExpressApp };

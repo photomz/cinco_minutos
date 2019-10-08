@@ -1,5 +1,5 @@
 {
-    "SERVER_URL": "http://localhost:47226",
+    "SERVER_URL": "/api",
     "PORT": 47226,
     "POPULARITY_SCALE": 100
 }

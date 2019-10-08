@@ -23,6 +23,7 @@
     "jest": "^24.8.0",
     "lint-staged": "^8.1.7",
     "parcel-bundler": "^1.12.3",
+    "parcel-plugin-pwa-manifest": "^1.0.2",
     "prettier": "^1.17.1",
     "react-hot-loader": "^4.9.0"
   },
@@ -30,9 +31,9 @@
     "test:eslint": "eslint src/ --ext .js --ext .jsx",
     "pretest": "yarn run test:eslint",
     "precommit": "lint-staged",
-    "start": "sudo NODE_ENV=production node scripts/host.js dev",
+    "start": "node scripts/host.js",
     "build": "rm dist/*; NODE_ENV=production parcel build public/index.html --no-source-maps && cp public/robots.txt dist",
-    "host": "sudo NODE_ENV=production node scripts/host.js"
+    "host": "NODE_ENV=production node scripts/host.js"
   },
   "lint-staged": {
     "*.{js,jsx,scss,css,md}": [
@@ -69,5 +70,9 @@
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
       "\\.(css|less|scss|sass)$": "identity-obj-proxy"
     }
+  },
+  "pwaManifest": {
+    "asJSON": true,
+    "filename": "pwa-precache.json"
   }
 }
