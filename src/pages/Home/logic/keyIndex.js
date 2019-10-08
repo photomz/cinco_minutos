@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-import uuidv1 from 'uuid/v1';
+import shortid from 'shortid';
 
 // eslint-disable-next-line no-unused-vars
 const recurseNests = obj => {

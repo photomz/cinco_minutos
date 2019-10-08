@@ -3,26 +3,16 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import { Segment } from 'semantic-ui-react';
-import NavBar from './NavBar.js';
-import Home from '../Home';
-import Browse from '../Browse';
-import Collections from '../Collections';
-import Settings from '../Settings';
-import About from '../About';
-import Translate from '../Translate';
-import ROUTES from '../static/routes.json';
+import NavBar from './components/NavBar.jsx';
+import Home from './pages/Home';
+import Browse from './pages/Browse';
+import Collections from './pages/Collections';
+import Settings from './pages/Settings';
+import About from './pages/About';
+import Translate from './pages/Translate';
+import ROUTES from './assets/routes.json';
 import { createBrowserHistory } from 'history';
 import './index.css';
-// eslint-disable-next-line react/display-name
-// const PageHoc = (Component, page) => ({ current, ...props }) =>
-//   page === current ? <Component {...props} /> : '';
-// PageHoc.displayName = 'PageContent';
-
-// const HomePage = PageHoc(Home, 'home');
-// const BrowsePage = PageHoc(Browse, 'browse');
-// const CollectionsPage = PageHoc(Collections, 'collections');
-// const SettingsPage = PageHoc(Settings, 'settings');
-// const AboutPage = PageHoc(About, 'about');
 
 const navContent = [
   { name: 'ℭ𝔦𝔫𝔠𝔬𝔐𝔦𝔫𝔲𝔱𝔬𝔰', icon: 'chess' },
