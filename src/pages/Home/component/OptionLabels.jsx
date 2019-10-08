@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Segment, Label, Icon, Image, Popup } from 'semantic-ui-react';
 
-import spanishdictImage from '../../static/spanishdict.png';
-import wordreferenceImage from '../../static/wordreference.png';
+import spanishdictImage from '../../assets/spanishdict.png';
+import wordreferenceImage from '../../assets/wordreference.png';
 
 const menuDefault = {
   as: 'img',

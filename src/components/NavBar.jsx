@@ -3,14 +3,14 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, Icon, Responsive, Sidebar, Segment } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
-import uuidv1 from 'uuid/v1';
+import shortid from 'shortid';
 
 import './NavBar.css';
 
 const NavItem = ({ elem, onClick, active, under, toggleWidth }) => (
   <Responsive maxWidth={under ? toggleWidth - 1 : null}>
     <Menu.Item
-      key={uuidv1()}
+      key={shortid.generate()()}
       name={elem.name}
       active={active === elem.name && !!elem.name}
       onClick={() => onClick(elem.name)}
@@ -62,7 +62,7 @@ const NavBar = ({ content, onClick, active, expanded, width, toggleWidth }) => {
       <Menu.Menu position="right">
         {navItems.map(elem =>
           elem.route ? (
-            <Link to={elem.route} key={uuidv1()} aria-label={elem.name}>
+            <Link to={elem.route} key={shortid.generate()()} aria-label={elem.name}>
               <NavItem onClick={onClick} active={active} elem={elem} toggleWidth={toggleWidth} />
             </Link>
           ) : (
@@ -70,7 +70,7 @@ const NavBar = ({ content, onClick, active, expanded, width, toggleWidth }) => {
               onClick={onClick}
               active={active}
               elem={elem}
-              key={uuidv1()}
+              key={shortid.generate()()}
               under={!elem.name}
               toggleWidth={toggleWidth}
             />

@@ -4,11 +4,11 @@ import { createBrowserHistory } from 'history';
 import PropTypes from 'prop-types';
 import { Header, Button, Grid, Segment } from 'semantic-ui-react';
 
-import SearchBar from './component/SearchBar.js';
-import ConjugationTable from './component/ConjugationTable.js';
-import OptionLabels from './component/OptionLabels.js';
-import ResultSegment from './component/ResultSegment.js';
-import filterVerbs from './logic/filterVerbs.js';
+import SearchBar from './component/SearchBar.js.js';
+import ConjugationTable from './component/ConjugationTable.js.js';
+import OptionLabels from './component/OptionLabels.js.js';
+import ResultSegment from './component/ResultSegment.js.js';
+import filterVerbs from './logic/filterVerbs.js.js';
 
 import './index.css';
 const history = createBrowserHistory();
