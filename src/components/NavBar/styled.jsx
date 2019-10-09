@@ -1,27 +1,33 @@
+import React from 'react';
 import styled from 'styled-components';
-import { Sidebar, Responsive } from 'semantic-ui-react';
-
-const StyledNavBar = styled(Sidebar)`
-  overflow: hidden !important;
-  height: auto !important;
+import { Segment, Menu } from 'semantic-ui-react';
+const StyledNavBar = styled(Menu)`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  min-height: 60px !important;
   transition: height 400ms ease-in-out;
-  & + * {
-    margin-top: 75px;
+  &:after {
+    display: none !important;
   }
-  ${({ vertical, expanded }) => vertical && `height: ${expanded ? 56 : 54}px !important;`}
-  ${({ ceilingHeight }) => ceilingHeight && `maxHeight: 73px;`}
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
 `;
 
-const BarSegment = styled(Responsive)`
-  position: absolute;
-  top: -0.6em;
-  right: 0.5em;
-  height: calc(52px - 1em);
-  width: 4em;
-  padding-top: 0.1em;
-  padding-right: 0.6em;
-  margin-top: 14px;
-  text-align: center;
+const BarSegment = styled(Segment)`
+  height: 4vh;
+  max-height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+// eslint-disable-next-line
+const NavBarItemMenu = styled(({ toggleWidth, expanded, ...props }) => <Menu {...props} />)`
+  @media only screen and (max-width: ${({ toggleWidth }) => toggleWidth - 1}px) {
+    height: ${({ expanded, children }) => (expanded ? children.length * 48 : 0)}px;
+  }
 `;
 
-export { StyledNavBar, BarSegment };
+export { StyledNavBar, BarSegment, NavBarItemMenu };
