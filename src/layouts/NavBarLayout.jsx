@@ -19,15 +19,20 @@ const NavBarLayout = () => {
   const onNavBarClick = name => {
     if (name === 'github') {
       window.open(ROUTES.GitHub);
-    } else if (name === 'toggleNavBar') {
-      setExpansionNavBar(!expandedNavBar);
     } else {
       setPage(name);
       setExpansionNavBar(false);
     }
   };
+  const onToggleNavBar = () => setExpansionNavBar(!expandedNavBar);
   return (
-    <NavBar onClick={onNavBarClick} active={page} expanded={expandedNavBar} content={navContent} />
+    <NavBar
+      onNavClick={onNavBarClick}
+      onToggle={onToggleNavBar}
+      active={page}
+      expanded={expandedNavBar}
+      content={navContent}
+    />
   );
 };
 

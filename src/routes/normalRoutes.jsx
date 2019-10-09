@@ -19,13 +19,13 @@ import Translate from '../pages/Translate';
 // ];
 
 const normalRoutesMap = [
-  { path: ROUTES.Home, component: <Home />, exact: true },
-  { path: ROUTES.Conjugate, component: <Home /> },
-  { path: ROUTES.Translate, component: <Translate /> },
-  { path: ROUTES.Browse, component: <Browse /> },
-  { path: ROUTES.Collections, component: <Collections /> },
-  { path: ROUTES.Settings, component: <Settings /> },
-  { path: ROUTES.About, component: <About /> },
+  { path: ROUTES.Home, component: Home, exact: true },
+  { path: ROUTES.Conjugate, component: Home },
+  { path: ROUTES.Translate, component: Translate },
+  { path: ROUTES.Browse, component: Browse },
+  { path: ROUTES.Collections, component: Collections },
+  { path: ROUTES.Settings, component: Settings },
+  { path: ROUTES.About, component: About },
 ];
 
 export default normalRoutesMap;

@@ -9,14 +9,10 @@ import normalRoutesMap from './normalRoutes';
 const Routes = () => {
   return (
     <Router>
+      <NavBarLayout />
       <Switch>
         {normalRoutesMap.map(({ path, component, exact }) => (
-          <Route
-            key={nanoid()}
-            exact={!!exact}
-            path={path}
-            render={() => <NavBarLayout>{component}</NavBarLayout>}
-          />
+          <Route key={nanoid()} exact={!!exact} path={path} component={component} />
         ))}
         <Route path="/github" render={() => <Redirect to={ROUTES.GitHub} />} />
         <Route path="*" render={() => <Redirect to="/" />} />

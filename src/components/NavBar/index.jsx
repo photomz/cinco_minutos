@@ -5,36 +5,48 @@ import { Menu, Icon, Responsive } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import nanoid from 'nanoid/non-secure';
 
-import NavItem from './NavItem';
-import { StyledNavBar, BarSegment, NavBarItemMenu } from './styled';
+import { StyledNavBar, StyledNavItem, BarSegment, NavBarItemMenu } from './styled';
 
-const NavBar = ({ content, onClick, active, expanded }) => {
+const NavBar = ({ content, onNavClick, active, expanded, onToggle }) => {
   const [title, ...navItems] = content;
   return (
-    <StyledNavBar>
+    <StyledNavBar toggleWidth={768}>
       <Menu.Header
         as="h1"
         style={{
           textAlign: 'left',
           margin: 0,
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+          width: '100%',
+          padding: '0.2em',
         }}
       >
-        <Icon name={title.icon} />
-        {title.name}
+        <div>
+          <Icon name={title.icon} />
+          {title.name}
+        </div>
+        <Responsive maxWidth={767}>
+          <BarSegment onClick={onToggle}>
+            <Icon name="bars" style={{ margin: 0 }} />
+          </BarSegment>
+        </Responsive>
       </Menu.Header>
-      <Responsive maxWidth={767}>
-        <BarSegment onClick={onClick}>
-          <Icon name="bars" style={{ margin: 0 }} />
-        </BarSegment>
-      </Responsive>
-      <NavBarItemMenu style={{ height: '100%' }} toggleWidth={768} expanded={expanded}>
+      <NavBarItemMenu expanded={expanded} toggleWidth={768}>
         {navItems.map(elem =>
           elem.route ? (
             <Link to={elem.route} key={nanoid()} aria-label={elem.name}>
-              <NavItem onClick={onClick} active={active} elem={elem} />
+              <StyledNavItem toggleWidth={768} onClick={onNavClick} active={active} elem={elem} />
             </Link>
           ) : (
-            <NavItem onClick={onClick} active={active} elem={elem} key={nanoid()} />
+            <StyledNavItem
+              toggleWidth={768}
+              onClick={onNavClick}
+              active={active}
+              elem={elem}
+              key={nanoid()}
+            />
           ),
         )}
       </NavBarItemMenu>
@@ -43,7 +55,7 @@ const NavBar = ({ content, onClick, active, expanded }) => {
 };
 
 NavBar.propTypes = {
-  onClick: PropTypes.func,
+  onNavClick: PropTypes.func,
   active: PropTypes.any,
   content: PropTypes.array.isRequired,
   width: PropTypes.number,
