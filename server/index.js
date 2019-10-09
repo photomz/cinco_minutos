@@ -9,19 +9,15 @@ const he = require('he');
 const compression = require('compression');
 const gTrans = require('@vitalets/google-translate-api');
 
-const verbs = require('./static/verbs.json');
-// eslint-disable-next-line
+// .json files are standard, .json.min files are JSON minified with a UTF16 compression algorithm
+const verbs = require('./static/verbs.json'); // All known verbs that have been pre-scraped for extra speed
 const verbsMin = fs.readFileSync(path.join(__dirname, './static/verbs.json.min')).toString();
-//const fullSearch = require('./static/fullSearch.json');
-const headers = require('./static/headers.json');
-const webScrape = require('./webScrape');
-const search = require('./static/quickSearch.json');
-// eslint-disable-next-line
+const headers = require('./static/headers.json'); // Needed to nice-ify the JSON
+const webScrape = require('./webScrape'); // Live web scraping! Yay!
+const search = require('./static/quickSearch.json'); // Quick search the verbs for search drop-down suggestions
 const searchMin = fs.readFileSync(path.join(__dirname, './static/quickSearch.json.min')).toString();
 const searchKeys = Object.keys(search);
-// eslint-disable-next-line
-let popularity = require('./static/popularity.json');
-// eslint-disable-next-line
+let popularity = require('./static/popularity.json'); // Popularity stats for verbs
 const popularityMin = fs
   .readFileSync(path.join(__dirname, './static/popularity.json.min'))
   .toString();
@@ -33,6 +29,7 @@ const transpose = arr => arr[0].map((col, i) => arr.map(row => row[i]));
 const insertEnd = (arr, add) => arr.map(row => row.map(col => col.split(',')[0] + ' ' + add));
 
 // Copied from string-similarity
+// Ignore rest of function - used to see how close two strings are
 const cS = (first, second) => {
   first = first.replace(/\s+/g, '');
   second = second.replace(/\s+/g, '');
@@ -59,11 +56,16 @@ const cS = (first, second) => {
   return (2.0 * intersectionSize) / (first.length + second.length - 2);
 };
 
+// Conjugates a verb
 const conjugate = verb =>
   webScrape.getVerb(verb, verbs, result => {
+    // Above line searches first in the verbs object for the verb, and if it doesnt find it it webscrapes from SD
+    // Next line is escape hatch if web scraping failed, i.e. verb doesn't exist
     if (typeof result === 'undefined' || Object.keys(result).length === 0) return {};
+    // We increase the popularity of the verb for better suggestions
     increasePopularity(verb);
 
+    // 101arrowz: I don't really understand the rest of this part (photomz wrote it)
     const conj = result.conjugation;
     const fullConj = [
       ...conj.slice(0, 3), // Indicative, Subjunctive, Imperative
@@ -81,19 +83,26 @@ const conjugate = verb =>
         { title: 'Present Participle', body: fullConj[6], columns: [] },
         { title: 'Past Participle', body: fullConj[7], columns: [] },
       ]); // add back
-    //console.log('formatted - ', formatted);
+
+    // Verb metadata and conjugation returned to caller
     return {
       ...result,
       conjugation: formatted,
     };
   });
+
+// This can be used in Array.sort to sort by popularity when we return suggestions to client-side
 const sorter = (v1, v2) =>
   (popularity[v2] ? popularity[v2] : 0) - (popularity[v1] ? popularity[v1] : 0);
+
+// Filter verbs (for suggestions)
 const filterVerbs = (value, len) => {
   const startsWith = new RegExp('^' + value, 'i'); // match not case sensitive
   const contains = new RegExp(value, 'i');
 
+  // Direct match first
   let results = searchKeys.includes(value) ? [value] : [];
+  // Fairly self explanatory
   results = results.concat(searchKeys.filter(verb => startsWith.test(verb)));
   results.sort(sorter);
   let extraResults = [];
@@ -101,8 +110,10 @@ const filterVerbs = (value, len) => {
     extraResults = searchKeys.filter(verb => contains.test(verb));
     extraResults.sort(sorter);
   }
-  results = [...new Set(results.concat(extraResults))]; // Remove duplicates
+  results = [...new Set(results.concat(extraResults))]; // Remove duplicates with Set
   let blankResults = [];
+
+  // Some verbs actually don't have a definition, so we unconditionally put those at the end
   results = results.filter(val => {
     if (search[val] === '') {
       blankResults.push(val);
@@ -111,15 +122,19 @@ const filterVerbs = (value, len) => {
       return true;
     }
   });
+
+  // Concat just in case there's actually room for the blank results
   results = results.concat(blankResults).slice(0, len);
   results = results.map(verb => ({ title: verb, description: search[verb] }));
   return results;
 };
+
+// Increases the popularity of a verb with persistence
 const increasePopularity = verb => {
+  // Popularity scale because we already have a lot of data from the web, so how much do we value our actual user input?
   if (!popularity[verb]) popularity[verb] = info.POPULARITY_SCALE;
   else popularity[verb] += info.POPULARITY_SCALE;
   fs.writeFile(
-    // eslint-disable-next-line
     path.join(__dirname, './static/popularity.json'),
     JSON.stringify(popularity),
     err => {
@@ -127,7 +142,13 @@ const increasePopularity = verb => {
     },
   );
 };
+
+// Google Translate live translation API
+// VERY weird
 const translate = (text, fromEs, exact = false) => {
+  // Self explanatory options mostly - if no fromEs is provided, then translate
+  // from ANY language to english - we will force it to be one of spanish or english later
+  // This allows GT to automatically pick the best language
   const options = fromEs
     ? {
         from: 'es',
@@ -139,23 +160,33 @@ const translate = (text, fromEs, exact = false) => {
         from: 'en',
         to: 'es',
       };
+  // It's against TOS to call this function but Google doesn't rate limit that much *shrugs*
+  // It returns data in a weird format (this API is for the chrome extension), so we need
+  // `he` to decode the HTML entities. Then we remove brackets that it puts around data.
   return gTrans(text, options).then(res => {
+    // If we allowed Google to pick the from language...
     if (fromEs === undefined) {
+      // Verify it's one of the desired languages
       if (res.from.iso === 'en' || res.from.iso === 'es')
         return {
           val: res.text,
           correctedText: res.from.text.autoCorrected
-            ? he.decode(res.from.text.value).replace(/[\[\]]/g, '')
+            ? he.decode(res.from.text.value).replace(/[\[\]]/g, '') // Google translate API returns brackets around mistyped letters, must remove them
             : text,
           origLang: res.from.iso,
         };
+      // If it's NOT one of the desired languages, try spanish first with exact = false (can fallback to english)
       return translate(text, true, false);
     }
+    // If google actually suggested we used the other one, then translate from the other one with exact = true (will not fallback)
     if (res.from.didYouMean && (res.from.iso === 'es' || res.from.iso === 'en'))
       return translate(text, res.from.iso === 'es' ? true : false, true);
 
+    // If falling back to other language is okay, try the other possibility with exact = true
     if (!exact) {
       return translate(text, !fromEs, true).then(otherOpt => {
+        // Compare strings to the original - sometimes, Google gets it wrong and it's literally identical
+        // Whichever one is better is sent
         if (cS(otherOpt.val, text) < cS(res.text, text)) {
           return new Promise(r => r(otherOpt));
         }
@@ -163,13 +194,14 @@ const translate = (text, fromEs, exact = false) => {
           r({
             val: res.text,
             correctedText: res.from.text.autoCorrected
-              ? he.decode(res.from.text.value).replace(/[\[\]]/g, '')
+              ? he.decode(res.from.text.value).replace(/[\[\]]/g, '') // Again, getting rid of brackets from API
               : text,
             origLang: fromEs ? 'es' : 'en',
           }),
         );
       });
     }
+    // If it is exact, don't check the other option, go directly
     return new Promise(r =>
       r({
         val: res.text,
@@ -181,10 +213,13 @@ const translate = (text, fromEs, exact = false) => {
     );
   });
 };
+
+// Creates an express app with all server routes.
+// Mostly self-explanatory if you go to the variable/method it's calling
 const createExpressApp = (secure = false) => {
   let app = express();
-  app.use(compression());
-  app.use(cors());
+  app.use(compression()); // GZIP/deflate to make stuff smaller
+  app.use(cors()); // CORS allows any domain to call it - not strictly necessary, but let's be nice :)
   app.get('/', (req, res) => {
     res.send(
       'Cinco Minutos API - access /popularity for most popularly searched verbs, ' +
@@ -208,7 +243,9 @@ const createExpressApp = (secure = false) => {
       res.json({});
       return;
     }
-    translate(req.query.text).then(v => res.json(v));
+    translate(req.query.text)
+      .then(v => res.json(v))
+      .catch(() => res.status(500).json({}));
   });
 
   app.get('/popularity', (req, res) => {

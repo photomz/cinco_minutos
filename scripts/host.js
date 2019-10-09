@@ -16,5 +16,5 @@ let bundler = new Bundler(path.resolve(__dirname, '..', 'public', 'index.html'),
 });
 const port = require('../globals.json').HOST_PORT || 8080;
 app.use(bundler.middleware());
-bundler.on('buildEnd', () => console.log(`Starting server on port ${port}`));
+bundler.on('buildEnd', () => console.log(`Starting server at http://localhost:${port}`));
 app.listen(port);
