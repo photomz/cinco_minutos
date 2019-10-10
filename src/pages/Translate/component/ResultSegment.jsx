@@ -38,6 +38,6 @@ const ResultSegment = ({ action, content, ...props }) => {
 ResultSegment.propTypes = {
   children: PropTypes.node,
   action: PropTypes.string,
-  content: PropTypes.string,
+  content: PropTypes.object,
 };
 export default ResultSegment;

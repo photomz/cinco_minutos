@@ -18,7 +18,8 @@ const NavItem = ({ elem, onClick, active, ...props }) => (
 );
 
 NavItem.propTypes = {
-  elem: PropTypes.object,
+  name: PropTypes.string,
+  icon: PropTypes.string,
   onClick: PropTypes.func,
   active: PropTypes.any,
   under: PropTypes.bool,
