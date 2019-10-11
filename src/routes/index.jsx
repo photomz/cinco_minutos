@@ -3,13 +3,13 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-d
 import nanoid from 'nanoid';
 
 import ROUTES from '../global/routes';
-import NavBarLayout from '../layouts/NavBarLayout';
 import normalRoutesMap from './normalRoutes';
+import NavBar from '../components/NavBar';
 
 const Routes = () => {
   return (
     <Router>
-      <NavBarLayout />
+      <NavBar />
       <Switch>
         {normalRoutesMap.map(({ path, component, exact }) => (
           <Route key={nanoid()} exact={!!exact} path={path} component={component} />
