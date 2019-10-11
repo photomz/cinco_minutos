@@ -5,7 +5,8 @@ import { Menu, Icon, Responsive } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import nanoid from 'nanoid/non-secure';
 
-import { StyledNavBar, StyledNavItem, BarSegment, Title, NavBarItemMenu } from './styled';
+import { StyledNavBar, BarSegment, Title, NavBarItemMenu, StyledIcon } from './styled';
+import NavItem from './NavItem';
 import data from './data';
 const { title, github, navLinks } = data;
 
@@ -20,30 +21,26 @@ const NavBar = withRouter(({ location: { pathname } }) => {
         </div>
         <Responsive maxWidth={767}>
           <BarSegment onClick={() => setIsExpanded(prev => !prev)}>
-            <Icon name="bars" style={{ margin: 0 }} />
+            <StyledIcon name="bars" style={{ margin: 0 }} />
           </BarSegment>
         </Responsive>
       </Menu.Header>
       <NavBarItemMenu length={[github, ...navLinks].length} expanded={isExpanded} toggleWidth={768}>
         {navLinks.map(({ name, route, icon }) => (
           <Link to={route} key={nanoid()} aria-label={name}>
-            <StyledNavItem
-              onClick={() => setIsExpanded(false)}
-              active={pathname === route}
-              icon={icon}
-            >
+            <NavItem onClick={() => setIsExpanded(false)} active={pathname === route} icon={icon}>
               {name}
-            </StyledNavItem>
+            </NavItem>
           </Link>
         ))}
         <Link to="#">
-          <StyledNavItem
+          <NavItem
             active={location.pathname === github.route}
             icon={github.icon}
             onClick={() => window.open(github.route)}
           >
             {github.name}
-          </StyledNavItem>
+          </NavItem>
         </Link>
       </NavBarItemMenu>
     </StyledNavBar>

@@ -1,15 +1,14 @@
 import React from 'react';
-import { Menu, Icon } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
-import { NavHeader } from './styled';
+import { NavHeader, StyledMenuItem, StyledIcon } from './styled';
 
 const toTitleCase = str => str.charAt(0).toUpperCase() + str.slice(1);
 
 const NavItem = ({ children, icon, active, ...props }) => (
-  <Menu.Item name={children} active={active} as="div" {...props}>
+  <StyledMenuItem name={children} active={active} as="div" {...props}>
     <NavHeader>{toTitleCase(children)}</NavHeader>
-    <Icon name={icon} size="large" style={{ margin: 0 }} />
-  </Menu.Item>
+    <StyledIcon name={icon} size="large" style={{ margin: 0 }} />
+  </StyledMenuItem>
 );
 
 NavItem.propTypes = {

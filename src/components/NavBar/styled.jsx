@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Segment, Menu } from 'semantic-ui-react';
-import NavItem from './NavItem';
+import { Segment, Menu, Icon } from 'semantic-ui-react';
+
 // eslint-disable-next-line
 export const StyledNavBar = styled(({ toggleWidth, ...props }) => <Menu {...props} />)`
   display: flex;
@@ -24,14 +24,14 @@ export const StyledNavBar = styled(({ toggleWidth, ...props }) => <Menu {...prop
 `;
 
 // eslint-disable-next-line
-export const StyledNavItem = styled(({ toggleWidth, ...props }) => <NavItem {...props} />)`
+export const StyledMenuItem = styled(({ toggleWidth, ...props }) => <Menu.Item {...props} />)`
   padding: 0 0.5em !important;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100%;
-  @media only screen and (max-width: ${({ toggleWidth }) => toggleWidth - 1}px) {
+  @media only screen and (max-width: 767px) {
     height: 3vh;
     min-height: 60px;
   }
@@ -78,6 +78,12 @@ export const Title = styled.h1`
 `;
 
 export const NavHeader = styled.span`
+  color: #222;
   font-size: 1.25em;
   padding-bottom: 0.4em;
+`;
+
+export const StyledIcon = styled(Icon)`
+  color: #222;
+  margin: 0;
 `;
