@@ -1,20 +1,21 @@
 import React from 'react';
 import { Menu, Icon } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
+import { NavHeader } from './styled';
 
-const NavItem = ({ name, icon, onClick, active, ...props }) => (
-  <Menu.Item name={name} active={active} onClick={() => onClick(name)} as="div" {...props}>
-    <span style={{ fontSize: '1.25em', paddingBottom: '0.4em' }}>
-      {name.charAt(0).toUpperCase() + name.slice(1)}
-    </span>
+const toTitleCase = str => str.charAt(0).toUpperCase() + str.slice(1);
+
+const NavItem = ({ children, icon, active, ...props }) => (
+  <Menu.Item name={children} active={active} as="div" {...props}>
+    <NavHeader>{toTitleCase(children)}</NavHeader>
     <Icon name={icon} size="large" style={{ margin: 0 }} />
   </Menu.Item>
 );
 
 NavItem.propTypes = {
-  name: PropTypes.string,
+  children: PropTypes.string,
   icon: PropTypes.string,
-  onClick: PropTypes.func,
+  setIsExpanded: PropTypes.func,
   active: PropTypes.any,
   under: PropTypes.bool,
 };

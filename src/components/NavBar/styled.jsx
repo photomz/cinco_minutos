@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Segment, Menu } from 'semantic-ui-react';
 import NavItem from './NavItem';
 // eslint-disable-next-line
-const StyledNavBar = styled(({ toggleWidth, ...props }) => <Menu {...props} />)`
+export const StyledNavBar = styled(({ toggleWidth, ...props }) => <Menu {...props} />)`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -24,7 +24,7 @@ const StyledNavBar = styled(({ toggleWidth, ...props }) => <Menu {...props} />)`
 `;
 
 // eslint-disable-next-line
-const StyledNavItem = styled(({ toggleWidth, ...props }) => <NavItem {...props} />)`
+export const StyledNavItem = styled(({ toggleWidth, ...props }) => <NavItem {...props} />)`
   padding: 0 0.5em !important;
   display: flex;
   flex-direction: column;
@@ -37,7 +37,7 @@ const StyledNavItem = styled(({ toggleWidth, ...props }) => <NavItem {...props} 
   }
 `;
 
-const BarSegment = styled(Segment)`
+export const BarSegment = styled(Segment)`
   height: 4vh;
   max-height: 48px;
   padding-top: 0 !important;
@@ -47,7 +47,9 @@ const BarSegment = styled(Segment)`
   align-items: center;
 `;
 // eslint-disable-next-line
-const NavBarItemMenu = styled(({ toggleWidth, expanded, length, ...props }) => <Menu {...props} />)`
+export const NavBarItemMenu = styled(({ toggleWidth, expanded, length, ...props }) => (
+  <Menu {...props} />
+))`
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -65,7 +67,7 @@ const NavBarItemMenu = styled(({ toggleWidth, expanded, length, ...props }) => <
   }
 `;
 
-const HeaderOne = styled.h1`
+export const Title = styled.h1`
   text-align: left;
   margin: 0;
   display: flex;
@@ -75,4 +77,7 @@ const HeaderOne = styled.h1`
   padding: 0.2em;
 `;
 
-export { StyledNavBar, BarSegment, NavBarItemMenu, StyledNavItem, HeaderOne };
+export const NavHeader = styled.span`
+  font-size: 1.25em;
+  padding-bottom: 0.4em;
+`;
