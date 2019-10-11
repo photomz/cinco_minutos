@@ -2,8 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import nanoid from 'nanoid';
 
-import ROUTES from '../global/routes';
-import normalRoutesMap from './normalRoutes';
+import data from './data';
 import NavBar from '../components/NavBar';
 
 const Routes = () => {
@@ -11,10 +10,9 @@ const Routes = () => {
     <Router>
       <NavBar />
       <Switch>
-        {normalRoutesMap.map(({ path, component, exact }) => (
+        {data.map(({ path, component, exact }) => (
           <Route key={nanoid()} exact={!!exact} path={path} component={component} />
         ))}
-        <Route path="/github" render={() => <Redirect to={ROUTES.GitHub} />} />
         <Route path="*" render={() => <Redirect to="/" />} />
       </Switch>
     </Router>

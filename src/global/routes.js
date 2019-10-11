@@ -7,5 +7,5 @@ export default {
   Settings: '/settings',
   About: '/about',
   Conjugate: '/conjugate',
-  GitHub: 'https://github.com/photomz/cinco_minutos',
+  GitHub: '/github',
 };

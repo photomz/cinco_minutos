@@ -37,7 +37,9 @@ const NavBar = withRouter(({ location: { pathname } }) => {
           <NavItem
             active={location.pathname === github.route}
             icon={github.icon}
-            onClick={() => window.open(github.route)}
+            onClick={() => {
+              window.location = github.route;
+            }}
           >
             {github.name}
           </NavItem>
