@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 import lzString from 'lz-string';
-import info from '../../../../globals.json';
+import info from '../../globals.json';
 let popularity = {};
 let searchObj = {};
 let searchKeys = Object.keys(searchObj);

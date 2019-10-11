@@ -5,11 +5,11 @@ import PropTypes from 'prop-types';
 import { Header, Button, Grid, Segment } from 'semantic-ui-react';
 import { Redirect } from 'react-router-dom';
 
-import SearchBar from './component/SearchBar';
-import ConjugationTable from './component/ConjugationTable';
-import OptionLabels from './component/OptionLabels';
-import ResultSegment from './component/ResultSegment';
-import filterVerbs from './logic/filterVerbs';
+import SearchBar from '../../components/SearchBar';
+import ConjugationTable from '../../components/ConjugationTable';
+import OptionLabels from '../../components/OptionLabels';
+import ResultSegment from '../../components/ResultSegment';
+import filterVerbs from '../../helper/filterVerbs';
 
 import './index.css';
 const history = createBrowserHistory();
@@ -68,10 +68,10 @@ const Home = () => {
     setAction('loading');
     setPlaceholder('Loading...');
     fetchResults(encodeURI(value));
-    if (!noHistoryUpdate) {
-      history.push('/conjugate/' + value);
-      ignoreURL = '/conjugate/' + value;
-    }
+    // if (!noHistoryUpdate) {
+    //   history.push('/conjugate/' + value);
+    //   ignoreURL = '/conjugate/' + value;
+    // }
     setSearchValue(value);
   };
   const checkPath = (location, action) => {
