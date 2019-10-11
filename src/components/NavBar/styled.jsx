@@ -47,7 +47,7 @@ const BarSegment = styled(Segment)`
   align-items: center;
 `;
 // eslint-disable-next-line
-const NavBarItemMenu = styled(({ toggleWidth, expanded, ...props }) => <Menu {...props} />)`
+const NavBarItemMenu = styled(({ toggleWidth, expanded, length, ...props }) => <Menu {...props} />)`
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -59,8 +59,8 @@ const NavBarItemMenu = styled(({ toggleWidth, expanded, ...props }) => <Menu {..
     justify-content: space-around;
     overflow: hidden;
     width: 100%;
-    min-height: ${({ children, expanded }) => (expanded ? children.length * 60 : 0)}px !important;
-    height: ${({ children, expanded }) => (expanded ? children.length * 3 : 0)}vh;
+    min-height: ${({ length, expanded }) => (expanded ? length * 60 : 0)}px !important;
+    height: ${({ length, expanded }) => (expanded ? length * 3 : 0)}vh;
     border: none !important;
   }
 `;

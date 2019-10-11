@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 const NavItem = ({ elem, onClick, active, ...props }) => (
   <Menu.Item
     name={elem.name}
-    active={active === elem.name && !!elem.name}
+    active={active}
     onClick={() => onClick(elem.name)}
     as="div"
     {...props}

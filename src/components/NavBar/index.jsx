@@ -1,14 +1,30 @@
 /* eslint-disable no-console */
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, withRouter, Redirect } from 'react-router-dom';
 import { Menu, Icon, Responsive } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import nanoid from 'nanoid/non-secure';
 
+import ROUTES from '../../global/routes';
 import { StyledNavBar, StyledNavItem, BarSegment, NavBarItemMenu } from './styled';
 
-const NavBar = ({ content, onNavClick, active, expanded, onToggle }) => {
-  const [title, ...navItems] = content;
+const navContent = [
+  { name: 'ℭ𝔦𝔫𝔠𝔬𝔐𝔦𝔫𝔲𝔱𝔬𝔰', icon: 'chess' },
+  { name: 'github', icon: 'github', route: ROUTES.GitHub },
+  { name: 'home', icon: 'home', route: ROUTES.Home },
+  { name: 'translate', icon: 'language', route: ROUTES.Translate },
+  { name: 'browse', icon: 'book', route: ROUTES.Browse },
+  { name: 'collections', icon: 'archive', route: ROUTES.Collections },
+  { name: 'settings', icon: 'settings', route: ROUTES.Settings },
+  { name: 'about', icon: 'code', route: ROUTES.About },
+];
+
+const NavBar = withRouter(({ location: { pathname } }) => {
+  const [title, github, ...navItems] = navContent;
+  const [isExpanded, setIsExpanded] = useState(false);
+  console.log(ROUTES);
+  const onNavClick = () => setIsExpanded(false);
+  const onToggle = () => setIsExpanded(prev => !prev);
   return (
     <StyledNavBar toggleWidth={768}>
       <Menu.Header
@@ -33,34 +49,30 @@ const NavBar = ({ content, onNavClick, active, expanded, onToggle }) => {
           </BarSegment>
         </Responsive>
       </Menu.Header>
-      <NavBarItemMenu expanded={expanded} toggleWidth={768}>
-        {navItems.map(elem =>
-          elem.route ? (
-            <Link to={elem.route} key={nanoid()} aria-label={elem.name}>
-              <StyledNavItem toggleWidth={768} onClick={onNavClick} active={active} elem={elem} />
-            </Link>
-          ) : (
+      <NavBarItemMenu length={[github, ...navItems].length} expanded={isExpanded} toggleWidth={768}>
+        {navItems.map(elem => (
+          <Link to={elem.route} key={nanoid()} aria-label={elem.name}>
             <StyledNavItem
               toggleWidth={768}
               onClick={onNavClick}
-              active={active}
+              active={pathname === elem.route}
               elem={elem}
-              key={nanoid()}
             />
-          ),
-        )}
+          </Link>
+        ))}
+        <StyledNavItem
+          toggleWidth={768}
+          active={location.pathname === github.route}
+          elem={github}
+          onClick={() => window.open(github.route)}
+        />
       </NavBarItemMenu>
     </StyledNavBar>
   );
-};
+});
 
 NavBar.propTypes = {
-  onNavClick: PropTypes.func,
-  active: PropTypes.any,
-  content: PropTypes.array.isRequired,
-  width: PropTypes.number,
-  expanded: PropTypes.bool,
-  toggleWidth: PropTypes.number,
+  location: PropTypes.object,
 };
 
 export default NavBar;
