@@ -9,7 +9,7 @@ import GitHub from '../pages/GitHub';
 
 export default [
   { path: ROUTES.Home, component: Home, exact: true },
-  { path: ROUTES.Conjugate, component: Home },
+  { path: ROUTES.Conjugate + '/:slug', component: Home },
   { path: ROUTES.Translate, component: Translate },
   { path: ROUTES.Browse, component: Browse },
   { path: ROUTES.Collections, component: Collections },

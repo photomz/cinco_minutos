@@ -1,14 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import nanoid from 'nanoid';
+import PropTypes from 'prop-types';
 
 import data from './data';
-import NavBar from '../components/NavBar';
 
-const Routes = () => {
+const Routes = ({ children }) => {
   return (
     <Router>
-      <NavBar />
+      {children}
       <Switch>
         {data.map(({ path, component, exact }) => (
           <Route key={nanoid()} exact={!!exact} path={path} component={component} />
@@ -17,6 +17,10 @@ const Routes = () => {
       </Switch>
     </Router>
   );
+};
+
+Routes.propTypes = {
+  children: PropTypes.node,
 };
 
 export default Routes;

@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { createBrowserHistory } from 'history';
 import PropTypes from 'prop-types';
 import { Header, Button, Grid, Segment } from 'semantic-ui-react';
+import { Redirect } from 'react-router-dom';
 
 import SearchBar from './component/SearchBar';
 import ConjugationTable from './component/ConjugationTable';
@@ -34,11 +35,12 @@ const Home = () => {
   let [conjResults, setConjResults] = useState({});
   let [isSearched, setIsSearched] = useState(false);
   let [placeholder, setPlaceholder] = useState('¡Vámos!');
+  let [redirect, setRedirect] = useState(null);
   // action === idle || loading || verbCheck || addingCollection
   let [action, setAction] = useState('idle');
   const handleFilterResults = value => filterVerbs(value, 5);
   const fetchResults = value => {
-    fetch(info.SERVER_URL + '/conjugate?verb=' + value, {
+    fetch(`${info.SERVER_URL}/conjugate?verb=${value}`, {
       headers: {
         verb: value,
         'Content-Type': 'application/json',
@@ -53,10 +55,6 @@ const Home = () => {
           setConjResults({ verb: value });
           setPlaceholder('Invalid verb "' + value + '"!');
         }
-        document.title =
-          value.charAt(0).toUpperCase() +
-          value.slice(1).toLowerCase() +
-          ' Conjugation | CincoMinutos';
         setIsSearched(Boolean(Object.entries(val).length)); // force to bool
         setAction('idle');
       })
