@@ -1,12 +1,12 @@
 /* eslint-disable no-console */
 import React, { useState, useEffect } from 'react';
-import { Link, withRouter, Redirect } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import { Menu, Icon, Responsive } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 import nanoid from 'nanoid/non-secure';
 
 import ROUTES from '../../global/routes';
-import { StyledNavBar, StyledNavItem, BarSegment, NavBarItemMenu } from './styled';
+import { StyledNavBar, StyledNavItem, BarSegment, HeaderOne, NavBarItemMenu } from './styled';
 
 const navContent = [
   { name: 'ℭ𝔦𝔫𝔠𝔬𝔐𝔦𝔫𝔲𝔱𝔬𝔰', icon: 'chess' },
@@ -27,18 +27,7 @@ const NavBar = withRouter(({ location: { pathname } }) => {
   const onToggle = () => setIsExpanded(prev => !prev);
   return (
     <StyledNavBar toggleWidth={768}>
-      <Menu.Header
-        as="h1"
-        style={{
-          textAlign: 'left',
-          margin: 0,
-          display: 'flex',
-          flexDirection: 'row',
-          justifyContent: 'space-between',
-          width: '100%',
-          padding: '0.2em',
-        }}
-      >
+      <Menu.Header as={HeaderOne}>
         <div>
           <Icon name={title.icon} />
           {title.name}
@@ -50,20 +39,22 @@ const NavBar = withRouter(({ location: { pathname } }) => {
         </Responsive>
       </Menu.Header>
       <NavBarItemMenu length={[github, ...navItems].length} expanded={isExpanded} toggleWidth={768}>
-        {navItems.map(elem => (
-          <Link to={elem.route} key={nanoid()} aria-label={elem.name}>
+        {navItems.map(({ name, route, icon }) => (
+          <Link to={route} key={nanoid()} aria-label={name}>
             <StyledNavItem
               toggleWidth={768}
               onClick={onNavClick}
-              active={pathname === elem.route}
-              elem={elem}
+              name={name}
+              active={pathname === route}
+              icon={icon}
             />
           </Link>
         ))}
         <StyledNavItem
           toggleWidth={768}
           active={location.pathname === github.route}
-          elem={github}
+          name={github.name}
+          icon={github.icon}
           onClick={() => window.open(github.route)}
         />
       </NavBarItemMenu>

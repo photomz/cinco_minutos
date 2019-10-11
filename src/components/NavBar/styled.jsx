@@ -65,4 +65,14 @@ const NavBarItemMenu = styled(({ toggleWidth, expanded, length, ...props }) => <
   }
 `;
 
-export { StyledNavBar, BarSegment, NavBarItemMenu, StyledNavItem };
+const HeaderOne = styled.h1`
+  text-align: left;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.2em;
+`;
+
+export { StyledNavBar, BarSegment, NavBarItemMenu, StyledNavItem, HeaderOne };
