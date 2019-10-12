@@ -4,20 +4,16 @@ import PropTypes from 'prop-types';
 import { Grid, Button } from 'semantic-ui-react';
 import { checkOffline } from '../../updateSW.js';
 
-import SearchBar from './component/SearchBar';
+import InputBar from './component/InputBar';
 import ResultSegment from './component/ResultSegment';
+import AccentButtons from '../../components/AccentButtons';
 import { createBrowserHistory } from 'history';
 import info from '../../../globals.json';
 let oldLoad = setTimeout(() => {}, 0);
 let history = createBrowserHistory();
-const accentButtons = ['´', '¨', '˜'];
-const toggleAccent = [
-  { á: 'a', é: 'e', í: 'i', ó: 'o', ú: 'u', a: 'á', e: 'é', i: 'í', o: 'ó', u: 'ú', ü: 'ú' },
-  { ü: 'u', u: 'ü', ú: 'ü' },
-  { ñ: 'n', n: 'ñ' },
-];
+
 let oldLoc = null;
-const Translate = props => {
+const Translate = () => {
   let [offline, setOffline] = useState(false);
   let [searchValue, setSearchValue] = useState('');
   let [content, setContent] = useState({});
@@ -65,36 +61,21 @@ const Translate = props => {
   };
   useEffect(() => checkPath(window.location), []);
   useEffect(history.listen(checkPath), []);
-  const handleAccentClick = (e, accent) => {
-    const cChar = searchValue.slice(-1);
-    const nChar = toggleAccent[accentButtons.indexOf(accent)][cChar];
-    //eslint-disable-next-line
-    if (nChar) {
-      setSearchValue(searchValue.slice(0, -1) + nChar);
-      document.querySelector('#translateSearchInput').focus();
-    }
-  };
+
   return (
     <Grid textAlign="center" style={{ marginTop: '15vh' }}>
       <Grid.Row>
         <Grid.Column>
-          <SearchBar
+          <InputBar
             onSearch={onSearch}
             offline={offline}
             value={searchValue}
             setValue={setSearchValue}
-            id="translateSearchInput"
           />
         </Grid.Column>
       </Grid.Row>
       <Grid.Row>
-        <Button.Group basic size="mini" style={{ margin: '0 auto' }}>
-          {accentButtons.map(elem => (
-            <Button key={elem} onClick={e => handleAccentClick(e, elem)}>
-              {elem}
-            </Button>
-          ))}
-        </Button.Group>
+        <AccentButtons searchValue={searchValue} setSearchValue={setSearchValue} />
       </Grid.Row>
       <Grid.Row>
         <ResultSegment content={content} action={action} />

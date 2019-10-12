@@ -7,7 +7,7 @@ import { Input, Popup } from 'semantic-ui-react';
 let prevTimeoutCall = setTimeout(() => null, 0);
 let timePassed = 0;
 let prevTime = performance.now();
-const SearchBar = ({ onSearch, value, setValue, offline, ...props }) => {
+const InputBar = ({ onSearch, value, setValue, offline, ...props }) => {
   let [_isLoading, _setIsLoading] = useState(false);
   const _handleSearchChange = (e, { value }) => {
     setValue(value);
@@ -55,7 +55,7 @@ const SearchBar = ({ onSearch, value, setValue, offline, ...props }) => {
   );
 };
 
-SearchBar.propTypes = {
+InputBar.propTypes = {
   children: PropTypes.node,
   buttons: PropTypes.array,
   onSearchClick: PropTypes.func,
@@ -63,4 +63,4 @@ SearchBar.propTypes = {
   setValue: PropTypes.func,
   inputRef: PropTypes.any,
 };
-export default SearchBar;
+export default InputBar;

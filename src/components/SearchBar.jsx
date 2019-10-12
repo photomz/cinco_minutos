@@ -9,9 +9,9 @@ let cached = false;
 let timePassed = 0;
 // eslint-disable-next-line no-unused-vars
 const SearchBar = forwardRef(
-  ({ onFilterResults, onSearchClick, value, setValue, ...props }, ref) => {
+  ({ onFilterResults, onSearchClick, value, setValue, showResults, ...props }, ref) => {
     let [_isLoading, _setIsLoading] = useState(false);
-    let [_results, _setResults] = useState([]);
+    let [_results, _setResults] = useState(showResults ? [] : null);
 
     const _handleResultSelect = (e, { result }) => {
       setValue(result.title);
@@ -22,10 +22,9 @@ const SearchBar = forwardRef(
     };
     const _handleSearchChange = (e, { value }) => {
       setValue(value);
-      //console.log('value - ', value);
+      if (!showResults) return _setResults(null);
       if (value.length < 1) return _setResults([]);
       _setIsLoading(true);
-      //console.log('value in timeout - ', value);
       if (!cached) {
         clearTimeout(prevTimeoutCall);
         timePassed = performance.now() - prevTime;
@@ -77,16 +76,18 @@ const SearchBar = forwardRef(
 );
 
 SearchBar.displayName = 'SearchBar';
-
 SearchBar.propTypes = {
   children: PropTypes.node,
   buttons: PropTypes.array,
   onFilterResults: PropTypes.func,
   onSearchClick: PropTypes.func,
-  _results: PropTypes.array,
-  _setResults: PropTypes.func,
   value: PropTypes.string,
   setValue: PropTypes.func,
   inputRef: PropTypes.any,
+  showResults: PropTypes.bool,
 };
+SearchBar.defaultProps = {
+  showResults: true,
+};
+
 export default SearchBar;
