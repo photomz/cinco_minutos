@@ -1,85 +1,68 @@
 /* eslint-disable no-console */
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { Grid, Button } from 'semantic-ui-react';
+import { useParams } from 'react-router-dom';
+import { Grid } from 'semantic-ui-react';
 import { checkOffline } from '../../updateSW.js';
 
 import InputBar from './component/InputBar';
 import ResultSegment from './component/ResultSegment';
 import AccentButtons from '../../components/AccentButtons';
-import { createBrowserHistory } from 'history';
 import info from '../../../globals.json';
-let oldLoad = setTimeout(() => {}, 0);
-let history = createBrowserHistory();
 
-let oldLoc = null;
 const Translate = () => {
+  const { slug } = useParams();
+
   let [offline, setOffline] = useState(false);
-  let [searchValue, setSearchValue] = useState('');
-  let [content, setContent] = useState({});
-  let [action, setAction] = useState('hidden');
-  checkOffline().then(val => setOffline(val));
+  let [searchValue, setSearchValue] = useState(slug ? slug : '');
+  let [result, setResult] = useState({});
+  let [isSearched, setIsSearched] = useState(false);
+  // idle || loading || invalid
+  let [action, setAction] = useState('idle');
+
+  console.log(action);
+
   const onSearch = (val, unfocused) => {
-    clearTimeout(oldLoad);
-    if (content.val && val.toLowerCase() === content.val.toLowerCase()) return;
+    if (result.val && val.toLowerCase() === result.val.toLowerCase()) return;
     if (val.length === 0) {
-      setAction('hidden');
+      setAction('idle');
+      setIsSearched(false);
       return Promise.resolve(null);
     }
-    if (unfocused) setAction('idle');
-    else setAction('loading');
+    if (unfocused) {
+      setAction('idle');
+      setIsSearched(true);
+    } else setAction('loading');
     console.log(val);
-    return new Promise(resolve => {
-      oldLoad = setTimeout(
-        () =>
-          resolve(
-            fetch(info.SERVER_URL + '/translate?text=' + encodeURIComponent(val))
-              .then(res => res.json())
-              .then(res => {
-                const valid = !!Object.keys(res).length;
-                res['origPhrase'] = val;
-                setContent(res);
-                if (unfocused) {
-                  setSearchValue(res.correctedText);
-                  history.push('/translate/' + encodeURI(res.correctedText));
-                }
-                if (valid) setAction('idle');
-                else setAction('invalid');
-              }),
-          ),
-        unfocused ? 0 : 500,
-      );
-    });
+    return fetch(info.SERVER_URL + '/translate?text=' + encodeURIComponent(val))
+      .then(res => res.json())
+      .then(res => {
+        setResult({ ...res, origPhrase: val });
+        if (unfocused) {
+          setSearchValue(res.correctedText);
+        }
+        if (Object.keys(res).length) {
+          setAction('idle');
+          setIsSearched(true);
+        } else setAction('invalid');
+      });
   };
-  const checkPath = location => {
-    if (location === oldLoc) return;
-    let desiredPart = location.pathname.split('/')[2] || '';
-    desiredPart = decodeURI(desiredPart);
-    setSearchValue(desiredPart);
-    onSearch(desiredPart);
-    oldLoc = location;
-  };
-  useEffect(() => checkPath(window.location), []);
-  useEffect(history.listen(checkPath), []);
 
+  useEffect(() => checkOffline().then(val => setOffline(val)), []);
   return (
     <Grid textAlign="center" style={{ marginTop: '15vh' }}>
       <Grid.Row>
-        <Grid.Column>
-          <InputBar
-            onSearch={onSearch}
-            offline={offline}
-            value={searchValue}
-            setValue={setSearchValue}
-          />
-        </Grid.Column>
+        <InputBar
+          onSearch={onSearch}
+          offline={offline}
+          value={searchValue}
+          setValue={setSearchValue}
+        />
       </Grid.Row>
       <Grid.Row>
         <AccentButtons searchValue={searchValue} setSearchValue={setSearchValue} />
       </Grid.Row>
-      <Grid.Row>
-        <ResultSegment content={content} action={action} />
-      </Grid.Row>
+      <Grid.Row>{isSearched && <ResultSegment content={result} action={action} />}</Grid.Row>
     </Grid>
   );
 };

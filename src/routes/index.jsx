@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
-import nanoid from 'nanoid/non-secure';
 import PropTypes from 'prop-types';
 
 import data from './data';
@@ -10,8 +9,8 @@ const Routes = ({ children }) => {
     <Router>
       {children}
       <Switch>
-        {data.map(({ path, component, exact }) => (
-          <Route key={nanoid()} exact={!!exact} path={path} component={component} />
+        {data.map(({ key, ...propsMap }) => (
+          <Route key={key} {...propsMap} />
         ))}
         <Route path="*" render={() => <Redirect to="/" />} />
       </Switch>

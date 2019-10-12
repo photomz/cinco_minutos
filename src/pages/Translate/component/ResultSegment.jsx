@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { Segment, Grid, Header } from 'semantic-ui-react';
 
 const ResultSegment = ({ action, content, ...props }) => (
-  <Segment style={action === 'hidden' ? { display: 'none' } : { maxWidth: '90vw' }} {...props}>
+  <Segment style={{ maxWidth: '90vw' }} {...props}>
     <Grid celled="internally" columns={2}>
       <Grid.Row textAlign="center">
         <Grid.Column>
