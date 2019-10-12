@@ -6,7 +6,7 @@ import { Header, Button, Grid, Segment } from 'semantic-ui-react';
 import { Redirect } from 'react-router-dom';
 
 import SearchBar from '../../components/SearchBar';
-import ConjugationTable from '../../components/ConjugationTable';
+import ConjugationContainer from '../../components/ConjugationContainer';
 import OptionLabels from '../../components/OptionLabels';
 import ResultSegment from '../../components/ResultSegment';
 import filterVerbs from '../../helper/filterVerbs';
@@ -152,7 +152,7 @@ const Home = () => {
       {isSearched && (
         <Grid.Row>
           <Grid.Column style={{ maxWidth: '80vw' }}>
-            <ConjugationTable
+            <ConjugationContainer
               raised
               icons={icons}
               conjugation={conjResults.conjugation.slice(0, 6)}
