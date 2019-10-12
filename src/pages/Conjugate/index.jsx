@@ -9,14 +9,9 @@ import ConjugationContainer from '../../components/ConjugationContainer';
 import OptionLabels from '../../components/OptionLabels';
 import ResultSegment from '../../components/ResultSegment';
 import filterVerbs from '../../helper/filterVerbs';
+import AccentButtons from '../../components/AccentButtons';
 
 import info from '../../../globals.json';
-const accentButtons = ['´', '¨', '˜'];
-const toggleAccent = [
-  { á: 'a', é: 'e', í: 'i', ó: 'o', ú: 'u', a: 'á', e: 'é', i: 'í', o: 'ó', u: 'ú', ü: 'ú' },
-  { ü: 'u', u: 'ü', ú: 'ü' },
-  { ñ: 'n', n: 'ñ' },
-];
 
 const Conjugate = () => {
   const { slug } = useParams();
@@ -34,14 +29,6 @@ const Conjugate = () => {
     if (value === verb) return;
     setSearchValue(value);
     setAction('redirect');
-  };
-
-  const handleAccentClick = (e, accent) => {
-    const cChar = searchValue.slice(-1);
-    const nChar = toggleAccent[accentButtons.indexOf(accent)][cChar];
-    if (nChar) {
-      setSearchValue(prev => prev.slice(0, -1) + nChar);
-    }
   };
 
   useEffect(() => {
@@ -91,13 +78,7 @@ const Conjugate = () => {
             autoFocus
           />
           <br />
-          <Button.Group basic size="mini" style={{ margin: '0 auto' }}>
-            {accentButtons.map(elem => (
-              <Button key={elem} onClick={e => handleAccentClick(e, elem)}>
-                {elem}
-              </Button>
-            ))}
-          </Button.Group>
+          <AccentButtons searchValue={searchValue} setSearchValue={setSearchValue} />
         </Grid.Column>
       </Grid.Row>
       <Grid.Row>
