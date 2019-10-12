@@ -1,5 +1,6 @@
 import ROUTES from '../global/routes';
 import Home from '../pages/Home';
+import Conjugate from '../pages/Conjugate';
 import Browse from '../pages/Browse';
 import Collections from '../pages/Collections';
 import Settings from '../pages/Settings';
@@ -9,7 +10,7 @@ import GitHub from '../pages/GitHub';
 
 export default [
   { path: ROUTES.Home, component: Home, exact: true },
-  { path: ROUTES.Conjugate + '/:slug', component: Home },
+  { path: ROUTES.Conjugate + '/:slug', component: Conjugate },
   { path: ROUTES.Translate, component: Translate },
   { path: ROUTES.Browse, component: Browse },
   { path: ROUTES.Collections, component: Collections },
