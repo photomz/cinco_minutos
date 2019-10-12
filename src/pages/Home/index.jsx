@@ -20,14 +20,7 @@ const toggleAccent = [
   { ü: 'u', u: 'ü', ú: 'ü' },
   { ñ: 'n', n: 'ñ' },
 ];
-const icons = [
-  'chess rook',
-  'chess knight',
-  'chess king',
-  'chess bishop',
-  'chess queen',
-  'chess pawn',
-];
+
 let oldLoc = null;
 let ignoreURL = null;
 const Home = () => {
@@ -152,11 +145,7 @@ const Home = () => {
       {isSearched && (
         <Grid.Row>
           <Grid.Column style={{ maxWidth: '80vw' }}>
-            <ConjugationContainer
-              raised
-              icons={icons}
-              conjugation={conjResults.conjugation.slice(0, 6)}
-            />
+            <ConjugationContainer raised conjugation={conjResults.conjugation.slice(0, 6)} />
           </Grid.Column>
         </Grid.Row>
       )}

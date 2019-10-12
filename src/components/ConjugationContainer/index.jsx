@@ -3,8 +3,9 @@ import PropTypes from 'prop-types';
 import MobileConjugationContainer from './MobileConjugationContainer';
 import WidescreenConjugationContainer from './WidescreenConjugationContainer';
 import { Segment } from 'semantic-ui-react';
+import { icons } from './data.json';
 
-const ConjugationContainer = ({ conjugation, icons, ...props }) => (
+const ConjugationContainer = ({ conjugation, ...props }) => (
   <Segment.Group {...props}>
     <MobileConjugationContainer conjugation={conjugation} icons={icons} />
     <WidescreenConjugationContainer conjugation={conjugation} icons={icons} />
