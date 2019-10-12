@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { createBrowserHistory } from 'history';
 import PropTypes from 'prop-types';
 import { Header, Button, Grid, Segment } from 'semantic-ui-react';
@@ -12,7 +12,6 @@ import ResultSegment from '../../components/ResultSegment';
 import filterVerbs from '../../helper/filterVerbs';
 
 import './index.css';
-const history = createBrowserHistory();
 import info from '../../../globals.json';
 const accentButtons = ['´', '¨', '˜'];
 const toggleAccent = [
@@ -21,8 +20,6 @@ const toggleAccent = [
   { ñ: 'n', n: 'ñ' },
 ];
 
-let oldLoc = null;
-let ignoreURL = null;
 const Home = () => {
   let [searchValue, setSearchValue] = useState('');
   let [conjResults, setConjResults] = useState({});
@@ -53,7 +50,7 @@ const Home = () => {
       })
       .catch(err => console.log(err));
   };
-  const handleSearchClick = (value, noHistoryUpdate) => {
+  const handleSearchClick = value => {
     value = decodeURI(value);
     value = value.toLowerCase();
     if (value === conjResults.verb) return;
@@ -61,35 +58,13 @@ const Home = () => {
     setAction('loading');
     setPlaceholder('Loading...');
     fetchResults(encodeURI(value));
-    // if (!noHistoryUpdate) {
-    //   history.push('/conjugate/' + value);
-    //   ignoreURL = '/conjugate/' + value;
-    // }
     setSearchValue(value);
   };
-  const checkPath = (location, action) => {
-    let pn = location.pathname;
-    if (action === 'POP') ignoreURL = null;
-    if (oldLoc === pn || ignoreURL === pn) return;
-    if (pn.slice(1, 10) === 'conjugate') {
-      setSearchValue(decodeURI(pn.slice(11)));
-      fetchResults(pn.slice(11));
-    } else if (pn === '/') {
-      setSearchValue('');
-      setIsSearched(false);
-      setPlaceholder('¡Vámos!');
-    }
-    oldLoc = pn;
-  };
-  useEffect(() => checkPath(window.location), []);
-  useEffect(history.listen(checkPath), []);
   const handleAccentClick = (e, accent) => {
     const cChar = searchValue.slice(-1);
     const nChar = toggleAccent[accentButtons.indexOf(accent)][cChar];
-    //eslint-disable-next-line
     if (nChar) {
-      setSearchValue(searchValue.slice(0, -1) + nChar);
-      document.querySelector('#homeSearchInput').focus();
+      setSearchValue(prev => prev.slice(0, -1) + nChar);
     }
   };
   return (
@@ -108,7 +83,7 @@ const Home = () => {
             value={searchValue}
             setValue={setSearchValue}
             aria-label="search"
-            id="homeSearchInput"
+            autoFocus
           />
           <br />
           <Button.Group basic size="mini" style={{ margin: '0 auto' }}>
@@ -127,7 +102,7 @@ const Home = () => {
               action={action}
               setAction={setAction}
               verb={conjResults.verb}
-              buttonsDisabled={!isSearched}
+              disabled={!isSearched}
               id="labelColumn"
             />
             <ResultSegment
