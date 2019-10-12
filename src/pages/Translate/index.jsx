@@ -49,6 +49,9 @@ const Translate = () => {
   };
 
   useEffect(() => checkOffline().then(val => setOffline(val)), []);
+  useEffect(() => {
+    if (slug) onSearch(slug, true);
+  }, []);
   return (
     <Grid textAlign="center" style={{ marginTop: '15vh' }}>
       <Grid.Row>
