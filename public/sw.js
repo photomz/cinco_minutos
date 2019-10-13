@@ -150,7 +150,7 @@ const prepareForOffline = () =>
         .open(CURR_CACHE)
         .then(cache => {
           vals;
-          cache.addAll(vals.filter(el => el !== 'sw.js').map(el => '/' + el));
+          cache.addAll(vals.filter(el => el !== '/sw.js'));
           return cache;
         })
         .then(cache => {
@@ -198,11 +198,11 @@ self.addEventListener('fetch', e => {
   e.respondWith(
     caches.match(e.request).then(res => {
       return !res
-        ? url.origin === info.SERVER_URL
+        ? url.pathname.startsWith(info.SERVER_URL)
           ? fetch(e.request).then(
               res => res,
               () =>
-                url.pathname === '/conjugate'
+                url.pathname === info.SERVER_URL + '/conjugate'
                   ? conjugate(url.searchParams.get('verb'))
                   : new Response(),
             )

@@ -48,7 +48,9 @@ const Translate = () => {
       });
   };
 
-  useEffect(() => checkOffline().then(val => setOffline(val)), []);
+  useEffect(() => {
+    checkOffline().then(val => setOffline(val));
+  }, []);
   useEffect(() => {
     if (slug) onSearch(slug, true);
   }, []);

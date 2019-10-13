@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { Grid, Segment } from 'semantic-ui-react';
-import { Redirect, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 import SearchBar from '../../components/SearchBar';
 import ConjugationContainer from '../../components/ConjugationContainer';
@@ -13,13 +13,13 @@ import AccentButtons from '../../components/AccentButtons';
 
 import info from '../../../globals.json';
 
-const Conjugate = () => {
+const Conjugate = ({ history }) => {
   const { slug } = useParams();
   let [searchValue, setSearchValue] = useState(slug ? slug : '');
   let [{ verb, definition, conjugation }, setConjResults] = useState({});
   let [isSearched, setIsSearched] = useState(false);
   let [placeholder, setPlaceholder] = useState('¡Vámos!');
-  // action === idle || loading || verbCheck || addingCollection || redirect
+  // action === idle || loading || verbCheck || addingCollection
   let [action, setAction] = useState('loading');
 
   const handleFilterResults = value => filterVerbs(value, 5);
@@ -28,16 +28,19 @@ const Conjugate = () => {
     value = decodeURI(value).toLowerCase();
     if (value === verb) return;
     setSearchValue(value);
-    setAction('redirect');
+    history.push(`/conjugate/${value}`);
   };
 
   useEffect(() => {
-    // Prevent memory leak by aborting fetch when component unmounts
-    const abortController = new AbortController();
-    const { signal } = abortController;
-
+    setAction('loading');
+    setIsSearched(false);
+    let timedOut = false;
+    const timeoutVal = setTimeout(() => {
+      timedOut = true;
+      setIsSearched(false);
+      setPlaceholder("Couldn't get verb conjugation! Please try again later.");
+    }, 10000);
     fetch(`${info.SERVER_URL}/conjugate?verb=${slug}`, {
-      signal,
       headers: {
         verb: slug,
         'Content-Type': 'application/json',
@@ -46,7 +49,9 @@ const Conjugate = () => {
     })
       .then(res => res.json())
       .then(res => {
-        const decodedSlug = decodeURI(slug);
+        if (timedOut) return;
+        clearTimeout(timeoutVal);
+        const decodedSlug = decodeURIComponent(slug);
         if (Object.entries(res).length) setConjResults(res);
         else {
           setConjResults({ verb: decodedSlug });
@@ -56,15 +61,13 @@ const Conjugate = () => {
         setAction('idle');
       })
       .catch(err => console.log(err));
-
-    return () => abortController.abort();
+    return () => {
+      timedOut = true;
+      clearTimeout(timeoutVal);
+    };
   }, [slug]);
 
-  return action === 'verbCheck' ? (
-    <Redirect to={`/verbCheck/${verb}`} />
-  ) : action === 'redirect' ? (
-    <Redirect to={`/conjugate/${searchValue}`} />
-  ) : (
+  return (
     <Grid textAlign="center">
       <Grid.Row>
         <Grid.Column style={{ maxWidth: 450 }}>
@@ -115,5 +118,6 @@ const Conjugate = () => {
 
 Conjugate.propTypes = {
   children: PropTypes.node,
+  history: PropTypes.object,
 };
 export default Conjugate;

@@ -14,7 +14,7 @@ let bundler = new Bundler(path.resolve(__dirname, '..', 'public', 'index.html'),
   detailedReport: prod,
   watch: !prod,
 });
-const port = require('../globals.json').HOST_PORT || 8080;
+const port = require('../globals.json').HOST_PORT || 1234;
 app.use(bundler.middleware());
 bundler.on('buildEnd', () => console.log(`Starting server at http://localhost:${port}`));
 app.listen(port);

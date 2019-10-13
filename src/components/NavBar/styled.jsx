@@ -55,7 +55,7 @@ export const NavBarItemMenu = styled(({ toggleWidth, expanded, length, ...props 
   justify-content: flex-end;
   height: 100%;
   @media only screen and (max-width: ${({ toggleWidth }) => toggleWidth - 1}px) {
-    transition: all 400ms ease-in-out;
+    transition: all 400ms;
     display: block;
     flex-direction: column;
     justify-content: space-around;

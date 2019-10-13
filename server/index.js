@@ -290,7 +290,7 @@ const createExpressApp = (secure = false) => {
     res.redirect('/');
   });
   if (secure) {
-    require('https').createServer(
+    app = require('https').createServer(
       {
         key: path.join(__dirname, '..', 'privkey.pem'),
         cert: path.join(__dirname, '..', 'cert.pem'),

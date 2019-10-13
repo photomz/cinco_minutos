@@ -57,9 +57,7 @@ const SearchBar = forwardRef(
     };
     return (
       <Search
-        ref={node => {
-          ref = node;
-        }}
+        ref={ref}
         size="large"
         loading={_isLoading}
         onResultSelect={_handleResultSelect}
