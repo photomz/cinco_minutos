@@ -2,21 +2,26 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Header, Grid } from 'semantic-ui-react';
+import { Redirect } from 'react-router-dom';
 
 import SearchBar from '../../components/SearchBar';
 import AccentButtons from '../../components/AccentButtons';
 import filterVerbs from '../../helper/filterVerbs';
-const Home = ({ history }) => {
+
+const Home = () => {
   let [searchValue, setSearchValue] = useState('');
+  let [redirect, setRedirect] = useState(false);
 
   const handleFilterResults = value => filterVerbs(value, 5);
 
   const handleSearchClick = value => {
     setSearchValue(value);
-    history.push(`/conjugate/${value}`);
+    setRedirect(true);
   };
 
-  return (
+  return redirect ? (
+    <Redirect to={`/conjugate/${searchValue}`} />
+  ) : (
     <Grid textAlign="center">
       <Grid.Row>
         <Grid.Column style={{ maxWidth: 450 }}>
@@ -44,6 +49,5 @@ const Home = ({ history }) => {
 
 Home.propTypes = {
   children: PropTypes.node,
-  history: PropTypes.object,
 };
 export default Home;
