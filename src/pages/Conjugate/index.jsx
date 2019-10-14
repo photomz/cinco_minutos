@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { Grid, Segment } from 'semantic-ui-react';
-import { Redirect, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 import SearchBar from '../../components/SearchBar';
 import ConjugationContainer from '../../components/ConjugationContainer';
@@ -13,14 +13,13 @@ import AccentButtons from '../../components/AccentButtons';
 
 import info from '../../../globals.json';
 
-const Conjugate = () => {
+const Conjugate = ({ history }) => {
   const { slug } = useParams();
   let [searchValue, setSearchValue] = useState(slug ? slug : '');
   let [{ verb, definition, conjugation }, setConjResults] = useState({});
   let [isSearched, setIsSearched] = useState(false);
   let [placeholder, setPlaceholder] = useState('¡Vámos!');
-  // action === idle || loading || verbCheck || addingCollection || redirect
-  // React router explicitly does not re-render component during <Redirect/> if route matches same component
+  // action === idle || loading || verbCheck || addingCollection
   let [action, setAction] = useState('loading');
 
   const handleFilterResults = value => filterVerbs(value, 5);
@@ -29,13 +28,14 @@ const Conjugate = () => {
     value = decodeURI(value).toLowerCase();
     if (value === verb) return;
     setSearchValue(value);
-    setAction('redirect');
+    history.push(`/conjugate/${value}`);
   };
 
   useEffect(() => {
     // Prevent memory leak by aborting fetch when component unmounts
     const abortController = new AbortController();
     const { signal } = abortController;
+    setIsSearched(false);
     setTimeout(() => {
       abortController.abort();
       setPlaceholder(`Couldn't get conjugation of ${slug}! Please try again later.`);
@@ -64,11 +64,7 @@ const Conjugate = () => {
     return () => abortController.abort();
   }, [slug]);
 
-  return action === 'verbCheck' ? (
-    <Redirect to={`/verbCheck/${verb}`} />
-  ) : action === 'redirect' ? (
-    <Redirect to={`/conjugate/${searchValue}`} />
-  ) : (
+  return (
     <Grid textAlign="center">
       <Grid.Row>
         <Grid.Column style={{ maxWidth: 450 }}>
@@ -119,5 +115,6 @@ const Conjugate = () => {
 
 Conjugate.propTypes = {
   children: PropTypes.node,
+  history: PropTypes.object,
 };
 export default Conjugate;
