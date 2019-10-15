@@ -96,11 +96,6 @@ const LZString = (function() {
     };
   return i;
 })();
-'function' == typeof define && define.amd
-  ? define(function() {
-      return LZString;
-    })
-  : 'undefined' != typeof module && null != module && (module.exports = LZString);
 const info = require('../globals.json');
 const CURR_CACHE = 'v1';
 const headers = [
@@ -143,7 +138,7 @@ self.addEventListener('install', e => {
   e.waitUntil(prepareForOffline());
 });
 const prepareForOffline = () =>
-  fetch(info.SERVER_URL + '/SW_LS', {
+  fetch('/pwa-precache.json', {
     headers: {
       'Content-Type': 'application/json',
       Accept: 'application/json',
@@ -155,7 +150,7 @@ const prepareForOffline = () =>
         .open(CURR_CACHE)
         .then(cache => {
           vals;
-          cache.addAll(vals.filter(el => el !== 'sw.js').map(el => '/' + el));
+          cache.addAll(vals.filter(el => el !== '/sw.js'));
           return cache;
         })
         .then(cache => {
@@ -203,11 +198,11 @@ self.addEventListener('fetch', e => {
   e.respondWith(
     caches.match(e.request).then(res => {
       return !res
-        ? url.origin === info.SERVER_URL
+        ? url.pathname.startsWith(info.SERVER_URL)
           ? fetch(e.request).then(
               res => res,
               () =>
-                url.pathname === '/conjugate'
+                url.pathname === info.SERVER_URL + '/conjugate'
                   ? conjugate(url.searchParams.get('verb'))
                   : new Response(),
             )

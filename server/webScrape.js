@@ -68,7 +68,7 @@ const getVerb = (verb, cachedList = {}, callback = val => val) => {
   // TODO: add WordReference support
   if (cachedList[verb]) return new Promise(r => r(cachedList[verb])).then(callback);
   return getVerbSD(verb)
-    .then(r => cachedList[r.verb] || r)
+    .then(r => (r && cachedList[r.verb]) || r) // Yes, we want this over a ternary
     .then(callback);
 };
 const getAllVerbs = () => {
