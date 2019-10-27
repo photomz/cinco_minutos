@@ -1,13 +1,14 @@
 import ROUTES from '../global/routes';
 import nanoid from 'nanoid/non-secure';
-import Landing from '../pages/Landing';
-import Conjugate from '../pages/Conjugate';
-import Browse from '../pages/Browse';
-import Collections from '../pages/Collections';
-import Settings from '../pages/Settings';
-import About from '../pages/About';
-import Translate from '../pages/Translate';
-import GitHub from '../pages/GitHub';
+
+import Landing from '../pages/landing';
+import Conjugate from '../pages/conjugate';
+import Browse from '../pages/browse';
+import Collections from '../pages/collections';
+import Settings from '../pages/settings';
+import About from '../pages/about';
+import Translate from '../pages/translate';
+import GitHub from '../pages/github';
 
 export default [
   { path: ROUTES.Landing, component: Landing, exact: true, key: nanoid() },

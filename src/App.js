@@ -5,7 +5,7 @@ import _ from 'lodash';
 
 import ROUTES from './global/routes';
 import Routes from './routes';
-import NavBar from './components/Layout/NavBar';
+import { NavBar } from './components/Layout';
 import toTitleCase from './helper/toTitleCase';
 
 const invertedRoutes = _.invert(ROUTES); // Match component name by route pathname
