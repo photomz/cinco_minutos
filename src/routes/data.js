@@ -1,6 +1,6 @@
 import ROUTES from '../global/routes';
 import nanoid from 'nanoid/non-secure';
-import Home from '../pages/Home';
+import Landing from '../pages/Landing';
 import Conjugate from '../pages/Conjugate';
 import Browse from '../pages/Browse';
 import Collections from '../pages/Collections';
@@ -10,7 +10,7 @@ import Translate from '../pages/Translate';
 import GitHub from '../pages/GitHub';
 
 export default [
-  { path: ROUTES.Home, component: Home, exact: true, key: nanoid() },
+  { path: ROUTES.Landing, component: Landing, exact: true, key: nanoid() },
   { path: ROUTES.Conjugate + '/:slug', component: Conjugate, key: nanoid() },
   { path: ROUTES.Translate + '/:slug?', component: Translate, key: nanoid() },
   { path: ROUTES.Browse, component: Browse, key: nanoid() },

@@ -4,12 +4,9 @@ import PropTypes from 'prop-types';
 import { Grid, Segment } from 'semantic-ui-react';
 import { useParams } from 'react-router-dom';
 
-import SearchBar from '../../components/SearchBar';
-import ConjugationContainer from '../../components/ConjugationContainer';
-import OptionLabels from '../../components/OptionLabels';
-import ResultSegment from '../../components/ResultSegment';
+import { SearchBar, AccentButtons } from '../../components/landing';
+import { ConjugationContainer, OptionLabels, ResultSegment } from '../../components/conjugate';
 import filterVerbs from '../../helper/filterVerbs';
-import AccentButtons from '../../components/AccentButtons';
 
 import info from '../../../globals.json';
 

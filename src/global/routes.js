@@ -1,5 +1,5 @@
 export default {
-  Home: '/',
+  Landing: '/',
   Translate: '/translate',
   Quiz: '/quiz',
   Collections: '/collections',

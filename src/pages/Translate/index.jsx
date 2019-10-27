@@ -5,9 +5,9 @@ import { useParams } from 'react-router-dom';
 import { Grid } from 'semantic-ui-react';
 import { checkOffline } from '../../updateSW.js';
 
-import InputBar from './component/InputBar';
-import ResultSegment from './component/ResultSegment';
-import AccentButtons from '../../components/AccentButtons';
+import { InputBar, ResultSegment } from '../../components/translate';
+import { AccentButtons } from '../../components/landing';
+
 import info from '../../../globals.json';
 
 const Translate = () => {

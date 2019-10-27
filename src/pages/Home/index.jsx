@@ -3,11 +3,10 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Header, Grid } from 'semantic-ui-react';
 
-import SearchBar from '../../components/SearchBar';
-import AccentButtons from '../../components/AccentButtons';
+import { SearchBar, AccentButtons } from '../../components/landing';
 import filterVerbs from '../../helper/filterVerbs';
 
-const Home = ({ history }) => {
+const Landing = ({ history }) => {
   let [searchValue, setSearchValue] = useState('');
 
   const handleFilterResults = value => filterVerbs(value, 5);
@@ -43,8 +42,8 @@ const Home = ({ history }) => {
   );
 };
 
-Home.propTypes = {
+Landing.propTypes = {
   children: PropTypes.node,
   history: PropTypes.object,
 };
-export default Home;
+export default Landing;

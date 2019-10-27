@@ -1,5 +1,5 @@
-import spanishdict from '../../assets/images/spanishdict.png';
-import wordreference from '../../assets/images/wordreference.png';
+import spanishdict from '../../../assets/images/spanishdict.png';
+import wordreference from '../../../assets/images/wordreference.png';
 import nanoid from 'nanoid/non-secure';
 export default {
   actionableLabels: [
