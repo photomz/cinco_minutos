@@ -6,17 +6,16 @@ const fs = require('fs');
 const popularityScale = require('../globals.json').POPULARITY_SCALE;
 
 const getVerbSD = verb => {
-  const SDURL = 'https://www.spanishdict.com/conjugate/' + verb;
+  const SDURL = `https://www.spanishdict.com/conjugate/${verb}`;
   return new Promise((resolve, reject) => {
     https.get(SDURL, res => {
       let data = '';
       if (res.statusCode !== 200) {
-        if (res.statusCode == 302) {
-          reject("can't conjugate " + '"' + verb + '"');
+        if (res.statusCode === 302) {
+          reject(`can't conjugate "${verb}"`);
         } else {
-          reject('error ' + res.statusCode);
+          reject(`error ${res.statusCode}`);
         }
-        return;
       } else {
         res.on('data', f => {
           data += f;
@@ -34,7 +33,7 @@ const getVerbSD = verb => {
         if (forwardVerb) {
           return getVerbSD(forwardVerb.innerHTML);
         }
-        throw new Error('could not convert "' + verb + '" to a spanish verb');
+        throw new Error(`could not convert "${verb}" to a spanish verb`);
       }
       const def = html
         .querySelectorAll('#headword-and-quickdefs-es a')
@@ -56,9 +55,9 @@ const getVerbSD = verb => {
         }
       }
       return {
-        verb: verb,
+        verb,
         definition: def,
-        reflexive: reflexive,
+        reflexive,
         conjugation: allConj,
       };
     })
@@ -78,8 +77,7 @@ const getAllVerbs = () => {
   return new Promise((resolve, reject) =>
     https.get('https://cooljugator.com/es/list/all', res => {
       if (res.statusCode !== 200) {
-        reject(new Error('error ' + res.statusCode));
-        return;
+        reject(new Error(`error ${res.statusCode}`));
       } else {
         let data = '';
         res.on('data', c => {
@@ -97,13 +95,13 @@ const getAllVerbs = () => {
       let currFile = {};
       let finished = 0;
       try {
-        currFile = require('./verbs.json');
+        currFile = require('./static/verbs.json');
       } catch (e) {
         currFile = {};
       }
       try {
-        const finishedJSON = require('./finished.json');
-        finished = Number(finishedJSON['finished']);
+        const finishedJSON = require('./static/finished.json');
+        finished = Number(finishedJSON.finished);
       } catch (e) {
         finished = 0;
       }
@@ -120,24 +118,24 @@ const getAllVerbs = () => {
       });
     });
 };
-const addConj = (obj, verb) => {
-  return getVerb(verb).then(conj => {
+const addConj = (obj, verb) =>
+  getVerb(verb).then(conj => {
     obj[verb] = conj;
     return obj;
   });
-};
 const recursePromiseConj = (allVerbs, allVerbsConj, i = 0) => {
-  if (allVerbs[i])
+  if (allVerbs[i]) {
     return addConj(allVerbsConj, allVerbs[i]).then(newObj => {
-      console.log('Conjugated ' + allVerbs[i]);
+      console.log(`Conjugated ${allVerbs[i]}`);
       return recursePromiseConj(allVerbs, newObj, i + 1);
     });
+  }
   console.log('Finished!');
   return allVerbsConj;
 };
 const createQuickSearch = obj => {
   Object.keys(obj).map(key => {
-    obj[key] = obj[key]['definition'];
+    obj[key] = obj[key].definition;
   });
   fs.writeFileSync('./quickSearch.json', JSON.stringify(obj));
 };
@@ -150,7 +148,7 @@ const createPopularity = (max = 61) => {
   }
   recursePromisePopularity(popularity, 0, max).then(val => {
     const minVal = Math.min(...Object.values(val));
-    for (let v in val) {
+    for (const v in val) {
       val[v] = Math.round((popularityScale * val[v]) / minVal);
     }
     fs.writeFileSync('./popularity.json', JSON.stringify(val));
@@ -162,15 +160,15 @@ const recursePromisePopularity = (obj, num = 0, max = 61) => {
     return obj;
   }
   return getPopularity(obj, num).then(newObj => {
-    console.log('Page ' + num + ' scraped');
+    console.log(`Page ${num} scraped`);
     return recursePromisePopularity(newObj, num + 1, max);
   });
 };
-const getPopularity = (obj, num) => {
-  return new Promise((resolve, reject) =>
-    https.get('https://lingolex.com/verbs/popular_verbs.php?page=' + num, res => {
+const getPopularity = (obj, num) =>
+  new Promise((resolve, reject) =>
+    https.get(`https://lingolex.com/verbs/popular_verbs.php?page=${num}`, res => {
       if (res.statusCode !== 200) {
-        reject(new Error('error ' + res.statusCode));
+        reject(new Error(`error ${res.statusCode}`));
         return;
       }
       let page = '';
@@ -184,14 +182,13 @@ const getPopularity = (obj, num) => {
     const allVerbs = [...html.querySelectorAll('td')].slice(7, 87);
     allVerbs.map((el, ind) => {
       if (ind % 4 === 1) {
-        let val = parseInt(allVerbs[ind - 1].innerHTML);
-        let elTXT = el.firstChild.innerHTML ? el.firstChild.innerHTML : el.innerHTML;
+        const val = parseInt(allVerbs[ind - 1].innerHTML);
+        const elTXT = el.firstChild.innerHTML ? el.firstChild.innerHTML : el.innerHTML;
         if (!obj[elTXT]) obj[elTXT] = val;
         else obj[elTXT] += val;
       }
     });
     return obj;
   });
-};
 /* eslint-disable-next-line */
 module.exports.getVerb = getVerb;

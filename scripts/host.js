@@ -4,11 +4,11 @@ const express = require('express');
 const Bundler = require('parcel-bundler');
 const server = require('../server');
 
-let api = server.createExpressApp();
-let app = express();
+const api = server.createExpressApp();
+const app = express();
 app.use('/api', api);
 const prod = process.argv.includes('prod') || process.env.NODE_ENV === 'production';
-let bundler = new Bundler(path.resolve(__dirname, '..', 'public', 'index.html'), {
+const bundler = new Bundler(path.resolve(__dirname, '..', 'public', 'index.html'), {
   scopeHoist: prod,
   minify: prod,
   sourceMaps: !prod,

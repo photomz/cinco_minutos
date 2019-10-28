@@ -1,100 +1,104 @@
 // eslint-disable-next-line
 const LZString = (function() {
-  var o = String.fromCharCode,
-    i = {
-      decompressFromUTF16: function(o) {
-        return null == o
-          ? ''
-          : '' == o
-          ? null
-          : i._decompress(o.length, 16384, function(i) {
-              return o.charCodeAt(i) - 32;
-            });
-      },
-      _decompress: function(i, n, t) {
-        var e,
-          r,
-          s,
-          p,
-          a,
-          l,
-          f,
-          u = [],
-          d = 4,
-          c = 4,
-          h = 3,
-          v = '',
-          w = [],
-          m = { val: t(0), position: n, index: 1 };
-        for (e = 0; 3 > e; e += 1) u[e] = e;
-        for (s = 0, a = Math.pow(2, 2), l = 1; l != a; )
-          (p = m.val & m.position),
-            (m.position >>= 1),
-            0 == m.position && ((m.position = n), (m.val = t(m.index++))),
-            (s |= (p > 0 ? 1 : 0) * l),
-            (l <<= 1);
-        switch (s) {
-          case 0:
-            for (s = 0, a = Math.pow(2, 8), l = 1; l != a; )
-              (p = m.val & m.position),
-                (m.position >>= 1),
-                0 == m.position && ((m.position = n), (m.val = t(m.index++))),
-                (s |= (p > 0 ? 1 : 0) * l),
-                (l <<= 1);
-            f = o(s);
-            break;
-          case 1:
-            for (s = 0, a = Math.pow(2, 16), l = 1; l != a; )
-              (p = m.val & m.position),
-                (m.position >>= 1),
-                0 == m.position && ((m.position = n), (m.val = t(m.index++))),
-                (s |= (p > 0 ? 1 : 0) * l),
-                (l <<= 1);
-            f = o(s);
-            break;
-          case 2:
-            return '';
-        }
-        for (u[3] = f, r = f, w.push(f); ; ) {
-          if (m.index > i) return '';
-          for (s = 0, a = Math.pow(2, h), l = 1; l != a; )
+  const o = String.fromCharCode;
+  var i = {
+    decompressFromUTF16(o) {
+      return o == null
+        ? ''
+        : o == ''
+        ? null
+        : i._decompress(o.length, 16384, i => o.charCodeAt(i) - 32);
+    },
+    _decompress(i, n, t) {
+      let e;
+      let r;
+      let s;
+      let p;
+      let a;
+      let l;
+      let f;
+      const u = [];
+      let d = 4;
+      let c = 4;
+      let h = 3;
+      let v = '';
+      const w = [];
+      const m = { val: t(0), position: n, index: 1 };
+      for (e = 0; e < 3; e += 1) u[e] = e;
+      for (s = 0, a = Math.pow(2, 2), l = 1; l != a; ) {
+        (p = m.val & m.position),
+          (m.position >>= 1),
+          m.position == 0 && ((m.position = n), (m.val = t(m.index++))),
+          (s |= (p > 0 ? 1 : 0) * l),
+          (l <<= 1);
+      }
+      switch (s) {
+        case 0:
+          for (s = 0, a = Math.pow(2, 8), l = 1; l != a; ) {
             (p = m.val & m.position),
               (m.position >>= 1),
-              0 == m.position && ((m.position = n), (m.val = t(m.index++))),
+              m.position == 0 && ((m.position = n), (m.val = t(m.index++))),
               (s |= (p > 0 ? 1 : 0) * l),
               (l <<= 1);
-          switch ((f = s)) {
-            case 0:
-              for (s = 0, a = Math.pow(2, 8), l = 1; l != a; )
-                (p = m.val & m.position),
-                  (m.position >>= 1),
-                  0 == m.position && ((m.position = n), (m.val = t(m.index++))),
-                  (s |= (p > 0 ? 1 : 0) * l),
-                  (l <<= 1);
-              (u[c++] = o(s)), (f = c - 1), d--;
-              break;
-            case 1:
-              for (s = 0, a = Math.pow(2, 16), l = 1; l != a; )
-                (p = m.val & m.position),
-                  (m.position >>= 1),
-                  0 == m.position && ((m.position = n), (m.val = t(m.index++))),
-                  (s |= (p > 0 ? 1 : 0) * l),
-                  (l <<= 1);
-              (u[c++] = o(s)), (f = c - 1), d--;
-              break;
-            case 2:
-              return w.join('');
           }
-          // eslint-disable-next-line no-cond-assign
-          if ((0 == d && ((d = Math.pow(2, h)), h++), u[f])) v = u[f];
-          else {
-            if (f !== c) return null;
-            v = r + r.charAt(0);
+          f = o(s);
+          break;
+        case 1:
+          for (s = 0, a = Math.pow(2, 16), l = 1; l != a; ) {
+            (p = m.val & m.position),
+              (m.position >>= 1),
+              m.position == 0 && ((m.position = n), (m.val = t(m.index++))),
+              (s |= (p > 0 ? 1 : 0) * l),
+              (l <<= 1);
           }
-          w.push(v), (u[c++] = r + v.charAt(0)), (r = v), 0 == --d && ((d = Math.pow(2, h)), h++);
+          f = o(s);
+          break;
+        case 2:
+          return '';
+      }
+      for (u[3] = f, r = f, w.push(f); ; ) {
+        if (m.index > i) return '';
+        for (s = 0, a = Math.pow(2, h), l = 1; l != a; ) {
+          (p = m.val & m.position),
+            (m.position >>= 1),
+            m.position == 0 && ((m.position = n), (m.val = t(m.index++))),
+            (s |= (p > 0 ? 1 : 0) * l),
+            (l <<= 1);
         }
-      },
-    };
+        switch ((f = s)) {
+          case 0:
+            for (s = 0, a = Math.pow(2, 8), l = 1; l != a; ) {
+              (p = m.val & m.position),
+                (m.position >>= 1),
+                m.position == 0 && ((m.position = n), (m.val = t(m.index++))),
+                (s |= (p > 0 ? 1 : 0) * l),
+                (l <<= 1);
+            }
+            (u[c++] = o(s)), (f = c - 1), d--;
+            break;
+          case 1:
+            for (s = 0, a = Math.pow(2, 16), l = 1; l != a; ) {
+              (p = m.val & m.position),
+                (m.position >>= 1),
+                m.position == 0 && ((m.position = n), (m.val = t(m.index++))),
+                (s |= (p > 0 ? 1 : 0) * l),
+                (l <<= 1);
+            }
+            (u[c++] = o(s)), (f = c - 1), d--;
+            break;
+          case 2:
+            return w.join('');
+        }
+        // eslint-disable-next-line no-cond-assign
+        if ((d == 0 && ((d = Math.pow(2, h)), h++), u[f])) v = u[f];
+        else {
+          if (f !== c) return null;
+          v = r + r.charAt(0);
+        }
+        w.push(v), (u[c++] = r + v.charAt(0)), (r = v), --d == 0 && ((d = Math.pow(2, h)), h++);
+      }
+    },
+  };
   return i;
 })();
 const info = require('../globals.json');
@@ -156,29 +160,29 @@ const prepareForOffline = () =>
           return cache;
         })
         .then(cache => {
-          fetch(info.SERVER_URL + '/suggestAll_min', {
+          fetch(`${info.SERVER_URL}/suggestAll_min`, {
             headers: {
               'Content-Type': 'application/json',
               Accept: 'text/plain',
             },
           })
             .then(res => res.text())
-            .then(val => cache.put(info.SERVER_URL + '/suggestAll_min', new Response(val)));
+            .then(val => cache.put(`${info.SERVER_URL}/suggestAll_min`, new Response(val)));
           return cache;
         })
         .then(cache => {
-          fetch(info.SERVER_URL + '/popularity_min', {
+          fetch(`${info.SERVER_URL}/popularity_min`, {
             headers: {
               'Content-Type': 'application/json',
               Accept: 'text/plain',
             },
           })
             .then(res => res.text())
-            .then(val => cache.put(info.SERVER_URL + '/popularity_min', new Response(val)));
+            .then(val => cache.put(`${info.SERVER_URL}/popularity_min`, new Response(val)));
           return cache;
         })
         .then(cache => {
-          fetch(info.SERVER_URL + '/SW_allConj_min', {
+          fetch(`${info.SERVER_URL}/SW_allConj_min`, {
             headers: {
               'Content-Type': 'application/json',
               Accept: 'text/plain',
@@ -188,9 +192,9 @@ const prepareForOffline = () =>
             .then(val => {
               verbs = JSON.parse(LZString.decompressFromUTF16(val));
               verbKeys = Object.keys(verbs);
-              estar = verbs['estar'].conjugation;
-              haber = verbs['haber'].conjugation;
-              return cache.put(info.SERVER_URL + '/SW_allConj_min', new Response(val));
+              estar = verbs.estar.conjugation;
+              haber = verbs.haber.conjugation;
+              return cache.put(`${info.SERVER_URL}/SW_allConj_min`, new Response(val));
             });
           return cache;
         }),
@@ -198,19 +202,21 @@ const prepareForOffline = () =>
 self.addEventListener('fetch', e => {
   const url = new URL(e.request.url);
   e.respondWith(
-    caches.match(e.request).then(res => {
-      return !res
-        ? url.pathname.startsWith(info.SERVER_URL)
-          ? fetch(e.request).then(
-              res => res,
-              () =>
-                url.pathname === info.SERVER_URL + '/conjugate'
-                  ? conjugate(url.searchParams.get('verb'))
-                  : new Response(),
-            )
-          : caches.match('/index.html').then(val => (val ? val : fetch(e.request)))
-        : res;
-    }),
+    caches
+      .match(e.request)
+      .then(res =>
+        !res
+          ? url.pathname.startsWith(info.SERVER_URL)
+            ? fetch(e.request).then(
+                res => res,
+                () =>
+                  url.pathname === `${info.SERVER_URL}/conjugate`
+                    ? conjugate(url.searchParams.get('verb'))
+                    : new Response(),
+              )
+            : caches.match('/index.html').then(val => val || fetch(e.request))
+          : res,
+      ),
   );
 });
 self.addEventListener('message', e => {
@@ -237,14 +243,14 @@ const messageCallback = e => {
           if (res.length <= 3) return prepareForOffline();
           return new Promise(r => r(null));
         });
-    } else if (data.value !== undefined) {
-      return clearCache(false);
-    } else {
-      return caches
-        .open(CURR_CACHE)
-        .then(cache => cache.keys())
-        .then(keys => [keys.length > 3, null]);
     }
+    if (data.value !== undefined) {
+      return clearCache(false);
+    }
+    return caches
+      .open(CURR_CACHE)
+      .then(cache => cache.keys())
+      .then(keys => [keys.length > 3, null]);
   }
   return new Promise(r => r(null));
 };
@@ -270,7 +276,7 @@ const cS = (first, second) => {
   if (first === second) return 1;
   if (first.length === 1 && second.length === 1) return 0;
   if (first.length < 2 || second.length < 2) return 0;
-  let firstBigrams = new Map();
+  const firstBigrams = new Map();
   for (let i = 0; i < first.length - 1; i++) {
     const bigram = first.substr(i, 2);
     const count = firstBigrams.has(bigram) ? firstBigrams.get(bigram) + 1 : 1;
@@ -288,7 +294,7 @@ const cS = (first, second) => {
   return (2.0 * intersectionSize) / (first.length + second.length - 2);
 };
 caches
-  .match(info.SERVER_URL + '/SW_allConj_min')
+  .match(`${info.SERVER_URL}/SW_allConj_min`)
   .then(res => {
     if (!res) return null;
     return res.text();
@@ -297,8 +303,8 @@ caches
     if (!val) return;
     verbs = JSON.parse(LZString.decompressFromUTF16(val));
     verbKeys = Object.keys(val);
-    estar = verbs['estar'].conjugation;
-    haber = verbs['haber'].conjugation;
+    estar = verbs.estar.conjugation;
+    haber = verbs.haber.conjugation;
   });
 const closestConj = str => {
   const literal = verbs[str];
@@ -309,7 +315,7 @@ const closestConj = str => {
   return {};
 };
 const transpose = arr => arr[0].map((col, i) => arr.map(row => row[i]));
-const insertEnd = (arr, add) => arr.map(row => row.map(col => col.split(',')[0] + ' ' + add));
+const insertEnd = (arr, add) => arr.map(row => row.map(col => `${col.split(',')[0]} ${add}`));
 const conjugate = verb => {
   const result = closestConj(verb);
   if (Object.keys(result).length === 0) return new Response('{}');
@@ -321,7 +327,7 @@ const conjugate = verb => {
     insertEnd(haber[1], conj[4]), // Perfect Subjunctive
     ...conj.slice(3, 5), // Present + past Participle
   ];
-  let formatted = headers
+  const formatted = headers
     .map(({ columns, ...props }, i) => ({
       ...props,
       body: transpose([columns].concat(fullConj[i])),
@@ -330,7 +336,7 @@ const conjugate = verb => {
       { title: 'Present Participle', body: fullConj[6], columns: [] },
       { title: 'Past Participle', body: fullConj[7], columns: [] },
     ]); // add back
-  //console.log('formatted - ', formatted);
+  // console.log('formatted - ', formatted);
   return new Response(
     JSON.stringify({
       ...result,

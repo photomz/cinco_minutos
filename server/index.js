@@ -2,22 +2,25 @@
 /* eslint-disable no-useless-escape */
 const express = require('express');
 const cors = require('cors');
-const info = require('../globals.json');
 const fs = require('fs');
 const path = require('path');
 const he = require('he');
 const compression = require('compression');
 const gTrans = require('@vitalets/google-translate-api');
+const info = require('../globals.json');
 
 // .json files are standard, .json.min files are JSON minified with a UTF16 compression algorithm
-const verbs = require('./static/verbs.json'); // All known verbs that have been pre-scraped for extra speed
+const verbs = require('./static/verbs.json');
+// All known verbs that have been pre-scraped for extra speed
 const verbsMin = fs.readFileSync(path.join(__dirname, './static/verbs.json.min')).toString();
 const headers = require('./static/headers.json'); // Needed to nice-ify the JSON
 const webScrape = require('./webScrape'); // Live web scraping! Yay!
-const search = require('./static/quickSearch.json'); // Quick search the verbs for search drop-down suggestions
+const search = require('./static/quickSearch.json');
+// Quick search the verbs for search drop-down suggestions
 const searchMin = fs.readFileSync(path.join(__dirname, './static/quickSearch.json.min')).toString();
 const searchKeys = Object.keys(search);
-let popularity = require('./static/popularity.json'); // Popularity stats for verbs
+const popularity = require('./static/popularity.json');
+// Popularity stats for verbs
 const popularityMin = fs
   .readFileSync(path.join(__dirname, './static/popularity.json.min'))
   .toString();
@@ -26,7 +29,7 @@ estar = estar.conjugation;
 haber = haber.conjugation;
 
 const transpose = arr => arr[0].map((col, i) => arr.map(row => row[i]));
-const insertEnd = (arr, add) => arr.map(row => row.map(col => col.split(',')[0] + ' ' + add));
+const insertEnd = (arr, add) => arr.map(row => row.map(col => `${col.split(',')[0]} ${add}`));
 
 // Copied from string-similarity
 // Ignore rest of function - used to see how close two strings are
@@ -38,7 +41,7 @@ const cS = (first, second) => {
   if (first === second) return 1;
   if (first.length === 1 && second.length === 1) return 0;
   if (first.length < 2 || second.length < 2) return 0;
-  let firstBigrams = new Map();
+  const firstBigrams = new Map();
   for (let i = 0; i < first.length - 1; i++) {
     const bigram = first.substr(i, 2);
     const count = firstBigrams.has(bigram) ? firstBigrams.get(bigram) + 1 : 1;
@@ -74,7 +77,7 @@ const conjugate = verb =>
       insertEnd(haber[1], conj[4]), // Perfect Subjunctive
       ...conj.slice(3, 5), // Present + past Participle
     ];
-    let formatted = headers
+    const formatted = headers
       .map(({ columns, ...props }, i) => ({
         ...props,
         body: transpose([columns].concat(fullConj[i])),
@@ -97,7 +100,7 @@ const sorter = (v1, v2) =>
 
 // Filter verbs (for suggestions)
 const filterVerbs = (value, len) => {
-  const startsWith = new RegExp('^' + value, 'i'); // match not case sensitive
+  const startsWith = new RegExp(`^${value}`, 'i'); // match not case sensitive
   const contains = new RegExp(value, 'i');
 
   // Direct match first
@@ -111,16 +114,15 @@ const filterVerbs = (value, len) => {
     extraResults.sort(sorter);
   }
   results = [...new Set(results.concat(extraResults))]; // Remove duplicates with Set
-  let blankResults = [];
+  const blankResults = [];
 
   // Some verbs actually don't have a definition, so we unconditionally put those at the end
   results = results.filter(val => {
     if (search[val] === '') {
       blankResults.push(val);
       return false;
-    } else {
-      return true;
     }
+    return true;
   });
 
   // Concat just in case there's actually room for the blank results
@@ -167,7 +169,7 @@ const translate = (text, fromEs, exact = false) => {
     // If we allowed Google to pick the from language...
     if (fromEs === undefined) {
       // Verify it's one of the desired languages
-      if (res.from.iso === 'en' || res.from.iso === 'es')
+      if (res.from.iso === 'en' || res.from.iso === 'es') {
         return {
           val: res.text,
           correctedText: res.from.text.autoCorrected
@@ -175,12 +177,13 @@ const translate = (text, fromEs, exact = false) => {
             : text,
           origLang: res.from.iso,
         };
+      }
       // If it's NOT one of the desired languages, try spanish first with exact = false (can fallback to english)
       return translate(text, true, false);
     }
     // If google actually suggested we used the other one, then translate from the other one with exact = true (will not fallback)
     if (res.from.didYouMean && (res.from.iso === 'es' || res.from.iso === 'en'))
-      return translate(text, res.from.iso === 'es' ? true : false, true);
+      return translate(text, res.from.iso === 'es', true);
 
     // If falling back to other language is okay, try the other possibility with exact = true
     if (!exact) {
@@ -301,7 +304,7 @@ const createExpressApp = (secure = false) => {
   return app;
 };
 const start = (secure = false) => {
-  let app = createExpressApp(secure);
+  const app = createExpressApp(secure);
   app.listen(info.PORT);
 };
 if (!module.parent)
