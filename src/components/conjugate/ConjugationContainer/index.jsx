@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Segment } from 'semantic-ui-react';
 import MobileConjugationContainer from './MobileConjugationContainer';
 import WidescreenConjugationContainer from './WidescreenConjugationContainer';
-import { Segment } from 'semantic-ui-react';
 import { icons } from './data.json';
 
 const ConjugationContainer = ({ conjugation, ...props }) => (

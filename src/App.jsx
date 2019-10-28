@@ -15,7 +15,7 @@ const Helmets = withRouter(({ location: { pathname } }) => {
   // Puts slug (subpath) before component name (main path), if it exists
   // Example" /conjugate/comer becomes Conjugate Comer | CincoMinutos
   const slug = subpath ? toTitleCase(subpath) : '';
-  const componentName = toTitleCase(invertedRoutes['/' + pathname.split('/')[1]] || 'Landing');
+  const componentName = toTitleCase(invertedRoutes[`/${pathname.split('/')[1]}`] || 'Landing');
   return (
     <Helmet>
       <title>{`${componentName} ${slug} | CincoMinutos`}</title>

@@ -8,6 +8,7 @@ import nanoid from 'nanoid/non-secure';
 import { StyledNavBar, BarSegment, Title, NavBarItemMenu, StyledIcon } from './styled';
 import NavItem from './NavItem';
 import data from './data';
+
 const { title, github, navLinks } = data;
 
 const NavBar = withRouter(({ location: { pathname } }) => {

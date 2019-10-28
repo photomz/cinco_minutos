@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { Input, Popup } from 'semantic-ui-react';
 
 const InputBar = ({ onSearch, value, setValue, offline, ...props }) => {
-  let [_isLoading, _setIsLoading] = useState(false);
+  const [_isLoading, _setIsLoading] = useState(false);
   const _handleSearchChange = (e, { value }) => {
     setValue(value);
     _setIsLoading(true);
@@ -21,7 +21,7 @@ const InputBar = ({ onSearch, value, setValue, offline, ...props }) => {
   };
   return (
     <Popup
-      content={'You are offline, therefore you cannot use the translation feature.'}
+      content="You are offline, therefore you cannot use the translation feature."
       disabled={!offline}
       trigger={
         <Input

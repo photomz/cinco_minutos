@@ -17,8 +17,8 @@ const ResultSegment = ({ action, content, ...props }) => (
       <Grid.Row>
         <Grid.Column>
           <div>
-            {(action === 'loading' && ((content.val && content.val + '...') || 'Loading...')) ||
-              (action === 'invalid' && "Invalid phrase '" + content.origPhrase + "'!") ||
+            {(action === 'loading' && ((content.val && `${content.val}...`) || 'Loading...')) ||
+              (action === 'invalid' && `Invalid phrase '${content.origPhrase}'!`) ||
               content.val}
           </div>
         </Grid.Column>

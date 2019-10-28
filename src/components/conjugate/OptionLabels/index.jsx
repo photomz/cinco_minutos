@@ -8,24 +8,22 @@ import ExternalRedirect from './ExternalRedirect';
 
 const { actionableLabels, externalRedirects } = data;
 
-const OptionLabels = ({ action, verb, disabled, setAction, ...props }) => {
-  return (
-    <Segment textAlign="center" {...props}>
-      {actionableLabels.map(({ key, ...propsMap }) => (
-        <ActionableLabel
-          key={key}
-          currentAction={action}
-          disabled={disabled}
-          setAction={setAction}
-          {...propsMap}
-        />
-      ))}
-      {externalRedirects.map(({ key, ...propsMap }) => (
-        <ExternalRedirect key={key} verb={verb} disabled={disabled} {...propsMap} />
-      ))}
-    </Segment>
-  );
-};
+const OptionLabels = ({ action, verb, disabled, setAction, ...props }) => (
+  <Segment textAlign="center" {...props}>
+    {actionableLabels.map(({ key, ...propsMap }) => (
+      <ActionableLabel
+        key={key}
+        currentAction={action}
+        disabled={disabled}
+        setAction={setAction}
+        {...propsMap}
+      />
+    ))}
+    {externalRedirects.map(({ key, ...propsMap }) => (
+      <ExternalRedirect key={key} verb={verb} disabled={disabled} {...propsMap} />
+    ))}
+  </Segment>
+);
 
 OptionLabels.propTypes = {
   action: PropTypes.string,

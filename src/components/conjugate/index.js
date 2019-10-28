@@ -1,3 +1,5 @@
 import OptionLabels from './OptionLabels';
 import ConjugationContainer from './ConjugationContainer';
-export { OptionLabels, ConjugationContainer };
+import ResultSegment from './ResultSegment';
+
+export { OptionLabels, ConjugationContainer, ResultSegment };

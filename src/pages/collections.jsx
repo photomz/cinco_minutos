@@ -2,7 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-let Collections = props => {
+const Collections = props => {
   console.log(props);
   return <div>Collections menu</div>;
 };

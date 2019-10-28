@@ -1,12 +1,13 @@
 /* eslint-disable no-console */
 import lzString from 'lz-string';
 import info from '../../globals.json';
+
 let popularity = {};
 let searchObj = {};
 let searchKeys = Object.keys(searchObj);
 const serviceWorkerExists = !!('serviceWorker' in navigator && navigator.serviceWorker.controller);
-let search = (v, len) =>
-  fetch(info.SERVER_URL + '/suggest?verb=' + v + '&num=' + len, {
+const search = (v, len) =>
+  fetch(`${info.SERVER_URL}/suggest?verb=${v}&num=${len}`, {
     headers: {
       verb: v,
       num: len,
@@ -24,7 +25,7 @@ const popularityLS = localStorage.getItem('popularity');
   ? new Promise(r => {
       r(lzString.decompressFromUTF16(searchObjLS));
     })
-  : fetch(info.SERVER_URL + '/suggestAll_min', {
+  : fetch(`${info.SERVER_URL}/suggestAll_min`, {
       headers: {
         'Content-Type': 'application/json',
         Accept: 'text/plain',
@@ -33,8 +34,8 @@ const popularityLS = localStorage.getItem('popularity');
 )
   .then(val => {
     if (popularityLS) popularity = JSON.parse(lzString.decompressFromUTF16(popularityLS));
-    else
-      fetch(info.SERVER_URL + '/popularity_min', {
+    else {
+      fetch(`${info.SERVER_URL}/popularity_min`, {
         headers: {
           'Content-Type': 'application/json',
           Accept: 'text/plain',
@@ -47,6 +48,7 @@ const popularityLS = localStorage.getItem('popularity');
           }
           popularity = JSON.parse(lzString.decompressFromUTF16(obj));
         });
+    }
     return val;
   })
   .then(v => {
@@ -63,11 +65,10 @@ const popularityLS = localStorage.getItem('popularity');
       searchKeys = Object.keys(searchObj);
     }
   });
-const sorter = (v1, v2) =>
-  (popularity[v2] ? popularity[v2] : 0) - (popularity[v1] ? popularity[v1] : 0);
+const sorter = (v1, v2) => (popularity[v2] || 0) - (popularity[v1] || 0);
 const filterVerbs = (value, len) => {
   if (!searchKeys.length) return search(value, len);
-  const startsWith = new RegExp('^' + value, 'i'); // match not case sensitive
+  const startsWith = new RegExp(`^${value}`, 'i'); // match not case sensitive
   const contains = new RegExp(value, 'i');
   let results = searchKeys.includes(value) ? [value] : [];
   results = results.concat(searchKeys.filter(verb => startsWith.test(verb)));
@@ -78,14 +79,13 @@ const filterVerbs = (value, len) => {
     extraResults.sort(sorter);
   }
   results = [...new Set(results.concat(extraResults))]; // Remove duplicates
-  let blankResults = [];
+  const blankResults = [];
   results = results.filter(val => {
     if (searchObj[val] === '') {
       blankResults.push(val);
       return false;
-    } else {
-      return true;
     }
+    return true;
   });
   results = results.concat(blankResults).slice(0, len);
   results = results.map(verb => ({ title: verb, description: searchObj[verb] }));

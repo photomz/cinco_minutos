@@ -2,7 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-let Browse = props => {
+const Browse = props => {
   console.log(props);
   return <div>Browse menu</div>;
 };

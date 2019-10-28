@@ -4,7 +4,19 @@ import { Button } from 'semantic-ui-react';
 
 const accentButtons = ['´', '¨', '˜'];
 const toggleAccent = [
-  { á: 'a', é: 'e', í: 'i', ó: 'o', ú: 'u', a: 'á', e: 'é', i: 'í', o: 'ó', u: 'ú', ü: 'ú' },
+  {
+    á: 'a',
+    é: 'e',
+    í: 'i',
+    ó: 'o',
+    ú: 'u',
+    a: 'á',
+    e: 'é',
+    i: 'í',
+    o: 'ó',
+    u: 'ú',
+    ü: 'ú',
+  },
   { ü: 'u', u: 'ü', ú: 'ü' },
   { ñ: 'n', n: 'ñ' },
 ];

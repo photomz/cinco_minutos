@@ -10,8 +10,8 @@ let timePassed = 0;
 // eslint-disable-next-line no-unused-vars
 const SearchBar = forwardRef(
   ({ onFilterResults, onSearchClick, value, setValue, showResults, ...props }, ref) => {
-    let [_isLoading, _setIsLoading] = useState(false);
-    let [_results, _setResults] = useState(showResults ? [] : null);
+    const [_isLoading, _setIsLoading] = useState(false);
+    const [_results, _setResults] = useState(showResults ? [] : null);
 
     const _handleResultSelect = (e, { result }) => {
       setValue(result.title);

@@ -85,6 +85,7 @@ const LZString = (function() {
             case 2:
               return w.join('');
           }
+          // eslint-disable-next-line no-cond-assign
           if ((0 == d && ((d = Math.pow(2, h)), h++), u[f])) v = u[f];
           else {
             if (f !== c) return null;
@@ -97,6 +98,7 @@ const LZString = (function() {
   return i;
 })();
 const info = require('../globals.json');
+
 const CURR_CACHE = 'v1';
 const headers = [
   {

@@ -7,7 +7,7 @@ import { SearchBar, AccentButtons } from '../components/landing';
 import filterVerbs from '../helper/filterVerbs';
 
 const Landing = ({ history }) => {
-  let [searchValue, setSearchValue] = useState('');
+  const [searchValue, setSearchValue] = useState('');
 
   const handleFilterResults = value => filterVerbs(value, 5);
 

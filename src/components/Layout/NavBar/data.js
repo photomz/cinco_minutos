@@ -1,4 +1,5 @@
 import ROUTES from '../../../global/routes';
+
 export default {
   title: { name: 'ℭ𝔦𝔫𝔠𝔬𝔐𝔦𝔫𝔲𝔱𝔬𝔰', icon: 'chess' },
   github: { name: 'github', icon: 'github', route: ROUTES.GitHub },

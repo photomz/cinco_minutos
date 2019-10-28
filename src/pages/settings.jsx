@@ -1,17 +1,16 @@
 /* eslint-disable no-console */
 import React, { useState, useRef, useEffect } from 'react';
-import PropTypes from 'prop-types';
 import { Button, Segment, Popup, Header, Divider } from 'semantic-ui-react';
-import sendMessage, { serviceWorker, checkOffline } from '../updateSW.js';
+import sendMessage, { serviceWorker, checkOffline } from '../updateSW';
 
 let updateOffline = setTimeout(() => null, 0);
 
-let Settings = () => {
+const Settings = () => {
   const serviceWorkerExists = !!serviceWorker();
-  let [toggleOfflineAllowed, setToggleOfflineAllowed] = useState(serviceWorkerExists);
-  let [offlineAvailable, setOfflineAvailable] = useState(serviceWorkerExists);
-  let [isLoading, setIsLoading] = useState(false);
-  let [errorContent, setErrorContent] = useState(
+  const [toggleOfflineAllowed, setToggleOfflineAllowed] = useState(serviceWorkerExists);
+  const [offlineAvailable, setOfflineAvailable] = useState(serviceWorkerExists);
+  const [isLoading, setIsLoading] = useState(false);
+  const [errorContent, setErrorContent] = useState(
     "You need a modern browser that supports Service Workers to use offline functionality. If you're using a modern browser, try refreshing the page.",
   );
   useEffect(() => {
@@ -31,7 +30,7 @@ let Settings = () => {
     );
     setToggleOfflineAllowed(false);
   };
-  let offlineRef = useRef(null);
+  const offlineRef = useRef(null);
   const toggleOffline = () => {
     blur(offlineRef);
     if (isLoading) {
@@ -84,10 +83,6 @@ let Settings = () => {
       </Segment>
     </div>
   );
-};
-
-Settings.propTypes = {
-  children: PropTypes.node,
 };
 
 export default Settings;

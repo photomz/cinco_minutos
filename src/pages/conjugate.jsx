@@ -1,8 +1,7 @@
 /* eslint-disable no-console */
 import React, { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
 import { Grid, Segment } from 'semantic-ui-react';
-import { useParams } from 'react-router-dom';
+import { useParams, useHistory } from 'react-router-dom';
 
 import { SearchBar, AccentButtons } from '../components/landing';
 import { ConjugationContainer, OptionLabels, ResultSegment } from '../components/conjugate';
@@ -10,14 +9,15 @@ import filterVerbs from '../helper/filterVerbs';
 
 import info from '../../globals.json';
 
-const Conjugate = ({ history }) => {
+const Conjugate = () => {
+  const history = useHistory();
   const { slug } = useParams();
-  let [searchValue, setSearchValue] = useState(slug ? slug : '');
-  let [{ verb, definition, conjugation }, setConjResults] = useState({});
-  let [isSearched, setIsSearched] = useState(false);
-  let [placeholder, setPlaceholder] = useState('¡Vámos!');
+  const [searchValue, setSearchValue] = useState(slug || '');
+  const [{ verb, definition, conjugation }, setConjResults] = useState({});
+  const [isSearched, setIsSearched] = useState(false);
+  const [placeholder, setPlaceholder] = useState('¡Vámos!');
   // action === idle || loading || verbCheck || addingCollection
-  let [action, setAction] = useState('loading');
+  const [action, setAction] = useState('loading');
 
   const handleFilterResults = value => filterVerbs(value, 5);
 
@@ -52,7 +52,7 @@ const Conjugate = ({ history }) => {
         if (Object.entries(res).length) setConjResults(res);
         else {
           setConjResults({ verb: decodedSlug });
-          setPlaceholder('Invalid verb "' + decodedSlug + '"!');
+          setPlaceholder(`Invalid verb "${decodedSlug}"!`);
         }
         setIsSearched(!!Object.entries(res).length); // force to bool
         setAction('idle');
@@ -110,8 +110,4 @@ const Conjugate = ({ history }) => {
   );
 };
 
-Conjugate.propTypes = {
-  children: PropTypes.node,
-  history: PropTypes.object,
-};
 export default Conjugate;

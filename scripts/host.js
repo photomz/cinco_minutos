@@ -3,6 +3,7 @@ const path = require('path');
 const express = require('express');
 const Bundler = require('parcel-bundler');
 const server = require('../server');
+
 let api = server.createExpressApp();
 let app = express();
 app.use('/api', api);
@@ -15,6 +16,7 @@ let bundler = new Bundler(path.resolve(__dirname, '..', 'public', 'index.html'),
   watch: !prod,
 });
 const port = require('../globals.json').HOST_PORT || 1234;
+
 app.use(bundler.middleware());
 bundler.on('buildEnd', () => console.log(`Starting server at http://localhost:${port}`));
 app.listen(port);

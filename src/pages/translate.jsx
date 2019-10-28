@@ -13,12 +13,12 @@ import info from '../../globals.json';
 const Translate = () => {
   const { slug } = useParams();
 
-  let [offline, setOffline] = useState(false);
-  let [searchValue, setSearchValue] = useState(slug ? slug : '');
-  let [result, setResult] = useState({});
-  let [isSearched, setIsSearched] = useState(false);
+  const [offline, setOffline] = useState(false);
+  const [searchValue, setSearchValue] = useState(slug || '');
+  const [result, setResult] = useState({});
+  const [isSearched, setIsSearched] = useState(false);
   // idle || loading || invalid
-  let [action, setAction] = useState('idle');
+  const [action, setAction] = useState('idle');
 
   console.log(action);
 
@@ -34,7 +34,7 @@ const Translate = () => {
       setIsSearched(true);
     } else setAction('loading');
     console.log(val);
-    return fetch(info.SERVER_URL + '/translate?text=' + encodeURIComponent(val))
+    return fetch(`${info.SERVER_URL}/translate?text=${encodeURIComponent(val)}`)
       .then(res => res.json())
       .then(res => {
         setResult({ ...res, origPhrase: val });
