@@ -59,7 +59,7 @@
     "htmlparser2": "^3.10.1",
     "lodash": "^4.17.13",
     "lz-string": "^1.4.4",
-    "nanoid": "^2.1.2",
+    "nanoid": "^3.1.31",
     "node-html-parser": "^1.1.16",
     "nodemon": "^1.19.1",
     "prop-types": "^15.7.2",
